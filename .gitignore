@@ -18,7 +18,10 @@ ht.access
 index.php
 robots.txt
 
+/assets/semantic/dist/components/
 /assets/semantic/src/definitions/
+/assets/semantic/src/themes/*/
+!assets/semantic/src/themes/patternlab/
 /assets/semantic/tasks/
 /assets/src/vendors/
 /node_modules/
