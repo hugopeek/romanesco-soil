@@ -6,6 +6,7 @@
 *.DS_Store
 .idea/
 
+/assets/cache/
 /assets/components/
 /connectors/
 /core/

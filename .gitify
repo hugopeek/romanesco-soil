@@ -287,7 +287,8 @@ packages:
             - pThumb
             - renderResources
             - Rowboat
-            - SetInputOptions
+            - SEOPro
+            #- SetInputOptions
             - SimpleSearch
             - Tagger
             - UltimateParent
