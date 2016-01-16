@@ -1,0 +1,12 @@
+id: 30
+name: fbRenderFormWrapper
+description: ''
+category: a_formblocks
+properties: 'a:0:{}'
+
+-----
+
+[[!renderResources?
+    &parents=`-1`
+    &resources=`[[+formID]]`
+]]

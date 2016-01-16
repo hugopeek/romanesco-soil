@@ -1,0 +1,13 @@
+id: 14
+type: text
+name: fb_email_template
+caption: 'Email template'
+description: 'Optional. Name of the chunk containing your own customized (HTML) email template. Make sure there is a [[+content]] placeholder in there for listing the fields.'
+category: 'Settings - Advanced'
+elements: ''
+rank: 20
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

@@ -1,0 +1,10 @@
+id: 34
+name: fbEmailRow
+description: ''
+category: m_fb_email
+properties: 'a:0:{}'
+
+-----
+
+<strong>[[+field_name:stripString=`?`]]:</strong><br>
+[[+fb[[*id]]-[[+field_name:fbStripAsAlias]]:empty=``]]<br><br>

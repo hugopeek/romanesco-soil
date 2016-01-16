@@ -1,0 +1,16 @@
+id: 143
+name: cbSettingButtonSize
+description: ''
+category: a_cb_settings
+properties: 'a:0:{}'
+
+-----
+
+Mini=mini
+Tiny=tiny
+Small=small
+Medium=medium
+Large=large
+Big=big
+Huge=huge
+Massive=massive

@@ -1,0 +1,9 @@
+id: 3
+name: buttonHrefBasic
+description: ''
+category: a_buttons
+properties: 'a:0:{}'
+
+-----
+
+<a href="[[+link]]" class="[[+classes]] ui button" [[+attributes]]>[[+button_text]]</a>

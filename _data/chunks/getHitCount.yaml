@@ -1,0 +1,16 @@
+id: 104
+name: getHitCount
+description: ''
+category: m_stats
+properties: 'a:0:{}'
+
+-----
+
+[[!Rowboat?
+    &table=`modx_hits`
+    &tpl=`hitCount`
+    &limit=`1`
+    &columns=`hit_count`
+    &where=`{"hit_key":"[[+id]]"}`
+    &cacheResults=`0`
+]]

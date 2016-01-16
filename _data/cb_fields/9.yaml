@@ -1,0 +1,12 @@
+id: 9
+parent_properties: ''
+input: link
+name: Button
+description: ''
+sortorder: 6
+icon: link
+template: "[[+button_block:is=`1`:then=`fluid`:toPlaceholder=`block`]]\n[[+new_window:is=`1`then=`target=\"_blank\"`:toPlaceholder=`attributes`]]\n[[$buttonHrefBasic?\n    &link=`[[+link]]`\n    &button_text=`[[+button_text]]`\n    &classes=`[[+button_size]] [[+button_type]] [[+block]]`\n    &attributes=`[[+attributes]]`\n]]"
+properties: '{"link_detection_pattern_override":""}'
+availability: '[]'
+layouts: ''
+settings: '[{"reference":"button_text","title":"Button text","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"asField"},{"reference":"button_type","title":"Button type","fieldtype":"select","default_value":"primary","fieldoptions":"[[$cbSettingButtonType]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"button_size","title":"Button size","fieldtype":"select","default_value":"large","fieldoptions":"[[$cbSettingButtonSize]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"button_block","title":"Button 100% wide","fieldtype":"select","default_value":"0","fieldoptions":"Yes=1\nNo=0","field_is_exposed":"modal"},{"reference":"new_window","title":"Open in new window","fieldtype":"select","default_value":"0","fieldoptions":"Yes=1\nNo=0","field_is_exposed":"modal"}]'

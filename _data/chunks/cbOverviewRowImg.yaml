@@ -1,0 +1,9 @@
+id: 134
+name: cbOverviewRowImg
+description: ''
+category: a_cb_overviews
+properties: 'a:0:{}'
+
+-----
+
+<img src="[[+url]]" alt="[[+alt]]">

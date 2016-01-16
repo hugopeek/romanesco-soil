@@ -1,0 +1,13 @@
+id: 18
+type: text
+name: fb_autoresponder_from_name
+caption: 'Autoresponder FROM name'
+description: 'Optional. This is the name that will (probably) be visible in the recipients'' inbox. Defaults to site_name system setting.'
+category: Autoresponder
+elements: ''
+rank: 3
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

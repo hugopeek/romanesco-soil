@@ -1,0 +1,14 @@
+id: 28
+source: 7
+type: imageplus
+name: overview_img_square
+caption: 'Image (Square)'
+description: 'This is an image in 1:1 aspect ratio, for use in cards, avatars or circular images.'
+category: 'Overview - Image'
+elements: ''
+rank: 3
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:3:{s:11:"targetWidth";s:3:"800";s:11:"targetRatio";s:3:"1.0";s:11:"allowAltTag";s:4:"true";}'
+output_properties: 'a:2:{s:14:"phpThumbParams";s:40:"w=[[++max_thumb_width:empty=`800`]]&zc=1";s:11:"outputChunk";s:16:"cbOverviewRowImg";}'
+content: ''

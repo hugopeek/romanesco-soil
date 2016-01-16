@@ -1,0 +1,8 @@
+id: 5
+key: max_thumb_width
+label: 'Thumbnail maximum width'
+xtype: numberfield
+description: 'Content images will never exceed this width. Make sure it is at least as wide as the widest possible container.'
+sortorder: 10
+value: '1000'
+group: 2

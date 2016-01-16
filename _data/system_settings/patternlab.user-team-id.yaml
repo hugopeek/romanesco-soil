@@ -1,0 +1,4 @@
+key: patternlab.user_team_id
+xtype: numberfield
+namespace: patternlab
+area: Users

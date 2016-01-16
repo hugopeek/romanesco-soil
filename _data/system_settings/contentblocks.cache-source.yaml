@@ -1,0 +1,4 @@
+key: contentblocks.cache_source
+xtype: modx-combo-source
+namespace: contentblocks
+area: Core

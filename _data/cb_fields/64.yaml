@@ -1,0 +1,12 @@
+id: 64
+parent: 36
+parent_properties: '{"key":"image","width":"50"}'
+input: image
+name: Image
+description: ''
+sortorder: 4
+template: '<img class="ui centered image" src="[[+url]]" alt="">'
+properties: '{"source":"8","directory":"\/","file_types":"png,gif,jpg,jpeg,svg"}'
+availability: ''
+layouts: ''
+settings: '[]'

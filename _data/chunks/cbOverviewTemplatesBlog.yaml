@@ -1,0 +1,11 @@
+id: 138
+name: cbOverviewTemplatesBlog
+description: ''
+category: a_cb_overviews
+properties: 'a:0:{}'
+
+-----
+
+Blog regular=overviewRowBlogBasic
+Blog compact=overviewRowBlogCompact
+Blog quote=overviewRowBlogQuote

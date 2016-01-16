@@ -1,0 +1,5 @@
+key: contentblocks.clear_cache_after_rebuild
+value: '1'
+xtype: combo-boolean
+namespace: contentblocks
+area: Core

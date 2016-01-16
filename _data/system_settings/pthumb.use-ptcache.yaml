@@ -1,0 +1,5 @@
+key: pthumb.use_ptcache
+value: '1'
+xtype: combo-boolean
+namespace: phpthumbof
+area: 'Cache [pThumb]'

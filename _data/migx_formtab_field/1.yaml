@@ -1,0 +1,8 @@
+id: 1
+config_id: 1
+formtab_id: 1
+field: entry_title
+caption: Title
+pos: 1
+inputTVtype: text
+sourceFrom: config

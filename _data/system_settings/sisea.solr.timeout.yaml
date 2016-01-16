@@ -1,0 +1,4 @@
+key: sisea.solr.timeout
+value: '30'
+namespace: sisea
+area: Solr

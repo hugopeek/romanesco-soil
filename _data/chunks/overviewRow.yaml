@@ -1,0 +1,11 @@
+id: 84
+name: overviewRow
+description: ''
+category: m_overviews
+properties: 'a:0:{}'
+
+-----
+
+<section class="[[+column_type]]">
+    [[!$[[+row_tpl]]]]
+</section>

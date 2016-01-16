@@ -1,0 +1,9 @@
+id: 62
+name: searchButtonPaging
+description: ''
+category: a_search
+properties: 'a:0:{}'
+
+-----
+
+<a class="item" href="[[+link]]">[[+text]]</a>

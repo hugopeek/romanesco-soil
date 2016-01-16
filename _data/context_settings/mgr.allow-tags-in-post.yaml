@@ -1,0 +1,5 @@
+context_key: mgr
+key: allow_tags_in_post
+value: '1'
+xtype: combo-boolean
+area: system

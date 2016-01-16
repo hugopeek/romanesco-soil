@@ -1,0 +1,10 @@
+id: 6
+name: quickstartbuttons.widget
+description: quickstartbuttons.widget_desc
+type: file
+content: '[[++core_path]]components/quickstartbuttons/model/quickstartbuttons/dashboardwidget.class.php'
+namespace: quickstartbuttons
+lexicon: 'quickstartbuttons:dashboards'
+size: full
+name_trans: 'Quickstart Buttons'
+description_trans: 'The Quickstart Buttons widget'

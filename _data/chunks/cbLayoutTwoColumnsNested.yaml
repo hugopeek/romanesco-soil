@@ -1,0 +1,12 @@
+id: 73
+name: cbLayoutTwoColumnsNested
+description: ''
+category: m_layouts
+properties: 'a:0:{}'
+
+-----
+
+<div class="ui nested two column stackable doubling [[+padding]] [[+alignment]] grid">
+    <div class="column">[[+col_1]]</div>
+    <div class="column">[[+col_2]]</div>
+</div>

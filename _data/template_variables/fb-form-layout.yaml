@@ -1,0 +1,15 @@
+id: 13
+type: listbox
+name: fb_form_layout
+caption: 'Layout type'
+description: 'Stacked means the labels are always above the input fields, Horizontal means the labels are next to the fields, Inline means everything is on 1 row (so only for very small forms).'
+category: 'Settings - General'
+elements: Stacked==vertical||Horizontal==horizontal||Inline==inline
+rank: 5
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+
+-----
+
+form-horizontal

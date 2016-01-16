@@ -1,0 +1,15 @@
+id: 67
+name: cbHeaderIconSVG
+description: ''
+category: m_contentblocks
+properties: 'a:0:{}'
+
+-----
+
+<[[+level]] class="ui [[+icon_position]] header">
+    <img class="ui image" src="[[+url]]" alt="[[+alt:htmlent]]">
+    <div class="content">
+        [[+value]]
+        [[+subtitle:notempty=`<div class="sub header">[[+subtitle]]</div>`]]
+    </div>
+</[[+level]]>

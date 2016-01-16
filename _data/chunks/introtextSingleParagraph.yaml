@@ -1,0 +1,9 @@
+id: 24
+name: introtextSingleParagraph
+description: ''
+category: a_content
+properties: 'a:0:{}'
+
+-----
+
+<p>[[+introtext:stripString=`<p>`:stripString=`</p>`]]</p>

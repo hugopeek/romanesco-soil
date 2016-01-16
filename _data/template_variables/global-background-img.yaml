@@ -1,0 +1,14 @@
+id: 22
+source: 13
+type: migx
+name: global_background_img
+caption: 'Global background images'
+description: 'These backgrounds can be applied to CB layouts (under their Settings wheel) and possibly to other elements too.'
+category: 'Global - Images'
+elements: ''
+rank: 1
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:1:{s:7:"configs";s:24:"global_background_images";}'
+output_properties: null
+content: ''

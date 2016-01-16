@@ -1,0 +1,14 @@
+id: 30
+source: 7
+type: imageplus
+name: overview_img_pano
+caption: 'Image (Panorama)'
+description: 'This is an image with 21:9 aspect ratio, for use in headers or layout backgrounds.'
+category: 'Overview - Image'
+elements: ''
+rank: 6
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:3:{s:11:"targetWidth";s:4:"1600";s:11:"targetRatio";s:4:"2.35";s:11:"allowAltTag";s:4:"true";}'
+output_properties: 'a:2:{s:14:"phpThumbParams";s:41:"w=[[++max_thumb_width:empty=`1600`]]&zc=1";s:11:"outputChunk";s:16:"cbOverviewRowImg";}'
+content: ''

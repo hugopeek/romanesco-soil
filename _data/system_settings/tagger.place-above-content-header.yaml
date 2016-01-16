@@ -1,0 +1,5 @@
+key: tagger.place_above_content_header
+value: '1'
+xtype: combo-boolean
+namespace: tagger
+area: places

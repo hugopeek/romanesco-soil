@@ -1,0 +1,12 @@
+id: 17
+parent_properties: ''
+input: layout
+name: 'Nested Layout'
+description: 'Voeg een genestelde layout toe binnen een bestaande layout. Op deze manier kan je blokken in een bestaande layout eenvoudig opdelen in nog meer blokken.'
+sortorder: 25
+icon: template_01
+template: '[[+value]]'
+properties: '{"available_layouts":"7,8,9,10,11,12,22,23","available_templates":"-1"}'
+availability: '[]'
+layouts: ''
+settings: '[{"reference":"align_center","title":"Center aligned columns","fieldtype":"select","default_value":"0","fieldoptions":"Yes=1\nNo=0","field_is_exposed":"modal"}]'

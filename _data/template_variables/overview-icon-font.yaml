@@ -1,0 +1,13 @@
+id: 33
+type: listbox
+name: overview_icon_font
+caption: 'Icon (Font)'
+description: 'Select an icon of the icon font that''s being used in this project. Check the styleguide for available classes, or use the autocomplete search as you type.'
+category: 'Overview - Icon'
+elements: '@CHUNK iconTVInputOptions'
+rank: 11
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:2:{s:9:"typeAhead";s:4:"true";s:14:"typeAheadDelay";s:3:"400";}'
+output_properties: null
+content: ''

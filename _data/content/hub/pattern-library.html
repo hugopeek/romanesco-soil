@@ -1,0 +1,73 @@
+id: 12
+pagetitle: 'Pattern Library'
+alias: pattern-library
+published: 1
+introtext: ''
+template: 1
+menuindex: 6
+createdby: 1
+createdon: 1452701481
+publishedon: 1452904320
+publishedby: 1
+context_key: hub
+uri: pattern-library/
+properties: '{"contentblocks":{"content":"[{\"layout\":1,\"content\":{\"main\":[{\"value\":\"\",\"level\":\"h1\",\"field\":1,\"settings\":{}},{\"value\":\"<p>The goal of the front-end pattern library is to give an overview of all the available components in the system, as well as an explanation of how they work and how they should be integrated.<br>\\n<\/p><p>One crucial requirement is that this pattern library, like the components themselves, should be interchangeable between all PL projects. In order to make this work, the following rules should apply:\\n<\/p><ul>\\n\\t<li>The library will be composed of resources.<\/li>\\n\\t<li>All resources will be static files, which means they can\u2019t be edited per project.<\/li>\\n\\t<li>There will be 1 central nursery for creating the static files.<\/li>\\n\\t<li>All project specific library elements will be placed in <strong>theme<\/strong> subfolders.<\/li>\\n<\/ul>\",\"field\":\"\",\"settings\":[]},{\"chunk_properties\":{},\"field\":19,\"settings\":{\"cols\":\"five\",\"row_tpl\":\"overviewRowBasicLinkCard\",\"show_introtext\":\"0\",\"show_subtitle\":\"1\",\"padding\":\"regular\",\"title_field\":\"menutitle\",\"title_hierarchy\":\"h2\",\"link_text\":\"\",\"de_emphasize\":\"0\",\"icon_type\":\"svg\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"alignment\":\"\"},\"parent\":0,\"title\":\"\"}]","linear":[{"value":"","level":"h1","field":1,"settings":[]},{"value":"<p>The goal of the front-end pattern library is to give an overview of all the available components in the system, as well as an explanation of how they work and how they should be integrated.<br>\n<\/p><p>One crucial requirement is that this pattern library, like the components themselves, should be interchangeable between all PL projects. In order to make this work, the following rules should apply:\n<\/p><ul>\n\t<li>The library will be composed of resources.<\/li>\n\t<li>All resources will be static files, which means they can\u2019t be edited per project.<\/li>\n\t<li>There will be 1 central nursery for creating the static files.<\/li>\n\t<li>All project specific library elements will be placed in <strong>theme<\/strong> subfolders.<\/li>\n<\/ul>","field":"","settings":[]},{"chunk_properties":[],"field":19,"settings":{"cols":"five","row_tpl":"overviewRowBasicLinkCard","show_introtext":"0","show_subtitle":"1","padding":"regular","title_field":"menutitle","title_hierarchy":"h2","link_text":"","de_emphasize":"0","icon_type":"svg"}}],"fieldcounts":{"1":1,"":1,"19":1},"_isContentBlocks":true}}'
+tvs:
+    header_background: '0'
+    header_cta: '0'
+    header_subtitle: ''
+    header_title: ''
+    overview_icon_font: ''
+    overview_icon_svg: ''
+    overview_img_landscape: ''
+    overview_img_pano: ''
+    overview_img_portrait: ''
+    overview_img_priority: landscape
+    overview_img_square: ''
+    overview_img_wide: ''
+    overview_link_text: ''
+
+-----
+
+[[$cbLayoutSingleColumn?
+    &main=`[[$headingBasic?
+    &value=``
+    &level=`h1`
+    &unique_idx=`1`
+]]
+
+<p>The goal of the front-end pattern library is to give an overview of all the available components in the system, as well as an explanation of how they work and how they should be integrated.<br>
+</p><p>One crucial requirement is that this pattern library, like the components themselves, should be interchangeable between all PL projects. In order to make this work, the following rules should apply:
+</p><ul>
+	<li>The library will be composed of resources.</li>
+	<li>All resources will be static files, which means they can’t be edited per project.</li>
+	<li>There will be 1 central nursery for creating the static files.</li>
+	<li>All project specific library elements will be placed in <strong>theme</strong> subfolders.</li>
+</ul>
+
+[[$overviewOuter? 
+	&unique_idx=`3`
+	&layout_id=`1`
+	&layout_column=`main`
+	&row_tpl=`overviewRowBasicLinkCard`
+	&cols=`five`
+	&padding=`regular`
+	&parent=`[[*id]]`
+	&depth=`0`
+	&limit=`99`
+	&show_hidden=`0`
+	&pagination=`0`
+	&sortby=`menuindex`
+	&title_field=`menutitle`
+	&title_hierarchy=`h2`
+	&show_subtitle=`1`
+	&show_introtext=`0`
+	&de_emphasize=`0`
+	&icon_type=`svg`
+	]]
+`
+	&background=`white`
+    &container_type=``
+    &padding=`[[+padding]]`
+    &alignment=``
+]]

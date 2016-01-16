@@ -1,0 +1,14 @@
+id: 61
+name: searchButton
+description: ''
+category: a_search
+properties: 'a:0:{}'
+
+-----
+
+<li class="search">
+    <a href="#search-fullscreen">
+        <i class="icon search"></i>
+        <span class="hidden-md hidden-lg">[[%bootquest.nav.search_text]]</span>
+    </a>
+</li>

@@ -1,0 +1,4 @@
+key: xrouting.allow_debug_info
+xtype: combo-boolean
+namespace: xrouting
+area: common

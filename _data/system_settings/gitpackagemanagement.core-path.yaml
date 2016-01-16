@@ -1,0 +1,4 @@
+key: gitpackagemanagement.core_path
+value: /Users/Hugo/Localhost/patternlab/packages/gpm/core/components/gitpackagemanagement/
+namespace: gitpackagemanagement
+area: 'Git Package Management Settings'

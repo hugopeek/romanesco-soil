@@ -1,0 +1,11 @@
+id: 8
+config_id: 2
+formtab_id: 4
+field: background_inverted
+caption: 'Invert background'
+description: 'Set to "yes" if you want the content to appear in white on this background.'
+pos: 1
+inputTVtype: option
+sourceFrom: config
+inputOptionValues: Yes==1||No==0
+default: '0'

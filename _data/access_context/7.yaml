@@ -1,0 +1,5 @@
+id: 7
+target: global
+principal_class: modUserGroup
+principal: 1
+policy: 11

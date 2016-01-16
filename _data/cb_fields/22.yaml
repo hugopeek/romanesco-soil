@@ -1,0 +1,12 @@
+id: 22
+parent_properties: ''
+input: chunk
+name: Form
+description: 'Add a form here. You can build your own forms with FormBlocks, under Content > Global Content > FormBlocks.'
+sortorder: 23
+icon: form
+template: '[[+value]]'
+properties: '{"chunk":"176","custom_preview":"<p><em>Add a form here. You can build your own forms with FormBlocks, under Content > Global Content > FormBlocks.<\/em><\/p>"}'
+availability: '[]'
+layouts: ''
+settings: '[{"reference":"form_id","title":"Form","fieldtype":"select","default_value":"","fieldoptions":"--- Select a form ---=\n[[fbGetForms]]","field_is_exposed":"asField","process_tags":"1"}]'

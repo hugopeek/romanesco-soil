@@ -1,0 +1,4 @@
+key: tagger.place_below_content_label
+value: tagger.tab.label
+namespace: tagger
+area: places

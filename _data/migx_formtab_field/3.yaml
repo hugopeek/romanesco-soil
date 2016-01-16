@@ -1,0 +1,8 @@
+id: 3
+config_id: 1
+formtab_id: 2
+field: entry_date
+caption: 'Due date'
+pos: 1
+inputTVtype: date
+sourceFrom: config

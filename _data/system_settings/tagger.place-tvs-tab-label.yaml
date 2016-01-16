@@ -1,0 +1,4 @@
+key: tagger.place_tvs_tab_label
+value: tagger.tab.label
+namespace: tagger
+area: places

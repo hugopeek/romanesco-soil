@@ -1,0 +1,4 @@
+key: redactor.clipsJson
+xtype: textarea
+namespace: redactor
+area: Toolbar

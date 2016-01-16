@@ -1,0 +1,9 @@
+id: 192
+name: ImagePlus.image
+description: 'Demo chunk for Image+ snippet output.'
+category: ImagePlus
+properties: 'a:0:{}'
+
+-----
+
+<img src="[[+url]]" alt="[[+alt]]"/>

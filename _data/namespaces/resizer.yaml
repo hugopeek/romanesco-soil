@@ -1,0 +1,3 @@
+name: resizer
+path: '{core_path}components/resizer/'
+assets_path: '{assets_path}components/resizer/'

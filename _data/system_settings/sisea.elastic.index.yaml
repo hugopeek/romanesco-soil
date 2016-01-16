@@ -1,0 +1,4 @@
+key: sisea.elastic.index
+value: simplesearchindex
+namespace: sisea
+area: ElasticSearch

@@ -1,0 +1,12 @@
+id: 10
+type: text
+name: fb_email_subject
+caption: 'Email subject'
+category: 'Settings - Email'
+elements: ''
+rank: 10
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

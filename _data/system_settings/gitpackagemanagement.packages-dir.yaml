@@ -1,0 +1,4 @@
+key: gitpackagemanagement.packages_dir
+value: /Users/Hugo/Localhost/packages/
+namespace: gitpackagemanagement
+area: Paths

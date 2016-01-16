@@ -1,0 +1,12 @@
+id: 23
+parent_properties: ''
+input: repeater
+name: Accordion
+description: ''
+sortorder: 19
+icon: tableofcontents
+template: "[[$accordionBasicRow?\n    &heading=`[[+heading]]`\n    &content=`[[+content]]`\n    &unique_idx=`[[+unique_idx]]`\n]]"
+properties: '{"wrapper_template":"[[$accordionOuter?\n    &rows=`[[+rows]]`\n    &accordion_type=`[[+accordion_type]]`\n    &unique_idx=`[[+unique_idx]]`\n]]","row_separator":"","max_items":"0","min_items":"0"}'
+availability: '[]'
+layouts: ''
+settings: '[{"reference":"accordion_type","title":"Appearance","fieldtype":"select","default_value":"","fieldoptions":"Standard=\nStyled (600px wide)=styled\nStyled (fluid width)=fluid styled","field_is_exposed":"modal"}]'

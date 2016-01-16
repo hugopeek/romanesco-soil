@@ -1,0 +1,11 @@
+id: 125
+name: accordionOuter
+description: ''
+category: o_presentation
+properties: 'a:0:{}'
+
+-----
+
+<div class="ui [[+accordion_type]] accordion">
+    [[+rows]]
+</div>

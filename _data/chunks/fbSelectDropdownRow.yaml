@@ -1,0 +1,14 @@
+id: 39
+name: fbSelectDropdownRow
+description: ''
+category: a_fb_inputs
+properties: 'a:0:{}'
+
+-----
+
+[[+field_name:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
+[[+field_option:fbResetNonAlpha:toPlaceholder=`option`]]
+
+<option value="[[+field_option]]" [[!+fb[[*id]].[[+name]]:FormItIsSelected=`[[+field_option]]`]]>
+    [[+option]]
+</option>

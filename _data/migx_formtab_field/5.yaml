@@ -1,0 +1,10 @@
+id: 5
+config_id: 1
+formtab_id: 2
+field: entry_status
+caption: Status
+pos: 3
+inputTVtype: option
+sourceFrom: config
+inputOptionValues: Pending==0||Completed==1
+default: '0'

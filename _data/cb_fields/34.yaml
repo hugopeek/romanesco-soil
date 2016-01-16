@@ -1,0 +1,12 @@
+id: 34
+parent_properties: ''
+input: chunk
+name: 'Input (Hidden)'
+description: ''
+sortorder: 40
+icon: snippet_B
+template: '[[+tag]]'
+properties: '{"chunk":"189","custom_preview":"<p><\/p>"}'
+availability: '[{"field":"template","value":"4"}]'
+layouts: ''
+settings: '[{"reference":"field_name","title":"Name","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"asField"},{"reference":"field_value","title":"Value","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"asField"}]'

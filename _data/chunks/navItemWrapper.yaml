@@ -1,0 +1,12 @@
+id: 58
+name: navItemWrapper
+description: ''
+category: a_nav_primary
+properties: 'a:0:{}'
+
+-----
+
+<a class="item [[+classnames]]" href="[[+link]]" title="[[+pagetitle]]" [[+attributes]]>
+    [[+menutitle]]
+    [[+wrapper]]
+</a>

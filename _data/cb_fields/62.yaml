@@ -1,0 +1,12 @@
+id: 62
+parent: 36
+parent_properties: '{"key":"link","width":"50"}'
+input: link
+name: Link
+description: ''
+sortorder: 2
+template: '<a class="ui primary button" href="[[+link]]" data-type="[[+linkType]]">[[+button_text]]</a>'
+properties: '{"link_detection_pattern_override":""}'
+availability: ''
+layouts: ''
+settings: '[]'

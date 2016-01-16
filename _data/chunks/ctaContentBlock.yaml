@@ -1,0 +1,9 @@
+id: 69
+name: ctaContentBlock
+description: ''
+category: m_cta
+properties: 'a:0:{}'
+
+-----
+
+[[#[[+cta_id]].content]]

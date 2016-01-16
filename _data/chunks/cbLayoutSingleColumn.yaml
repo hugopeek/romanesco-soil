@@ -1,0 +1,13 @@
+id: 111
+name: cbLayoutSingleColumn
+description: ''
+category: o_layouts
+properties: 'a:0:{}'
+
+-----
+
+<div class="ui vertical stripe segment [[+background]]">
+    <div class="ui [[+container_type]] [[+alignment]] container">
+        [[+main]]
+    </div>
+</div>

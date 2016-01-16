@@ -1,0 +1,11 @@
+id: 25
+name: imageBasic
+description: ''
+category: a_content
+properties: 'a:0:{}'
+
+-----
+
+<figure class="ui image">
+    <img src="[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width]]&zc=1`]]" alt="[[+alt:htmlent]]">
+</figure>

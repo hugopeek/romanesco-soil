@@ -1,0 +1,13 @@
+id: 17
+type: email
+name: fb_autoresponder_from
+caption: 'Autoresponder FROM address'
+description: 'Optional. This is the address where the messages appear to be sent from. Can be a non-existing address, like noreply@yourdomain.com. Defaults to emailsender system setting.'
+category: Autoresponder
+elements: ''
+rank: 2
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

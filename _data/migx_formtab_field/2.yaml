@@ -1,0 +1,9 @@
+id: 2
+config_id: 1
+formtab_id: 1
+field: entry_description
+caption: Description
+description: 'Describe here as accurately as possible what this entry is about. Which problem is going to be solved here, how will it work, and what value will it add to the project?'
+pos: 2
+inputTVtype: richtext
+sourceFrom: config

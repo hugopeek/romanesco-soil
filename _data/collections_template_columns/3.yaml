@@ -1,0 +1,7 @@
+id: 3
+template: 1
+label: Author
+name: article_author
+width: 50
+position: 4
+sort_type: null

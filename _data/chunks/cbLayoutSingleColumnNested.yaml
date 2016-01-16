@@ -1,0 +1,11 @@
+id: 72
+name: cbLayoutSingleColumnNested
+description: ''
+category: m_layouts
+properties: 'a:0:{}'
+
+-----
+
+<div class="ui nested one column stackable doubling [[+padding]] [[+alignment]] grid">
+    <div class="column">[[+main]]</div>
+</div>

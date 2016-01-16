@@ -1,0 +1,13 @@
+id: 124
+name: sliderOuter
+description: ''
+category: o_presentation
+properties: 'a:0:{}'
+
+-----
+
+<div class="slider">
+    [[+rows]]
+</div>
+
+[[sliderLoadAssets]]

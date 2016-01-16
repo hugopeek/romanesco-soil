@@ -1,0 +1,9 @@
+id: 45
+name: fbEmailRow_settings
+description: ''
+category: m_fb_email
+properties: 'a:0:{}'
+
+-----
+
+[[!$fbEmailRow]]

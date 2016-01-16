@@ -1,0 +1,10 @@
+id: 15
+template: 3
+label: resource_menuindex
+name: menuindex
+hidden: 1
+sortable: 1
+width: 10
+editor: '{"xtype":"numberfield","allowNegative":false,"allowDecimal":false}'
+position: 3
+sort_type: 'SIGNED INTEGER'

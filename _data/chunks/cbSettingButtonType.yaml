@@ -1,0 +1,13 @@
+id: 144
+name: cbSettingButtonType
+description: ''
+category: a_cb_settings
+properties: 'a:0:{}'
+
+-----
+
+Standard=regular
+Primary=primary
+Secondary=secondary
+Basic=basic
+Icon=icon

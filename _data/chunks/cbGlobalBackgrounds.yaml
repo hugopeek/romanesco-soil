@@ -1,0 +1,13 @@
+id: 132
+name: cbGlobalBackgrounds
+description: ''
+category: a_cb_layouts
+properties: 'a:0:{}'
+
+-----
+
+[[getImageList?
+    &docid=`[[++patternlab.global_backgrounds_id]]`
+    &tvname=`global_background_img`
+    &tpl=`cbGlobalBackgroundRowImg`
+]]

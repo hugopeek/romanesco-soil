@@ -1,0 +1,4 @@
+key: redactor.replaceTags
+xtype: textarea
+namespace: redactor
+area: Markup

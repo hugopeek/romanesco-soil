@@ -1,0 +1,11 @@
+id: 19
+name: headingHierarchy
+description: ''
+category: a_content
+properties: 'a:0:{}'
+
+-----
+
+<[[+title_hierarchy]] class="ui [[+classes]] header">
+    [[+[[+title_field]]:empty=`[[+pagetitle]]`]]
+</[[+title_hierarchy]]>

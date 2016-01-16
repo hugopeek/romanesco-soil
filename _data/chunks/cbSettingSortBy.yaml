@@ -1,0 +1,11 @@
+id: 150
+name: cbSettingSortBy
+description: ''
+category: a_cb_settings
+properties: 'a:0:{}'
+
+-----
+
+Sort order in MODX=menuindex
+Publication date (latest first)=publishedon
+Creation date (latest first)=createdon

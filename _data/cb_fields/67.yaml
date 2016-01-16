@@ -1,0 +1,11 @@
+id: 67
+parent: 28
+parent_properties: '{"key":"field_option","width":"100"}'
+name: Option
+description: ''
+sortorder: 1
+template: '[[+value:fbStripNonAlpha]]'
+properties: '[]'
+availability: ''
+layouts: ''
+settings: '[]'

@@ -1,0 +1,9 @@
+id: 9
+config_id: 2
+formtab_id: 4
+field: background_color
+caption: 'Background color'
+description: 'You can enter any valid CSS value here, such as hex value (including # symbol) or rgba.'
+pos: 2
+inputTVtype: text
+sourceFrom: config

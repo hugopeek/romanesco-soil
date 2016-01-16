@@ -1,0 +1,5 @@
+key: phpthumbof.use_resizer
+value: '1'
+xtype: combo-boolean
+namespace: phpthumbof
+area: Images

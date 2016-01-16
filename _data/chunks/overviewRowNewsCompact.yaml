@@ -1,0 +1,9 @@
+id: 174
+name: overviewRowNewsCompact
+description: ''
+category: m_ov_news
+properties: 'a:0:{}'
+
+-----
+
+[[!$overviewRowBlogCompact]]

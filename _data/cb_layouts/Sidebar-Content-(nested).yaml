@@ -1,0 +1,12 @@
+id: 9
+name: 'Sidebar + Content (nested)'
+description: 'Nested combination of a left sidebar (35%) and a main content area (65%).'
+sortorder: 10
+icon: layout_1-2
+icon_type: ''
+columns: '[{"reference":"sidebar","width":"35"},{"reference":"main","width":"65"}]'
+template: "[[$cbLayoutSidebarContentNested?\n    &main=`[[+main]]`\n    &sidebar=`[[+sidebar]]`\n\t&padding=`[[+padding]]`\n    &alignment=`[[+alignment]]`\n]]"
+availability: '[]'
+times_per_page: 0
+layout_only_nested: '1'
+settings: '[{"reference":"padding","title":"Extra padding","fieldtype":"select","default_value":"relaxed","fieldoptions":"[[$cbSettingPadding]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"alignment","title":"Content alignment","fieldtype":"select","default_value":"","fieldoptions":"[[$cbLayoutAlignment]]","field_is_exposed":"modal","process_tags":"1"}]'

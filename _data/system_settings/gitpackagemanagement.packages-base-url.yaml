@@ -1,0 +1,4 @@
+key: gitpackagemanagement.packages_base_url
+value: /
+namespace: gitpackagemanagement
+area: Paths

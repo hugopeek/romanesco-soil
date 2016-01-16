@@ -1,0 +1,5 @@
+key: tagger.place_bottom_page_header
+value: '1'
+xtype: combo-boolean
+namespace: tagger
+area: places

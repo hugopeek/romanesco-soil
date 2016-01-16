@@ -1,0 +1,9 @@
+id: 5
+template: 1
+label: pagetitle
+name: pagetitle
+width: 80
+editor: textfield
+renderer: Collections.renderer.pagetitleWithButtons
+position: 3
+sort_type: null

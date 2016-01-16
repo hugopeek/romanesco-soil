@@ -1,0 +1,13 @@
+id: 6
+type: email
+name: fb_email_cc
+caption: 'Email CC address'
+description: Optional.
+category: 'Settings - Email'
+elements: ''
+rank: 2
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

@@ -1,0 +1,4 @@
+key: redactor.sanitizePattern
+value: '/([[:alnum:]_\.-]*)/'
+namespace: redactor
+area: Advanced

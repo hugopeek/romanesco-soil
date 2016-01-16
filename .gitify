@@ -73,9 +73,9 @@ data:
     element_property_set:
         class: modElementPropertySet
         primary: [element, element_class, property_set]
-    events:
-        class: modEvent
-        primary: name
+    #events:
+    #    class: modEvent
+    #    primary: name
     extension_packages:
         class: modExtensionPackage
         primary: namespace
@@ -88,9 +88,12 @@ data:
     media_sources_elements:
         class: sources.modMediaSourceElement
         primary: [source, object, object_class, context_key]
-    #menus:
-    #    class: modMenu
-    #    primary: text
+    menus:
+        class: modMenu
+        primary: text
+        where:
+            'namespace:IN':
+                - 'patternlab'
     namespaces:
         class: modNamespace
         primary: name
@@ -127,9 +130,7 @@ data:
         primary: id
     dashboards:
         class: modDashboard
-        primary:
-            - id
-            - name
+        primary: [id, name]
     dashboard_widgets:
         class: modDashboardWidget
         primary: id
@@ -216,9 +217,9 @@ data:
         class: qsbButton
         primary: set
         package: quickstartbuttons
-    qsb_icons:
-        class: qsbIcon
-        primary: name
+    #qsb_icons:
+    #    class: qsbIcon
+    #    primary: name
     qsb_sets:
         class: qsbSet
         primary: name
@@ -260,13 +261,13 @@ data:
           - editedon
 
     # SetInputOptions
-    setinputoptions_groups:
-        class: SetInputOptionsGroup
-        primary: name
-        package: setinputoptions
-    setinputoptions_inputoptions:
-        class: SetInputOptionsInputOption
-        primary: id
+    #setinputoptions_groups:
+    #    class: SetInputOptionsGroup
+    #    primary: name
+    #    package: setinputoptions
+    #setinputoptions_inputoptions:
+    #    class: SetInputOptionsInputOption
+    #    primary: id
 
 packages:
     modx.com:

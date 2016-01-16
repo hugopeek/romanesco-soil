@@ -1,0 +1,13 @@
+id: 32
+name: fbContentBlock
+description: ''
+category: m_formblocks
+properties: 'a:0:{}'
+
+-----
+
+[[!$fbRenderFormWrapper?
+    &formID=`[[+form_id]]`
+    &currentID=`[[*id]]`
+    &currentPagetitle=`[[*pagetitle]]`
+]]

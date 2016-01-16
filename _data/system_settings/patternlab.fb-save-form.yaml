@@ -1,0 +1,5 @@
+key: patternlab.fb_save_form
+value: '1'
+xtype: combo-boolean
+namespace: patternlab
+area: 'FormBlocks - Settings'

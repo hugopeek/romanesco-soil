@@ -1,0 +1,15 @@
+id: 31
+type: listbox
+name: overview_img_priority
+caption: 'Image priority'
+description: 'With this setting, you can indicate which image type you prefer if the system has a choice.'
+category: 'Overview - Image'
+elements: 'Landscape (4:3)==landscape||Portrait (3:4)==portrait||Square (1:1)==square||Widescreen (16:9)==wide||Panorama (21:9)==pano'
+rank: 99
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+
+-----
+
+landscape

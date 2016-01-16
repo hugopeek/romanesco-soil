@@ -1,0 +1,9 @@
+id: 64
+name: searchResultTag
+description: ''
+category: a_search
+properties: 'a:0:{}'
+
+-----
+
+<span class="label label-info tag">[[+item]]</span>

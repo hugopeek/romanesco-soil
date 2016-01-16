@@ -1,0 +1,12 @@
+id: 48
+parent_properties: ''
+input: chunk_selector
+name: 'Social Buttons'
+description: ''
+sortorder: 42
+icon: chunk_B
+template: '[[+value]]'
+properties: '{"available_chunks":"socialConnectButtons,socialShareButtons","available_categories":""}'
+availability: ''
+layouts: ''
+settings: '[{"reference":"button_type","title":"Button type","fieldtype":"select","default_value":"","fieldoptions":"Brand colors=\nBasic=basic","field_is_exposed":"modal"}]'

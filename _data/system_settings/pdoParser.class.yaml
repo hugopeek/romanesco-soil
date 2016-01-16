@@ -1,0 +1,4 @@
+key: pdoParser.class
+value: pdotools.pdoparser
+namespace: pdotools
+area: pdotools_main

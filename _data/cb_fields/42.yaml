@@ -1,0 +1,13 @@
+id: 42
+parent_properties: ''
+input: image
+name: 'Icon (SVG)'
+description: ''
+sortorder: 13
+icon: image
+icon_type: ''
+template: "<figure class=\"ui faded image\">\n    <img src=\"[[+url]]\" alt=\"[[+alt:htmlent]]\">\n</figure>"
+properties: '{"source":"5","directory":"\/","file_types":"png,gif,jpg,jpeg,svg"}'
+availability: '[]'
+layouts: ''
+settings: '[{"reference":"alt","title":"ALT text","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"modal"}]'

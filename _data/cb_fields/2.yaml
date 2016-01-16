@@ -1,0 +1,13 @@
+id: 2
+parent_properties: ''
+input: video
+name: 'Video (YouTube)'
+description: ''
+sortorder: 14
+icon: video
+icon_type: ''
+template: "<div class=\"ui embed\" \n     data-source=\"youtube\"\n     data-id=\"[[+value]]\"\n     [[-data-placeholder=\"http://img.youtube.com/vi/[[+value]]/0.jpg\"]]>\n</div>"
+properties: '{}'
+availability: '[]'
+layouts: ''
+settings: '[]'

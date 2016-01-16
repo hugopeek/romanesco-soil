@@ -1,0 +1,4 @@
+key: gitpackagemanagement.assets_url
+value: /packages/gpm/assets/components/gitpackagemanagement/
+namespace: gitpackagemanagement
+area: 'Git Package Management Settings'

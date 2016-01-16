@@ -1,0 +1,10 @@
+id: 148
+name: cbSettingIconType
+description: ''
+category: a_cb_settings
+properties: 'a:0:{}'
+
+-----
+
+SVG=svg
+Font=font

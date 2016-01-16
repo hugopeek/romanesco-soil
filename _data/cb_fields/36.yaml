@@ -1,0 +1,12 @@
+id: 36
+parent_properties: ''
+input: repeater
+name: 'Slider (Image + Content)'
+description: ''
+sortorder: 18
+icon: gallery
+template: "[[$sliderImageContentRow?\n    &content=`[[+content]]`\n    &link=`[[+link]]`\n    &image=`[[+image]]`\n]]"
+properties: '{"wrapper_template":"[[$sliderOuter?\n    &rows=`[[+rows]]`\n]]","group":"[{\"id\":\"\",\"input\":\"richtext\",\"key\":\"content\",\"name\":\"Content\",\"width\":\"50\",\"sortorder\":\"0\",\"template\":\"[[+value]]\",\"properties\":{}},{\"id\":\"\",\"input\":\"link\",\"key\":\"link\",\"name\":\"Link\",\"width\":\"50\",\"sortorder\":\"0\",\"template\":\"<a class=\\\"ui primary button\\\" href=\\\"[[+link]]\\\" data-type=\\\"[[+linkType]]\\\">[[+button_text]]<\/a>\",\"properties_link_detection_pattern_override\":\"\",\"properties\":{\"link_detection_pattern_override\":\"\"}},{\"id\":\"\",\"input\":\"textfield\",\"key\":\"button_text\",\"name\":\"Button text\",\"width\":\"50\",\"sortorder\":\"0\",\"template\":\"[[+value]]\",\"properties\":{}},{\"id\":\"\",\"input\":\"image\",\"key\":\"image\",\"name\":\"Image\",\"width\":\"50\",\"sortorder\":\"0\",\"template\":\"<img class=\\\"ui centered image\\\" src=\\\"[[+url]]\\\" alt=\\\"\\\">\",\"properties_source\":\"8\",\"properties_directory\":\"\/\",\"properties_file_types\":\"png,gif,jpg,jpeg,svg\",\"properties\":{\"source\":\"8\",\"directory\":\"\/\",\"file_types\":\"png,gif,jpg,jpeg,svg\"}}]","row_separator":"","max_items":"0"}'
+availability: '[]'
+layouts: ''
+settings: '[]'

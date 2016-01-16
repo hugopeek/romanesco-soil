@@ -1,0 +1,13 @@
+id: 5
+type: email
+name: fb_email_to
+caption: 'Email address recipient'
+description: 'Submitted forms will be sent to this address. If this field is empty, the form will be sent to the default email address of the website (which can be found under Extras > Configuration).'
+category: 'Settings - Email'
+elements: ''
+rank: 1
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

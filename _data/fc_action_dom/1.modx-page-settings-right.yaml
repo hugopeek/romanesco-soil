@@ -1,0 +1,11 @@
+id: 11
+set: 1
+action: resource/create
+name: modx-page-settings-right
+description: null
+container: modx-resource-tabs
+rule: tabVisible
+value: '0'
+constraint_class: modResource
+for_parent: 1
+rank: 2

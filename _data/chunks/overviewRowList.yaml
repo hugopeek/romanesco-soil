@@ -1,0 +1,11 @@
+id: 86
+name: overviewRowList
+description: ''
+category: m_overviews
+properties: 'a:0:{}'
+
+-----
+
+<div class="[[+column_type]]" href="[[~[[+id]]]]">
+    [[!$[[+row_tpl]]]]
+</div>

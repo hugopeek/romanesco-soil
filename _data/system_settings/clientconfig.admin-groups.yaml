@@ -1,0 +1,4 @@
+key: clientconfig.admin_groups
+value: Administrator
+namespace: clientconfig
+area: Default

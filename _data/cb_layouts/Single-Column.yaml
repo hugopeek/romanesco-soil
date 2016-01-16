@@ -1,0 +1,11 @@
+id: 1
+name: 'Single Column'
+description: 'A single column, with a defined max width.'
+icon: layout_1
+icon_type: ''
+columns: '[{"reference":"main","width":"100"}]'
+template: "[[$cbLayoutSingleColumn?\n    &main=`[[+main]]`\n\t&background=`[[+background]]`\n    &container_type=`[[+container_type]]`\n    &padding=`[[+padding]]`\n    &alignment=`[[+alignment]]`\n]]"
+availability: '[]'
+times_per_page: 0
+layout_only_nested: '0'
+settings: '[{"reference":"background","title":"Background","fieldtype":"select","default_value":"white","fieldoptions":"[[$cbLayoutBackgrounds]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"container_type","title":"Width","fieldtype":"select","default_value":"","fieldoptions":"[[$cbSettingContainerType]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"alignment","title":"Content alignment","fieldtype":"select","default_value":"","fieldoptions":"[[$cbLayoutAlignment]]","field_is_exposed":"modal","process_tags":"1"}]'

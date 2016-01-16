@@ -1,0 +1,11 @@
+id: 149
+name: cbSettingPadding
+description: ''
+category: a_cb_settings
+properties: 'a:0:{}'
+
+-----
+
+None=regular
+A little=relaxed
+A lot=very relaxed

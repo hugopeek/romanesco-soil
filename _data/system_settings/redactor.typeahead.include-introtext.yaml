@@ -1,0 +1,5 @@
+key: redactor.typeahead.include_introtext
+value: '1'
+xtype: modx-combo-boolean
+namespace: redactor
+area: 'Resource Typeahead'

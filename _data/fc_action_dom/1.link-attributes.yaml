@@ -1,0 +1,11 @@
+id: 8
+set: 1
+action: resource/create
+name: link_attributes
+description: null
+container: modx-panel-resource
+rule: fieldVisible
+value: '0'
+constraint_class: modResource
+for_parent: 1
+rank: 5

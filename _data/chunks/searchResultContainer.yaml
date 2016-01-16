@@ -1,0 +1,18 @@
+id: 99
+name: searchResultContainer
+description: ''
+category: m_search
+properties: 'a:0:{}'
+
+-----
+
+<p class="lead">[[+resultInfo]]</p>
+
+[[+results]]
+
+<div class="ui vertical stripe segment">
+    <div class="ui pagination menu">
+        [[+paging]]
+    </div>
+</div>
+

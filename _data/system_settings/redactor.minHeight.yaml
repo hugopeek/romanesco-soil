@@ -1,0 +1,5 @@
+key: redactor.minHeight
+value: '200'
+xtype: numberfield
+namespace: redactor
+area: Editor

@@ -1,0 +1,13 @@
+id: 5
+parent_properties: ''
+input: hr
+name: Divider
+description: ''
+sortorder: 9
+icon: horizontalrule
+icon_type: ''
+template: "[[$dividerBasic?\n    &divider_text=`[[+divider_text]]`\n    &divider_section=`[[+divider_section]]`\n    &divider_hidden=`[[+divider_hidden]]`\n]]"
+properties: '{}'
+availability: '[]'
+layouts: ''
+settings: '[{"reference":"divider_text","title":"Text in the center","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"modal"},{"reference":"divider_section","title":"Extra padding","fieldtype":"select","default_value":"1","fieldoptions":"Yes=1\nNo=0","field_is_exposed":"modal"},{"reference":"divider_hidden","title":"Hide dividing line","fieldtype":"select","default_value":"0","fieldoptions":"Yes=1\nNo=0","field_is_exposed":"modal"}]'

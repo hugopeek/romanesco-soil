@@ -1,0 +1,13 @@
+id: 15
+parent_properties: ''
+input: quote
+name: Quote
+description: ''
+sortorder: 15
+icon: quote
+icon_type: ''
+template: "<blockquote>\n  <p>[[+value]]</p>\n  [[+cite:notempty=`<footer>[[+cite]]</footer>`]]\n</blockquote>"
+properties: '{}'
+availability: '[]'
+layouts: ''
+settings: '[]'

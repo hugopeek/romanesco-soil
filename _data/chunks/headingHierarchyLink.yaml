@@ -1,0 +1,11 @@
+id: 20
+name: headingHierarchyLink
+description: ''
+category: a_content
+properties: 'a:0:{}'
+
+-----
+
+<[[+title_hierarchy]] class="ui [[+classes]] header">
+    <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
+</[[+title_hierarchy]]>

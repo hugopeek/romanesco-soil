@@ -1,0 +1,13 @@
+id: 11
+parent_properties: ''
+input: list
+name: 'List (Unordered)'
+description: ''
+sortorder: 7
+icon: unorderedlist
+icon_type: ''
+template: '<li>[[+value]] [[+items]]</li>'
+properties: '{"wrapper_template":"<ul>[[+items]]<\/ul>","nested_template":"<ul class=\"sub\">[[+items]]<\/ul>","use_tinyrte":"1"}'
+availability: '[]'
+layouts: ''
+settings: '[]'

@@ -1,0 +1,16 @@
+id: 78
+name: breadcrumbs
+description: ''
+category: m_navigation
+properties: 'a:0:{}'
+
+-----
+
+<nav id="breadcrumbs">
+    [[BreadCrumb?
+        &showHomeCrumb=`0`
+        &containerTpl=`breadcrumbOuter`
+        &linkCrumbTpl=`breadcrumbRow`
+        &currentCrumbTpl=`breadcrumbCurrent`
+    ]]
+</nav>

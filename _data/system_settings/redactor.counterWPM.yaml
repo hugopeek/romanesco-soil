@@ -1,0 +1,5 @@
+key: redactor.counterWPM
+value: '275'
+xtype: numberfield
+namespace: redactor
+area: Advanced

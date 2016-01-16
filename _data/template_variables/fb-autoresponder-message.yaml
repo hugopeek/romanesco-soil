@@ -1,0 +1,13 @@
+id: 21
+type: richtext
+name: fb_autoresponder_message
+caption: 'Autoresponse message'
+description: 'The content of the email that will be sent. You can use placeholders here from the form fields you used. Just use the syntax [[+fb123-field-name]], so complete with prefix and correct name of the input field.'
+category: Autoresponder
+elements: ''
+rank: 11
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

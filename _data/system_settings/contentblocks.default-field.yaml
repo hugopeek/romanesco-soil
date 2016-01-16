@@ -1,0 +1,5 @@
+key: contentblocks.default_field
+value: '0'
+xtype: numberfield
+namespace: contentblocks
+area: Defaults

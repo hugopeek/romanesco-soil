@@ -1,0 +1,5 @@
+key: redactor.buttonSource
+value: '1'
+xtype: modx-combo-boolean
+namespace: redactor
+area: Toolbar

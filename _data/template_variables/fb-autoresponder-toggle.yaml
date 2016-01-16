@@ -1,0 +1,13 @@
+id: 16
+type: option
+name: fb_autoresponder_toggle
+caption: Autoresponder
+description: 'IMPORTANT! For the autoresponder to know which email address to use, the Input (Email) field needs to be present in the form.'
+category: Autoresponder
+elements: On==1||Off==0
+rank: 1
+default_text: '0'
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: '0'

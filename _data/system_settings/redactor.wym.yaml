@@ -1,0 +1,4 @@
+key: redactor.wym
+xtype: modx-combo-boolean
+namespace: redactor
+area: Editor

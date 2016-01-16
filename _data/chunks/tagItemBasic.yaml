@@ -1,0 +1,9 @@
+id: 66
+name: tagItemBasic
+description: ''
+category: a_taxonomy
+properties: 'a:0:{}'
+
+-----
+
+<div class="ui label">[[+tag]]</div>

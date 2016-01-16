@@ -1,0 +1,5 @@
+key: patternlab.global_backgrounds_id
+value: '5'
+xtype: numberfield
+namespace: patternlab
+area: Pages

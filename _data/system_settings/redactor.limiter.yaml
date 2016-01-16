@@ -1,0 +1,5 @@
+key: redactor.limiter
+value: '150'
+xtype: numberfield
+namespace: redactor
+area: Editor

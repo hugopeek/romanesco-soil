@@ -1,0 +1,13 @@
+id: 15
+type: text
+name: fb_email_template_rows
+caption: 'Email template rows'
+description: 'Optional. Name of the chunk containing the customized HTML for the template rows. This will be used to display each individual field in your email. Use [[+label]] and [[+value]] placeholders to show the content.'
+category: 'Settings - Advanced'
+elements: ''
+rank: 21
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

@@ -1,0 +1,12 @@
+id: 76
+name: cbLayoutContentSidebarNested
+description: ''
+category: m_layouts
+properties: 'a:0:{}'
+
+-----
+
+<div class="ui nested stackable doubling [[+padding]] [[+alignment]] grid">
+    <div class="ten wide column">[[+main]]</div>
+    <div class="six wide column">[[+sidebar]]</div>
+</div>

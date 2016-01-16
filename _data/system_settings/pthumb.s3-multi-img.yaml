@@ -1,0 +1,4 @@
+key: pthumb.s3_multi_img
+xtype: combo-boolean
+namespace: phpthumbof
+area: 'Amazon S3'

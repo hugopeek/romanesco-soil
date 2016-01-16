@@ -1,0 +1,8 @@
+id: 8
+template: 2
+label: 'Redirect ID'
+name: tv_fb_redirect_id
+width: 30
+editor: numberfield
+position: 4
+sort_type: null

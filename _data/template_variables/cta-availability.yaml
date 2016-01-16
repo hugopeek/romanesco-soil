@@ -1,0 +1,13 @@
+id: 4
+type: checkbox
+name: cta_availability
+caption: Availability
+description: 'Where would you like to be able to place this CTA?'
+category: 'CTA - Settings'
+elements: 'In page header==header||In sidebar (on detail pages)==sidebar||In the content (through CB)==content||Below the content==footer'
+rank: 1
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

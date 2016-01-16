@@ -1,0 +1,13 @@
+id: 12
+parent_properties: ''
+input: ordered_list
+name: 'List (Ordered)'
+description: ''
+sortorder: 8
+icon: orderedlist
+icon_type: ''
+template: '<li>[[+value]] [[+items]]</li>'
+properties: '{"wrapper_template":"<ol>[[+items]]<\/ol>","nested_template":"<ol class=\"sub\">[[+items]]<\/ol>"}'
+availability: ''
+layouts: ''
+settings: ''

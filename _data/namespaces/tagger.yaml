@@ -1,0 +1,3 @@
+name: tagger
+path: '{core_path}components/tagger/'
+assets_path: '{assets_path}components/tagger/'

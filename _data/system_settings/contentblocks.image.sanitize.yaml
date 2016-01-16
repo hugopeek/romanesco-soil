@@ -1,0 +1,5 @@
+key: contentblocks.image.sanitize
+value: '1'
+xtype: modx-combo-boolean
+namespace: contentblocks
+area: 'Input: Image'

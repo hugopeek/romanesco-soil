@@ -1,0 +1,13 @@
+id: 14
+parent_properties: ''
+input: code
+name: 'HTML Code'
+description: ''
+sortorder: 22
+icon: code
+icon_type: ''
+template: '[[+value]]'
+properties: '{"available_languages":"html=HTML","default_language":"html"}'
+availability: ''
+layouts: ''
+settings: ''

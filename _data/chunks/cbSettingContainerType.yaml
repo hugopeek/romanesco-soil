@@ -1,0 +1,11 @@
+id: 151
+name: cbSettingContainerType
+description: ''
+category: a_cb_settings
+properties: 'a:0:{}'
+
+-----
+
+Standard width (container)=
+Full width (fluid)=fluid
+Optimal readability (text)=text

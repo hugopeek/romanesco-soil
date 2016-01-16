@@ -1,0 +1,27 @@
+id: 152
+name: overviewRowBasic
+description: ''
+category: m_ov_basic
+properties: 'a:0:{}'
+
+-----
+
+[[[[If?
+    &subject=`[[+show_subtitle]]`
+    &operator=`EQ`
+    &operand=`1`
+    &then=`!$headingHierarchySubtitleLink`
+    &else=`!$headingHierarchyLink`
+]]]]
+[[[[If?
+    &subject=`[[+show_introtext]]`
+    &operator=`EQ`
+    &operand=`1`
+    &then=`!$introtextDescription`
+]]]]
+[[If?
+    &subject=`[[+link_text]]`
+    &operator=`isnot`
+    &operand=`0`
+    &then=`<p>[[!$buttonHrefOverview]]</p>`
+]]

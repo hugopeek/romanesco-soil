@@ -1,0 +1,12 @@
+id: 141
+name: cbOverviewTemplatesTestimonial
+description: ''
+category: a_cb_overviews
+properties: 'a:0:{}'
+
+-----
+
+Testimonial vertical=overviewRowTestimonialBasic
+Testimonial horizontal=overviewRowTestimonialWide
+Testimonial logos=overviewRowTestimonialLogo
+Testimonial compact=overviewRowTestimonialCompact

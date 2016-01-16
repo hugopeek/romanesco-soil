@@ -1,0 +1,8 @@
+id: 4
+config_id: 1
+formtab_id: 2
+field: entry_resources
+caption: Resources
+pos: 2
+display: none
+sourceFrom: config

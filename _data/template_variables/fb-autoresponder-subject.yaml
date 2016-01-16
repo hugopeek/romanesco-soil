@@ -1,0 +1,12 @@
+id: 20
+type: text
+name: fb_autoresponder_subject
+caption: 'Autoresponse subject'
+category: Autoresponder
+elements: ''
+rank: 10
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

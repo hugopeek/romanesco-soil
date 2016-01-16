@@ -1,0 +1,4 @@
+key: redactor.removeEmptyTags
+value: p
+namespace: redactor
+area: Markup

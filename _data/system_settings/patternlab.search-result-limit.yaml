@@ -1,0 +1,4 @@
+key: patternlab.search_result_limit
+value: '10'
+namespace: patternlab
+area: Search

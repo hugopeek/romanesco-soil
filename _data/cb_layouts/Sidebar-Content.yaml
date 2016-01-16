@@ -1,0 +1,12 @@
+id: 3
+name: 'Sidebar + Content'
+description: 'Combination of a left sidebar (35%) and a main content area (65%).'
+sortorder: 2
+icon: layout_1-2
+icon_type: ''
+columns: '[{"reference":"sidebar","width":"35"},{"reference":"main","width":"65"}]'
+template: "[[$cbLayoutSidebarContent?\n    &main=`[[+main]]`\n    &sidebar=`[[+sidebar]]`\n\t&background=`[[+background]]`\n    &container_type=`[[+container_type]]`\n    &padding=`[[+padding]]`\n    &alignment=`[[+alignment]]`\n]]"
+availability: '[]'
+times_per_page: 0
+layout_only_nested: '0'
+settings: '[{"reference":"background","title":"Background","fieldtype":"select","default_value":"white","fieldoptions":"[[$cbLayoutBackgrounds]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"container_type","title":"Width","fieldtype":"select","default_value":"","fieldoptions":"[[$cbSettingContainerType]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"padding","title":"Extra padding","fieldtype":"select","default_value":"relaxed","fieldoptions":"[[$cbSettingPadding]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"alignment","title":"Content alignment","fieldtype":"select","default_value":"","fieldoptions":"[[$cbLayoutAlignment]]","field_is_exposed":"modal","process_tags":"1"}]'

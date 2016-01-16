@@ -1,0 +1,4 @@
+key: contentblocks.accepted_resource_types
+value: 'modDocument,mgResource,Article,CollectionContainer,GridContainer,GoodNewsResourceContainer,GoodNewsResourceMailing,scCategoryResource,scProductResource'
+namespace: contentblocks
+area: Core

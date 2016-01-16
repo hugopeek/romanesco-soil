@@ -1,0 +1,4 @@
+key: redactor.buttons
+value: 'html,|,formatting,|,bold,italic,deleted,|,unorderedlist,orderedlist,|,horizontalrule'
+namespace: redactor
+area: Toolbar

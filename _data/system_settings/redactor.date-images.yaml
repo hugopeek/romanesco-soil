@@ -1,0 +1,4 @@
+key: redactor.date_images
+xtype: modx-combo-boolean
+namespace: redactor
+area: Media

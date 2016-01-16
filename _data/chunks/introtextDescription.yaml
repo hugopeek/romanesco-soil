@@ -1,0 +1,9 @@
+id: 23
+name: introtextDescription
+description: ''
+category: a_content
+properties: 'a:0:{}'
+
+-----
+
+<div class="description">[[+introtext]]</div>

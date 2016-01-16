@@ -1,0 +1,9 @@
+id: 55
+name: breadcrumbCurrent
+description: ''
+category: a_nav_breadcrumbs
+properties: 'a:0:{}'
+
+-----
+
+<div class="active section">[[+menutitle:empty=`[[+pagetitle]]`]]</div>

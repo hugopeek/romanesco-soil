@@ -1,0 +1,11 @@
+id: 140
+name: cbOverviewTemplatesTeam
+description: ''
+category: a_cb_overviews
+properties: 'a:0:{}'
+
+-----
+
+Team default=overviewRowTeamBasic
+Team default (Card)=overviewRowTeamBasicCard
+Team compact=overviewRowTeamCompact

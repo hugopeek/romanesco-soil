@@ -1,0 +1,12 @@
+id: 72
+parent_properties: null
+input: blockdown
+name: 'Markdown Text'
+description: ''
+sortorder: 5
+icon: richtext
+template: '[[+value]]'
+properties: '{"theme_editor":"themes\/editor\/epic-light.css","theme_preview":"themes\/preview\/github.css"}'
+availability: '[]'
+layouts: ''
+settings: '[]'

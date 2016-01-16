@@ -1,0 +1,5 @@
+key: patternlab.cta_container_id
+value: '4'
+xtype: numberfield
+namespace: patternlab
+area: Pages

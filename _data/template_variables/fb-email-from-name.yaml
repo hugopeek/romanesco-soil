@@ -1,0 +1,13 @@
+id: 9
+type: text
+name: fb_email_from_name
+caption: 'Email FROM name'
+description: 'Optional. Defaults to site_name system setting.'
+category: 'Settings - Email'
+elements: ''
+rank: 6
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

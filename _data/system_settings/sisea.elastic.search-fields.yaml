@@ -1,0 +1,4 @@
+key: sisea.elastic.search_fields
+value: 'pagetitle^20,introtext^10,alias^5,content^1'
+namespace: sisea
+area: ElasticSearch

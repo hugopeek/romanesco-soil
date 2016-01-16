@@ -1,0 +1,13 @@
+id: 6
+parent_properties: ''
+input: richtext
+name: 'Rich Text'
+description: ''
+sortorder: 4
+icon: richtext
+icon_type: ''
+template: '[[+value]]'
+properties: '{}'
+availability: ''
+layouts: ''
+settings: ''

@@ -1,0 +1,9 @@
+id: 10
+config_id: 2
+formtab_id: 4
+field: background_opacity
+caption: 'Image opacity'
+description: 'You can fade the image with this setting, so the background color will come through. Enter a value between 0 and 100.'
+pos: 3
+inputTVtype: number
+sourceFrom: config

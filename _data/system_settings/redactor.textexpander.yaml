@@ -1,0 +1,4 @@
+key: redactor.textexpander
+xtype: textarea
+namespace: redactor
+area: Advanced

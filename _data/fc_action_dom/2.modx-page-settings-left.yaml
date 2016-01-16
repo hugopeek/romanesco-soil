@@ -1,0 +1,10 @@
+id: 24
+set: 2
+action: resource/update
+name: modx-page-settings-left
+description: null
+container: modx-resource-tabs
+rule: tabVisible
+value: '0'
+constraint_class: modResource
+rank: 2

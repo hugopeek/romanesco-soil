@@ -1,0 +1,12 @@
+id: 6
+name: '2 Columns'
+description: 'Two fifty-fifty columns.'
+sortorder: 5
+icon: layout_1-1
+icon_type: ''
+columns: '[{"reference":"col_1","width":"50"},{"reference":"col_2","width":"50"}]'
+template: "[[$cbLayoutTwoColumns?\n    &col_1=`[[+col_1]]`\n    &col_2=`[[+col_2]]`\n\t&background=`[[+background]]`\n    &container_type=`[[+container_type]]`\n    &padding=`[[+padding]]`\n    &alignment=`[[+alignment]]`\n]]"
+availability: '[]'
+times_per_page: 0
+layout_only_nested: '0'
+settings: '[{"reference":"background","title":"Background","fieldtype":"select","default_value":"white","fieldoptions":"[[$cbLayoutBackgrounds]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"container_type","title":"Width","fieldtype":"select","default_value":"","fieldoptions":"[[$cbSettingContainerType]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"padding","title":"Extra padding","fieldtype":"select","default_value":"relaxed","fieldoptions":"[[$cbSettingPadding]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"alignment","title":"Content alignment","fieldtype":"select","default_value":"","fieldoptions":"[[$cbLayoutAlignment]]","field_is_exposed":"modal","process_tags":"1"}]'

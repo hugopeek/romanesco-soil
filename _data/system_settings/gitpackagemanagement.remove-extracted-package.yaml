@@ -1,0 +1,5 @@
+key: gitpackagemanagement.remove_extracted_package
+value: '0'
+xtype: combo-boolean
+namespace: gitpackagemanagement
+area: system

@@ -1,0 +1,8 @@
+id: 29
+template: 5
+label: Jobtitle
+name: tv_team_member_jobtitle
+width: 60
+editor: textfield
+position: 8
+sort_type: null

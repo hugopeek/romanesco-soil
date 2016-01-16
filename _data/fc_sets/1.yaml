@@ -1,0 +1,5 @@
+id: 1
+profile: 1
+action: resource/create
+active: 1
+constraint_class: modResource
