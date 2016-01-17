@@ -183,7 +183,7 @@ data:
         primary: name
     cb_defaults:
         class: cbDefault
-        primary: constraint_field
+        primary: id
 
     # ClientConfig
     cg_groups:
