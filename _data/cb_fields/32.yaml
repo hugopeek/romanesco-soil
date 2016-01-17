@@ -7,6 +7,6 @@ sortorder: 38
 icon: snippet_A
 template: "[[$fbSelectDropdown?\n    &field_layout=`[[+field_layout]]`\n    &field_name=`[[+field_name]]`\n    &field_option=`[[+field_option]]`\n    &field_default=`[[+field_default]]`\n    &field_helptext=`[[+field_helptext]]`\n    &field_required=`[[+field_required]]`\n    &rows=`[[+value]]`\n    &unique_idx=`[[+unique_idx]]`\n]]"
 properties: '{"available_languages":"html=HTML","default_language":"html","entities":"0"}'
-availability: '[{"field":"template","value":"4"}]'
+availability: '[{"field":"template","value":"9"}]'
 layouts: ''
 settings: '[{"reference":"field_name","title":"Label","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"asField"},{"reference":"field_layout","title":"Label position","fieldtype":"select","default_value":"[[*fb_form_layout]]","fieldoptions":"Inherit (from Form Layout)=[[*fb_form_layout]]\nAbove options=form-default\nLeft of options=form-horizontal","field_is_exposed":"modal"},{"reference":"field_default","title":"Default option","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"asField"},{"reference":"field_helptext","title":"Help text","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"asField"},{"reference":"field_required","title":"Required","fieldtype":"select","default_value":"0","fieldoptions":"Yes=1\nNo=0","field_is_exposed":"asField"}]'

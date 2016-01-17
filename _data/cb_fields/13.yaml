@@ -7,7 +7,7 @@ sortorder: 21
 icon: code
 icon_type: ''
 template: "<pre><code class=\"language-[[+lang]]\">\n[[+value:htmlent]]\n</code></pre>"
-properties: '{"available_languages":"html=HTML,javascript=JavaScript,css=CSS,php=PHP","default_language":"html"}'
-availability: ''
+properties: '{"available_languages":"html=HTML,javascript=JavaScript,css=CSS,php=PHP","default_language":"html","entities":"0"}'
+availability: '[{"field":"usergroup","value":"Administrator"}]'
 layouts: ''
-settings: ''
+settings: '[]'

@@ -6,7 +6,7 @@ description: ''
 sortorder: 15
 icon: quote
 icon_type: ''
-template: "<blockquote>\n  <p>[[+value]]</p>\n  [[+cite:notempty=`<footer>[[+cite]]</footer>`]]\n</blockquote>"
+template: "[[$quoteBasic?\n    &quote=`[[+value]]`\n    &cite=`[[+cite]]`\n]]"
 properties: '{}'
 availability: '[]'
 layouts: ''

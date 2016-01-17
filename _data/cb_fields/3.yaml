@@ -7,7 +7,7 @@ sortorder: 16
 icon: table
 icon_type: ''
 template: '<td>[[+cell]]</td>'
-properties: '{"row_template":"<tr>[[+row]]<\/tr>","wrapper_template":"<div class=\"table-responsive\">\n    <table class=\"table\">[[+head]][[+body]][[+foot]]<\/table>\n<\/div>"}'
+properties: '{"row_template":"<tr>[[+row]]<\/tr>","wrapper_template":"<table class=\"ui celled table\">[[+head]][[+body]][[+foot]]<\/table>"}'
 availability: '[]'
 layouts: ''
 settings: '[]'

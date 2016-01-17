@@ -1,0 +1,11 @@
+id: 194
+name: cbFieldAlignment
+description: ''
+category: a_cb_fields
+properties: 'a:0:{}'
+
+-----
+
+Left=left aligned
+Center=center aligned
+Right=right aligned

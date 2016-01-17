@@ -1,0 +1,11 @@
+id: 196
+name: cbFieldPadding
+description: ''
+category: a_cb_fields
+properties: 'a:0:{}'
+
+-----
+
+None=regular
+A little=padded
+A lot=very padded

@@ -1,0 +1,12 @@
+id: 198
+name: quoteBasic
+description: ''
+category: a_content
+properties: 'a:0:{}'
+
+-----
+
+<blockquote>
+    <p>[[+quote]]</p>
+    [[+cite:notempty=`<footer>[[+cite]]</footer>`]]
+</blockquote>

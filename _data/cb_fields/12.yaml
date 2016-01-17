@@ -7,7 +7,7 @@ sortorder: 8
 icon: orderedlist
 icon_type: ''
 template: '<li>[[+value]] [[+items]]</li>'
-properties: '{"wrapper_template":"<ol>[[+items]]<\/ol>","nested_template":"<ol class=\"sub\">[[+items]]<\/ol>"}'
-availability: ''
+properties: '{"wrapper_template":"<ol class=\"ui list\">[[+items]]<\/ol>","nested_template":"<ol>[[+items]]<\/ol>","use_tinyrte":"1"}'
+availability: '[]'
 layouts: ''
-settings: ''
+settings: '[]'

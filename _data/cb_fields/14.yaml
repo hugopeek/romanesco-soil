@@ -7,7 +7,7 @@ sortorder: 22
 icon: code
 icon_type: ''
 template: '[[+value]]'
-properties: '{"available_languages":"html=HTML","default_language":"html"}'
-availability: ''
+properties: '{"available_languages":"html=HTML","default_language":"html","entities":"0"}'
+availability: '[{"field":"usergroup","value":"Administrator"}]'
 layouts: ''
-settings: ''
+settings: '[]'

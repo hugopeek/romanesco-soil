@@ -1,0 +1,11 @@
+id: 197
+name: iconSVG
+description: ''
+category: a_content
+properties: 'a:0:{}'
+
+-----
+
+<figure class="ui faded image">
+    <img src="[[+url]]" width="[[+width]]" height="[[+height]]" alt="[[+alt:htmlent]]">
+</figure>

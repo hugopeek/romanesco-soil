@@ -1,0 +1,6 @@
+id: 1
+name: 'Fieldset (empty)'
+description: ''
+icon: template_03
+content: '[{"layout":14,"content":{"main":[]},"settings":{"legend":""},"parent":0,"title":""}]'
+availability: '[{"field":"template","value":"9"}]'

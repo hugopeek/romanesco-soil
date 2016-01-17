@@ -1,0 +1,13 @@
+id: 199
+name: videoYoutube
+description: ''
+category: a_content
+properties: 'a:0:{}'
+
+-----
+
+<div class="ui embed"
+     data-source="youtube"
+     data-id="[[+video]]"
+     [[-data-placeholder="http://img.youtube.com/vi/[[+video]]/0.jpg"]]>
+</div>

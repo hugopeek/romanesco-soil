@@ -5,7 +5,7 @@ sortorder: 17
 icon: form
 columns: '[{"reference":"main","width":"100"}]'
 template: "<div id=\"[[+legend:fbStripAsAlias]]\" class=\"ui padded segment\" [[!cbGetFieldContent:contains=`\"[[+legend:fbStripAsAlias]]\"`:then=`class=\"collapse\"`? &field=`[[++formblocks.cb_field_select_option_collapse_id]]` &returnAsJSON=`1`]]>\n    [[+legend:notempty=`<h3 class=\"ui header\">[[+legend]]</h3>`]]\n    [[+main]]\n</div>"
-availability: '[{"field":"template","value":""}]'
+availability: '[{"field":"template","value":"9"}]'
 times_per_page: 0
 layout_only_nested: '0'
 settings: '[{"reference":"legend","title":"Heading","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"asSetting"}]'
