@@ -1,0 +1,25 @@
+id: 249
+name: overviewRowArticleCompact
+description: ''
+category: m_ov_publication
+properties: 'a:0:{}'
+
+-----
+
+[[!setUserPlaceholders? &userId=`[[+tv.article_author]]`]]
+
+<a href="[[~[[+team_member_id]]]]" class="ui avatar image">
+    <img src="[[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`team_member_image` &docid=`[[+team_member_id]]` &options=`w=150&h=150&zc=1` &type=`thumb`]]">
+</a>
+
+<div class="content">
+    <a href="[[~[[+id]]]]" class="header">
+        [[+[[+title_field]]:empty=`[[+pagetitle]]`]]
+    </a>
+    <div class="description">
+        <span class="meta date">
+            <i class="icon calendar"></i>
+            [[+publishedon:strtotime:date=`%e %B %Y`]]
+        </span>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+id: 37
+type: textarea
+name: fb_email_to_dynamic
+caption: 'Dynamic recipient address'
+description: 'You can place any snippet / FastField call here that outputs a single email address. Retrieve something inside a resource by using the [[+current_id]] value. WARNING: populating this field will override the default recipient address, so test thoroughly!'
+category: 'Settings - Advanced'
+elements: ''
+rank: 1
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

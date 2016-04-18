@@ -6,7 +6,7 @@ properties: 'a:0:{}'
 
 -----
 
-<div class="ui vertical stripe segment [[*header_background:empty=`[[++header_background_default]]`]]">
+<div class="ui vertical stripe segment [[*header_background_img:notempty=`[[*alias]] background`:empty=`[[*header_background:empty=`[[++header_background_default]]`]]`]]">
     [[If?
         &subject=`[[*header_cta]]`
         &operator=`isnot`
@@ -24,3 +24,11 @@ properties: 'a:0:{}'
         </div>`
     ]]
 </div>
+
+[[If?
+    &subject=`[[getRawTVValue? &tv=`header_title`]]`
+    &operator=`EQ`
+    &operand=`@INHERIT`
+    &then=`[[[[*header_inheritance:contains=`inherit_titles`:then=`*header_title`]]]]`
+    &else=`[[*header_title]]`
+]]

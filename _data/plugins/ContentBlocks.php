@@ -27,9 +27,12 @@ $ContentBlocks = $modx->getService('contentblocks', 'ContentBlocks', $corePath .
 
 switch ($modx->event->name) {
     case 'OnDocFormPrerender':
-        if ($modx->controller && $modx->controller->resource) {
+        if ($modx->controller && isset($modx->controller->resource) && $modx->controller->resource instanceof modResource) {
             $resource = $modx->controller->resource;
             $ContentBlocks->setResource($modx->controller->resource);
+        }
+        else {
+            return;
         }
 
         // Default settings
@@ -105,6 +108,7 @@ switch ($modx->event->name) {
 
         // Grab objects for building the canvas
         $objects = $ContentBlocks->getObjectsForCanvas($resource);
+        $categories = $modx->toJSON($objects['categories']);
         $fields = $modx->toJSON($objects['fields']);
         $layouts = $modx->toJSON($objects['layouts']);
         $templates = $modx->toJSON($objects['templates']);
@@ -115,7 +119,8 @@ switch ($modx->event->name) {
 
         $modx->controller->addHtml(<<<HTML
 <script type="text/javascript">
-    var ContentBlocksFields = $fields,
+    var ContentBlocksCategories = $categories,
+        ContentBlocksFields = $fields,
         ContentBlocksLayouts = $layouts,
         ContentBlocksTemplates = $templates,
         ContentBlocksContents = $contents,
@@ -160,14 +165,14 @@ HTML
 
         // RenderContent Event
         $response = $modx->invokeEvent('ContentBlocks_RenderContent', array(
-            'vcContent' => $cbContent,
-            'vc' => $cbJson,
+            'cbContent' => $cbContent,
+            'cbJson' => $cbJson,
             'resource' => $resource
         ));
         // check if customized content was returned
         if (!empty($response) && is_array($response) && json_encode($response) !== '[""]') {
-            $cbContent = $response[0]['vcContent'];
-            $cbJson = $response[0]['vc'];
+            $cbContent = $response[0]['cbContent'];
+            $cbJson = $response[0]['cbJson'];
         }
 
         if (!empty($cbJson) && $cbContent !== false && is_array($cbContent)) {
@@ -201,6 +206,12 @@ HTML
         $resource->save();
         break;
 
+    /**
+     * @var string $path
+     */
+    case 'OnFileManagerFileRename':
+        $ContentBlocks->renames[] = $path;
+        break;
 }
 
 return;

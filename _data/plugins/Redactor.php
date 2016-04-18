@@ -37,6 +37,19 @@ switch ($modx->event->name) {
         $modx->event->output('Redactor');
         break;
 
+    case 'OnFileManagerFileRename':
+        /**
+         * @var string $path
+         */
+        $redactor = $modx->getService('redactor', 'Redactor', $corePath . 'model/redactor/');
+        if (!($redactor instanceof Redactor)) {
+            $modx->log(modX::LOG_LEVEL_ERROR, '[Redactor] Error loading Redactor service class.');
+            return;
+        }
+        $redactor->renames[] = $path;
+
+        break;
+
     case 'OnRichTextEditorInit':
         /**
          * @var string $editor
@@ -62,14 +75,14 @@ switch ($modx->event->name) {
 
         if ($modx->controller && !($modx->controller instanceof modManagerControllerDeprecated)) {
             $modx->controller->addLexiconTopic('redactor:default');
-            $modx->controller->addCss($redactor->config['assetsUrl'].'redactor-2.0.6.min.css');
+            $modx->controller->addCss($redactor->config['assetsUrl'].'redactor-2.1.1.min.css');
             if ($redactor->degradeUI) $modx->controller->addCss($redactor->config['assetsUrl'].'buttons-legacy.min.css');
             if ($redactor->rebeccaDay) $modx->controller->addCss($redactor->config['assetsUrl'].'rebecca.min.css');
             if ($customCss) $modx->controller->addCss($customCss);
         }
         else {
             $modx->lexicon->load('redactor:default');
-            $modx->regClientCSS($redactor->config['assetsUrl'].'redactor-2.0.6.min.css');
+            $modx->regClientCSS($redactor->config['assetsUrl'].'redactor-2.1.1.min.css');
             if($redactor->degradeUI) $modx->regClientCSS($redactor->config['assetsUrl'].'buttons-legacy.min.css');
             if($redactor->rebeccaDay) $modx->regClientCSS($redactor->config['assetsUrl'].'rebecca.min.css');
             if($customCss) $modx->regClientCSS($customCss);

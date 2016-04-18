@@ -1,0 +1,13 @@
+id: 238
+name: cbFieldSegmentType
+description: ''
+category: a_cb_fields
+properties: 'a:0:{}'
+
+-----
+
+No segment (disables all settings below)=
+Basic segment (borderless, but with padding)=basic
+Regular segment (with border and padding)=regular
+Raised segment (slightly more emphasised)=raised
+Vertical segment (create a vertical group)=vertical

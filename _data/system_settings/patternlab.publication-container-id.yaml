@@ -1,0 +1,4 @@
+key: patternlab.publication_container_id
+xtype: numberfield
+namespace: patternlab
+area: Pages

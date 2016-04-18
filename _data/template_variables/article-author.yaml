@@ -3,7 +3,7 @@ type: listbox
 name: article_author
 caption: Author
 description: 'Select the author of this article. He or she must be a MODX user.'
-category: About
+category: 'Article - About'
 elements: '@SELECT '''' AS username, '''' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )'
 rank: 1
 default_text: ''

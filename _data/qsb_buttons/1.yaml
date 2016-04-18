@@ -8,5 +8,5 @@ action_props: null
 handler: null
 link: 'http://www.modmore.com/extras/quickstartbuttons/documentation/'
 newwindow: 1
-iconcls: icon-modmore
+iconcls: fa-moon-o
 iconpath: ''

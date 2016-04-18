@@ -1,11 +1,11 @@
 id: 26
 name: imageBasicLink
 description: ''
-category: a_content
+category: m_content
 properties: 'a:0:{}'
 
 -----
 
-<a class="ui image" href="[[+link]]">
-    <img src="[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width]]&zc=1`]]" alt="[[+alt:htmlent]]">
+<a href="[[+link]]">
+    [[$imageBasic]]
 </a>

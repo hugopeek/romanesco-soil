@@ -1,0 +1,3 @@
+pluginid: 22
+event: OnMODXInit
+priority: -100

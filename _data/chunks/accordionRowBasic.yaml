@@ -1,0 +1,15 @@
+id: 228
+name: accordionRowBasic
+description: ''
+category: m_presentation
+properties: 'a:0:{}'
+
+-----
+
+<div class="title">
+    <i class="dropdown icon"></i>
+    [[+heading]]
+</div>
+<div class="content">
+    [[+content]]
+</div>

@@ -1,0 +1,13 @@
+id: 241
+name: cbFieldMessageSize
+description: ''
+category: a_cb_fields
+properties: 'a:0:{}'
+
+-----
+
+Small=small
+Medium=
+Large=large
+Huge=huge
+Massive=massive

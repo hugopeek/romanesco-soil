@@ -6,8 +6,10 @@ description: 'This will be displayed in the header section below the main menu. 
 category: Header
 elements: ''
 rank: 1
-default_text: ''
 properties: 'a:0:{}'
 input_properties: null
 output_properties: null
-content: ''
+
+-----
+
+@inherit

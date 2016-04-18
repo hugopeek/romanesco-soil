@@ -1,0 +1,12 @@
+id: 245
+name: cbOverviewTemplatesPublication
+description: ''
+category: a_cb_overviews
+properties: 'a:0:{}'
+
+-----
+
+Article traditional=overviewRowArticleBasic
+Article image (panoramic)=overviewRowArticleImageBasic
+Article compact=overviewRowArticleCompact
+Article quote=overviewRowArticleQuote

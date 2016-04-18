@@ -6,7 +6,7 @@ properties: 'a:0:{}'
 
 -----
 
-<div class="item [[*parent:eq=`[[UltimateParent? &id=`[[+id]]`]]`:then=`active`]][[*id:eq=`[[+id]]`:then=`active`]]">
+<div class="item">
     <a class="title">
         <i class="dropdown icon"></i>
         [[+menutitle]]

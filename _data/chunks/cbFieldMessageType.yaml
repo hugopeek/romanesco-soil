@@ -1,0 +1,13 @@
+id: 240
+name: cbFieldMessageType
+description: ''
+category: a_cb_fields
+properties: 'a:0:{}'
+
+-----
+
+Regular=
+Positive=positive
+Negative=negative
+Informative=info
+Warning=warning

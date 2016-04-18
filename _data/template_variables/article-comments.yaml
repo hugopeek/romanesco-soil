@@ -3,7 +3,7 @@ type: option
 name: article_comments
 caption: Comments
 description: 'Enable or disable comments for this article.'
-category: Comments
+category: 'Article - Comments'
 elements: Active==1||Disabled==0
 rank: 1
 default_text: ''

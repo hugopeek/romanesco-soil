@@ -114,6 +114,11 @@ data:
                 - 'patternlab.assets_path'
                 - 'patternlab.assets_url'
                 - 'patternlab.core_path'
+                - 'gitpackagemanagement.assets_path'
+                - 'gitpackagemanagement.assets_url'
+                - 'gitpackagemanagement.core_path'
+                - 'gitpackagemanagement.packages_base_url'
+                - 'gitpackagemanagement.packages_dir'
 
     # User config
     access_context:
@@ -180,6 +185,9 @@ data:
         primary: name
     cb_templates:
         class: cbTemplate
+        primary: name
+    cb_categories:
+        class: cbCategory
         primary: name
     cb_defaults:
         class: cbDefault
@@ -273,14 +281,14 @@ packages:
     modx.com:
         service_url: http://rest.modx.com/extras/
         packages:
-            - Ace
-            - Collections
-            - FormIt
+            - ace-1.6.5
+            - collections-3.4.2
+            - formit-2.2.10
             - getCache
             - getPage
             - getResources
             - GoogleSiteMap
-            #- Hits
+            - Hits
             - If
             - ImagePlus
             - MIGX
@@ -289,7 +297,7 @@ packages:
             - renderResources
             - Rowboat
             - SEOPro
-            #- SetInputOptions
+            - SetInputOptions
             - SimpleSearch
             - Tagger
             - UltimateParent
@@ -297,7 +305,7 @@ packages:
 
     modmore.com:
         service_url: https://rest.modmore.com/
-        username: hugopeek_patternlab
+        username: hugopeek_rmnsc_base
         api_key: modmore.com.key
         packages:
             - Blockdown

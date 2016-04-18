@@ -1,0 +1,11 @@
+id: 225
+name: overviewRowArticle
+description: ''
+category: m_overviews
+properties: 'a:0:{}'
+
+-----
+
+<article class="[[+column_type]] publication">
+    [[!$[[+row_tpl]]]]
+</article>

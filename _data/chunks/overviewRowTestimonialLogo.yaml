@@ -6,7 +6,7 @@ properties: 'a:0:{}'
 
 -----
 
-<a class="ui faded image" href="[[~[[+id]]]]" title="[[+link_text]]">
+<a class="ui faded image" href="[[~[[+id]]]]" title="[[%patternlab.testimonials.logo_title]]">
     [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
         &tvname=`testimonial_company_image`
         &docid=`[[+id]]`

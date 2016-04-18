@@ -1,0 +1,10 @@
+id: 242
+name: cbTwitterTemplates
+description: ''
+category: a_cb_fields
+properties: 'a:0:{}'
+
+-----
+
+Basic tweet=twitterFeedRowBasic
+Compact tweet=twitterFeedRowCompact

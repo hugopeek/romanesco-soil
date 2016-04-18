@@ -1,0 +1,12 @@
+id: 220
+name: tagItemCount
+description: ''
+category: a_taxonomy
+properties: 'a:0:{}'
+
+-----
+
+<div class="ui [[+active:eq=`1`:then=`active`]] label">
+    [[+tag]]
+    <span class="detail">[[+cnt]]</span>
+</div>

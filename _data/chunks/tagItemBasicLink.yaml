@@ -1,0 +1,9 @@
+id: 219
+name: tagItemBasicLink
+description: ''
+category: a_taxonomy
+properties: 'a:0:{}'
+
+-----
+
+<a class="ui label" href="[[+uri]]">[[+tag]]</a>

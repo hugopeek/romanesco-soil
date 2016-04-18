@@ -1,0 +1,12 @@
+id: 221
+name: tagItemCountLink
+description: ''
+category: a_taxonomy
+properties: 'a:0:{}'
+
+-----
+
+<a class="ui [[+active:eq=`1`:then=`active`]] label" href="[[+uri]]">
+    [[+tag]]
+    <span class="detail">[[+cnt]]</span>
+</a>

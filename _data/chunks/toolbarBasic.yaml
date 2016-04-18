@@ -7,11 +7,11 @@ properties: 'a:0:{}'
 -----
 
 <div id="toolbar" class="ui vertical secondary segment">
-    <div class="ui stackable grid container">
-        <div class="twelve wide middle aligned column">
+    <div class="ui stackable relaxed grid container">
+        <div class="ten wide tablet ten wide computer twelve wide large screen middle aligned column">
             [[$breadcrumbs]]
         </div>
-        <div class="four wide column">
+        <div class="six wide tablet six wide computer four wide large screen column">
             [[SimpleSearchForm?
                 &tpl=`searchField`
                 &landing=`[[++patternlab.search_result_id]]`

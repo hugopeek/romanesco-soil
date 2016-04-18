@@ -79,6 +79,11 @@ else {
         $ContentBlocks = $modx->getService('contentblocks','ContentBlocks', $cbCorePath.'model/contentblocks/');
         $ContentBlocks->loadInputs();
         $field = $modx->getObject('cbField', $fld);
+
+        if(!($field instanceof cbField)) {
+            $modx->log(LOG_LEVEL_ERROR, '[cbGetFieldContent] Error loading field ' . $fld);
+            return;
+        }
         
         if($tpl) {
             $field->set('template', $modx->getChunk($tpl));

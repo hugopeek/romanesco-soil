@@ -6,11 +6,11 @@ properties: 'a:0:{}'
 
 -----
 
-1=one
-2=two
-3=three
-4=four
-5=five
-6=six
-7=seven
-8=eight
+1 column=one
+2 columns=two
+3 columns=three
+4 columns=four
+5 columns=five
+6 columns=six
+7 columns=seven
+8 columns=eight

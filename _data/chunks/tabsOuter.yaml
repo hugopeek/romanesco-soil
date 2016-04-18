@@ -1,0 +1,13 @@
+id: 236
+name: tabsOuter
+description: ''
+category: o_presentation
+properties: 'a:0:{}'
+
+-----
+
+<div class="ui top attached tabular menu">
+    [[+rows:tabsGenerateNav]]
+    [[-$layoutStyleSwitcher]]
+</div>
+[[+rows]]

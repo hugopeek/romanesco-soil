@@ -1,0 +1,11 @@
+id: 231
+name: articleAuthorBio
+description: ''
+category: m_publication
+properties: 'a:0:{}'
+
+-----
+
+<h2>Over de auteur, <a href="[[~[[+id]]]]">[[+pagetitle]]</a></h2>
+[[+introtext]]
+[[$socialConnectButtonsTeam? &button_type=`basic`]]

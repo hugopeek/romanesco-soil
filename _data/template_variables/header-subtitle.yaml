@@ -2,12 +2,14 @@ id: 25
 type: textarea
 name: header_subtitle
 caption: Subtitle
-description: 'This will be displayed under the main title. Also inherited and overwritable on child pages.'
+description: 'This will be displayed under the main title. Will also be inherited on child pages by default.'
 category: Header
 elements: ''
 rank: 2
-default_text: ''
 properties: 'a:0:{}'
 input_properties: null
 output_properties: null
-content: ''
+
+-----
+
+@inherit

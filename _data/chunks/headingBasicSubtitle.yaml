@@ -1,12 +1,12 @@
 id: 18
 name: headingBasicSubtitle
 description: ''
-category: a_content
+category: m_content
 properties: 'a:0:{}'
 
 -----
 
 <[[+level]] class="ui header">
-    [[+unique_idx:eq=`1`:then=`[[*pagetitle]]`:else=`[[+value]]`]]
+    [[+value]]
     <div class="sub header">[[+subtitle]]</div>
 </[[+level]]>

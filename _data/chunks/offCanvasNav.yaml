@@ -20,6 +20,7 @@ properties: 'a:0:{}'
         &tplOuter=`navWrapper`
         &tpl=`navItemWrapper`
         &tplParentRow=`navItemParent`
+        &tplParentRowActive=`navItemParentActive`
         &tplInnerRow=`navItem`
     ]]
     [[$offCanvasNavItemsTheme]]

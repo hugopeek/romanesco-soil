@@ -1,0 +1,15 @@
+id: 229
+name: tabsRowBasic
+description: ''
+category: m_presentation
+properties: 'a:0:{}'
+
+-----
+
+<div class="ui bottom attached [[+padding]] [[+idx:eq=`1`:then=`active`]] tab segment"
+     data-tab="segment-[[+unique_idx]]-[[+idx]]"
+     data-heading="[[+heading]]"
+     role="tabpanel"
+     aria-hidden="false">
+    [[+content]]
+</div>
