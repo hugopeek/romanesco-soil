@@ -4,10 +4,11 @@ input: richtext
 name: 'Rich Text'
 description: ''
 sortorder: 4
+category: 1
 icon: richtext
 icon_type: ''
 template: "[[$richTextSegment?\n    &content=`[[+value]]`\n    &segment_type=`[[+segment_type]]`\n\t&padding=`[[+padding]]`\n    &alignment=`[[+alignment]]`\n]]"
 properties: '{}'
 availability: '[]'
 layouts: ''
-settings: '[{"reference":"segment_type","title":"Segment type","fieldtype":"select","default_value":"","fieldoptions":"[[$cbSettingSegmentType]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"padding","title":"Extra padding","fieldtype":"select","default_value":"regular","fieldoptions":"[[$cbFieldPadding]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"alignment","title":"Content alignment","fieldtype":"select","default_value":"","fieldoptions":"\n[[$cbFieldAlignment]]","field_is_exposed":"modal","process_tags":"1"}]'
+settings: '[{"reference":"segment_type","title":"Segment type","fieldtype":"select","default_value":"","fieldoptions":"[[$cbFieldSegmentType]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"padding","title":"Extra padding","fieldtype":"select","default_value":"regular","fieldoptions":"[[$cbFieldPadding]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"alignment","title":"Content alignment","fieldtype":"select","default_value":"","fieldoptions":"\n[[$cbFieldAlignment]]","field_is_exposed":"modal","process_tags":"1"}]'

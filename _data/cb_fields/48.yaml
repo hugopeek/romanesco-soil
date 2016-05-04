@@ -3,7 +3,8 @@ parent_properties: ''
 input: chunk_selector
 name: 'Social Buttons'
 description: ''
-sortorder: 42
+sortorder: 26
+category: 3
 icon: chunk_B
 template: '[[+value]]'
 properties: '{"available_chunks":"socialConnectButtons,socialShareButtons","available_categories":""}'

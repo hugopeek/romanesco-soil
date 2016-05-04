@@ -4,6 +4,7 @@ input: headingimageinput
 name: 'Heading (with SVG icon)'
 description: ''
 sortorder: 3
+category: 1
 icon: heading
 template: "[[$cbHeaderIconSVG?\n    &level=`[[+level]]`\n    &value=`[[+value]]`\n    &url=`[[+url]]`\n    &alt=`[[+alt]]`\n    &icon_position=`[[+icon_position]]`\n    &subtitle=`[[+subtitle]]`\n]]"
 properties: '{"default_level":"h2","available_levels":"h1=heading_1,h2=heading_2,h3=heading_3,h4=heading_4,h5=heading_5","use_tinyrte":"1","source":"5","directory":"\/","file_types":"png,gif,jpg,jpeg,svg"}'

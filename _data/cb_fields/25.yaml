@@ -4,6 +4,7 @@ input: heading
 name: 'Heading (with Subtitle)'
 description: ''
 sortorder: 1
+category: 1
 icon: heading
 icon_type: ''
 template: "[[$headingBasicSubtitle?\n    &value=`[[+value]]`\n    &level=`[[+level]]`\n    &subtitle=`[[+subtitle]]`\n    &unique_idx=`[[+unique_idx]]`\n]]"

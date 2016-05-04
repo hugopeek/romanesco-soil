@@ -3,7 +3,8 @@ parent_properties: ''
 input: video
 name: 'Video (YouTube)'
 description: ''
-sortorder: 14
+sortorder: 15
+category: 2
 icon: video
 icon_type: ''
 template: "[[$videoYoutube?\n    &video=`[[+value]]`\n]]"

@@ -3,7 +3,8 @@ parent_properties: ''
 input: hr
 name: 'Divider (Heading)'
 description: ''
-sortorder: 10
+sortorder: 11
+category: 4
 icon: horizontalrule
 icon_type: ''
 template: "[[$dividerHeading?\n    &divider_text=`[[+divider_text]]`\n    &divider_section=`[[+divider_section]]`\n    &divider_icon_class=`[[+divider_icon_class]]`\n    &divider_icon_circular=`[[+divider_icon_circular]]`\n]]"

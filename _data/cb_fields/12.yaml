@@ -3,7 +3,8 @@ parent_properties: ''
 input: ordered_list
 name: 'List (Ordered)'
 description: ''
-sortorder: 8
+sortorder: 9
+category: 1
 icon: orderedlist
 icon_type: ''
 template: '<li>[[+value]] [[+items]]</li>'

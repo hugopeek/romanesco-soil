@@ -1,0 +1,13 @@
+id: 80
+parent_properties: null
+input: chunk
+name: 'Twitter Feed'
+description: ''
+sortorder: 27
+category: 3
+icon: chunk_B
+template: '[[+tag]]'
+properties: '{"chunk":"237","custom_preview":"<p><\/p>"}'
+availability: '[]'
+layouts: ''
+settings: '[{"reference":"template","title":"Tweet template","fieldtype":"select","default_value":"twitterFeedRowBasic","fieldoptions":"[[$cbTwitterTemplates]]","field_is_exposed":"asField","process_tags":"1"},{"reference":"cols","title":"Tweets per row","fieldtype":"select","default_value":"three","fieldoptions":"[[$cbSettingColumns]]","field_is_exposed":"asField","process_tags":"1"},{"reference":"limit","title":"Number of tweets","fieldtype":"textfield","default_value":"3","fieldoptions":"","field_is_exposed":"asField"},{"reference":"timeline_type","title":"Timeline type","fieldtype":"select","default_value":"user_timeline","fieldoptions":"[[$cbTwitterTimelineType]]","field_is_exposed":"asField","process_tags":"1"},{"reference":"username","title":"Username","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"modal"},{"reference":"retweets","title":"Show retweets","fieldtype":"radio","default_value":"1","fieldoptions":"Yes=1\nNo=0","field_is_exposed":"modal"}]'

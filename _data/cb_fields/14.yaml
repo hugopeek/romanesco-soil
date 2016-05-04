@@ -3,7 +3,8 @@ parent_properties: ''
 input: code
 name: 'HTML Code'
 description: ''
-sortorder: 22
+sortorder: 29
+category: 6
 icon: code
 icon_type: ''
 template: '[[+value]]'

@@ -4,21 +4,21 @@ alias: atoms
 published: 1
 parent: 12
 introtext: ''
-content: ''
 template: 1
 createdby: 1
 createdon: 1452701480
-publishedon: 1452904357
+publishedon: 1452904320
 publishedby: 1
 context_key: hub
 uri: pattern-library/atoms/
-properties: null
+properties: '{"contentblocks":{"content":"[{\"layout\":1,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":{}}]},\"settings\":[],\"parent\":0,\"title\":\"\"}]","linear":[{"value":"","field":6,"settings":[]}],"fieldcounts":{"6":1},"_isContentBlocks":true}}'
 tvs:
-    header_background: '@inherit'
+    header_background: '@INHERIT'
     header_background_img: ''
-    header_cta: ''
-    header_subtitle: '@inherit'
-    header_title: '@inherit'
+    header_cta: '@INHERIT'
+    header_inheritance: '@INHERIT inherit_titles||inherit_background'
+    header_subtitle: '@INHERIT'
+    header_title: '@INHERIT'
     overview_icon_font: ''
     overview_icon_svg: ''
     overview_img_landscape: ''
@@ -28,3 +28,18 @@ tvs:
     overview_img_square: ''
     overview_img_wide: ''
     overview_link_text: ''
+
+-----
+
+[[$cbLayoutSingleColumn?
+    &main=`[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]`
+	&background=`white`
+    &container_type=``
+    &padding=`[[+padding]]`
+    &alignment=``
+]]

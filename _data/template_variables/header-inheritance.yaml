@@ -1,0 +1,15 @@
+id: 39
+type: checkbox
+name: header_inheritance
+caption: Inheritance
+description: 'This setting controls whether values are inherited or not on all child pages of this resource.'
+category: Header
+elements: 'Inherit titles==inherit_titles||Inherit background==inherit_background||Inherit CTA==inherit_cta'
+rank: 99
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+
+-----
+
+@INHERIT inherit_titles||inherit_background

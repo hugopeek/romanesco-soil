@@ -1,0 +1,12 @@
+id: 77
+parent: 76
+parent_properties: '{"key":"heading","width":"100"}'
+name: Heading
+description: ''
+sortorder: 1
+icon: paragraph
+template: '[[+value]]'
+properties: '[]'
+availability: ''
+layouts: null
+settings: '[]'

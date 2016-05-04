@@ -1,0 +1,13 @@
+id: 73
+parent_properties: null
+input: repeater
+name: 'Tabs (Rich Text)'
+description: ''
+sortorder: 21
+category: 4
+icon: tabs
+template: "[[$tabsRowBasic?\n    &heading=`[[+heading]]`\n    &content=`[[+content]]`\n    &padding=`[[+padding]]`\n    &idx=`[[+idx]]`\n]]"
+properties: '{"wrapper_template":"[[$tabsOuter?\n    &rows=`[[+rows]]`\n    &total=`[[+total]]`\n    &padding=`[[+padding]]`\n    &unique_idx=`[[+unique_idx]]`\n]]","row_separator":"","max_items":"0","min_items":"0"}'
+availability: '[]'
+layouts: ''
+settings: '[{"reference":"padding","title":"Extra padding","fieldtype":"select","default_value":"padded","fieldoptions":"[[$cbFieldPadding]]","field_is_exposed":"modal","process_tags":"1"}]'

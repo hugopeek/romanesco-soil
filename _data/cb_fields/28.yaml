@@ -3,7 +3,8 @@ parent_properties: ''
 input: repeater
 name: 'Select Options'
 description: ''
-sortorder: 35
+sortorder: 39
+category: 7
 icon: checkbox
 template: "[[$fbSelectOptionRow?\n    &field_type=`[[+field_type]]`\n    &field_name=`[[+field_name]]`\n    &option_layout=`[[+option_layout]]`\n    &field_option=`[[+field_option]]`\n    &field_helptext=`[[+field_helptext]]`\n    &idx=`[[+idx]]`\n    &unique_idx=`[[+unique_idx]]`\n]]"
 properties: '{"wrapper_template":"[[$fbSelectOption?\n    &field_layout=`[[+field_layout]]`\n    &field_type=`[[+field_type]]`\n    &field_name=`[[+field_name]]`\n    &option_layout=`[[+option_layout]]`\n    &option_other=`[[+option_other]]`\n    &option_other_value=`[[+option_other_value]]`\n    &field_helptext=`[[+field_helptext]]`\n    &field_required=`[[+field_required]]`\n    &rows=`[[+rows]]`\n    &unique_idx=`[[+unique_idx]]`\n]]","row_separator":"","max_items":"0","min_items":"0"}'

@@ -3,7 +3,8 @@ parent_properties: ''
 input: repeater
 name: 'Select Dropdown'
 description: ''
-sortorder: 37
+sortorder: 41
+category: 7
 icon: checkbox
 template: "[[$fbSelectDropdownRow?\n    &field_name=`[[+field_name]]`\n    &field_option=`[[+field_option]]`\n    &unique_idx=`[[+unique_idx]]`\n]]"
 properties: '{"wrapper_template":"[[$fbSelectDropdown?\n    &field_layout=`[[+field_layout]]`\n    &field_name=`[[+field_name]]`\n    &field_default=`[[+field_default]]`\n    &field_helptext=`[[+field_helptext]]`\n    &field_required=`[[+field_required]]`\n    &rows=`[[+rows]]`\n    &unique_idx=`[[+unique_idx]]`\n]]","row_separator":"","max_items":"0","min_items":"0"}'

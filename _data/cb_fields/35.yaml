@@ -3,7 +3,8 @@ parent_properties: ''
 input: chunk
 name: 'Accept Terms and Conditions'
 description: ''
-sortorder: 41
+sortorder: 45
+category: 7
 icon: checkbox
 template: '[[+tag]]'
 properties: '{"chunk":"190","custom_preview":"<p><em>You can link to your terms by entering the corresponding resource ID and using the [[+link]] placeholder in the field text.<\/em><\/p>"}'

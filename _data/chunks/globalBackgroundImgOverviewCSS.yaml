@@ -1,0 +1,12 @@
+id: 252
+name: globalBackgroundImgOverviewCSS
+description: ''
+category: a_global
+properties: 'a:0:{}'
+
+-----
+
+.background.[[+alias]]:before {
+    background-image: url("[[ImagePlus? &value=`[[+tv.overview_img_pano:empty=`[[+tv.overview_img_wide]]`]]` &type=`thumb`]]") !important;
+    opacity: 1;
+}

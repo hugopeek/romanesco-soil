@@ -3,7 +3,8 @@ parent_properties: ''
 input: chunk
 name: 'Input (Textfield)'
 description: ''
-sortorder: 32
+sortorder: 36
+category: 7
 icon: paragraph
 template: '[[+tag]]'
 properties: '{"chunk":"182","custom_preview":"<p><em>You can select a different input type or add an optional placeholder in the Settings menu.<\/em><\/p>"}'

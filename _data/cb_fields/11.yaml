@@ -3,7 +3,8 @@ parent_properties: ''
 input: list
 name: 'List (Unordered)'
 description: ''
-sortorder: 7
+sortorder: 8
+category: 1
 icon: unorderedlist
 icon_type: ''
 template: '<li>[[+value]] [[+items]]</li>'

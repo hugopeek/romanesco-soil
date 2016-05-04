@@ -3,7 +3,8 @@ parent_properties: ''
 input: table
 name: Table
 description: ''
-sortorder: 16
+sortorder: 17
+category: 4
 icon: table
 icon_type: ''
 template: '<td>[[+cell]]</td>'

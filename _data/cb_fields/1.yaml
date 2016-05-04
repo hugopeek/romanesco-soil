@@ -3,6 +3,7 @@ parent_properties: ''
 input: heading
 name: Heading
 description: ''
+category: 1
 icon: heading
 icon_type: ''
 template: "[[$headingBasic?\n    &value=`[[+value]]`\n    &level=`[[+level]]`\n    &unique_idx=`[[+unique_idx]]`\n]]"

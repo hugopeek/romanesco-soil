@@ -3,7 +3,8 @@ parent_properties: ''
 input: image
 name: Image
 description: ''
-sortorder: 11
+sortorder: 12
+category: 2
 icon: image
 icon_type: ''
 template: "[[$imageBasic?\n    &url=`[[+url]]`\n    &size=`[[+size]]`\n    &width=`[[+width]]`\n    &height=`[[+height]]`\n    &extension=`[[+extension]]`\n    &alt=`[[+alt]]`\n]]"

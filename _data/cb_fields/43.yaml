@@ -4,6 +4,7 @@ input: heading
 name: 'Heading (with Font Icon)'
 description: ''
 sortorder: 2
+category: 1
 icon: heading
 template: "[[$cbHeaderIconFont?\n    &level=`[[+level]]`\n    &value=`[[+value]]`\n    &icon_class=`[[+icon_class]]`\n    &icon_position=`[[+icon_position]]`\n    &icon_circular=`[[+icon_circular]]`\n    &subtitle=`[[+subtitle]]`\n]]"
 properties: '{"default_level":"h2","available_levels":"h1=heading_1,h2=heading_2,h3=heading_3,h4=heading_4,h5=heading_5","use_tinyrte":"1"}'

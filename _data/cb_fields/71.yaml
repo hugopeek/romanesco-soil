@@ -3,7 +3,8 @@ parent_properties: ''
 input: image
 name: 'Image (with Link)'
 description: ''
-sortorder: 12
+sortorder: 13
+category: 2
 icon: image
 icon_type: ''
 template: "[[$imageBasicLink?\n    &url=`[[+url]]`\n    &size=`[[+size]]`\n    &width=`[[+width]]`\n    &height=`[[+height]]`\n    &extension=`[[+extension]]`\n    &alt=`[[+alt]]`\n    &link=`[[+link]]`\n]]"

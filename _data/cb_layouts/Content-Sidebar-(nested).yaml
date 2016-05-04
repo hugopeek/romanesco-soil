@@ -5,8 +5,8 @@ sortorder: 9
 icon: layout_2-1
 icon_type: ''
 columns: '[{"reference":"main","width":"65"},{"reference":"sidebar","width":"35"}]'
-template: "[[$cbLayoutContentSidebarNested?\n    &main=`[[+main]]`\n    &sidebar=`[[+sidebar]]`\n\t&padding=`[[+padding]]`\n    &alignment=`[[+alignment]]`\n]]"
+template: "[[$cbLayoutContentSidebarNested?\n    &main=`[[+main]]`\n    &sidebar=`[[+sidebar]]`\n    &sidebar_width=`[[+sidebar_width]]`\n\t&padding=`[[+padding]]`\n    &alignment=`[[+alignment]]`\n]]"
 availability: '[]'
 times_per_page: 0
 layout_only_nested: '1'
-settings: '[{"reference":"padding","title":"Extra padding","fieldtype":"select","default_value":"relaxed","fieldoptions":"[[$cbSettingPadding]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"alignment","title":"Content alignment","fieldtype":"select","default_value":"","fieldoptions":"[[$cbLayoutAlignment]]","field_is_exposed":"modal","process_tags":"1"}]'
+settings: '[{"reference":"sidebar_width","title":"Sidebar width","fieldtype":"select","default_value":"six","fieldoptions":"[[$cbSettingColumns]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"padding","title":"Extra padding","fieldtype":"select","default_value":"relaxed","fieldoptions":"[[$cbSettingPadding]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"alignment","title":"Content alignment","fieldtype":"select","default_value":"","fieldoptions":"[[$cbLayoutAlignment]]","field_is_exposed":"modal","process_tags":"1"}]'

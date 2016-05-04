@@ -3,7 +3,8 @@ parent_properties: ''
 input: image
 name: 'Icon (SVG)'
 description: ''
-sortorder: 13
+sortorder: 14
+category: 2
 icon: image
 icon_type: ''
 template: "[[$iconSVG?\n    &url=`[[+url]]`\n    &size=`[[+size]]`\n    &width=`[[+width]]`\n    &height=`[[+height]]`\n    &extension=`[[+extension]]`\n    &alt=`[[+alt]]`\n]]"

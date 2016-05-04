@@ -8,7 +8,7 @@
  * http://opensource.org/licenses/MIT
  *
  */
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
+@import url('https://fonts.googleapis.com/css?family=Source Sans Pro:400,700,400italic,700italic&subset=latin');
 /*!
  * # Semantic UI 2.1.8 - Reset
  * http://github.com/semantic-org/semantic-ui/
@@ -51,449 +51,8 @@ input[type="password"] {
          Theme Overrides
 *******************************/
 
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/**
- * Remove default margin.
- */
-
-body {
-  margin: 0;
-}
-
-/* HTML5 display definitions
-   ========================================================================== */
-
-/**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
- */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-
-/**
- * 1. Correct `inline-block` display not defined in IE 8/9.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
- */
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
- */
-
-[hidden],
-template {
-  display: none;
-}
-
-/* Links
-   ========================================================================== */
-
-/**
- * Remove the gray background color from active links in IE 10.
- */
-
-a {
-  background: transparent;
-}
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-
-a:active,
-a:hover {
-  outline: 0;
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
- */
-
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
-
-b,
-strong {
-  font-weight: bold;
-}
-
-/**
- * Address styling not present in Safari and Chrome.
- */
-
-dfn {
-  font-style: italic;
-}
-
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari, and Chrome.
- */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/**
- * Address styling not present in IE 8/9.
- */
-
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-/* Embedded content
-   ========================================================================== */
-
-/**
- * Remove border when inside `a` element in IE 8/9/10.
- */
-
-img {
-  border: 0;
-}
-
-/**
- * Correct overflow not hidden in IE 9/10/11.
- */
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* Grouping content
-   ========================================================================== */
-
-/**
- * Address margin not present in IE 8/9 and Safari.
- */
-
 figure {
-  margin: 1em 40px;
-}
-
-/**
- * Address differences between Firefox and other browsers.
- */
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-}
-
-/**
- * Contain overflow in all browsers.
- */
-
-pre {
-  overflow: auto;
-}
-
-/**
- * Address odd `em`-unit font size rendering in all browsers.
- */
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-/* Forms
-   ========================================================================== */
-
-/**
- * Known limitation: by default, Chrome and Safari on OS X allow very limited
- * styling of `select`, unless a `border` property is set.
- */
-
-/**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  /* 1 */
-  font: inherit;
-  /* 2 */
   margin: 0;
-  /* 3 */
-}
-
-/**
- * Address `overflow` set to `hidden` in IE 8/9/10/11.
- */
-
-button {
-  overflow: visible;
-}
-
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
- * Correct `select` style inheritance in Firefox.
- */
-
-button,
-select {
-  text-transform: none;
-}
-
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */
-}
-
-/**
- * Re-set default cursor for disabled elements.
- */
-
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-
-input {
-  line-height: normal;
-}
-
-/**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
- */
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
- *    (include `-moz` to future-proof).
- */
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  /* 2 */
-  box-sizing: content-box;
-}
-
-/**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
- */
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * Define consistent border, margin, and padding.
- */
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/**
- * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Remove default vertical scrollbar in IE 8/9/10/11.
- */
-
-textarea {
-  overflow: auto;
-}
-
-/**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
- */
-
-optgroup {
-  font-weight: bold;
-}
-
-/* Tables
-   ========================================================================== */
-
-/**
- * Remove most spacing between table cells.
- */
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
 }
 
 /*******************************
@@ -529,8 +88,8 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   background: #FFFFFF;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
   line-height: 1.4285em;
   color: rgba(0, 0, 0, 0.87);
   font-smoothing: antialiased;
@@ -545,32 +104,32 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  line-height: 1.2857em;
-  margin: calc(2rem -  0.14285em ) 0em 1rem;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  line-height: 1.1em;
+  margin: calc(2rem -  0.05em ) 0em 1.2rem;
   font-weight: bold;
   padding: 0em;
 }
 
 h1 {
   min-height: 1rem;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 h2 {
-  font-size: 1.714rem;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 1.28rem;
+  font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 1.071rem;
+  font-size: 1.3rem;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h1:first-child,
@@ -594,7 +153,7 @@ h5:last-child {
 *******************************/
 
 p {
-  margin: 0em 0em 1em;
+  margin: 0em 0em 1.2em;
   line-height: 1.4285em;
 }
 
@@ -611,12 +170,12 @@ p:last-child {
 --------------------*/
 
 a {
-  color: #4183C4;
+  color: #8db208;
   text-decoration: none;
 }
 
 a:hover {
-  color: #1e70bf;
+  color: #7c9e00;
   text-decoration: none;
 }
 
@@ -666,6 +225,351 @@ input::selection {
 *******************************/
 
 /*******************************
+         Site Settings
+*******************************/
+
+/*-------------------
+       Fonts
+--------------------*/
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+/* This is the single variable that controls them all */
+
+/* The size of page text  */
+
+/*-------------------
+    Border Radius
+--------------------*/
+
+/* See Power-user section below
+   for explanation of @px variables
+*/
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
+/*--------------
+  Page Heading
+---------------*/
+
+/*--------------
+   Form Input
+---------------*/
+
+/* This adjusts the default form input across all elements */
+
+/* Line Height Default For Inputs in Browser */
+
+/*-------------------
+    Focused Input
+--------------------*/
+
+/* Used on inputs, textarea etc */
+
+/* Used on dropdowns, other larger blocks */
+
+/*-------------------
+        Page
+--------------------*/
+
+/*-------------------
+      Paragraph
+--------------------*/
+
+/*-------------------
+       Links
+--------------------*/
+
+/*-------------------
+  Highlighted Text
+--------------------*/
+
+/*-------------------
+        Grid
+--------------------*/
+
+/*-------------------
+     Transitions
+--------------------*/
+
+/*-------------------
+     Breakpoints
+--------------------*/
+
+/*-------------------
+      Site Colors
+--------------------*/
+
+/*---  Colors  ---*/
+
+/*---  Light Colors  ---*/
+
+/*---   Neutrals  ---*/
+
+/*--- Colored Backgrounds ---*/
+
+/*--- Colored Headers ---*/
+
+/*--- Colored Text ---*/
+
+/*-------------------
+     Alpha Colors
+--------------------*/
+
+/*-------------------
+       Accents
+--------------------*/
+
+/* Differentiating Neutrals */
+
+/* Differentiating Layers */
+
+/*******************************
+           Power-User
+*******************************/
+
+/*-------------------
+    Emotive Colors
+--------------------*/
+
+/* Positive */
+
+/* Negative */
+
+/* Info */
+
+/* Warning */
+
+/*-------------------
+        Paths
+--------------------*/
+
+/* For source only. Modified in gulp for dist */
+
+/*-------------------
+       Icons
+--------------------*/
+
+/* Maximum Glyph Width of Icon */
+
+/*-------------------
+     Neutral Text
+--------------------*/
+
+/*-------------------
+     Brand Colors
+--------------------*/
+
+/*-------------------
+      Borders
+--------------------*/
+
+/*-------------------
+    Derived Values
+--------------------*/
+
+/* Header Spacing */
+
+/* Minimum Mobile Width */
+
+/* Positive / Negative Dupes */
+
+/*******************************
+            Container
+*******************************/
+
+html {
+  font-size: 80%;
+  font-family: "mobile";
+}
+
+body:after {
+  content: "mobile";
+  display: none;
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 87.5%;
+    font-family: "mobile";
+  }
+
+  body:after {
+    content: "mobile";
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 90%;
+    font-family: "tablet";
+  }
+
+  body:after {
+    content: "tablet";
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 85%;
+    font-family: "computer";
+  }
+
+  body:after {
+    content: "computer";
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: 90%;
+    font-family: "large";
+  }
+
+  body:after {
+    content: "large";
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 95%;
+    font-family: "widescreen";
+  }
+
+  body:after {
+    content: "widescreen";
+  }
+}
+
+#content > .introduction,
+#sidebar {
+  margin-top: 4rem !important;
+}
+
+#content > .introduction + .ui.stripe.segment.white {
+  padding-top: 2em;
+}
+
+.quote {
+  position: relative;
+  padding: 0 3% 0 5%;
+  font-style: italic;
+}
+
+.quote:before,
+.quote:after {
+  position: absolute;
+  z-index: 0;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 0;
+  opacity: 0.2;
+}
+
+.quote:before {
+  content: "\201C";
+  top: 1rem;
+  left: -1%;
+}
+
+.quote:after {
+  content: "\201D";
+  bottom: -0.5rem;
+  right: -1%;
+}
+
+.lead {
+  font-size: 1.6rem;
+  line-height: 1.5785em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.meta,
+.help {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.inverted .meta,
+.inverted .help {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.publication .meta > span {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.overview .description + p {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .masthead .slider-wrapper {
+    border-bottom: 80px solid #F3F4F5 !important;
+  }
+}
+
+.slider .slick-slide:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .slider .slick-dots {
+    bottom: 3px;
+  }
+
+  .slider .slick-arrow {
+    margin-top: -5.2rem;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+  }
+
+  .slider .slick-arrow:before {
+    font-size: 30px;
+    opacity: .5;
+  }
+
+  .slider .slick-prev {
+    left: 1rem;
+  }
+
+  .slider .slick-next {
+    right: 1rem;
+  }
+
+  .masthead .slider {
+    margin-bottom: -7em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .slider .slick-dots {
+    bottom: -4em;
+  }
+
+  .slider .slick-dots button:before {
+    color: #fff !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider .slick-slide {
+    text-align: center;
+  }
+
+  .slider .slick-slide p {
+    display: none;
+  }
+}
+
+/*******************************
          Site Overrides
 *******************************/
 /*!
@@ -692,9 +596,9 @@ input::selection {
   vertical-align: baseline;
   background: #E0E1E2 none;
   color: rgba(0, 0, 0, 0.6);
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin: 0em 0.25em 0em 0em;
-  padding: 0.78571429em 1.5em 0.78571429em;
+  padding: 0.78571429em 1.5em 0.88571429em;
   text-transform: none;
   text-shadow: none;
   font-weight: bold;
@@ -1377,17 +1281,17 @@ input::selection {
 
 .ui.compact.buttons .button,
 .ui.compact.button {
-  padding: 0.58928571em 1.125em 0.58928571em;
+  padding: 0.58928571em 1.125em 0.68928571em;
 }
 
 .ui.compact.icon.buttons .button,
 .ui.compact.icon.button {
-  padding: 0.58928571em 0.58928571em 0.58928571em;
+  padding: 0.58928571em 0.58928571em 0.68928571em;
 }
 
 .ui.compact.labeled.icon.buttons .button,
 .ui.compact.labeled.icon.button {
-  padding: 0.58928571em 3.69642857em 0.58928571em;
+  padding: 0.58928571em 3.69642857em 0.68928571em;
 }
 
 /*-------------------
@@ -1448,7 +1352,7 @@ input::selection {
 
 .ui.icon.buttons .button,
 .ui.icon.button {
-  padding: 0.78571429em 0.78571429em 0.78571429em;
+  padding: 0.78571429em 0.78571429em 0.88571429em;
 }
 
 .ui.icon.buttons .button > .icon,
@@ -4180,7 +4084,7 @@ input::selection {
 
 .ui.primary.buttons .button,
 .ui.primary.button {
-  background-color: #2185D0;
+  background-color: #8db208;
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
@@ -4192,28 +4096,28 @@ input::selection {
 
 .ui.primary.buttons .button:hover,
 .ui.primary.button:hover {
-  background-color: #1678c2;
+  background-color: #7ea100;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.primary.buttons .button:focus,
 .ui.primary.button:focus {
-  background-color: #0d71bb;
+  background-color: #729100;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.primary.buttons .button:active,
 .ui.primary.button:active {
-  background-color: #1a69a4;
+  background-color: #668106;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.primary.buttons .active.button,
 .ui.primary.active.button {
-  background-color: #1279c6;
+  background-color: #7ea100;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -4224,7 +4128,7 @@ input::selection {
 
 .ui.secondary.buttons .button,
 .ui.secondary.button {
-  background-color: #1B1C1D;
+  background-color: #fb4f00;
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
@@ -4236,28 +4140,28 @@ input::selection {
 
 .ui.secondary.buttons .button:hover,
 .ui.secondary.button:hover {
-  background-color: #27292a;
+  background-color: #ff5f16;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.secondary.buttons .button:focus,
 .ui.secondary.button:focus {
-  background-color: #2e3032;
+  background-color: #ff6925;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.secondary.buttons .button:active,
 .ui.secondary.button:active {
-  background-color: #343637;
+  background-color: #ff702f;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.secondary.buttons .active.button,
 .ui.secondary.active.button {
-  background-color: #27292a;
+  background-color: #ff5f16;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -4460,6 +4364,18 @@ input::selection {
          Theme Overrides
 *******************************/
 
+.ui.button {
+  margin: 0;
+}
+
+.ui.button + .button {
+  margin-left: 0.25em;
+}
+
+#content .ui.button {
+  margin-top: 0.5em;
+}
+
 /*******************************
          Site Overrides
 *******************************/
@@ -4531,7 +4447,7 @@ input::selection {
 
 /* Small Monitor */
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1299px) {
   .ui.container {
     width: 933px;
     margin-left: auto !important;
@@ -4553,23 +4469,23 @@ input::selection {
 
 /* Large Monitor */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
   .ui.container {
-    width: 1127px;
+    width: 1227px;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
   .ui.grid.container {
-    width: calc( 1127px  +  2rem ) !important;
+    width: calc( 1227px  +  2rem ) !important;
   }
 
   .ui.relaxed.grid.container {
-    width: calc( 1127px  +  3rem ) !important;
+    width: calc( 1227px  +  3rem ) !important;
   }
 
   .ui.very.relaxed.grid.container {
-    width: calc( 1127px  +  5rem ) !important;
+    width: calc( 1227px  +  5rem ) !important;
   }
 }
 
@@ -4580,7 +4496,7 @@ input::selection {
 /* Text Container */
 
 .ui.text.container {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   max-width: 700px !important;
   line-height: 1.5;
 }
@@ -4614,7 +4530,6 @@ input::selection {
 .ui.justified.container {
   text-align: justify;
   -webkit-hyphens: auto;
-  -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
 }
@@ -4622,6 +4537,13 @@ input::selection {
 /*******************************
          Theme Overrides
 *******************************/
+
+@media only screen and (max-width: 768px) {
+  .ui.container .container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
 
 /*******************************
          Site Overrides
@@ -4862,8 +4784,8 @@ input::selection {
 ---------------*/
 
 .ui.section.divider {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 /*--------------
@@ -4877,6 +4799,18 @@ input::selection {
 /*******************************
          Theme Overrides
 *******************************/
+
+.ui.horizontal.divider {
+  overflow: auto;
+}
+
+.ui.horizontal.divider.header .icon:only-child {
+  margin-right: 0;
+}
+
+#sidebar .ui.horizontal.divider .icon {
+  font-size: 1em;
+}
 
 .ui.horizontal.divider:before,
 .ui.horizontal.divider:after {
@@ -6186,17 +6120,17 @@ i.flag.zimbabwe:before {
 
 .ui.header {
   border: none;
-  margin: calc(2rem -  0.14285em ) 0em 1rem;
+  margin: calc(2rem -  0.05em ) 0em 1.2rem;
   padding: 0em 0em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
-  line-height: 1.2857em;
+  line-height: 1.1em;
   text-transform: none;
   color: rgba(0, 0, 0, 0.87);
 }
 
 .ui.header:first-child {
-  margin-top: -0.14285em;
+  margin-top: -0.05em;
 }
 
 .ui.header:last-child {
@@ -6225,7 +6159,7 @@ i.flag.zimbabwe:before {
   display: table-cell;
   opacity: 1;
   font-size: 1.5em;
-  padding-top: 0.14285em;
+  padding-top: 0.05em;
   vertical-align: middle;
 }
 
@@ -6244,7 +6178,7 @@ i.flag.zimbabwe:before {
 .ui.header > .image,
 .ui.header > img {
   display: inline-block;
-  margin-top: 0.14285em;
+  margin-top: 0.05em;
   width: 2.5em;
   height: auto;
   vertical-align: middle;
@@ -6305,23 +6239,23 @@ i.flag.zimbabwe:before {
 ---------------*/
 
 h1.ui.header {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 h2.ui.header {
-  font-size: 1.714rem;
+  font-size: 1.8rem;
 }
 
 h3.ui.header {
-  font-size: 1.28rem;
+  font-size: 1.5rem;
 }
 
 h4.ui.header {
-  font-size: 1.071rem;
+  font-size: 1.3rem;
 }
 
 h5.ui.header {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* Sub Header */
@@ -6352,23 +6286,23 @@ h5.ui.header .sub.header {
 
 .ui.huge.header {
   min-height: 1em;
-  font-size: 2em;
+  font-size: 2.3em;
 }
 
 .ui.large.header {
-  font-size: 1.714em;
+  font-size: 1.8em;
 }
 
 .ui.medium.header {
-  font-size: 1.28em;
+  font-size: 1.5em;
 }
 
 .ui.small.header {
-  font-size: 1.071em;
+  font-size: 1.3em;
 }
 
 .ui.tiny.header {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 /* Sub Header */
@@ -6429,7 +6363,7 @@ h5.ui.header .sub.header {
 .ui.icon.header {
   display: inline-block;
   text-align: center;
-  margin: 2rem 0em 1rem;
+  margin: 2rem 0em 1.2rem;
 }
 
 .ui.icon.header:after {
@@ -6978,12 +6912,66 @@ a.ui.inverted.grey.header:hover {
 --------------------*/
 
 .ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 1.28em;
+  font-size: 1.5em;
 }
 
 /*******************************
          Theme Overrides
 *******************************/
+
+.ui.header > .image {
+  opacity: 0.6;
+}
+
+.ui.header:not(.icon):not(.aligned) > .image {
+  float: left;
+}
+
+.ui.header:not(.icon):not(.aligned) > .image + .content {
+  display: table-cell;
+}
+
+.ui.icon.header > .image {
+  padding-bottom: 1em;
+}
+
+.ui.icon.header > .content {
+  padding-left: 0 !important;
+}
+
+.ui.icon.header + p > .button {
+  margin-right: 0 !important;
+}
+
+.ui.stripe.segment > .container > h1.header,
+.ui.stripe.segment > .container > .column > h1.header {
+  font-size: 2.8rem;
+}
+
+.ui.stripe.segment > .container > h1.header .sub.header,
+.ui.stripe.segment > .container > .column > h1.header .sub.header {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+}
+
+.ui.stripe.segment > .container > h1.header .sub.header.inverted a,
+.ui.stripe.segment > .container > .column > h1.header .sub.header.inverted a {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ui.stripe.segment > .container > h1.header .sub.header.inverted a:hover,
+.ui.stripe.segment > .container > .column > h1.header .sub.header.inverted a:hover {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .ui.stripe.segment > .container > h1.header .sub.header,
+  .ui.stripe.segment > .container > .column > h1.header .sub.header {
+    margin-bottom: 2rem;
+  }
+}
 
 /*******************************
          Site Overrides
@@ -10602,6 +10590,34 @@ img.ui.bordered.image {
          Theme Overrides
 *******************************/
 
+a.circular.image > img {
+  border: 6px solid #F3F4F5;
+}
+
+a.circular.image > img:hover {
+  border-color: #8db208;
+}
+
+.ui.faded.image > img {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonial.column:not(.logo) .image {
+    max-width: 40%;
+  }
+}
+
+.testimonial a.faded.image > img {
+  opacity: 0.85;
+  -webkit-transition: opacity, 0.2s;
+  transition: opacity, 0.2s;
+}
+
+.testimonial a.faded.image > img:hover {
+  opacity: 1;
+}
+
 /*******************************
          Site Overrides
 *******************************/
@@ -12778,7 +12794,7 @@ ol.ui.list ol li,
 .ui.list > .item .header {
   display: block;
   margin: 0em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -12803,12 +12819,12 @@ ol.ui.list ol li,
 .ui.list .list > a.item,
 .ui.list > a.item {
   cursor: pointer;
-  color: #4183C4;
+  color: #8db208;
 }
 
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
-  color: #1e70bf;
+  color: #7c9e00;
 }
 
 /* Linked Item Icons */
@@ -12823,12 +12839,12 @@ ol.ui.list ol li,
 .ui.list .list > .item a.header,
 .ui.list > .item a.header {
   cursor: pointer;
-  color: #4183C4 !important;
+  color: #8db208 !important;
 }
 
 .ui.list .list > .item a.header:hover,
 .ui.list > .item a.header:hover {
-  color: #1e70bf !important;
+  color: #7c9e00 !important;
 }
 
 /* Floated Content */
@@ -12954,12 +12970,12 @@ ol.ui.list ol li,
 .ui.list .list > .disabled.item,
 .ui.list > .disabled.item {
   pointer-events: none;
-  color: rgba(40, 40, 40, 0.3) !important;
+  color: rgba(0, 0, 0, 0.2) !important;
 }
 
 .ui.inverted.list .list > .disabled.item,
 .ui.inverted.list > .disabled.item {
-  color: rgba(225, 225, 225, 0.3) !important;
+  color: rgba(255, 255, 255, 0.2) !important;
 }
 
 /*-------------------
@@ -13004,7 +13020,7 @@ ol.ui.list ol li,
 
 .ui.inverted.list .list > a.item:hover,
 .ui.inverted.list > a.item:hover {
-  color: #1e70bf;
+  color: #7c9e00;
 }
 
 /* Linking Content */
@@ -13014,7 +13030,7 @@ ol.ui.list ol li,
 }
 
 .ui.inverted.list .item a:not(.ui):hover {
-  color: #1e70bf !important;
+  color: #7c9e00 !important;
 }
 
 /*-------------------
@@ -13656,6 +13672,10 @@ ol.ui.horizontal.list li:before,
 /*******************************
          Theme Overrides
 *******************************/
+
+.ui.list > .item > .avatar {
+  padding-right: 0 !important;
+}
 
 /*******************************
     User Variable Overrides
@@ -14837,7 +14857,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.disabled.segment {
   opacity: 0.45;
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 /*--------------
@@ -15230,6 +15250,189 @@ ol.ui.horizontal.list li:before,
 /*******************************
          Theme Overrides
 *******************************/
+
+/*******************************
+     User Global Variables
+*******************************/
+
+.masthead .segment {
+  padding: 3em 0;
+}
+
+.ui.stripe.segment {
+  padding: 4em 0;
+}
+
+.main.header + .ui.stripe.segment.white {
+  padding-top: 2em;
+}
+
+.main.header + .ui.stripe.segment:not(.white) {
+  margin-top: 3em;
+}
+
+[id*="detail"] #main .ui.stripe.segment.white {
+  border-bottom: none !important;
+}
+
+[id*="detail"] #main .ui.stripe.segment.white + .white {
+  padding-top: 0;
+}
+
+[id*="detail"] #main .ui.stripe.segment:not(.white) {
+  margin-bottom: 4em;
+  padding: 0;
+  border-radius: 0.28571429rem;
+}
+
+[id*="detail"] #main .ui.stripe.segment:not(.white) + .white {
+  padding-top: 0;
+}
+
+[id*="detail"] #main .ui.stripe.segment:not(.white) > .container {
+  padding: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .ui.stripe.segment {
+    padding: 2em 0;
+  }
+}
+
+.ui.stripe.segment.primary-color {
+  background-color: #d7e5a2;
+}
+
+.ui.stripe.segment.primary-color.inverted {
+  background-color: #8db208 !important;
+  color: #FFFFFF !important;
+}
+
+.ui.stripe.segment.secondary-color {
+  background-color: #ff702f;
+}
+
+.ui.stripe.segment.secondary-color.inverted {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: #FFFFFF !important;
+}
+
+#content .ui.stripe.segment.inverted a:not(.button) {
+  color: #FFFFFF;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+#content .ui.stripe.segment.inverted a:not(.button):hover {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.ui.pointing.segment {
+  position: relative;
+}
+
+.ui.pointing.segment:after,
+.ui.pointing.segment:before {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.ui.pointing.segment:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 13px;
+}
+
+.ui.pointing.segment:before {
+  border-color: rgba(222, 222, 222, 0);
+  border-width: 14px;
+}
+
+.ui.pointing.segment.left:after,
+.ui.pointing.segment.left:before {
+  right: 100%;
+  top: 50%;
+}
+
+.ui.pointing.segment.left:after {
+  border-right-color: #F3F4F5;
+  margin-top: -13px;
+}
+
+.ui.pointing.segment.left:before {
+  border-right-color: rgba(34, 36, 38, 0.15);
+  margin-top: -14px;
+}
+
+.ui.pointing.segment.down:after,
+.ui.pointing.segment.down:before {
+  top: 100%;
+  left: 50%;
+}
+
+.ui.pointing.segment.down:after {
+  border-top-color: #F3F4F5;
+  border-width: 13px;
+  margin-left: -13px;
+}
+
+.ui.pointing.segment.down:before {
+  border-top-color: rgba(34, 36, 38, 0.15);
+  margin-left: -14px;
+}
+
+.stripe.segment:not(.white) .ui.pointing.segment {
+  background: #fff;
+}
+
+.stripe.segment:not(.white) .ui.pointing.segment.left:after {
+  border-right-color: #fff;
+}
+
+.stripe.segment:not(.white) .ui.pointing.segment.down:after {
+  border-top-color: #fff;
+}
+
+.publication .ui.pointing.segment.down:after,
+.list .ui.pointing.segment.down:after,
+.publication .ui.pointing.segment.down:before,
+.list .ui.pointing.segment.down:before {
+  left: 33px;
+}
+
+.testimonial .ui.pointing.segment.left:after,
+.testimonial .ui.pointing.segment.left:before {
+  top: 6rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .ui.snapped.segment {
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+
+  .ui.snapped.segment > .container > .grid {
+    margin-bottom: -2rem;
+  }
+
+  .ui.snapped.segment > .container > .grid .middle.aligned.column {
+    margin-top: -2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ui.inflated.segment > .container > .grid > .column > .image {
+    max-width: none;
+    width: 150%;
+    float: right;
+  }
+
+  .ui.inflated.segment > .container > .grid.reversed > .column > .image {
+    float: left;
+  }
+}
 
 /*******************************
          Site Overrides
@@ -16110,7 +16313,7 @@ ol.ui.horizontal.list li:before,
   display: block;
   margin: 0em 0em 0.28571429rem 0em;
   color: rgba(0, 0, 0, 0.87);
-  font-size: 0.92857143em;
+  font-size: 1.2rem;
   font-weight: bold;
   text-transform: none;
 }
@@ -16153,7 +16356,7 @@ ol.ui.horizontal.list li:before,
 .ui.form input[type="time"],
 .ui.form input[type="text"],
 .ui.form input[type="url"] {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin: 0em;
   outline: none;
   -webkit-appearance: none;
@@ -16832,7 +17035,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .grouped.fields > label {
   margin: 0em 0em 0.28571429rem 0em;
   color: rgba(0, 0, 0, 0.87);
-  font-size: 0.92857143em;
+  font-size: 1.2rem;
   font-weight: bold;
   text-transform: none;
 }
@@ -17121,7 +17324,7 @@ ol.ui.horizontal.list li:before,
   margin-top: 0em;
   margin-bottom: 0em;
   vertical-align: baseline;
-  font-size: 0.92857143em;
+  font-size: 1.2rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87);
   text-transform: none;
@@ -17208,6 +17411,56 @@ ol.ui.horizontal.list li:before,
 /*******************************
          Theme Overrides
 *******************************/
+
+.ui.form .hidden {
+  display: none !important;
+}
+
+.ui.form .checkbox label {
+  font-weight: normal;
+}
+
+.ui.form .help {
+  font-size: 1.1rem;
+}
+
+.ui.form .fieldset {
+  margin-bottom: 2em;
+}
+
+.inverted .ui.form .field label {
+  color: #fff !important;
+}
+
+.inverted .ui.form .field label:after {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.inverted .ui.form .field input[type='field'],
+.inverted .ui.form .field textarea {
+  border: 1px solid #fff !important;
+}
+
+@media screen and (min-width: 768px) {
+  .ui.form .horizontal.field,
+  .ui.form .horizontal.fields {
+    display: table;
+    width: 100%;
+  }
+
+  .ui.form .horizontal.field > label,
+  .ui.form .horizontal.fields > label {
+    display: table-cell;
+    width: 30%;
+  }
+
+  .ui.form .horizontal.field > input,
+  .ui.form .horizontal.fields > input,
+  .ui.form .horizontal.field > select,
+  .ui.form .horizontal.fields > select {
+    vertical-align: middle;
+  }
+}
 
 /*******************************
          Site Overrides
@@ -17422,7 +17675,7 @@ ol.ui.horizontal.list li:before,
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1299px) {
   .ui.page.grid {
     width: auto;
     margin-left: 0em;
@@ -17432,7 +17685,7 @@ ol.ui.horizontal.list li:before,
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+@media only screen and (min-width: 1300px) and (max-width: 1919px) {
   .ui.page.grid {
     width: auto;
     margin-left: 0em;
@@ -17741,7 +17994,7 @@ ol.ui.horizontal.list li:before,
 
 /* Mobile Sizing Combinations */
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 360px) and (max-width: 767px) {
   .ui.grid > .row > [class*="one wide mobile"].column,
   .ui.grid > .column.row > [class*="one wide mobile"].column,
   .ui.grid > [class*="one wide mobile"].column,
@@ -18089,7 +18342,7 @@ ol.ui.horizontal.list li:before,
 
 /* Large Monitor Sizing Combinations */
 
-@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+@media only screen and (min-width: 1300px) and (max-width: 1919px) {
   .ui.grid > .row > [class*="one wide large screen"].column,
   .ui.grid > .column.row > [class*="one wide large screen"].column,
   .ui.grid > [class*="one wide large screen"].column,
@@ -18715,7 +18968,6 @@ ol.ui.horizontal.list li:before,
 .ui.grid > .row > .justified.column {
   text-align: justify;
   -webkit-hyphens: auto;
-  -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
 }
@@ -19429,7 +19681,7 @@ ol.ui.horizontal.list li:before,
 
 /* Computer Only Hide */
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1299px) {
   .ui[class*="mobile only"].grid.grid.grid:not(.computer),
   .ui.grid.grid.grid > [class*="mobile only"].row:not(.computer),
   .ui.grid.grid.grid > [class*="mobile only"].column:not(.computer),
@@ -19461,7 +19713,7 @@ ol.ui.horizontal.list li:before,
 
 /* Large Screen Only Hide */
 
-@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+@media only screen and (min-width: 1300px) and (max-width: 1919px) {
   .ui[class*="mobile only"].grid.grid.grid:not(.computer),
   .ui.grid.grid.grid > [class*="mobile only"].row:not(.computer),
   .ui.grid.grid.grid > [class*="mobile only"].column:not(.computer),
@@ -19506,6 +19758,25 @@ ol.ui.horizontal.list li:before,
          Theme Overrides
 *******************************/
 
+#content .ui.nested.grid {
+  margin-bottom: 2rem;
+}
+
+#content * + .ui.nested.grid {
+  margin-top: 2rem;
+}
+
+.ui.nested.grid > .column.publication {
+  margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.grid.container > .column {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
 /*******************************
          Site Overrides
 *******************************/
@@ -19534,7 +19805,7 @@ ol.ui.horizontal.list li:before,
   display: -ms-flexbox;
   display: flex;
   margin: 1rem 0em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   background: #FFFFFF;
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -20006,7 +20277,7 @@ ol.ui.horizontal.list li:before,
 .ui.menu .item.disabled:hover {
   cursor: default;
   background-color: transparent !important;
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 /*******************************
@@ -21041,7 +21312,7 @@ Floated Menu / Item
 
 .ui.inverted.menu .item.disabled,
 .ui.inverted.menu .item.disabled:hover {
-  color: rgba(225, 225, 225, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 /*--- Hover ---*/
@@ -21717,6 +21988,140 @@ Floated Menu / Item
 /*******************************
          Theme Overrides
 *******************************/
+
+/*******************************
+     User Global Variables
+*******************************/
+
+#menu {
+  margin: 0;
+  height: 7rem;
+}
+
+#menu.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: height 0.2s;
+  transition: height 0.2s;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+  z-index: 9999;
+}
+
+#menu.sticky .logo {
+  -webkit-transition: height 0.2s, min-width 0.2s;
+  transition: height 0.2s, min-width 0.2s;
+}
+
+#menu.sticky + .ui.vertical.segment {
+  padding-top: 12rem;
+}
+
+@media only screen and (max-width: 767px) {
+  #menu.sticky {
+    position: absolute;
+  }
+}
+
+#menu.tightened {
+  height: 5rem;
+}
+
+#menu.tightened .logo {
+  height: 33.2px;
+  min-width: 147.2px;
+}
+
+@media only screen and (max-width: 767px) {
+  #menu > .container {
+    width: 100% !important;
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+  }
+}
+
+@media (max-width: 360px) {
+  #menu .logo {
+    height: 33.2px;
+    min-width: 147.2px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 1300px) {
+  #menu .logo {
+    height: 37.35px;
+    min-width: 165.6px;
+  }
+}
+
+#menu .right .item {
+  margin: 0 0 0 0.3em;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  #menu .right .item {
+    display: none;
+  }
+}
+
+#menu .item.branding {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#menu .item.highlight {
+  margin: 0 0 0 2rem;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  #menu .item.highlight {
+    display: none;
+  }
+}
+
+#menu .item.toc {
+  display: none;
+  margin: 0 0 0 1.5rem;
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  #menu .item.toc {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#submenu.vertical.tabular .item .header a.active {
+  margin-bottom: 0.75em;
+  padding: 0;
+  border: none;
+}
+
+#submenu.vertical.tabular .item .menu a.active {
+  border: none;
+}
+
+#off-canvas > .item.home .image {
+  margin-right: 6px;
+}
+
+#off-canvas > .item:nth-last-child(2) {
+  background-color: #fb4f00;
+}
+
+#off-canvas > .special {
+  padding: 0.92857143em 1.14285714em;
+}
+
+#content > .container > .column > .pagination {
+  margin: 6em 0;
+}
 
 /*******************************
          Site Overrides
@@ -22646,7 +23051,7 @@ Floated Menu / Item
 .ui.table tr.disabled:hover,
 .ui.table tr:hover td.disabled {
   pointer-events: none;
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 /*******************************
@@ -23256,7 +23661,7 @@ Floated Menu / Item
 
 .ui.sortable.table th.disabled:hover {
   cursor: auto;
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .ui.sortable.table thead th:hover {
@@ -23328,7 +23733,7 @@ Floated Menu / Item
 .ui.inverted.table tr.disabled:hover td,
 .ui.inverted.table tr:hover td.disabled {
   pointer-events: none;
-  color: rgba(225, 225, 225, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 /* Definition */
@@ -23492,6 +23897,10 @@ Floated Menu / Item
 .ui.large.table {
   font-size: 1.1em;
 }
+
+/*******************************
+         Theme Overrides
+*******************************/
 
 /*******************************
          Site Overrides
@@ -23973,7 +24382,7 @@ Floated Menu / Item
 .ui.card > .content > .header {
   display: block;
   margin: '';
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   color: rgba(0, 0, 0, 0.85);
 }
 
@@ -23984,7 +24393,7 @@ Floated Menu / Item
   font-weight: bold;
   font-size: 1.28571429em;
   margin-top: -0.21425em;
-  line-height: 1.2857em;
+  line-height: 1.1em;
 }
 
 .ui.cards > .card > .content > .meta + .description,
@@ -24124,7 +24533,7 @@ Floated Menu / Item
 
 .ui.cards > .card > .content > a.header:hover,
 .ui.card > .content > a.header:hover {
-  color: #1e70bf;
+  color: #7c9e00;
 }
 
 /* Meta */
@@ -24244,7 +24653,7 @@ Floated Menu / Item
 
 .ui.cards > .card > .extra a:not(.ui):hover,
 .ui.card > .extra a:not(.ui):hover {
-  color: #1e70bf;
+  color: #7c9e00;
 }
 
 /*******************************
@@ -24844,6 +25253,44 @@ a.ui.card:hover,
 /*******************************
          Theme Overrides
 *******************************/
+
+#content .ui.nested.cards {
+  margin-bottom: 2rem;
+}
+
+#content * + .ui.nested.cards {
+  margin-top: 2rem;
+}
+
+.ui.one.cards > .card {
+  width: 100% !important;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.card .sub.header {
+  margin-top: 1em !important;
+}
+
+.card .icon > .image {
+  padding: 0.5em 0 1em;
+}
+
+.card > .content > .column {
+  padding: 0 !important;
+}
+
+.card > .content > .column:last-child {
+  padding-left: 1em !important;
+}
+
+.card > .extra .icon {
+  margin-top: 0.3em;
+}
+
+.ui.segment:not(.white) .card {
+  box-shadow: none;
+}
 
 /*******************************
     User Variable Overrides

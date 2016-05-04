@@ -3,11 +3,12 @@ parent_properties: ''
 input: gallery
 name: 'Slider (Images)'
 description: ''
-sortorder: 17
+sortorder: 18
+category: 2
 icon: gallery
 icon_type: ''
-template: "[[$sliderImageRow?\n    &link=`[[+link]]`\n    &image=`[[+image]]`\n]]"
-properties: '{"wrapper_template":"[[$sliderOuter?\n    &rows=`[[+rows]]`\n]]","max_images":"9","thumb_size":"medium","source":"8","show_description":"0","show_link_field":"0","directory":"\/[[+resource]]\/","file_types":"png,gif,jpg,jpeg"}'
+template: "[[$sliderRowImage?\n    &image=`[[+url]]`\n    &title=`[[+title]]`\n]]"
+properties: '{"wrapper_template":"[[$sliderOuter?\n    &rows=`[[+images]]`\n]]","max_images":"9","thumb_size":"medium","thumbnail_size":"0","source":"8","show_description":"0","show_link_field":"0","limit_to_current_context":"1","directory":"\/[[+resource]]\/","file_types":"png,gif,jpg,jpeg"}'
 availability: '[]'
 layouts: ''
 times_per_page: 1

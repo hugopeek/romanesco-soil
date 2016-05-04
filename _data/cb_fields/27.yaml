@@ -3,7 +3,8 @@ parent_properties: ''
 input: chunk
 name: 'Input (Textarea)'
 description: ''
-sortorder: 33
+sortorder: 37
+category: 7
 icon: paragraph
 template: '[[+tag]]'
 properties: '{"chunk":"183","custom_preview":"<p><em>You can add an optional placeholder in the Settings menu.<\/em><\/p>"}'

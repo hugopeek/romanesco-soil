@@ -3,7 +3,8 @@ parent_properties: ''
 input: snippet
 name: Snippet
 description: ''
-sortorder: 24
+sortorder: 30
+category: 6
 icon: snippet_A
 icon_type: ''
 template: '[[+value]]'

@@ -1,0 +1,4 @@
+id: 6
+name: Advanced
+description: 'Tools for more experienced content editors, such as inserting snippets and raw HTML.'
+sortorder: 6

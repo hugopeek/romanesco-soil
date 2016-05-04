@@ -2,7 +2,7 @@ id: 24
 type: text
 name: header_title
 caption: 'Main title'
-description: 'This will be displayed in the header section below the main menu. The title will be inherited on child pages, but can also be overwritten by entering something new.'
+description: 'This will be displayed in the header section below the main menu. The text will automatically be inherited on child pages, but can easily be overwritten by entering something new, or deleted.'
 category: Header
 elements: ''
 rank: 1
@@ -12,4 +12,4 @@ output_properties: null
 
 -----
 
-@inherit
+@INHERIT

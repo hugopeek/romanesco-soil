@@ -1,0 +1,13 @@
+id: 75
+parent: 73
+parent_properties: '{"key":"content","width":"100"}'
+input: richtext
+name: Content
+description: ''
+sortorder: 1
+icon: richtext
+template: '[[+value]]'
+properties: '[]'
+availability: ''
+layouts: null
+settings: '[]'
