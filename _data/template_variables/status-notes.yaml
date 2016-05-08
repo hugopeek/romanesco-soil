@@ -1,0 +1,13 @@
+id: 44
+type: migx
+name: status_notes
+caption: 'Notes / Explanations'
+description: 'You can add multiple notes here, effectively creating a little journal of this page. The latest notes are shown on top, and author + date are automatically added to each entry. NB: notes are not saved until you save the page itself!'
+category: Status
+elements: ''
+rank: 99
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:1:{s:7:"configs";s:12:"status_notes";}'
+output_properties: null
+content: ''

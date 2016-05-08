@@ -2,9 +2,7 @@ id: 237
 name: twitterFeedOuter
 description: ''
 category: o_social
-snippet: "<div class=\"[[+cols:ne=`1`:then=`ui [[+cols]] stackable cards`:else=``]]\">\n    [[-!TwitterX?\n        &twitter_consumer_key=`[[++twitter_consumer_key:empty=`[[++patternlab.twitter_consumer_key]]`]]`\n        &twitter_consumer_secret=`[[++twitter_consumer_secret:empty=`[[++patternlab.twitter_consumer_secret]]`]]`\n        &twitter_access_token=`[[++twitter_access_token:empty=`[[++patternlab.twitter_access_token]]`]]`\n        &twitter_access_token_secret=`[[++twitter_access_token_secret:empty=`[[++patternlab.twitter_access_token_secret]]`]]`\n        &limit=`[[+limit]]`\n        &timeline=`[[+timeline_type]]`\n        &chunk=`[[+template]]`\n        &cache=`7200`\n        &screen_name=`[[+username:empty=`[[++social_twitter:empty=`[[++patternlab.social_twitter]]`]]`]]`\n        &include_rts=`[[+retweets]]`\n    ]]\n</div>"
 properties: 'a:0:{}'
-content: "<div class=\"[[+cols:ne=`1`:then=`ui [[+cols]] stackable cards`:else=``]]\">\n    [[-!TwitterX?\n        &twitter_consumer_key=`[[++twitter_consumer_key:empty=`[[++patternlab.twitter_consumer_key]]`]]`\n        &twitter_consumer_secret=`[[++twitter_consumer_secret:empty=`[[++patternlab.twitter_consumer_secret]]`]]`\n        &twitter_access_token=`[[++twitter_access_token:empty=`[[++patternlab.twitter_access_token]]`]]`\n        &twitter_access_token_secret=`[[++twitter_access_token_secret:empty=`[[++patternlab.twitter_access_token_secret]]`]]`\n        &limit=`[[+limit]]`\n        &timeline=`[[+timeline_type]]`\n        &chunk=`[[+template]]`\n        &cache=`7200`\n        &screen_name=`[[+username:empty=`[[++social_twitter:empty=`[[++patternlab.social_twitter]]`]]`]]`\n        &include_rts=`[[+retweets]]`\n    ]]\n</div>"
 
 -----
 

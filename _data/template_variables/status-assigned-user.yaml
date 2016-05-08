@@ -1,0 +1,13 @@
+id: 42
+type: listbox
+name: status_assigned_user
+caption: 'Assigned editor'
+description: 'Who is best suited to take a look at these improvements?'
+category: Status
+elements: '@SELECT '''' AS name, '''' AS username UNION ALL ( SELECT `username` AS `name`,`username` FROM `modx_users` WHERE `active` = 1 )'
+rank: 3
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

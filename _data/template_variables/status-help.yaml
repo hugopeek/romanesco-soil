@@ -1,0 +1,13 @@
+id: 43
+type: checkbox
+name: status_help
+caption: Help!
+description: 'What seems to be the problem? You can explain it in more detail in the Notes section below. If you are getting an error message, please include the exact phrase in your note, together with the step(s) you performed prior to the error.'
+category: Status
+elements: '[Manager] I''m having issues (or lost the way) while navigating MODX==manager||[Content] I''m having a problem when adding or editing content==content||[Styling] Things don''t look as they should on the website==styling||[Technical] The output is incorrect on the site, or there''s no output at all==technical||[Functional] I hit a limitation or inconsistency in one of the components==functional||[Concept] I''m stuck with something and could really use your advice or opinion==concept||[Other] Something else==other'
+rank: 4
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

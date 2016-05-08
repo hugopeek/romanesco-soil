@@ -1,0 +1,13 @@
+id: 41
+type: checkbox
+name: status_improvements
+caption: Improvements
+description: 'How can the content of this page be improved? You can elaborate on this in the Notes section below, if needed.'
+category: Status
+elements: '[Text] The text is not quite there yet==text||[Graphics] It lacks visual balance or needs more supportive imagery==graphics||[Information] The right message is not conveyed yet==information||[Interaction] The usability could be better==interaction||[Layout] The elements are not optimally positioned yet==layout||[Overviews] Content loaded from other places still needs some tweaking==overviews||[SEO] The content needs to be optimised for search engines||[Crosscheck] It needs a final check by a fresh pair of eyes==crosscheck||[Other] Something else==other'
+rank: 2
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

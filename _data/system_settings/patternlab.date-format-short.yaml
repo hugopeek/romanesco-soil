@@ -1,0 +1,4 @@
+key: patternlab.date_format_short
+value: '%d-%m-%Y'
+namespace: patternlab
+area: Settings

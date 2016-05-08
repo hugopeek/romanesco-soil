@@ -1,3 +1,4 @@
 key: patternlab.custom_css_path
+value: assets/css
 namespace: patternlab
 area: Paths

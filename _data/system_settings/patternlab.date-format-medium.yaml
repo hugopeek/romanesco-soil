@@ -1,0 +1,4 @@
+key: patternlab.date_format_medium
+value: '%e %b %Y'
+namespace: patternlab
+area: Settings
