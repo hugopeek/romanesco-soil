@@ -2,7 +2,6 @@ id: 2
 templatename: BasicDetail
 description: ''
 category: t_basic
-content: "<!DOCTYPE html>\n<html lang=\"[[++cultureKey]]\">\n\n[[setTemplateType? &type=`detail`]]\n[[$head]]\n\n<body id=\"detail\">\n\n<div class=\"pusher\">\n    [[$headerBasic?\n        &masthead=`0`\n        &hero=`1`\n        &search=`0`\n    ]]\n\n    [[[[getResourceLevel:ne=`1`:then=`$toolbarBasic`]]]]\n\n    <main id=\"main\" role=\"main\">\n        <div class=\"ui relaxed grid container\">\n            <article id=\"content\" class=\"sixteen wide twelve wide computer column\">\n                [[*content? &template_type=`detail`]]\n            </article>\n\n            <aside id=\"sidebar\" class=\"four wide column computer only\">\n                [[$subNavVertical]]\n            </aside>\n        </div>\n    </main>\n\n    [[$footer]]\n</div>\n\n[[$offCanvasNav]]\n[[$script]]\n\n</body>\n</html>"
 properties: 'a:0:{}'
 
 -----

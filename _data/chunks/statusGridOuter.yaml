@@ -2,9 +2,7 @@ id: 258
 name: statusGridOuter
 description: ''
 category: o_project
-snippet: "<table class=\"ui sortable celled table\">\n    <thead>\n    <tr>\n        <th>[[%patternlab.status.table_status_indicator]]</th>\n        <th>[[%patternlab.status.table_id]]</th>\n        <th>[[%patternlab.status.table_resource]]</th>\n        <th>[[%patternlab.status.table_improvements]]</th>\n        <th>[[%patternlab.status.table_assigned_user]]</th>\n        <th>[[%patternlab.status.table_help]]</th>\n        <th>[[%patternlab.status.table_notes]]</th>\n    </tr>\n    </thead>\n    <tbody>\n    [[pdoMenu?\n        &contexts=`[[+context]]`\n        &parents=`0`\n        &showHidden=`1`\n        &showUnpublished=`1`\n        &includeTVs=`status_indicator,status_improvements,status_assigned_user,status_help,status_notes`\n        &processTVs=`1`\n        &tplOuter=`@INLINE [[+wrapper]]`\n        &tpl=`statusGridRow`\n    ]]\n    </tbody>\n</table>\n\n[[-statusGridLoadAssets]]"
 properties: 'a:0:{}'
-content: "<table class=\"ui sortable celled table\">\n    <thead>\n    <tr>\n        <th>[[%patternlab.status.table_status_indicator]]</th>\n        <th>[[%patternlab.status.table_id]]</th>\n        <th>[[%patternlab.status.table_resource]]</th>\n        <th>[[%patternlab.status.table_improvements]]</th>\n        <th>[[%patternlab.status.table_assigned_user]]</th>\n        <th>[[%patternlab.status.table_help]]</th>\n        <th>[[%patternlab.status.table_notes]]</th>\n    </tr>\n    </thead>\n    <tbody>\n    [[pdoMenu?\n        &contexts=`[[+context]]`\n        &parents=`0`\n        &showHidden=`1`\n        &showUnpublished=`1`\n        &includeTVs=`status_indicator,status_improvements,status_assigned_user,status_help,status_notes`\n        &processTVs=`1`\n        &tplOuter=`@INLINE [[+wrapper]]`\n        &tpl=`statusGridRow`\n    ]]\n    </tbody>\n</table>\n\n[[-statusGridLoadAssets]]"
 
 -----
 

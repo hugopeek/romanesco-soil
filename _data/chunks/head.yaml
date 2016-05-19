@@ -18,6 +18,11 @@ properties: 'a:0:{}'
     <link href="[[!++patternlab.semantic_dist_path]]/semantic[[++minify_css_js:eq=`1`:then=`.min`]].css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/backgrounds.css">
 
+    [[cbHasField?
+        &field=`13`
+        &then=`<link rel="stylesheet" href="[[++patternlab.custom_css_path]]/prism.css">`
+    ]]
+
     [[++head_additional]]
     [[$favicons]]
 
