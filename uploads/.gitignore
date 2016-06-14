@@ -1,6 +1,13 @@
+# In order to prevent "directory not found" issues when adding media after
+# installation, a .gitignore file is added to all default Romanesco folders.
+#
+# Git doesn't include empty folders by default, so the added .gitignore files
+# basically act as bait to get the folders included in the repository.
+
 # Ignore everything in this directory
 *
-# Except this file
+
+# Except for:
 !.gitignore
 !/docs/
 !/icons/

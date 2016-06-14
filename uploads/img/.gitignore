@@ -1,4 +1,11 @@
 # Ignore everything in this directory
 *
-# Except this file
+
+# Except for:
 !.gitignore
+!/background/
+!/content/
+!/logo/
+!/overview/
+!/people/
+!/presentation/
