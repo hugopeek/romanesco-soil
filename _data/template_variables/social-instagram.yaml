@@ -1,0 +1,12 @@
+id: 48
+type: url
+name: social_instagram
+caption: 'Instagram profile'
+category: Social
+elements: ''
+rank: 4
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

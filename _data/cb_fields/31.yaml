@@ -3,7 +3,7 @@ parent_properties: ''
 input: repeater
 name: 'Select Dropdown'
 description: ''
-sortorder: 41
+sortorder: 43
 category: 7
 icon: checkbox
 template: "[[$fbSelectDropdownRow?\n    &field_name=`[[+field_name]]`\n    &field_option=`[[+field_option]]`\n    &unique_idx=`[[+unique_idx]]`\n]]"

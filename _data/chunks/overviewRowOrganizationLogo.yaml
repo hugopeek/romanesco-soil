@@ -1,0 +1,17 @@
+id: 290
+name: overviewRowOrganizationLogo
+description: ''
+category: m_ov_organization
+properties: 'a:0:{}'
+
+-----
+
+<a class="ui faded image" href="[[~[[+id]]]]" title="[[%patternlab.clients.logo_title]]">
+    [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
+        &tvname=`organization_logo_img`
+        &docid=`[[+id]]`
+        &options=`w=600&zc=1`
+        &type=`tpl`
+        &tpl=`cbOverviewRowImg`
+    ]]
+</a>

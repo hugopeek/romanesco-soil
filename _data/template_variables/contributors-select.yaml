@@ -1,0 +1,13 @@
+id: 56
+type: listbox-multiple
+name: contributors_select
+caption: Contributors
+description: 'Select the team members that worked on this project. You can only select persons that are listed on your Team page, so if you want to add an external team member, you should add him or her to your team page first (can be unpublished).'
+category: Participants
+elements: '@CHUNK tvSelectTeam'
+rank: 2
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

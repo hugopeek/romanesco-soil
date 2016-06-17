@@ -1,0 +1,12 @@
+id: 69
+type: date
+name: date_published
+caption: 'Date completed'
+category: Date
+elements: ''
+rank: 3
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

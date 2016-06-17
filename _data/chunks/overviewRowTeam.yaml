@@ -2,10 +2,6 @@ id: 89
 name: overviewRowTeam
 description: ''
 category: m_overviews
+snippet: "<section class=\"center aligned [[+column_type]] team\">\n    [[!$[[+row_tpl]]]]\n</section>"
 properties: 'a:0:{}'
-
------
-
-<section class="center aligned [[+column_type]] team">
-    [[!$[[+row_tpl]]]]
-</section>
+content: "<section class=\"center aligned [[+column_type]] team\">\n    [[!$[[+row_tpl]]]]\n</section>"

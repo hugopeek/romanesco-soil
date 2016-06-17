@@ -1,0 +1,12 @@
+id: 65
+type: text
+name: address_region
+caption: Region
+category: Address
+elements: ''
+rank: 11
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

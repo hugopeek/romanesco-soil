@@ -1,0 +1,12 @@
+id: 52
+type: text
+name: social_github
+caption: 'Github account'
+category: Social
+elements: ''
+rank: 20
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

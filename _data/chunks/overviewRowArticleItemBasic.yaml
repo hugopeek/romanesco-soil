@@ -1,14 +1,14 @@
 id: 248
 name: overviewRowArticleItemBasic
 description: ''
-category: m_ov_publication
+category: m_ov_article
 properties: 'a:0:{}'
 
 -----
 
 <article class="item">
     <div class="content">
-        <a class="header" href="[[~[[+id]]]]">[[+menutitle]]</a>
+        <a class="header" href="[[~[[+id]]]]">[[+menutitle:empty=`[[+pagetitle]]`]]</a>
         <div class="meta">
             [[+meta_elements:contains=`date`:then=`
             <span class="date">

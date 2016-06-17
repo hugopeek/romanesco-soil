@@ -3,16 +3,15 @@ pagetitle: 'Status Grid'
 alias: status-grid
 published: 1
 introtext: ''
-content: ''
 template: 1
 menuindex: 10
 createdby: 1
 createdon: 1462539985
-publishedon: 1462539985
+publishedon: 1462539960
 publishedby: 1
 context_key: hub
 uri: status-grid/
-properties: null
+properties: '{"contentblocks":{"content":"[{\"layout\":1,\"content\":{\"main\":[{\"value\":\"[[$statusGridOuter? &context=`web`]]\",\"lang\":\"html\",\"field\":14,\"settings\":[]}]},\"settings\":[],\"parent\":0,\"title\":\"\"}]","linear":[{"value":"[[$statusGridOuter? &context=`web`]]","lang":"html","field":14,"settings":[]}],"fieldcounts":{"14":1},"_isContentBlocks":true}}'
 tvs:
     header_background: '@INHERIT'
     header_background_img: ''
@@ -32,5 +31,15 @@ tvs:
     status_assigned_user: ''
     status_help: ''
     status_improvements: ''
-    status_indicator: ''
+    status_indicator: not-done
     status_notes: ''
+
+-----
+
+[[$cbLayoutSingleColumn?
+    &main=`[[$statusGridOuter? &context=`web`]]`
+	&background=`white`
+    &container_type=``
+    &padding=`[[+padding]]`
+    &alignment=``
+]]

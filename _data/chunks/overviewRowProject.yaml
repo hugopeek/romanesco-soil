@@ -1,0 +1,11 @@
+id: 278
+name: overviewRowProject
+description: ''
+category: m_overviews
+properties: 'a:0:{}'
+
+-----
+
+<section class="[[+column_type]] portfolio">
+    [[!$[[+row_tpl]]]]
+</section>

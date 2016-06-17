@@ -2,7 +2,9 @@ id: 121
 name: overviewOuterTestimonials
 description: ''
 category: o_overviews
+snippet: "[[setBoxType? &input=`[[+row_tpl]]` &prefix=`l_[[+layout_id]]_[[+layout_column]]`]]\n\n<div class=\"ui [[+cols]] column doubling [[+row_tpl:containsnot=`logo`:then=`stackable`]] [[+padding]] nested [[+[[+prefix]].box_type]]\">\n    [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@SemanticUI` &else=`getCache`]]?\n        &element=`getResources`\n        &cacheKey=`overviews`\n        [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]\n\n        &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++patternlab.testimonial_container_id]]`]]`\n        &resources=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`[[+resources]]` &else=`null`]]`\n        &depth=`99`\n        &limit=`[[+limit]]`\n        &tpl=`overviewRowTestimonial[[+[[+prefix]].row_type]]`\n        &includeTVs=`1`\n        &processTVs=`1`\n        &showHidden=`1`\n        &sortby=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`FIELD(modResource.id, [[+resources]])` &else=`[[+sortby]]`]]`\n        &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`\n\n        &row_tpl=`[[If? &subject=`[[$[[+row_tpl]]Theme]]` &operator=`isnull` &then=`[[+row_tpl]]` &else=`[[+row_tpl]]Theme`]]`\n        &column_type=`[[+[[+prefix]].column_type]]`\n        &title_field=`[[+title_field]]`\n        &title_hierarchy=`[[+title_hierarchy]]`\n        &show_subtitle=`[[+show_subtitle]]`\n        &show_introtext=`[[+show_introtext]]`\n        &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`\n        &de_emphasize=`[[+de_emphasize]]`\n    ]]\n</div>\n\n[[+pagination:eq=`1`:then=`[[$paginationFluid]]`]]"
 properties: 'a:0:{}'
+content: "[[setBoxType? &input=`[[+row_tpl]]` &prefix=`l_[[+layout_id]]_[[+layout_column]]`]]\n\n<div class=\"ui [[+cols]] column doubling [[+row_tpl:containsnot=`logo`:then=`stackable`]] [[+padding]] nested [[+[[+prefix]].box_type]]\">\n    [[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@SemanticUI` &else=`getCache`]]?\n        &element=`getResources`\n        &cacheKey=`overviews`\n        [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]\n\n        &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++patternlab.testimonial_container_id]]`]]`\n        &resources=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`[[+resources]]` &else=`null`]]`\n        &depth=`99`\n        &limit=`[[+limit]]`\n        &tpl=`overviewRowTestimonial[[+[[+prefix]].row_type]]`\n        &includeTVs=`1`\n        &processTVs=`1`\n        &showHidden=`1`\n        &sortby=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`FIELD(modResource.id, [[+resources]])` &else=`[[+sortby]]`]]`\n        &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`\n\n        &row_tpl=`[[If? &subject=`[[$[[+row_tpl]]Theme]]` &operator=`isnull` &then=`[[+row_tpl]]` &else=`[[+row_tpl]]Theme`]]`\n        &column_type=`[[+[[+prefix]].column_type]]`\n        &title_field=`[[+title_field]]`\n        &title_hierarchy=`[[+title_hierarchy]]`\n        &show_subtitle=`[[+show_subtitle]]`\n        &show_introtext=`[[+show_introtext]]`\n        &link_text=`[[If? &subject=`[[+link_text]]` &operator=`isnull` &then=`0` &else=`[[+link_text]]`]]`\n        &de_emphasize=`[[+de_emphasize]]`\n    ]]\n</div>\n\n[[+pagination:eq=`1`:then=`[[$paginationFluid]]`]]"
 
 -----
 
@@ -21,6 +23,7 @@ properties: 'a:0:{}'
         &tpl=`overviewRowTestimonial[[+[[+prefix]].row_type]]`
         &includeTVs=`1`
         &processTVs=`1`
+        &tvPrefix=``
         &showHidden=`1`
         &sortby=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`FIELD(modResource.id, [[+resources]])` &else=`[[+sortby]]`]]`
         &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`
@@ -36,4 +39,4 @@ properties: 'a:0:{}'
     ]]
 </div>
 
-[[+pagination:eq=`1`:then=`[[$paginationFluid]]`]]
+[[[[+pagination:eq=`1`:then=`$paginationFluid`]]]]

@@ -8,5 +8,5 @@ properties: 'a:0:{}'
 
 Testimonial vertical=overviewRowTestimonialBasic
 Testimonial horizontal=overviewRowTestimonialWide
-Testimonial logos=overviewRowTestimonialLogo
+Testimonial minimal=overviewRowTestimonialMinimal
 Testimonial compact=overviewRowTestimonialCompact

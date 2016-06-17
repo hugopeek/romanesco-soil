@@ -7,7 +7,7 @@ sortorder: 28
 category: 6
 icon: code
 icon_type: ''
-template: "<pre><code class=\"language-[[+lang]]\">\n[[+value:htmlent]]\n</code></pre>"
+template: '<pre><code class="language-[[+lang]]">[[+value:htmlent]]</code></pre>'
 properties: '{"available_languages":"html=HTML,javascript=JavaScript,css=CSS,php=PHP","default_language":"html","entities":"0"}'
 availability: '[{"field":"usergroup","value":"Administrator"}]'
 layouts: ''

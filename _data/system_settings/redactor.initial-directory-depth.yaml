@@ -1,0 +1,5 @@
+key: redactor.initial_directory_depth
+value: '3'
+xtype: numberfield
+namespace: redactor
+area: Media

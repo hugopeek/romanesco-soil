@@ -13,7 +13,7 @@ properties: 'a:0:{}'
  * (i.e. MIGX, Collections)
  *
  * Copyright 2013-2015 by Alan Pich <alan.pich@gmail.com>
- * Copyright 2015 by Thomas Jakobi <thomas.jakobi@partout.info>
+ * Copyright 2015-2016 by Thomas Jakobi <thomas.jakobi@partout.info>
  *
  * @package imageplus
  * @subpackage plugin
@@ -21,13 +21,15 @@ properties: 'a:0:{}'
  * @author Alan Pich <alan.pich@gmail.com>
  * @author Thomas Jakobi <thomas.jakobi@partout.info>
  * @copyright Alan Pich 2013-2015
- * @copyright Thomas Jakobi 2015
+ * @copyright Thomas Jakobi 2015-2016
  *
- * @event   OnTVInputRenderList
- * @event   OnTVOutputRenderList
- * @event   OnTVInputPropertiesList
- * @event   OnTVOutputRenderPropertiesList
- * @event   OnDocFormRender
+ * @event OnTVInputRenderList
+ * @event OnTVOutputRenderList
+ * @event OnTVInputPropertiesList
+ * @event OnTVOutputRenderPropertiesList
+ * @event OnDocFormRender
+ *
+ * @var modX $modx
  */
 
 $corePath = $modx->getOption('imageplus.core_path', null, $modx->getOption('core_path') . 'components/imageplus/');
@@ -38,6 +40,7 @@ $imageplus = $modx->getService('imageplus', 'ImagePlus', $corePath . 'model/imag
 switch ($modx->event->name) {
     case 'OnManagerPageBeforeRender':
         $modx->controller->addLexiconTopic('imageplus:default');
+        $imageplus->includeScriptAssets();
         break;
     case 'OnTVInputRenderList':
         $modx->event->output($corePath . 'elements/tv/input/');

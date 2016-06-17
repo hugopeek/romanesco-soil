@@ -1,0 +1,94 @@
+id: 16
+pagetitle: Contact
+alias: contact
+parent: 3
+introtext: ''
+template: 10
+searchable: 0
+createdby: 1
+createdon: 1464369940
+hidemenu: 1
+context_key: global
+uri: forms/contact/
+show_in_tree: 0
+properties: '{"contentblocks":{"content":"[{\"layout\":14,\"content\":{\"main\":[{\"chunk_properties\":{},\"field\":27,\"settings\":{\"field_name\":\"Message\",\"field_required\":\"1\",\"field_layout\":\"[[*fb_form_layout]]\",\"field_rows\":\"7\",\"field_placeholder\":\"Insert braindump here...\",\"field_helptext\":\"\"}},{\"chunk_properties\":{},\"field\":26,\"settings\":{\"field_name\":\"Name\",\"field_required\":\"1\"}},{\"chunk_properties\":{},\"field\":41,\"settings\":{\"field_name\":\"Email\"}},{\"chunk_properties\":{},\"field\":26,\"settings\":{\"field_name\":\"Phone number\"}}]},\"settings\":{\"legend\":\"Get in touch\"},\"parent\":0,\"title\":\"\"}]","linear":[{"chunk_properties":[],"field":27,"settings":{"field_name":"Message","field_required":"1","field_layout":"[[*fb_form_layout]]","field_rows":"7","field_placeholder":"Insert braindump here...","field_helptext":""}},{"chunk_properties":[],"field":26,"settings":{"field_name":"Name","field_required":"1"}},{"chunk_properties":[],"field":41,"settings":{"field_name":"Email"}},{"chunk_properties":[],"field":26,"settings":{"field_name":"Phone number"}}],"fieldcounts":{"27":1,"26":2,"41":1},"_isContentBlocks":true}}'
+tvs:
+    fb_autoresponder_from: ''
+    fb_autoresponder_from_name: ''
+    fb_autoresponder_message: ''
+    fb_autoresponder_reply_to: ''
+    fb_autoresponder_subject: ''
+    fb_autoresponder_toggle: '0'
+    fb_email_bcc: ''
+    fb_email_cc: ''
+    fb_email_from: ''
+    fb_email_from_name: ''
+    fb_email_subject: ''
+    fb_email_template: ''
+    fb_email_template_rows: ''
+    fb_email_to: ''
+    fb_email_to_dynamic: ''
+    fb_form_layout: horizontal
+    fb_redirect_id: ''
+    fb_submit_button: ''
+
+-----
+
+[[$fbLayoutFieldset?
+    &legend=`Get in touch`
+    &padding=`[[+padding]]`
+    &segment_type=`[[+segment_type]]`
+    &main=`[[$fbInputTextarea? 
+	&unique_idx=`1`
+	&layout_id=`14`
+	&layout_column=`main`
+	&layout_idx=`0`
+	&field_name=`Message`
+	&field_layout=`[[*fb_form_layout]]`
+	&field_rows=`7`
+	&field_placeholder=`Insert braindump here...`
+	&field_helptext=``
+	&field_required=`1`
+	]]
+
+
+[[$fbInputTextfield? 
+	&unique_idx=`2`
+	&layout_id=`14`
+	&layout_column=`main`
+	&layout_idx=`0`
+	&field_name=`Name`
+	&field_layout=`[[*fb_form_layout]]`
+	&field_type=`text`
+	&field_placeholder=``
+	&field_helptext=``
+	&field_required=`1`
+	]]
+
+
+[[$fbInputEmail? 
+	&unique_idx=`3`
+	&layout_id=`14`
+	&layout_column=`main`
+	&layout_idx=`0`
+	&field_name=`Email`
+	&field_layout=`[[*fb_form_layout]]`
+	&field_placeholder=``
+	&field_helptext=``
+	]]
+
+
+[[$fbInputTextfield? 
+	&unique_idx=`4`
+	&layout_id=`14`
+	&layout_column=`main`
+	&layout_idx=`0`
+	&field_name=`Phone number`
+	&field_layout=`[[*fb_form_layout]]`
+	&field_type=`text`
+	&field_placeholder=``
+	&field_helptext=``
+	&field_required=`0`
+	]]
+`
+]]

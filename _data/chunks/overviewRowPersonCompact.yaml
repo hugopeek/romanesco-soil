@@ -1,0 +1,19 @@
+id: 293
+name: overviewRowPersonCompact
+description: ''
+category: m_ov_person
+properties: 'a:0:{}'
+
+-----
+
+[[$imgOverviewPersonAvatarLink]]
+
+<div class="content">
+    <a href="[[~[[+id]]]]" class="header">[[+person_firstname]]</a>
+    [[If?
+        &subject=`[[+show_subtitle]]`
+        &operator=`EQ`
+        &operand=`1`
+        &then=`<div class="description">[[+person_jobtitle]]</div>`
+    ]]
+</div>

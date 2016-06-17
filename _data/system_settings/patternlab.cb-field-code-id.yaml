@@ -1,0 +1,4 @@
+key: patternlab.cb_field_code_id
+xtype: numberfield
+namespace: patternlab
+area: 'ContentBlocks - Settings'

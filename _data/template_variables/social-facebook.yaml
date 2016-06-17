@@ -1,0 +1,12 @@
+id: 47
+type: url
+name: social_facebook
+caption: 'Facebook page'
+category: Social
+elements: ''
+rank: 3
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

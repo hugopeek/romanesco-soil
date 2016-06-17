@@ -1,0 +1,13 @@
+id: 57
+type: options
+name: rating_value
+caption: 'Rating value'
+description: 'How did the user value this product or service?'
+category: Rating
+elements: Inadequate==1||Mediocre==2||Sufficient==3||Great==4||Outstanding==5
+rank: 1
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

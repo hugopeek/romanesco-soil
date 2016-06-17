@@ -9,5 +9,5 @@ rank: 2
 default_text: ''
 properties: 'a:0:{}'
 input_properties: null
-output_properties: null
+output_properties: 'a:1:{s:9:"delimiter";s:1:",";}'
 content: ''

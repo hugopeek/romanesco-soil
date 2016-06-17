@@ -3,7 +3,7 @@ parent_properties: ''
 input: repeater
 name: 'Select Options (with Collapse)'
 description: ''
-sortorder: 40
+sortorder: 42
 category: 7
 icon: checkbox
 template: "[[$fbSelectOptionRow?\n    &field_type=`[[+field_type]]`\n    &field_name=`[[+field_name]]`\n    &option_layout=`[[+option_layout]]`\n    &collapse_target=`[[+collapse_target]]`\n    &field_option=`[[+field_option]]`\n    &field_helptext=`[[+field_helptext]]`\n    &idx=`[[+idx]]`\n    &unique_idx=`[[+unique_idx]]`\n]]"

@@ -1,0 +1,13 @@
+id: 73
+type: text
+name: organization_industry
+caption: 'Organization industry'
+description: 'In what field is this organization active?'
+category: 'Org. - Information'
+elements: ''
+rank: 6
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

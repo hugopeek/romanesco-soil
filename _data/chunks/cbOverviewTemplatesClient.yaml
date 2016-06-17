@@ -1,0 +1,10 @@
+id: 282
+name: cbOverviewTemplatesClient
+description: ''
+category: a_cb_overviews
+properties: 'a:0:{}'
+
+-----
+
+Client regular=overviewRowOrganizationBasic
+Client logo=overviewRowOrganizationLogo

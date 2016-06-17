@@ -1,4 +1,4 @@
 key: patternlab.custom_css_path
-value: assets/css
+value: assets/semantic/dist/themes/romanesco/assets/css
 namespace: patternlab
 area: Paths

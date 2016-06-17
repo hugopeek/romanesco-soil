@@ -10,7 +10,7 @@ properties: 'a:6:{s:6:"tvname";a:7:{s:4:"name";s:6:"tvname";s:4:"desc";s:26:"ima
  * ImagePlus Snippet as alternative to Image+ TV Output Type
  *
  * Copyright 2013-2015 by Alan Pich <alan.pich@gmail.com>
- * Copyright 2015 by Thomas Jakobi <thomas.jakobi@partout.info>
+ * Copyright 2015-2016 by Thomas Jakobi <thomas.jakobi@partout.info>
  *
  * @package imageplus
  * @subpackage snippet
@@ -18,7 +18,10 @@ properties: 'a:6:{s:6:"tvname";a:7:{s:4:"name";s:6:"tvname";s:4:"desc";s:26:"ima
  * @author Alan Pich <alan.pich@gmail.com>
  * @author Thomas Jakobi <thomas.jakobi@partout.info>
  * @copyright Alan Pich 2013-2015
- * @copyright Thomas Jakobi 2015
+ * @copyright Thomas Jakobi 2015-2016
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
  */
 
 $corePath = $modx->getOption('imageplus.core_path', null, $modx->getOption('core_path') . 'components/imageplus/');
@@ -32,14 +35,14 @@ $type = $modx->getOption('type', $scriptProperties, '', true);
 $options = $modx->getOption('options', $scriptProperties, '', true);
 $tpl = $modx->getOption('tpl', $scriptProperties, 'ImagePlus.image', true);
 $value = $modx->getOption('value', $scriptProperties, '', true);
-$debug = $modx->getOption('debug', $scriptProperties, '', false);
+$debug = $modx->getOption('debug', $scriptProperties, $imageplus->getOption('debug'), false);
 
 if ($value) {
     // Value is set by snippet property
     $data = json_decode($value);
     if (!$data) {
-        $modx->log(xPDO::LOG_LEVEL_ERROR, 'Unable to decode JSON in snippet property', '', 'Image+');
         if ($debug) {
+            $modx->log(xPDO::LOG_LEVEL_ERROR, 'Unable to decode JSON in snippet property', '', 'Image+');
             return 'Unable to decode JSON in snippet property';
         }
     }
@@ -51,9 +54,10 @@ if ($value) {
     if ($tv) {
         // Get the raw content of the TV
         $value = $tv->getValue($docid);
+        $value = $tv->processBindings($value, $docid);
     } else {
-        $modx->log(xPDO::LOG_LEVEL_ERROR, "Template Variable '{$tvname}' not found.", '', 'Image+');
         if ($debug) {
+            $modx->log(xPDO::LOG_LEVEL_ERROR, "Template Variable '{$tvname}' not found.", '', 'Image+');
             return "Template Variable '{$tvname}' not found.";
         }
     }
@@ -67,18 +71,18 @@ switch ($type) {
         $output = ($data && $data->sourceImg->src) ? 'image' : 'noimage';
         break;
     case 'tpl':
-        $output = $imageplus->getImageURL($value, array_merge($scriptProperties, array(
+        $output = ($value) ? $imageplus->getImageURL($value, array_merge($scriptProperties, array(
             'docid' => $docid,
             'phpThumbParams' => $options,
             'outputChunk' => $tpl
-        )), $tv);
+        )), $tv) : '';
         break;
     case 'thumb':
     default:
-        $output = $imageplus->getImageURL($value, array_merge($scriptProperties, array(
+        $output = ($value) ? $imageplus->getImageURL($value, array_merge($scriptProperties, array(
             'docid' => $docid,
             'phpThumbParams' => $options
-        )), $tv);
+        )), $tv) : '';
         break;
 }
 return $output;

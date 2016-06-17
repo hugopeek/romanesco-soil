@@ -4,7 +4,6 @@ alias: atoms
 published: 1
 parent: 12
 introtext: ''
-content: ''
 template: 1
 menuindex: 1
 createdby: 1
@@ -33,5 +32,20 @@ tvs:
     status_assigned_user: ''
     status_help: ''
     status_improvements: ''
-    status_indicator: ''
+    status_indicator: not-done
     status_notes: ''
+
+-----
+
+[[$cbLayoutSingleColumn?
+    &main=`[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]`
+	&background=`white`
+    &container_type=``
+    &padding=`[[+padding]]`
+    &alignment=``
+]]

@@ -1,0 +1,12 @@
+id: 66
+type: text
+name: address_country
+caption: Country
+category: Address
+elements: ''
+rank: 12
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

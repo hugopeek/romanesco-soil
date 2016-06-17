@@ -1,4 +1,4 @@
 key: patternlab.date_format_long
 value: '%e %B %Y'
 namespace: patternlab
-area: Settings
+area: 'Date and Time'

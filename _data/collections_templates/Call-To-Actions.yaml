@@ -7,7 +7,7 @@ resource_type_selection: 0
 tab_label: collections.cta.children
 button_label: collections.cta.children.create
 content_place: none
-context_menu: 'view,edit,duplicate,-,delete,undelete,remove,-,unlink'
+context_menu: 'view,edit,quickupdate,duplicate,-,delete,undelete,remove,-,unlink'
 buttons: 'view,edit,duplicate,delete,undelete,remove,unlink'
 back_to_collection_label: collections.cta.children.back_to_collection_label
 child_hide_from_menu: 1

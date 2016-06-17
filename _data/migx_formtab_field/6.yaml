@@ -5,5 +5,5 @@ field: background_img
 caption: 'Background image'
 pos: 1
 inputTV: overview_img_pano
-sourceFrom: config
+sourceFrom: migx
 sources: '[{"MIGX_id":1,"context":"mgr","sourceid":13},{"MIGX_id":2,"context":"web","sourceid":13}]'

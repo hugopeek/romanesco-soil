@@ -1,0 +1,13 @@
+id: 55
+type: listbox
+name: client_select
+caption: Client
+description: 'If this list is empty, you need to add the client first in the Clients component.'
+category: Participants
+elements: '@CHUNK tvSelectClient'
+rank: 1
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

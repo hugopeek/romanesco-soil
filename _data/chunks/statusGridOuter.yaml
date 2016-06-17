@@ -1,7 +1,7 @@
 id: 258
 name: statusGridOuter
 description: ''
-category: o_project
+category: o_hub
 properties: 'a:0:{}'
 
 -----
@@ -28,6 +28,7 @@ properties: 'a:0:{}'
         &processTVs=`1`
         &tplOuter=`@INLINE [[+wrapper]]`
         &tpl=`statusGridRow`
+        &where=`{"contentType:=":"text/html"}`
     ]]
     </tbody>
 </table>

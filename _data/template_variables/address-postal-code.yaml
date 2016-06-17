@@ -1,0 +1,12 @@
+id: 63
+type: text
+name: address_postal_code
+caption: 'Postal code'
+category: Address
+elements: ''
+rank: 4
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

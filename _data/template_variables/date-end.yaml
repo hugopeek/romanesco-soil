@@ -1,0 +1,12 @@
+id: 68
+type: date
+name: date_end
+caption: 'End date'
+category: Date
+elements: ''
+rank: 2
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

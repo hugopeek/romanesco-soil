@@ -2,11 +2,13 @@ id: 198
 name: quoteBasic
 description: ''
 category: a_content
+snippet: "<blockquote>\n    <p>[[+quote]]</p>\n    [[+cite:notempty=`<footer>[[+cite]]</footer>`]]\n</blockquote>"
 properties: 'a:0:{}'
+content: "<blockquote>\n    <p>[[+quote]]</p>\n    [[+cite:notempty=`<footer>[[+cite]]</footer>`]]\n</blockquote>"
 
 -----
 
-<blockquote>
+<blockquote class="ui quote">
     <p>[[+quote]]</p>
     [[+cite:notempty=`<footer>[[+cite]]</footer>`]]
 </blockquote>

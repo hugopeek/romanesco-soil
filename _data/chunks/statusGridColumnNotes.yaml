@@ -1,0 +1,9 @@
+id: 259
+name: statusGridColumnNotes
+description: ''
+category: a_hub
+properties: 'a:0:{}'
+
+-----
+
+<td class="[[+priority:eq=`low`:then=`disabled`]] [[+note:contains=`[[+modx.user.username]]`:then=`warning`:else=``]] [[+priority:eq=`high`:then=`negative`]]">[[+note]]</td>

@@ -1,0 +1,12 @@
+id: 78
+type: text
+name: person_firstname
+caption: 'First name'
+category: 'Person - Information'
+elements: ''
+rank: 1
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

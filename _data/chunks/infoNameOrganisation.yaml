@@ -1,0 +1,9 @@
+id: 267
+name: infoNameOrganisation
+description: ''
+category: a_information
+properties: 'a:0:{}'
+
+-----
+
+<div class="[[+classes]]" property="publisher" typeof="Organization">[[+organization_name]]</div>

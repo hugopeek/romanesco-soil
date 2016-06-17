@@ -6,6 +6,7 @@ properties: null
 
 -----
 
+/** @var modX $modx */
 switch ($modx->event->name) {
 
     case 'OnMODXInit':
@@ -18,4 +19,12 @@ switch ($modx->event->name) {
         $modx->loadClass($fqn, $path, false, true);
         break;
 
+    case 'OnSiteRefresh':
+        /** @var pdoTools $pdoTools */
+        if ($pdoTools = $modx->getService('pdoTools')) {
+            if ($pdoTools->clearFileCache()) {
+                $modx->log(modX::LOG_LEVEL_INFO, $modx->lexicon('refresh_default') . ': pdoTools');
+            }
+        }
+        break;
 }

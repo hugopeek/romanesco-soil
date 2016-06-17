@@ -1,0 +1,13 @@
+id: 81
+type: text
+name: person_jobtitle
+caption: 'Job title'
+description: 'The role of this person inside the team.'
+category: 'Person - Information'
+elements: ''
+rank: 5
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''
