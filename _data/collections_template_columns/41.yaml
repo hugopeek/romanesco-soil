@@ -1,0 +1,9 @@
+id: 41
+template: 8
+label: publishedon
+name: publishedon
+sortable: 1
+width: 15
+renderer: Collections.renderer.datetimeTwoLines
+position: 2
+sort_type: DATETIME

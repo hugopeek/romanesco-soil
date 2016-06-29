@@ -7,9 +7,8 @@ description: 'A headshot of the same person, but with a loose, personal twist to
 category: 'Person - Presentation'
 elements: ''
 rank: 1
-display: default
 default_text: ''
 properties: 'a:0:{}'
-input_properties: 'a:5:{s:11:"targetWidth";s:3:"800";s:12:"targetHeight";s:0:"";s:11:"targetRatio";s:3:"1.0";s:14:"thumbnailWidth";s:0:"";s:11:"allowAltTag";s:4:"true";}'
+input_properties: 'a:3:{s:11:"targetWidth";s:3:"800";s:11:"targetRatio";s:3:"1.0";s:11:"allowAltTag";s:4:"true";}'
 output_properties: 'a:2:{s:14:"phpThumbParams";s:40:"w=[[++max_thumb_width:empty=`800`]]&zc=1";s:11:"outputChunk";s:16:"cbOverviewRowImg";}'
 content: ''

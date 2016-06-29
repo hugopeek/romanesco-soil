@@ -2,7 +2,7 @@ id: 5
 name: Team
 sort_field: menuindex
 sort_type: 'SIGNED INTEGER'
-child_template: 2
+child_template: 13
 resource_type_selection: 0
 tab_label: collections.team.children
 button_label: collections.team.children.create

@@ -1,0 +1,28 @@
+id: 304
+name: overviewRowPersonTile
+description: ''
+category: m_ov_person
+properties: 'a:0:{}'
+
+-----
+
+[[-!$imgOverviewPersonLink]]
+
+<div class="ui overlay">
+    <[[+title_hierarchy]] class="ui inverted header">
+        [[+[[+title_field]]:empty=`[[+pagetitle]]`]]
+        [[If?
+            &subject=`[[+show_subtitle]]`
+            &operator=`EQ`
+            &operand=`1`
+            &then=`<p class="sub header">[[+person_jobtitle:empty=`[[+longtitle]]`]]</p>`
+        ]]
+    </[[+title_hierarchy]]>
+
+    [[If?
+        &subject=`[[+link_text]]`
+        &operator=`isnot`
+        &operand=`0`
+        &then=`<p>[[!$buttonHrefOverview? &classes=`basic`]]</p>`
+    ]]
+</div>

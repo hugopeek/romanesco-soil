@@ -1,15 +1,14 @@
 id: 10
 parent_properties: ''
 input: gallery
-name: 'Slider (Images)'
+name: 'Image Gallery / Slider'
 description: ''
 sortorder: 18
 category: 2
 icon: gallery
 icon_type: ''
-template: "[[$sliderRowImage?\n    &image=`[[+url]]`\n    &title=`[[+title]]`\n]]"
-properties: '{"wrapper_template":"[[$sliderOuter?\n    &rows=`[[+images]]`\n]]","max_images":"9","thumb_size":"medium","thumbnail_size":"0","source":"8","show_description":"0","show_link_field":"0","limit_to_current_context":"1","directory":"\/[[+resource]]\/","file_types":"png,gif,jpg,jpeg"}'
+template: "[[$galleryRowImage?\n    &url=`[[+url]]`\n    &title=`[[+title]]`\n    &url=`[[+url]]`\n    &size=`[[+size]]`\n    &extension=`[[+extension]]`\n    &lightbox=`[[+lightbox]]`\n]]"
+properties: '{"wrapper_template":"[[$galleryOuter?\n    &display_type=`[[+display_type]]`\n    &rows=`[[+images]]`\n    &cols=`[[+cols]]`\n    &lightbox=`[[+lightbox]]`\n    &center_mode=`[[+center_mode]]`\n]]","max_images":"9","thumb_size":"medium","thumbnail_size":"0","source":"8","show_description":"0","show_link_field":"0","limit_to_current_context":"1","directory":"\/[[+resource]]\/","file_types":"png,gif,jpg,jpeg"}'
 availability: '[]'
 layouts: ''
-times_per_page: 1
-settings: '[]'
+settings: '[{"reference":"display_type","title":"Display type","fieldtype":"select","default_value":"slider","fieldoptions":"[[$cbGalleryDisplayType]]","field_is_exposed":"asField","process_tags":"1"},{"reference":"cols","title":"Column count","fieldtype":"select","default_value":"one","fieldoptions":"[[$cbSettingColumns]]","field_is_exposed":"asField","process_tags":"1"},{"reference":"lightbox","title":"Lightbox","fieldtype":"radio","default_value":"0","fieldoptions":"Enabled=1\nDisabled=0","field_is_exposed":"asField"},{"reference":"center_mode","title":"Center mode","fieldtype":"radio","default_value":"0","fieldoptions":"On=1\nOff=0","field_is_exposed":"modal"}]'

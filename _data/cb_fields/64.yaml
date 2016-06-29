@@ -5,8 +5,8 @@ input: image
 name: Image
 description: ''
 sortorder: 4
-template: '<img class="ui centered image" src="[[+url]]" alt="">'
-properties: '{"source":"8","directory":"\/","file_types":"png,gif,jpg,jpeg,svg"}'
-availability: ''
+template: '[[$sliderRowImage? &classes=`centered`]]'
+properties: '{"source":"8","directory":"\/","file_types":"png,gif,jpg,jpeg,svg","thumbnail_size":"0"}'
+availability: '[]'
 layouts: ''
 settings: '[]'

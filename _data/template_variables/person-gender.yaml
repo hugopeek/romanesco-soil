@@ -1,5 +1,5 @@
 id: 80
-type: options
+type: option
 name: person_gender
 caption: Gender
 category: 'Person - Information'

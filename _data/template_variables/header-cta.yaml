@@ -4,7 +4,7 @@ name: header_cta
 caption: 'Call to action (CTA)'
 description: 'Select a CTA for display in header. CTAs can be created under Global Content. This will replace the Title values, but Background settings still apply. Please note that possibly inherited CTAs might not be visible on page because of Inheritance setting.'
 category: Header
-elements: '@CHUNK tvOptionsCTA'
+elements: '@CHUNK tvSelectCTA'
 rank: 20
 properties: 'a:0:{}'
 input_properties: null

@@ -2,9 +2,7 @@ id: 70
 name: ctaHeader
 description: ''
 category: m_cta
-snippet: "<div class=\"ui center aligned middle aligned container\">\n    [[#[[*header_cta]].content]]\n</div>"
 properties: 'a:0:{}'
-content: "<div class=\"ui center aligned middle aligned container\">\n    [[#[[*header_cta]].content]]\n</div>"
 
 -----
 
