@@ -2,6 +2,6 @@ id: 90
 name: overviewRowTestimonial
 description: ''
 category: m_overviews
-snippet: "<div class=\"[[+column_type]] testimonial\" [[+row_tpl:containsnot=`logo`:then=`vocab=\"http://schema.org/\" typeof=\"Review\"`]]>\n    [[!$[[+row_tpl]]]]\n</div>"
+snippet: ''
 properties: 'a:0:{}'
-content: "<div class=\"[[+column_type]] testimonial\" [[+row_tpl:containsnot=`logo`:then=`vocab=\"http://schema.org/\" typeof=\"Review\"`]]>\n    [[!$[[+row_tpl]]]]\n</div>"
+content: ''

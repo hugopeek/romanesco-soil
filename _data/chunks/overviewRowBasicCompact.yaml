@@ -2,9 +2,7 @@ id: 155
 name: overviewRowBasicCompact
 description: ''
 category: m_ov_basic
-snippet: "[[If?\n    &subject=`[[+show_subtitle]]`\n    &operator=`EQ`\n    &operand=`1`\n    &then=`[[!$headingHierarchySubtitleLink]]`\n    &else=`[[!$headingHierarchyLink]]`\n]]"
 properties: 'a:0:{}'
-content: "[[If?\n    &subject=`[[+show_subtitle]]`\n    &operator=`EQ`\n    &operand=`1`\n    &then=`[[!$headingHierarchySubtitleLink]]`\n    &else=`[[!$headingHierarchyLink]]`\n]]"
 
 -----
 

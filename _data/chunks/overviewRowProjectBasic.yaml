@@ -2,35 +2,22 @@ id: 295
 name: overviewRowProjectBasic
 description: ''
 category: m_ov_project
+snippet: "<figure class=\"ui rounded dimmable image\">\n    <div class=\"ui dimmer\">\n        <div class=\"content\">\n            <div class=\"center\">\n                [[If?\n                    &subject=`[[+show_subtitle]]`\n                    &operator=`EQ`\n                    &operand=`1`\n                    &then=`[[!$headingHierarchySubtitle? &classes=`inverted`]]`\n                    &else=`[[!$headingHierarchy? &classes=`inverted`]]`\n                ]]\n                [[If?\n                    &subject=`[[+link_text]]`\n                    &operator=`isnot`\n                    &operand=`0`\n                    &then=`[[!$buttonHrefOverview]]`\n                ]]\n            </div>\n        </div>\n    </div>\n    [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?\n        &tvname=`overview_img_landscape`\n        &docid=`[[+id]]`\n        &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`\n        &type=`tpl`\n        &tpl=`cbOverviewRowImg`\n    ]]\n</figure>"
 properties: 'a:0:{}'
+content: "<figure class=\"ui rounded dimmable image\">\n    <div class=\"ui dimmer\">\n        <div class=\"content\">\n            <div class=\"center\">\n                [[If?\n                    &subject=`[[+show_subtitle]]`\n                    &operator=`EQ`\n                    &operand=`1`\n                    &then=`[[!$headingHierarchySubtitle? &classes=`inverted`]]`\n                    &else=`[[!$headingHierarchy? &classes=`inverted`]]`\n                ]]\n                [[If?\n                    &subject=`[[+link_text]]`\n                    &operator=`isnot`\n                    &operand=`0`\n                    &then=`[[!$buttonHrefOverview]]`\n                ]]\n            </div>\n        </div>\n    </div>\n    [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?\n        &tvname=`overview_img_landscape`\n        &docid=`[[+id]]`\n        &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`\n        &type=`tpl`\n        &tpl=`cbOverviewRowImg`\n    ]]\n</figure>"
 
 -----
 
-<figure class="ui rounded dimmable image">
-    <div class="ui dimmer">
-        <div class="content">
-            <div class="center">
-                [[If?
-                    &subject=`[[+show_subtitle]]`
-                    &operator=`EQ`
-                    &operand=`1`
-                    &then=`[[!$headingHierarchySubtitle? &classes=`inverted`]]`
-                    &else=`[[!$headingHierarchy? &classes=`inverted`]]`
-                ]]
-                [[If?
-                    &subject=`[[+link_text]]`
-                    &operator=`isnot`
-                    &operand=`0`
-                    &then=`[[!$buttonHrefOverview]]`
-                ]]
-            </div>
-        </div>
-    </div>
-    [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
-        &tvname=`overview_img_landscape`
-        &docid=`[[+id]]`
-        &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`
-        &type=`tpl`
-        &tpl=`cbOverviewRowImg`
-    ]]
+<figure>
+    <a class="ui rounded image" href="[[~[[+id]]]]">
+        [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
+            &tvname=`overview_img_wide`
+            &docid=`[[+id]]`
+            &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`
+            &type=`tpl`
+            &tpl=`cbOverviewRowImg`
+        ]]
+    </a>
 </figure>
+
+[[!$overviewRowBasic]]

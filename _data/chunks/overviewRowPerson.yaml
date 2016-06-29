@@ -2,10 +2,12 @@ id: 275
 name: overviewRowPerson
 description: ''
 category: m_overviews
+snippet: "<section class=\"center aligned [[+column_type]] team\">\n    [[!$[[+row_tpl]]]]\n</section>"
 properties: 'a:0:{}'
+content: "<section class=\"center aligned [[+column_type]] team\">\n    [[!$[[+row_tpl]]]]\n</section>"
 
 -----
 
-<section class="center aligned [[+column_type]] team">
+<section class="center aligned [[+column_type]] team" style="min-height: 300px;">
     [[!$[[+row_tpl]]]]
 </section>

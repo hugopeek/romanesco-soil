@@ -2,8 +2,11 @@ id: 283
 name: cbOverviewTemplatesPortfolio
 description: ''
 category: a_cb_overviews
+snippet: 'Project regular=overviewRowProjectBasic'
 properties: 'a:0:{}'
+content: 'Project regular=overviewRowProjectBasic'
 
 -----
 
 Project regular=overviewRowProjectBasic
+Project tile=overviewRowProjectTile

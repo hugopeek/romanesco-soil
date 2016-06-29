@@ -2,9 +2,7 @@ id: 123
 name: overviewOuterFluid
 description: ''
 category: o_overviews
-snippet: "[[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@SemanticUI` &else=`getCache`]]?\n    &element=`getResources`\n    &cacheKey=`overviews`\n    [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]\n\n    &parents=`[[+parent]]`\n    &depth=`[[+depth]]`\n    &limit=`[[+limit]]`\n    &tpl=`overviewRowFluid`\n    &includeTVs=`1`\n    &processTVs=`1`\n    &showHidden=`[[+show_hidden:default=`0`]]`\n    &sortby=`[[+sortby]]`\n    &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`\n\n    &row_tpl=`[[+row_tpl]]`\n    &background_even=`[[+background_even]]`\n    &background_odd=`[[+background_odd]]`\n    &cols=`[[+cols]]`\n    &cols_interchange=`[[+cols_interchange]]`\n\n    &title_field=`[[+title_field]]`\n    &link_text=`[[+link_text]]`\n    &img_snap=`[[+img_snap]]`\n    &img_inflate=`[[+img_inflate]]`\n]]\n\n[[+pagination:eq=`1`:then=`[[$paginationFluid]]`]]"
 properties: 'a:0:{}'
-content: "[[![[If? &subject=`[[+pagination]]` &operator=`EQ` &operand=`1` &then=`getPage@SemanticUI` &else=`getCache`]]?\n    &element=`getResources`\n    &cacheKey=`overviews`\n    [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]\n\n    &parents=`[[+parent]]`\n    &depth=`[[+depth]]`\n    &limit=`[[+limit]]`\n    &tpl=`overviewRowFluid`\n    &includeTVs=`1`\n    &processTVs=`1`\n    &showHidden=`[[+show_hidden:default=`0`]]`\n    &sortby=`[[+sortby]]`\n    &sortdir=`[[+sortby:is=`menuindex`:then=`ASC`:else=`DESC`]]`\n\n    &row_tpl=`[[+row_tpl]]`\n    &background_even=`[[+background_even]]`\n    &background_odd=`[[+background_odd]]`\n    &cols=`[[+cols]]`\n    &cols_interchange=`[[+cols_interchange]]`\n\n    &title_field=`[[+title_field]]`\n    &link_text=`[[+link_text]]`\n    &img_snap=`[[+img_snap]]`\n    &img_inflate=`[[+img_inflate]]`\n]]\n\n[[+pagination:eq=`1`:then=`[[$paginationFluid]]`]]"
 
 -----
 

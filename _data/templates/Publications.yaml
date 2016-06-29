@@ -3,7 +3,6 @@ templatename: Publications
 description: ''
 category: t_publication
 icon: icon-pencil
-content: "<!DOCTYPE html>\n<html lang=\"[[++cultureKey]]\">\n\n[[$head]]\n\n<body id=\"publication-overview\">\n\n<div class=\"pusher\">\n    [[$headerBasic?\n        &masthead=`0`\n        &hero=`1`\n        &search=`0`\n    ]]\n\n    <main id=\"main\" role=\"main\">\n        <article id=\"content\">\n            [[*content]]\n        </article>\n    </main>\n\n    [[$footer]]\n</div>\n\n[[$offCanvasNav]]\n[[$script]]\n\n</body>\n</html>"
 properties: 'a:0:{}'
 
 -----

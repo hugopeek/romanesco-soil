@@ -2,10 +2,13 @@ id: 140
 name: cbOverviewTemplatesTeam
 description: ''
 category: a_cb_overviews
+snippet: "Team regular=overviewRowTeamBasic\nTeam regular (Card)=overviewRowTeamBasicCard\nTeam compact=overviewRowTeamCompact"
 properties: 'a:0:{}'
+content: "Team regular=overviewRowTeamBasic\nTeam regular (Card)=overviewRowTeamBasicCard\nTeam compact=overviewRowTeamCompact"
 
 -----
 
-Team regular=overviewRowTeamBasic
-Team regular (Card)=overviewRowTeamBasicCard
-Team compact=overviewRowTeamCompact
+Team member regular=overviewRowPersonBasic
+Team member regular (Card)=overviewRowPersonBasicCard
+Team member tile=overviewRowPersonTile
+Team member compact=overviewRowPersonCompact
