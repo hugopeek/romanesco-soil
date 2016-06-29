@@ -68,11 +68,11 @@ data:
         primary:
             - pluginid
             - event
-    content:
-        type: content
-        exclude_keys:
-            - editedby
-            - editedon
+    #content:
+    #    type: content
+    #    exclude_keys:
+    #        - editedby
+    #        - editedon
 
     # MODX config
     element_property_set:
