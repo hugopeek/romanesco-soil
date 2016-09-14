@@ -11,7 +11,7 @@ properties: 'a:0:{}'
         <div class="item branding">
             [[$logo]]
         </div>
-        
+
         <div class="right menu">
             [[pdoMenu?
                 &startId=`0`

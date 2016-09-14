@@ -2,11 +2,13 @@ id: 291
 name: overviewRowPersonBasic
 description: ''
 category: m_ov_person
+snippet: "[[!$imgOverviewPersonLink? &classes=`circular`]]\n\n<[[+title_hierarchy]] class=\"ui header\">\n    <a href=\"[[~[[+id]]]]\">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>\n    [[If?\n        &subject=`[[+show_subtitle]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`<p class=\"sub header\">[[+person_jobtitle:empty=`[[+longtitle]]`]]</p>`\n    ]]\n</[[+title_hierarchy]]>\n\n[[[[If?\n    &subject=`[[+show_introtext]]`\n    &operator=`EQ`\n    &operand=`1`\n    &then=`!$introtextDescription`\n]]]]\n\n<p>\n    [[!$socialConnectButtonsPerson? &button_type=`basic`]]\n</p>\n\n[[If?\n    &subject=`[[+link_text]]`\n    &operator=`isnot`\n    &operand=`0`\n    &then=`<p>[[!$buttonHrefOverview]]</p>`\n]]"
 properties: 'a:0:{}'
+content: "[[!$imgOverviewPersonLink? &classes=`circular`]]\n\n<[[+title_hierarchy]] class=\"ui header\">\n    <a href=\"[[~[[+id]]]]\">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>\n    [[If?\n        &subject=`[[+show_subtitle]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`<p class=\"sub header\">[[+person_jobtitle:empty=`[[+longtitle]]`]]</p>`\n    ]]\n</[[+title_hierarchy]]>\n\n[[[[If?\n    &subject=`[[+show_introtext]]`\n    &operator=`EQ`\n    &operand=`1`\n    &then=`!$introtextDescription`\n]]]]\n\n<p>\n    [[!$socialConnectButtonsPerson? &button_type=`basic`]]\n</p>\n\n[[If?\n    &subject=`[[+link_text]]`\n    &operator=`isnot`\n    &operand=`0`\n    &then=`<p>[[!$buttonHrefOverview]]</p>`\n]]"
 
 -----
 
-[[!$imgOverviewPersonLink? &classes=`circular`]]
+[[!$imgOverviewPersonLink? &classes=``]]
 
 <[[+title_hierarchy]] class="ui header">
     <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
@@ -16,6 +18,9 @@ properties: 'a:0:{}'
         &operand=`1`
         &then=`<p class="sub header">[[+person_jobtitle:empty=`[[+longtitle]]`]]</p>`
     ]]
+
+    [[!getCrossLinks:toPlaceholder=`ph_awards`? &tvName=`award_person_select` &page=`[[+id]]`]]
+    [[+ph_awards:notempty=`<i class="small trophy icon"></i>`]]
 </[[+title_hierarchy]]>
 
 [[[[If?
@@ -25,9 +30,11 @@ properties: 'a:0:{}'
     &then=`!$introtextDescription`
 ]]]]
 
+[[-
 <p>
     [[!$socialConnectButtonsPerson? &button_type=`basic`]]
 </p>
+]]
 
 [[If?
     &subject=`[[+link_text]]`

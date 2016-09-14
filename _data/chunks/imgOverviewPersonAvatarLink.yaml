@@ -2,13 +2,15 @@ id: 265
 name: imgOverviewPersonAvatarLink
 description: ''
 category: a_images
+snippet: "<a class=\"ui avatar image\" href=\"[[~[[+id]]]]\">\n    [[ImagePlus:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`?\n        &tvname=`person_image`\n        &docid=`[[+id]]`\n        &options=`w=150&h=150&zc=1`\n        &type=`tpl`\n        &tpl=`cbOverviewRowImg`\n    ]]\n</a>"
 properties: 'a:0:{}'
+content: "<a class=\"ui avatar image\" href=\"[[~[[+id]]]]\">\n    [[ImagePlus:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`?\n        &tvname=`person_image`\n        &docid=`[[+id]]`\n        &options=`w=150&h=150&zc=1`\n        &type=`tpl`\n        &tpl=`cbOverviewRowImg`\n    ]]\n</a>"
 
 -----
 
 <a class="ui avatar image" href="[[~[[+id]]]]">
     [[ImagePlus:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`?
-        &tvname=`person_image`
+        &tvname=`person_image_loose`
         &docid=`[[+id]]`
         &options=`w=150&h=150&zc=1`
         &type=`tpl`

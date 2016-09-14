@@ -2,11 +2,13 @@ id: 252
 name: globalBackgroundImgOverviewCSS
 description: ''
 category: a_global
+snippet: ".background.[[+alias]]:before {\n    background-image: url(\"[[ImagePlus? &value=`[[+tv.overview_img_pano:empty=`[[+tv.overview_img_wide]]`]]` &type=`thumb`]]\") !important;\n    opacity: 1;\n}"
 properties: 'a:0:{}'
+content: ".background.[[+alias]]:before {\n    background-image: url(\"[[ImagePlus? &value=`[[+tv.overview_img_pano:empty=`[[+tv.overview_img_wide]]`]]` &type=`thumb`]]\") !important;\n    opacity: 1;\n}"
 
 -----
 
 .background.[[+alias]]:before {
-    background-image: url("[[ImagePlus? &value=`[[+tv.overview_img_pano:empty=`[[+tv.overview_img_wide]]`]]` &type=`thumb`]]") !important;
+    background-image: url("[[ImagePlus? &value=`[[+tv.overview_img_pano:empty=`[[+tv.overview_img_wide]]`]]` &options=`w=2400` &type=`thumb`]]") !important;
     opacity: 1;
 }

@@ -2,18 +2,20 @@ id: 293
 name: overviewRowPersonCompact
 description: ''
 category: m_ov_person
+snippet: "[[$imgOverviewPersonAvatarLink]]\n\n<div class=\"content\">\n    <a href=\"[[~[[+id]]]]\" class=\"header\">[[+person_firstname]]</a>\n    [[If?\n        &subject=`[[+show_subtitle]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`<div class=\"description\">[[+person_jobtitle]]</div>`\n    ]]\n</div>"
 properties: 'a:0:{}'
+content: "[[$imgOverviewPersonAvatarLink]]\n\n<div class=\"content\">\n    <a href=\"[[~[[+id]]]]\" class=\"header\">[[+person_firstname]]</a>\n    [[If?\n        &subject=`[[+show_subtitle]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`<div class=\"description\">[[+person_jobtitle]]</div>`\n    ]]\n</div>"
 
 -----
 
-[[$imgOverviewPersonAvatarLink]]
+[[!$imgOverviewPersonAvatarLink]]
 
 <div class="content">
-    <a href="[[~[[+id]]]]" class="header">[[+person_firstname]]</a>
+    <a href="[[~[[+id]]]]" class="header">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
     [[If?
         &subject=`[[+show_subtitle]]`
         &operator=`EQ`
         &operand=`1`
-        &then=`<div class="description">[[+person_jobtitle]]</div>`
+        &then=`<div class="description">[[+person_jobtitle:empty=`[[+longtitle]]`]]</div>`
     ]]
 </div>

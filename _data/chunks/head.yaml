@@ -20,7 +20,7 @@ properties: 'a:0:{}'
 
     [[cbHasField?
         &field=`[[++patternlab.cb_field_code_id]]`
-        &then=`<link rel="stylesheet" href="[[++patternlab.custom_css_path]]/prism.css">`
+        &then=`<link rel="stylesheet" href="[[++patternlab.custom_vendor_path]]/prism/prism.css">`
     ]]
 
     [[++head_additional]]

@@ -2,12 +2,14 @@ id: 112
 name: cbLayoutTwoColumns
 description: ''
 category: o_layouts
+snippet: "<div class=\"ui vertical stripe segment [[+background]]\">\n    <div class=\"ui [[+container_type]] container\">\n        <div class=\"ui two column stackable doubling [[+padding]] [[+alignment]] grid\">\n            <div class=\"column\">[[+col_1]]</div>\n            <div class=\"column\">[[+col_2]]</div>\n        </div>\n    </div>\n</div>"
 properties: 'a:0:{}'
+content: "<div class=\"ui vertical stripe segment [[+background]]\">\n    <div class=\"ui [[+container_type]] container\">\n        <div class=\"ui two column stackable doubling [[+padding]] [[+alignment]] grid\">\n            <div class=\"column\">[[+col_1]]</div>\n            <div class=\"column\">[[+col_2]]</div>\n        </div>\n    </div>\n</div>"
 
 -----
 
 <div class="ui vertical stripe segment [[+background]]">
-    <div class="ui [[+container_type]] container">
+    <div class="ui [[+container_type]] [[+template_type:ne=`detail`:then=`container`]]">
         <div class="ui two column stackable doubling [[+padding]] [[+alignment]] grid">
             <div class="column">[[+col_1]]</div>
             <div class="column">[[+col_2]]</div>

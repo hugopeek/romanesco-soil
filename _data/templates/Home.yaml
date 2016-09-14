@@ -3,6 +3,7 @@ templatename: Home
 description: ''
 category: t_basic
 icon: icon-home
+content: "<!DOCTYPE html>\n<html lang=\"[[++cultureKey]]\">\n\n[[$head]]\n\n<body id=\"home\">\n\n<div class=\"pusher\">\n    [[$headerBasic?\n        &masthead=`0`\n        &hero=`1`\n        &search=`0`\n    ]]\n\n    <main id=\"main\" role=\"main\">\n        <article id=\"content\">\n            [[*content]]\n        </article>\n    </main>\n\n    [[$footer]]\n</div>\n\n[[$offCanvasNav]]\n[[$script]]\n\n</body>\n</html>"
 properties: 'a:0:{}'
 
 -----
@@ -12,7 +13,7 @@ properties: 'a:0:{}'
 
 [[$head]]
 
-<body id="home">
+<body id="home" class="full-screen-bg">
 
 <div class="pusher">
     [[$headerBasic?

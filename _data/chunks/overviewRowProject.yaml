@@ -2,10 +2,12 @@ id: 278
 name: overviewRowProject
 description: ''
 category: m_overviews
+snippet: "<section class=\"[[+column_type]] portfolio\" style=\"min-height: 300px;\">\n    [[!$[[+row_tpl]]]]\n</section>"
 properties: 'a:0:{}'
+content: "<section class=\"[[+column_type]] portfolio\" style=\"min-height: 300px;\">\n    [[!$[[+row_tpl]]]]\n</section>"
 
 -----
 
-<section class="[[+column_type]] portfolio" style="min-height: 300px;">
+<section class="[[+column_type]] project">
     [[!$[[+row_tpl]]]]
 </section>

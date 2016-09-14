@@ -2,11 +2,13 @@ id: 292
 name: overviewRowPersonBasicCard
 description: ''
 category: m_ov_person
+snippet: "[[$imgOverviewPersonLink]]\n\n<div class=\"center aligned content\">\n    <a href=\"[[~[[+id]]]]\" class=\"header\">[[+person_firstname]]</a>\n    [[If?\n        &subject=`[[+show_subtitle]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`<p class=\"meta\">[[+person_jobtitle]]</p>`\n    ]]\n\n    [[[[If?\n        &subject=`[[+show_introtext]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`!$introtextDescription`\n    ]]]]\n\n    [[!$socialConnectButtonsPerson? &button_type=`basic`]]\n</div>\n\n[[[[If?\n    &subject=`[[+link_text]]`\n    &operator=`isnot`\n    &operand=`0`\n    &then=`!$buttonHrefOverview? &classes=`bottom attached``\n]]]]"
 properties: 'a:0:{}'
+content: "[[$imgOverviewPersonLink]]\n\n<div class=\"center aligned content\">\n    <a href=\"[[~[[+id]]]]\" class=\"header\">[[+person_firstname]]</a>\n    [[If?\n        &subject=`[[+show_subtitle]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`<p class=\"meta\">[[+person_jobtitle]]</p>`\n    ]]\n\n    [[[[If?\n        &subject=`[[+show_introtext]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`!$introtextDescription`\n    ]]]]\n\n    [[!$socialConnectButtonsPerson? &button_type=`basic`]]\n</div>\n\n[[[[If?\n    &subject=`[[+link_text]]`\n    &operator=`isnot`\n    &operand=`0`\n    &then=`!$buttonHrefOverview? &classes=`bottom attached``\n]]]]"
 
 -----
 
-[[$imgOverviewPersonLink]]
+[[!$imgOverviewPersonLink]]
 
 <div class="center aligned content">
     <a href="[[~[[+id]]]]" class="header">[[+person_firstname]]</a>

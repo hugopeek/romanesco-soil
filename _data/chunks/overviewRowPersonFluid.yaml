@@ -2,12 +2,14 @@ id: 294
 name: overviewRowPersonFluid
 description: ''
 category: m_ov_person
+snippet: "<div class=\"column\">\n    [[$imgOverviewPersonLink? &classes=`circular`]]\n</div>\n\n<div class=\"[[+cols]] wide floated column\">\n    <h2 class=\"ui header\">\n        <a href=\"[[~[[+id]]]]\">[[+person_firstname]]</a>\n        <div class=\"sub header\">[[+person_jobtitle]]</div>\n    </h2>\n    <p>\n        [[!$socialConnectButtonsPerson]]\n    </p>\n    [[+introtext]]\n    [[If?\n        &subject=`[[+link_text]]`\n        &operator=`isnot`\n        &operand=`0`\n        &then=`<p>[[!$buttonHrefOverview]]</p>`\n    ]]\n</div>"
 properties: 'a:0:{}'
+content: "<div class=\"column\">\n    [[$imgOverviewPersonLink? &classes=`circular`]]\n</div>\n\n<div class=\"[[+cols]] wide floated column\">\n    <h2 class=\"ui header\">\n        <a href=\"[[~[[+id]]]]\">[[+person_firstname]]</a>\n        <div class=\"sub header\">[[+person_jobtitle]]</div>\n    </h2>\n    <p>\n        [[!$socialConnectButtonsPerson]]\n    </p>\n    [[+introtext]]\n    [[If?\n        &subject=`[[+link_text]]`\n        &operator=`isnot`\n        &operand=`0`\n        &then=`<p>[[!$buttonHrefOverview]]</p>`\n    ]]\n</div>"
 
 -----
 
 <div class="column">
-    [[$imgOverviewPersonLink? &classes=`circular`]]
+    [[!$imgOverviewPersonLink? &classes=`circular`]]
 </div>
 
 <div class="[[+cols]] wide floated column">
