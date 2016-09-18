@@ -1,5 +1,5 @@
-# Gitify configuration for Romanesco Soil
-# NB! Projects need their own .gitify file
+# Gitify configuration for this project
+# NB! Replace .gitify with this version after cloning Romanesco
 
 data_directory: _data/
 data:
@@ -47,10 +47,6 @@ data:
         exclude_keys:
             - static
             - static_file
-
-        # Only include PatternLab specific elements
-        where:
-            'static_file:LIKE': '[[++patternlab.core_path]]%'
     snippets:
         class: modSnippet
         primary: name
@@ -58,10 +54,6 @@ data:
         exclude_keys:
             - static
             - static_file
-
-        # Only include PatternLab specific elements
-        where:
-            'static_file:LIKE': '[[++patternlab.core_path]]%'
     plugins:
         class: modPlugin
         primary: name
@@ -69,10 +61,6 @@ data:
         exclude_keys:
             - static
             - static_file
-
-        # Only include PatternLab specific elements
-        where:
-            'static_file:LIKE': '[[++patternlab.core_path]]%'
     plugin_events:
         class: modPluginEvent
         primary:
@@ -83,9 +71,6 @@ data:
         exclude_keys:
             - editedby
             - editedon
-        where:
-            - 'context_key:IN': [global,hub]
-            - 'OR:alias:IN': [assets/css/backgrounds]
 
     # MODX config
     element_property_set:
