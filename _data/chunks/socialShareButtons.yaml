@@ -2,14 +2,12 @@ id: 103
 name: socialShareButtons
 description: ''
 category: m_social
-snippet: "[[!$buttonSocialShareFacebook? &classes=`[[+button_type]]`]]\n[[!$buttonSocialShareTwitter? &classes=`[[+button_type]]`]]\n[[-!$buttonSocialShareGoogleplus? &classes=`[[+button_type]]`]]\n[[!$buttonSocialShareLinkedin? &classes=`[[+button_type]]`]]\n[[-!$buttonSocialSharePinterest? &classes=`[[+button_type]]`]]"
 properties: 'a:0:{}'
-content: "[[!$buttonSocialShareFacebook? &classes=`[[+button_type]]`]]\n[[!$buttonSocialShareTwitter? &classes=`[[+button_type]]`]]\n[[-!$buttonSocialShareGoogleplus? &classes=`[[+button_type]]`]]\n[[!$buttonSocialShareLinkedin? &classes=`[[+button_type]]`]]\n[[-!$buttonSocialSharePinterest? &classes=`[[+button_type]]`]]"
 
 -----
 
 [[!$buttonSocialShareFacebook? &classes=`[[+button_type]]`]]
 [[!$buttonSocialShareTwitter? &classes=`[[+button_type]]`]]
-[[!$buttonSocialShareGoogleplus? &classes=`[[+button_type]]`]]
+[[-!$buttonSocialShareGoogleplus? &classes=`[[+button_type]]`]]
 [[!$buttonSocialShareLinkedin? &classes=`[[+button_type]]`]]
-[[!$buttonSocialSharePinterest? &classes=`[[+button_type]]`]]
+[[-!$buttonSocialSharePinterest? &classes=`[[+button_type]]`]]

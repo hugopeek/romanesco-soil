@@ -2,16 +2,14 @@ id: 293
 name: overviewRowPersonCompact
 description: ''
 category: m_ov_person
-snippet: "[[$imgOverviewPersonAvatarLink]]\n\n<div class=\"content\">\n    <a href=\"[[~[[+id]]]]\" class=\"header\">[[+person_firstname]]</a>\n    [[If?\n        &subject=`[[+show_subtitle]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`<div class=\"description\">[[+person_jobtitle]]</div>`\n    ]]\n</div>"
 properties: 'a:0:{}'
-content: "[[$imgOverviewPersonAvatarLink]]\n\n<div class=\"content\">\n    <a href=\"[[~[[+id]]]]\" class=\"header\">[[+person_firstname]]</a>\n    [[If?\n        &subject=`[[+show_subtitle]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`<div class=\"description\">[[+person_jobtitle]]</div>`\n    ]]\n</div>"
 
 -----
 
 [[!$imgOverviewPersonAvatarLink]]
 
 <div class="content">
-    <a href="[[~[[+id]]]]" class="header">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
+    <a href="[[~[[+id]]]]" class="header">[[+person_firstname]]</a>
     [[If?
         &subject=`[[+show_subtitle]]`
         &operator=`EQ`

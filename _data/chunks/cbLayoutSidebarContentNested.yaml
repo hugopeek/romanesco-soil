@@ -2,15 +2,11 @@ id: 77
 name: cbLayoutSidebarContentNested
 description: ''
 category: m_layouts
-snippet: "<div class=\"ui nested stackable doubling [[+padding]] [[+alignment]] grid\">\n    <div class=\"six wide column\">[[+sidebar]]</div>\n    <div class=\"ten wide column\">[[+main]]</div>\n</div>"
 properties: 'a:0:{}'
-content: "<div class=\"ui nested stackable doubling [[+padding]] [[+alignment]] grid\">\n    <div class=\"six wide column\">[[+sidebar]]</div>\n    <div class=\"ten wide column\">[[+main]]</div>\n</div>"
 
 -----
 
-<div class="ui nested stackable doubling [[+padding]] [[+alignment]] [[+divider]] equal width grid">
-    <div class="row">
-        <div class="[[+sidebar_width]] wide column">[[+sidebar]]</div>
-        <div class="column">[[+main]]</div>
-    </div>
+<div class="ui nested stackable doubling [[+padding]] [[+alignment]] grid">
+    <div class="six wide column">[[+sidebar]]</div>
+    <div class="ten wide column">[[+main]]</div>
 </div>

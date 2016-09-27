@@ -2,10 +2,8 @@ id: 17
 name: headingBasic
 description: ''
 category: a_content
-snippet: '<[[+level]] class="ui header">[[+value]]</[[+level]]>'
 properties: 'a:0:{}'
-content: '<[[+level]] class="ui header">[[+value]]</[[+level]]>'
 
 -----
 
-<[[+level]] class="ui [[+alignment]] header">[[+value]]</[[+level]]>
+<[[+level]] class="ui header">[[+value]]</[[+level]]>

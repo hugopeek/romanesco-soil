@@ -24,7 +24,9 @@ data:
     # Basic elements
     categories:
         class: modCategory
-        primary: id
+        primary:
+            - id
+            - category
         truncate_on_force:
             - modCategoryClosure
     templates:
@@ -199,17 +201,25 @@ data:
     # ContentBlocks
     cb_fields:
         class: cbField
-        primary: id
+        primary:
+            - id
+            - name
         package: contentblocks
     cb_layouts:
         class: cbLayout
-        primary: name
+        primary:
+            - id
+            - name
     cb_templates:
         class: cbTemplate
-        primary: name
+        primary:
+            - id
+            - name
     cb_categories:
         class: cbCategory
-        primary: name
+        primary:
+            - id
+            - name
     cb_defaults:
         class: cbDefault
         primary: id
@@ -316,7 +326,6 @@ packages:
             - getcache
             - getpage
             - getresources
-            - googlesitemap
             - hits
             - if
             - imageplus

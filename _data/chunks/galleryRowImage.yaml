@@ -2,9 +2,7 @@ id: 301
 name: galleryRowImage
 description: ''
 category: m_presentation
-snippet: "[[+lightbox:eq=`1`:then=`\n<a class=\"ui column image\" href=\"[[+url]]\">\n    <img src=\"[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width]]&h=[[++max_thumb_width:mpy=`.625`]]&zc=1`]]\" alt=\"[[+title]]\">\n</a>\n`:else=`\n<figure class=\"ui column image\">\n    <img src=\"[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width]]&h=[[++max_thumb_width:mpy=`.625`]]&zc=1`]]\" alt=\"[[+title]]\">\n</figure>\n`]]"
 properties: 'a:0:{}'
-content: "[[+lightbox:eq=`1`:then=`\n<a class=\"ui column image\" href=\"[[+url]]\">\n    <img src=\"[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width]]&h=[[++max_thumb_width:mpy=`.625`]]&zc=1`]]\" alt=\"[[+title]]\">\n</a>\n`:else=`\n<figure class=\"ui column image\">\n    <img src=\"[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width]]&h=[[++max_thumb_width:mpy=`.625`]]&zc=1`]]\" alt=\"[[+title]]\">\n</figure>\n`]]"
 
 -----
 

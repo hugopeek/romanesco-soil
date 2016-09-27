@@ -2,14 +2,12 @@ id: 295
 name: overviewRowProjectBasic
 description: ''
 category: m_ov_project
-snippet: "<figure>\n    <a class=\"ui rounded image\" href=\"[[~[[+id]]]]\">\n        [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?\n            &tvname=`overview_img_wide`\n            &docid=`[[+id]]`\n            &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`\n            &type=`tpl`\n            &tpl=`cbOverviewRowImg`\n        ]]\n    </a>\n</figure>\n\n[[!$overviewRowBasic]]"
 properties: 'a:0:{}'
-content: "<figure>\n    <a class=\"ui rounded image\" href=\"[[~[[+id]]]]\">\n        [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?\n            &tvname=`overview_img_wide`\n            &docid=`[[+id]]`\n            &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`\n            &type=`tpl`\n            &tpl=`cbOverviewRowImg`\n        ]]\n    </a>\n</figure>\n\n[[!$overviewRowBasic]]"
 
 -----
 
 <figure>
-    <a class="ui image" href="[[~[[+id]]]]">
+    <a class="ui rounded image" href="[[~[[+id]]]]">
         [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
             &tvname=`overview_img_wide`
             &docid=`[[+id]]`
@@ -20,15 +18,4 @@ content: "<figure>\n    <a class=\"ui rounded image\" href=\"[[~[[+id]]]]\">\n  
     </a>
 </figure>
 
-<[[+title_hierarchy]] class="ui header">
-    <a href="[[~[[+id]]]]">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>
-    [[If?
-        &subject=`[[+show_subtitle]]`
-        &operator=`EQ`
-        &operand=`1`
-        &then=`<p class="sub header">[[+person_jobtitle:empty=`[[+longtitle]]`]]</p>`
-    ]]
-
-    [[!getCrossLinks:toPlaceholder=`ph_awards`? &tvName=`award_project_select` &page=`[[+id]]`]]
-    [[+ph_awards:notempty=`<i class="small trophy icon"></i>`]]
-</[[+title_hierarchy]]>
+[[!$overviewRowBasic]]
