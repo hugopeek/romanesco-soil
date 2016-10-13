@@ -1,0 +1,31 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+.ui.table {
+    // Indicate resource level in status grid table
+    a {
+        &[class*="level-"]:before {
+            margin-right: 4px;
+        }
+        &.level-2:before {
+            content: "\2192"
+        }
+        &.level-3:before {
+            content: "\2192 \2192"
+        }
+        &.level-4:before {
+            content: "\2192 \2192 \2192"
+        }
+    }
+
+    // Add hidden value inside status indication fields to enable sorting
+    td.indicator .hidden {
+        display: none;
+    }
+
+    // Fix bottom padding for fields containing labels
+    td.labels {
+        padding-bottom: 0.1em;
+    }
+}

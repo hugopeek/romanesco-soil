@@ -1,0 +1,221 @@
+/*******************************
+        Global Overrides
+*******************************/
+
+@import "site.variables";
+@import "../elements/container.variables";
+
+// Global settings
+//
+// Use font size to set the base percentage for all em and rem units.
+// The font-family and content values are used my onMediaQuery.js
+// to target Semantic UI breakpoints with JS
+// ---------------------------------------------------------------------
+
+html {
+    font-size: 80%;
+    font-family: "mobile";
+}
+body:after {
+    content: "mobile";
+    display: none;
+}
+
+@media screen and (min-width: @mobileBreakpoint) {
+    html {
+        font-size: 87.5%;
+        font-family: "mobile";
+    }
+    body:after {
+        content: "mobile";
+    }
+}
+
+@media screen and (min-width: @tabletBreakpoint) {
+    html {
+        font-size: 90%;
+        font-family: "tablet";
+    }
+    body:after {
+        content: "tablet";
+    }
+}
+@media screen and (min-width: @computerBreakpoint) {
+    html {
+        font-size: 85%;
+        font-family: "computer";
+    }
+    body:after {
+        content: "computer";
+    }
+}
+@media screen and (min-width: @largeMonitorBreakpoint) {
+    html {
+        font-size: 90%;
+        font-family: "large";
+    }
+    body:after {
+        content: "large";
+    }
+}
+@media screen and (min-width: @widescreenMonitorBreakpoint) {
+    html {
+        font-size: 95%;
+        font-family: "widescreen";
+    }
+    body:after {
+        content: "widescreen";
+    }
+}
+
+
+// Main content area
+// ---------------------------------------------------------------------
+
+// Set top margin on specific elements, to prevent gaps when starting with a segment
+#content > .introduction,
+#sidebar {
+    margin-top: 4rem !important;
+}
+
+// Main content header
+#content > .introduction {
+
+    // Reduce padding of the first container below the header, if it's white
+    + .ui.stripe.segment.white {
+        padding-top: 2em;
+    }
+}
+
+
+// Content elements
+// ---------------------------------------------------------------------
+
+.quote {
+    position: relative;
+    padding: 0 3% 0 5%;
+    font-style: italic;
+
+    &:before,
+    &:after {
+        position: absolute;
+        z-index: 0;
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 0;
+        opacity: 0.2;
+    }
+    &:before {
+        content: "\201C";
+        top: 1rem;
+        left: -1%;
+
+    }
+    &:after {
+        content: "\201D";
+        bottom: -0.5rem;
+        right: -1%;
+    }
+}
+
+.lead {
+    font-size: 1.6rem;
+    line-height: @lineHeight + 0.15rem;
+    color: @mutedTextColor;
+}
+
+.meta,
+.help {
+    color: @lightTextColor;
+
+    .inverted & {
+        color: @invertedLightTextColor;
+    }
+}
+.meta {
+    .publication & > span {
+        display: inline-block;
+        margin-right: 1em;
+    }
+}
+
+
+// Overviews
+// ---------------------------------------------------------------------
+
+.overview {
+    .description + p {
+        margin-top: 2rem;
+    }
+}
+
+
+// Slider
+// Based on slick slider: http://kenwheeler.github.io/slick/
+// ---------------------------------------------------------------------
+
+// Wrapper class is added to parent element of slider with JS
+.slider-wrapper {
+
+    // Create light background strip with bottom border
+    @media screen and (min-width: @computerBreakpoint) {
+        .masthead & {
+            border-bottom: 80px solid @darkWhite !important;
+        }
+    }
+}
+
+.slider {
+
+    // Fix small outline glitch
+    .slick-slide:focus {
+        outline: none;
+    }
+
+    @media only screen and (min-width: @computerBreakpoint) {
+        .slick-dots {
+            bottom: 3px;
+        }
+        .slick-arrow {
+            margin-top: -5.2rem;
+            width: 30px;
+            height: 30px;
+            z-index: 1;
+
+            &:before {
+                font-size: 30px;
+                opacity: .5;
+            }
+        }
+        .slick-prev {
+            left: 1rem;
+        }
+        .slick-next {
+            right: 1rem;
+        }
+
+        // Move bottom border up to create partial image overlay
+        .masthead & {
+            margin-bottom: -7em;
+        }
+    }
+
+    @media screen and (max-width: @computerBreakpoint) {
+        .slick-dots {
+            bottom: -4em;
+
+            button:before {
+                color: #fff !important;
+            }
+        }
+    }
+
+    @media screen and (max-width: @tabletBreakpoint) {
+        .slick-slide {
+            text-align: center;
+            p {
+                display: none; // No space for this on mobile
+            }
+        }
+    }
+}

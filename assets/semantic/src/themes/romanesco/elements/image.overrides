@@ -1,0 +1,29 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+a.circular.image > img {
+    border: 6px solid @darkWhite;
+    &:hover {
+        border-color: @primaryColor;
+    }
+}
+
+//.ui.faded.image > img {
+//    opacity: 0.6;
+//}
+
+.testimonial {
+    &.column:not(.logo) .image {
+        @media only screen and (max-width: @tabletBreakpoint) {
+            max-width: 40%;
+        }
+    }
+    a.faded.image > img {
+        opacity: 0.85;
+        transition: opacity, 0.2s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

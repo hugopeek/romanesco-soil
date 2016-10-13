@@ -1,0 +1,29 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+// Give nested grids some vertical space
+.ui.nested.grid {
+    // Only in the Content sections
+    #content & {
+        margin-bottom: 2rem;
+    }
+    // Add top margin for all nested grids that follow another element
+    #content * + & {
+        margin-top: 2rem;
+    }
+
+    // Separate articles more clearly in Publication overview
+    > .column.publication {
+        margin-bottom: 4rem;
+    }
+}
+
+// Make sure padding is set correctly on mobile
+// @todo: is this a bug?
+.ui.grid.container > .column {
+    @media only screen and (max-width: @largestMobileScreen) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

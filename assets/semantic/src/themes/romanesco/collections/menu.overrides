@@ -1,0 +1,148 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+@import "../../../site/globals/site.variables";
+
+#menu {
+    margin: 0;
+    height: 7rem;
+
+    // Specific styles for secondary menu variant
+    &.secondary {
+
+    }
+
+    // Alternative styles when sticky
+    &.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: height 0.2s;
+
+        background: rgba(255,255,255,0.95);
+        border-bottom: 1px solid @borderColor;
+        z-index: 9999;
+
+        // Make sure logo always scales smoothly with navbar
+        .logo {
+            transition: height 0.2s, min-width 0.2s;
+        }
+
+        // Give the underlying segment some top padding to accommodate the fixed menu
+        + .ui.vertical.segment {
+            padding-top: 12rem;
+        }
+
+        // Don't stick on mobile, that takes up too much valuable screen space
+        @media only screen and (max-width: @largestMobileScreen) {
+            position: absolute;
+        }
+    }
+
+    // Custom state for sticky menu after scrolling down. Class is set with JS.
+    &.tightened {
+        height: 5rem;
+
+        // @todo: seems project specific, these dimensions..
+        //.logo {
+        //    height: 83px * 0.4;
+        //    min-width: 368px * 0.4;
+        //}
+    }
+
+    // Make sure width is set to 100% on mobile
+    // @todo: is this a bug?
+    > .container {
+        @media only screen and (max-width: @largestMobileScreen) {
+            width: 100% !important;
+            margin-left: 1em !important;
+            margin-right: 1em !important;
+        }
+    }
+
+    // Adjust logo size in certain responsive scenarios
+    // @todo: seems project specific, these dimensions..
+    //.logo {
+    //    @media (max-width: @mobileBreakpoint) {
+    //        height: 83px * 0.4;
+    //        min-width: 368px * 0.4;
+    //    }
+    //    @media (min-width: @mobileBreakpoint) and (max-width: @largeMonitorBreakpoint) {
+    //        height: 83px * 0.45;
+    //        min-width: 368px * 0.45;
+    //    }
+    //}
+
+    // Plain menu buttons
+    .right .item {
+        margin: 0 0 0 0.3em;
+        font-weight: bold;
+
+        @media (max-width: @computerBreakpoint) {
+            display: none;
+        }
+    }
+
+    // Special items
+    .item {
+        &.branding {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        &.highlight {
+            margin: 0 0 0 2rem;
+            padding: 0;
+
+            @media (max-width: @tabletBreakpoint) {
+                display: none;
+            }
+        }
+        &.toc {
+            display: none;
+            margin: 0 0 0 1.5rem;
+            padding: 0;
+
+            @media (max-width: @computerBreakpoint) {
+                display: flex;
+            }
+        }
+    }
+}
+
+#submenu {
+    &.vertical.tabular {
+
+        // Styling tweaks for nested submenu
+        .item {
+            .header a.active {
+                margin-bottom: 0.75em;
+                padding: 0;
+                border: none;
+            }
+            .menu a.active {
+                border: none;
+            }
+        }
+    }
+}
+
+#off-canvas {
+    > .item.home {
+        .image {
+            margin-right: 6px;
+        }
+    }
+    > .item:nth-last-child(2){
+        background-color: @secondaryColor;
+    }
+    > .special {
+        padding: @relativeSmall @relativeLarge;
+    }
+}
+
+.pagination {
+    #content > .container > .column > & {
+        margin: 6em 0;
+    }
+}
