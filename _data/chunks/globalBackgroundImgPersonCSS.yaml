@@ -2,9 +2,7 @@ id: 300
 name: globalBackgroundImgPersonCSS
 description: ''
 category: a_global
-snippet: ".background.[[+alias]]:before {\n    background-image: url(\"[[ImagePlus? &value=`[[+tv.person_image]]` &type=`thumb`]]\") !important;\n    opacity: 1;\n}\n.background.[[+alias]]:hover:before {\n    background-image: url(\"[[ImagePlus? &value=`[[+tv.person_image_loose]]` &type=`thumb`]]\") !important;\n    opacity: 1;\n}"
 properties: 'a:0:{}'
-content: ".background.[[+alias]]:before {\n    background-image: url(\"[[ImagePlus? &value=`[[+tv.person_image]]` &type=`thumb`]]\") !important;\n    opacity: 1;\n}\n.background.[[+alias]]:hover:before {\n    background-image: url(\"[[ImagePlus? &value=`[[+tv.person_image_loose]]` &type=`thumb`]]\") !important;\n    opacity: 1;\n}"
 
 -----
 
@@ -15,11 +13,4 @@ content: ".background.[[+alias]]:before {\n    background-image: url(\"[[ImagePl
 .background.[[+alias]]:hover:before {
     background-image: url("[[ImagePlus? &value=`[[+tv.person_image_loose]]` &type=`thumb`]]") !important;
     opacity: 1;
-}
-
-/* Attach hover background image to an element, so it will be preloaded */
-.background.[[+alias]] {
-    background-image: url("[[ImagePlus? &value=`[[+tv.person_image_loose]]` &type=`thumb`]]") !important;
-    background-repeat: no-repeat;
-    background-position: -9999em -9999em;
 }

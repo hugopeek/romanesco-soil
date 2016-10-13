@@ -2,19 +2,15 @@ id: 115
 name: cbLayoutContentSidebar
 description: ''
 category: o_layouts
-snippet: "<div class=\"ui vertical stripe segment [[+background]]\">\n    <div class=\"ui [[+container_type]] container\">\n        <div class=\"ui stackable doubling [[+padding]] [[+alignment]] equal width grid\">\n            <div class=\"column\">[[+main]]</div>\n            <div class=\"[[+sidebar_width]] wide column\">[[+sidebar]]</div>\n        </div>\n    </div>\n</div>"
 properties: 'a:0:{}'
-content: "<div class=\"ui vertical stripe segment [[+background]]\">\n    <div class=\"ui [[+container_type]] container\">\n        <div class=\"ui stackable doubling [[+padding]] [[+alignment]] equal width grid\">\n            <div class=\"column\">[[+main]]</div>\n            <div class=\"[[+sidebar_width]] wide column\">[[+sidebar]]</div>\n        </div>\n    </div>\n</div>"
 
 -----
 
 <div class="ui vertical stripe segment [[+background]]">
-    <div class="ui [[+container_type]] [[+template_type:ne=`detail`:then=`container`]]">
-        <div class="ui stackable doubling [[+padding]] [[+alignment]] [[+divider]] equal width grid">
-            <div class="row">
-                <div class="column">[[+main]]</div>
-                <div class="[[+sidebar_width]] wide column">[[+sidebar]]</div>
-            </div>
+    <div class="ui [[+container_type]] container">
+        <div class="ui stackable doubling [[+padding]] [[+alignment]] equal width grid">
+            <div class="column">[[+main]]</div>
+            <div class="[[+sidebar_width]] wide column">[[+sidebar]]</div>
         </div>
     </div>
 </div>

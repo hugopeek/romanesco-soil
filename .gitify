@@ -24,7 +24,9 @@ data:
     # Basic elements
     categories:
         class: modCategory
-        primary: id
+        primary:
+            - id
+            - category
         truncate_on_force:
             - modCategoryClosure
     templates:
@@ -119,6 +121,7 @@ data:
         where:
             'namespace:IN':
                 - 'patternlab'
+                - 'romanesco-patterns'
     namespaces:
         class: modNamespace
         primary: name
@@ -126,6 +129,8 @@ data:
             'name:NOT IN':
                 - 'gitpackagemanagement'
                 - 'patternlab'
+                - 'romanesco-patterns'
+                - 'romanesco-backyard'
     property_set:
         class: modPropertySet
         primary: name
@@ -136,15 +141,24 @@ data:
             - editedon
         where:
             'key:NOT IN':
-                - 'patternlab.assets_path'
-                - 'patternlab.assets_url'
-                - 'patternlab.core_path'
                 - 'gitpackagemanagement.assets_path'
                 - 'gitpackagemanagement.assets_url'
                 - 'gitpackagemanagement.core_path'
                 - 'gitpackagemanagement.packages_base_url'
                 - 'gitpackagemanagement.packages_dir'
                 - 'extension_packages'
+                - 'patternlab.assets_path'
+                - 'patternlab.assets_url'
+                - 'patternlab.core_path'
+                - 'romanesco-patterns.assets_path'
+                - 'romanesco-patterns.assets_url'
+                - 'romanesco-patterns.core_path'
+                - 'romanesco-backyard.assets_path'
+                - 'romanesco-backyard.assets_url'
+                - 'romanesco-backyard.core_path'
+                - 'cbheadingimage.assets_path'
+                - 'cbheadingimage.assets_url'
+                - 'cbheadingimage.core_path'
 
     # User config
     access_context:
@@ -214,17 +228,25 @@ data:
     # ContentBlocks
     cb_fields:
         class: cbField
-        primary: id
+        primary:
+            - id
+            - name
         package: contentblocks
     cb_layouts:
         class: cbLayout
-        primary: name
+        primary:
+            - id
+            - name
     cb_templates:
         class: cbTemplate
-        primary: name
+        primary:
+            - id
+            - name
     cb_categories:
         class: cbCategory
-        primary: name
+        primary:
+            - id
+            - name
     cb_defaults:
         class: cbDefault
         primary: id
@@ -331,7 +353,6 @@ packages:
             - getcache
             - getpage
             - getresources
-            - googlesitemap
             - hits
             - if
             - imageplus
@@ -366,3 +387,5 @@ packages:
     #    api_key: .extras.io.key
     #    packages:
     #        - patternlab-0.9.0-pl
+    #        - romanescobackyard-0.1.1-pl
+    #        - cbheadingimage-0.2.1-pl

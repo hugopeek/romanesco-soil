@@ -2,9 +2,7 @@ id: 226
 name: sliderRowImage
 description: ''
 category: m_presentation
-snippet: "<div>\n    <img src=\"[[pthumb? &input=`[[+image]]` &options=`w=[[++max_thumb_width]]&h=[[++max_thumb_width:mpy=`.625`]]&zc=1`]]\" alt=\"[[+title]]\">\n</div>"
 properties: 'a:0:{}'
-content: "<div>\n    <img src=\"[[pthumb? &input=`[[+image]]` &options=`w=[[++max_thumb_width]]&h=[[++max_thumb_width:mpy=`.625`]]&zc=1`]]\" alt=\"[[+title]]\">\n</div>"
 
 -----
 

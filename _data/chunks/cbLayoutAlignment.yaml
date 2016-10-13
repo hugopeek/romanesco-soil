@@ -2,17 +2,13 @@ id: 130
 name: cbLayoutAlignment
 description: ''
 category: a_cb_layouts
-snippet: "Left=left aligned\nCenter=center aligned\nRight=right aligned\nMiddle=middle aligned\nBottom=bottom aligned\n\nLeft and middle=left aligned middle aligned\nCenter and middle=center aligned middle aligned\nRight and middle=right aligned middle aligned"
 properties: 'a:0:{}'
-content: "Left=left aligned\nCenter=center aligned\nRight=right aligned\nMiddle=middle aligned\nBottom=bottom aligned\n\nLeft and middle=left aligned middle aligned\nCenter and middle=center aligned middle aligned\nRight and middle=right aligned middle aligned"
 
 -----
 
 Left=left aligned
 Center=center aligned
 Right=right aligned
-Justified=justified
-
 Middle=middle aligned
 Bottom=bottom aligned
 

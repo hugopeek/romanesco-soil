@@ -2,12 +2,10 @@ id: 151
 name: cbSettingContainerType
 description: ''
 category: a_cb_settings
-snippet: "Standard width (container)=\nFull width (fluid)=fluid\nOptimal readability (text)=text"
 properties: 'a:0:{}'
-content: "Standard width (container)=\nFull width (fluid)=fluid\nOptimal readability (text)=text"
 
 -----
 
-Standard width (container)= 
+Standard width (container)=
 Full width (fluid)=fluid
 Optimal readability (text)=text

@@ -2,13 +2,11 @@ id: 101
 name: socialConnectButtons
 description: ''
 category: m_social
-snippet: "<span vocab=\"http://schema.org/\" typeof=\"Organization\">\n    <meta property=\"name\" content=\"[[++site_name]]\">\n    [[If?\n        &subject=`[[++social_twitter]]`\n        &operator=`notempty`\n        &then=`[[$buttonSocialConnectTwitter? &classes=`[[+button_type]]`]]`\n    ]]\n    [[If?\n        &subject=`[[++social_linkedin]]`\n        &operator=`notempty`\n        &then=`[[$buttonSocialConnectLinkedin? &classes=`[[+button_type]]`]]`\n    ]]\n    [[If?\n        &subject=`[[++social_facebook]]`\n        &operator=`notempty`\n        &then=`[[$buttonSocialConnectFacebook? &classes=`[[+button_type]]`]]`\n    ]]\n    [[If?\n        &subject=`[[++social_googleplus]]`\n        &operator=`notempty`\n        &then=`[[$buttonSocialConnectGoogleplus? &classes=`[[+button_type]]`]]`\n    ]]\n    [[If?\n        &subject=`[[++social_instagram]]`\n        &operator=`notempty`\n        &then=`[[$buttonSocialConnectLinkedin? &classes=`[[+button_type]]`]]`\n    ]]\n    [[If?\n        &subject=`[[++social_pinterest]]`\n        &operator=`notempty`\n        &then=`[[$buttonSocialConnectPinterest? &classes=`[[+button_type]]`]]`\n    ]]\n    [[If?\n        &subject=`[[++social_youtube]]`\n        &operator=`notempty`\n        &then=`[[$buttonSocialConnectYoutube? &classes=`[[+button_type]]`]]`\n    ]]\n</span>"
 properties: 'a:0:{}'
-content: "<span vocab=\"http://schema.org/\" typeof=\"Organization\">\n    <meta property=\"name\" content=\"[[++site_name]]\">\n    [[If?\n        &subject=`[[++social_twitter]]`\n        &operator=`notempty`\n        &then=`[[$buttonSocialConnectTwitter? &classes=`[[+button_type]]`]]`\n    ]]\n    [[If?\n        &subject=`[[++social_linkedin]]`\n        &operator=`notempty`\n        &then=`[[$buttonSocialConnectLinkedin? &classes=`[[+button_type]]`]]`\n    ]]\n    [[If?\n        &subject=`[[++social_facebook]]`\n        &operator=`notempty`\n        &then=`[[$buttonSocialConnectFacebook? &classes=`[[+button_type]]`]]`\n    ]]\n    [[If?\n        &subject=`[[++social_googleplus]]`\n        &operator=`notempty`\n        &then=`[[$buttonSocialConnectGoogleplus? &classes=`[[+button_type]]`]]`\n    ]]\n    [[If?\n        &subject=`[[++social_instagram]]`\n        &operator=`notempty`\n        &then=`[[$buttonSocialConnectLinkedin? &classes=`[[+button_type]]`]]`\n    ]]\n    [[If?\n        &subject=`[[++social_pinterest]]`\n        &operator=`notempty`\n        &then=`[[$buttonSocialConnectPinterest? &classes=`[[+button_type]]`]]`\n    ]]\n    [[If?\n        &subject=`[[++social_youtube]]`\n        &operator=`notempty`\n        &then=`[[$buttonSocialConnectYoutube? &classes=`[[+button_type]]`]]`\n    ]]\n</span>"
 
 -----
 
-<span class="buttons social connect" vocab="http://schema.org/" typeof="Organization">
+<span vocab="http://schema.org/" typeof="Organization">
     <meta property="name" content="[[++site_name]]">
     [[If?
         &subject=`[[++social_twitter]]`
@@ -33,7 +31,7 @@ content: "<span vocab=\"http://schema.org/\" typeof=\"Organization\">\n    <meta
     [[If?
         &subject=`[[++social_instagram]]`
         &operator=`notempty`
-        &then=`[[$buttonSocialConnectInstagram? &classes=`[[+button_type]]`]]`
+        &then=`[[$buttonSocialConnectLinkedin? &classes=`[[+button_type]]`]]`
     ]]
     [[If?
         &subject=`[[++social_pinterest]]`
