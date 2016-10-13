@@ -80,14 +80,14 @@ data:
         primary:
             - pluginid
             - event
-    content:
-        type: content
-        exclude_keys:
-            - editedby
-            - editedon
-        where:
-            - 'context_key:IN': [global,hub]
-            - 'OR:alias:IN': [assets/css/backgrounds]
+    #content:
+    #    type: content
+    #    exclude_keys:
+    #        - editedby
+    #        - editedon
+    #    where:
+    #        - 'context_key:IN': [global,hub]
+    #        - 'OR:alias:IN': [assets/css/backgrounds]
 
     # MODX config
     element_property_set:
