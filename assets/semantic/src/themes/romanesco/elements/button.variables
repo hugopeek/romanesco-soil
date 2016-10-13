@@ -1,0 +1,9 @@
+/*******************************
+            Button
+*******************************/
+
+// Give buttons slightly more bottom padding
+@shadowOffset: 0.1em;
+
+// Create a small 3D effect
+//@shadowDistance: 0.1em;

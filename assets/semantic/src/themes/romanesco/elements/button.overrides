@@ -1,0 +1,17 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+.ui.button {
+    margin: 0;
+
+    // Offset any additional buttons
+    + .button {
+        margin-left: 0.25em;
+    }
+
+    // Content buttons are too close to top content
+    #content & {
+        margin-top: 0.5em;
+    }
+}

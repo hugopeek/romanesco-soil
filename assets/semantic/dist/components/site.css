@@ -1,0 +1,506 @@
+/*!
+ * # Semantic UI 2.1.8 - Site
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2015 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+             Page
+*******************************/
+
+@import url('https://fonts.googleapis.com/css?family=Source Sans Pro:400,700,400italic,700italic&subset=latin');
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 14px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  min-width: 320px;
+  background: #FFFFFF;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4285em;
+  color: rgba(0, 0, 0, 0.87);
+  font-smoothing: antialiased;
+}
+
+
+/*******************************
+             Headers
+*******************************/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  line-height: 1.1em;
+  margin: calc(2rem -  0.05em ) 0em 1.2rem;
+  font-weight: bold;
+  padding: 0em;
+}
+h1 {
+  min-height: 1rem;
+  font-size: 2.3rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child {
+  margin-top: 0em;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child {
+  margin-bottom: 0em;
+}
+
+
+/*******************************
+             Text
+*******************************/
+
+p {
+  margin: 0em 0em 1.2em;
+  line-height: 1.4285em;
+}
+p:first-child {
+  margin-top: 0em;
+}
+p:last-child {
+  margin-bottom: 0em;
+}
+
+/*-------------------
+        Links
+--------------------*/
+
+a {
+  color: #8db208;
+  text-decoration: none;
+}
+a:hover {
+  color: #7c9e00;
+  text-decoration: none;
+}
+
+
+/*******************************
+          Highlighting
+*******************************/
+
+
+/* Site */
+::-webkit-selection {
+  background-color: #CCE2FF;
+  color: rgba(0, 0, 0, 0.87);
+}
+::-moz-selection {
+  background-color: #CCE2FF;
+  color: rgba(0, 0, 0, 0.87);
+}
+::selection {
+  background-color: #CCE2FF;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* Form */
+textarea::-webkit-selection,
+input::-webkit-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+textarea::-moz-selection,
+input::-moz-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+textarea::selection,
+input::selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+
+/*******************************
+        Global Overrides
+*******************************/
+
+
+
+/*******************************
+         Site Settings
+*******************************/
+
+
+/*-------------------
+       Fonts
+--------------------*/
+
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+
+/* This is the single variable that controls them all */
+
+/* The size of page text  */
+
+/*-------------------
+    Border Radius
+--------------------*/
+
+
+/* See Power-user section below
+   for explanation of @px variables
+*/
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
+
+/*--------------
+  Page Heading
+---------------*/
+
+
+/*--------------
+   Form Input
+---------------*/
+
+/* This adjusts the default form input across all elements */
+
+/* Line Height Default For Inputs in Browser */
+
+/*-------------------
+    Focused Input
+--------------------*/
+
+
+/* Used on inputs, textarea etc */
+
+/* Used on dropdowns, other larger blocks */
+
+/*-------------------
+        Page
+--------------------*/
+
+
+/*-------------------
+      Paragraph
+--------------------*/
+
+
+/*-------------------
+       Links
+--------------------*/
+
+
+/*-------------------
+  Highlighted Text
+--------------------*/
+
+
+/*-------------------
+        Grid
+--------------------*/
+
+
+/*-------------------
+     Transitions
+--------------------*/
+
+
+/*-------------------
+     Breakpoints
+--------------------*/
+
+
+/*-------------------
+      Site Colors
+--------------------*/
+
+
+/*---  Colors  ---*/
+
+
+/*---  Light Colors  ---*/
+
+
+/*---   Neutrals  ---*/
+
+
+/*--- Colored Backgrounds ---*/
+
+
+/*--- Colored Headers ---*/
+
+
+/*--- Colored Text ---*/
+
+
+/*-------------------
+     Alpha Colors
+--------------------*/
+
+
+/*-------------------
+       Accents
+--------------------*/
+
+
+/* Differentiating Neutrals */
+
+/* Differentiating Layers */
+
+
+/*******************************
+           Power-User
+*******************************/
+
+
+/*-------------------
+    Emotive Colors
+--------------------*/
+
+
+/* Positive */
+
+/* Negative */
+
+/* Info */
+
+/* Warning */
+
+/*-------------------
+        Paths
+--------------------*/
+
+
+/* For source only. Modified in gulp for dist */
+
+/*-------------------
+       Icons
+--------------------*/
+
+
+/* Maximum Glyph Width of Icon */
+
+/*-------------------
+     Neutral Text
+--------------------*/
+
+
+/*-------------------
+     Brand Colors
+--------------------*/
+
+
+/*-------------------
+      Borders
+--------------------*/
+
+
+/*-------------------
+    Derived Values
+--------------------*/
+
+
+/* Header Spacing */
+
+/* Minimum Mobile Width */
+
+/* Positive / Negative Dupes */
+
+
+/*******************************
+            Container
+*******************************/
+
+html {
+  font-size: 80%;
+  font-family: "mobile";
+}
+body:after {
+  content: "mobile";
+  display: none;
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 87.5%;
+    font-family: "mobile";
+  }
+  body:after {
+    content: "mobile";
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 90%;
+    font-family: "tablet";
+  }
+  body:after {
+    content: "tablet";
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 85%;
+    font-family: "computer";
+  }
+  body:after {
+    content: "computer";
+  }
+}
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: 90%;
+    font-family: "large";
+  }
+  body:after {
+    content: "large";
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 95%;
+    font-family: "widescreen";
+  }
+  body:after {
+    content: "widescreen";
+  }
+}
+#content > .introduction,
+#sidebar {
+  margin-top: 4rem !important;
+}
+#content > .introduction + .ui.stripe.segment.white {
+  padding-top: 2em;
+}
+.quote {
+  position: relative;
+  padding: 0 3% 0 5%;
+  font-style: italic;
+}
+.quote:before,
+.quote:after {
+  position: absolute;
+  z-index: 0;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 0;
+  opacity: 0.2;
+}
+.quote:before {
+  content: "\201C";
+  top: 1rem;
+  left: -1%;
+}
+.quote:after {
+  content: "\201D";
+  bottom: -0.5rem;
+  right: -1%;
+}
+.lead {
+  font-size: 1.6rem;
+  line-height: 1.5785em;
+  color: rgba(0, 0, 0, 0.6);
+}
+.meta,
+.help {
+  color: rgba(0, 0, 0, 0.4);
+}
+.inverted .meta,
+.inverted .help {
+  color: rgba(255, 255, 255, 0.7);
+}
+.publication .meta > span {
+  display: inline-block;
+  margin-right: 1em;
+}
+.overview .description + p {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .masthead .slider-wrapper {
+    border-bottom: 80px solid #F3F4F5 !important;
+  }
+}
+.slider .slick-slide:focus {
+  outline: none;
+}
+@media only screen and (min-width: 992px) {
+  .slider .slick-dots {
+    bottom: 3px;
+  }
+  .slider .slick-arrow {
+    margin-top: -5.2rem;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+  }
+  .slider .slick-arrow:before {
+    font-size: 30px;
+    opacity: .5;
+  }
+  .slider .slick-prev {
+    left: 1rem;
+  }
+  .slider .slick-next {
+    right: 1rem;
+  }
+  .masthead .slider {
+    margin-bottom: -7em;
+  }
+}
+@media screen and (max-width: 992px) {
+  .slider .slick-dots {
+    bottom: -4em;
+  }
+  .slider .slick-dots button:before {
+    color: #fff !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider .slick-slide {
+    text-align: center;
+  }
+  .slider .slick-slide p {
+    display: none;
+  }
+}
+
+
+/*******************************
+         Site Overrides
+*******************************/
+

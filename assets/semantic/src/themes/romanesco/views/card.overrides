@@ -1,0 +1,51 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+// Give nested cards some vertical space
+.ui.nested.cards {
+    // Only in the Content sections
+    #content & {
+        margin-bottom: 2rem;
+    }
+    // Add top margin for all nested grids that follow another element
+    #content * + & {
+        margin-top: 2rem;
+    }
+}
+
+// Fix margins for single column cards
+.ui.one.cards > .card {
+    width: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.card {
+    .sub.header {
+        margin-top: 1em !important;
+    }
+
+    .icon > .image {
+        padding: 0.5em 0 1em;
+    }
+
+    // Layout fixes for cards with left floated image
+    > .content > .column {
+        padding: 0 !important;
+        &:last-child {
+            padding-left: 1em !important;
+        }
+    }
+    > .extra {
+        .icon {
+            margin-top: 0.3em;
+        }
+        // @todo: Not clean. This margin is used to match the right floated button, but size of button may vary
+    }
+
+    // Styling for cards on non-white backgrounds
+    .ui.segment:not(.white) & {
+        box-shadow: none;
+    }
+}

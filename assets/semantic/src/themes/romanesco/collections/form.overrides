@@ -1,0 +1,54 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+.ui.form {
+    .hidden {
+        display: none !important;
+    }
+
+    .checkbox label {
+        font-weight: normal;
+    }
+
+    .help {
+        font-size: 1.1rem;
+    }
+
+    // Improve layout of non-segmented forms
+    .fieldset {
+        margin-bottom: 2em;
+    }
+
+    // Improve styling of inverted forms
+    .inverted & .field {
+        label {
+            color: #fff !important;
+            &:after {
+                color: fade(#fff, 60) !important;
+            }
+        }
+        input[type='field'],
+        textarea {
+            border: 1px solid #fff !important;
+        }
+    }
+
+    // Improve layout of labels positioned next to fields
+    @media screen and (min-width: @tabletBreakpoint) {
+        .horizontal.field,
+        .horizontal.fields {
+            display: table;
+            width: 100%;
+
+            > label {
+                display: table-cell;
+                width: 30%;
+            }
+            > input,
+            > select {
+                vertical-align: middle;
+            }
+        }
+    }
+}

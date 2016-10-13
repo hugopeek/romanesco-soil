@@ -1,0 +1,11 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+// Make sure nested containers align well on mobile
+.ui.container .container {
+    @media only screen and (max-width: @tabletBreakpoint) {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
