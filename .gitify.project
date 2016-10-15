@@ -35,6 +35,10 @@ data:
         exclude_keys:
             - static
             - static_file
+
+        # Exclude default template when extracting a fresh MODX installation
+        where:
+            - 'templatename:NOT IN': [BaseTemplate]
     template_variables:
         class: modTemplateVar
         primary: name
@@ -73,6 +77,11 @@ data:
         exclude_keys:
             - editedby
             - editedon
+
+        # Exclude resources built by Romanesco Backyard package
+        #where:
+        #    - 'context_key:IN': [global,hub]
+        #    - 'OR:alias:IN': [assets/css/backgrounds]
 
     # MODX config
     element_property_set:
@@ -236,11 +245,19 @@ data:
     # Collections
     collections_settings:
         class: CollectionSetting
-        primary: collection
+        primary:
+            - id
+            - collection
         package: collections
     collections_templates:
         class: CollectionTemplate
-        primary: name
+        primary:
+            - id
+            - name
+
+        # Exclude default collection when extracting a fresh MODX installation
+        where:
+            - 'name:NOT IN': [Blog]
     collections_template_columns:
         class: CollectionTemplateColumn
         primary: id
@@ -360,3 +377,5 @@ packages:
     #    api_key: .extras.io.key
     #    packages:
     #        - patternlab-0.9.0-pl
+    #        - romanescobackyard-0.1.1-pl
+    #        - cbheadingimage-0.2.1-pl
