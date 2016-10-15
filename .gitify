@@ -85,6 +85,8 @@ data:
     #    exclude_keys:
     #        - editedby
     #        - editedon
+    #
+    #    # Exclude resources built by Romanesco Backyard package
     #    where:
     #        - 'context_key:IN': [global,hub]
     #        - 'OR:alias:IN': [assets/css/backgrounds]
@@ -263,11 +265,15 @@ data:
     # Collections
     collections_settings:
         class: CollectionSetting
-        primary: collection
+        primary:
+            - id
+            - collection
         package: collections
     collections_templates:
         class: CollectionTemplate
-        primary: name
+        primary:
+            - id
+            - name
     collections_template_columns:
         class: CollectionTemplateColumn
         primary: id
