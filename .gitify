@@ -50,9 +50,9 @@ data:
             - static
             - static_file
 
-        # Only include PatternLab specific elements
+        # Only include Romanesco specific elements
         where:
-            'static_file:LIKE': '[[++patternlab.core_path]]%'
+            'static_file:LIKE': '[[++romanesco.core_path]]%'
     snippets:
         class: modSnippet
         primary: name
@@ -61,9 +61,9 @@ data:
             - static
             - static_file
 
-        # Only include PatternLab specific elements
+        # Only include Romanesco specific elements
         where:
-            'static_file:LIKE': '[[++patternlab.core_path]]%'
+            'static_file:LIKE': '[[++romanesco.core_path]]%'
     plugins:
         class: modPlugin
         primary: name
@@ -72,9 +72,9 @@ data:
             - static
             - static_file
 
-        # Only include PatternLab specific elements
+        # Only include Romanesco specific elements
         where:
-            'static_file:LIKE': '[[++patternlab.core_path]]%'
+            'static_file:LIKE': '[[++romanesco.core_path]]%'
     plugin_events:
         class: modPluginEvent
         primary:
@@ -123,16 +123,17 @@ data:
         where:
             'namespace:IN':
                 - 'patternlab'
-                - 'romanesco-patterns'
+                - 'romanesco'
     namespaces:
         class: modNamespace
         primary: name
+        exclude_keys:
+            - path
+            - assets_path
         where:
             'name:NOT IN':
                 - 'gitpackagemanagement'
                 - 'patternlab'
-                - 'romanesco-patterns'
-                - 'romanesco-backyard'
     property_set:
         class: modPropertySet
         primary: name
@@ -158,12 +159,12 @@ data:
                 - 'patternlab.assets_path'
                 - 'patternlab.assets_url'
                 - 'patternlab.core_path'
-                - 'romanesco-patterns.assets_path'
-                - 'romanesco-patterns.assets_url'
-                - 'romanesco-patterns.core_path'
-                - 'romanesco-backyard.assets_path'
-                - 'romanesco-backyard.assets_url'
-                - 'romanesco-backyard.core_path'
+                - 'romanesco.assets_path'
+                - 'romanesco.assets_url'
+                - 'romanesco.core_path'
+                - 'romanescobackyard.assets_path'
+                - 'romanescobackyard.assets_url'
+                - 'romanescobackyard.core_path'
                 - 'cbheadingimage.assets_path'
                 - 'cbheadingimage.assets_url'
                 - 'cbheadingimage.core_path'
@@ -399,6 +400,6 @@ packages:
     #    username: YOUR_USERNAME_HERE
     #    api_key: .extras.io.key
     #    packages:
-    #        - patternlab-0.9.0-pl
+    #        - romanesco-0.10.0-pl
     #        - romanescobackyard-0.1.1-pl
     #        - cbheadingimage-0.2.1-pl
