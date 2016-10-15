@@ -80,14 +80,16 @@ data:
         primary:
             - pluginid
             - event
-    content:
-        type: content
-        exclude_keys:
-            - editedby
-            - editedon
-        where:
-            - 'context_key:IN': [global,hub]
-            - 'OR:alias:IN': [assets/css/backgrounds]
+    #content:
+    #    type: content
+    #    exclude_keys:
+    #        - editedby
+    #        - editedon
+    #
+    #    # Exclude resources built by Romanesco Backyard package
+    #    where:
+    #        - 'context_key:IN': [global,hub]
+    #        - 'OR:alias:IN': [assets/css/backgrounds]
 
     # MODX config
     element_property_set:
@@ -139,14 +141,20 @@ data:
         primary: key
         exclude_keys:
             - editedon
+
+        # Exclude all system settings that could contain project-specific paths
+        # Exclude all settings for login names / passwords / keys / access tokens
+        # Exclude all language or timezone related settings
+        # Exclude MODX version, since that could differ per install
         where:
             'key:NOT IN':
+                - 'extension_packages'
+                - 'settings_version'
                 - 'gitpackagemanagement.assets_path'
                 - 'gitpackagemanagement.assets_url'
                 - 'gitpackagemanagement.core_path'
                 - 'gitpackagemanagement.packages_base_url'
                 - 'gitpackagemanagement.packages_dir'
-                - 'extension_packages'
                 - 'patternlab.assets_path'
                 - 'patternlab.assets_url'
                 - 'patternlab.core_path'
@@ -159,6 +167,7 @@ data:
                 - 'cbheadingimage.assets_path'
                 - 'cbheadingimage.assets_url'
                 - 'cbheadingimage.core_path'
+                - 'formit.form_encryptkey'
 
     # User config
     access_context:
@@ -263,11 +272,15 @@ data:
     # Collections
     collections_settings:
         class: CollectionSetting
-        primary: collection
+        primary:
+            - id
+            - collection
         package: collections
     collections_templates:
         class: CollectionTemplate
-        primary: name
+        primary:
+            - id
+            - name
     collections_template_columns:
         class: CollectionTemplateColumn
         primary: id
