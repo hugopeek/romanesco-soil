@@ -141,14 +141,18 @@ data:
         primary: key
         exclude_keys:
             - editedon
+
+        # Exclude all system settings that could contain project-specific paths
+        # Exclude MODX version, since that could differ per install
         where:
             'key:NOT IN':
+                - 'extension_packages'
+                - 'settings_version'
                 - 'gitpackagemanagement.assets_path'
                 - 'gitpackagemanagement.assets_url'
                 - 'gitpackagemanagement.core_path'
                 - 'gitpackagemanagement.packages_base_url'
                 - 'gitpackagemanagement.packages_dir'
-                - 'extension_packages'
                 - 'patternlab.assets_path'
                 - 'patternlab.assets_url'
                 - 'patternlab.core_path'
