@@ -143,6 +143,8 @@ data:
             - editedon
 
         # Exclude all system settings that could contain project-specific paths
+        # Exclude all settings for login names / passwords / keys / access tokens
+        # Exclude all language or timezone related settings
         # Exclude MODX version, since that could differ per install
         where:
             'key:NOT IN':
@@ -165,6 +167,7 @@ data:
                 - 'cbheadingimage.assets_path'
                 - 'cbheadingimage.assets_url'
                 - 'cbheadingimage.core_path'
+                - 'formit.form_encryptkey'
 
     # User config
     access_context:
