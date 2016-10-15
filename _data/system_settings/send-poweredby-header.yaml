@@ -1,4 +1,4 @@
 key: send_poweredby_header
-value: '0'
+value: '1'
 xtype: combo-boolean
 area: system
