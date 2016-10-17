@@ -1,0 +1,4 @@
+key: romanesco.search_result_limit
+value: '10'
+namespace: romanesco
+area: Search

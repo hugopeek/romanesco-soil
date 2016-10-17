@@ -1,0 +1,5 @@
+key: romanesco.search_add_to_menu
+value: '0'
+xtype: combo-boolean
+namespace: romanesco
+area: Search

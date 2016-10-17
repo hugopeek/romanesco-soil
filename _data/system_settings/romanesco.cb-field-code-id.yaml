@@ -1,0 +1,5 @@
+key: romanesco.cb_field_code_id
+value: '13'
+xtype: numberfield
+namespace: romanesco
+area: 'ContentBlocks - Settings'
