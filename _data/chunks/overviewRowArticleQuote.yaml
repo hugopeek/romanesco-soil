@@ -20,7 +20,7 @@ properties: 'a:0:{}'
         <img src="[[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`team_member_image` &docid=`[[+team_member_id]]` &options=`w=150&h=150&zc=1` &type=`thumb`]]">
     </a>
     <span class="meta">
-        <em>[[%patternlab.article.written_by]] <a href="[[~[[+team_member_id]]]]">[[+tv.article_author:userinfo=`fullname`:empty=`[[++site_name]]`]]</a> [[%patternlab.article.written_on]] [[+publishedon:strtotime:date=`%e %B %Y`]]</em>
+        <em>[[%romanesco.article.written_by]] <a href="[[~[[+team_member_id]]]]">[[+tv.article_author:userinfo=`fullname`:empty=`[[++site_name]]`]]</a> [[%romanesco.article.written_on]] [[+publishedon:strtotime:date=`%e %B %Y`]]</em>
     </span>
     [[If?
         &subject=`[[+link_text]]`

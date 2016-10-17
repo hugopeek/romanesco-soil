@@ -14,7 +14,7 @@ properties: 'a:0:{}'
         &cacheKey=`overviews`
         [[++custom_cache:eq=`0`:then=`&cacheExpires=`1``]]
 
-        &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++patternlab.testimonial_container_id]]`]]`
+        &parents=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`-1` &else=`[[++romanesco.testimonial_container_id]]`]]`
         &resources=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`[[+resources]]` &else=`null`]]`
         &depth=`99`
         &limit=`[[+limit]]`

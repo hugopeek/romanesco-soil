@@ -7,7 +7,7 @@ properties: 'a:0:{}'
 -----
 
 <a class="circular [[+classes]] ui button youtube icon"
-   title="[[+title:empty=`[[%patternlab.social.connect_youtube_title]]`]]"
+   title="[[+title:empty=`[[%romanesco.social.connect_youtube_title]]`]]"
    target="_blank"
    href="[[+account:empty=`[[++social_youtube]]`]]"
    property="sameAs">

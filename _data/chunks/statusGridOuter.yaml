@@ -9,13 +9,13 @@ properties: 'a:0:{}'
 <table class="ui very compact sortable celled table">
     <thead>
     <tr>
-        <th>[[%patternlab.status.table_status_indicator]]</th>
-        <th>[[%patternlab.status.table_id]]</th>
-        <th>[[%patternlab.status.table_resource]]</th>
-        <th>[[%patternlab.status.table_improvements]]</th>
-        <th>[[%patternlab.status.table_assigned_user]]</th>
-        <th>[[%patternlab.status.table_help]]</th>
-        <th>[[%patternlab.status.table_notes]]</th>
+        <th>[[%romanesco.status.table_status_indicator]]</th>
+        <th>[[%romanesco.status.table_id]]</th>
+        <th>[[%romanesco.status.table_resource]]</th>
+        <th>[[%romanesco.status.table_improvements]]</th>
+        <th>[[%romanesco.status.table_assigned_user]]</th>
+        <th>[[%romanesco.status.table_help]]</th>
+        <th>[[%romanesco.status.table_notes]]</th>
     </tr>
     </thead>
     <tbody>
