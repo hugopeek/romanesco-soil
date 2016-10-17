@@ -1,4 +1,4 @@
-key: patternlab.custom_vendor_path
+key: romanesco.custom_vendor_path
 value: assets/semantic/dist/themes/romanesco/assets/vendor
-namespace: patternlab
+namespace: romanesco
 area: Paths

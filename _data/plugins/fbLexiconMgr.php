@@ -5,4 +5,4 @@ properties: 'a:0:{}'
 
 -----
 
-$modx->controller->addLexiconTopic('patternlab:formblocks');
+$modx->controller->addLexiconTopic('romanescobackyard:formblocks');

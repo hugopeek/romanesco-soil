@@ -1,5 +1,0 @@
-key: patternlab.search_add_to_menu
-value: '0'
-xtype: combo-boolean
-namespace: patternlab
-area: Search

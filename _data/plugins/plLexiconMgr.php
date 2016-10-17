@@ -5,4 +5,4 @@ properties: 'a:0:{}'
 
 -----
 
-$modx->controller->addLexiconTopic('patternlab:manager');
+$modx->controller->addLexiconTopic('romanescobackyard:manager');

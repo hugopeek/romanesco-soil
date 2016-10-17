@@ -1,4 +1,4 @@
-key: patternlab.custom_js_path
+key: romanesco.custom_js_path
 value: assets/semantic/dist/themes/romanesco/assets/js
-namespace: patternlab
+namespace: romanesco
 area: Paths
