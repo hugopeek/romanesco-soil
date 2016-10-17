@@ -5,7 +5,7 @@ properties: 'a:0:{}'
 
 -----
 
-$parentID = $modx->getOption('patternlab.fb_container_id');
+$parentID = $modx->getOption('formblocks.container_id');
 
 $output = $modx->runSnippet('getResources', (array(
     'parents' => $parentID,

@@ -5,4 +5,4 @@ properties: 'a:0:{}'
 
 -----
 
-$modx->lexicon->load('patternlab:default');
+$modx->lexicon->load('romanescobackyard:default');

@@ -12,9 +12,9 @@ properties: 'a:0:{}'
  * Loads dependencies for the Slick carousel (http://kenwheeler.github.io/slick/).
  */
 
-$assetsPathCSS = $modx->getOption('patternlab.custom_css_path');
-$assetsPathJS = $modx->getOption('patternlab.custom_js_path');
-$assetsPathVendor = $modx->getOption('patternlab.custom_vendor_path');
+$assetsPathCSS = $modx->getOption('romanesco.custom_css_path');
+$assetsPathJS = $modx->getOption('romanesco.custom_js_path');
+$assetsPathVendor = $modx->getOption('romanesco.custom_vendor_path');
 
 // Head
 $modx->regClientCSS($assetsPathVendor . '/slick-carousel/slick.css');

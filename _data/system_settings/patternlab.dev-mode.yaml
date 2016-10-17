@@ -1,5 +1,0 @@
-key: patternlab.dev_mode
-value: '1'
-xtype: combo-boolean
-namespace: patternlab
-area: Settings

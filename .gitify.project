@@ -115,9 +115,13 @@ data:
         where:
             'namespace:IN':
                 - 'patternlab'
+                - 'romanesco'
     namespaces:
         class: modNamespace
         primary: name
+        exclude_keys:
+            - path
+            - assets_path
         where:
             'name:NOT IN':
                 - 'gitpackagemanagement'
@@ -131,7 +135,7 @@ data:
         exclude_keys:
             - editedon
 
-        # Exclude all system settings that could contain project-specific paths
+        # Exclude all system settings that could contain local / dev paths
         # Exclude MODX version, since that could differ per install
         where:
             'key:NOT IN':
@@ -145,15 +149,16 @@ data:
                 - 'patternlab.assets_path'
                 - 'patternlab.assets_url'
                 - 'patternlab.core_path'
-                - 'romanesco-patterns.assets_path'
-                - 'romanesco-patterns.assets_url'
-                - 'romanesco-patterns.core_path'
-                - 'romanesco-backyard.assets_path'
-                - 'romanesco-backyard.assets_url'
-                - 'romanesco-backyard.core_path'
+                - 'romanesco.assets_path'
+                - 'romanesco.assets_url'
+                - 'romanesco.core_path'
+                - 'romanescobackyard.assets_path'
+                - 'romanescobackyard.assets_url'
+                - 'romanescobackyard.core_path'
                 - 'cbheadingimage.assets_path'
                 - 'cbheadingimage.assets_url'
                 - 'cbheadingimage.core_path'
+                - 'formit.form_encryptkey'
 
     # User config
     access_context:
@@ -389,6 +394,6 @@ packages:
     #    username: YOUR_USERNAME_HERE
     #    api_key: .extras.io.key
     #    packages:
-    #        - patternlab-0.9.0-pl
+    #        - romanesco-0.10.0-pl
     #        - romanescobackyard-0.1.1-pl
     #        - cbheadingimage-0.2.1-pl

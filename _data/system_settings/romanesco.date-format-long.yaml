@@ -1,0 +1,4 @@
+key: romanesco.date_format_long
+value: '%e %B %Y'
+namespace: romanesco
+area: 'Date and Time'

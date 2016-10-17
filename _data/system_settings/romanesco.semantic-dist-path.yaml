@@ -1,0 +1,4 @@
+key: romanesco.semantic_dist_path
+value: assets/semantic/dist
+namespace: romanesco
+area: Paths
