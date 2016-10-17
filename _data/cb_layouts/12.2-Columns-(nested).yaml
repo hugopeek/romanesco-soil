@@ -5,7 +5,7 @@ sortorder: 13
 icon: layout_1-1
 icon_type: ''
 columns: '[{"reference":"col_1","width":"50"},{"reference":"col_2","width":"50"}]'
-template: "[[$cbLayoutTwoColumnsNested?\n    &col_1=`[[+col_1]]`\n    &col_2=`[[+col_2]]`\n\t&padding=`[[+padding]]`\n    &alignment=`[[+alignment]]`\n]]"
+template: "<div class=\"ui nested two column stackable doubling [[+padding]] [[+alignment]] grid\">\n    <div class=\"column\">[[+col_1]]</div>\n    <div class=\"column\">[[+col_2]]</div>\n</div>"
 availability: '[]'
 times_per_page: 0
 layout_only_nested: '1'

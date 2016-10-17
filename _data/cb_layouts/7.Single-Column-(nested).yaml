@@ -5,7 +5,7 @@ sortorder: 8
 icon: layout_1
 icon_type: ''
 columns: '[{"reference":"main","width":"100"}]'
-template: "[[$cbLayoutSingleColumnNested?\n    &main=`[[+main]]`\n\t&padding=`[[+padding]]`\n    &alignment=`[[+alignment]]`\n]]"
+template: "<div class=\"ui nested one column stackable doubling [[+padding]] [[+alignment]] grid\">\n    <div class=\"column\">[[+main]]</div>\n</div>"
 availability: '[]'
 times_per_page: 0
 layout_only_nested: '1'

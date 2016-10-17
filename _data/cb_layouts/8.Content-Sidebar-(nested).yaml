@@ -5,7 +5,7 @@ sortorder: 9
 icon: layout_2-1
 icon_type: ''
 columns: '[{"reference":"main","width":"65"},{"reference":"sidebar","width":"35"}]'
-template: "[[$cbLayoutContentSidebarNested?\n    &main=`[[+main]]`\n    &sidebar=`[[+sidebar]]`\n    &sidebar_width=`[[+sidebar_width]]`\n\t&padding=`[[+padding]]`\n    &alignment=`[[+alignment]]`\n]]"
+template: "<div class=\"ui nested stackable doubling [[+padding]] [[+alignment]] grid\">\n    <div class=\"ten wide column\">[[+main]]</div>\n    <div class=\"six wide column\">[[+sidebar]]</div>\n</div>"
 availability: '[]'
 times_per_page: 0
 layout_only_nested: '1'
