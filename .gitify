@@ -59,7 +59,8 @@ data:
 
         # Only include Romanesco specific elements
         where:
-            'static_file:LIKE': '[[++romanesco.core_path]]%'
+            - 'static_file:LIKE': '[[++romanesco.core_path]]%'
+            - 'OR:category:IN': [111]
     snippets:
         class: modSnippet
         primary: name
