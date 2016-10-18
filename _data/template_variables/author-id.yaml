@@ -1,6 +1,6 @@
 id: 53
 type: listbox
-name: author_select
+name: author_id
 caption: Author
 description: 'Select the author of this article. He or she must be a MODX user.'
 category: About

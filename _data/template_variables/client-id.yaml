@@ -1,6 +1,6 @@
 id: 55
 type: listbox
-name: client_select
+name: client_id
 caption: Client
 description: 'If this list is empty, you need to add the client first in the Clients component.'
 category: Participants
