@@ -4,7 +4,7 @@ description: 'A single column, with a defined max width.'
 icon: layout_1
 icon_type: ''
 columns: '[{"reference":"main","width":"100"}]'
-template: "<div class=\"ui vertical stripe segment [[+background]]\">\n    <div class=\"ui [[+container_type]] [[+alignment]] [[+template_type:ne=`detail`:then=`container`]]\">\n        [[+main]]\n    </div>\n</div>"
+template: "<div class=\"ui vertical stripe segment [[+background]]\">\n    <div class=\"ui [[+container_type]] [[+alignment]] container\">\n        [[+main]]\n    </div>\n</div>"
 availability: '[]'
 times_per_page: 0
 layout_only_nested: '0'
