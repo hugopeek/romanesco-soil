@@ -2,6 +2,18 @@ id: 271
 name: tvSelectClient
 description: 'Get available clients and turn them into input options for use in a selection TV.'
 category: a_select
-snippet: "--- Select a client ---==||\n[[getResources?\n    &parents=`[[++romanesco.client_container_id]]`\n    &tpl=`@INLINE [[+pagetitle]]==[[+id]]`\n    &outputSeparator=`||`\n    &showHidden=`1`\n    &showUnpublished=`1`\n    &limit=`99`\n    &sortBy=`menuindex`\n    &sortDir=`ASC`\n]]"
 properties: 'a:0:{}'
-content: "--- Select a client ---==||\n[[getResources?\n    &parents=`[[++romanesco.client_container_id]]`\n    &tpl=`@INLINE [[+pagetitle]]==[[+id]]`\n    &outputSeparator=`||`\n    &showHidden=`1`\n    &showUnpublished=`1`\n    &limit=`99`\n    &sortBy=`menuindex`\n    &sortDir=`ASC`\n]]"
+
+-----
+
+--- Select a client ---==||
+[[getResources?
+    &parents=`[[++romanesco.client_container_id]]`
+    &tpl=`@INLINE [[+pagetitle]]==[[+id]]`
+    &outputSeparator=`||`
+    &showHidden=`1`
+    &showUnpublished=`1`
+    &limit=`99`
+    &sortBy=`menuindex`
+    &sortDir=`ASC`
+]]

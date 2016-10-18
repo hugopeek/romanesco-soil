@@ -74,16 +74,6 @@ switch($input) {
         $row_type = "";
         $column_type = "center aligned column logo";
         break;
-    case stripos($input,'AssessorBasic') !== false: // @Todo: shouldn't be here, project specific...
-        $box_type = "centered cards";
-        $row_type = "";
-        $column_type = "basic card";
-        break;
-    case stripos($input,'Assessor') !== false:
-        $box_type = "centered cards";
-        $row_type = "";
-        $column_type = "card";
-        break;
     default:
         $box_type = "centered grid";
         $row_type = "";

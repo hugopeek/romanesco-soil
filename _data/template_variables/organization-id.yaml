@@ -1,11 +1,11 @@
 id: 55
 type: listbox
-name: client_id
-caption: Client
+name: organization_id
+caption: Organization
 description: 'If this list is empty, you need to add the client first in the Clients component.'
-category: Participants
+category: About
 elements: '@CHUNK tvSelectClient'
-rank: 1
+rank: 2
 default_text: ''
 properties: 'a:0:{}'
 input_properties: null

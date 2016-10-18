@@ -1,17 +1,17 @@
-id: 290
-name: overviewRowOrganizationLogo
+id: 309
+name: overviewRowReviewLogo
 description: ''
-category: m_ov_organization
+category: m_ov_review
 properties: 'a:0:{}'
 
 -----
 
-<figure class="ui image" title="[[%romanesco.clients.logo_title]]">
+<a class="ui faded image" href="[[~[[+id]]]]" title="[[%romanesco.clients.logo_title]]">
     [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
         &tvname=`organization_logo_img`
-        &docid=`[[+id]]`
+        &docid=`[[+organization_id]]`
         &options=`w=600&zc=1`
         &type=`tpl`
         &tpl=`cbOverviewRowImg`
     ]]
-</figure>
+</a>

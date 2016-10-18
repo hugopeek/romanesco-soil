@@ -8,9 +8,11 @@ properties: 'a:0:{}'
 
 <div class="ui vertical stripe segment [[+background]]">
     <div class="ui [[+container_type]] container">
-        <div class="ui stackable doubling [[+padding]] [[+alignment]] equal width grid">
-            <div class="[[+sidebar_width]] wide column">[[+sidebar]]</div>
-            <div class="column">[[+main]]</div>
+        <div class="ui stackable doubling [[+padding]] [[+alignment]] [[+divider]] equal width grid">
+            <div class="row">
+                <div class="[[+sidebar_width]] wide column">[[+sidebar]]</div>
+                <div class="column">[[+main]]</div>
+            </div>
         </div>
     </div>
 </div>
