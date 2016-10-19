@@ -1,0 +1,10 @@
+id: 14
+config_id: 3
+formtab_id: 5
+field: priority
+caption: Priority
+pos: 4
+inputTVtype: option
+sourceFrom: config
+inputOptionValues: High==high||Medium==medium||Low==low
+default: medium
