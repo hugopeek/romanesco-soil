@@ -1,7 +1,7 @@
 id: 30
 template: 5
 label: Firstname
-name: tv_team_member_firstname
+name: tv_person_firstname
 sortable: 1
 width: 40
 editor: textfield

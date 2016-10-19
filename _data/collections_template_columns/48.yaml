@@ -1,0 +1,9 @@
+id: 48
+template: 9
+label: Size
+name: tv_organization_size
+sortable: 1
+width: 30
+editor: numberfield
+position: 4
+sort_type: null

@@ -1,8 +1,8 @@
-id: 4
-name: Testimonials
+id: 9
+name: Clients
 sort_field: menuindex
 sort_type: null
-child_template: 14
+child_template: 12
 resource_type_selection: 0
 tab_label: collections.testimonials.children
 button_label: collections.testimonials.children.create

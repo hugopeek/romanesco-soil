@@ -1,8 +1,8 @@
 id: 20
 template: 4
 label: Image
-name: tv_testimonial_person_image
+name: tv_person_image
 width: 50
 renderer: ImagePlus.MIGX_Renderer
-position: 6
+position: 8
 sort_type: null

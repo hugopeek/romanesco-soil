@@ -1,8 +1,8 @@
 id: 19
 template: 4
-label: Logo
-name: tv_testimonial_company_image
-width: 50
-renderer: ImagePlus.MIGX_Renderer
-position: 5
+label: Person
+name: tv_person_fullname
+width: 40
+editor: textfield
+position: 6
 sort_type: null

@@ -1,0 +1,8 @@
+id: 49
+template: 9
+label: Logo
+name: tv_organization_logo_img
+width: 50
+renderer: ImagePlus.MIGX_Renderer
+position: 6
+sort_type: null
