@@ -2,7 +2,7 @@ id: 2
 name: Forms
 sort_field: menuindex
 sort_type: null
-child_template: 9
+child_template: 10
 resource_type_selection: 0
 tab_label: formblocks.collections.children
 button_label: formblocks.collections.children.create
