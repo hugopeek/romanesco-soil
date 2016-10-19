@@ -7,8 +7,8 @@ sortorder: 1
 category: 1
 icon: heading
 icon_type: ''
-template: "[[$headingBasicSubtitle?\n    &value=`[[+value]]`\n    &level=`[[+level]]`\n    &subtitle=`[[+subtitle]]`\n    &unique_idx=`[[+unique_idx]]`\n]]"
+template: "[[$headingBasicSubtitle?\n    &value=`[[+value]]`\n    &level=`[[+level]]`\n    &subtitle=`[[+subtitle]]`\n    &alignment=`[[+alignment]]`\n    &unique_idx=`[[+unique_idx]]`\n]]"
 properties: '{"default_level":"h2","available_levels":"h1=heading_1,h2=heading_2,h3=heading_3,h4=heading_4,h5=heading_5,h6=heading_6","use_tinyrte":"1"}'
 availability: '[]'
 layouts: ''
-settings: '[{"reference":"subtitle","title":"Subtitle","fieldtype":"textarea","default_value":"","fieldoptions":"","field_is_exposed":"asField"}]'
+settings: '[{"reference":"subtitle","title":"Subtitle","fieldtype":"textarea","default_value":"","fieldoptions":"","field_is_exposed":"asField"},{"reference":"alignment","title":"Text alignment","fieldtype":"select","default_value":"","fieldoptions":"\n[[$cbFieldAlignment]]","field_is_exposed":"modal","process_tags":"1"}]'

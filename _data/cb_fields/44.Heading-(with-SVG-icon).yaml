@@ -6,8 +6,8 @@ description: ''
 sortorder: 3
 category: 1
 icon: heading
-template: "[[$cbHeaderIconSVG?\n    &level=`[[+level]]`\n    &value=`[[+value]]`\n    &url=`[[+url]]`\n    &alt=`[[+alt]]`\n    &icon_position=`[[+icon_position]]`\n    &subtitle=`[[+subtitle]]`\n]]"
+template: "[[$headerIconSVG?\n    &level=`[[+level]]`\n    &value=`[[+value]]`\n    &url=`[[+url]]`\n    &alt=`[[+alt]]`\n    &icon_position=`[[+icon_position]]`\n    &subtitle=`[[+subtitle]]`\n    &alignment=`[[+alignment]]`\n]]"
 properties: '{"default_level":"h2","available_levels":"h1=heading_1,h2=heading_2,h3=heading_3,h4=heading_4,h5=heading_5","use_tinyrte":"1","source":"5","directory":"\/","file_types":"png,gif,jpg,jpeg,svg"}'
 availability: '[]'
 layouts: ''
-settings: '[{"reference":"icon_position","title":"Icon position","fieldtype":"select","default_value":"icon","fieldoptions":"Top=icon\nLeft=","field_is_exposed":"asField"},{"reference":"subtitle","title":"Subtitle","fieldtype":"textarea","default_value":"","fieldoptions":"","field_is_exposed":"asField"},{"reference":"alt","title":"ALT tag","fieldtype":"textfield","default_value":"Icon","fieldoptions":"","field_is_exposed":"modal"}]'
+settings: '[{"reference":"icon_position","title":"Icon position","fieldtype":"select","default_value":"icon","fieldoptions":"Top=icon\nLeft=","field_is_exposed":"asField"},{"reference":"subtitle","title":"Subtitle","fieldtype":"textarea","default_value":"","fieldoptions":"","field_is_exposed":"asField"},{"reference":"alignment","title":"Content alignment","fieldtype":"select","default_value":"","fieldoptions":"\n[[$cbFieldAlignment]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"alt","title":"ALT tag","fieldtype":"textfield","default_value":"Icon","fieldoptions":"","field_is_exposed":"modal"}]'
