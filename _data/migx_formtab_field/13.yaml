@@ -1,0 +1,9 @@
+id: 13
+config_id: 3
+formtab_id: 5
+field: date
+caption: Date
+pos: 3
+inputTVtype: hidden
+sourceFrom: config
+default: '@CHUNK statusNotesGetDate'

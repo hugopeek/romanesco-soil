@@ -6,7 +6,7 @@ properties: 'a:0:{}'
 
 -----
 
-<a class="ui faded image" href="[[~[[+id]]]]" title="[[%romanesco.clients.logo_title]]">
+<figure class="ui image" title="[[%romanesco.clients.logo_title]]">
     [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
         &tvname=`organization_logo_img`
         &docid=`[[+id]]`
@@ -14,4 +14,4 @@ properties: 'a:0:{}'
         &type=`tpl`
         &tpl=`cbOverviewRowImg`
     ]]
-</a>
+</figure>

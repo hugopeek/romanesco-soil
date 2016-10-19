@@ -1,0 +1,8 @@
+id: 53
+template: 9
+label: Jobtitle
+name: tv_person_jobtitle
+width: 40
+editor: textfield
+position: 7
+sort_type: null

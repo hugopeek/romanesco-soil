@@ -5,8 +5,11 @@ bulk_actions: 1
 sort_field: publishedon
 sort_dir: desc
 sort_type: null
-child_template: null
+child_template: 5
 resource_type_selection: 0
+tab_label: collections.publication.children
+button_label: collections.publication.children.create
+back_to_collection_label: collections.publication.children.back_to_collection_label
 child_hide_from_menu: null
 child_published: null
 child_cacheable: null

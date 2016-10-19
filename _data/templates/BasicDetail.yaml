@@ -9,7 +9,6 @@ properties: 'a:0:{}'
 <!DOCTYPE html>
 <html lang="[[++cultureKey]]">
 
-[[setTemplateType? &type=`detail`]]
 [[$head]]
 
 <body id="detail">

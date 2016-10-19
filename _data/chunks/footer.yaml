@@ -15,14 +15,14 @@ properties: 'a:0:{}'
         <div class="four wide column">
             <p>&copy; [[Time:date=`%Y`]] - [[++site_name]]</p>
         </div>
-        
+
         <div class="twelve wide column right aligned">
-            <div class="ui horizontal inverted bulleted list">
-                [[getResources?
+            <div class="ui horizontal inverted list">
+                [[pdoMenu?
                     &parents=`[[++common_pages_id:empty=`[[++romanesco.common_pages_id]]`]]`
-                    &depth=`0`
-                    &limit=`6`
-                    &tpl=`@INLINE <a class="item" href="[[!~[[+id]]]]">[[+menutitle:empty=`[[+pagetitle]]`]]</a>`
+                    &level=`0`
+                    &tplOuter=`navWrapper`
+                    &tpl=`navItem`
                     &sortby=`menuindex`
                     &sortdir=`ASC`
                 ]]

@@ -1,7 +1,7 @@
 id: 3
 template: 1
 label: Author
-name: article_author
+name: tv_author_id
 width: 50
 position: 4
 sort_type: null

@@ -135,13 +135,13 @@ data:
     namespaces:
         class: modNamespace
         primary: name
-        exclude_keys:
-            - path
-            - assets_path
         where:
             'name:NOT IN':
                 - 'gitpackagemanagement'
                 - 'patternlab'
+                - 'romanesco'
+                - 'romanescobackyard'
+                - 'cbheadingimage'
     property_set:
         class: modPropertySet
         primary: name

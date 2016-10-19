@@ -1,14 +1,14 @@
-id: 272
-name: tvSelectTestimonials
+id: 271
+name: tvSelectClient
 description: 'Get available clients and turn them into input options for use in a selection TV.'
 category: a_select
 properties: 'a:0:{}'
 
 -----
 
---- Select a testimonial ---==||
+--- Select a client ---==||
 [[getResources?
-    &parents=`[[++romanesco.testimonial_container_id]]`
+    &parents=`[[++romanesco.client_container_id]]`
     &tpl=`@INLINE [[+pagetitle]]==[[+id]]`
     &outputSeparator=`||`
     &showHidden=`1`

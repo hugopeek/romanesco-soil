@@ -6,7 +6,7 @@ properties: 'a:0:{}'
 
 -----
 
-Testimonial vertical=overviewRowTestimonialBasic
-Testimonial horizontal=overviewRowTestimonialWide
-Testimonial minimal=overviewRowTestimonialMinimal
-Testimonial compact=overviewRowTestimonialCompact
+Testimonial vertical=overviewRowReviewBasic
+Testimonial horizontal=overviewRowReviewWide
+Testimonial logo=overviewRowReviewLogo
+Testimonial compact=overviewRowReviewCompact

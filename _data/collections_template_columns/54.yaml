@@ -1,0 +1,9 @@
+id: 54
+template: 9
+label: Organization
+name: tv_organization_id
+sortable: 1
+width: 5
+editor: numberfield
+position: 4
+sort_type: 'SIGNED INTEGER'

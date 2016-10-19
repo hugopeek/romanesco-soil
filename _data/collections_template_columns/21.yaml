@@ -1,9 +1,9 @@
 id: 21
 template: 4
 label: Rating
-name: tv_testimonial_rating_overall
+name: tv_rating_value
 sortable: 1
-width: 30
+width: 5
 editor: numberfield
 position: 3
 sort_type: null

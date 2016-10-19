@@ -1,0 +1,9 @@
+id: 46
+template: 9
+label: resource_menuindex
+name: menuindex
+hidden: 1
+sortable: 1
+editor: '{"xtype":"numberfield","allowNegative":false,"allowDecimal":false}'
+position: 7
+sort_type: null

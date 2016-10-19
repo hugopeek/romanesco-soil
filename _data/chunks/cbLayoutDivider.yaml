@@ -1,0 +1,12 @@
+id: 310
+name: cbLayoutDivider
+description: ''
+category: a_cb_layouts
+properties: 'a:0:{}'
+
+-----
+
+None= 
+Vertical divider between columns=divided
+Borders around each column (celled)=celled
+Borders inside the columns only=internally celled
