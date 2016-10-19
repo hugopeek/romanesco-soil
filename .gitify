@@ -292,7 +292,9 @@ data:
             - name
     collections_template_columns:
         class: CollectionTemplateColumn
-        primary: id
+        primary:
+            - id
+            - name
     collections_resource_template:
         class: CollectionResourceTemplate
         primary:
@@ -324,11 +326,15 @@ data:
     # Tagger
     tagger_groups:
         class: TaggerGroup
-        primary: name
+        primary:
+            - id
+            - name
         package: tagger
     tagger_tags:
         class: TaggerTag
-        primary: tag
+        primary:
+            - id
+            - tag
     tagger_tag_resources:
         class: TaggerTagResource
         primary:
@@ -338,11 +344,15 @@ data:
     # MIGX
     migx_formtab:
         class: migxFormtab
-        primary: id
+        primary:
+            - id
+            - caption
         package: migx
     migx_formtab_field:
         class: migxFormtabField
-        primary: id
+        primary:
+            - id
+            - field
     migx_config_element:
         class: migxConfigElement
         primary: id
@@ -351,7 +361,9 @@ data:
         primary: id
     migx_config:
         class: migxConfig
-        primary: id
+        primary:
+            - id
+            - name
         exclude_keys:
           - editedby
           - editedon
