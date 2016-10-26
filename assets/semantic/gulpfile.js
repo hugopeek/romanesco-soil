@@ -49,6 +49,12 @@ gulp.task('build-assets', 'Copies all assets from source', buildAssets);
 gulp.task('clean', 'Clean dist folder', clean);
 gulp.task('version', 'Displays current version of Semantic', version);
 
+/* Custom task to copy assets to project folder */
+gulp.task('copy', function () {
+  gulp.src('./dist/semantic.*')
+      .pipe(gulp.dest('./dist/project'));
+});
+
 /*--------------
       Docs
 ---------------*/
