@@ -71,7 +71,7 @@ data:
 
         # Only include Romanesco specific elements
         where:
-            'static_file:LIKE': '[[++romanesco.core_path]]%'
+            - 'static_file:LIKE': '[[++romanesco.core_path]]%'
     plugins:
         class: modPlugin
         primary: name
@@ -82,7 +82,7 @@ data:
 
         # Only include Romanesco specific elements
         where:
-            'static_file:LIKE': '[[++romanesco.core_path]]%'
+            - 'static_file:LIKE': '[[++romanesco.core_path]]%'
     plugin_events:
         class: modPluginEvent
         primary:
