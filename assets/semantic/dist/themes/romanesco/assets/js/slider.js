@@ -1,11 +1,11 @@
 $(document).ready(function(){
     $('.slider')
 
-        // Initiate sliders
+        // Initiate default slider
         .slick({
-            adaptiveHeight: true,
+            //adaptiveHeight: true,
             infinite: true,
-            slidesToShow: 1,
+            //slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
             dots: true
@@ -19,5 +19,31 @@ $(document).ready(function(){
         //.on('afterChange', function(event,slick,currentSlide){
         //    $(this).addClass('orange')
         //})
+    ;
+    $('.slider-synced')
+
+        // Initiate slider that functions as preview window for the synced navigation slider
+        .slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-synced-nav'
+        })
+    ;
+    $('.slider-synced-nav')
+
+        // Initiate slider that functions as navigation for the synced preview window
+        .slick({
+            slidesToScroll: 1,
+            asNavFor: '.slider-synced',
+            focusOnSelect: true
+        })
+    ;
+    $('.lightbox')
+
+        // Initiate lightbox with integrated Slick slider
+        // Using this script: https://github.com/mreq/slick-lightbox
+        .slickLightbox()
     ;
 });
