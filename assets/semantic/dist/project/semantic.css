@@ -6919,10 +6919,6 @@ a.ui.inverted.grey.header:hover {
          Theme Overrides
 *******************************/
 
-.ui.header > .image {
-  opacity: 0.6;
-}
-
 .ui.header:not(.icon):not(.aligned) > .image {
   float: left;
 }
@@ -10596,10 +10592,6 @@ a.circular.image > img {
 
 a.circular.image > img:hover {
   border-color: #8db208;
-}
-
-.ui.faded.image > img {
-  opacity: 0.6;
 }
 
 @media only screen and (max-width: 768px) {
@@ -15263,14 +15255,6 @@ ol.ui.horizontal.list li:before,
   padding: 4em 0;
 }
 
-.main.header + .ui.stripe.segment.white {
-  padding-top: 2em;
-}
-
-.main.header + .ui.stripe.segment:not(.white) {
-  margin-top: 3em;
-}
-
 [id*="detail"] #main .ui.stripe.segment.white {
   border-bottom: none !important;
 }
@@ -15299,8 +15283,14 @@ ol.ui.horizontal.list li:before,
   }
 }
 
+.ui.stripe.segment.white {
+  background-color: #FFFFFF;
+  z-index: 0;
+}
+
 .ui.stripe.segment.primary-color {
   background-color: #d7e5a2;
+  z-index: 0;
 }
 
 .ui.stripe.segment.primary-color.inverted {
@@ -15310,6 +15300,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.stripe.segment.secondary-color {
   background-color: #ff702f;
+  z-index: 0;
 }
 
 .ui.stripe.segment.secondary-color.inverted {
@@ -19775,6 +19766,11 @@ ol.ui.horizontal.list li:before,
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+
+  .ui.grid.container > .column .ui.stackable.grid {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }
 
 /*******************************
@@ -22028,30 +22024,11 @@ Floated Menu / Item
   height: 5rem;
 }
 
-#menu.tightened .logo {
-  height: 33.2px;
-  min-width: 147.2px;
-}
-
 @media only screen and (max-width: 767px) {
   #menu > .container {
     width: 100% !important;
     margin-left: 1em !important;
     margin-right: 1em !important;
-  }
-}
-
-@media (max-width: 360px) {
-  #menu .logo {
-    height: 33.2px;
-    min-width: 147.2px;
-  }
-}
-
-@media (min-width: 360px) and (max-width: 1300px) {
-  #menu .logo {
-    height: 37.35px;
-    min-width: 165.6px;
   }
 }
 
@@ -23902,6 +23879,30 @@ Floated Menu / Item
          Theme Overrides
 *******************************/
 
+.ui.table a[class*="level-"]:before {
+  margin-right: 4px;
+}
+
+.ui.table a.level-2:before {
+  content: "\2192";
+}
+
+.ui.table a.level-3:before {
+  content: "\2192 \2192";
+}
+
+.ui.table a.level-4:before {
+  content: "\2192 \2192 \2192";
+}
+
+.ui.table td.indicator .hidden {
+  display: none;
+}
+
+.ui.table td.labels {
+  padding-bottom: 0.1em;
+}
+
 /*******************************
          Site Overrides
 *******************************/
@@ -25609,7 +25610,7 @@ a.ui.card:hover,
   -ms-flex-direction: row;
   flex-direction: row;
   width: 100%;
-  padding: 0.21428571rem 0em;
+  padding: 0em;
   margin: 0em;
   background: none;
   border-top: none;
@@ -25632,7 +25633,7 @@ a.ui.card:hover,
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  width: 2.5em;
+  width: 3em;
   height: auto;
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
@@ -25645,10 +25646,10 @@ a.ui.card:hover,
   font-size: 1.5em;
   width: 100%;
   padding: 0.25em;
-  background: none;
+  background: #8db208;
   border: none;
-  border-radius: none;
-  color: rgba(0, 0, 0, 0.6);
+  border-radius: 500rem;
+  color: #FFFFFF;
 }
 
 .ui.feed > .event > .label img {
@@ -25658,7 +25659,7 @@ a.ui.card:hover,
 }
 
 .ui.feed > .event > .label + .content {
-  margin: 0.5em 0em 0.35714286em 1.14285714em;
+  margin: 0.75em 0em 2em 0.75em;
 }
 
 /*--------------
@@ -25796,12 +25797,13 @@ a.ui.card:hover,
 .ui.feed > .event > .content .meta {
   display: inline-block;
   font-size: 0.85714286em;
-  margin: 0.5em 0em 0em;
-  background: none;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  padding: 0em;
+  margin: 1em 0em 0em;
+  background: #FFFFFF -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: #FFFFFF linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  border: 1px solid #D4D4D5;
+  border-radius: 0.25em;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 0.5em 1em;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -25878,8 +25880,33 @@ a.ui.card:hover,
 }
 
 /*******************************
-         Theme Overrides
+    User Variable Overrides
 *******************************/
+
+.ui.feed > .event .label {
+  border-left: 3px solid #DDDDDD;
+}
+
+.ui.feed > .event:last-child .label {
+  border-left-color: transparent;
+}
+
+.ui.feed > .event > .label {
+  margin-left: 1.6em;
+}
+
+.ui.feed > .event > .label > img,
+.ui.feed > .event > .label > .icon {
+  background-color: #009FDA;
+  border-radius: 500rem;
+  color: #FFFFFF;
+  width: 3rem;
+  height: 3rem;
+  line-height: 1.5;
+  left: -1.6rem;
+  opacity: 1;
+  position: relative;
+}
 
 /*******************************
     User Variable Overrides
