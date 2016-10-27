@@ -1,6 +1,0 @@
-id: 67
-name: cbHeaderIconSVG
-description: ''
-snippet: "<[[+level]] class=\"ui [[+icon_position]] header\">\n    <img class=\"ui image\" src=\"[[+url]]\" alt=\"[[+alt:htmlent]]\">\n    <div class=\"content\">\n        [[+value]]\n        [[+subtitle:notempty=`<div class=\"sub header\">[[+subtitle]]</div>`]]\n    </div>\n</[[+level]]>"
-properties: 'a:0:{}'
-content: "<[[+level]] class=\"ui [[+icon_position]] header\">\n    <img class=\"ui image\" src=\"[[+url]]\" alt=\"[[+alt:htmlent]]\">\n    <div class=\"content\">\n        [[+value]]\n        [[+subtitle:notempty=`<div class=\"sub header\">[[+subtitle]]</div>`]]\n    </div>\n</[[+level]]>"

@@ -12,8 +12,8 @@ properties: 'a:0:{}'
             &subject=`[[+icon_type]]`
             &operator=`EQ`
             &operand=`svg`
-            &then=`<img class="ui faded image" src="[[+tv.overview_icon_svg:empty=`[[++overview_icon_fallback]]`]]" alt="[[+pagetitle]]">`
-            &else=`<i class="ui circular [[+tv.overview_icon_svg:empty=`question`]] icon"></i>`
+            &then=`<img class="ui faded image" src="[[+overview_icon_svg:empty=`[[++overview_icon_fallback]]`]]" alt="[[+pagetitle]]">`
+            &else=`<i class="ui circular [[+overview_icon_svg:empty=`question`]] icon"></i>`
         ]]
         <div class="content">
             [[+[[+title_field]]:empty=`[[+pagetitle]]`]]
