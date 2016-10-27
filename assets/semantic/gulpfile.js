@@ -49,12 +49,6 @@ gulp.task('build-assets', 'Copies all assets from source', buildAssets);
 gulp.task('clean', 'Clean dist folder', clean);
 gulp.task('version', 'Displays current version of Semantic', version);
 
-/* Custom task to copy assets to project folder */
-gulp.task('copy', function () {
-  gulp.src('./dist/semantic.*')
-      .pipe(gulp.dest('./dist/project'));
-});
-
 /*--------------
       Docs
 ---------------*/
@@ -73,6 +67,18 @@ gulp.task('build-docs', 'Build all files and add to SUI Docs', buildDocs);
 ---------------*/
 
 if(config.rtl) {
-  gulp.task('watch-rtl', 'Build all files as RTL', watchRTL);
-  gulp.task('build-rtl', 'Watch files as RTL ', buildRTL);
+  gulp.task('watch-rtl', 'Watch files as RTL', watchRTL);
+  gulp.task('build-rtl', 'Build all files as RTL', buildRTL);
 }
+
+
+/*--------------
+     Custom
+---------------*/
+
+// Copy assets to project folder.
+// The root files are excluded from Romanesco to avoid merge conflicts.
+gulp.task('copy', function () {
+  gulp.src('./dist/semantic.*')
+      .pipe(gulp.dest('./dist/project'));
+});
