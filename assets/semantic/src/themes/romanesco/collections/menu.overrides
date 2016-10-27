@@ -2,8 +2,6 @@
          Theme Overrides
 *******************************/
 
-@import "../../../site/globals/site.variables";
-
 #menu {
     margin: 0;
     height: 7rem;

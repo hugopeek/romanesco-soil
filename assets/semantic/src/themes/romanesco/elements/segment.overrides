@@ -2,7 +2,13 @@
          Theme Overrides
 *******************************/
 
-@import "../../../site/globals/site.variables";
+// Change font size inside segments, since they were set to 1rem after SUI 2.2 update
+// @todo: investigate
+
+.ui.segments .segment,
+.ui.segment {
+    font-size: @fontSize;
+}
 
 // Segment containing the header of the page
 .masthead .segment {

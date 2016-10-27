@@ -2,9 +2,6 @@
         Global Overrides
 *******************************/
 
-@import "site.variables";
-@import "../elements/container.variables";
-
 // Global settings
 //
 // Use font size to set the base percentage for all em and rem units.
