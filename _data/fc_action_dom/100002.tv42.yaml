@@ -1,0 +1,10 @@
+id: 100014
+set: 100002
+action: resource/update
+name: tv42
+description: null
+container: modx-panel-resource
+rule: tvMove
+value: modx-status
+constraint_class: modResource
+rank: 30

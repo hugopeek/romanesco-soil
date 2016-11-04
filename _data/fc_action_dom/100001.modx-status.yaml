@@ -1,0 +1,11 @@
+id: 100001
+set: 100001
+action: resource/create
+name: modx-status
+description: null
+container: modx-resource-tabs
+rule: tabNew
+value: Status
+constraint_class: modResource
+for_parent: 1
+rank: 1
