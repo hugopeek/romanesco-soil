@@ -1,0 +1,10 @@
+id: 100013
+set: 100002
+action: resource/update
+name: modx-status
+description: null
+container: modx-resource-tabs
+rule: tabNew
+value: Status
+constraint_class: modResource
+rank: 1
