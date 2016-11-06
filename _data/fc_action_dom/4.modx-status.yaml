@@ -1,5 +1,5 @@
-id: 100013
-set: 100002
+id: 35
+set: 4
 action: resource/update
 name: modx-status
 description: null

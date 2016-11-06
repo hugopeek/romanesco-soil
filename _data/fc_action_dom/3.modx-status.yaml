@@ -1,5 +1,5 @@
-id: 100001
-set: 100001
+id: 29
+set: 3
 action: resource/create
 name: modx-status
 description: null

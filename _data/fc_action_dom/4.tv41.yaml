@@ -1,7 +1,7 @@
-id: 100015
-set: 100002
+id: 37
+set: 4
 action: resource/update
-name: tv43
+name: tv41
 description: null
 container: modx-panel-resource
 rule: tvMove
