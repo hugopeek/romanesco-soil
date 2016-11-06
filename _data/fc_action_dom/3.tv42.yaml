@@ -1,4 +1,4 @@
-id: 32
+id: 42
 set: 3
 action: resource/create
 name: tv42
@@ -8,4 +8,4 @@ rule: tvMove
 value: modx-status
 constraint_class: modResource
 for_parent: 1
-rank: 20
+rank: 23
