@@ -1,10 +1,10 @@
-id: 64
-type: text
-name: address_locality
-caption: 'City / Town'
-category: Address
+id: 84
+type: date
+name: person_birthdate
+caption: Birthdate
+category: 'Person - Information'
 elements: ''
-rank: 10
+rank: 4
 default_text: ''
 properties: 'a:0:{}'
 input_properties: null
