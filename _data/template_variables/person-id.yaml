@@ -4,7 +4,7 @@ name: person_id
 caption: Person
 description: 'Connect a MODX user to this item. Only active users will be shown.'
 category: Connections
-elements: '@SELECT '''' AS username, '''' AS id UNION ALL ( SELECT username, id FROM `modx_users` ORDER BY username )'
+elements: '@SELECT '''' AS username, '''' AS id UNION ALL ( SELECT username, id FROM `modx_users` WHERE `active` = 1 ORDER BY username )'
 rank: 1
 default_text: ''
 properties: 'a:0:{}'
