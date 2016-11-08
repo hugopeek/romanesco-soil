@@ -32,9 +32,12 @@ data:
     templates:
         class: modTemplate
         primary: templatename
-        exclude_keys:
-            - static
-            - static_file
+
+        # Uncomment the exclude_keys below if you are loading packages with GPM
+        # This ensures local paths of static files will not be copied to remote
+        #exclude_keys:
+        #    - static
+        #    - static_file
 
         # Exclude default template when extracting a fresh MODX installation
         where:
@@ -50,23 +53,23 @@ data:
     chunks:
         class: modChunk
         primary: name
-        exclude_keys:
-            - static
-            - static_file
+        #exclude_keys:
+        #    - static
+        #    - static_file
     snippets:
         class: modSnippet
         primary: name
         extension: .php
-        exclude_keys:
-            - static
-            - static_file
+        #exclude_keys:
+        #    - static
+        #    - static_file
     plugins:
         class: modPlugin
         primary: name
         extension: .php
-        exclude_keys:
-            - static
-            - static_file
+        #exclude_keys:
+        #    - static
+        #    - static_file
     plugin_events:
         class: modPluginEvent
         primary:
