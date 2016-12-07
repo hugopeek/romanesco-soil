@@ -1,7 +1,7 @@
 id: 104
 name: getHitCount
 description: ''
-category: m_stats
+category: m_data
 properties: 'a:0:{}'
 
 -----

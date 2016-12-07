@@ -1,0 +1,13 @@
+id: 315
+name: assignedTemplatesRow
+description: ''
+category: a_hub
+properties: 'a:0:{}'
+
+-----
+
+[[Rowboat?
+    &table=`modx_site_templates`
+    &tpl=`includedPatternsRow`
+    &where=`{ "id":"[[+templateid]]" }`
+]]
