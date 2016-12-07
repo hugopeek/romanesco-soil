@@ -1,0 +1,13 @@
+id: 100002
+parent_properties: null
+input: chunk_selector
+name: 'Included Patterns'
+description: 'List the smaller atomic particles included in this pattern, or the bigger patterns that contain this one. For electrons, you can also list which templates include that electron.'
+sortorder: 49
+category: 6
+icon: unorderedlist
+template: '[[+value]]'
+properties: '{"available_chunks":"assignedTemplates,includedTVs,referringTVs,includedChunks,referringChunks,includedSnippets,referringTemplates","available_categories":""}'
+availability: '[{"field":"context","value":"hub"}]'
+layouts: ''
+settings: '[{"reference":"pattern_name","title":"Pattern name","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"asField"}]'

@@ -1,0 +1,13 @@
+id: 100001
+parent_properties: null
+input: code
+name: 'JSON to HTML'
+description: 'Render a JSON object as HTML table.'
+sortorder: 48
+category: 6
+icon: code
+template: '[[jsonToHTML? &json=`[[+value]]`]]'
+properties: '{"available_languages":"json=JSON","default_language":"json","entities":"0"}'
+availability: '[]'
+layouts: ''
+settings: '[]'
