@@ -2,6 +2,7 @@ id: 2
 name: 'Content + Sidebar'
 description: 'Combination of a main content area (65%) and a sidebar on the right (35%).'
 sortorder: 1
+category: 8
 icon: layout_2-1
 icon_type: ''
 columns: '[{"reference":"main","width":"65"},{"reference":"sidebar","width":"35"}]'

@@ -2,6 +2,7 @@ id: 4
 name: '4 Columns'
 description: 'Four equally wide columns, ideal for product grids.'
 sortorder: 3
+category: 8
 icon: layout_1-1-1-1
 icon_type: ''
 columns: '[{"reference":"col_1","width":"25"},{"reference":"col_2","width":"25"},{"reference":"col_3","width":"25"},{"reference":"col_4","width":"25"}]'

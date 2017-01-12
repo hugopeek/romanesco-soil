@@ -2,6 +2,7 @@ id: 7
 name: 'Single Column (nested)'
 description: 'A nested single column, with a defined max width.'
 sortorder: 8
+category: 9
 icon: layout_1
 icon_type: ''
 columns: '[{"reference":"main","width":"100"}]'

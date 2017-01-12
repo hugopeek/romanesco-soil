@@ -2,6 +2,7 @@ id: 6
 name: '2 Columns'
 description: 'Two fifty-fifty columns.'
 sortorder: 5
+category: 8
 icon: layout_1-1
 icon_type: ''
 columns: '[{"reference":"col_1","width":"50"},{"reference":"col_2","width":"50"}]'

@@ -2,6 +2,7 @@ id: 9
 name: 'Sidebar + Content (nested)'
 description: 'Nested combination of a left sidebar (35%) and a main content area (65%).'
 sortorder: 10
+category: 9
 icon: layout_1-2
 icon_type: ''
 columns: '[{"reference":"sidebar","width":"35"},{"reference":"main","width":"65"}]'

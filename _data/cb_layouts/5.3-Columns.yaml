@@ -2,6 +2,7 @@ id: 5
 name: '3 Columns'
 description: 'Three equally divided columns.'
 sortorder: 4
+category: 8
 icon: layout_1-1-1
 icon_type: ''
 columns: '[{"reference":"col_1","width":33.33},{"reference":"col_2","width":"33.33"},{"reference":"col_3","width":33.33}]'

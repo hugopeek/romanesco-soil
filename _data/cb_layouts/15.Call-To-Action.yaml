@@ -2,6 +2,7 @@ id: 15
 name: 'Call To Action'
 description: 'The Call To Action layout is simply a wrapper to help you create a small CTA format in ContentBlocks. Created CTA''s can be referenced across the entire website by the corresponding CTA ContentBlock, or by TV''s.'
 sortorder: 18
+category: 10
 icon: snippet_C
 columns: '[{"reference":"main","width":"100"}]'
 template: '[[+main]]'
