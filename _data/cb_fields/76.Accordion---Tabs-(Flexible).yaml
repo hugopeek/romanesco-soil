@@ -1,13 +1,13 @@
 id: 76
-parent_properties: null
+parent_properties: ''
 input: repeater
 name: 'Accordion / Tabs (Flexible)'
 description: ''
 sortorder: 21
 category: 4
 icon: tabs
-template: "[[$[[+layout_type]]RowBasic?\n    &heading=`[[+heading]]`\n    &content=`[[+content]]`\n    &padding=`[[+padding]]`\n    &idx=`[[+idx]]`\n]]"
-properties: '{"wrapper_template":"[[$[[+layout_type]]Outer?\n    &rows=`[[+rows]]`\n    &total=`[[+total]]`\n    &padding=`[[+padding]]`\n    &accordion_type=`[[+accordion_type]]`\n    &unique_idx=`[[+unique_idx]]`\n]]","row_separator":"","max_items":"0","min_items":"0","add_first_item":"true"}'
+template: "[[$[[+layout_type]]RowBasic?\n    &heading=`[[+heading]]`\n    &content=`[[+content]]`\n    &padding=`[[+padding]]`\n    &tab_type=`[[+tab_type]]`\n    &idx=`[[+idx]]`\n]]"
+properties: '{"wrapper_template":"[[$[[+layout_type]]Outer?\n    &rows=`[[+rows]]`\n    &total=`[[+total]]`\n    &padding=`[[+padding]]`\n    &accordion_type=`[[+accordion_type]]`\n    &tab_type=`[[+tab_type]]`\n    &unique_idx=`[[+unique_idx]]`\n]]","row_separator":"","max_items":"0","min_items":"0","add_first_item":"true"}'
 availability: '[]'
 layouts: ''
-settings: '[{"reference":"layout_type","title":"Layout type","fieldtype":"radio","default_value":"accordion","fieldoptions":"Accordion=accordion\nTabs=tabs","field_is_exposed":"modal"},{"reference":"accordion_type","title":"Appearance (acc)","fieldtype":"select","default_value":"","fieldoptions":"Standard=\nStyled (600px wide)=styled\nStyled (fluid width)=fluid styled","field_is_exposed":"modal","process_tags":"1"},{"reference":"padding","title":"Extra padding (tab)","fieldtype":"select","default_value":"padded","fieldoptions":"[[$cbFieldPadding]]","field_is_exposed":"modal","process_tags":"1"}]'
+settings: '[{"reference":"layout_type","title":"Layout type","fieldtype":"radio","default_value":"accordion","fieldoptions":"Accordion=accordion\nTabs=tabs","field_is_exposed":"modal"},{"reference":"accordion_type","title":"Appearance (acc)","fieldtype":"select","default_value":"","fieldoptions":"[[$cbFieldAccordionType]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"tab_type","title":"Appearance (tab)","fieldtype":"select","default_value":"regular","fieldoptions":"[[$cbFieldTabType]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"padding","title":"Extra padding (tab)","fieldtype":"select","default_value":"padded","fieldoptions":"[[$cbFieldPadding]]","field_is_exposed":"modal","process_tags":"1"}]'

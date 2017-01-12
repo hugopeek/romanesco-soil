@@ -1,5 +1,5 @@
 id: 72
-parent_properties: null
+parent_properties: ''
 input: blockdown
 name: 'Markdown Text'
 description: ''

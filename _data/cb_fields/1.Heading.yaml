@@ -10,4 +10,4 @@ template: "[[$headingBasic[[+anchor]]?\n    &value=`[[+value]]`\n    &level=`[[+
 properties: '{"default_level":"h2","available_levels":"h1=heading_1,h2=heading_2,h3=heading_3,h4=heading_4,h5=heading_5,h6=heading_6","use_tinyrte":"1"}'
 availability: '[]'
 layouts: ''
-settings: '[{"reference":"alignment","title":"Text alignment","fieldtype":"select","default_value":"","fieldoptions":"\n[[$cbFieldAlignment]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"anchor","title":"Add anchor to HTML","fieldtype":"radio","default_value":"","fieldoptions":"No=\nYes=Anchor","field_is_exposed":"modal"}]'
+settings: '[{"reference":"alignment","title":"Text alignment","fieldtype":"select","default_value":"","fieldoptions":"\n[[$cbFieldAlignment]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"anchor","title":"Add anchor","fieldtype":"checkbox","default_value":"","fieldoptions":"Yes=Anchor","field_is_exposed":"modal"}]'

@@ -1,5 +1,5 @@
 id: 80
-parent_properties: null
+parent_properties: ''
 input: chunk
 name: 'Twitter Feed'
 description: ''

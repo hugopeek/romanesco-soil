@@ -8,5 +8,5 @@ icon: paragraph
 template: '[[+value]]'
 properties: '[]'
 availability: ''
-layouts: null
+layouts: ''
 settings: '[]'
