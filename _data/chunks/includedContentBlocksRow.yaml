@@ -1,0 +1,12 @@
+id: 334
+name: includedContentBlocksRow
+description: ''
+category: m_hub
+properties: 'a:0:{}'
+
+-----
+
+<a class="item" href="[[+link]]#[[+name:stripAsAlias]]">
+    <span class="ui circular blue label">[[+link:setPatternType]]</span>
+    [[+name]]
+</a>

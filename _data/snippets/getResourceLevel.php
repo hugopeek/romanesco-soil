@@ -1,6 +1,6 @@
 id: 82
 name: getResourceLevel
-description: 'Shows the level based on the number of parent ID''s.'
+description: 'Shows the level based on the number of parent IDs.'
 category: f_resources
 properties: 'a:0:{}'
 

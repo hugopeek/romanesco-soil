@@ -1,0 +1,12 @@
+id: 331
+name: tagItemIcon
+description: ''
+category: a_taxonomy
+properties: 'a:0:{}'
+
+-----
+
+<span class="ui label">
+    <i class="[[+icon_class]] icon"></i>
+    [[+tag]]
+</span>

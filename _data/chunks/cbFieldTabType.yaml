@@ -1,0 +1,10 @@
+id: 340
+name: cbFieldTabType
+description: ''
+category: a_cb_fields
+properties: 'a:0:{}'
+
+-----
+
+Regular (borders around active tab and content area)=regular
+Basic (just a thin border below the menu bar)=basic

@@ -1,0 +1,13 @@
+id: 333
+name: includedPagesRow
+description: ''
+category: m_hub
+properties: 'a:0:{}'
+
+-----
+
+<a class="item" href="[[~[[+id]]]]">
+    <span class="ui circular label">[[setPatternType? &input=`pages`]]</span>
+    [[+pagetitle]]
+</a>
+[[+wrapper]]

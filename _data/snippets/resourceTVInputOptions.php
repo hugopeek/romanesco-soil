@@ -1,6 +1,6 @@
 id: 70
 name: resourceTVInputOptions
-description: 'Generates input option values that can be used in TV''s, for creating resource selectors.'
+description: 'Generates input option values that can be used in TVs, for creating resource selectors.'
 category: f_resources
 properties: 'a:0:{}'
 
