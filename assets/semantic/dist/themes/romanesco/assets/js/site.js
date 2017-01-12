@@ -28,6 +28,37 @@ $(document)
         $('#off-canvas')
             .sidebar('attach events', '.toc.item')
         ;
+
+        // Initiate Semantic UI components
+        $('.ui.accordion').accordion();
+        $('.ui.dropdown').dropdown();
+        $('.with.popup').popup();
+        $('.ui.tabular.menu .item').tab();
+        $('.ui.sortable.table').tablesort();
+
+        $('.ui.checkbox').checkbox();
+        $('.ui.radio.checkbox').checkbox();
+
+        $('.ui.dimmable')
+            .dimmer({
+                on: 'hover'
+            })
+        ;
+        $('.ui.embed').embed();
+        $('.ui.rating').rating('disable');
+
+        // Add inverted classes to elements inside inverted segments
+        $('.inverted.stripe.segment .button:not(.primary):not(.secondary)').addClass('inverted');
+        $('.inverted.stripe.segment.primary-color .button.primary').addClass('inverted');
+        $('.inverted.stripe.segment.secondary-color .button.secondary').addClass('inverted');
+        $('.inverted.stripe.segment .header').addClass('inverted');
+        $('.inverted.stripe.segment .cards .header').removeClass('inverted');
+
+        // Remove text class from footer container in blog
+        $('#footer > .stripe.segment > .container').removeClass('text');
+
+        // Hide elements with class .hidden
+        $('.hidden.element').hide();
     })
 ;
 
@@ -47,72 +78,85 @@ $(function() {
 });
 
 // Smooth anchor scrolling
-$(function() {
-    // scroll handler
-    var scrollToAnchor = function( id ) {
-        // grab the element to scroll to based on the name
-        var elem = $("a[name='"+ id +"']");
-        // if that didn't work, look for an element with our ID
-        if ( typeof( elem.offset() ) === "undefined" ) {
-            elem = $("#"+id);
-        }
-        // if the destination element exists
-        if ( typeof( elem.offset() ) !== "undefined" ) {
-            // do the scroll
-            $('html, body').animate({
-                scrollTop: elem.offset().top
-            }, 600 );
-        }
-    };
+//$(function() {
+//    // scroll handler
+//    var scrollToAnchor = function( id ) {
+//        // grab the element to scroll to based on the name
+//        var elem = $("a[name='"+ id +"']");
+//        // if that didn't work, look for an element with our ID
+//        if ( typeof( elem.offset() ) === "undefined" ) {
+//            elem = $("#"+id);
+//        }
+//        // if the destination element exists
+//        if ( typeof( elem.offset() ) !== "undefined" ) {
+//            // do the scroll
+//            $('html, body').animate({
+//                scrollTop: elem.offset().top
+//            }, 600 );
+//        }
+//    };
+//
+//    // bind to click event
+//    $("a.button").click(function( event ) {
+//        // only do this if it's an anchor link
+//        if ( $(this).attr("href").match(/^#/) ) {
+//            // prevent default propagation
+//            event.preventDefault();
+//            // scroll to the location
+//            var href = $(this).attr('href').replace('#', '');
+//            scrollToAnchor( href );
+//            // if we have pushState
+//            if ( history.pushState ) {
+//                history.pushState( null, null, '#'+href );
+//            }
+//            // fallback to prevent jitter
+//            return false;
+//        }
+//    });
+//});
 
-    // bind to click event
-    $("a.button").click(function( event ) {
-        // only do this if it's an anchor link
-        if ( $(this).attr("href").match(/^#/) ) {
-            // prevent default propagation
-            event.preventDefault();
-            // scroll to the location
-            var href = $(this).attr('href').replace('#', '');
-            scrollToAnchor( href );
-            // if we have pushState
-            if ( history.pushState ) {
-                history.pushState( null, null, '#'+href );
-            }
-            // fallback to prevent jitter
-            return false;
-        }
-    });
+// Toggle function to show/hide divs with buttons
+$('.visibility.toggle').click(function() {
+
+    // Get data attributes from input
+    var target = '#' + $(this).data('target');
+    //var visibility = $(this).data('targetState');
+
+    // Add hidden or visible class to target element
+    //$(target).addClass(visibility);
+
+    // Show target if it's hidden, otherwise hide it again
+    if($(target).hasClass('hidden')) {
+        $(target)
+            .removeClass('hidden')
+            .show(100)
+        ;
+
+        // Provide feedback through button
+        $(this)
+            // Change button styling to indicate that target is visible now
+            .removeClass('disabled')
+            // Inform user that the button will hide the target in this state
+            .attr('data-content',$(this).data('content').replace(/Show|View|Display/,'Hide'))
+        ;
+    } else {
+        $(target)
+            .addClass('hidden')
+            .hide(100)
+        ;
+
+        // Reset button styling and text
+        $(this)
+            .addClass('disabled')
+            .attr('data-content',$(this).data('content').replace('Hide','Show'))
+        ;
+    }
 });
 
 // Close button in off-canvas menu
 $('#off-canvas .close.button').click(function() {
     $('#off-canvas').sidebar('hide');
 });
-
-// Initiate Semantic UI components
-$('.ui.accordion').accordion();
-$('.ui.embed').embed();
-$('.ui.rating').rating('disable');
-$('.ui.dimmable')
-    .dimmer({
-        on: 'hover'
-    })
-;
-$('.ui.checkbox').checkbox();
-$('.ui.radio.checkbox').checkbox();
-$('.ui.tabular.menu .item').tab();
-$('.ui.dropdown').dropdown();
-$('.ui.sortable.table').tablesort();
-
-// Add inverted classes to elements inside inverted segments
-$('.inverted.stripe.segment .button:not(.primary):not(.secondary)').addClass('inverted');
-$('.inverted.stripe.segment.primary-color .button.primary').addClass('inverted');
-$('.inverted.stripe.segment.secondary-color .button.secondary').addClass('inverted');
-$('.inverted.stripe.segment .header').addClass('inverted');
-$('.inverted.stripe.segment .cards .header').removeClass('inverted');
-
-// Remove text class from footer container in blog
-$('#footer > .stripe.segment > .container').removeClass('text');
 
 // Submit search form
 $("#search-field i.link").click(function() {
