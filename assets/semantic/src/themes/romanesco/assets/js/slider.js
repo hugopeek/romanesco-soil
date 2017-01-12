@@ -20,6 +20,15 @@ $(document).ready(function(){
         //    $(this).addClass('orange')
         //})
     ;
+    $('.slider.minimal')
+
+        // Initiate default slider
+        .slick({
+            adaptiveHeight: true,
+            arrows: false,
+            dots: true
+        })
+    ;
     $('.slider-synced')
 
         // Initiate slider that functions as preview window for the synced navigation slider
