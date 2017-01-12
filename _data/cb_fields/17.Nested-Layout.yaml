@@ -2,7 +2,7 @@ id: 17
 parent_properties: ''
 input: layout
 name: 'Nested Layout'
-description: 'Voeg een genestelde layout toe binnen een bestaande layout. Op deze manier kan je blokken in een bestaande layout eenvoudig opdelen in nog meer blokken.'
+description: 'Add a new layout within an existing layout. This allows you to divide each column inside the parent layout separately, opening up an infinite amount of combinations.'
 sortorder: 22
 category: 4
 icon: template_01
