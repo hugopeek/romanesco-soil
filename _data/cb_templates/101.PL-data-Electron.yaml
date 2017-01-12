@@ -1,7 +1,0 @@
-id: 101
-name: 'PL data - Electron'
-description: ''
-sortorder: 4
-icon: tabs
-content: ''
-availability: '[{"field":"context","value":"hub"}]'

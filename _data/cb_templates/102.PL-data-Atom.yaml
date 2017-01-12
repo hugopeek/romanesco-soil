@@ -1,7 +1,0 @@
-id: 102
-name: 'PL data - Atom'
-description: ''
-sortorder: 3
-icon: tabs
-content: ''
-availability: '[{"field":"context","value":"hub"}]'
