@@ -20,7 +20,7 @@ $(document).ready(function(){
         //    $(this).addClass('orange')
         //})
     ;
-    $('.slider.minimal')
+    $('.slider-minimal')
 
         // Initiate slider with minimal controls
         .slick({
