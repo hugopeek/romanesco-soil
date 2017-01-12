@@ -19,6 +19,21 @@
     }
 }
 
+// Additional styles for wireframes inside the front-end pattern library
+.ui.wireframe.grid {
+    > .column:not(:last-child),
+    .nested.grid {
+        margin-bottom: -1rem !important;
+    }
+    .nested.grid > .column:not(:last-child) {
+        margin-right: -1rem;
+    }
+    .segment {
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
+
 // Make sure column padding is correctly set on mobile
 // This is probably a bug in Semantic UI
 // @todo: create issue / testcase on Github
