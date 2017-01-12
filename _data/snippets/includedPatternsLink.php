@@ -5,25 +5,60 @@ properties: 'a:0:{}'
 
 -----
 
-// Turn category ID into category name
-$category = $modx->runSnippet('Rowboat', (array(
-    'table' => 'modx_categories',
-    'tpl' => 'listIncludedElementsCategory',
-    'where' => '{ "id":"' . $input . '" }'
-)
+$catID = $modx->getOption('input', $scriptProperties, '');
+$placeholder = $modx->getOption('toPlaceholder', $scriptProperties, '');
+$prefix = $modx->getOption('prefix', $scriptProperties, '');
+
+// Get category name and parent ID
+$category = $modx->getObject('modCategory', array(
+    'id' => $catID
 ));
+
+if ($category) {
+    $catName = $category->get('category');
+    $parentID = $category->get('parent');
+}
+
+// If category or parent is empty, don't generate any link.
+// All Romanesco elements are nested at least 1 level deep, so if a category
+// has no parent, we can allow ourselves to assume it's part of a MODX extra.
+if (!$category && $parentID == 0) {
+    $modx->toPlaceholder('pl', $prefix);
+    return;
+}
+
+// Get parent name as well, to avoid issues with multiple matches
+$query = $modx->newQuery('modCategory', array(
+    'id' => $parentID
+));
+$query->select('category');
+$parentName = $modx->getValue($query->prepare());
 
 // Grab only the last part of the category name
-$category = preg_match('([^_]+$)', $category, $match);
+$catName = preg_match('([^_]+$)', $catName, $matchCat);
+$parent = preg_match('([^_]+$)', $parentName, $matchParent);
+$matchCat = strtolower($matchCat[0]);
+$matchParent = strtolower($matchParent[0]);
+
+// If category and parent are the same, squash them
+if ($matchCat === $matchParent) {
+    $match = $matchCat;
+} else {
+    $match = $matchParent . "/" . $matchCat;
+}
 
 // Get the resource with an alias that matches the category name
-$link = $modx->runSnippet('pdoResources', (array(
-    'parents' => '0',
-    'context' => 'hub',
-    'limit' => '1',
-    'tpl' => 'listIncludedElementsLink',
-    'where' => '{ "alias":"' . $match[0] . '" }'
-)
+$query = $modx->newQuery('modResource');
+$query->where(array(
+    'uri:LIKE' => '%' . $match,
 ));
+$query->select('uri');
+$link = $modx->getValue($query->prepare());
 
-return $link;
+// Output to placeholder if one is set
+if ($placeholder) {
+    $modx->toPlaceholder('pl', $prefix);
+    $modx->toPlaceholder($placeholder, $link, $prefix);
+} else {
+    return $link;
+}

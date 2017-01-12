@@ -8,9 +8,17 @@ properties: 'a:0:{}'
 
 $input = $modx->getOption('json', $scriptProperties);
 $key = $modx->getOption('key', $scriptProperties);
+$tpl = $modx->getOption('tpl', $scriptProperties, '');
 
-$array = $modx->fromJSON($input);
+$input = utf8_encode($input);
+$array = json_decode($input, true);
 
-foreach ($array as $result) {
-    return $result[$key];
+$output = $array[$key];
+
+if ($tpl) {
+    $output = $modx->getChunk($tpl, array(
+        'content' => $output
+    ));
 }
+
+return $output;

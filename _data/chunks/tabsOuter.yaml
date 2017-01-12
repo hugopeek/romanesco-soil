@@ -6,8 +6,9 @@ properties: 'a:0:{}'
 
 -----
 
-<div class="ui top attached tabular menu">
+[[+tab_type:is=`basic`:then=`pointing secondary`:else=`top attached`:toPlaceholder=`menu_type`]]
+
+<div class="ui [[+menu_type]] tabular menu">
     [[+rows:tabsGenerateNav]]
-    [[-$layoutStyleSwitcher]]
 </div>
 [[+rows]]

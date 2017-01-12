@@ -10,7 +10,7 @@ properties: 'a:0:{}'
 <!DOCTYPE html>
 <html lang="[[++cultureKey]]">
 
-[[!setUserPlaceholders? &userId=`[[*article_author]]`]]
+[[!setUserPlaceholders? &userId=`[[*author_id]]`]]
 [[!Hits? &punch=`[[*id]]`]]
 
 [[$head]]
@@ -48,7 +48,7 @@ properties: 'a:0:{}'
         </article>
 
         <aside class="ui text container">
-            [[[[*article_comments:isnot=`0`:then=`$commentsDisqus`]]]]
+            [[[[*comments_toggle:isnot=`0`:then=`$commentsDisqus`]]]]
         </aside>
 
         <div class="ui vertical stripe segment white">

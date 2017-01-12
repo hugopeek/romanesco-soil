@@ -10,7 +10,7 @@ properties: 'a:0:{}'
 <!DOCTYPE html>
 <html lang="[[++cultureKey]]">
 
-[[setUserPlaceholders? &userId=`[[*article_author]]`]]
+[[setUserPlaceholders? &userId=`[[*author_id]]`]]
 [[!Hits? &punch=`[[*id]]`]]
 
 [[$head]]
@@ -36,9 +36,9 @@ properties: 'a:0:{}'
 
                         <span class="author">
                             <a href="[[~[[+team_member_id]]]]" class="ui avatar image">
-                                <img src="[[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`team_member_image` &docid=`[[+team_member_id]]` &options=`w=150&h=150&zc=1` &type=`thumb`]]">
+                                <img src="[[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`person_image` &docid=`[[+team_member_id]]` &options=`w=150&h=150&zc=1` &type=`thumb`]]">
                             </a>
-                            [[*article_author:userinfo=`fullname`:empty=`[[++site_name]]`]]
+                            [[*author_id:userinfo=`fullname`:empty=`[[++site_name]]`]]
                         </span>
                         <span class="date">
                             <i class="calendar icon"></i>
@@ -65,7 +65,7 @@ properties: 'a:0:{}'
                     <div class="ui two column equal width grid">
                         <div class="four wide column">
                             <a href="[[~[[+team_member_id]]]]" class="ui image">
-                                <img src="[[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`team_member_image` &docid=`[[+team_member_id]]` &options=`w=400&h=400&zc=1` &type=`thumb`]]">
+                                <img src="[[ImagePlus:empty=`[[++overview_img_fallback]]`? &tvname=`person_image` &docid=`[[+team_member_id]]` &options=`w=400&h=400&zc=1` &type=`thumb`]]">
                             </a>
                         </div>
                         <div class="column">
@@ -79,7 +79,7 @@ properties: 'a:0:{}'
                 </aside>
                 `]]
 
-                [[*article_comments:isnot=`0`:then=`
+                [[*comments_toggle:isnot=`0`:then=`
                 <section id="comments" class="ui vertical stripe segment white">
                     <h2 class="ui big header">[[%romanesco.article.comments]]</h2>
                     [[$articleCommentsDisqus]]

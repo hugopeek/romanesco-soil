@@ -6,10 +6,28 @@ properties: 'a:0:{}'
 
 -----
 
-[[includedPatternsLink:toPlaceholder=`link`? &input=`[[+category]]`]]
 [[+templatename:empty=`[[+name]]`:toPlaceholder=`name`]]
 
-<a class="item" href="[[+link]]#[[+name]]">
-    <span class="ui circular label">[[+link:setPatternType]]</span>
-    [[+name]]
-</a>
+[[includedPatternsLink?
+    &input=`[[+category]]`
+    &prefix=`pl_[[+idx]]_[[+unique_idx]]`
+    &toPlaceholder=`link`
+]]
+
+[[If?
+    &subject=`[[+[[+pl]].link]]`
+    &operator=`notempty`
+    &then=`
+        <a class="item" href="[[+[[+pl]].link]]#[[+name:lcase]]">
+            <span class="ui circular label">[[+[[+pl]].link:setPatternType]]</span>
+            [[+name]]
+            [[+assigned:eq=`1`:then=`<span class="ui right floated tiny blue label">Assigned</span>`]]
+        </a>
+    `
+    &else=`
+        <div class="disabled item">
+            <i class="small circular modx icon"></i>
+            [[+name]]
+        </div>
+    `
+]]

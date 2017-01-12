@@ -23,6 +23,12 @@ $tpl = $modx->getOption('tpl', $scriptProperties, 'includedPatternsRow');
 // @todo: this should also consider other prefixes, such as &rowTpl or *.
 $regex = '/(?<!\w)\+\w+/';
 
+// Set idx start value to something high, to prevent overlap
+$idx = 2000;
+
+// Define output array
+$output = array();
+
 if (preg_match_all($regex, $string, $matches)) {
     // Remove + from all matches
     foreach ($matches as $match) {
@@ -63,10 +69,14 @@ if (preg_match_all($regex, $string, $matches)) {
         $query->select('parent');
         $parent = $modx->getValue($query->prepare());
 
+        // Up idx value by 1, so a unique placeholder can be created
+        $idx++;
+
         // Output to a chunk that contains the link generator
         $output[] = $modx->getChunk($tpl, array(
             'name' => $name,
-            'category' => $parent
+            'category' => $parent,
+            'idx' => $idx
         ));
     }
 }
