@@ -3,7 +3,7 @@ parent_properties: ''
 input: layout
 name: 'Nested Layout'
 description: 'Voeg een genestelde layout toe binnen een bestaande layout. Op deze manier kan je blokken in een bestaande layout eenvoudig opdelen in nog meer blokken.'
-sortorder: 23
+sortorder: 22
 category: 4
 icon: template_01
 template: '[[+value]]'

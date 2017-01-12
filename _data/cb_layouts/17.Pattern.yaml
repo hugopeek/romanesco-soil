@@ -1,0 +1,11 @@
+id: 17
+name: Pattern
+description: 'A single column for displaying Romanesco patterns in the front-end library.'
+sortorder: 16
+icon: chunk_C
+columns: '[{"reference":"main","width":"100"}]'
+template: "<div class=\"ui vertical stripe segment [[+background]]\">\n    <div class=\"ui [[+container_type]] [[+alignment]] container\">\n        [[+main]]\n    </div>\n</div>"
+availability: '[]'
+times_per_page: 0
+layout_only_nested: '0'
+settings: '[{"reference":"background","title":"Background","fieldtype":"select","default_value":"white","fieldoptions":"[[$cbLayoutBackgrounds]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"container_type","title":"Width","fieldtype":"select","default_value":"","fieldoptions":"[[$cbSettingContainerType]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"alignment","title":"Content alignment","fieldtype":"select","default_value":"","fieldoptions":"[[$cbLayoutAlignment]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"pattern_name","title":"Pattern name","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"asSetting"}]'

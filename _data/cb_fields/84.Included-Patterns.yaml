@@ -5,7 +5,7 @@ name: 'Included Patterns'
 description: 'List the smaller atomic particles included in this pattern, or the bigger patterns that contain this one. For electrons, you can also list which templates include that electron.'
 sortorder: 49
 category: 6
-icon: unorderedlist
+icon: chunk_C
 template: '[[+value]]'
 properties: '{"available_chunks":"assignedTemplates,includedTVs,referringTVs,includedChunks,referringChunks,includedSnippets,referringTemplates","available_categories":""}'
 availability: '[{"field":"context","value":"hub"}]'

@@ -3,7 +3,7 @@ parent_properties: ''
 input: chunk
 name: 'Call To Action'
 description: 'Add a CTA here. You can create and edit CTA''s under Content > Global Content > Call To Actions.'
-sortorder: 24
+sortorder: 23
 category: 3
 icon: snippet_C
 template: '[[+tag]]'

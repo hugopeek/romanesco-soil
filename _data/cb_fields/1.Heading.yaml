@@ -6,8 +6,8 @@ description: ''
 category: 1
 icon: heading
 icon_type: ''
-template: "[[$headingBasic?\n    &value=`[[+value]]`\n    &level=`[[+level]]`\n    &alignment=`[[+alignment]]`\n    &unique_idx=`[[+unique_idx]]`\n]]"
+template: "[[$headingBasic[[+anchor]]?\n    &value=`[[+value]]`\n    &level=`[[+level]]`\n    &alignment=`[[+alignment]]`\n    &unique_idx=`[[+unique_idx]]`\n]]"
 properties: '{"default_level":"h2","available_levels":"h1=heading_1,h2=heading_2,h3=heading_3,h4=heading_4,h5=heading_5,h6=heading_6","use_tinyrte":"1"}'
 availability: '[]'
 layouts: ''
-settings: '[{"reference":"alignment","title":"Text alignment","fieldtype":"select","default_value":"","fieldoptions":"\n[[$cbFieldAlignment]]","field_is_exposed":"modal","process_tags":"1"}]'
+settings: '[{"reference":"alignment","title":"Text alignment","fieldtype":"select","default_value":"","fieldoptions":"\n[[$cbFieldAlignment]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"anchor","title":"Add anchor to HTML","fieldtype":"radio","default_value":"","fieldoptions":"No=\nYes=Anchor","field_is_exposed":"modal"}]'
