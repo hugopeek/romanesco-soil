@@ -22,7 +22,7 @@ $(document).ready(function(){
     ;
     $('.slider.minimal')
 
-        // Initiate default slider
+        // Initiate slider with minimal controls
         .slick({
             adaptiveHeight: true,
             arrows: false,
