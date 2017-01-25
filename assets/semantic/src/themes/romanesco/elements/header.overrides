@@ -3,11 +3,6 @@
 *******************************/
 
 .ui.header {
-    // Fade icon images in headers
-    //> .image {
-    //    opacity: 0.6;
-    //}
-
     // Bug with content falling below a left positioned header image
     // when containing a long sub header.
     &:not(.icon):not(.aligned) {
@@ -18,6 +13,23 @@
                 display: table-cell;
             }
         }
+    }
+
+    // Hide link icon inside headers with an anchor link
+    > .anchor {
+        display: none;
+        position: absolute;
+        left: -0.7em;
+        top: 0.55em;
+        color: @disabledTextColor;
+
+        &:hover {
+            color: @textColor;
+        }
+    }
+    // Show link when hovering the header
+    &:hover > .anchor {
+        display: block;
     }
 }
 

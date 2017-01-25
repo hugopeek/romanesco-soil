@@ -197,7 +197,7 @@
     }
 }
 
-// Segment containing an image that needs to be inflated beyond it's containers' dimensions
+// Segment containing an image that needs to be inflated beyond its containers' dimensions
 .ui.inflated.segment {
     @media only screen and (min-width: @tabletBreakpoint) {
         > .container > .grid {
@@ -215,3 +215,20 @@
     }
 }
 
+// Segment for displaying patterns in front-end library
+.ui.pattern.segment {
+    // Hide code icon inside preview columns in front-end library
+    .preview.column {
+        > .code.link.icon {
+            display: none;
+            position: absolute;
+            left: -1.6em;
+            top: 0em;
+        }
+
+        // Show link when hovering over preview
+        &:hover > .code.link.icon {
+            display: block;
+        }
+    }
+}

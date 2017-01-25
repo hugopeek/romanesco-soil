@@ -47,12 +47,12 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : #8db208;
-@secondaryColor      : #fb4f00;
+@primaryColor        : #698f73;
+@secondaryColor      : #9db02e;
 
-@lightPrimaryColor   : #d7e5a2;
-@lightSecondaryColor : lighten(#fb4f00, 10);
-@darkSecondaryColor  : #e00018;
+@lightPrimaryColor   : lighten(@primaryColor, 10);
+@lightSecondaryColor : lighten(@secondaryColor, 10);
+@darkSecondaryColor  : #1e2307;
 
 /*--------------
   Page Heading
