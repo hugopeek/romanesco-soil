@@ -33,6 +33,11 @@ $(document)
         $('.ui.accordion').accordion();
         $('.ui.dropdown').dropdown();
         $('.with.popup').popup();
+        $('.with.popup.onclick')
+            .popup({
+                on: 'click'
+            })
+        ;
         $('.ui.tabular.menu .item').tab();
         $('.ui.sortable.table').tablesort();
 
