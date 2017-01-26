@@ -1,0 +1,5 @@
+key: contentblocks.show_resource_option
+value: '1'
+xtype: combo-boolean
+namespace: contentblocks
+area: Core

@@ -8,7 +8,7 @@ category: 6
 icon: code
 icon_type: ''
 template: "[[$codeSnippet?\n    &value=`[[+value]]`\n    &lang=`[[+lang]]`\n    &label=`[[+label]]`\n]]"
-properties: '{"available_languages":"html=HTML,javascript=JavaScript,css=CSS,php=PHP","default_language":"html","entities":"0"}'
+properties: '{"available_languages":"html=HTML,javascript=JavaScript,css=CSS,less=LESS,php=PHP","default_language":"html","entities":"0"}'
 availability: '[]'
 layouts: ''
 settings: '[{"reference":"label","title":"Label","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"modal"}]'

@@ -1,0 +1,12 @@
+id: 349
+name: navItemIcon
+description: ''
+category: a_nav_primary
+properties: 'a:0:{}'
+
+-----
+
+<a class="item [[+classnames]]" href="[[+link]]" title="[[+longtitle:empty=`[[+pagetitle]]`]]" [[+attributes]]>
+    <i class="[[+overview_icon_font]] icon"></i>
+    [[+menutitle]]
+</a>

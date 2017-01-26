@@ -7,7 +7,7 @@ sortorder: 27
 category: 6
 icon: code
 icon_type: ''
-template: '<pre><code class="language-[[+lang]]">[[+value:esc]]</code>[[+label:notempty=`<div class="ui top right attached label">[[+label]]<i class="copy link icon with popup" data-content="[[%romanesco.patterns.copy_tooltip]]"></i></div>`]]</pre>'
+template: '<pre><code class="language-[[+lang]]">[[+value:esc]]</code>[[+label:notempty=`<div class="ui small top right attached label">[[+label]]<i class="copy link icon with popup" data-content="[[%romanesco.patterns.copy_tooltip]]"></i></div>`]]</pre>'
 properties: '{"available_languages":"html=HTML,javascript=JavaScript,css=CSS,php=PHP","default_language":"html","entities":"1"}'
 availability: '[{"field":"usergroup","value":"Administrator"}]'
 layouts: ''

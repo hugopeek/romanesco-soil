@@ -11,9 +11,11 @@ $ContentBlocks = $modx->getService('contentblocks','ContentBlocks', $cbCorePath.
 $pattern = $modx->getOption('pattern', $scriptProperties, '');
 $tpl = $modx->getOption('tpl', $scriptProperties, 'includedContentBlocksRow');
 
+$htmlContentType = $modx->getObject('modContentType', array('name' => 'HTML'));
+
 // Function to turn result into a link to its corresponding resource
 if (!function_exists('createLink')) {
-    function createLink($catID) {
+    function createLink($catID, $uriExtension) {
         global $modx;
 
         // Since we have an ID, let's go hunt for the category name
@@ -34,7 +36,7 @@ if (!function_exists('createLink')) {
         $query = $modx->newQuery('modResource');
         $query->where(array(
             'uri:LIKE' => '%' . $parentName . '%',
-            'AND:uri:LIKE' => '%' . $catName,
+            'AND:uri:LIKE' => '%' . $catName . $uriExtension
         ));
         $query->select('uri');
         $link = $modx->getValue($query->prepare());
@@ -90,15 +92,16 @@ if ($result) {
     // Turn each match into a list item with a link
     foreach ($result as $boson) {
         $name = $boson->get('name');
-        $link = createLink($boson->get('category'));
+        $link = createLink($boson->get('category'), $htmlContentType->get('file_extensions'));
 
         $output[] = $modx->getChunk($tpl, array(
             'name' => $name,
-            'link' => $link
+            'link' => $link,
+            'label_classes' => 'blue'
         ));
     }
 
-    return(implode($output));
+    return implode($output);
 
     //if ($placeholder) {
     //    $modx->toPlaceholder($placeholder, $output);

@@ -48,8 +48,14 @@ $patternName = $modx->getOption('name', $scriptProperties, '');
 $patternType = $modx->getOption('type', $scriptProperties, '');
 $tpl = $modx->getOption('tpl', $scriptProperties, 'includedPatternsRow');
 
-// Find chunk names by their leading $ character
-$regex = '/(?<!\w)\$\w+/';
+// Finding chunks inside snippets only result in a lot of false positives, so let's disable that for now
+// @todo: Create a different pattern for finding chunks inside snippets
+if (stripos($patternType, 'formula')) {
+    return '';
+}
+
+// Find chunk names by their leading $ character or '&tpl' string
+$regex = '/((?<!\w)\&amp;tpl=&#96;\w+|(?<!\w)\$\w+)/';
 
 // Set idx start value
 $idx = 0;
@@ -58,10 +64,13 @@ $idx = 0;
 $output = array();
 
 if (preg_match_all($regex, $string, $matches)) {
-    // Remove $ from all matches
+    // Remove prefix from all matches
     foreach ($matches as $match) {
         $match = str_replace('$', '', $match);
+        $match = str_replace('&amp;tpl=&#96;', '', $match);
     }
+
+    //print_r($match);
 
     // Remove duplicates
     $result = array_unique($match);
@@ -126,28 +135,30 @@ if (stripos($patternType, 'bosonfield')) {
             'properties:LIKE' => '%"available_chunks":"%'
         ));
 
-        $properties = $result->get('properties');
-        $array = json_decode($properties, true);
+        if (is_object($result)) {
+            $properties = $result->get('properties');
+            $array = json_decode($properties, true);
 
-        $chunks = $array['available_chunks'];
-        $result = explode(',', $chunks);
-        
-        foreach ($result as $name) {
-            // Also fetch category, to help ensure the correct resource is being linked
-            $query = $modx->newQuery('modChunk', array(
-                'name' => $name
-            ));
-            $query->select('category');
-            $category = $modx->getValue($query->prepare());
+            $chunks = $array['available_chunks'];
+            $result = explode(',', $chunks);
 
-            $idx++;
+            foreach ($result as $name) {
+                // Also fetch category, to help ensure the correct resource is being linked
+                $query = $modx->newQuery('modChunk', array(
+                    'name' => $name
+                ));
+                $query->select('category');
+                $category = $modx->getValue($query->prepare());
 
-            $output[] = $modx->getChunk($tpl, array(
-                'name' => $name,
-                'category' => $category,
-                'assigned' => 1,
-                'idx' => $idx
-            ));
+                $idx++;
+
+                $output[] = $modx->getChunk($tpl, array(
+                    'name' => $name,
+                    'category' => $category,
+                    'assigned' => 1,
+                    'idx' => $idx
+                ));
+            }
         }
     }
 }

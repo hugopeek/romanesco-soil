@@ -1,0 +1,11 @@
+id: 347
+name: cbSettingButtonOptions
+description: ''
+category: a_cb_settings
+properties: 'a:0:{}'
+
+-----
+
+Basic=basic
+Compact=compact
+Full width=fluid

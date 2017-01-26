@@ -16,17 +16,17 @@ switch($elementType) {
         $dbNameField = "name";
         $modxObject = "modTemplateVar";
         break;
-    case stripos($elementType,'atom') !== false:
+    case stripos($elementType, 'atom') !== false:
         $dbTable = "site_htmlsnippets";
         $dbNameField = "name";
         $modxObject = "modChunk";
         break;
-    case stripos($elementType,'molecule') !== false:
+    case stripos($elementType, 'molecule') !== false:
         $dbTable = "site_htmlsnippets";
         $dbNameField = "name";
         $modxObject = "modChunk";
         break;
-    case stripos($elementType,'Organism') !== false:
+    case stripos($elementType,'organism') !== false:
         $dbTable = "site_htmlsnippets";
         $dbNameField = "name";
         $modxObject = "modChunk";
@@ -41,7 +41,7 @@ switch($elementType) {
         $dbNameField = "pagetitle";
         $modxObject = "modResource";
         break;
-    case stripos($elementType, 'formulas') !== false:
+    case stripos($elementType, 'formula') !== false:
         $dbTable = "site_snippets";
         $dbNameField = "name";
         $modxObject = "modSnippet";

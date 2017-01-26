@@ -9,6 +9,8 @@ $catID = $modx->getOption('input', $scriptProperties, '');
 $placeholder = $modx->getOption('toPlaceholder', $scriptProperties, '');
 $prefix = $modx->getOption('prefix', $scriptProperties, '');
 
+$htmlContentType = $modx->getObject('modContentType', array('name' => 'HTML'));
+
 // Get category name and parent ID
 $category = $modx->getObject('modCategory', array(
     'id' => $catID
@@ -50,7 +52,7 @@ if ($matchCat === $matchParent) {
 // Get the resource with an alias that matches the category name
 $query = $modx->newQuery('modResource');
 $query->where(array(
-    'uri:LIKE' => '%' . $match,
+    'uri:LIKE' => '%' . $match . $htmlContentType->get('file_extensions')
 ));
 $query->select('uri');
 $link = $modx->getValue($query->prepare());

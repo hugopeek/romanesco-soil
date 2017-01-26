@@ -43,29 +43,31 @@ $output = array();
 foreach ($tvList as $value) {
     $tv = $modx->getObject('modTemplateVar', $value);
 
-    $name = $tv->get('name');
-    $category = $tv->get('category');
+    if (is_object($tv)) {
+        $name = $tv->get('name');
+        $category = $tv->get('category');
 
-    // The actual TV categories often contain spaces and hyphens and they
-    // don't accurately represent the file structure of the library.
-    // That's why we get the parent category instead.
-    $query = $modx->newQuery('modCategory', array(
-        'id' => $category
-    ));
-    $query->select('parent');
-    $parent = $modx->getValue($query->prepare());
-
-    // Up idx value by 1, so a unique placeholder can be created
-    $idx++;
-
-    // Output to a chunk that contains the link generator
-    // Filter all TVs under the Status tab, since that's not relevant info
-    if (strpos($name, 'status_') === false) {
-        $output[] = $modx->getChunk($tpl, array(
-            'name' => $name,
-            'category' => $parent,
-            'idx' => $idx
+        // The actual TV categories often contain spaces and hyphens and they
+        // don't accurately represent the file structure of the library.
+        // That's why we get the parent category instead.
+        $query = $modx->newQuery('modCategory', array(
+            'id' => $category
         ));
+        $query->select('parent');
+        $parent = $modx->getValue($query->prepare());
+
+        // Up idx value by 1, so a unique placeholder can be created
+        $idx++;
+
+        // Output to a chunk that contains the link generator
+        // Filter all TVs under the Status tab, since that's not relevant info
+        if (strpos($name, 'status_') === false) {
+            $output[] = $modx->getChunk($tpl, array(
+                'name' => $name,
+                'category' => $parent,
+                'idx' => $idx
+            ));
+        }
     }
 }
 

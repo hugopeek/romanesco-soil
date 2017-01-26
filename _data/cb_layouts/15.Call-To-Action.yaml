@@ -6,7 +6,7 @@ category: 10
 icon: snippet_C
 columns: '[{"reference":"main","width":"100"}]'
 template: '[[+main]]'
-availability: '[{"field":"template","value":"9"}]'
+availability: '[{"field":"template","value":"9"},{"field":"context","value":"hub"}]'
 times_per_page: 1
 layout_only_nested: '0'
 settings: '[]'

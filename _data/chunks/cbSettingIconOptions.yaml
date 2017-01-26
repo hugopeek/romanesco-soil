@@ -1,0 +1,10 @@
+id: 348
+name: cbSettingIconOptions
+description: ''
+category: a_cb_settings
+properties: 'a:0:{}'
+
+-----
+
+Position right=right
+Display as label=labeled

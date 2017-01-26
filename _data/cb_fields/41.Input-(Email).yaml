@@ -8,6 +8,6 @@ category: 7
 icon: paragraph
 template: '[[+tag]]'
 properties: '{"chunk":"37","custom_preview":"<p><em>You can add an optional placeholder in the Settings menu.<\/em><\/p>"}'
-availability: '[{"field":"template","value":"10"}]'
+availability: '[{"field":"template","value":"10"},{"field":"context","value":"hub"}]'
 layouts: ''
-settings: '[{"reference":"field_name","title":"Label","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"asField"},{"reference":"field_layout","title":"Label position","fieldtype":"select","default_value":"[[*fb_form_layout]]","fieldoptions":"Inherit (from Form Layout)=[[*fb_form_layout]]\nAbove options=form-default\nLeft of options=form-horizontal","field_is_exposed":"modal"},{"reference":"field_placeholder","title":"Placeholder","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"modal"},{"reference":"field_helptext","title":"Help text","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"modal"}]'
+settings: '[{"reference":"field_name","title":"Label","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"asField"},{"reference":"field_layout","title":"Label position","fieldtype":"select","default_value":"[[*fb_form_layout]]","fieldoptions":"[[$cbFormLabelPosition]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"field_placeholder","title":"Placeholder","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"modal"},{"reference":"field_helptext","title":"Help text","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"modal"}]'

@@ -1,0 +1,27 @@
+id: 345
+name: toolbarPatternElectron
+description: ''
+category: o_toolbars
+properties: 'a:0:{}'
+
+-----
+
+[[$cbLayoutStatusPattern:filterLine=`[[+pattern_status]]`:stripString=`=[[+pattern_status]]`:toPlaceholder=`status_title`]]
+
+<div class="ui two column middle aligned equal width grid">
+    <div class="column">
+        [[$headingBasicAnchor?
+            &level=`h2`
+            &value=`[[+pattern_name]]<span class="ui mini [[+pattern_status]] empty circular label" title="[[+status_title]]"></span>`
+            &alignment=`middle aligned`
+        ]]
+    </div>
+
+    <div class="five wide right aligned column">
+        <i class="disabled comment outline link icon with popup"
+           data-content="[[%romanesco.patterns.comment_tooltip]]"
+           data-position="top center"></i>
+    </div>
+</div>
+
+[[$dividerBasic? &divider_hidden=`1`]]

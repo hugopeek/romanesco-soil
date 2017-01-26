@@ -7,8 +7,8 @@ sortorder: 29
 category: 6
 icon: code
 icon_type: ''
-template: '[[+value]]'
+template: "[[!cbRenderCodeField?\n    &valueRendered=`[[+value:stripString=`:tag`]]`\n    &valueRaw=`[[+value]]`\n    &renderTag=`[[+render_tag]]`\n]]"
 properties: '{"available_languages":"html=HTML","default_language":"html","entities":"0"}'
 availability: '[{"field":"usergroup","value":"Administrator"}]'
 layouts: ''
-settings: '[]'
+settings: '[{"reference":"render_tag","title":"Rendering of :tag","fieldtype":"radio","default_value":"ignore","fieldoptions":"Render :tag modifier(s) anyway and set code_field_raw placeholder=render\nRespect :tag modifier(s) and set code_field_rendered placeholder=respect\nProcess everything as usual, without setting any placeholders=ignore","field_is_exposed":"modal"}]'

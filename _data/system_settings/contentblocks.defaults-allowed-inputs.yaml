@@ -1,0 +1,4 @@
+key: contentblocks.defaults_allowed_inputs
+value: 'textarea,richtext,code,blockdown'
+namespace: contentblocks
+area: Defaults

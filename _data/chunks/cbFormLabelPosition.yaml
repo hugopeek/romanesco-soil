@@ -1,0 +1,11 @@
+id: 350
+name: cbFormLabelPosition
+description: ''
+category: a_cb_formblocks
+properties: 'a:0:{}'
+
+-----
+
+Inherit (from Form Layout)=[[*fb_form_layout]]
+Above input field / options (Vertical)=vertical
+Left of input field / options (Horizontal)=horizontal

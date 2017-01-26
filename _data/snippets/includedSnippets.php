@@ -67,4 +67,6 @@ if (preg_match_all($regex, $string, $matches)) {
     }
 }
 
+sort($output);
+
 return implode($output);

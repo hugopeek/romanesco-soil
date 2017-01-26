@@ -27,10 +27,13 @@ if ($cbField) {
         $modx->toPlaceholders($array, $prefix);
 
         // Set placeholder with all field settings parsed in an HTML table
-        $settingsTable = $modx->runSnippet('jsonToHTML', array(
-            'json' => $field->get('settings')
-        ));
-        $modx->toPlaceholder('settings_table', $settingsTable, $prefix);
+        //$settingsTable = $modx->runSnippet('jsonToHTML', array(
+        //    'json' => $field->get('settings')
+        //));
+        //$modx->toPlaceholder('settings_table', $settingsTable, $prefix);
+
+        // Above option doesn't work somehow, so just output raw json to placeholder
+        $modx->toPlaceholder('settings_json', $field->get('settings'), $prefix);
 
         // Set placeholder with wrapper template, if present inside properties field
         $properties = $field->get('properties');
@@ -66,11 +69,8 @@ if ($cbLayout) {
         // Use a prefix to prevent collisions
         $modx->toPlaceholders($array, $prefix);
 
-        // Set placeholder with all field settings parsed in an HTML table
-        $settingsTable = $modx->runSnippet('jsonToHTML', array(
-            'json' => $layout->get('settings')
-        ));
-        $modx->toPlaceholder('settings_table', $settingsTable, $prefix);
+        // Set placeholder with raw json output from the settings column
+        $modx->toPlaceholder('settings_json', $layout->get('settings'), $prefix);
 
         // Set separate placeholder with prefix, for easier retrieval of the other placeholders
         // Usage example: [[+[[+cl]].placeholder]]

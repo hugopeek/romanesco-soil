@@ -6,47 +6,42 @@ properties: 'a:0:{}'
 
 -----
 
-// Original script by Tran Duc Thang
 // @todo: write documentation and use chunks for the HTML templating
 
 $json = $modx->getOption('json', $scriptProperties, '');
+//$filterKeys = $modx->getOption('filterKeys', $scriptProperties, 'template,process_tags,field_is_exposed');
+//$filterKeys = $modx->getOption('filterKeys', $scriptProperties, '"template","process_tags","field_is_exposed"');
 
-if (!class_exists('jsonToHTML')) {
-    class jsonToHTML {
-        public static function jsonToDebug($json = '')
-        {
-            $arr = json_decode($json, true);
-            $html = '';
-            if ($arr && is_array($arr)) {
-                $html .= self::_arrayToHtmlTableRecursive($arr);
-            }
-            return $html;
-        }
+$jsonArray = json_decode($json, true);
+//$filterArray = explode(',', $filterKeys);
 
-        private static function _arrayToHtmlTableRecursive($arr) {
-            $str = '<table class="ui compact very basic table"><tbody>';
-            foreach ($arr as $key => $val) {
-                // Exclude templates from result
-                // @todo: make this variable
-                if ($key != 'templates') {
-                    $str .= "<tr class='top aligned'>";
-                    $str .= "<td style='width:0;'><strong>$key</strong></td>";
-                    $str .= "<td>";
-                    if (is_array($val)) {
-                        if (!empty($val)) {
-                            $str .= self::_arrayToHtmlTableRecursive($val);
-                        }
-                    } else {
-                        $str .= nl2br("$val");
-                    }
-                    $str .= "</td></tr>";
+if (!function_exists('jsonToHTML')) {
+    function jsonToHTML($array) {
+        $output = '<table class="ui compact very basic table"><tbody>';
+
+        // @todo: For some strange reason, the function won't accept filterArray to be anything other that what's below
+        $filterKeys = array("templates","process_tags","field_is_exposed");
+
+        foreach ($array as $key => $value) {
+            // Exclude unwanted keys and keys with an empty value from result
+            // @todo: When not set to 'true', the first item in the array will always be excluded
+            if (in_array($key, $filterKeys, true) == false && $value != false) {
+                $output .= "<tr class='top aligned'>";
+                $output .= "<td style='width:0;'><strong>$key</strong></td>";
+                $output .= "<td>";
+                if (is_array($value)) {
+                    $output .= jsonToHTML($value);
+                } else {
+                    $output .= nl2br("$value");
                 }
+                $output .= "</td></tr>";
             }
-            $str .= "</tbody></table>";
-
-            return $str;
         }
+
+        $output .= "</tbody></table>";
+
+        return $output;
     }
 }
 
-return jsonToHTML::jsonToDebug($json);
+return (jsonToHTML($jsonArray));

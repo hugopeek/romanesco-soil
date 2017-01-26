@@ -1,0 +1,7 @@
+id: 107
+name: 'PL - Computation'
+description: ''
+sortorder: 9
+icon: tabs
+content: '[{"layout":17,"content":{"preview":[{"value":"{{NO EXAMPLE NEEDED}}","lang":"html","field":14,"settings":{}}],"code":[{"value":"[[Rowboat?\n    &table=`modx_site_plugins`\n    &tpl=`displayRawPlugin`\n    &where=`{\"name\":\"[[+pattern_name]]\"}`\n]]","lang":"php","field":86,"settings":{"label":"[[%romanesco.patterns.code_label]]"}}],"info":[{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-82"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[getElementDescription? &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]</p>","field":6,"settings":{}}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-83"}},{"heading":{"value":"[[%romanesco.patterns.caveats_title]]","fieldId":"contentblocks-field-85"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":{}}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-86"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}}]},"settings":{"background":"white","container_type":"","sidebar_width":"five","alignment":"","pattern_name":"","pattern_template":"patternLayoutComputation"},"parent":0,"title":""}]'
+availability: '[{"field":"context","value":"hub"}]'
