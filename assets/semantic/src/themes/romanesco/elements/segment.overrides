@@ -232,3 +232,32 @@
         }
     }
 }
+
+// Segment for demonstrating pattern design and behaviour in backyard area
+.ui.backyard.segment {
+    // Operate accordion with a small button on top right of segment
+    .container {
+        position: relative;
+    }
+    .accordion .title {
+        .button {
+            position: absolute;
+            right: 0;
+            top: -2.5rem;
+
+            // Do the rotate trick to turn plus icon into close icon
+            .icon {
+                transform: rotate(0);
+                transition: rotate, 200ms;
+            }
+        }
+        &.active .button .icon {
+            transform: rotate(45deg);
+        }
+    }
+
+    // Make the little toolbar on top right behave
+    .toolbar.grid {
+        margin-bottom: -0.4rem !important;
+    }
+}
