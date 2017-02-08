@@ -50,3 +50,27 @@
         }
     }
 }
+
+// The HeaderVertical template requires a few overrides
+#header-vertical {
+    #header {
+        @media only screen and (min-width: @tabletBreakpoint) {
+            position: fixed;
+            width: 15rem;
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        @media only screen and (min-width: @computerBreakpoint) {
+            width: 20%;
+        }
+    }
+    #main {
+        @media only screen and (min-width: @tabletBreakpoint) {
+            margin-left: 15rem;
+        }
+        @media only screen and (min-width: @computerBreakpoint) {
+            margin-left: 20%;
+        }
+    }
+}

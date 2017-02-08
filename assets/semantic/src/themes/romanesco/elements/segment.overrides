@@ -63,23 +63,10 @@
     }
 
     // Add extra colored segments
-    &.primary-color {
-        background-color: @lightPrimaryColor;
-        z-index: 0; // Fix in case container positioning is absolute
-
-        &.inverted {
-            background-color: @primaryColor !important;
-            color: @white !important;
-        }
-    }
+    // Additional color settings are defined in site.overrides
+    &.primary-color,
     &.secondary-color {
-        background-color: @lightSecondaryColor;
         z-index: 0; // Fix in case container positioning is absolute
-
-        &.inverted {
-            background-color: @secondaryColor !important;
-            color: @white !important;
-        }
     }
 
     // Link styling for inverted segments in content area
@@ -88,6 +75,21 @@
         border-bottom: 2px solid fade(@white, 60);
         &:hover {
             border-bottom: 2px solid @white;
+        }
+    }
+
+    // Segments inside a HeaderVertical template require a few overrides
+    #header-vertical & {
+        padding: 2em 0;
+
+        @media only screen and (max-width: @tabletBreakpoint) {
+            > .container > .grid {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+        }
+        @media only screen and (min-width: @tabletBreakpoint) {
+            padding: 3em 5%;
         }
     }
 }
@@ -259,5 +261,12 @@
     // Make the little toolbar on top right behave
     .toolbar.grid {
         margin-bottom: -0.4rem !important;
+    }
+
+    // Segments inside a HeaderVertical template require a few overrides
+    #header-vertical & {
+        @media only screen and (min-width: @tabletBreakpoint) {
+            padding: 1em 5%;
+        }
     }
 }

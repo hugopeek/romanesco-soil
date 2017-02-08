@@ -66,12 +66,34 @@ body:after {
 }
 
 
+// Global backgrounds
+// ---------------------------------------------------------------------
+
+// General classes to apply a background color directly to an element
+.primary-color {
+    background-color: @lightPrimaryColor !important;
+
+    &.inverted {
+        background-color: @primaryColor !important;
+        color: @white !important;
+    }
+}
+.secondary-color {
+    background-color: @lightSecondaryColor !important;
+
+    &.inverted {
+        background-color: @secondaryColor !important;
+        color: @white !important;
+    }
+}
+
+
 // Main content area
 // ---------------------------------------------------------------------
 
 // Set top margin on specific elements, to prevent gaps when starting with a segment
 #content > .introduction,
-#sidebar {
+#main #sidebar {
     margin-top: 4rem !important;
 }
 
