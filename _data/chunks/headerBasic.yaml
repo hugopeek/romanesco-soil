@@ -2,11 +2,13 @@ id: 110
 name: headerBasic
 description: ''
 category: o_headers
+snippet: "<header class=\"masthead\">\n    [[[[If?\n        &subject=`[[+masthead]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`$masthead`\n    ]]]]\n\n    [[[[If? &subject=`[[$mainNavTheme]]` &operator=`isnull` &then=`$mainNav` &else=`$mainNavTheme`]]]]\n\n    [[[[If?\n        &subject=`[[+hero]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`$hero`\n    ]]]]\n\n    [[[[If?\n        &subject=`[[++search.add_to_menu]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`$searchForm`\n    ]]]]\n</header>"
 properties: 'a:0:{}'
+content: "<header class=\"masthead\">\n    [[[[If?\n        &subject=`[[+masthead]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`$masthead`\n    ]]]]\n\n    [[[[If? &subject=`[[$mainNavTheme]]` &operator=`isnull` &then=`$mainNav` &else=`$mainNavTheme`]]]]\n\n    [[[[If?\n        &subject=`[[+hero]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`$hero`\n    ]]]]\n\n    [[[[If?\n        &subject=`[[++search.add_to_menu]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`$searchForm`\n    ]]]]\n</header>"
 
 -----
 
-<header class="masthead">
+<header id="header" class="masthead">
     [[[[If?
         &subject=`[[+masthead]]`
         &operator=`EQ`
