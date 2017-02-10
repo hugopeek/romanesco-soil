@@ -54,12 +54,14 @@
 // The HeaderVertical template requires a few overrides
 #header-vertical {
     #header {
+        margin: 0;
+        padding: 0.5em 1em;
+
         @media only screen and (min-width: @tabletBreakpoint) {
             position: fixed;
             width: 15rem;
             min-height: 100%;
-            margin: 0;
-            padding: 0;
+            padding: 3em 1em;
         }
         @media only screen and (min-width: @computerBreakpoint) {
             width: 20%;

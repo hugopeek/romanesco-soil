@@ -52,6 +52,14 @@ $(document)
         $('.ui.embed').embed();
         $('.ui.rating').rating('disable');
 
+        // Make submenu scroll down with content area
+        $('#submenu.sticky')
+            .sticky({
+                context: '#main',
+                offset: 70
+            })
+        ;
+
         // Add inverted classes to elements inside inverted segments
         $('.inverted.stripe.segment .button:not(.primary):not(.secondary)').addClass('inverted');
         $('.inverted.stripe.segment.primary-color .button.primary').addClass('inverted');
