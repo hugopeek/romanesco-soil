@@ -68,6 +68,18 @@
         }
     }
     #main {
+        // Use flexbox to stretch the main content area vertically
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+        #content {
+            flex: 1;
+        }
+        #footer {
+            flex: 0;
+        }
+
         @media only screen and (min-width: @tabletBreakpoint) {
             margin-left: 15rem;
         }
