@@ -82,7 +82,7 @@
     #header-vertical & {
         padding: 2em 0;
 
-        @media only screen and (max-width: @tabletBreakpoint) {
+        @media only screen and (max-width: @largestMobileScreen) {
             > .container > .grid {
                 margin-left: 0 !important;
                 margin-right: 0 !important;

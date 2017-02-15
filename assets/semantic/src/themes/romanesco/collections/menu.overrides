@@ -112,7 +112,7 @@
     }
 
     // Mobile behaviour
-    @media (max-width: @tabletBreakpoint) {
+    @media (max-width: @largestMobileScreen) {
         display: flex;
         flex-direction: row;
 
