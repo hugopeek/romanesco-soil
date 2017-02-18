@@ -2,6 +2,7 @@
          Theme Overrides
 *******************************/
 
-figure {
+figure,
+blockquote {
     margin: 0;
 }
