@@ -198,56 +198,61 @@ body:after {
     }
 }
 
-.slider {
+.slick-slider {
+    transition: all 0.2s;
 
     // Fix small outline glitch
     .slick-slide:focus {
         outline: none;
     }
 
-    @media only screen and (min-width: @computerBreakpoint) {
-        .slick-dots {
-            bottom: 3px;
-        }
-        .slick-arrow {
-            margin-top: -5.2rem;
-            width: 30px;
-            height: 30px;
-            z-index: 1;
+    // Position dots
+    .slick-dots {
+        bottom: -3rem;
+    }
 
+    // Display prev/next arrows
+    .slick-arrow {
+        width: 4.5rem;
+        height: 100%;
+        transition: background 0.2s;
+        z-index: 999;
+
+        @media (max-width: @tabletBreakpoint) {
+            width: 3rem;
+        }
+
+        &:hover {
+            background: @veryStrongTransparentBlack;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            outline: none !important;
+        }
+
+        &:before {
+            font-size: 4rem;
+            color: @lightBlack;
+
+            @media (max-width: @tabletBreakpoint) {
+                font-size: 2.5rem;
+            }
+        }
+
+        &.slick-prev {
+            left: 0;
             &:before {
-                font-size: 30px;
-                opacity: .5;
+                font-family: "Icons";
+                content: '\f104';
             }
         }
-        .slick-prev {
-            left: 1rem;
-        }
-        .slick-next {
-            right: 1rem;
-        }
-
-        // Move bottom border up to create partial image overlay
-        .masthead & {
-            margin-bottom: -7em;
-        }
-    }
-
-    @media screen and (max-width: @computerBreakpoint) {
-        .slick-dots {
-            bottom: -4em;
-
-            button:before {
-                color: #fff !important;
-            }
-        }
-    }
-
-    @media screen and (max-width: @tabletBreakpoint) {
-        .slick-slide {
-            text-align: center;
-            p {
-                display: none; // No space for this on mobile
+        &.slick-next {
+            right: 0;
+            &:before {
+                font-family: "Icons";
+                content: '\f105';
             }
         }
     }
