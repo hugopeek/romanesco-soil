@@ -1,6 +1,6 @@
 id: 73
 name: setBoxType
-description: 'Output the necessary class names for overview items, based on their template.'
+description: 'Output the necessary class names for Overview patterns, based on their template. It was created because the chunks where getting a bit swamped by output modifiers trying to do the same thing.'
 category: f_framework
 properties: 'a:0:{}'
 

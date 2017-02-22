@@ -1,6 +1,6 @@
 id: 67
 name: stripWords
-description: 'Opposed to stripString, which only allows you to strip a single value, stripWords lets you enter multiple (comma separated) values.'
+description: 'Opposed to the native MODX stripString modifier (which only allows you to strip a single value), stripWords lets you enter multiple (comma separated) values.'
 category: f_modifiers
 properties: 'a:0:{}'
 

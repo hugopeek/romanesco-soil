@@ -2,7 +2,9 @@ id: 169
 name: overviewRowImageLeft
 description: ''
 category: m_ov_image
+snippet: "<div class=\"ui stackable grid\">\n    <figure class=\"five wide column\">\n        <a class=\"ui rounded image\" href=\"[[~[[+id]]]]\">\n            [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?\n                &tvname=`overview_img_landscape`\n                &docid=`[[+id]]`\n                &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`\n                &type=`tpl`\n                &tpl=`cbOverviewRowImg`\n            ]]\n        </a>\n    </figure>\n\n    <div class=\"eleven wide [[If? &subject=`[[+show_introtext]]` &operator=`EQ` &operand=`0` &then=`middle aligned`]] column\">\n        [[!$overviewRowBasic]]\n    </div>\n</div>"
 properties: 'a:0:{}'
+content: "<div class=\"ui stackable grid\">\n    <figure class=\"five wide column\">\n        <a class=\"ui rounded image\" href=\"[[~[[+id]]]]\">\n            [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?\n                &tvname=`overview_img_landscape`\n                &docid=`[[+id]]`\n                &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`\n                &type=`tpl`\n                &tpl=`cbOverviewRowImg`\n            ]]\n        </a>\n    </figure>\n\n    <div class=\"eleven wide [[If? &subject=`[[+show_introtext]]` &operator=`EQ` &operand=`0` &then=`middle aligned`]] column\">\n        [[!$overviewRowBasic]]\n    </div>\n</div>"
 
 -----
 
@@ -10,7 +12,7 @@ properties: 'a:0:{}'
     <figure class="five wide column">
         <a class="ui rounded image" href="[[~[[+id]]]]">
             [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
-                &tvname=`overview_img_landscape`
+                &tvname=`overview_img_[[+img_type:empty=`landscape`]]`
                 &docid=`[[+id]]`
                 &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`
                 &type=`tpl`

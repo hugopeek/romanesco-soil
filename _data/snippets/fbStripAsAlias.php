@@ -1,7 +1,9 @@
 id: 63
 name: fbStripAsAlias
 category: f_fb_modifiers
+snippet: ''
 properties: 'a:0:{}'
+content: ''
 
 -----
 

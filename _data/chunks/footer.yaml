@@ -11,12 +11,12 @@ properties: 'a:0:{}'
 
     <div class="ui container section divider"></div>
 
-    <div class="ui grid container">
-        <div class="four wide column">
-            <p>&copy; [[Time:date=`%Y`]] - [[++site_name]]</p>
+    <div class="ui equal width grid container">
+        <div class="fitted column">
+            <p>&copy; [[Time:date=`%Y`]]<span class="tablet or lower hidden"> - [[++site_name]]</span></p>
         </div>
 
-        <div class="twelve wide column right aligned">
+        <div class="right aligned column">
             <div class="ui horizontal inverted list">
                 [[pdoMenu?
                     &parents=`[[++common_pages_id:empty=`[[++romanesco.common_pages_id]]`]]`

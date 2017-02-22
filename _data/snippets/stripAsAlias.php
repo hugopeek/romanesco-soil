@@ -1,6 +1,6 @@
 id: 66
 name: stripAsAlias
-description: 'Output modifier that turns input into lowercase-hyphen-separated format and strips unwanted special characters.'
+description: 'Turn input into lowercase-hyphen-separated-alias-format and strip unwanted special characters. Useful for creating anchor links based on headings, for example.'
 category: f_modifiers
 properties: 'a:0:{}'
 

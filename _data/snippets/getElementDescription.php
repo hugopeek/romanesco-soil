@@ -1,6 +1,6 @@
 id: 105
 name: getElementDescription
-description: 'Retrieve the description of an element of choice.'
+description: 'Retrieve the description of an element of choice. Used in the front-end library to prevent having to enter the same information twice. So if you''re browsing the pattern library, then yes: this paragraph is also loaded with getElementDescription!'
 category: f_basic
 properties: 'a:0:{}'
 

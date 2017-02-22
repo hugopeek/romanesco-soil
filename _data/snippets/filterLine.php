@@ -1,6 +1,6 @@
 id: 112
 name: filterLine
-description: 'Search the input for lines containing a specific string.'
+description: 'Search the input for lines containing a specific string. And then return those lines.'
 category: f_modifiers
 properties: 'a:0:{}'
 

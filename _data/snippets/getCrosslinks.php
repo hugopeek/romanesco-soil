@@ -1,6 +1,6 @@
 id: 69
 name: getCrosslinks
-description: 'Returns the ID''s of all resources that link to a given resource through a TV.'
+description: 'Return the IDs of all resources that link to current resource through a certain TV. Did that make sense? It means you can scan your project for other resources linked to the current one. I.e.: show relevant book reviews in blog posts and vice versa.'
 category: f_resources
 properties: 'a:0:{}'
 

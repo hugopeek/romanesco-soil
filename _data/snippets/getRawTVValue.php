@@ -1,6 +1,6 @@
 id: 85
 name: getRawTVValue
-description: 'Get the raw value of a TV. Can be used to check if @inherit is being used.'
+description: 'Get the raw value of a TV. Usually when retrieving a TV value, it gets processed first before being returned. But sometimes you might want to get the unprocessed value instead, for instance if @inherit is being used.'
 category: f_templatevars
 properties: 'a:0:{}'
 

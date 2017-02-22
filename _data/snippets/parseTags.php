@@ -1,6 +1,6 @@
 id: 90
 name: parseTags
-description: 'Takes in a comma separated string and turns each value into a tag.'
+description: 'Take in a comma separated string and turn each value into a separate tag. Sometimes you just need that :)'
 category: f_modifiers
 properties: 'a:0:{}'
 

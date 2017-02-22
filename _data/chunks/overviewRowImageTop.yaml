@@ -2,14 +2,16 @@ id: 166
 name: overviewRowImageTop
 description: ''
 category: m_ov_image
+snippet: "<figure>\n    <a class=\"ui rounded image\" href=\"[[~[[+id]]]]\">\n        [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?\n            &tvname=`overview_img_landscape`\n            &docid=`[[+id]]`\n            &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`\n            &type=`tpl`\n            &tpl=`cbOverviewRowImg`\n        ]]\n    </a>\n</figure>\n\n[[!$overviewRowBasic]]"
 properties: 'a:0:{}'
+content: "<figure>\n    <a class=\"ui rounded image\" href=\"[[~[[+id]]]]\">\n        [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?\n            &tvname=`overview_img_landscape`\n            &docid=`[[+id]]`\n            &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`\n            &type=`tpl`\n            &tpl=`cbOverviewRowImg`\n        ]]\n    </a>\n</figure>\n\n[[!$overviewRowBasic]]"
 
 -----
 
 <figure>
     <a class="ui rounded image" href="[[~[[+id]]]]">
         [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?
-            &tvname=`overview_img_landscape`
+            &tvname=`overview_img_[[+img_type:empty=`wide`]]`
             &docid=`[[+id]]`
             &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`
             &type=`tpl`

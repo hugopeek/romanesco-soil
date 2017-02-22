@@ -1,6 +1,6 @@
 id: 114
 name: tvToJSON
-description: 'Output the properties of given TV to a JSON object. The output could be used by jsonToHTML.'
+description: 'Output the properties of given TV to a JSON object. The output could be used by jsonToHTML to generate an HTML table.'
 category: f_json
 properties: 'a:0:{}'
 

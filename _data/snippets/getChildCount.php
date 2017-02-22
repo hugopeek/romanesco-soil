@@ -1,6 +1,6 @@
 id: 68
 name: getChildCount
-description: 'Returns the amount of child pages a resource has.'
+description: 'Return the amount of child pages a resource has. Now you can make one of those shiny little badges inside a menu button, telling the user upfront how much treasure is inside.'
 category: f_resources
 properties: 'a:0:{}'
 

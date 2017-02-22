@@ -2,9 +2,7 @@ id: 82
 name: subNavVertical
 description: ''
 category: m_navigation
-snippet: "<nav id=\"submenu\" class=\"ui large vertical fluid right tabular menu\">\n    [[pdoMenu?\n        &parents=`[[UltimateParent]]`\n        &level=`2`\n        &tplOuter=`navWrapper`\n        &tpl=`navItemWrapper`\n        &tplParentRowActive=`navItemInnerWrapper`\n        &tplInnerRow=`navItemInner`\n        &hideSubMenus=`1`\n    ]]\n</nav>"
 properties: 'a:0:{}'
-content: "<nav id=\"submenu\" class=\"ui large vertical fluid right tabular menu\">\n    [[pdoMenu?\n        &parents=`[[UltimateParent]]`\n        &level=`2`\n        &tplOuter=`navWrapper`\n        &tpl=`navItemWrapper`\n        &tplParentRowActive=`navItemInnerWrapper`\n        &tplInnerRow=`navItemInner`\n        &hideSubMenus=`1`\n    ]]\n</nav>"
 
 -----
 

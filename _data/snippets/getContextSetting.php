@@ -1,6 +1,6 @@
 id: 91
 name: getContextSetting
-description: 'Retrieve settings from a context of choice.'
+description: 'Retrieve a specific setting from a context of choice. A possible scenario where you might want to "borrow" a setting from another context, is when certain assets are only available in that context. This snippet lets you retrieve the correct site_url.'
 category: f_basic
 properties: 'a:0:{}'
 

@@ -1,6 +1,6 @@
 id: 65
 name: Time
-description: 'Returns current timestamp.'
+description: 'Return current timestamp.'
 category: f_basic
 properties: 'a:0:{}'
 

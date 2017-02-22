@@ -1,6 +1,6 @@
 id: 102
 name: jsonToHTML
-description: 'Turn JSON object into an HTML table.'
+description: 'Turn a JSON object into an HTML table. For documentation purposes.'
 category: f_json
 properties: 'a:0:{}'
 

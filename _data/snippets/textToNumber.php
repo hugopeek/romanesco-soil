@@ -1,6 +1,6 @@
 id: 94
 name: textToNumber
-description: 'Turn a written number into an actual numeric value.'
+description: 'Turn a written number into an actual numeric value. In other words: turn "three" into "3". Can come in handy if you want to use the Semantic UI column width classes for other purposes.'
 category: f_modifiers
 properties: 'a:0:{}'
 

@@ -1,6 +1,6 @@
 id: 103
 name: getTmplvarID
-description: 'Get the ID of a TV, in case you only know its name.'
+description: 'Get the ID of a TV, in case you only know its name. Created for the front-end library, to help with listing included TVs.'
 category: f_templatevars
 properties: 'a:0:{}'
 

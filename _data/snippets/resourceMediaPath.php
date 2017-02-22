@@ -1,6 +1,6 @@
 id: 71
 name: resourceMediaPath
-description: 'Standalone version of a MIGX snippet that can generate subfolders in media sources.'
+description: 'Standalone version of a snippet that comes with MIGX, which generates subfolders in media sources. If you are expecting lots of images to be added inside lots of resources (say: a portfolio), resourceMediaPath will keep your folder structure tidy.'
 category: f_resources
 properties: 'a:0:{}'
 

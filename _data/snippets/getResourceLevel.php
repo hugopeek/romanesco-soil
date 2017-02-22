@@ -1,6 +1,6 @@
 id: 82
 name: getResourceLevel
-description: 'Shows the level based on the number of parent IDs.'
+description: 'Show the level of a given resource based on the number of parent IDs. Useful for example if you only want to show a breadcrumb trail on pages that are two or three levels deep.'
 category: f_resources
 properties: 'a:0:{}'
 

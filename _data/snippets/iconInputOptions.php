@@ -1,6 +1,6 @@
 id: 74
 name: iconInputOptions
-description: 'Generates input options with all Semantic UI icon classes.'
+description: 'Generate input options with all Semantic UI icon classes.'
 category: f_framework
 properties: 'a:0:{}'
 

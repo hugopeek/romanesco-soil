@@ -1,6 +1,6 @@
 id: 113
 name: firstChildID
-description: 'Retrieve the first child of a given ID.'
+description: 'The name says it all: retrieve the first child ID of a given ID.'
 category: f_basic
 properties: 'a:0:{}'
 

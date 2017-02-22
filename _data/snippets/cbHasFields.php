@@ -1,5 +1,6 @@
 id: 104
 name: cbHasFields
+description: 'This is a copy of the original cbHasField snippet that ships with ContentBlocks. The only difference is that it takes in a comma separate list of IDs, instead of just 1.'
 category: f_contentblocks
 properties: 'a:0:{}'
 
