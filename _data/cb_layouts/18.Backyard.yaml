@@ -1,7 +1,7 @@
 id: 18
 name: Backyard
 description: 'A customized section for showcasing Romanesco patterns in the front-end library.'
-sortorder: 16
+sortorder: 13
 category: 10
 icon: chunk_C
 columns: '[{"reference":"main","width":"100"},{"reference":"info","width":70},{"reference":"meta","width":"30"}]'

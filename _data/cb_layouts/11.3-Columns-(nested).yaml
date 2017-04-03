@@ -1,7 +1,7 @@
 id: 11
 name: '3 Columns (nested)'
 description: 'Three equally divided nested columns.'
-sortorder: 12
+sortorder: 10
 category: 9
 icon: layout_1-1-1
 icon_type: ''

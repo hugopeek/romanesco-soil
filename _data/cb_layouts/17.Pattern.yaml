@@ -1,7 +1,7 @@
 id: 17
 name: Pattern
 description: 'A customized section for displaying Romanesco patterns in the front-end library.'
-sortorder: 16
+sortorder: 14
 category: 10
 icon: chunk_C
 columns: '[{"reference":"preview","width":50},{"reference":"code","width":50},{"reference":"info","width":"100"}]'
