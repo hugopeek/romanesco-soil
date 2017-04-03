@@ -14,13 +14,18 @@
     }
 }
 
-// Fix margins for single column cards
+// Fix margins for single cards and stackable cards in single column mode
 .ui.one.cards > .card {
-    width: 100% !important;
     margin-left: 0;
     margin-right: 0;
 }
+.ui.stackable.doubling.cards > .card {
+    @media only screen and (max-width: @largestMobileScreen) {
+        width: 100% !important;
+    }
+}
 
+// Tweaks and improvements for all cards
 .card {
     .sub.header {
         margin-top: 1em !important;
@@ -44,8 +49,24 @@
         // @todo: Not clean. This margin is used to match the right floated button, but size of button may vary
     }
 
-    // Styling for cards on non-white backgrounds
-    .ui.segment:not(.white) & {
+    // Styling for cards on non-white / non-light backgrounds
+    .ui.segment:not(.white):not(.secondary) & {
         box-shadow: none;
+    }
+}
+
+// Cards can have their content displayed as overlay
+.ui.overlay.card {
+    .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: @invertedTextColor;
+    }
+
+    &.inverted .content {
+        background: @darkTextColor;
+        color: @invertedTextColor;
     }
 }

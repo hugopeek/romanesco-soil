@@ -41,8 +41,8 @@ $(document)
         $('.ui.tabular.menu .item').tab();
         $('.ui.sortable.table').tablesort();
 
-        $('.ui.checkbox').checkbox();
-        $('.ui.radio.checkbox').checkbox();
+        $('.ui.checkbox:not(.other):not(.collapsible)').checkbox();
+        $('.ui.radio.checkbox:not(.other):not(.collapsible)').checkbox();
 
         $('.ui.dimmable')
             .dimmer({
@@ -66,9 +66,6 @@ $(document)
         $('.inverted.stripe.segment.secondary-color .button.secondary').addClass('inverted');
         $('.inverted.stripe.segment .header').addClass('inverted');
         $('.inverted.stripe.segment .cards .header').removeClass('inverted');
-
-        // Remove text class from footer container in blog
-        $('#footer > .stripe.segment > .container').removeClass('text');
 
         // Hide elements with class .hidden
         $('.hidden.element').hide();
@@ -229,6 +226,7 @@ var queries = [
                 .ready(function() {
                     $('.slider-combo')
                         .removeClass('ui grid')
+                        .addClass('cards')
                         .slick({
                             infinite: true,
                             slidesToShow: 1,
@@ -244,6 +242,7 @@ var queries = [
             $(document)
                 .ready(function() {
                     $('.slider-combo')
+                        .removeClass('cards')
                         .addClass('ui grid')
                         .slick('unslick')
                     ;

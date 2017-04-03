@@ -3,15 +3,27 @@
 *******************************/
 
 .ui.button {
-    margin: 0;
-
-    // Offset any additional buttons
-    + .button {
-        margin-left: 0.25em;
+    // Buttons in center aligned containers don't align properly with the default margins
+    .center.aligned & {
+        margin-left: @horizontalMargin;
+    }
+    // Reset this behaviour for nested left aligned containers
+    .center.aligned .left.aligned & {
+        margin-left: 0;
     }
 
     // Content buttons are too close to top content
-    #content p & {
+    #content * + & {
         margin-top: 0.5em;
+    }
+
+    // Menu buttons don't need any margins
+    .menu & {
+        margin: 0;
+    }
+
+    // Buttons in multiple file uploader have some quirks
+    .file-uploader-buttons & {
+        margin: 0 0.75em 0 0 !important;
     }
 }

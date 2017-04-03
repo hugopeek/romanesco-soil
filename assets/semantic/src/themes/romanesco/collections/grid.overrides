@@ -51,6 +51,13 @@
     }
 }
 
+// Add a compact column to equal width grids
+// Compact columns only take up the width of their content
+.ui.equal.width.grid .compact.column {
+    flex-grow: 0;
+    width: auto; // This overrides the percentage it gets by default
+}
+
 // The HeaderVertical template requires a few overrides
 .header-vertical {
     #header {

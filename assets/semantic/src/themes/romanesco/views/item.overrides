@@ -1,3 +1,29 @@
 /*******************************
          Theme Overrides
 *******************************/
+
+.header-vertical .ui.link.items {
+    padding: 0 15%;
+    margin-top: 3em;
+
+    > .item {
+        background: @transparentWhite;
+        padding: .8em;
+        font-size: .8em;
+        transition: background @defaultDuration @defaultEasing;
+
+        &:hover {
+            background: @strongTransparentWhite;
+        }
+
+        .ui.header,
+        .content {
+            color: @white;
+        }
+    }
+
+    // Hide as soon as header moves to top again on smaller screens
+    @media only screen and (max-width: @largestMobileScreen) {
+        display: none;
+    }
+}

@@ -70,6 +70,7 @@ body:after {
 // ---------------------------------------------------------------------
 
 // General classes to apply a background color directly to an element
+// @todo: This should actually be primary-background for background colors, so primary-color can be used for text color.
 .primary-color {
     background-color: @lightPrimaryColor !important;
 
@@ -92,7 +93,6 @@ body:after {
 // ---------------------------------------------------------------------
 
 // Set top margin on specific elements, to prevent gaps when starting with a segment
-#content > .introduction,
 #main #sidebar {
     margin-top: 4rem !important;
 }
@@ -110,7 +110,7 @@ body:after {
 // Content elements
 // ---------------------------------------------------------------------
 
-.quote {
+.quote:not(.basic) {
     position: relative;
     padding: 0 3% 0 5%;
     font-style: italic;
@@ -135,6 +135,14 @@ body:after {
         bottom: -0.5rem;
         right: -1%;
     }
+}
+
+blockquote,
+.quote.basic {
+    border-left: 5px solid @borderColor;
+    margin: 1em 0 1.5em;
+    padding-left: 2em;
+    color: @mutedTextColor;
 }
 
 .lead {
@@ -226,12 +234,6 @@ body:after {
             background: @veryStrongTransparentBlack;
         }
 
-        &:hover,
-        &:active,
-        &:focus {
-            outline: none !important;
-        }
-
         &:before {
             font-size: 4rem;
             color: @lightBlack;
@@ -256,8 +258,137 @@ body:after {
             }
         }
     }
+
+    // Sometimes slides are marked up as cards, meaning they need a little offset for their box shadow
+    &.cards {
+        .slick-slide {
+            padding: .15rem .2rem;
+        }
+
+        .slick-arrow.slick-prev {
+            clip-path: inset(0.15rem 0 0.15rem 0.15rem);
+        }
+        .slick-arrow.slick-next {
+            clip-path: inset(0.15rem 0.15rem 0.15rem 0);
+        }
+    }
 }
 
+// The slider uses an additional lightbox plugin to enlarge slider images.
+.slick-lightbox {
+    .slick-lightbox-slick-caption {
+        float: left;
+        text-align: left;
+        padding-left: 5%;
+    }
+
+    .slick-lightbox-slick-item-inner,
+    .slick-lightbox-slick-img {
+
+        // Images can be display full-width on mobile devices
+        @media (max-width: @tabletBreakpoint) {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .slick-lightbox-close {
+        top: 0;
+        right: 0;
+        width: 4.5rem;
+        height: 4.5rem;
+        z-index: 1001;
+
+        // The close icon itself is in here
+        &:before {
+            font-size: 32px;
+            line-height: 0.25;
+            color: @invertedTextColor;
+        }
+        &:hover {
+            background: @veryStrongTransparentBlack;
+            &:before {
+                color: @white;
+            }
+        }
+
+        // Make close button a little smaller on smaller screens
+        @media (max-width: @tabletBreakpoint) {
+            width: 3rem;
+            height: 3rem;
+
+            &:before {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+// Responsive helper classes
+// ---------------------------------------------------------------------
+
+// For more info, see https://github.com/Semantic-Org/Semantic-UI/issues/1114
+
+/* Mobile */
+@media only screen and (max-width: (@tabletBreakpoint - 1)) {
+    [class*="mobile hidden"],
+    [class*="tablet only"]:not(.mobile),
+    [class*="computer only"]:not(.mobile),
+    [class*="large screen only"]:not(.mobile),
+    [class*="widescreen only"]:not(.mobile),
+    [class*="or lower hidden"] {
+        display: none !important;
+    }
+}
+
+/* Tablet / iPad Portrait */
+@media only screen and (min-width: @tabletBreakpoint) and (max-width: (@computerBreakpoint - 1)) {
+    [class*="mobile only"]:not(.tablet),
+    [class*="tablet hidden"],
+    [class*="computer only"]:not(.tablet),
+    [class*="large screen only"]:not(.tablet),
+    [class*="widescreen only"]:not(.tablet),
+    [class*="or lower hidden"]:not(.mobile) {
+        display: none !important;
+    }
+}
+
+/* Computer / Desktop / iPad Landscape */
+@media only screen and (min-width: @computerBreakpoint) and (max-width: (@largeMonitorBreakpoint - 1)) {
+    [class*="mobile only"]:not(.computer),
+    [class*="tablet only"]:not(.computer),
+    [class*="computer hidden"],
+    [class*="large screen only"]:not(.computer),
+    [class*="widescreen only"]:not(.computer),
+    [class*="or lower hidden"]:not(.tablet):not(.mobile) {
+        display: none !important;
+    }
+}
+
+/* Large Monitor */
+@media only screen and (min-width: @largeMonitorBreakpoint) and (max-width: (@widescreenMonitorBreakpoint - 1)) {
+    [class*="mobile only"]:not([class*="large screen"]),
+    [class*="tablet only"]:not([class*="large screen"]),
+    [class*="computer only"]:not([class*="large screen"]),
+    [class*="large screen hidden"],
+    [class*="widescreen only"]:not([class*="large screen"]),
+    [class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile) {
+        display: none !important;
+    }
+}
+
+/* Widescreen Monitor */
+@media only screen and (min-width: @widescreenMonitorBreakpoint) {
+    [class*="mobile only"]:not([class*="widescreen"]),
+    [class*="tablet only"]:not([class*="widescreen"]),
+    [class*="computer only"]:not([class*="widescreen"]),
+    [class*="large screen only"]:not([class*="widescreen"]),
+    [class*="widescreen hidden"],
+    [class*="widescreen or lower hidden"] {
+        display: none !important;
+    }
+}
 
 // Responsive helper classes
 // ---------------------------------------------------------------------

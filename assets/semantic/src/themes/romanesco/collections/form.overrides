@@ -3,21 +3,35 @@
 *******************************/
 
 .ui.form {
-    .hidden {
+    .hidden:not(.divider) {
         display: none !important;
-    }
-
-    .checkbox label {
-        font-weight: normal;
     }
 
     .help {
         font-size: 1.1rem;
     }
 
+    // Styling tweaks for specific field types
+    .checkbox.field > label {
+        font-weight: normal !important;
+    }
+    .file-upload.field {
+        > label {
+            margin-bottom: 1em;
+            vertical-align: top;
+        }
+        .ui.items {
+            margin: 0;
+
+            .item:last-child {
+                margin-bottom: 2em !important;
+            }
+        }
+    }
+
     // Improve layout of non-segmented forms
     .fieldset {
-        margin-bottom: 2em;
+        margin-bottom: 3em;
     }
 
     // Improve styling of inverted forms
