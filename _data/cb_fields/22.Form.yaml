@@ -3,7 +3,7 @@ parent_properties: ''
 input: chunk
 name: Form
 description: 'Add a form here. You can build your own forms with FormBlocks, under Content > Global Content > FormBlocks.'
-sortorder: 24
+sortorder: 26
 category: 3
 icon: form
 template: '[[+value]]'

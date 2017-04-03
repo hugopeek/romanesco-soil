@@ -3,7 +3,7 @@ parent_properties: ''
 input: layout
 name: 'Nested Layout (Backyard)'
 description: 'Only available in Backyard layout. Allows you to add all available layouts as nested layout.'
-sortorder: 22
+sortorder: 23
 category: 4
 icon: template_02
 template: '[[+value]]'

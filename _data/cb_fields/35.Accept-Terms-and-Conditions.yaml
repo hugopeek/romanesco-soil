@@ -3,7 +3,7 @@ parent_properties: ''
 input: chunk
 name: 'Accept Terms and Conditions'
 description: ''
-sortorder: 47
+sortorder: 48
 category: 7
 icon: checkbox
 template: '[[+tag]]'

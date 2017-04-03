@@ -1,0 +1,13 @@
+id: 36
+parent_properties: ''
+input: repeater
+name: 'Gallery / Slider (with Captions)'
+description: ''
+sortorder: 19
+category: 2
+icon: gallery
+template: "[[$galleryRowImageCaption?\n    &url=`[[+image]]`\n    &caption=`[[+caption]]`\n    &box_type=`[[+box_type]]`\n    &lightbox=`[[+lightbox]]`\n]]"
+properties: '{"wrapper_template":"[[$galleryOuter?\n    &display_type=`[[+display_type]]`\n    &rows=`[[+rows]]`\n    &cols=`[[+cols]]`\n    &padding=`[[+padding]]`\n    &lightbox=`[[+lightbox]]`\n    &caption=`1`\n    &box_type=`[[+box_type]]`\n    &center_mode=`[[+center_mode]]`\n]]","row_separator":"","max_items":"0","min_items":"0","add_first_item":"true"}'
+availability: '[]'
+layouts: ''
+settings: '[{"reference":"display_type","title":"Display type","fieldtype":"select","default_value":"slider","fieldoptions":"[[$cbGalleryDisplayType]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"box_type","title":"Caption type","fieldtype":"select","default_value":"fluid card","fieldoptions":"Text only (transparent background)=air pocket\nPolaroid (solid white background)=fluid card\nLight overlay (white transparent background, on top of image)=fluid overlay card\nDark overlay (black transparent background)=fluid inverted overlay card\nLightbox only (visible after clicking on image)=lightbox","field_is_exposed":"modal"},{"reference":"cols","title":"Column count","fieldtype":"select","default_value":"one","fieldoptions":"[[$cbSettingColumns]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"padding","title":"Extra padding","fieldtype":"select","default_value":"","fieldoptions":"[[$cbSettingPadding]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"lightbox","title":"Lightbox","fieldtype":"radio","default_value":"0","fieldoptions":"Disabled=0\nEnabled=1","field_is_exposed":"modal"},{"reference":"center_mode","title":"Center mode","fieldtype":"radio","default_value":"0","fieldoptions":"Off=0\nOn (enables view with partial prev/next slides)=1","field_is_exposed":"modal"}]'

@@ -3,7 +3,7 @@ parent_properties: ''
 input: code
 name: 'Code (Display)'
 description: 'The code you paste here, will be shown exactly like that on the front-end.'
-sortorder: 27
+sortorder: 29
 category: 6
 icon: code
 icon_type: ''

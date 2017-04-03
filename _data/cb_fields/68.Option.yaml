@@ -1,11 +1,11 @@
 id: 68
 parent: 30
-parent_properties: '{"key":"field_option","width":"50"}'
+parent_properties: '{"key":"field_option","width":"30"}'
 name: Option
 description: ''
 sortorder: 1
 template: '[[+value:fbStripNonAlpha]]'
-properties: '[]'
-availability: ''
+properties: '{"use_tinyrte":"false"}'
+availability: '[]'
 layouts: ''
 settings: '[]'

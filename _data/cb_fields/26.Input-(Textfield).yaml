@@ -3,7 +3,7 @@ parent_properties: ''
 input: chunk
 name: 'Input (Textfield)'
 description: ''
-sortorder: 38
+sortorder: 40
 category: 7
 icon: paragraph
 template: '[[+tag]]'

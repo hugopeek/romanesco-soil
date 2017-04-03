@@ -1,0 +1,14 @@
+id: 10
+parent_properties: ''
+input: gallery
+name: 'Gallery / Slider'
+description: ''
+sortorder: 18
+category: 2
+icon: gallery
+icon_type: ''
+template: "[[$galleryRowImage?\n    &url=`[[+url]]`\n    &title=`[[+title]]`\n    &size=`[[+size]]`\n    &extension=`[[+extension]]`\n    &lightbox=`[[+lightbox]]`\n    &classes=`column`\n]]"
+properties: '{"wrapper_template":"[[$galleryOuter?\n    &display_type=`[[+display_type]]`\n    &rows=`[[+images]]`\n    &cols=`[[+cols]]`\n    &padding=`[[+padding]]`\n    &lightbox=`[[+lightbox]]`\n    &center_mode=`[[+center_mode]]`\n]]","max_images":"20","thumb_size":"medium","thumbnail_size":"0","source":"8","show_description":"0","show_link_field":"0","limit_to_current_context":"1","directory":"\/[[+resource]]\/","file_types":"png,gif,jpg,jpeg"}'
+availability: '[]'
+layouts: ''
+settings: '[{"reference":"display_type","title":"Display type","fieldtype":"select","default_value":"slider","fieldoptions":"[[$cbGalleryDisplayType]]","field_is_exposed":"asField","process_tags":"1"},{"reference":"cols","title":"Column count","fieldtype":"select","default_value":"one","fieldoptions":"[[$cbSettingColumns]]","field_is_exposed":"asField","process_tags":"1"},{"reference":"padding","title":"Extra padding","fieldtype":"select","default_value":"","fieldoptions":"[[$cbSettingPadding]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"lightbox","title":"Lightbox","fieldtype":"radio","default_value":"0","fieldoptions":"Disabled=0\nEnabled=1","field_is_exposed":"asField"},{"reference":"center_mode","title":"Center mode","fieldtype":"radio","default_value":"0","fieldoptions":"Off=0\nOn (enables view with partial prev/next slides)=1","field_is_exposed":"modal"}]'

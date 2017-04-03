@@ -1,0 +1,11 @@
+id: 63
+parent: 36
+parent_properties: '{"key":"alt","width":"50"}'
+name: 'ALT text'
+description: ''
+sortorder: 1
+template: '[[+value]]'
+properties: '{"use_tinyrte":"false"}'
+availability: '[]'
+layouts: ''
+settings: '[]'

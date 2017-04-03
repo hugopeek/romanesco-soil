@@ -1,0 +1,13 @@
+id: 29
+parent_properties: ''
+input: chunk
+name: 'Call To Action (CTA)'
+description: 'Add a CTA here. You can create and edit CTAs under Global Content > Call To Actions.'
+sortorder: 25
+category: 3
+icon: snippet_C
+template: '[[+tag]]'
+properties: '{"chunk":"69","custom_preview":"<p><em>Add a CTA here. You can create and edit CTAs under Global Content > Call To Actions.<\/em><\/p>"}'
+availability: '[]'
+layouts: ''
+settings: '[{"reference":"cta_id","title":"Select CTA","fieldtype":"select","default_value":"","fieldoptions":"[[$cbSelectCTA]]","field_is_exposed":"asField","process_tags":"1"}]'

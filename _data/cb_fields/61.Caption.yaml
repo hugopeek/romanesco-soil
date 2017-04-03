@@ -1,0 +1,12 @@
+id: 61
+parent: 36
+parent_properties: '{"key":"caption","width":"50"}'
+input: richtext
+name: Caption
+description: ''
+sortorder: 2
+template: '[[+value]]'
+properties: '{"available_layouts":"7,8,9,12","available_templates":""}'
+availability: '[]'
+layouts: ''
+settings: '[]'

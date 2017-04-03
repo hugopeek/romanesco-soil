@@ -3,7 +3,7 @@ parent_properties: ''
 input: chunk
 name: 'Twitter Feed'
 description: ''
-sortorder: 26
+sortorder: 28
 category: 3
 icon: chunk_B
 template: '[[+tag]]'

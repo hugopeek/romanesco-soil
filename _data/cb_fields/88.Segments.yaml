@@ -1,0 +1,13 @@
+id: 88
+parent_properties: ''
+input: layout
+name: Segments
+description: 'A segment is used to create a grouping of related content. In other words: you can create a visible border around a collection of ContentBlocks by putting them inside a segment. You can also define a group of segments. They appear together as 1 segment, but with a subtle divider.'
+sortorder: 24
+category: 4
+icon: layout_1-2-1
+template: "[[If?\n    &subject=`[[+segment_group]]`\n    &operator=`notempty`\n    &then=`\n    <div class=\"ui [[+segment_group]] [[+emphasize]] segments\">\n        [[+value]]\n    </div>\n    `\n    &else=`[[+value]]`\n]]\n\n"
+properties: '{"available_layouts":"19","available_templates":""}'
+availability: '[]'
+layouts: ''
+settings: '[{"reference":"segment_group","title":"Segment grouping","fieldtype":"radio","default_value":"","fieldoptions":"Don''t group=\nGroup vertically=regular\nGroup horizontally=horizontal","field_is_exposed":"modal"},{"reference":"emphasize","title":"Emphasize","fieldtype":"radio","default_value":"","fieldoptions":"No=\nYes=raised","field_is_exposed":"modal"}]'

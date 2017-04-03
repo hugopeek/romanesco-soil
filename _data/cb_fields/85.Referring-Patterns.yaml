@@ -3,7 +3,7 @@ parent_properties: ''
 input: chunk
 name: 'Referring Patterns'
 description: 'List the bigger patterns that contain this atomic particle. For Electrons, you can also list which templates have that Electron assigned. NB: this doesn''t mean the Electron is used in the template code itself!'
-sortorder: 50
+sortorder: 51
 category: 6
 icon: chunk_C
 template: '[[+value]]'

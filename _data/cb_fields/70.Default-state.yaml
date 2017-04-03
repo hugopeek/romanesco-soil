@@ -1,0 +1,13 @@
+id: 70
+parent: 30
+parent_properties: '{"key":"collapse_default","width":"20"}'
+input: dropdown
+name: 'Default state'
+description: ''
+sortorder: 3
+icon: paragraph
+template: '[[+value]]'
+properties: '{"options":"Hidden=collapsed\nVisible=expanded","default_value":"collapsed"}'
+availability: '[]'
+layouts: ''
+settings: '[]'

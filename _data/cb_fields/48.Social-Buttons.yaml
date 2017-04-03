@@ -3,7 +3,7 @@ parent_properties: ''
 input: chunk_selector
 name: 'Social Buttons'
 description: ''
-sortorder: 25
+sortorder: 27
 category: 3
 icon: chunk_B
 template: '[[+value]]'

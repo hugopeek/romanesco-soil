@@ -3,7 +3,7 @@ parent_properties: ''
 input: chunk
 name: 'Overview (Child Pages)'
 description: ''
-sortorder: 31
+sortorder: 33
 category: 5
 icon: chunk_A
 template: '[[+tag]]'

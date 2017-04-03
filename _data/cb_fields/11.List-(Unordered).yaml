@@ -7,8 +7,8 @@ sortorder: 8
 category: 1
 icon: unorderedlist
 icon_type: ''
-template: '<li>[[+value]] [[+items]]</li>'
-properties: '{"wrapper_template":"<ul class=\"ui list\">[[+items]]<\/ul>","nested_template":"<ul>[[+items]]<\/ul>","use_tinyrte":"1"}'
+template: "<div class=\"item\">\n    [[+list_type:is=`icon`:then=`<i class=\"[[+list_icon]]\"></i>`]]\n    <div class=\"content\">\n        [[+value]]\n    </div>\n    [[+items]]\n</div>"
+properties: '{"wrapper_template":"<div class=\"ui [[+list_size]] [[+list_padding]] [[+list_options:replace=`,== `]] [[+list_type]] list\">\n    [[+items]]\n<\/div>","nested_template":"<div class=\"list\">\n    [[+items]]\n<\/div>","use_tinyrte":"1"}'
 availability: '[]'
 layouts: ''
-settings: '[]'
+settings: '[{"reference":"list_type","title":"List type","fieldtype":"radio","default_value":"bulleted","fieldoptions":"No markup=\nUnordered list (regular bullets)=bulleted\nUnordered list (icon bullets)=icon\nOrdered list=ordered\nNavigation links=link","field_is_exposed":"modal"},{"reference":"list_options","title":"List options","fieldtype":"checkbox","default_value":"","fieldoptions":"Horizontal=horizontal\nInverted=inverted\nCelled=celled\nDivided=divided\nSelection=selection\nAnimated=animated","field_is_exposed":"modal"},{"reference":"list_size","title":"List size","fieldtype":"select","default_value":"","fieldoptions":"[[$cbSettingButtonSize]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"list_padding","title":"Extra padding","fieldtype":"select","default_value":"","fieldoptions":"[[$cbSettingPadding]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"list_icon","title":"Bullet class","fieldtype":"select","default_value":"checkmark","fieldoptions":"[[$cbSettingIconClass]]","field_is_exposed":"modal","process_tags":"1"}]'

@@ -3,7 +3,7 @@ parent_properties: ''
 input: chunk
 name: 'Overview (Testimonials)'
 description: ''
-sortorder: 36
+sortorder: 38
 category: 5
 icon: chunk_A
 template: '[[+tag]]'
