@@ -1,68 +1,79 @@
 // Show/Hide containers
 
-// Radio buttons
-$('.collapse-radio').change(function() {
+// These triggers rely on Semantic UI callbacks for checkboxes. For more info:
+// http://semantic-ui.com/modules/checkbox.html#/usage
 
-    // Get data attributes from input fields
-    var group = $(this).data('group');
-    var target = $(this).data('target');
+// Hide targets that are designated as collapsed
+$('[data-state="collapsed"]')
+    .each(function() {
+        var $target = $(this).data('target');
 
-    // Add group name to all target containers
-    $("#" + target).addClass(group);
+        $('#' + $target).addClass('hidden');
+    })
+;
 
-    // Show selected container, hide the rest
-    if($(this).is(':checked')) {
-        $('.' + group).collapse('hide');
-        $('#' + target).collapse('show');
-    } else {
-        $('#' + target).collapse('hide');
-    }
-});
+// Check inputs that are designated as expanded
+$('[data-state="expanded"]')
+    .each(function() {
+        $(this)
+            .prop('checked',true)
+            .parent().addClass('checked')
+        ;
+    })
+;
 
-// Checkboxes
-$('.collapse-checkbox').click(function() {
+// Show targets as soon as their checkbox / radio button is checked
+$('.ui.checkbox.collapsible')
+    .checkbox()
+    .checkbox({
 
-    // Get data attributes from input fields
-    var group = $(this).data('group');
-    var target = $(this).data('target');
+        // Use the functions, Luke
+        onChecked: function() {
+            var
+                $listGroup      = $(this).closest('.radio.fields'),
+                $radioButtons   = $listGroup.find('.checkbox:not(.collapsible)'),
+                //$radioCollapse  = $listGroup.find('.checkbox.collapsible:not(.checked)'),
+                $target         = $(this).data('target')
+                //$state          = $(this).data('state')
+            ;
 
-    // Add group name to all target containers
-    $("#" + target).addClass(group);
+            // Get data attribute from input field and show target
+            $('#' + $target).removeClass('hidden');
 
-    // Show selected container, hide the rest
-    if($(this).is(':checked')) {
-        $('#' + target).collapse('show');
-    } else {
-        $('#' + target).collapse('hide');
-    }
-});
+            // If it's a list of radio buttons, callbacks won't work when you change the selection.
+            // Instead, add a trigger to all the sibling radio buttons to hide the Other field again.
+            if ($radioButtons) {
+                $radioButtons.checkbox({
+                    onChecked: function() {
+                        $('#' + $target).addClass('hidden');
+                    }
+                });
+            }
 
-// "Other" select options
-$('.radio-group.other input:radio').change(function() {
+            // If it's a group of collapsible radio buttons, only 1 target can be visible at any time.
+            //if ($radioCollapse) {
+            //    //$('#' + $target).removeClass('hidden');
+            //
+            //    console.log($radioCollapse);
+            //
+            //    $radioCollapse.checkbox({
+            //        onChecked: function() {
+            //            //$radioCollapse.addClass('hidden');
+            //            $('#' + $target).removeClass('hidden');
+            //        }
+            //        //onUnchecked: function() {
+            //        //    console.log('doeg');
+            //        //    $('#' + $target).addClass('hidden');
+            //        //}
+            //    });
+            //}
+        },
 
-    // Get data attributes from input fields
-    var target = $(this).data('target');
+        // Checkboxes respond to the onUnchecked callback, so use that to hide the Other field again.
+        onUnchecked: function() {
+            var $target = $(this).data('target');
 
-    // Get container ID for being able to hide other input again
-    var parentID = $(this).closest('div[id]').attr('id');
-
-    // Show/hide "Other" container
-    if($(this).hasClass("collapse-other")) {
-        $('#' + target).collapse('show');
-    } else {
-        // Target div specifically, because target is not set on other radio's
-        $('#' + parentID + '-other').collapse('hide');
-    }
-});
-$('.checkbox .collapse-other').click(function() {
-
-    // Get data attributes from input fields
-    var target = $(this).data('target');
-
-    // Show/hide "Other" container
-    if($(this).is(':checked')) {
-        $('#' + target).collapse('show');
-    } else {
-        $('#' + target).collapse('hide');
-    }
-});
+            $('#' + $target).addClass('hidden');
+        }
+    })
+;

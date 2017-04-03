@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    $('.slider')
+    // COLLISION ALERT!!
+    // There's a checkbox type that also uses the slider class, see issue #77 on Github.
+    $('.slider:not(.checkbox)')
 
         // Initiate default slider
         .slick({
@@ -49,10 +51,20 @@ $(document).ready(function(){
             focusOnSelect: true
         })
     ;
-    $('.lightbox')
 
-        // Initiate lightbox with integrated Slick slider
-        // Using this script: https://github.com/mreq/slick-lightbox
+    // Initiate lightbox with integrated Slick slider.
+    // This functionality relies on this script: https://github.com/mreq/slick-lightbox
+    $('.with.lightbox:not(.with.caption)')
+
+        // Initiate default lightbox
         .slickLightbox()
+    ;
+
+    $('.with.lightbox.with.caption')
+
+        // Show caption in lightbox too for items that have one
+        .slickLightbox({
+            caption: 'caption'
+        })
     ;
 });
