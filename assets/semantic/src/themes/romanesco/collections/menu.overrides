@@ -146,9 +146,8 @@
 }
 
 #submenu {
+    // Styling tweaks for nested submenu
     &.vertical.tabular {
-
-        // Styling tweaks for nested submenu
         .item {
             .header a.active {
                 margin-bottom: 0.75em;
@@ -158,6 +157,15 @@
             .menu a.active {
                 border: none;
             }
+        }
+    }
+
+    // Fix small styling / positioning glitches when submenu is sticky
+    &.sticky.tabular {
+        margin-bottom: 1em;
+
+        &.bottom {
+            border-top: 0;
         }
     }
 }

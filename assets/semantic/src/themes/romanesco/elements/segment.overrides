@@ -28,7 +28,7 @@
     //}
 
     // Regulate whitespace and remove border of segments in detail templates
-    [id*="detail"] #main &.white {
+    body.detail #main &.white {
         border-bottom: none !important;
 
         + .white {
@@ -37,7 +37,7 @@
     }
 
     // Make boxes out of non-white segments in detail templates
-    [id*="detail"] #main &:not(.white) {
+    body.detail #main &:not(.white) {
         margin-bottom: 4em;
         padding: 0;
         border-radius: @defaultBorderRadius;
@@ -55,7 +55,7 @@
     @media screen and (max-width: @tabletBreakpoint) {
         padding: 2em 0;
     }
-    
+
     // Set background on white segments
     &.white {
         background-color: @white;
