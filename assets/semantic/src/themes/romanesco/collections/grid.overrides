@@ -52,7 +52,7 @@
 }
 
 // The HeaderVertical template requires a few overrides
-#header-vertical {
+.header-vertical {
     #header {
         margin: 0;
         padding: 0.5em 1em;

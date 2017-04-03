@@ -28,7 +28,7 @@
     //}
 
     // Regulate whitespace and remove border of segments in detail templates
-    [id*="detail"] #main &.white {
+    body.detail #main &.white {
         border-bottom: none !important;
 
         + .white {
@@ -37,7 +37,7 @@
     }
 
     // Make boxes out of non-white segments in detail templates
-    [id*="detail"] #main &:not(.white) {
+    body.detail #main &:not(.white) {
         margin-bottom: 4em;
         padding: 0;
         border-radius: @defaultBorderRadius;
@@ -79,7 +79,7 @@
     }
 
     // Segments inside a HeaderVertical template require a few overrides
-    #header-vertical & {
+    .header-vertical & {
         padding: 2em 0;
 
         @media only screen and (max-width: @largestMobileScreen) {
@@ -264,7 +264,7 @@
     }
 
     // Segments inside a HeaderVertical template require a few overrides
-    #header-vertical & {
+    .header-vertical & {
         @media only screen and (min-width: @tabletBreakpoint) {
             padding: 1em 5%;
         }
