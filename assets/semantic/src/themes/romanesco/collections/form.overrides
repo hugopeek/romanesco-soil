@@ -29,9 +29,18 @@
         }
     }
 
-    // Improve layout of non-segmented forms
+    // Styles for non-segmented forms
     .fieldset {
         margin-bottom: 3em;
+    }
+
+    // Styles for segmented forms
+    .segment {
+        legend {
+            margin-bottom: 1em;
+            padding-bottom: .6em;
+            border-bottom: @inputBorder;
+        }
     }
 
     // Improve styling of inverted forms
