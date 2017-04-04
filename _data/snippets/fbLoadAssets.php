@@ -1,15 +1,21 @@
 id: 58
 name: fbLoadAssets
 category: f_formblocks
-snippet: "$assetsPath = $modx->getOption('romanesco.custom_js_path');\n\n// Load JS in footer\n$modx->regClientScript($assetsPath.'js/formblocks.js');\n\nreturn '';"
 properties: 'a:0:{}'
-content: "$assetsPath = $modx->getOption('romanesco.custom_js_path');\n\n// Load JS in footer\n$modx->regClientScript($assetsPath.'js/formblocks.js');\n\nreturn '';"
 
 -----
 
-$assetsPath = $modx->getOption('romanesco.custom_js_path', $scriptProperties, '');
+$assetsPathJS = $modx->getOption('romanesco.custom_js_path', $scriptProperties, '');
+$assetsPathVendor = $modx->getOption('romanesco.custom_vendor_path', $scriptProperties, '');
+$uploadFile = $modx->getOption('uploadFile', $scriptProperties, 0);
 
-// Load JS in footer
-$modx->regClientScript($assetsPath.'js/formblocks.js');
+// Load FormBlocks JS in footer
+$modx->regClientScript($assetsPathJS . '/formblocks.js');
+
+// Load additional assets for file upload field, if present
+if ($uploadFile) {
+    $modx->regClientScript($assetsPathVendor . '/arrive/arrive.min.js');
+    $modx->regClientScript($assetsPathJS . '/fileupload.js');
+}
 
 return '';

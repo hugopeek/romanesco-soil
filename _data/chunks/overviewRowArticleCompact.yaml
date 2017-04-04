@@ -19,7 +19,7 @@ properties: 'a:0:{}'
     <div class="description">
         <span class="meta date">
             <i class="icon calendar"></i>
-            [[+publishedon:strtotime:date=`%e %B %Y`]]
+            [[+publishedon:strtotime:date=`[[++romanesco.date_format_long]]`]]
         </span>
     </div>
 </div>

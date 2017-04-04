@@ -1,0 +1,16 @@
+id: 356
+name: fbInputFileMultiple
+description: 'If you want to let users upload more than 1 file, you need to replace the default file input field with this AjaxUpload field. The AjaxUpload extra takes care of both frontend functionality and backend processing. Just make sure it''s installed!'
+category: a_fb_inputs
+properties: 'a:0:{}'
+
+-----
+
+[[!AjaxUpload?
+    &uid=`[[+name]]`
+    &allowedExtensions=`[[+allowed_file_types]]`
+    &thumbX=`150`
+    &thumbY=`150`
+    &addJs=`0`
+    &addCss=`0`
+]]

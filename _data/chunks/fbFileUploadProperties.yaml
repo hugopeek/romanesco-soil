@@ -1,0 +1,12 @@
+id: 353
+name: fbFileUploadProperties
+description: 'These AjaxUpload settings need to be included in the FormIt call if a multiple file upload field is being used.'
+category: a_formblocks
+properties: 'a:0:{}'
+
+-----
+
+&ajaxuploadFieldname=`[[+name]]`
+&ajaxuploadTarget=`../uploads/forms/`
+&ajaxuploadUid=`[[+name]]`
+&ajaxuploadAllowOverwrite=`0`

@@ -1,9 +1,7 @@
 id: 64
 name: fbStripNonAlpha
 category: f_fb_modifiers
-snippet: ''
 properties: 'a:0:{}'
-content: ''
 
 -----
 

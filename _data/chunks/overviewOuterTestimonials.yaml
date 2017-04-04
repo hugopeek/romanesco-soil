@@ -18,7 +18,7 @@ properties: 'a:0:{}'
         &resources=`[[If? &subject=`[[+resources]]` &operator=`notempty` &then=`[[+resources]]` &else=`null`]]`
         &depth=`99`
         &limit=`[[+limit]]`
-        &tpl=`overviewRowTestimonial[[+[[+prefix]].row_type]]`
+        &tpl=`overviewRowReview[[+[[+prefix]].row_type]]`
         &includeTVs=`1`
         &processTVs=`1`
         &tvPrefix=``

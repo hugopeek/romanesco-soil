@@ -6,17 +6,19 @@ properties: 'a:0:{}'
 
 -----
 
-<nav id="menu-vertical" class="ui large inverted secondary vertical menu" role="navigation">
+<nav id="menu-vertical" class="ui large inverted secondary vertical accordion menu" role="navigation">
     <div class="item branding">
         [[$logo]]
     </div>
 
     [[pdoMenu?
-        &startId=`0`
-        &level=`1`
-        &resources=`[[++navbar_resources]]`
+        &parents=`0`
+        &level=`3`
         &tplOuter=`navWrapper`
-        &tpl=`navItem`
+        &tpl=`navItemWrapper`
+        &tplParentRow=`navItemParent`
+        &tplParentRowActive=`navItemParentActive`
+        &tplInnerRow=`navItem`
     ]]
 
     [[$mainNavItemsTheme]]

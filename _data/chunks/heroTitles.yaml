@@ -1,6 +1,6 @@
 id: 253
 name: heroTitles
-description: ''
+description: 'A basic pattern for displaying a large page header + subtitle. Because the hero unit is mainly there for presentation purposes, the titles contain no specific HTML hierarchy (H1/H2 or the likes).'
 category: m_presentation
 properties: 'a:0:{}'
 

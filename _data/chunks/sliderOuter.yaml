@@ -6,7 +6,7 @@ properties: 'a:0:{}'
 
 -----
 
-<div class="[[+display_type:empty=`slider`]]">
+<div class="[[+display_type:empty=`slider`]] [[+lightbox:eq=`1`:then=`lightbox`]]">
     [[+rows]]
 </div>
 

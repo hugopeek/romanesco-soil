@@ -2,9 +2,7 @@ id: 168
 name: overviewRowImageTopLinkCard
 description: ''
 category: m_ov_image
-snippet: "<figure class=\"ui rounded image\">\n    [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?\n        &tvname=`overview_img_landscape`\n        &docid=`[[+id]]`\n        &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`\n        &type=`tpl`\n        &tpl=`cbOverviewRowImg`\n    ]]\n</figure>\n\n<div class=\"content\">\n    [[If?\n        &subject=`[[+show_subtitle]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`[[!$headingHierarchySubtitle]]`\n        &else=`[[!$headingHierarchy]]`\n    ]]\n    [[If?\n        &subject=`[[+show_introtext]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`[[!$introtextDescription:stripTags=`<p><div>`]]`\n    ]]\n</div>"
 properties: 'a:0:{}'
-content: "<figure class=\"ui rounded image\">\n    [[ImagePlus:empty=`[[$cbOverviewRowImgFallback]]`?\n        &tvname=`overview_img_landscape`\n        &docid=`[[+id]]`\n        &options=`w=[[++max_thumb_width:empty=`960`]]&zc=1`\n        &type=`tpl`\n        &tpl=`cbOverviewRowImg`\n    ]]\n</figure>\n\n<div class=\"content\">\n    [[If?\n        &subject=`[[+show_subtitle]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`[[!$headingHierarchySubtitle]]`\n        &else=`[[!$headingHierarchy]]`\n    ]]\n    [[If?\n        &subject=`[[+show_introtext]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`[[!$introtextDescription:stripTags=`<p><div>`]]`\n    ]]\n</div>"
 
 -----
 

@@ -1,0 +1,9 @@
+id: 355
+name: fbInputFileSingle
+description: 'A basic input field for uploading a single file.'
+category: a_fb_inputs
+properties: 'a:0:{}'
+
+-----
+
+<input type="file" name="[[+name]]" id="[[+name]]">

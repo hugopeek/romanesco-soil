@@ -1,0 +1,13 @@
+id: 86
+type: text
+name: fb_redirect_dynamic
+caption: 'Dynamic redirect page'
+description: 'This works the same way as the dynamic recipient address field: enter any formula that is able to decide where to redirect the user after form submission. If left empty, it falls back on the ID provided under general settings.'
+category: 'Settings - Advanced'
+elements: ''
+rank: 2
+default_text: ''
+properties: 'a:0:{}'
+input_properties: null
+output_properties: null
+content: ''

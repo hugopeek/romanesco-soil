@@ -1,0 +1,15 @@
+id: 226
+name: galleryRowImageLightbox
+description: 'This pattern evaluates if you should be able to open the image in a lightbox. If so, the required classes and properties are added to the default image.'
+category: m_presentation
+properties: 'a:0:{}'
+
+-----
+
+[[+lightbox:eq=`1`:then=`
+<a href="[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width:mpy=`1.5`]]&zc=1`]]" data-caption="[[+caption]]">
+    <img class="[[+classes]]" src="[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width]]&zc=1`]]" alt="[[+title]]">
+</a>
+`:else=`
+<img class="[[+classes]]" src="[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width]]&zc=1`]]" alt="[[+title]]">
+`]]

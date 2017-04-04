@@ -12,7 +12,7 @@ properties: 'a:0:{}'
 
 [[$head]]
 
-<body id="detail">
+<body id="[[*alias]]" class="detail person">
 
 <div class="pusher">
     [[$headerBasic?

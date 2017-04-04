@@ -1,0 +1,36 @@
+id: 354
+name: fbSelectOptionRowResource
+description: 'A row template for options that link to a resource. These options are almost always generated dynamically, instead of being added through the form builder by the editor.'
+category: a_fb_inputs
+properties: 'a:0:{}'
+
+-----
+
+[[!fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name_updated`? &input=`[[+field_name]]`]]
+[[!If:toPlaceholder=`checkbox_array`?
+    &subject=`[[+field_type]]`
+    &operator=`EQ`
+    &operand=`checkbox`
+    &then=`[]`
+    &else=``
+]]
+[[!If:toPlaceholder=`checkbox_variant`?
+    &subject=`[[+checkbox_type]]`
+    &operator=`notempty`
+    &then=`[[+checkbox_type]]`
+    &else=`[[+field_type]]`
+]]
+
+<div class="ui [[+checkbox_variant]] checkbox field">
+    <input type="[[+field_type]]"
+           name="[[+name_updated]][[+checkbox_array]]"
+           id="[[+name_updated]]-[[+idx]]"
+           value="[[+pagetitle:fbStripNonAlpha]]"
+           tabindex="0"
+           data-group="[[+collapse_target:isnot=``:then=`[[+name_updated]]`:default=`no-group`]]"
+           data-target="[[+collapse_target:default=`no-target`]]"
+           data-toggle="collapse"
+           [[!+fb[[*id]].[[+name_updated]]:FormItIsChecked=`[[+pagetitle:fbStripNonAlpha]]`]]
+           [[!#get.id:stripTags:eq=`[[+id]]`:then=`checked`]]>
+    <label>[[+pagetitle]]</label>
+</div>

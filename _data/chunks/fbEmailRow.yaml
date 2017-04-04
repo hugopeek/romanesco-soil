@@ -6,5 +6,8 @@ properties: 'a:0:{}'
 
 -----
 
-<strong>[[+field_name:stripString=`?`]]:</strong><br>
-[[+fb[[*id]]-[[+field_name:fbStripAsAlias]]:empty=``]]<br><br>
+[[+field_name:stripString=`?`:toPlaceholder=`label`]]
+[[+fb[[*id]]-[[+field_name:fbStripAsAlias]]:nl2br:empty=``:toPlaceholder=`value`]]
+
+<strong>[[+label]]:</strong><br/>
+[[+value]][[+value:contains=`[[+option_other_value]]`:then=`, [[%formblocks.email.other_namely]]: [[+fb[[*id]]-[[+field_name:fbStripAsAlias]]-other]]`]]<br/><br/>

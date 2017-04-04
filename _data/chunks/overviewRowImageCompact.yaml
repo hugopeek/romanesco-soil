@@ -2,9 +2,7 @@ id: 171
 name: overviewRowImageCompact
 description: ''
 category: m_ov_image
-snippet: "<a class=\"ui avatar image\" href=\"[[~[[+id]]]]\">\n    [[ImagePlus:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`?\n        &tvname=`overview_img_landscape`\n        &docid=`[[+id]]`\n        &options=`w=150&zc=1`\n        &type=`tpl`\n        &tpl=`cbOverviewRowImg`\n    ]]\n</a>\n\n<div class=\"content\">\n    <a href=\"[[~[[+id]]]]\" class=\"header\">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>\n    [[If?\n        &subject=`[[+show_subtitle]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`<div class=\"description\">[[+longtitle:empty=`[[+pagetitle]]`]]</div>`\n    ]]\n</div>"
 properties: 'a:0:{}'
-content: "<a class=\"ui avatar image\" href=\"[[~[[+id]]]]\">\n    [[ImagePlus:empty=`[[$cbOverviewRowImgFallback? &mpy=`1`]]`?\n        &tvname=`overview_img_landscape`\n        &docid=`[[+id]]`\n        &options=`w=150&zc=1`\n        &type=`tpl`\n        &tpl=`cbOverviewRowImg`\n    ]]\n</a>\n\n<div class=\"content\">\n    <a href=\"[[~[[+id]]]]\" class=\"header\">[[+[[+title_field]]:empty=`[[+pagetitle]]`]]</a>\n    [[If?\n        &subject=`[[+show_subtitle]]`\n        &operator=`EQ`\n        &operand=`1`\n        &then=`<div class=\"description\">[[+longtitle:empty=`[[+pagetitle]]`]]</div>`\n    ]]\n</div>"
 
 -----
 

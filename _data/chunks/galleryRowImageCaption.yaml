@@ -1,0 +1,24 @@
+id: 227
+name: galleryRowImageCaption
+description: 'This pattern adds a caption to the image. You can choose to either show the caption in the lightbox enlargement only, or also as a subtitle in the image grid (or slide).'
+category: m_presentation
+properties: 'a:0:{}'
+
+-----
+
+<div class="column">
+    <figure class="ui [[+box_type]]">
+        [[+lightbox:eq=`1`:then=`
+        <a href="[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width:mpy=`1.5`]]&zc=1`]]" data-caption="[[+caption:nl2br:stripTags=`<br>,<strong>,<em>`]]">
+            <img class="ui image" src="[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width]]&zc=1`]]" alt="[[+title]]">
+        </a>
+        `:else=`
+        <img class="ui image" src="[[pthumb? &input=`[[+url]]` &options=`w=[[++max_thumb_width]]&zc=1`]]" alt="[[+title]]">
+        `]]
+        [[+box_type:isnot=`lightbox`:then=`
+        <figcaption class="content">
+            [[+caption:nl2br:stripTags=`<br>,<strong>,<em>,<cite>,<a>`]]
+        </figcaption>
+        `]]
+    </figure>
+</div>

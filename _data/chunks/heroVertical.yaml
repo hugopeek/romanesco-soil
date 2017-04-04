@@ -1,0 +1,24 @@
+id: 358
+name: heroVertical
+description: 'This hero unit is adapted for use in vertical scenarios, meaning there are no grid classes present. The content is stacked as link items instead.'
+category: m_presentation
+properties: 'a:0:{}'
+
+-----
+
+<div id="hero" class="ui link items">
+    [[[[[[If?
+        &subject=`[[getRawTVValue? &tv=`header_cta`]]`
+        &operator=`EQ`
+        &operand=`@INHERIT`
+        &then=`#[[*parent]].header_inheritance:contains=`inherit_cta`:then=`$ctaHeaderVertical`:else=```
+        &else=`
+            If?
+                &subject=`[[getRawTVValue? &tv=`header_cta`]]`
+                &operator=`isnot`
+                &operand=`@INHERIT`
+                &then=`$ctaHeaderVertical`
+                &else=``
+            `
+    ]]]]]]
+</div>

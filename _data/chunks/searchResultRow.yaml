@@ -16,7 +16,7 @@ properties: 'a:0:{}'
         <span class="ui basic label"><i class="folder open icon"></i>[[#[[+parent]].pagetitle]]</span>
         `]]
     </p>
-    <p class="extract"><em>[[+extract]]</em></p>
+    <p class="extract"><em>[[[[+extract:contains=`=``:then=`+introtext:stripTags=`span``:else=`+extract`]]]]</em></p>
     <a class="primary ui button" href="[[+link]]" title="[[+longtitle]]">
         [[%romanesco.search.result_button_text]]
     </a>

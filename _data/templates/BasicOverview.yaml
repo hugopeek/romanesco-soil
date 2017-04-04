@@ -11,7 +11,7 @@ properties: 'a:0:{}'
 
 [[$head]]
 
-<body id="overview">
+<body id="[[*alias]]" class="overview">
 
 <div class="pusher">
     [[$headerBasic?

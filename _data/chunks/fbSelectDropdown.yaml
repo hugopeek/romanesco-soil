@@ -12,9 +12,9 @@ properties: 'a:0:{}'
     <label for="[[+name]]">[[+field_name]]</label>
     <select name="[[+name]]" class="ui dropdown">
         [[If?
-            &subject=`[[+field_default]]`
+            &subject=`[[+option_placeholder]]`
             &operator=`notempty`
-            &then=`<option selected="true" disabled="disabled">[[+field_default]]</option>`
+            &then=`<option selected="true" disabled="disabled">[[+option_placeholder]]</option>`
         ]]
         [[+rows]]
     </select>

@@ -1,6 +1,6 @@
 id: 92
 name: hero
-description: ''
+description: 'The default hero unit, for use in the header of each page. This pattern evaluates a few options for its contents, appearance and inheritance, giving the editor fine grained control over the output while keeping it easy to configure.'
 category: m_presentation
 properties: 'a:0:{}'
 
