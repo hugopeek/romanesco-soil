@@ -137,8 +137,8 @@ body:after {
     }
 }
 
-blockquote,
-.quote.basic {
+blockquote:not(.quote),
+.ui.quote.basic {
     border-left: 5px solid @borderColor;
     margin: 1em 0 1.5em;
     padding-left: 2em;
