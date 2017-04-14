@@ -35,19 +35,21 @@
 }
 
 // Make sure column padding is correctly set on mobile
-// This is probably a bug in Semantic UI
-// @todo: create issue / testcase on Github
-.ui.grid.container > .column,
-.ui.container .grid:not(.nested) > .column {
-    @media only screen and (max-width: @largestMobileScreen) {
+// This is probably a bug in Semantic UI, see:
+// https://github.com/Semantic-Org/Semantic-UI/issues/5170
+@media only screen and (max-width: @largestMobileScreen) {
+    .ui.grid.container > .column,
+    .ui.grid.container > .row > .column {
         padding-left: 0 !important;
         padding-right: 0 !important;
+    }
 
-        // Nested stackable grids are negatively affected by this change
-        .ui.stackable.grid {
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-        }
+    // Stackable columns are having issues inside nested containers
+    // Possibly a result of the margin correction in container.overrides
+    .ui.container .container > .ui.stackable.grid > .column,
+    .ui.container .container > .ui.stackable.grid > .row > .column {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
     }
 }
 

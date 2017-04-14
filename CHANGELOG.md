@@ -12,6 +12,7 @@ Released on April ..., 2017
 - [FormBlocks] Combine Select Dropdown and Select Options CBs
 - [FormBlocks] Add multiple file upload field
 - [SemanticUI] Add styling for HeaderVertical submenus
+- [SemanticUI] Improve fix for incorrect column margins on mobile
 - [SemanticUI] Fix styling / positioning glitches when submenu is sticky
 - [SemanticUI] Reset fieldset / legend styling and add small improvements
 - [SemanticUI] Reduce size of CSS and JS assets
