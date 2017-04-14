@@ -141,6 +141,8 @@ data:
             - 'key:NOT IN':
                 - 'extension_packages'
                 - 'settings_version'
+                - 'email_sender'
+                - 'error_page'
                 - 'gitpackagemanagement.assets_path'
                 - 'gitpackagemanagement.assets_url'
                 - 'gitpackagemanagement.core_path'

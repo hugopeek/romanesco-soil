@@ -159,6 +159,8 @@ data:
             - 'key:NOT IN':
                 - 'extension_packages'
                 - 'settings_version'
+                - 'email_sender'
+                - 'error_page'
                 - 'gitpackagemanagement.assets_path'
                 - 'gitpackagemanagement.assets_url'
                 - 'gitpackagemanagement.core_path'
@@ -170,6 +172,9 @@ data:
                 - 'romanesco.assets_path'
                 - 'romanesco.assets_url'
                 - 'romanesco.core_path'
+                - 'romanesco.pattern_container_id'
+                - 'romanesco.backyard_container_id'
+                - 'romanesco.dashboard_id'
                 - 'romanescobackyard.assets_path'
                 - 'romanescobackyard.assets_url'
                 - 'romanescobackyard.core_path'
@@ -278,6 +283,8 @@ data:
     cg_settings:
         class: cgSetting
         primary: key
+        exclude_keys:
+            - value
 
     # Collections
     collections_settings:
