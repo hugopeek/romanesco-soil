@@ -18,6 +18,8 @@ Released on April ..., 2017
 - [SemanticUI] Reset fieldset / legend styling and add small improvements
 - [SemanticUI] Reduce size of CSS and JS assets
 - [SemanticUI] Update framework to 2.2.10
+- [MODX] Add missing menu item for clearing custom cache [#108]
+- [MODX] Fix custom cache button not firing the second time around
 
 ## Romanesco Soil v0.2.0
 Released on February 22, 2017
