@@ -11,6 +11,7 @@ Released on April ..., 2017
 - [ContentBlocks] Add icon size and de-emphasize options to Icon SVG
 - [FormBlocks] Combine Select Dropdown and Select Options CBs
 - [FormBlocks] Add multiple file upload field
+- [FormBlocks] Fix broken options inside (deprecated) Select Dropdown [#109]
 - [SemanticUI] Add styling for HeaderVertical submenus
 - [SemanticUI] Improve fix for incorrect column margins on mobile
 - [SemanticUI] Fix styling / positioning glitches when submenu is sticky
