@@ -19,6 +19,7 @@ Released on April ..., 2017
 - [SemanticUI] Reduce size of CSS and JS assets
 - [SemanticUI] Update framework to 2.2.10
 - [MODX] Add missing menu item for clearing custom cache [#108]
+- [MODX] Add buttons for clearing individual custom cache partitions
 - [MODX] Fix custom cache button not firing the second time around
 
 ## Romanesco Soil v0.2.0
