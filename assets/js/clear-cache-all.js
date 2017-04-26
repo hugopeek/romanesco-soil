@@ -1,15 +1,12 @@
 var topics = {
     overviews: "/getcache/cache/partition/refresh/overviews/",
-    testimonials: "/getcache/cache/partition/refresh/testimonials/",
-    team: "/getcache/cache/partition/refresh/team/"
+    clients: "/getcache/cache/partition/refresh/clients/",
+    gallery: "/getcache/cache/partition/refresh/gallery/",
+    portfolio: "/getcache/cache/partition/refresh/portfolio/",
+    publication: "/getcache/cache/partition/refresh/publication/",
+    team: "/getcache/cache/partition/refresh/team/",
+    testimonials: "/getcache/cache/partition/refresh/testimonials/"
 };
-
-//this.console = MODx.load({
-//    xtype: 'modx-console'
-//    ,register: 'mgr'
-//    ,topic: topics
-//    ,show_filename: 0
-//});
 
 if (this.console == null || this.console == undefined) {
     this.console = MODx.load({
@@ -35,7 +32,7 @@ for (var partition in topics) {
         ,params: { action: 'cache/partition/refresh', partitions: partition, register: 'mgr' , topic: topics[partition] }
         ,listeners: {
             'success':{fn:function() {
-                // @todo: insert some kind of response here
+                // @todo: output some kind of response here
                 this.console.fireEvent('complete');
             },scope:this}
         }
