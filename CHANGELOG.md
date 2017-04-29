@@ -14,6 +14,7 @@ Released on April ..., 2017
 - [FormBlocks] Fix broken options inside (deprecated) Select Dropdown [#109]
 - [SemanticUI] Add styling for HeaderVertical submenus
 - [SemanticUI] Improve fix for incorrect column margins on mobile
+- [SemanticUI] Set containers to fluid on mobile, so segments snap to edges
 - [SemanticUI] Fix styling / positioning glitches when submenu is sticky
 - [SemanticUI] Reset fieldset / legend styling and add small improvements
 - [SemanticUI] Reduce size of CSS and JS assets
