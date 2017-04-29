@@ -65,7 +65,18 @@ $(document)
         $('.inverted.stripe.segment.primary-color .button.primary').addClass('inverted');
         $('.inverted.stripe.segment.secondary-color .button.secondary').addClass('inverted');
         $('.inverted.stripe.segment .header').addClass('inverted');
+        $('.inverted.stripe.segment .lead').addClass('inverted');
+
+        // Remove inverted classes again if needed
+        // @todo: this is so fugly..
         $('.inverted.stripe.segment .cards .header').removeClass('inverted');
+        $('.inverted.stripe.segment .cards .button').removeClass('inverted');
+        $('.inverted.stripe.segment.primary-color .cards .button').removeClass('primary').addClass('secondary');
+        $('.inverted.stripe.segment .form .segment .header').removeClass('inverted');
+
+        // Add boxed class to elements inside inverted segments that need to retain their original styling
+        $('.inverted.stripe.segment .cards .header a').addClass('boxed');
+        $('.inverted.stripe.segment .form .segments a').addClass('boxed');
 
         // Hide elements with class .hidden
         $('.hidden.element').hide();
@@ -249,8 +260,24 @@ var queries = [
                 })
             ;
         }
+    },{
+        // On detail pages, make the first container fluid on smaller screens
+        // so the stripe segments will snap to the edges
+        context: ['mobile', 'tablet'],
+        match: function () {
+            $('body.detail #main > .ui.container')
+                .removeClass('grid')
+                .addClass('fluid')
+            ;
+        },
+        unmatch: function () {
+            // We're leaving mobile
+            $('body.detail #main > .ui.container')
+                .removeClass('fluid')
+                .addClass('grid')
+            ;
+        }
     }
-
 ];
 // Go!
 MQ.init(queries);
