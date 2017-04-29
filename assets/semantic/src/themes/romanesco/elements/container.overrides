@@ -3,8 +3,16 @@
 *******************************/
 
 // Make sure nested containers align well on mobile
-.ui.container .container {
+.ui.container:not(.fluid) .container {
     @media only screen and (max-width: @tabletBreakpoint) {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+// Make sure fluid containers don't have any margins on mobile
+.ui.fluid.container {
+    @media only screen and (max-width: @largestMobileScreen) {
         margin-left: 0 !important;
         margin-right: 0 !important;
     }

@@ -45,9 +45,8 @@
     }
 
     // Stackable columns are having issues inside nested containers
-    // Possibly a result of the margin correction in container.overrides
-    .ui.container .container > .ui.stackable.grid > .column,
-    .ui.container .container > .ui.stackable.grid > .row > .column {
+    .ui.container:not(.fluid) .container > .ui.stackable.grid > .column,
+    .ui.container:not(.fluid) .container > .ui.stackable.grid > .row > .column {
         padding-left: 1rem !important;
         padding-right: 1rem !important;
     }
