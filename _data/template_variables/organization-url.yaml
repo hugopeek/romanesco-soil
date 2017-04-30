@@ -2,6 +2,7 @@ id: 75
 type: text
 name: organization_url
 caption: 'Organization website'
+description: 'Please fill in the complete URL (including http(s)://).'
 category: 'Org. - Information'
 elements: ''
 rank: 20

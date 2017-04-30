@@ -1,7 +1,8 @@
 id: 47
-type: url
+type: text
 name: social_facebook
 caption: 'Facebook page'
+description: 'Please fill in the complete URL (including http(s)://).'
 category: Social
 elements: ''
 rank: 3

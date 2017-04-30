@@ -1,7 +1,8 @@
 id: 51
-type: url
+type: text
 name: social_googleplus
 caption: 'Google+ profile'
+description: 'Please fill in the complete URL (including http(s)://).'
 category: Social
 elements: ''
 rank: 11

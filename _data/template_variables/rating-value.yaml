@@ -1,5 +1,5 @@
 id: 57
-type: options
+type: option
 name: rating_value
 caption: 'Rating value'
 description: 'How did the user value this product or service?'

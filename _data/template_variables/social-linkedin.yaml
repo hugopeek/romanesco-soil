@@ -1,7 +1,8 @@
 id: 46
-type: url
+type: text
 name: social_linkedin
 caption: 'LinkedIn profile'
+description: 'Please fill in the complete URL (including http(s)://).'
 category: Social
 elements: ''
 rank: 2

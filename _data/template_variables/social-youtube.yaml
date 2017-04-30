@@ -1,7 +1,8 @@
 id: 50
-type: url
+type: text
 name: social_youtube
 caption: 'Youtube channel'
+description: 'Please fill in the complete URL (including http(s)://).'
 category: Social
 elements: ''
 rank: 10

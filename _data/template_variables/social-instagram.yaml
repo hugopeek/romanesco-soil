@@ -1,7 +1,8 @@
 id: 48
-type: url
+type: text
 name: social_instagram
 caption: 'Instagram profile'
+description: 'Only fill in the account name (the part after https://instagram.com/).'
 category: Social
 elements: ''
 rank: 4

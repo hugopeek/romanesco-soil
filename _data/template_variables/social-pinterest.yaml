@@ -1,7 +1,8 @@
 id: 49
-type: url
+type: text
 name: social_pinterest
 caption: 'Pinterest board'
+description: 'Please fill in the complete URL (including http(s)://).'
 category: Social
 elements: ''
 rank: 5

@@ -3,7 +3,7 @@ source: 7
 type: imageplus
 name: overview_img_portrait
 caption: 'Image (Portrait)'
-description: 'This is a standing image in 3:4 aspect ratio, best suited for floating left or right of content.'
+description: 'This is a standing image in 3:4 aspect ratio, best suited for floating left or right of content, or for display on mobile devices.'
 category: 'Overview - Image'
 elements: ''
 rank: 2

@@ -4,7 +4,7 @@ name: organization_sector
 caption: 'Organization sector'
 description: 'What type of organization is this?'
 category: 'Org. - Information'
-elements: 'Public (government)==public||Private business==private||Non-profit organization==community'
+elements: '--- Select a sector ---==||Public (government)==public||Private business==private||Non-profit organization==community'
 rank: 5
 default_text: ''
 properties: 'a:0:{}'

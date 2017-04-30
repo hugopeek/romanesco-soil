@@ -1,0 +1,9 @@
+id: 359
+name: imgResponsiveRowSrcset
+description: 'A row template for the responsiveImgSrcset snippet, containing srcset properties for use inside an <img> tag.'
+category: a_images
+properties: 'a:0:{}'
+
+-----
+
+[[+src:pthumb=`[[+crop]]&w=[[+width:lte=`[[+breakpoint]]`:then=`[[+width]]`:else=`[[+breakpoint]]`]]&q=[[+quality]]`]] [[+breakpoint]]w
