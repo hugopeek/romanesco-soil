@@ -8,7 +8,10 @@ properties: 'a:0:{}'
 
 <div class="ui mobile reversed stackable grid">
     <div class="four wide tablet six wide computer five wide large screen five wide widescreen center aligned column">
-        [[!$imgOverviewPersonLink? &classes=`circular`]]
+        [[!$imgOverviewPersonLink?
+            &classes=`circular`
+            &img_scale=`40`
+        ]]
         <div class="ui small header">
             [[!$infoNamePerson]]
             [[!$infoNameOrganization? &classes=`sub header`]]

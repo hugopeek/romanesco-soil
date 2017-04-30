@@ -68,7 +68,7 @@ if (!$result) {
 
     if ($result) {
         $name = $result->get('name');
-        $link = createLink($result->get('category'));
+        $link = createLink($result->get('category'), $htmlContentType->get('file_extensions'));
 
         $output = $modx->getChunk($tpl, array(
             'name' => $name,

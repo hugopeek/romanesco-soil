@@ -1,7 +1,7 @@
 # Changelog for the Romanesco Soil root installation
 
 ## Romanesco Soil v0.3.0
-Released on April ..., 2017
+Released on April 20, 2017
 
 > Patterns: 0.11.0-pl
 > Backyard: 0.3.2-pl
@@ -22,6 +22,8 @@ Released on April ..., 2017
 - [MODX] Add missing menu item for clearing custom cache [#108]
 - [MODX] Add buttons for clearing individual custom cache partitions
 - [MODX] Fix custom cache button not firing the second time around
+- [Configuration] Add Performance tab with various image rendering controls
+- [Configuration] Add Instagram and Pinterest fields to Social tab
 
 ## Romanesco Soil v0.2.0
 Released on February 22, 2017

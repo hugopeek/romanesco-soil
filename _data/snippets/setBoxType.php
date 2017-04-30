@@ -30,12 +30,12 @@ $prefix = $modx->getOption('prefix', $scriptProperties, '');
 
 switch($input) {
     case stripos($input,'LinkCard') !== false:
-        $box_type = "centered link cards";
+        $box_type = "link cards";
         $row_type = "link";
         $column_type = "card";
         break;
     case stripos($input,'Card') !== false:
-        $box_type = "centered cards";
+        $box_type = "cards";
         $row_type = "";
         $column_type = "card";
         break;
@@ -75,7 +75,7 @@ switch($input) {
         $column_type = "center aligned column logo";
         break;
     default:
-        $box_type = "centered grid";
+        $box_type = "grid";
         $row_type = "";
         $column_type = "column";
         break;

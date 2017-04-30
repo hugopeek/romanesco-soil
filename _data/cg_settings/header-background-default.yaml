@@ -4,5 +4,4 @@ label: 'Default header background'
 xtype: textfield
 description: 'Enter a class name, or combination of class names here. For example: ''inverted primary-color''.'
 sortorder: 30
-value: 'inverted primary-color'
 group: 4

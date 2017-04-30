@@ -4,5 +4,4 @@ label: 'Sticky navbar offset'
 xtype: numberfield
 description: 'After how many pixels should the navbar start sticking?'
 sortorder: 2
-value: '100'
 group: 2

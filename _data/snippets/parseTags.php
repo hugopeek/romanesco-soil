@@ -27,4 +27,4 @@ foreach ($tags as $key => $value) {
     ));
 }
 
-return implode($output);
+return implode('', $output);

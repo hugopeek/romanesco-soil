@@ -4,6 +4,5 @@ label: 'Minify CSS/JS'
 xtype: modx-combo
 description: 'Convenient to switch off during development, but don''t forget to turn it back on once the site is live!'
 sortorder: 2
-value: '0'
 group: 3
 options: On==1||Off==0
