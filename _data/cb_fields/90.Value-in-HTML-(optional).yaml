@@ -1,0 +1,12 @@
+id: 90
+parent: 28
+parent_properties: '{"key":"field_value","width":"20"}'
+name: 'Value in HTML (optional)'
+description: ''
+sortorder: 10
+icon: paragraph
+template: '[[+value:fbStripNonAlpha]]'
+properties: '{"use_tinyrte":"false"}'
+availability: '[]'
+layouts: null
+settings: '[]'

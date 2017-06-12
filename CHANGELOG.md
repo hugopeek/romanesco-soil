@@ -1,5 +1,10 @@
 # Changelog for the Romanesco Soil root installation
 
+## Romanesco Soil v0.3.1
+Upcoming release
+
+
+
 ## Romanesco Soil v0.3.0
 Released on April 20, 2017
 

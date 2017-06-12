@@ -1,5 +1,0 @@
-key: gitpackagemanagement.enable_debug
-value: '0'
-xtype: combo-boolean
-namespace: gitpackagemanagement
-area: system
