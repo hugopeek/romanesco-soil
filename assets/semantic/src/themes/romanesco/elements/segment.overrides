@@ -70,7 +70,7 @@
     }
 
     // Link styling for inverted segments in content area
-    #content &.inverted a:not(.button) {
+    #content &.inverted a:not(.button):not(.boxed) {
         color: @white;
         border-bottom: 2px solid fade(@white, 60);
         &:hover {

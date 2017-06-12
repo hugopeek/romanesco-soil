@@ -36,7 +36,7 @@
     }
 
     // Layout fixes for cards with left floated image
-    > .content > .column {
+    > .content:not(.extra) > .column {
         padding: 0 !important;
         &:last-child {
             padding-left: 1em !important;
