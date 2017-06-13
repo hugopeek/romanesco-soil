@@ -208,7 +208,7 @@ data:
     dashboard_widget_placement:
         class: modDashboardWidgetPlacement
         primary:
-            - dasboard
+            - dashboard
             - widget
     document_groups:
         class: modResourceGroupResource
