@@ -32,8 +32,8 @@ $(document)
         // Initiate Semantic UI components
         $('.ui.accordion').accordion();
         $('.ui.dropdown').dropdown();
-        $('.with.popup').popup();
-        $('.with.popup.onclick')
+        $('.with.tooltip').popup();
+        $('.with.tooltip.onclick')
             .popup({
                 on: 'click'
             })
@@ -77,6 +77,7 @@ $(document)
         // Add boxed class to elements inside inverted segments that need to retain their original styling
         $('.inverted.stripe.segment .cards .header a').addClass('boxed');
         $('.inverted.stripe.segment .form .segments a').addClass('boxed');
+        $('.inverted.stripe.segment .leaflet-container a').addClass('boxed');
 
         // Hide elements with class .hidden
         $('.hidden.element').hide();
