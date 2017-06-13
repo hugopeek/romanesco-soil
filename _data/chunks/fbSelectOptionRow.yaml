@@ -13,11 +13,11 @@ properties: 'a:0:{}'
     <input type="[[+field_type]]"
            name="[[+name]][[+field_type:is=`checkbox`:then=`[]`]]"
            id="[[+name]]-[[+idx]]"
-           value="[[+option]]"
+           value="[[+field_value:empty=`[[+option]]`]]"
            tabindex="[[+idx]]"
            data-group="[[+collapse_target:isnot=``:then=`[[+name]]`:default=`no-group`]]"
            data-target="[[+collapse_target:default=`no-target`]]"
            data-state="[[+collapse_default]]"
-           [[!+fb[[*id]].[[+name]]:FormItIsChecked=`[[+field_option]]`]]>
+           [[!+fb[[*id]].[[+name]]:FormItIsChecked=`[[+field_value:empty=`[[+option]]`]]`]]>
     <label>[[+option]]</label>
 </div>

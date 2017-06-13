@@ -6,7 +6,10 @@ properties: 'a:0:{}'
 
 -----
 
-<fieldset id="[[+legend:fbStripAsAlias]]" class="ui [[+padding]] [[+segment_type:ne=`none`:then=`segment`:else=`fieldset`]]">
+[[+segment_type:ne=`none`:then=`segment`:else=`fieldset`:toPlaceholder=`segment_parent`]]
+[[+force_segment:eq=`1`:then=`segment`:else=`[[+segment_parent]]`:toPlaceholder=`segment`]]
+
+<fieldset id="[[+legend:fbStripAsAlias]]" class="ui [[+padding]] [[+segment]] [[+background]]">
     [[+legend:notempty=`<legend class="ui large header">[[+legend]]</legend>`]]
     [[+main]]
 </fieldset>

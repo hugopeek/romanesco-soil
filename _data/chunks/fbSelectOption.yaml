@@ -7,9 +7,13 @@ properties: 'a:0:{}'
 -----
 
 [[+field_name:fbStripAsAlias:fbPrefixOutput:toPlaceholder=`name`]]
+[[+field_helptext:notempty=`<span class="help">[[+field_helptext]]</span>`:toPlaceholder=`help`]]
 
 <div id="[[+name]]" class="[[If? &subject=`[[+field_required]]` &operator=`EQ` &operand=`1` &then=`required`]] [[+option_layout:empty=`grouped`]] [[+field_layout]] [[+field_type]] fields [[!If? &subject=`[[+fb[[*id]].error.[[+name]]]]` &operator=`notempty` &then=`error`]]">
-    <label for="[[+name]]">[[+field_name]]</label>
+    <label for="[[+name]]">
+        [[+field_name]]
+        [[+helptext_position:eq=`top`:then=`[[+help]]`]]
+    </label>
 
     [[+rows]]
 
@@ -31,5 +35,5 @@ properties: 'a:0:{}'
     </div>
     `]]
 
-    [[+field_helptext:notempty=`<p class="help">[[+field_helptext]]</p>`]]
+    [[+helptext_position:eq=`bottom`:then=`[[+help]]`]]
 </div>
