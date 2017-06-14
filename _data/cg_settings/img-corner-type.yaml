@@ -1,8 +1,0 @@
-id: 33
-key: img_corner_type
-label: 'Image corners'
-xtype: modx-combo
-description: 'Define which type of corners are allowed.'
-sortorder: 10
-group: 4
-options: "Square==square||\nSquare or circular==square,circular||\nRounded==rounded"

@@ -6,7 +6,6 @@ Upcoming release
 > Patterns: 0.11.1-pl
 > Backyard: 0.3.2-pl
 
-- [Configuration] Add setting to choose preferred corner type for images
 - [FormBlocks] Add ability to use alternate option value in HTML
 - [FormBlocks] Add ability to choose help text position (above or below input)
 - [FormBlocks] Add ability to force fieldset to always display as segment
