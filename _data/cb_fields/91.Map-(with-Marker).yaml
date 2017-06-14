@@ -1,0 +1,14 @@
+id: 91
+parent_properties: ''
+input: chunk
+name: 'Map (with Marker)'
+description: ''
+sortorder: 67
+category: 3
+icon: marker
+icon_type: custom
+template: '[[+value]]'
+properties: '{"chunk":"100021","custom_preview":"<p><em>Preview not available<\/em><\/p>"}'
+availability: '[]'
+layouts: ''
+settings: '[{"reference":"marker_address","title":"Marker address","fieldtype":"textfield","default_value":"","fieldoptions":"","field_is_exposed":"asField"},{"reference":"map_zoom_level","title":"Zoom level","fieldtype":"textfield","default_value":"11","fieldoptions":"Country\nProvince","field_is_exposed":"asField"},{"reference":"marker_popup","title":"Text in popup","fieldtype":"textarea","default_value":"","fieldoptions":"","field_is_exposed":"asField"}]'
