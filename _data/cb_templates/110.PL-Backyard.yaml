@@ -1,0 +1,7 @@
+id: 110
+name: 'PL - Backyard'
+description: ''
+sortorder: 201
+icon: template_02
+content: '[{"layout":18,"content":{"main":[{"child_layouts":[{"layout":1,"content":{"main":[]},"settings":[],"parent":87}],"field":87,"settings":{}}],"info":[{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"","field":6,"settings":{}}],"col_2":[{"value":"","field":6,"settings":{}}]},"settings":{"padding":"relaxed","alignment":"","divider":"celled"},"parent":17}],"field":17,"settings":{}}],"meta":[{"value":"[[includedBosons?\n    &layout=`[[+layout_idx]]`\n    &filterFields=`6,14,17,87`\n]]","lang":"html","field":14,"settings":{}}]},"settings":{"sidebar_width":"four","layout_title":""},"parent":0,"title":""}]'
+availability: '[{"field":"context","value":"hub"}]'
