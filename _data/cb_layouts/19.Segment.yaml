@@ -3,7 +3,8 @@ name: Segment
 description: 'A wrapper for displaying content inside a Semantic UI segment.'
 sortorder: 12
 category: 9
-icon: layout_1-2-1
+icon: segments
+icon_type: custom
 columns: '[{"reference":"main","width":"100"}]'
 template: "[[If?\n    &subject=`[[+segment_type]]`\n    &operator=`notempty`\n    &then=`\n    <div class=\"ui [[+padding]] [[+segment_type]] segment\">\n        [[+main]]\n    </div>\n    `\n    &else=`[[+main]]`\n]]"
 availability: '[]'

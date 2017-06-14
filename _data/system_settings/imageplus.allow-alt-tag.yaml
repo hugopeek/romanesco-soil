@@ -1,0 +1,5 @@
+key: imageplus.allow_alt_tag
+value: '0'
+xtype: combo-boolean
+namespace: imageplus
+area: imageplus

@@ -1,0 +1,5 @@
+key: imageplus.select_config
+value: '[]'
+xtype: sizes-ratio-grid
+namespace: imageplus
+area: imageplus

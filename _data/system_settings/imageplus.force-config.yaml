@@ -1,0 +1,5 @@
+key: imageplus.force_config
+value: '0'
+xtype: combo-boolean
+namespace: imageplus
+area: imageplus
