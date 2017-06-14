@@ -1,3 +1,4 @@
 key: contentblocks.custom_icon_path
+value: '{assets_path}/img/icons/cb/'
 namespace: contentblocks
 area: Core
