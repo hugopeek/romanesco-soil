@@ -6,8 +6,8 @@ category: 9
 icon: layout_1-1-1-1
 icon_type: ''
 columns: '[{"reference":"col_1","width":"25"},{"reference":"col_2","width":"25"},{"reference":"col_3","width":"25"},{"reference":"col_4","width":"25"}]'
-template: "<div class=\"ui nested four column stackable doubling [[+padding]] [[+alignment]] [[+divider]] grid\">\n    <div class=\"row\">\n        <div class=\"column\">[[+col_1]]</div>\n        <div class=\"column\">[[+col_2]]</div>\n        <div class=\"column\">[[+col_3]]</div>\n        <div class=\"column\">[[+col_4]]</div>\n    </div>\n</div>"
+template: "<div class=\"[[+alignment]] row\">\n    <div class=\"column\">[[+col_1]]</div>\n    <div class=\"column\">[[+col_2]]</div>\n    <div class=\"column\">[[+col_3]]</div>\n    <div class=\"column\">[[+col_4]]</div>\n</div>"
 availability: '[]'
 times_per_page: 0
 layout_only_nested: '1'
-settings: '[{"reference":"padding","title":"Extra padding","fieldtype":"select","default_value":"relaxed","fieldoptions":"[[$cbSettingPadding]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"alignment","title":"Content alignment","fieldtype":"select","default_value":"","fieldoptions":"[[$cbLayoutAlignment]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"divider","title":"Divider","fieldtype":"select","default_value":"","fieldoptions":"[[$cbLayoutDivider]]","field_is_exposed":"modal","process_tags":"1"}]'
+settings: '[{"reference":"alignment","title":"Content alignment","fieldtype":"select","default_value":"","fieldoptions":"[[$cbLayoutAlignment]]","field_is_exposed":"modal","process_tags":"1"}]'

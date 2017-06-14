@@ -6,8 +6,8 @@ category: 9
 icon: layout_1
 icon_type: ''
 columns: '[{"reference":"main","width":"100"}]'
-template: "<div class=\"ui nested one column stackable doubling [[+padding]] [[+alignment]] grid\">\n    <div class=\"column\">[[+main]]</div>\n</div>"
+template: "<div class=\"[[+alignment]] row\">\n    <div class=\"column\">[[+main]]</div>\n</div>"
 availability: '[]'
 times_per_page: 0
 layout_only_nested: '1'
-settings: '[{"reference":"padding","title":"Extra padding","fieldtype":"select","default_value":"relaxed","fieldoptions":"[[$cbSettingPadding]]","field_is_exposed":"modal","process_tags":"1"},{"reference":"alignment","title":"Content alignment","fieldtype":"select","default_value":"","fieldoptions":"[[$cbLayoutAlignment]]","field_is_exposed":"modal","process_tags":"1"}]'
+settings: '[{"reference":"alignment","title":"Content alignment","fieldtype":"select","default_value":"","fieldoptions":"[[$cbLayoutAlignment]]","field_is_exposed":"modal","process_tags":"1"}]'
