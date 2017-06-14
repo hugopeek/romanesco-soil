@@ -1,0 +1,7 @@
+id: 36
+key: mapbox_access_token
+label: 'Mapbox access token'
+xtype: textfield
+description: ''
+sortorder: 10
+group: 3

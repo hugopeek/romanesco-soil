@@ -3,5 +3,5 @@ key: favicon_app_title
 label: 'Favicon application title'
 xtype: textfield
 description: ''
-sortorder: 3
+sortorder: 13
 group: 4
