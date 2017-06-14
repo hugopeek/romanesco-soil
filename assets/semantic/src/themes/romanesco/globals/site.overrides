@@ -191,6 +191,14 @@ blockquote:not(.quote),
 }
 
 
+// Map components
+// ---------------------------------------------------------------------
+
+.map {
+    height: 40rem; // You'll probably want to override this value per map
+}
+
+
 // Slider
 // Based on slick slider: http://kenwheeler.github.io/slick/
 // ---------------------------------------------------------------------

@@ -6,6 +6,7 @@ Upcoming release
 > Patterns: 0.11.1-pl
 > Backyard: 0.3.2-pl
 
+- [ContentBlocks] Add CB field for displaying map with marker
 - [FormBlocks] Add ability to use alternate option value in HTML
 - [FormBlocks] Add ability to choose help text position (above or below input)
 - [FormBlocks] Add ability to force fieldset to always display as segment
