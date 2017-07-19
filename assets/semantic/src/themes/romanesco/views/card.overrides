@@ -20,11 +20,11 @@
     margin-right: 0;
     width: 100% !important;
 }
-//.ui.stackable.doubling.cards > .card {
-//    @media only screen and (max-width: @largestMobileScreen) {
-//        width: 100% !important;
-//    }
-//}
+.ui.stackable.doubling.cards > .card {
+    @media only screen and (max-width: @largestMobileScreen) {
+        width: 100% !important;
+    }
+}
 
 // Tweaks and improvements for all cards
 .card {
