@@ -1,0 +1,17 @@
+## Gitify configuration for restoring template assignments of TVs.
+##
+## Use case: if you install the romanesco-patterns package through GPM and use
+##  core TVs inside any of your custom templates, their assignments will be lost
+##  when you update the GPM package.
+## This is because GPM only assigns TVs to templates defined in the config file.
+##
+## Usage: replace .gitify with this file after package update and run gitify build.
+
+data_directory: _data/
+data:
+
+    template_variables_access:
+        class: modTemplateVarTemplate
+        primary:
+            - tmplvarid
+            - templateid
