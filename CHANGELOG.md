@@ -10,6 +10,7 @@ Upcoming release
 - [FormBlocks] Add ability to use alternate option value in HTML
 - [FormBlocks] Add ability to choose help text position (above or below input)
 - [FormBlocks] Add ability to force fieldset to always display as segment
+- [Gitify] Add svgSanitizer package as dependency
 
 ## Romanesco Soil v0.3.0
 Released on April 20, 2017

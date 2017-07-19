@@ -406,6 +406,7 @@ packages:
             - seopro
             - setinputoptions
             - simplesearch
+            - svgsanitizer
             - switch
             - tagger
             - twitterx
