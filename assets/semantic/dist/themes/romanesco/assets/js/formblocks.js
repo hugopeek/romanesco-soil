@@ -1,4 +1,5 @@
 // Show/Hide containers
+// -----------------------------------
 
 // These triggers rely on Semantic UI callbacks for checkboxes. For more info:
 // http://semantic-ui.com/modules/checkbox.html#/usage
@@ -74,6 +75,51 @@ $('.ui.checkbox.collapsible')
             var $target = $(this).data('target');
 
             $('#' + $target).addClass('hidden');
+        }
+    })
+;
+
+
+// Set checkboxes or radios with links
+// -----------------------------------
+
+// Control checkbox/radio selections through different link elements.
+// Note that with this particular solution, the checkbox must be inside the link.
+
+// Find the master switch and set selection on click
+$('.ui.with.checkboxes.inside .master')
+    .on('click', function() {
+        $(this)
+            .find('.slave')
+            .checkbox(
+                $(this).data('method')
+            )
+        ;
+    })
+;
+
+// Set appropriate classes based on a selection
+$('.ui.with.checkboxes.inside .slave')
+    .checkbox({
+        onChecked: function(){
+            $(this).closest('.master').addClass('checked');
+        },
+        onUnchecked: function () {
+            $(this).closest('.master').removeClass('checked');
+        }
+    })
+;
+
+// Radio buttons need a little workaround
+// See this issue: https://github.com/Semantic-Org/Semantic-UI/issues/4407
+// Or this fiddle: http://jsfiddle.net/v6qmf3fo/6/
+$('.ui.with.checkboxes.inside .radio.slave')
+    .checkbox({
+        onChecked: function(){
+            $(this).closest('.master').addClass('checked');
+        },
+        beforeChecked: function(){
+            $(this).closest('.checkboxes.inside').find('.master').removeClass('checked');
         }
     })
 ;

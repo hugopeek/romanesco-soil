@@ -311,7 +311,7 @@ body:after {
 }
 
 .primary-color {
-  background-color: #85a68e !important;
+  background-color: #eaf3ec !important;
 }
 
 .primary-color.inverted {
@@ -320,11 +320,11 @@ body:after {
 }
 
 .secondary-color {
-  background-color: #bace43 !important;
+  background-color: #edf1f8 !important;
 }
 
 .secondary-color.inverted {
-  background-color: #9db02e !important;
+  background-color: #5f7ebe !important;
   color: #FFFFFF !important;
 }
 
@@ -403,6 +403,18 @@ blockquote:not(.quote),
 
 .overview .description + p {
   margin-top: 2rem;
+}
+
+.map {
+  height: 40rem;
+}
+
+svg {
+  fill: currentColor;
+}
+
+svg.hidden {
+  display: none;
 }
 
 @media screen and (min-width: 992px) {
@@ -4260,7 +4272,7 @@ blockquote:not(.quote),
 
 .ui.secondary.buttons .button,
 .ui.secondary.button {
-  background-color: #9db02e;
+  background-color: #5f7ebe;
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
@@ -4272,21 +4284,21 @@ blockquote:not(.quote),
 
 .ui.secondary.buttons .button:hover,
 .ui.secondary.button:hover {
-  background-color: #b4cb2c;
+  background-color: #6d8bca;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.secondary.buttons .button:focus,
 .ui.secondary.button:focus {
-  background-color: #c1da2d;
+  background-color: #7493d2;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.secondary.buttons .button:active,
 .ui.secondary.button:active {
-  background-color: #bace43;
+  background-color: #839bcd;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -4295,7 +4307,7 @@ blockquote:not(.quote),
 .ui.secondary.buttons .active.button:active,
 .ui.secondary.active.button,
 .ui.secondary.button .active.button:active {
-  background-color: #b7cf28;
+  background-color: #6b8acc;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -4304,35 +4316,35 @@ blockquote:not(.quote),
 
 .ui.basic.secondary.buttons .button,
 .ui.basic.secondary.button {
-  box-shadow: 0px 0px 0px 1px #9db02e inset !important;
-  color: #9db02e !important;
+  box-shadow: 0px 0px 0px 1px #5f7ebe inset !important;
+  color: #5f7ebe !important;
 }
 
 .ui.basic.secondary.buttons .button:hover,
 .ui.basic.secondary.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #b4cb2c inset !important;
-  color: #b4cb2c !important;
+  box-shadow: 0px 0px 0px 1px #6d8bca inset !important;
+  color: #6d8bca !important;
 }
 
 .ui.basic.secondary.buttons .button:focus,
 .ui.basic.secondary.button:focus {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #c1da2d inset !important;
-  color: #b4cb2c !important;
+  box-shadow: 0px 0px 0px 1px #7493d2 inset !important;
+  color: #6d8bca !important;
 }
 
 .ui.basic.secondary.buttons .active.button,
 .ui.basic.secondary.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #b7cf28 inset !important;
-  color: #bace43 !important;
+  box-shadow: 0px 0px 0px 1px #6b8acc inset !important;
+  color: #839bcd !important;
 }
 
 .ui.basic.secondary.buttons .button:active,
 .ui.basic.secondary.button:active {
-  box-shadow: 0px 0px 0px 1px #bace43 inset !important;
-  color: #bace43 !important;
+  box-shadow: 0px 0px 0px 1px #839bcd inset !important;
+  color: #839bcd !important;
 }
 
 .ui.buttons:not(.vertical) > .basic.primary.button:not(:first-child) {
@@ -14870,12 +14882,12 @@ body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white) > .co
   z-index: 0;
 }
 
-#content .ui.stripe.segment.inverted a:not(.button) {
+#content .ui.stripe.segment.inverted a:not(.button):not(.boxed) {
   color: #FFFFFF;
   border-bottom: 2px solid rgba(255, 255, 255, 0.6);
 }
 
-#content .ui.stripe.segment.inverted a:not(.button):hover {
+#content .ui.stripe.segment.inverted a:not(.button):not(.boxed):hover {
   border-bottom: 2px solid #FFFFFF;
 }
 
@@ -18685,7 +18697,7 @@ body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white) > .co
          Theme Overrides
 *******************************/
 
-#content .ui.nested.grid {
+#content .ui.nested.grid:not(:last-child) {
   margin-bottom: 2rem;
 }
 
@@ -23020,27 +23032,52 @@ Floated Menu / Item
          Theme Overrides
 *******************************/
 
-.ui.table a[class*="level-"]:before {
+.ui.status.table a[class*="level-"]:before {
   margin-right: 4px;
 }
 
-.ui.table a.level-2:before {
+.ui.status.table a.level-2:before {
   content: "\2192";
 }
 
-.ui.table a.level-3:before {
+.ui.status.table a.level-3:before {
   content: "\2192 \2192";
 }
 
-.ui.table a.level-4:before {
+.ui.status.table a.level-4:before {
   content: "\2192 \2192 \2192";
 }
 
-.ui.table td.indicator .hidden {
+.ui.status.table tr.disabled td {
+  pointer-events: visible;
+}
+
+.ui.status.table td.indicator .hidden {
   display: none;
 }
 
-.ui.table td.labels {
+.ui.status.table svg.icon {
+  width: 48px;
+  height: 38px;
+}
+
+.ui.status.table td.metadata {
+  position: relative;
+}
+
+.ui.status.table td.metadata a.floating.label {
+  top: 0.5em;
+}
+
+.ui.status.table td.metadata a.floating.label:not(:hover) {
+  opacity: 0.6;
+}
+
+.ui.status.table td.metadata a.floating.label + a.label {
+  left: 95%;
+}
+
+.ui.status.table td.labels {
   padding-bottom: 0.1em;
 }
 
@@ -24118,7 +24155,7 @@ a.ui.card:hover,
          Theme Overrides
 *******************************/
 
-#content .ui.nested.cards {
+#content .ui.nested.cards:not(:last-child) {
   margin-bottom: 2rem;
 }
 
@@ -24129,6 +24166,7 @@ a.ui.card:hover,
 .ui.one.cards > .card {
   margin-left: 0;
   margin-right: 0;
+  width: 100% !important;
 }
 
 @media only screen and (max-width: 767px) {
@@ -24145,11 +24183,11 @@ a.ui.card:hover,
   padding: 0.5em 0 1em;
 }
 
-.card > .content > .column {
+.card > .content:not(.extra) > .column {
   padding: 0 !important;
 }
 
-.card > .content > .column:last-child {
+.card > .content:not(.extra) > .column:last-child {
   padding-left: 1em !important;
 }
 
