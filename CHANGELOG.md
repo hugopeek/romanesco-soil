@@ -1,10 +1,10 @@
 # Changelog for the Romanesco Soil root installation
 
 ## Romanesco Soil v0.3.1
-Upcoming release
+Released on July 25, 2017
 
 > Patterns: 0.11.1-pl
-> Backyard: 0.3.2-pl
+> Backyard: 0.4.0-pl
 
 - [Global] Add ability to use SVGs as global backgrounds
 - [ContentBlocks] Add CB field for displaying map with marker
