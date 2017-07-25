@@ -1,0 +1,3 @@
+name: svgsanitizer
+path: '{core_path}components/svgsanitizer/'
+assets_path: '{assets_path}components/svgsanitizer/'

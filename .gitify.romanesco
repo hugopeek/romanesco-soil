@@ -32,7 +32,7 @@ data:
         # Installation of extras will be handled by the project itself, meaning
         #  they will receive their own category in the > 100.000 range.
         where:
-            - 'id:NOT IN': [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,112,121,153,155,201,202,203]
+            - 'id:NOT IN': [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,112,121,153,155,201,202,203,213,215]
 
         truncate_on_force:
             - modCategoryClosure
