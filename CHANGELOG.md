@@ -7,11 +7,15 @@ Released on July 25, 2017
 > Backyard: 0.4.0-pl
 
 - [Global] Add ability to use SVGs as global backgrounds
+- [Global] Change secondary color to purple
 - [ContentBlocks] Add CB field for displaying map with marker
 - [ContentBlocks] Fix pThumb errors when SVGs were used in Image CBs [#82]
-- [FormBlocks] Add ability to use alternate option value in HTML
+- [FormBlocks] Add ability to use your own elements as checkbox or radio buttons
+- [FormBlocks] Add ability to use alternate value for a field option in HTML
 - [FormBlocks] Add ability to choose help text position (above or below input)
 - [FormBlocks] Add ability to force fieldset to always display as segment
+- [StatusGrid] Check if longtitle and description are set (and show value in tooltip)
+- [StatusGrid] Edit resources directly by clicking on ID
 - [Gitify] Add svgSanitizer package as dependency
 
 ## Romanesco Soil v0.3.0
