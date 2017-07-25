@@ -126,8 +126,16 @@ if (isset($subject)) {
 if (!empty($debug)) { var_dump($output); }
 unset($subject);
 
+// Prevent chunks or snippets from parsing before the If statement is evaluated.
+// You can also use the mosquito technique, but that may cause issues in more complex scenarios.
+$outputAsTpl = $modx->getOption('outputAsTpl', $scriptProperties, false);
+if ($outputAsTpl) {
+    $output = $modx->getChunk($output, $scriptProperties);
+}
+
+// Output either to placeholder, or directly
 $toPlaceholder = $modx->getOption('toPlaceholder', $scriptProperties, false);
-if (!empty($toPlaceholder)) {
+if ($toPlaceholder) {
     $modx->setPlaceholder($toPlaceholder, $output);
     return '';
 }

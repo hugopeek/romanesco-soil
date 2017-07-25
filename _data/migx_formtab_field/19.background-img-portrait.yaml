@@ -1,0 +1,9 @@
+id: 19
+config_id: 2
+formtab_id: 3
+field: background_img_portrait
+caption: 'Background image (portrait)'
+pos: 2
+inputTV: overview_img_portrait
+sourceFrom: migx
+sources: '[{"MIGX_id":1,"context":"mgr","sourceid":13},{"MIGX_id":2,"context":"web","sourceid":13}]'

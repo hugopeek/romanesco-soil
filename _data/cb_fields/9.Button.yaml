@@ -6,7 +6,7 @@ description: ''
 sortorder: 6
 category: 3
 icon: link
-template: "[[$buttonOuter?\n    &link=`[[+link]]`\n    &button_text=`[[+button_text]]`\n    &button_type=`[[+button_type]]`\n    &button_options=`[[+button_options]]`\n    &button_size=`[[+button_size]]`\n    &new_window=`[[+new_window]]`\n    &icon_class=`[[+icon_class]]`\n    &icon_options=`[[+icon_options]]`\n]]"
+template: "[[$buttonOuter?\n    &link=`[[+link]]`\n    &button_text=`[[+button_text]]`\n    &button_type=`[[+button_type]]`\n    &button_options=`[[+button_options]]`\n    &button_size=`[[+button_size]]`\n    &new_window=`[[+new_window]]`\n    &icon_class=`[[+icon_class]]`\n    &icon_options=`[[+icon_options]]`\n    &unique_idx=`[[+unique_idx]]`\n]]"
 properties: '{"link_detection_pattern_override":"","limit_to_current_context":"1"}'
 availability: '[]'
 layouts: ''

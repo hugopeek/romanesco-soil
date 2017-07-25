@@ -4,5 +4,5 @@ formtab_id: 3
 field: background_title
 caption: 'Background title'
 description: 'Give this background a descriptive name, so you''ll remember its contents when referenced elsewhere. Try to keep it short!'
-pos: 2
+pos: 3
 sourceFrom: config

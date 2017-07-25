@@ -1,0 +1,10 @@
+id: 20
+config_id: 2
+formtab_id: 7
+field: background_svg
+caption: 'Background SVG'
+description: 'As an alternative to a regular JPG or PNG image, you can also select an SVG for background usage. SVGs are great for creating scalable or pattern backgrounds, but they may need some extra adjustments still with CSS.'
+pos: 1
+inputTVtype: image
+sourceFrom: migx
+sources: '[{"MIGX_id":"1","context":"web","sourceid":"14"},{"MIGX_id":"2","context":"mgr","sourceid":"14"}]'

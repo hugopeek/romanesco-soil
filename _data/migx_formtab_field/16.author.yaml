@@ -1,0 +1,9 @@
+id: 16
+config_id: 4
+formtab_id: 6
+field: author
+caption: Author
+pos: 2
+inputTVtype: hidden
+sourceFrom: config
+default: '@CHUNK statusNotesGetUser'

@@ -9,7 +9,7 @@ properties: 'a:0:{}'
 <nav id="menu" class="ui large secondary [[++navbar_sticky:is=`1`:then=`sticky`]] menu" role="navigation">
     <div class="ui container">
         <div class="item branding">
-            [[$logo]]
+            [[[[If? &subject=`[[$logoTheme]]` &operator=`isnull` &then=`$logo` &else=`$logoTheme`]]]]
         </div>
         
         <div class="right menu">

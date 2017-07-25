@@ -1,0 +1,8 @@
+id: 15
+config_id: 4
+formtab_id: 6
+field: note
+caption: Note
+pos: 1
+inputTVtype: richtext
+sourceFrom: config

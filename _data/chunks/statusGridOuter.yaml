@@ -6,7 +6,35 @@ properties: 'a:0:{}'
 
 -----
 
-<table class="ui very compact sortable celled table">
+<svg class="hidden">
+    [[!svgSanitize? &file=`assets/img/icons/status/not-done.svg` &title=`[[%romanesco.status.not_done]]` &toSymbol=`1`]]
+    [[!svgSanitize? &file=`assets/img/icons/status/in-progress.svg` &title=`[[%romanesco.status.in_progress]]` &toSymbol=`1`]]
+    [[!svgSanitize? &file=`assets/img/icons/status/almost-done.svg` &title=`[[%romanesco.status.almost_done]]` &toSymbol=`1`]]
+    [[!svgSanitize? &file=`assets/img/icons/status/done.svg` &title=`[[%romanesco.status.done]]` &toSymbol=`1`]]
+    [[!svgSanitize? &file=`assets/img/icons/status/successful.svg` &title=`[[%romanesco.status.successful]]` &toSymbol=`1`]]
+    [[!svgSanitize? &file=`assets/img/icons/status/problematic.svg` &title=`[[%romanesco.status.problematic]]` &toSymbol=`1`]]
+    [[!svgSanitize? &file=`assets/img/icons/status/expired.svg` &title=`[[%romanesco.status.expired]]` &toSymbol=`1`]]
+</svg>
+
+
+
+[[-
+<div class="ui grid">
+    <div class="ten wide column"></div>
+    <div class="six wide column">
+        <h4>Legend</h4>
+        <table class="ui very compact celled legend table">
+            <thead>
+            <tr>
+                <th></th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+]]
+
+<table class="ui very compact sortable celled status table">
     <thead>
     <tr>
         <th>[[%romanesco.status.table_status_indicator]]</th>

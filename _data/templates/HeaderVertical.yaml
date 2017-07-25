@@ -7,7 +7,7 @@ properties: 'a:0:{}'
 -----
 
 <!DOCTYPE html>
-<html lang="[[++cultureKey]]">
+<html id="[[*context_key]]" lang="[[++cultureKey]]">
 
 [[$head]]
 
