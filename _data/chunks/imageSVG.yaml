@@ -1,0 +1,14 @@
+id: 365
+name: imageSVG
+description: ''
+category: a_content
+properties: 'a:0:{}'
+
+-----
+
+<figure class="ui [[+classes]] image">
+    [[svgSanitize?
+        &file=`[[+url]]`
+        &title=`[[+alt]]`
+    ]]
+</figure>

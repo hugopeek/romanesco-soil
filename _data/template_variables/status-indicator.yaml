@@ -4,7 +4,7 @@ name: status_indicator
 caption: 'Status indicator'
 description: 'How is this resource doing?'
 category: Status
-elements: '[Seed] Its idea is ready to take root, but this resource is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==almost-done||[Healthy plant] Watered, fertilized and growing steadily==done||[Fruiting] This particular resource is performing really well==thriving||[Plagued] Somehow, this resource is having some difficulties staying healthy==struggling||[Wilting] The content is outdated or has outlived its purpose entirely==expired'
+elements: '[Seed] The idea is ready to take root, but this resource is still empty==not-done||[Seedling] Work has begun and leaves are starting to appear==in-progress||[Small plant] Almost ready to be transplanted to its live container==almost-done||[Healthy plant] Watered, fertilized and growing steadily==done||[Fruiting] This particular resource is performing really well==successful||[Plagued] Somehow, this resource is attracting more bugs than visitors==problematic||[Wilting] The content is outdated or has outlived its purpose entirely==expired'
 rank: 1
 properties: 'a:0:{}'
 input_properties: null
