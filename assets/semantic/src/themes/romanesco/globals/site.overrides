@@ -199,6 +199,17 @@ blockquote:not(.quote),
 }
 
 
+// SVG graphics
+// ---------------------------------------------------------------------
+
+svg {
+    fill: currentColor; // Takes the fill color of its container
+}
+svg.hidden {
+    display: none; // This SVG is probably used as sprite
+}
+
+
 // Slider
 // Based on slick slider: http://kenwheeler.github.io/slick/
 // ---------------------------------------------------------------------
