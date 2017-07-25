@@ -41,8 +41,8 @@ $(document)
         $('.ui.tabular.menu .item').tab();
         $('.ui.sortable.table').tablesort();
 
-        $('.ui.checkbox:not(.other):not(.collapsible)').checkbox();
-        $('.ui.radio.checkbox:not(.other):not(.collapsible)').checkbox();
+        $('.ui.checkbox:not(.other):not(.collapsible):not(.slave)').checkbox();
+        $('.ui.radio.checkbox:not(.other):not(.collapsible):not(.slave)').checkbox();
 
         $('.ui.dimmable')
             .dimmer({
