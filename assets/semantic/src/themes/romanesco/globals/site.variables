@@ -48,10 +48,10 @@
 --------------------*/
 
 @primaryColor        : #698f73;
-@secondaryColor      : #9db02e;
+@secondaryColor      : #5f7ebe;
 
-@lightPrimaryColor   : lighten(@primaryColor, 10);
-@lightSecondaryColor : lighten(@secondaryColor, 10);
+@lightPrimaryColor   : #eaf3ec;
+@lightSecondaryColor : #edf1f8;
 @darkSecondaryColor  : #1e2307;
 
 /*--------------
