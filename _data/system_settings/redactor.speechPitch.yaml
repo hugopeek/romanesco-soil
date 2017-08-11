@@ -1,5 +1,0 @@
-key: redactor.speechPitch
-value: '1'
-xtype: numberfield
-namespace: redactor
-area: Advanced

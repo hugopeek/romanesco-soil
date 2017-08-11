@@ -1,7 +1,0 @@
-id: 10
-key: navbar_resources
-label: 'Main menu resources'
-xtype: textfield
-description: 'This is an override for including or excluding resources, regardless of their "Hide in menu" settings. Exclude resources by prefixing them with a dash.'
-sortorder: 3
-group: 2

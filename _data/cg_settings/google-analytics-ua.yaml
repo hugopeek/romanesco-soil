@@ -1,7 +1,0 @@
-id: 21
-key: google_analytics_ua
-label: 'Google Analytics UA code'
-xtype: textfield
-description: ''
-sortorder: 1
-group: 5

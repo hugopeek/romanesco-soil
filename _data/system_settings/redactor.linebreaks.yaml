@@ -1,4 +1,0 @@
-key: redactor.linebreaks
-xtype: modx-combo-boolean
-namespace: redactor
-area: Markup

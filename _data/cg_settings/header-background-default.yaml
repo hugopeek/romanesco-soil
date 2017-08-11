@@ -1,7 +1,0 @@
-id: 16
-key: header_background_default
-label: 'Default header background'
-xtype: textfield
-description: 'Enter a class name, or combination of class names here. For example: ''inverted primary-color''.'
-sortorder: 30
-group: 4

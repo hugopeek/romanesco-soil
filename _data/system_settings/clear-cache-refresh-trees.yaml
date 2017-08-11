@@ -1,4 +1,0 @@
-key: clear_cache_refresh_trees
-value: '0'
-xtype: combo-boolean
-area: caching

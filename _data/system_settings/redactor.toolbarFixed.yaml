@@ -1,4 +1,0 @@
-key: redactor.toolbarFixed
-xtype: modx-combo-boolean
-namespace: redactor
-area: Toolbar

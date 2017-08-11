@@ -1,5 +1,0 @@
-key: redactor.tabindex
-value: '0'
-xtype: numberfield
-namespace: redactor
-area: Editor

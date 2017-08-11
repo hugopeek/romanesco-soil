@@ -1,4 +1,0 @@
-key: contentblocks.image.prefix_time
-xtype: modx-combo-boolean
-namespace: contentblocks
-area: 'Input: Image'

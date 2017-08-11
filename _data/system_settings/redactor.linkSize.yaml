@@ -1,5 +1,0 @@
-key: redactor.linkSize
-value: '50'
-xtype: numberfield
-namespace: redactor
-area: Editor

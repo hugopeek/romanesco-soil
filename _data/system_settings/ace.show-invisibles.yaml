@@ -1,5 +1,0 @@
-key: ace.show_invisibles
-value: '0'
-xtype: combo-boolean
-namespace: ace
-area: general

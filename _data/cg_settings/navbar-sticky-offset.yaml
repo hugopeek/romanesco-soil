@@ -1,7 +1,0 @@
-id: 6
-key: navbar_sticky_offset
-label: 'Sticky navbar offset'
-xtype: numberfield
-description: 'After how many pixels should the navbar start sticking?'
-sortorder: 2
-group: 2

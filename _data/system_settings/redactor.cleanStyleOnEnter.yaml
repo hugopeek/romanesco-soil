@@ -1,4 +1,0 @@
-key: redactor.cleanStyleOnEnter
-xtype: modx-combo-boolean
-namespace: redactor
-area: Markup

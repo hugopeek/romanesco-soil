@@ -1,7 +1,0 @@
-id: 32
-key: social_pinterest
-label: 'Pinterest board'
-xtype: textfield
-description: 'Please fill in the complete URL (including http(s)://).'
-sortorder: 7
-group: 6

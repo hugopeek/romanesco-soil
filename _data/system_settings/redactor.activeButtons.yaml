@@ -1,4 +1,0 @@
-key: redactor.activeButtons
-value: 'deleted,italic,bold,unorderedlist,orderedlist'
-namespace: redactor
-area: Toolbar

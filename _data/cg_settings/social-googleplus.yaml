@@ -1,7 +1,0 @@
-id: 26
-key: social_googleplus
-label: 'Google+ profile'
-xtype: textfield
-description: 'Please fill in the complete URL (including http(s)://).'
-sortorder: 5
-group: 6

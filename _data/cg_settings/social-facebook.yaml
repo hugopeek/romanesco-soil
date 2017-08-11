@@ -1,7 +1,0 @@
-id: 22
-key: social_facebook
-label: 'Facebook account'
-xtype: textfield
-description: 'Please fill in the complete URL (including http(s)://).'
-sortorder: 2
-group: 6

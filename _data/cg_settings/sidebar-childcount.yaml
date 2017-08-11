@@ -1,8 +1,0 @@
-id: 8
-key: sidebar_childcount
-label: 'Show number of child pages in submenu buttons'
-xtype: modx-combo
-description: 'When activated, the amount of child pages under the parent resource will be shown in a little badge inside the menu button.'
-sortorder: 5
-group: 2
-options: Yes==1||No==0

@@ -1,4 +1,0 @@
-key: redactor.linkAnchor
-xtype: modx-combo-boolean
-namespace: redactor
-area: Editor

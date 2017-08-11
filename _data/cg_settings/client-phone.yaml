@@ -1,7 +1,0 @@
-id: 2
-key: client_phone
-label: 'Primary phone number'
-xtype: textfield
-description: ''
-sortorder: 2
-group: 1

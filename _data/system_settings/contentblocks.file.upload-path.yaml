@@ -1,4 +1,0 @@
-key: contentblocks.file.upload_path
-value: assets/uploads/
-namespace: contentblocks
-area: 'Input: File'

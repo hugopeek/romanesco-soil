@@ -1,5 +1,0 @@
-key: contentblocks.typeahead.include_introtext
-value: '1'
-xtype: combo-boolean
-namespace: contentblocks
-area: Core

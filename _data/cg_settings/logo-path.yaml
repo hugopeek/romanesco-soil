@@ -1,6 +1,0 @@
-id: 20
-key: logo_path
-label: 'Logo path'
-xtype: modx-panel-tv-image
-description: 'This will be used in the Structured Data of every page, so Google can display the logo in its search results.'
-group: 4

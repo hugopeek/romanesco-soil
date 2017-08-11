@@ -1,5 +1,0 @@
-key: redactor.speechRate
-value: '1'
-xtype: numberfield
-namespace: redactor
-area: Advanced

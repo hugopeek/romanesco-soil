@@ -1,5 +1,0 @@
-key: romanesco.dev_mode
-value: '1'
-xtype: combo-boolean
-namespace: romanesco
-area: Settings

@@ -1,7 +1,0 @@
-id: 14
-key: favicon_theme_color
-label: 'Favicon theme color'
-xtype: colorpickerfield
-description: 'The hexadecimal value for <meta name="theme-color">.'
-sortorder: 12
-group: 4

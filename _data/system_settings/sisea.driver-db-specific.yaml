@@ -1,5 +1,0 @@
-key: sisea.driver_db_specific
-value: '1'
-xtype: combo-boolean
-namespace: sisea
-area: Drivers

@@ -13,5 +13,7 @@ properties: 'a:0:{}'
      data-heading="[[+heading]]"
      role="tabpanel"
      aria-hidden="false">
-    [[+content]]
+    <div class="ui nested stackable doubling [[+alignment]] [[+divider]] equal width grid">
+        [[+content]]
+    </div>
 </div>

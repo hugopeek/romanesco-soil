@@ -1,5 +1,0 @@
-key: imageplus.debug
-value: '0'
-xtype: combo-boolean
-namespace: imageplus
-area: system
