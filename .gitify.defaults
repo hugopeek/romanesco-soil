@@ -37,3 +37,14 @@ data:
     cg_settings:
         class: cgSetting
         primary: key
+
+    # Create Romanesco namespace, so System Settings and Lexicons become visible
+    namespaces:
+        class: modNamespace
+        primary: name
+        exclude_keys:
+            - path
+            - assets_path
+        where:
+            'name:IN':
+                - 'romanesco'
