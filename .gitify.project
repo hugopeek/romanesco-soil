@@ -119,6 +119,7 @@ data:
             'namespace:IN':
                 - 'patternlab'
                 - 'romanesco'
+                - 'romanescobackyard'
     namespaces:
         class: modNamespace
         primary: name

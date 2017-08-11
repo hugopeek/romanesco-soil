@@ -1,5 +1,7 @@
 # Gitify configuration for Romanesco Soil
-# NB! Projects need their own .gitify file
+#
+# NB! Projects need their own .gitify file! This config is only used to export
+# the Soil parent installation on which new projects can be based.
 
 data_directory: _data/
 data:
@@ -20,6 +22,7 @@ data:
                 - 'site_url'
                 - 'base_url'
                 - 'http_host'
+                - 'site_start'
 
     # Basic elements
     categories:
@@ -132,6 +135,7 @@ data:
             'namespace:IN':
                 - 'patternlab'
                 - 'romanesco'
+                - 'romanescobackyard'
     namespaces:
         class: modNamespace
         primary: name
@@ -161,28 +165,15 @@ data:
                 - 'settings_version'
                 - 'email_sender'
                 - 'error_page'
-                - 'gitpackagemanagement.assets_path'
-                - 'gitpackagemanagement.assets_url'
-                - 'gitpackagemanagement.core_path'
-                - 'gitpackagemanagement.packages_base_url'
-                - 'gitpackagemanagement.packages_dir'
-                - 'patternlab.assets_path'
-                - 'patternlab.assets_url'
-                - 'patternlab.core_path'
-                - 'romanesco.assets_path'
-                - 'romanesco.assets_url'
-                - 'romanesco.core_path'
+                - 'formit.form_encryptkey'
                 - 'romanesco.pattern_container_id'
                 - 'romanesco.backyard_container_id'
                 - 'romanesco.dashboard_id'
-                - 'romanescobackyard.assets_path'
-                - 'romanescobackyard.assets_url'
-                - 'romanescobackyard.core_path'
-                - 'cbheadingimage.assets_path'
-                - 'cbheadingimage.assets_url'
-                - 'cbheadingimage.core_path'
-                - 'formit.form_encryptkey'
             - 'AND:key:NOT LIKE': 'mail_%'
+            - 'AND:key:NOT LIKE': 'gitpackagemanagement.%'
+            - 'AND:key:NOT LIKE': '%.assets_path'
+            - 'AND:key:NOT LIKE': '%.assets_url'
+            - 'AND:key:NOT LIKE': '%.core_path'
 
     # User config
     access_context:
@@ -276,15 +267,16 @@ data:
         primary: id
 
     # ClientConfig
-    cg_groups:
-        class: cgGroup
-        primary: label
-        package: clientconfig
-    cg_settings:
-        class: cgSetting
-        primary: key
-        exclude_keys:
-            - value
+    # Excluded from Romanesco .gitify and added as default / run once instead
+    #cg_groups:
+    #    class: cgGroup
+    #    primary: label
+    #    package: clientconfig
+    #cg_settings:
+    #    class: cgSetting
+    #    primary: key
+    #    exclude_keys:
+    #        - value
 
     # Collections
     collections_settings:
