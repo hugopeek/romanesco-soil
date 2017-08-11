@@ -1,0 +1,4 @@
+key: sisea.elastic.hostname
+value: 'http://127.0.0.1'
+namespace: sisea
+area: ElasticSearch

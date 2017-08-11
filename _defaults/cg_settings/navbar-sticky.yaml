@@ -1,0 +1,9 @@
+id: 7
+key: navbar_sticky
+label: 'Sticky navbar'
+xtype: modx-combo
+description: ''
+sortorder: 1
+value: '1'
+group: 2
+options: Yes==1||No==0

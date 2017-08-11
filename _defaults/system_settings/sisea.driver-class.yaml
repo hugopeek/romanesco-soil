@@ -1,0 +1,4 @@
+key: sisea.driver_class
+value: SimpleSearchDriverBasic
+namespace: sisea
+area: Drivers

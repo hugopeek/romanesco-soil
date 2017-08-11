@@ -1,0 +1,4 @@
+key: contentblocks.link.link_detection_pattern
+value: '^(?:f|ht)tps?:\/\/'
+namespace: contentblocks
+area: 'Input: Link'

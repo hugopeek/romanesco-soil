@@ -1,0 +1,4 @@
+key: clientconfig.vertical_tabs
+xtype: combo-boolean
+namespace: clientconfig
+area: Default

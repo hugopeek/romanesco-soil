@@ -1,0 +1,5 @@
+key: redactor.formattingAdd
+value: "[{\n    \"tag\": \"p\",\n    \"title\": \"Lead text\",\n    \"class\": \"lead\"\n},{\n    \"tag\": \"p\",\n    \"title\": \"Small text\",\n    \"class\": \"small\"\n}]"
+xtype: textarea
+namespace: redactor
+area: Advanced

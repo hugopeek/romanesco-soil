@@ -1,0 +1,4 @@
+key: contentblocks.disabled
+xtype: modx-combo-boolean
+namespace: contentblocks
+area: Core

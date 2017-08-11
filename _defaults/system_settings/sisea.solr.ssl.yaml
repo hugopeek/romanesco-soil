@@ -1,0 +1,4 @@
+key: sisea.solr.ssl
+xtype: combo-boolean
+namespace: sisea
+area: Solr

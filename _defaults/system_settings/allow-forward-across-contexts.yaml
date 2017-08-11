@@ -1,0 +1,4 @@
+key: allow_forward_across_contexts
+value: '1'
+xtype: combo-boolean
+area: system

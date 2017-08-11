@@ -1,0 +1,4 @@
+key: redactor.deniedTags
+value: 'html,head,link,body,meta,script,style,applet'
+namespace: redactor
+area: Markup

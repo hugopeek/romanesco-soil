@@ -1,0 +1,5 @@
+key: contentblocks.hide_logo
+value: '0'
+xtype: combo-boolean
+namespace: contentblocks
+area: Core

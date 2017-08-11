@@ -1,0 +1,4 @@
+key: redactor.convertImageLinks
+xtype: modx-combo-boolean
+namespace: redactor
+area: Media

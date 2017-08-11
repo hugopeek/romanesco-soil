@@ -1,0 +1,4 @@
+key: xrouting.default_context
+value: web
+namespace: xrouting
+area: common

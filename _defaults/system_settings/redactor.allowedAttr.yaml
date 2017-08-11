@@ -1,0 +1,4 @@
+key: redactor.allowedAttr
+xtype: textarea
+namespace: redactor
+area: Markup

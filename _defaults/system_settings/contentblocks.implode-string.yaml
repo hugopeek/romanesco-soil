@@ -1,0 +1,4 @@
+key: contentblocks.implode_string
+value: "\n\n"
+namespace: contentblocks
+area: Core

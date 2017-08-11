@@ -1,0 +1,4 @@
+key: sisea.solr.hostname
+value: 127.0.0.1
+namespace: sisea
+area: Solr

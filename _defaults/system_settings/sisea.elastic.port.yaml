@@ -1,0 +1,4 @@
+key: sisea.elastic.port
+value: '9200'
+namespace: sisea
+area: ElasticSearch

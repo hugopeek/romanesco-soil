@@ -1,0 +1,4 @@
+key: redactor.plugin_zoom
+xtype: modx-combo-boolean
+namespace: redactor
+area: Plugin

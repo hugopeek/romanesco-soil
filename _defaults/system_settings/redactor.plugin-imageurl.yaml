@@ -1,0 +1,4 @@
+key: redactor.plugin_imageurl
+xtype: modx-combo-boolean
+namespace: redactor
+area: Plugin

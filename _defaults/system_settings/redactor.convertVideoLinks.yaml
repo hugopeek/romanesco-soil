@@ -1,0 +1,4 @@
+key: redactor.convertVideoLinks
+xtype: modx-combo-boolean
+namespace: redactor
+area: Media

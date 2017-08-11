@@ -1,0 +1,7 @@
+id: 37
+key: logo_badge_path
+label: 'Logo badge path'
+xtype: modx-panel-tv-image
+description: 'This is a square variant of the logo, similar to the favicon.'
+sortorder: 1
+group: 4

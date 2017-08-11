@@ -1,0 +1,5 @@
+key: redactor.parse_parent_path_height
+value: '10'
+xtype: numberfield
+namespace: redactor
+area: Media

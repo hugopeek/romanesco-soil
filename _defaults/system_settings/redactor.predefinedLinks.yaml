@@ -1,0 +1,4 @@
+key: redactor.predefinedLinks
+xtype: textarea
+namespace: redactor
+area: Editor

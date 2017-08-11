@@ -1,0 +1,4 @@
+key: contentblocks.sanitize_pattern
+value: '/([[:alnum:]_\.-]*)/'
+namespace: contentblocks
+area: Sanitize

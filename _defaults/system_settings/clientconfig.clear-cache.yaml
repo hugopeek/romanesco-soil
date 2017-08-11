@@ -1,0 +1,5 @@
+key: clientconfig.clear_cache
+value: '1'
+xtype: combo-boolean
+namespace: clientconfig
+area: Default

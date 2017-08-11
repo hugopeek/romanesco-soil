@@ -1,0 +1,7 @@
+id: 24
+key: social_twitter
+label: 'Twitter account'
+xtype: textfield
+description: 'Only fill in the name of the Twitter account here (so no full URL). This accountname can then be used for shares and @mentions.'
+sortorder: 1
+group: 6

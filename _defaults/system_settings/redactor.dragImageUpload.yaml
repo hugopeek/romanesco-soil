@@ -1,0 +1,5 @@
+key: redactor.dragImageUpload
+value: '1'
+xtype: modx-combo-boolean
+namespace: redactor
+area: Media

@@ -1,0 +1,5 @@
+key: contentblocks.debug
+value: '0'
+xtype: numberfield
+namespace: contentblocks
+area: Core

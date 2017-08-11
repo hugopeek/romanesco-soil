@@ -1,0 +1,4 @@
+key: phpthumbof.remote_timeout
+value: '5'
+namespace: phpthumbof
+area: Other

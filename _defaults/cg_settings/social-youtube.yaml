@@ -1,0 +1,7 @@
+id: 25
+key: social_youtube
+label: 'Youtube channel'
+xtype: textfield
+description: 'Please fill in the complete URL (including http(s)://).'
+sortorder: 4
+group: 6

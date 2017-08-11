@@ -1,0 +1,5 @@
+key: seopro.allowbranding
+value: '0'
+xtype: combo-boolean
+namespace: seopro
+area: general

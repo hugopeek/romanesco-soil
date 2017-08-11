@@ -1,0 +1,4 @@
+key: pthumb.ptcache_images_basedir
+value: uploads/img
+namespace: phpthumbof
+area: 'Cache [pThumb]'

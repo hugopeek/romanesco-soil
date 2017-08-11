@@ -1,0 +1,4 @@
+key: contentblocks.image.hash_name
+xtype: modx-combo-boolean
+namespace: contentblocks
+area: 'Input: Image'

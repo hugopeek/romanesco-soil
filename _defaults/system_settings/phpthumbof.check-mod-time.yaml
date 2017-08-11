@@ -1,0 +1,4 @@
+key: phpthumbof.check_mod_time
+xtype: combo-boolean
+namespace: phpthumbof
+area: 'Cache [common]'

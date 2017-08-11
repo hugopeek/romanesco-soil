@@ -1,0 +1,7 @@
+id: 18
+key: overview_img_fallback
+label: 'Fallback image for overviews'
+xtype: modx-panel-tv-image
+description: ''
+sortorder: 15
+group: 4

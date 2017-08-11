@@ -1,0 +1,4 @@
+key: which_editor
+value: Redactor
+xtype: modx-combo-rte
+area: editor

@@ -1,0 +1,4 @@
+key: redactor.uploadcare_pub_key
+value: demopublickey
+namespace: redactor
+area: Uploadcare

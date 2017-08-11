@@ -1,0 +1,4 @@
+key: redactor.pastePlainText
+xtype: modx-combo-boolean
+namespace: redactor
+area: Editor

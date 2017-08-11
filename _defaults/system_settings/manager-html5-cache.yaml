@@ -1,0 +1,4 @@
+key: manager_html5_cache
+value: '0'
+xtype: combo-boolean
+area: manager

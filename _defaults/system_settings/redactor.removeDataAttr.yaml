@@ -1,0 +1,4 @@
+key: redactor.removeDataAttr
+xtype: modx-combo-boolean
+namespace: redactor
+area: Markup
