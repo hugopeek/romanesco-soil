@@ -16,11 +16,9 @@
 config.core.php
 ht.access
 index.php
-robots.txt
 
 /assets/semantic/src/definitions/
 /assets/semantic/src/themes/*
-!assets/semantic/src/themes/romanesco/
 !assets/semantic/src/themes/project/
 /assets/semantic/tasks/
 /assets/src/vendors/
@@ -28,6 +26,9 @@ robots.txt
 
 /packages/
 /_backup/
+/_romanesco/
 
 .extras.io.key
 .modmore.com.key
+
+robots.txt
