@@ -1,8 +1,0 @@
-id: 28
-template: 5
-label: Emailaddress
-name: tv_contact_email
-width: 50
-editor: textfield
-position: 9
-sort_type: null

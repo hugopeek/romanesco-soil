@@ -1,9 +1,0 @@
-id: 2
-name: logo
-description: ''
-category: a_presentation
-properties: 'a:0:{}'
-
------
-
-<a class="brand logo" href="[[~[[++site_start]]]]" title="[[%romanesco.menu.logo_title]]">[[++site_name]]</a>

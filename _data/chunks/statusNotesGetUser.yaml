@@ -1,9 +1,0 @@
-id: 255
-name: statusNotesGetUser
-description: ''
-category: a_hub
-properties: 'a:0:{}'
-
------
-
-[[+modx.user.id]]

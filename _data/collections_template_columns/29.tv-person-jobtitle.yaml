@@ -1,8 +1,0 @@
-id: 29
-template: 5
-label: Jobtitle
-name: tv_person_jobtitle
-width: 60
-editor: textfield
-position: 8
-sort_type: null

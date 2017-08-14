@@ -1,8 +1,0 @@
-id: 2
-constraint_field: template
-constraint_value: '9'
-default_template: '2'
-target_layout: 15
-target_field: 6
-target_column: main
-sortorder: 1
