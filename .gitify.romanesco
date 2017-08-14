@@ -3,9 +3,11 @@
 # NB! Projects need their own .gitify file! This config is only used to export
 # the Soil parent installation on which new projects can be based.
 
-data_directory: _data/
-data:
+# Romanesco data is saved in a different folder than the project data.
+# This data should only be built by Gitify inside a project, never extracted!
+data_directory: _romanesco/
 
+data:
     # Contexts
     contexts:
         class: modContext
