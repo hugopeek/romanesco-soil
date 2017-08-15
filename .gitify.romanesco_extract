@@ -19,12 +19,12 @@ data:
             - key
         exclude_keys:
             - editedon
+
+        # Only include settings for Hub and Global contexts
         where:
-            - 'key:NOT IN':
-                - 'site_url'
-                - 'base_url'
-                - 'http_host'
-                - 'site_start'
+            - 'context_key:IN':
+                - 'hub'
+                - 'global'
 
     # Basic elements
     categories:
@@ -165,6 +165,8 @@ data:
     access_policies:
         class: modAccessPolicy
         primary: name
+        where:
+            - 'name:NOT LIKE': 'ContentBlocks%'
     access_resource_groups:
         class: modAccessResourceGroup
         primary: id
