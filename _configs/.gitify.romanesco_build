@@ -1,0 +1,435 @@
+# Gitify configuration for this project
+# NB! Replace .gitify with this version after cloning Romanesco
+
+# Romanesco data is saved in a different folder than the project data.
+# This data should only be built by Gitify inside a project, never extracted!
+# Don't use build --force, as this will erase all your project data!
+data_directory: _romanesco/
+
+data:
+    # Contexts
+    contexts:
+        class: modContext
+        primary: key
+
+        # Only build the default ones, otherwise custom contexts will be deleted
+        where:
+            - 'key:IN':
+                - 'web'
+                - 'mgr'
+                - 'global'
+                - 'hub'
+    context_settings:
+        class: modContextSetting
+        primary:
+            - context_key
+            - key
+        exclude_keys:
+            - editedon
+
+        # Only include settings for Hub and Global contexts
+        where:
+            - 'context_key:IN':
+                - 'hub'
+                - 'global'
+
+    # Basic elements
+    categories:
+        class: modCategory
+        primary:
+            - id
+            - category
+        truncate_on_force:
+            - modCategoryClosure
+
+        # Exclude everything above the 100K autoincrement threshold
+        where:
+            - 'id:NOT LIKE': '______'
+    templates:
+        class: modTemplate
+        primary: templatename
+
+        # Uncomment the exclude_keys below if you are loading packages with GPM
+        # This ensures local paths of static files will not be copied to remote
+        #exclude_keys:
+        #    - static
+        #    - static_file
+
+        # Exclude default template when extracting a fresh MODX installation
+        # Exclude everything above the 100K autoincrement threshold
+        where:
+            - 'templatename:NOT IN': [BaseTemplate]
+            - 'id:NOT LIKE': '______'
+    template_variables:
+        class: modTemplateVar
+        primary: name
+        where:
+            - 'id:NOT LIKE': '______'
+    template_variables_access:
+        class: modTemplateVarTemplate
+        primary:
+            - tmplvarid
+            - templateid
+        where:
+            - 'tmplvarid:NOT LIKE': '______'
+    chunks:
+        class: modChunk
+        primary: name
+        #exclude_keys:
+        #    - static
+        #    - static_file
+        where:
+            - 'id:NOT LIKE': '______'
+    snippets:
+        class: modSnippet
+        primary: name
+        extension: .php
+        #exclude_keys:
+        #    - static
+        #    - static_file
+        where:
+            - 'id:NOT LIKE': '______'
+    plugins:
+        class: modPlugin
+        primary: name
+        extension: .php
+        #exclude_keys:
+        #    - static
+        #    - static_file
+        where:
+            - 'id:NOT LIKE': '______'
+    #plugin_events:
+    #    class: modPluginEvent
+    #    primary:
+    #        - pluginid
+    #        - event
+
+    # MODX config
+    #element_property_set:
+    #    class: modElementPropertySet
+    #    primary:
+    #        - element
+    #        - element_class
+    #        - property_set
+    #events:
+    #    class: modEvent
+    #    primary: name
+    #extension_packages:
+    #    class: modExtensionPackage
+    #    primary: namespace
+    #    exclude_keys:
+    #        - created_at
+    #        - updated_at
+    media_sources:
+        class: modMediaSource
+        primary: name
+        where:
+            - 'id:NOT LIKE': '______'
+    media_sources_elements:
+        class: sources.modMediaSourceElement
+        primary:
+            - source
+            - object
+            - object_class
+            - context_key
+        where:
+            - 'object:NOT LIKE': '______'
+    menus:
+        class: modMenu
+        primary: text
+        where:
+            'namespace:IN':
+                - 'patternlab'
+                - 'romanesco'
+                - 'romanescobackyard'
+    #namespaces:
+    #    class: modNamespace
+    #    primary: name
+    #    where:
+    #        'name:NOT IN':
+    #            - 'gitpackagemanagement'
+    #            - 'patternlab'
+    property_set:
+        class: modPropertySet
+        primary: name
+        where:
+            - 'id:NOT LIKE': '______'
+
+    # System settings
+    # These settings where moved to a default / run once config instead
+
+    # User config
+    access_context:
+        class: modAccessContext
+        primary: id
+        where:
+            - 'id:NOT LIKE': '______'
+    access_media_source:
+        class: sources.modAccessMediaSource
+        primary: id
+        where:
+            - 'id:NOT LIKE': '______'
+    access_policies:
+        class: modAccessPolicy
+        primary: name
+        where:
+            - 'id:NOT LIKE': '______'
+    access_resource_groups:
+        class: modAccessResourceGroup
+        primary: id
+        where:
+            - 'id:NOT LIKE': '______'
+    dashboards:
+        class: modDashboard
+        primary:
+            - id
+            - name
+        where:
+            - 'id:NOT LIKE': '______'
+    dashboard_widgets:
+        class: modDashboardWidget
+        primary: id
+        where:
+            - 'id:NOT LIKE': '______'
+    dashboard_widget_placement:
+        class: modDashboardWidgetPlacement
+        primary:
+            - dashboard
+            - widget
+        where:
+            - 'dashboard:NOT LIKE': '______'
+    #document_groups:
+    #    class: modResourceGroupResource
+    #    primary: id
+    #documentgroup_names:
+    #    class: modResourceGroup
+    #    primary: name
+    fc_profiles:
+        class: modFormCustomizationProfile
+        primary: name
+        where:
+            - 'id:NOT LIKE': '______'
+    fc_profiles_usergroups:
+        class: modFormCustomizationProfileUserGroup
+        primary:
+            - usergroup
+            - profile
+        where:
+            - 'profile:NOT LIKE': '______'
+    fc_sets:
+        class: modFormCustomizationSet
+        primary: id
+        where:
+            - 'id:NOT LIKE': '______'
+    fc_action_dom:
+        class: modActionDom
+        primary:
+            - set
+            - name
+        where:
+            - 'id:NOT LIKE': '______'
+    member_groups:
+        class: modUserGroupMember
+        primary: id
+        where:
+            - 'id:NOT LIKE': '______'
+    membergroup_names:
+        class: modUserGroup
+        primary: name
+        where:
+            - 'id:NOT LIKE': '______'
+    usergroup_roles:
+        class: modUserGroupRole
+        primary: name
+        where:
+            - 'id:NOT LIKE': '______'
+    usergroup_settings:
+        class: modUserGroupSetting
+        primary:
+            - group
+            - key
+        exclude_keys:
+            - editedon
+        where:
+            - 'group:NOT LIKE': '______'
+
+    # ContentBlocks
+    cb_fields:
+        class: cbField
+        primary:
+            - id
+            - name
+        package: contentblocks
+        where:
+            - 'id:NOT LIKE': '______'
+    cb_layouts:
+        class: cbLayout
+        primary:
+            - id
+            - name
+        where:
+            - 'id:NOT LIKE': '______'
+    cb_templates:
+        class: cbTemplate
+        primary:
+            - id
+            - name
+        where:
+            - 'id:NOT LIKE': '______'
+    cb_categories:
+        class: cbCategory
+        primary:
+            - id
+            - name
+        where:
+            - 'id:NOT LIKE': '______'
+    cb_defaults:
+        class: cbDefault
+        primary: id
+        where:
+            - 'id:NOT LIKE': '______'
+
+    # ClientConfig
+    # These settings where moved to a default / run once config instead
+
+    # Collections
+    collections_settings:
+        class: CollectionSetting
+        primary:
+            - id
+            - collection
+        package: collections
+        where:
+            - 'id:NOT LIKE': '______'
+    collections_templates:
+        class: CollectionTemplate
+        primary:
+            - id
+            - name
+        where:
+            - 'id:NOT LIKE': '______'
+    collections_template_columns:
+        class: CollectionTemplateColumn
+        primary:
+            - id
+            - name
+        where:
+            - 'id:NOT LIKE': '______'
+    #collections_resource_template:
+    #    class: CollectionResourceTemplate
+    #    primary:
+    #        - collection_template
+    #        - resource_template
+    #collections_selections:
+    #    class: CollectionSelection
+    #    primary:
+    #        - collection
+    #        - resource
+
+    # QuickStartButtons
+    qsb_buttons:
+        class: qsbButton
+        primary: set
+        package: quickstartbuttons
+        where:
+            - 'id:NOT LIKE': '______'
+    #qsb_icons:
+    #    class: qsbIcon
+    #    primary: name
+    qsb_sets:
+        class: qsbSet
+        primary: name
+        where:
+            - 'id:NOT LIKE': '______'
+    qsb_usergroups:
+        class: qsbSetUserGroup
+        primary:
+            - usergroup
+            - set
+        where:
+            - 'set:NOT LIKE': '______'
+
+    # MIGX
+    migx_formtab:
+        class: migxFormtab
+        primary:
+            - id
+            - caption
+        package: migx
+        where:
+            - 'id:NOT LIKE': '______'
+    migx_formtab_field:
+        class: migxFormtabField
+        primary:
+            - id
+            - field
+        where:
+            - 'id:NOT LIKE': '______'
+    migx_config_element:
+        class: migxConfigElement
+        primary: id
+        where:
+            - 'id:NOT LIKE': '______'
+    migx_element:
+        class: migxElement
+        primary: id
+        where:
+            - 'id:NOT LIKE': '______'
+    migx_config:
+        class: migxConfig
+        primary:
+            - id
+            - name
+        exclude_keys:
+            - editedby
+            - editedon
+        where:
+            - 'id:NOT LIKE': '______'
+
+packages:
+    modx.com:
+        service_url: http://rest.modx.com/extras/
+        packages:
+            - ace
+            - collections
+            - formit
+            - getcache
+            - getpage
+            - getresources
+            - hits
+            - if
+            - imageplus
+            - migx
+            - pdotools
+            - pthumb
+            - renderresources
+            - rowboat
+            - seopro
+            - setinputoptions
+            - simplesearch
+            - svgsanitizer
+            - switch
+            - tagger
+            - twitterx
+            - ultimateparent
+            - xrouting
+
+    modmore.com:
+        service_url: https://rest.modmore.com/
+        username: YOUR_USERNAME_HERE
+        api_key: .modmore.com.key
+        packages:
+            - blockdown
+            - clientconfig
+            - contentblocks
+            - quickstartbuttons
+            - redactor
+
+    #extras.io:
+    #    service_url: https://rest.extras.io/v1/
+    #    username: YOUR_USERNAME_HERE
+    #    api_key: .extras.io.key
+    #    packages:
+    #        - romanesco-0.10.0-pl
+    #        - romanescobackyard-0.1.1-pl
+    #        - cbheadingimage-0.2.1-pl

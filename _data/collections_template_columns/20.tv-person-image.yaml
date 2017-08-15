@@ -1,8 +1,0 @@
-id: 20
-template: 4
-label: Image
-name: tv_person_image
-width: 50
-renderer: ImagePlus.MIGX_Renderer
-position: 8
-sort_type: null

@@ -1,8 +1,0 @@
-id: 9
-key: sidebar_position
-label: 'Sidebar position'
-xtype: modx-combo
-description: ''
-sortorder: 6
-group: 2
-options: Left==left||Right==right

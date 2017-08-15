@@ -1,9 +1,0 @@
-id: 267
-name: infoNameOrganization
-description: ''
-category: a_information
-properties: 'a:0:{}'
-
------
-
-<div class="[[+classes]]" property="publisher" typeof="Organization">[[+organization_name:empty=`[[#[[+organization_id]].pagetitle]]`]]</div>

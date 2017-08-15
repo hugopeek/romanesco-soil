@@ -1,9 +1,0 @@
-id: 17
-name: headingBasic
-description: ''
-category: a_content
-properties: 'a:0:{}'
-
------
-
-<[[+level]] class="ui [[+alignment]] header">[[+value]]</[[+level]]>

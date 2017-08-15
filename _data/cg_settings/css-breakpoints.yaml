@@ -1,7 +1,0 @@
-id: 34
-key: css_breakpoints
-label: 'Responsive CSS breakpoints'
-xtype: textfield
-description: 'Enter the breakpoints used by Semantic UI here, so they can be incorporated into some backend functionalities (such as rendering responsive images). Add breakpoints as a comma separated list, starting with the smallest pixel value. You can find these values in the SUI site.variables file.'
-sortorder: 20
-group: 2

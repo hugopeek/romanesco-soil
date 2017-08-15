@@ -1,6 +1,0 @@
-text: romanesco.menu.clear_cache_gallery_title
-parent: romanesco.menu.clear_cache_all_title
-menuindex: 2
-handler: "var topic = {\n    overviews: \"/getcache/cache/partition/refresh/gallery/\"\n};\n\nthis.console = MODx.load({\n    xtype: 'modx-console'\n    ,register: 'mgr'\n    ,topic: topic\n    ,show_filename: 0\n});\n\nthis.console.show(Ext.getBody());\n\nMODx.Ajax.request({\n    url: MODx.config.assets_url+'components/getcache/connector.php'\n    ,params: { action: 'cache/partition/refresh', partitions: 'gallery', register: 'mgr' , topic: topic }\n    ,listeners: {\n        'success':{fn:function() {\n            this.console.fireEvent('complete');\n        },scope:this}\n    }\n});\n\nreturn false;"
-permissions: empty_cache
-namespace: romanescobackyard

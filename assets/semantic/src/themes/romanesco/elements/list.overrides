@@ -1,7 +1,0 @@
-/*******************************
-         Theme Overrides
-*******************************/
-
-.ui.list > .item > .avatar {
-    padding-right: 0 !important; // Fix bug with image not being square
-}

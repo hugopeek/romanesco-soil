@@ -1,0 +1,50 @@
+## Gitify configuration for data that needs to be set only once on installation.
+
+data_directory: _defaults/
+
+data:
+    system_settings:
+        class: modSystemSetting
+        primary: key
+        exclude_keys:
+            - editedon
+
+        # Exclude all system settings that could contain project-specific paths
+        # Exclude all settings for login names / passwords / keys / access tokens
+        # Exclude all language or timezone related settings
+        # Exclude MODX version, since that could differ per install
+        where:
+            - 'key:NOT IN':
+                - 'extension_packages'
+                - 'settings_version'
+                - 'email_sender'
+                - 'error_page'
+                - 'formit.form_encryptkey'
+                - 'romanesco.pattern_container_id'
+                - 'romanesco.backyard_container_id'
+                - 'romanesco.dashboard_id'
+            - 'AND:key:NOT LIKE': 'mail_%'
+            - 'AND:key:NOT LIKE': 'gitpackagemanagement.%'
+            - 'AND:key:NOT LIKE': '%.assets_path'
+            - 'AND:key:NOT LIKE': '%.assets_url'
+            - 'AND:key:NOT LIKE': '%.core_path'
+
+    # ClientConfig
+    cg_groups:
+        class: cgGroup
+        primary: label
+        package: clientconfig
+    cg_settings:
+        class: cgSetting
+        primary: key
+
+    # Create Romanesco namespace, so System Settings and Lexicons become visible
+    namespaces:
+        class: modNamespace
+        primary: name
+        exclude_keys:
+            - path
+            - assets_path
+        where:
+            'name:IN':
+                - 'romanesco'

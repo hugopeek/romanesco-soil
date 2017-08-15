@@ -1,8 +1,0 @@
-id: 31
-template: 5
-label: 'Phone number'
-name: tv_contact_phone
-width: 50
-editor: textfield
-position: 10
-sort_type: null

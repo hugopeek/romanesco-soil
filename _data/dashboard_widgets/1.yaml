@@ -1,8 +1,0 @@
-id: 1
-name: w_newsfeed
-description: w_newsfeed_desc
-type: file
-content: '[[++manager_path]]controllers/default/dashboard/widget.modx-news.php'
-namespace: core
-name_trans: w_newsfeed
-description_trans: w_newsfeed_desc
