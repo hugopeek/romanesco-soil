@@ -2,6 +2,6 @@
   "name": "romanesco",
   "version": "1.0.0",
   "dependencies": {
-    "semantic-ui": "^2.2.4"
+    "semantic-ui": "^2.2.13"
   }
 }
