@@ -1,5 +1,18 @@
 # Changelog for the Romanesco Soil root installation
 
+## Romanesco Soil v1.0.0
+Released on August 15, 2017
+
+- [Git] Move core elements to different repository
+- [Git] Move Semantic UI theme to different repository
+
+Romanesco Soil should now be considered a boilerplate installation only.
+
+The Gitify data files that contain the core elements have moved to a separate
+repository. This way, project updates don't need to be rebased anymore on top of
+Romanesco updates. The default system and config settings are still included,
+because they only need to be set once on installation. Same for SUI theme.
+
 ## Romanesco Soil v0.3.1
 Released on July 25, 2017
 
