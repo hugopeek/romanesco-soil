@@ -1,4 +1,5 @@
 key: redactor.date_images
+value: '0'
 xtype: modx-combo-boolean
 namespace: redactor
 area: Media
