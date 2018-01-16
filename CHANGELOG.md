@@ -3,12 +3,18 @@
 ## Romanesco Soil v1.1.0
 Released on January 16, 2018
 
+> Patterns: 0.11.3-pl
+> Backyard: 0.5.1-pl
+
 - [Configuration] Add settings to change styling theme
 - [Configuration] Reorganize and evaluate existing settings
 - [MODX] Add separate media source for theme images
 
 ## Romanesco Soil v1.0.0
 Released on August 15, 2017
+
+> Patterns: 0.11.1-pl
+> Backyard: 0.4.0-pl
 
 - [Git] Move core elements to different repository
 - [Git] Move Semantic UI theme to different repository
