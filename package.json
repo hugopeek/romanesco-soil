@@ -2,6 +2,9 @@
   "name": "romanesco",
   "version": "1.0.0",
   "dependencies": {
-    "semantic-ui": "^2.2.13"
+    "gulp": "^3.9.1",
+    "gulp-real-favicon": "^0.2.2",
+    "semantic-ui": "^2.2.13",
+    "yargs": "^10.0.3"
   }
 }
