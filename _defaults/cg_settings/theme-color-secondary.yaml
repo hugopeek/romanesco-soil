@@ -1,0 +1,7 @@
+id: 39
+key: theme_color_secondary
+label: 'Secondary theme color'
+xtype: colorpickerfield
+description: ''
+sortorder: 11
+group: 4

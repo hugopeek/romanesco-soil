@@ -1,5 +1,12 @@
 # Changelog for the Romanesco Soil root installation
 
+## Romanesco Soil v1.1.0
+Released on January 16, 2018
+
+- [Configuration] Add settings to change styling theme
+- [Configuration] Reorganize and evaluate existing settings
+- [MODX] Add separate media source for theme images
+
 ## Romanesco Soil v1.0.0
 Released on August 15, 2017
 

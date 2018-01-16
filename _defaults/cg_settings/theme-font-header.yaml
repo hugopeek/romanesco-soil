@@ -1,0 +1,7 @@
+id: 43
+key: theme_font_header
+label: 'Heading font'
+xtype: textfield
+description: 'Specify a Google webfont for all headings on the site. You can enter just the name (i.e.: Ubuntu), or a string containing font weights and character subset too. Use the following syntax for this: Ubuntu|300,700,300italic,700italic|latin,cyrillic'
+sortorder: 20
+group: 4

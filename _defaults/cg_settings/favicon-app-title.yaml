@@ -2,6 +2,6 @@ id: 13
 key: favicon_app_title
 label: 'Favicon application title'
 xtype: textfield
-description: ''
-sortorder: 13
-group: 4
+description: '[DEPRECATED]'
+sortorder: 62
+group: 3

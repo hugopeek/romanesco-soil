@@ -3,5 +3,5 @@ key: head_additional
 label: 'Additional HEAD code'
 xtype: textarea
 description: 'Add extra HTML lines to all pages, such as additional stylesheets or extra metadata. You don''t have to load any Analytics code yourself.'
-sortorder: 30
-group: 2
+sortorder: 10
+group: 3

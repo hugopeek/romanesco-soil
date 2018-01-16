@@ -1,7 +1,7 @@
 id: 21
 key: google_analytics_ua
-label: 'Google Analytics UA code'
+label: 'Google Analytics tracking ID'
 xtype: textfield
-description: ''
+description: 'Leave empty if you don''t want to use Google Analytics. If you want to track multiple contexts with different tracking IDs, you''ll have to add a google_analytics_ua setting to each context manually.'
 sortorder: 1
 group: 5

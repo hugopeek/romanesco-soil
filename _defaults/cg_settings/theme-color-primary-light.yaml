@@ -1,0 +1,7 @@
+id: 40
+key: theme_color_primary_light
+label: 'Primary theme color (Light)'
+xtype: colorpickerfield
+description: 'A light variant, for slightly tinted backgrounds.'
+sortorder: 15
+group: 4

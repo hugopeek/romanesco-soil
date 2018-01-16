@@ -1,0 +1,9 @@
+id: 47
+key: theme_page_background
+label: 'Page background color'
+xtype: colorpickerfield
+description: ''
+sortorder: 50
+value: ffffff
+group: 4
+options: "Tiny==1.1||\nSmall==1.2||\nMedium==1.3||\nLarge==1.5||\nHuge==1.8"

@@ -1,8 +1,9 @@
 id: 16
 key: header_background_default
 label: 'Default header background'
-xtype: textfield
-description: 'Enter a class name, or combination of class names here. For example: ''inverted primary-color''.'
-sortorder: 30
+xtype: modx-combo
+description: 'You can always change the header background on each page later if you want.'
+sortorder: 51
 value: 'inverted primary-color'
 group: 4
+options: '[[$cbLayoutBackgrounds:nl2br:replace=`<br />==||`:fbStripNonAlpha:replace=`[equals]==[equals][equals]`:fbResetNonAlpha]]'

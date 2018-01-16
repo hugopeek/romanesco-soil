@@ -1,0 +1,7 @@
+id: 41
+key: theme_color_secondary_light
+label: 'Secondary theme color (Light)'
+xtype: colorpickerfield
+description: 'A light variant, for slightly tinted backgrounds.'
+sortorder: 17
+group: 4

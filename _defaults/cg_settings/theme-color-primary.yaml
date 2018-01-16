@@ -1,0 +1,7 @@
+id: 38
+key: theme_color_primary
+label: 'Primary theme color'
+xtype: colorpickerfield
+description: ''
+sortorder: 10
+group: 4

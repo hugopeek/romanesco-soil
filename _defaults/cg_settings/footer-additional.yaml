@@ -3,5 +3,5 @@ key: footer_additional
 label: 'Additional BODY code'
 xtype: textarea
 description: 'Add extra HTML lines to all pages, such as additional JS libraries. These lines will be placed just before the closing body tag. You don''t have to load any Analytics code yourself.'
-sortorder: 31
-group: 2
+sortorder: 11
+group: 3

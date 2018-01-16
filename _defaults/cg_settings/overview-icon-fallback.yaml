@@ -3,5 +3,5 @@ key: overview_icon_fallback
 label: 'Fallback icon for overviews'
 xtype: modx-panel-tv-image
 description: ''
-sortorder: 16
-group: 4
+sortorder: 32
+group: 8

@@ -1,7 +1,8 @@
 id: 1
 key: client_email
-label: 'Primary emailaddress'
+label: 'Primary email address'
 xtype: textfield
 description: 'All emails coming from the website will be sent to this address.'
 is_required: 1
+value: comms@fractal-farming.com
 group: 1

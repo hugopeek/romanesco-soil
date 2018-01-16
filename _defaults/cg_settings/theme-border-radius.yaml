@@ -1,0 +1,8 @@
+id: 50
+key: theme_border_radius
+label: 'Border radius'
+xtype: numberfield
+description: 'Average border radius (in pixels). The theme will still select a lower or higher value (relative to this setting) if that suits the context better. If set to 0, all visual elements will be square by default.'
+sortorder: 60
+value: '3'
+group: 4
