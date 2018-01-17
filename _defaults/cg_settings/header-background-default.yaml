@@ -7,3 +7,4 @@ sortorder: 51
 value: 'inverted primary-color'
 group: 4
 options: '[[$cbLayoutBackgrounds:nl2br:replace=`<br />==||`:fbStripNonAlpha:replace=`[equals]==[equals][equals]`:fbResetNonAlpha]]'
+process_options: 1

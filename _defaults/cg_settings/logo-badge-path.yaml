@@ -5,3 +5,4 @@ xtype: modx-panel-tv-image
 description: 'Upload a square version of the logo. This will be used for the favicon and in other locations where a badge app fits in.'
 sortorder: 1
 group: 4
+source: 15

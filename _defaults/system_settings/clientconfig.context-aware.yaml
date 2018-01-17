@@ -1,0 +1,4 @@
+key: clientconfig.context_aware
+xtype: combo-boolean
+namespace: clientconfig
+area: Default

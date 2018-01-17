@@ -4,3 +4,4 @@ label: Logo
 xtype: modx-panel-tv-image
 description: 'Upload a logo for your website. For the sharpest result, provide an SVG file. If that''s not an option, then PNG is your best bet. JPG files are allowed, but should be avoided.'
 group: 4
+source: 15

@@ -7,3 +7,4 @@ sortorder: 31
 value: '1.25'
 group: 4
 options: '[[$themeScaleRatios]]'
+process_options: 1
