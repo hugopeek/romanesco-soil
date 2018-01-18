@@ -9,6 +9,10 @@ Released on January 16, 2018
 - [Configuration] Add settings to change styling theme
 - [Configuration] Reorganize and evaluate existing settings
 - [MODX] Add separate media source for theme images
+- [MODX] Add content type for CSS variables
+- [SemanticUI] Enable auto install option
+
+NB: this version requires ClientConfig 2.0.0-rc1 or higher to function as intended.
 
 ## Romanesco Soil v1.0.0
 Released on August 15, 2017
