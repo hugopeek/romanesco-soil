@@ -3,7 +3,7 @@ key: sidebar_position
 label: 'Sidebar position'
 xtype: modx-combo
 description: ''
-sortorder: 6
+sortorder: 20
 value: right
 group: 2
 options: Left==left||Right==right

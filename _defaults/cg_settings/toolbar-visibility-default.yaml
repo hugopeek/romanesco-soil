@@ -1,0 +1,9 @@
+id: 51
+key: toolbar_visibility_default
+label: 'Default toolbar visibility'
+xtype: modx-combo
+description: 'This can be overruled on each page if needed.'
+sortorder: 10
+value: '1'
+group: 2
+options: On==1||Off==0
