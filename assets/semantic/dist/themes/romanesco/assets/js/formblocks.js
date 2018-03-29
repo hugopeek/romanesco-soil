@@ -33,14 +33,13 @@ $('.ui.checkbox.collapsible')
             var
                 $listGroup      = $(this).closest('.radio.fields'),
                 $radioButtons   = $listGroup.find('.checkbox:not(.collapsible)'),
-                //$radioCollapse  = $listGroup.find('.checkbox.collapsible:not(.checked)'),
                 $target         = $(this).data('target')
-                //$state          = $(this).data('state')
             ;
 
             // Get data attribute from input field and show target
             $('#' + $target).removeClass('hidden');
 
+            // NB: This is for Other fields show/hide only!
             // If it's a list of radio buttons, callbacks won't work when you change the selection.
             // Instead, add a trigger to all the sibling radio buttons to hide the Other field again.
             if ($radioButtons) {
@@ -50,24 +49,6 @@ $('.ui.checkbox.collapsible')
                     }
                 });
             }
-
-            // If it's a group of collapsible radio buttons, only 1 target can be visible at any time.
-            //if ($radioCollapse) {
-            //    //$('#' + $target).removeClass('hidden');
-            //
-            //    console.log($radioCollapse);
-            //
-            //    $radioCollapse.checkbox({
-            //        onChecked: function() {
-            //            //$radioCollapse.addClass('hidden');
-            //            $('#' + $target).removeClass('hidden');
-            //        }
-            //        //onUnchecked: function() {
-            //        //    console.log('doeg');
-            //        //    $('#' + $target).addClass('hidden');
-            //        //}
-            //    });
-            //}
         },
 
         // Checkboxes respond to the onUnchecked callback, so use that to hide the Other field again.
@@ -75,6 +56,15 @@ $('.ui.checkbox.collapsible')
             var $target = $(this).data('target');
 
             $('#' + $target).addClass('hidden');
+        },
+
+        // Find currently checked radio button and hide its target just before it is unchecked.
+        // This is a workaround for the onUnchecked callback not working on radios.
+        // See this issue for details https://github.com/Semantic-Org/Semantic-UI/issues/4407
+        beforeChecked: function() {
+            $(this).closest('.radio.fields').find('input:checked').each(function () {
+                $('#' + $(this).data('target')).addClass('hidden');
+            });
         }
     })
 ;
@@ -85,6 +75,8 @@ $('.ui.checkbox.collapsible')
 
 // Control checkbox/radio selections through different link elements.
 // Note that with this particular solution, the checkbox must be inside the link.
+
+//@todo: example please...
 
 // Find the master switch and set selection on click
 $('.ui.with.checkboxes.inside .master')
