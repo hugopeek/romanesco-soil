@@ -1,5 +1,13 @@
 # Changelog for the Romanesco Soil root installation
 
+## Romanesco Soil v1.2.0
+Released on June 6, 2018
+
+> Patterns: 0.12.0-pl
+> Backyard: 0.5.1-pl
+
+- [SemanticUI] Use theme override for comments
+
 ## Romanesco Soil v1.1.0
 Released on January 16, 2018
 
