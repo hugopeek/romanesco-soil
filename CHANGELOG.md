@@ -1,5 +1,8 @@
 # Changelog for the Romanesco Soil root installation
 
+These changes only affect new installations. For changes that are applied on
+every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
+
 ## Romanesco Soil v1.2.0
 Released on June 6, 2018
 
