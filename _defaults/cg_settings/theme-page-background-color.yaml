@@ -1,5 +1,5 @@
 id: 47
-key: theme_page_background
+key: theme_page_background_color
 label: 'Page background color'
 xtype: colorpickerfield
 description: ''

@@ -1,0 +1,6 @@
+id: 10
+name: MJML
+description: 'MJML newsletter'
+mime_type: text/plain
+file_extensions: .mjml
+headers: 'a:0:{}'

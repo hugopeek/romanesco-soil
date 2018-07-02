@@ -1,0 +1,6 @@
+id: 11
+name: Markdown
+description: 'Markdown formatting'
+mime_type: text/x-markdown
+file_extensions: ''
+headers: 'a:0:{}'

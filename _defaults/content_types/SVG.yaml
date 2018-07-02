@@ -1,0 +1,6 @@
+id: 12
+name: SVG
+description: 'SVG graphic'
+mime_type: image/svg+xml
+file_extensions: .svg
+headers: 'a:0:{}'

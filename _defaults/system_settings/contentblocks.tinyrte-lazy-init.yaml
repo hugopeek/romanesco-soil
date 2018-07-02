@@ -1,0 +1,4 @@
+key: contentblocks.tinyrte_lazy_init
+xtype: modx-combo-boolean
+namespace: contentblocks
+area: Core
