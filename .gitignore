@@ -17,6 +17,7 @@ config.core.php
 ht.access
 index.php
 
+/assets/semantic/src/local.less
 /assets/semantic/src/definitions/
 /assets/semantic/src/themes/*
 !assets/semantic/src/themes/project/
