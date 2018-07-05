@@ -172,6 +172,11 @@ $("#search-field i.link").click(function() {
     $("#search-field").submit();
 });
 
+// Submit login form
+$("#form-login .submit").click(function() {
+    $("#form-login").submit();
+});
+
 
 // Apply specific js through media queries
 // The media queries are matched with Semantic UI breakpoints by onMediaQuery.js
@@ -340,14 +345,18 @@ var queries = [
         context: ['mobile', 'tablet'],
         match: function () {
             $('body.detail #main > .ui.container')
-                .removeClass('grid')
                 .addClass('fluid')
+            ;
+            $('body.detail #main > .ui.grid.container')
+                .removeClass('grid')
             ;
         },
         unmatch: function () {
             // We're leaving mobile
             $('body.detail #main > .ui.container')
                 .removeClass('fluid')
+            ;
+            $('body.detail #main > .ui.grid.container')
                 .addClass('grid')
             ;
         }
