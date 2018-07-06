@@ -1,0 +1,5 @@
+key: romanesco.private_backyard
+value: '0'
+xtype: combo-boolean
+namespace: romanesco
+area: Users
