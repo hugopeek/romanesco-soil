@@ -1,0 +1,4 @@
+key: log_snippet_not_found
+value: '0'
+xtype: combo-boolean
+area: site
