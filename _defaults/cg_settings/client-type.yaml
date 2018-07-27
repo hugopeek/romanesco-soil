@@ -1,0 +1,9 @@
+id: 54
+key: client_type
+label: 'Primary entity'
+xtype: modx-combo
+description: 'Is this a project for an individual person, or an organization? This setting decides whether to present you to the outside world as "I" or "We".'
+is_required: 1
+value: organization
+group: 1
+options: "Person==person||\nOrganization==organization"

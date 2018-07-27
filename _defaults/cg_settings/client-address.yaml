@@ -1,0 +1,7 @@
+id: 53
+key: client_address
+label: 'Primary address'
+xtype: textarea
+description: ''
+sortorder: 10
+group: 1

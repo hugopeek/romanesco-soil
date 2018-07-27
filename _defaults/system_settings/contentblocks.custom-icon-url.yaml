@@ -1,4 +1,4 @@
 key: contentblocks.custom_icon_url
-value: '{assets_url}/img/icons/cb/'
+value: '{assets_url}/components/romanescobackyard/icons/cb/'
 namespace: contentblocks
 area: Core

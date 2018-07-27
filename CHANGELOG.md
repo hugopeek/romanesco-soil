@@ -3,6 +3,19 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v1.3.0
+Released on July 27, 2018
+
+> Patterns: 0.12.1-pl
+> Backyard: 0.6.0-pl
+
+- [Configuration] Add field for client address
+- [Configuration] Add setting to define client type (Person or Organization)
+- [Configuration] Add setting to define which social sharing options to display
+- [CB/Redactor] Change paths to custom icons and CSS
+- [ContentBlocks] Change default field for new pages to Rich Text
+- [MODX] Change default email sender
+
 ## Romanesco Soil v1.2.0
 Released on June 6, 2018
 

@@ -4,5 +4,6 @@ label: 'Primary email address'
 xtype: textfield
 description: 'All emails coming from the website will be sent to this address.'
 is_required: 1
+sortorder: 1
 value: comms@fractal-farming.com
 group: 1
