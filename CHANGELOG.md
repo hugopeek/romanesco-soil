@@ -3,6 +3,14 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v1.3.1
+Released on September 18, 2018
+
+> Patterns: 0.12.2-pl
+> Backyard: 0.6.0-pl
+
+- [SemanticUI] Update to version 2.4.0
+
 ## Romanesco Soil v1.3.0
 Released on July 27, 2018
 
