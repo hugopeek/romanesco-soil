@@ -1,16 +1,6 @@
 $(document)
     .ready(function() {
 
-        // Fix main to page on passing
-        //$('#menu').visibility({
-        //    type: 'fixed'
-        //});
-
-        // Fix submenu to page on passing
-        //$('#submenu').visibility({
-        //    type: 'fixed'
-        //});
-
         // Fix menu when passed
         $('.masthead')
             .visibility({
@@ -60,96 +50,6 @@ $(document)
                 offset: 70
             })
         ;
-
-        // Add inverted classes to elements inside inverted segments
-        $('.inverted.segment').each(function(){
-
-            // Isolate conditions that don't need inverted classes
-            var avoidSegments = $(this).find('.segment:not(.inverted)');
-            var avoidCards = $(this).find('.card');
-            var avoidTabs = $(this).find('.tabbed.menu');
-            var avoidAccordion = $(this).find('.accordion:not(.inverted)');
-            var avoidMessage = $(this).find('.message');
-
-            // Find elements one by one
-            // Individual conditions may apply
-            $(this).find('.header')
-                .not(avoidSegments.find('.header'))
-                .not(avoidCards.find('.header'))
-                .not(avoidTabs.find('.header'))
-                .not(avoidMessage.find('.header'))
-                .addClass('inverted')
-            ;
-
-            $(this).find('.grid')
-                .not(avoidSegments.find('.grid'))
-                .not(avoidCards.find('.grid'))
-                .not(avoidTabs.find('.grid'))
-                .addClass('inverted')
-            ;
-
-            $(this).find('a')
-                .not(avoidSegments.find('a'))
-                .not(avoidCards.find('a'))
-                .not(avoidTabs.find('a'))
-                .not(avoidAccordion.find('a'))
-                .not(avoidMessage.find('a'))
-                .not('.button')
-                .addClass('inverted')
-            ;
-
-            $(this).find('.button:not(.primary):not(.secondary)')
-                .not(avoidSegments.find('.button'))
-                .not(avoidCards.find('.button'))
-                .addClass('inverted')
-            ;
-
-            $(this).find('.basic.form')
-                .not(avoidSegments.find('.basic.form'))
-                .addClass('inverted')
-            ;
-
-            $(this).find('.lead')
-                .not(avoidSegments.find('.lead'))
-                .addClass('inverted')
-            ;
-
-            $(this).find('.quote')
-                .not(avoidSegments.find('.quote'))
-                .addClass('inverted')
-            ;
-
-            $(this).find('.divider')
-                .not(avoidSegments.find('.divider'))
-                .addClass('inverted')
-            ;
-
-            $(this).find('.accordion:not(.styled)')
-                .not(avoidSegments.find('.accordion'))
-                .addClass('inverted')
-            ;
-
-            // Prevent elements from having the same color as their parent background
-            if ($(this).hasClass('primary-color')) {
-                $(this).find('.button.primary')
-                    .not(avoidSegments.find('.button'))
-                    .not(avoidCards.find('.button'))
-                    .removeClass('basic')
-                    .addClass('inverted')
-                ;
-            }
-            if ($(this).hasClass('secondary-color')) {
-                $(this).find('.button.secondary')
-                    .not(avoidSegments.find('.button'))
-                    .not(avoidCards.find('.button'))
-                    .removeClass('basic')
-                    .addClass('inverted')
-                ;
-            }
-
-            // Add boxed class to elements inside inverted segments that need to retain their original styling
-            $(this).find('.leaflet-container a').addClass('boxed');
-        });
 
         // Hide elements with class .hidden
         $('.hidden.element').hide();

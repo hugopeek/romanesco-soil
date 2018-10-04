@@ -389,34 +389,35 @@ body:after {
   padding-top: 2em;
 }
 
-#content p a:not(.button):not(.image):not(.item),
-#content li a:not(.button):not(.image):not(.item),
-#content .lead a:not(.button):not(.image):not(.item),
-#content .content a:not(.button):not(.image):not(.item),
-#content .header.inverted a:not(.button):not(.image):not(.item),
-#content .header.sub a:not(.button):not(.image):not(.item) {
+p a:not(.button):not(.image):not(.item),
+li a:not(.button):not(.image):not(.item),
+.lead a:not(.button):not(.image):not(.item),
+.content a:not(.button):not(.image):not(.item),
+.header.inverted a:not(.button):not(.image):not(.item),
+.header.sub a:not(.button):not(.image):not(.item) {
   border-bottom: 1px dotted;
 }
 
-#content p a:not(.button):not(.image):not(.item):hover,
-#content li a:not(.button):not(.image):not(.item):hover,
-#content .lead a:not(.button):not(.image):not(.item):hover,
-#content .content a:not(.button):not(.image):not(.item):hover,
-#content .header.inverted a:not(.button):not(.image):not(.item):hover,
-#content .header.sub a:not(.button):not(.image):not(.item):hover {
+p a:not(.button):not(.image):not(.item):hover,
+li a:not(.button):not(.image):not(.item):hover,
+.lead a:not(.button):not(.image):not(.item):hover,
+.content a:not(.button):not(.image):not(.item):hover,
+.header.inverted a:not(.button):not(.image):not(.item):hover,
+.header.sub a:not(.button):not(.image):not(.item):hover {
   border-bottom: 1px solid;
 }
 
-#content .header a:not(.inverted) {
+.header a:not(.inverted),
+a.header:not(.inverted) {
   border-bottom: none !important;
 }
 
-#content a.inverted:not(.button):not(.boxed) {
+a.inverted:not(.button):not(.boxed) {
   color: #FFFFFF;
   border-bottom-color: rgba(255, 255, 255, 0.6);
 }
 
-#content a.inverted:not(.button):not(.boxed):hover {
+a.inverted:not(.button):not(.boxed):hover {
   border-bottom-color: #FFFFFF;
 }
 
@@ -16211,6 +16212,10 @@ ol.ui.horizontal.list li:before,
 
 .ui.list > .item > .avatar {
   padding-right: 0 !important;
+}
+
+.ui.list > .item > .avatar + .content {
+  width: auto;
 }
 
 /*******************************
