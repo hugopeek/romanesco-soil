@@ -1,9 +1,9 @@
-id: 52
-key: header_visibility_default
-label: 'Default header visibility'
+id: 57
+key: footer_visibility_default
+label: 'Default footer visibility'
 xtype: modx-combo
 description: 'This can be overruled on each page if needed.'
-sortorder: 50
+sortorder: 81
 value: '1'
 group: 9
 options: On==1||Off==0

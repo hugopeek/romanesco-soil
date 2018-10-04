@@ -3,5 +3,5 @@ key: theme_font_page
 label: 'Page font'
 xtype: textfield
 description: 'Specify a Google webfont for all regular content. The formatting is the same as described above for the heading font. If you want to use the same font as the headings, you only need to enter the font name here. And if you leave this empty, the fallback font will be used.'
-sortorder: 21
+sortorder: 41
 group: 4

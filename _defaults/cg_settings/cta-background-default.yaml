@@ -1,9 +1,9 @@
-id: 16
-key: header_background_default
-label: 'Default header background'
+id: 59
+key: cta_background_default
+label: 'Default CTA background'
 xtype: modx-combo
-description: 'You can always change the header background on each page later if you want.'
-sortorder: 30
+description: 'You can always change the background in the CTA itself if you want.'
+sortorder: 31
 value: 'inverted primary-color'
 group: 4
 options: '[[$cbLayoutBackgrounds:nl2br:replace=`<br />==||`:fbStripNonAlpha:replace=`[equals]==[equals][equals]`:fbResetNonAlpha]]'

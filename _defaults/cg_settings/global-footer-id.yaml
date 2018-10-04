@@ -1,0 +1,10 @@
+id: 56
+key: global_footer_id
+label: 'Default footer'
+xtype: modx-combo
+description: 'This can be overridden per page, or per context (by adding a global_footer_id context setting).'
+sortorder: 82
+value: '0'
+group: 9
+options: "--- Select a footer ---==0||\n[[pdoResources?\n    &parents=`[[++romanesco.footer_container_id]]`\n    &tpl=`@INLINE [[+pagetitle]]==[[+id]]`\n    &outputSeparator=`||`\n    &showHidden=`1`\n    &showUnpublished=`1`\n    &limit=`99`\n    &sortBy=`menuindex`\n    &sortDir=`ASC`\n]]"
+process_options: 1

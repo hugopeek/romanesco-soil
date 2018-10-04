@@ -3,7 +3,7 @@ key: theme_scale_ratio
 label: 'Scale ratio'
 xtype: modx-combo
 description: 'This setting controls the difference in size between various elements. A low scale ratio will keep things close together, whereas a high ratio will produce bold, beefy pages. Right now, this setting is only used for scaling headings based on the current font size, but it could be applied to other settings too in the future (margins, paddings, line heights).'
-sortorder: 31
+sortorder: 51
 value: '1.25'
 group: 4
 options: '[[$themeScaleRatios]]'
