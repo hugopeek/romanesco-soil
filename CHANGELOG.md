@@ -3,6 +3,18 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v1.3.2
+Released on October 4, 2018
+
+> Patterns: 0.12.3-pl
+> Backyard: 0.6.0-pl
+
+- [Configuration] Create Content category
+- [Configuration] Add settings for footer content and visibility
+- [Configuration] Load Collection renderers from Backyard assets folder
+- [SystemSettings] Set input ID for File CB setting
+- [SystemSettings] Fix incorrectly excluded page_id settings
+
 ## Romanesco Soil v1.3.1
 Released on September 18, 2018
 
