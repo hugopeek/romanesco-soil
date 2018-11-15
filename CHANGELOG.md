@@ -3,6 +3,20 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v1.4.0
+Released on November 15, 2018
+
+> Patterns: 0.13.0-pl
+> Backyard: 0.7.0-pl
+
+- [MODX] Add Content Purpose tab
+- [MODX] Improve Status tab
+- [Extras] Add SuperBoxSelect as dependency
+- [Extras] Update ContentBlocks to 1.8.2
+- [Extras] Update SimpleSearch to 2.0.2
+- [Extras] Remove Blockdown and SetInputOptions packages
+- [Gitify] Include custom db tables in extract
+
 ## Romanesco Soil v1.3.2
 Released on October 4, 2018
 
