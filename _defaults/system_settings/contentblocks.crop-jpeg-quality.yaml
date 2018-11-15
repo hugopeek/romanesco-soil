@@ -1,0 +1,4 @@
+key: contentblocks.crop_jpeg_quality
+value: '90'
+namespace: contentblocks
+area: 'Input: Image'

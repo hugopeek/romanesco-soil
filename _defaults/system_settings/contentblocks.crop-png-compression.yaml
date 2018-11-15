@@ -1,0 +1,4 @@
+key: contentblocks.crop_png_compression
+value: '9'
+namespace: contentblocks
+area: 'Input: Image'

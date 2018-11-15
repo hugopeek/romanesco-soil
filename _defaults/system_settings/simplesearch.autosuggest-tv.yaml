@@ -1,0 +1,4 @@
+key: simplesearch.autosuggest_tv
+value: simpleSearchAutoSuggestions
+namespace: simplesearch
+area: Autosuggest

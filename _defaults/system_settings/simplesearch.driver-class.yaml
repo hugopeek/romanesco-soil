@@ -1,0 +1,4 @@
+key: simplesearch.driver_class
+value: SimpleSearchDriverBasic
+namespace: simplesearch
+area: Drivers

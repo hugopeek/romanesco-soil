@@ -1,0 +1,5 @@
+key: simplesearch.driver_db_specific
+value: '1'
+xtype: combo-boolean
+namespace: simplesearch
+area: Drivers
