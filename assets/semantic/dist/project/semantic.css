@@ -6543,22 +6543,6 @@ a.ui.inverted.grey.header:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.ui.header > .anchor {
-  display: none;
-  position: absolute;
-  left: -0.7em;
-  top: 0.55em;
-  color: rgba(0, 0, 0, 0.2);
-}
-
-.ui.header > .anchor:hover {
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.ui.header:hover > .anchor {
-  display: block;
-}
-
 .ui.icon.header > .image {
   padding-bottom: 1em;
 }
@@ -6591,6 +6575,11 @@ a.ui.inverted.grey.header:hover {
   }
 }
 
+body.detail .ui.stripe.segment > .container > h1.header,
+body.detail .ui.stripe.segment > .container > .column > h1.header {
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 768px) {
   .ui.stripe.segment > .container > h2.header,
   .ui.stripe.segment > .container > .column > h2.header {
@@ -6602,6 +6591,11 @@ a.ui.inverted.grey.header:hover {
     margin-top: .8rem;
     margin-bottom: 3rem;
   }
+}
+
+body.detail .ui.stripe.segment > .container > h2.header,
+body.detail .ui.stripe.segment > .container > .column > h2.header {
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -19138,6 +19132,10 @@ body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white) > .co
   margin-bottom: 2em !important;
 }
 
+.ui.form .g-recaptcha {
+  margin-bottom: 1em;
+}
+
 .ui.form .fieldset {
   margin-bottom: 3em;
 }
@@ -19146,6 +19144,10 @@ body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white) > .co
   margin-bottom: 1em;
   padding-bottom: .6em;
   border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+.ui.form .segment legend + * {
+  clear: both;
 }
 
 .ui.form.inverted .field label {
@@ -24095,6 +24097,30 @@ Floated Menu / Item
 
 .menu#toolbar > .item:first-child:before {
   display: none;
+}
+
+.ui.secondary.vertical.right.pointing.menu {
+  border-right: 0;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: rgba(34, 36, 38, 0.15);
+}
+
+.ui.secondary.vertical.right.pointing.menu .item {
+  border-right: 0;
+  border-left: 2px solid transparent;
+  margin-left: -2px;
+}
+
+.ui.secondary.vertical.right.pointing.menu .item.active {
+  border-color: #1B1C1D;
+}
+
+.ui.secondary.vertical.right.pointing.menu .item.h2,
+.ui.secondary.vertical.right.pointing.menu .item.h3,
+.ui.secondary.vertical.right.pointing.menu .item.h4,
+.ui.secondary.vertical.right.pointing.menu .item.h5 {
+  padding-left: 2em;
 }
 
 #content > .container > .column > .pagination {
