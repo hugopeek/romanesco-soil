@@ -1,0 +1,9 @@
+id: 60
+key: navbar_level
+label: 'Main menu levels'
+xtype: modx-combo
+description: 'This number indicates how deep the menu will go when fetching child items. Level 1 will only show items in root folder, which means you have to make sure their subpages can be reached through Overview blocks or the submenu in BasicDetail templates.'
+sortorder: 3
+value: '1'
+group: 2
+options: "1 level (root items only)==1||\n2 levels (regular dropdowns)==2||\n3 levels (mega dropdowns)==3"
