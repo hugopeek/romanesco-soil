@@ -3,6 +3,17 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v1.4.1
+Released on ...
+
+> Patterns: 0.14.0-pl
+> Backyard: 0.9.0-pl
+
+- [Configuration] Add navbar_level setting
+- [FormBlocks] Add recaptcha and math question as anti-spam options
+- [FormBlocks] Point new registrations to an activation resource
+- [SemanticUI] Update assets
+
 ## Romanesco Soil v1.4.0
 Released on November 15, 2018
 
