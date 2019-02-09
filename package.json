@@ -6,5 +6,8 @@
     "gulp-real-favicon": "^0.2.2",
     "semantic-ui": "^2.4.0",
     "yargs": "^10.0.3"
+  },
+  "devDependencies": {
+    "gulp-css-wrap": "^0.1.2"
   }
 }

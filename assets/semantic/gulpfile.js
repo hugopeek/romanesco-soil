@@ -27,7 +27,9 @@ var
 
   // rtl
   buildRTL     = require('./tasks/rtl/build'),
-  watchRTL     = require('./tasks/rtl/watch')
+  watchRTL     = require('./tasks/rtl/watch'),
+
+  cssWrap      = require('gulp-css-wrap')
 ;
 
 
@@ -80,5 +82,14 @@ if(config.rtl) {
 // The root files are excluded from Romanesco to avoid merge conflicts.
 gulp.task('copy', function () {
   gulp.src('./dist/semantic.*')
-      .pipe(gulp.dest('./dist/project'));
+      .pipe(gulp.dest('./dist/project'))
+  ;
+});
+
+// Isolate SUI classes for use inside CB chunk previews
+gulp.task('css-wrap', function() {
+  gulp.src('dist/semantic.css')
+      .pipe(cssWrap({selector:'.chunkOutput'}))
+      .pipe(gulp.dest('/home/hugo/Localhost/packages/romanesco-backyard/assets/components/romanescobackyard/css'))
+  ;
 });
