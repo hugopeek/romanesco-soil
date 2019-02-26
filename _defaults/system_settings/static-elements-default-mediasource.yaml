@@ -1,0 +1,4 @@
+key: static_elements_default_mediasource
+value: '0'
+xtype: modx-combo-source
+area: static_elements

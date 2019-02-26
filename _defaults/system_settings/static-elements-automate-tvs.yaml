@@ -1,0 +1,4 @@
+key: static_elements_automate_tvs
+value: '0'
+xtype: combo-boolean
+area: static_elements

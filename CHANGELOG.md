@@ -3,6 +3,17 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.0.0-rc1
+Released on ...
+
+> Patterns: 0.14.1-pl
+> Backyard: 0.9.1-pl
+
+- [MODX] Upgrade to 2.7.0
+- [SemanticUI] Update to 2.4.2
+
+**NB: MODX 2.7 is now the minimum required version for every new install.**
+
 ## Romanesco Soil v1.4.1
 Released on February 11, 2019
 

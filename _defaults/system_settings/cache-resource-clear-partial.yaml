@@ -1,4 +1,4 @@
-key: cache_disabled
+key: cache_resource_clear_partial
 value: '0'
 xtype: combo-boolean
 area: caching

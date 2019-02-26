@@ -1,0 +1,4 @@
+key: log_deprecated
+value: '0'
+xtype: combo-boolean
+area: system

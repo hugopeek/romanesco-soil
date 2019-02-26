@@ -1,0 +1,4 @@
+key: static_elements_automate_templates
+value: '0'
+xtype: combo-boolean
+area: static_elements
