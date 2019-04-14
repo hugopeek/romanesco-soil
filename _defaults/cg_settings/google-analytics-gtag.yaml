@@ -1,0 +1,9 @@
+id: 61
+key: google_analytics_gtag
+label: 'Load Google Analytics with gtag.js'
+xtype: modx-combo
+description: 'If enabled, the traditional Google Analytics tracking code will be replaced by the Google Tag Manager snippet (using gtag.js). Although this seems to be the recommended option now, it is by no means mandatory and the old code still works fine.'
+sortorder: 2
+value: '0'
+group: 5
+options: No==0||Yes==1

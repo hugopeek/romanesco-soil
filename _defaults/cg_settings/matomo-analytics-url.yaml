@@ -1,0 +1,7 @@
+id: 62
+key: matomo_analytics_url
+label: 'Matomo Analytics URL'
+xtype: textfield
+description: 'Use Matomo instead of Google Analytics. Matomo is free and open source, giving you full ownership of your data. You can host Matomo on your own server, or create a cloud account on matomo.org.'
+sortorder: 10
+group: 5

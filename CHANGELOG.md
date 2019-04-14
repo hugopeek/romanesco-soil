@@ -9,8 +9,10 @@ Released on ...
 > Patterns: 0.14.1-pl
 > Backyard: 0.9.1-pl
 
-- [MODX] Upgrade to 2.7.0
+- [MODX] Upgrade to 2.7.1
 - [SemanticUI] Update to 2.4.2
+- [Configuration] Add support for Google Gtag and Matomo analytics
+- [Settings] Leave locale empty by default
 
 **NB: MODX 2.7 is now the minimum required version for every new install.**
 
