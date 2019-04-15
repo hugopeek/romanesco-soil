@@ -4,9 +4,9 @@ These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
 ## Romanesco Soil v2.0.0-rc1
-Released on ...
+Released on April 15, 2019
 
-> Patterns: 0.14.1-pl
+> Patterns: 0.14.2-pl
 > Backyard: 0.9.1-pl
 
 - [MODX] Upgrade to 2.7.1
