@@ -1,0 +1,4 @@
+key: formit.max_chars_textfield
+value: '125'
+namespace: formit
+area: formit
