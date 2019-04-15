@@ -337,16 +337,19 @@ var queries = [
             $(document)
                 .ready(function() {
                     // Turn Gallery grid into a slider on mobile
-                    $('.slider-combo')
-                        .removeClass('ui grid')
-                        .addClass('cards')
-                        .slick({
-                            infinite: true,
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            dots: true
-                        })
-                    ;
+                    if (typeof $('html').slick === "function") {
+                        // safe to use the function
+                        $('.slider-combo')
+                            .removeClass('ui grid')
+                            .addClass('cards')
+                            .slick({
+                                infinite: true,
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                dots: true
+                            })
+                        ;
+                    }
                 })
             ;
 
@@ -391,11 +394,14 @@ var queries = [
             // We're leaving mobile
             $(document)
                 .ready(function() {
-                    $('.slider-combo')
-                        .removeClass('cards')
-                        .addClass('ui grid')
-                        .slick('unslick')
-                    ;
+                    if (typeof $('html').slick === "function") {
+                        // safe to use the function
+                        $('.slider-combo')
+                            .removeClass('cards')
+                            .addClass('ui grid')
+                            .slick('unslick')
+                        ;
+                    }
                 })
             ;
 

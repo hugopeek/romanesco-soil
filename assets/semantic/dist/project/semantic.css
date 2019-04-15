@@ -398,7 +398,7 @@ li a:not(.button):not(.image):not(.item):hover,
 
 .header a:not(.inverted),
 a.header:not(.inverted),
-.menu a {
+.menu:not(.tabular) a {
   border-bottom: none !important;
 }
 
@@ -19089,7 +19089,7 @@ body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white) > .co
   font-size: 1.1rem;
 }
 
-.ui.form .help.error {
+.ui.form:not(.inverted) .help.error {
   color: #DB2828;
 }
 
@@ -19151,6 +19151,11 @@ body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white) > .co
 .ui.form.inverted .field input[type='field'],
 .ui.form.inverted .field textarea {
   border: 1px solid #fff !important;
+}
+
+.ui.form.inverted .field.error input,
+.ui.form.inverted .field.error textarea {
+  border-color: transparent !important;
 }
 
 @media screen and (min-width: 768px) {
