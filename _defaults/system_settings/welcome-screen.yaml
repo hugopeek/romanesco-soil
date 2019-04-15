@@ -1,3 +1,4 @@
 key: welcome_screen
+value: '0'
 xtype: combo-boolean
 area: manager
