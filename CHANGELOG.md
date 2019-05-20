@@ -3,6 +3,15 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.0.0-rc2
+Released on ...
+
+> Patterns: 0.14.3-pl
+> Backyard: 0.9.2-pl
+
+- [MODX] Include custom lexicon entries in defaults
+- [SemanticUI] Switch to Fomantic UI community fork
+
 ## Romanesco Soil v2.0.0-rc1
 Released on April 15, 2019
 
