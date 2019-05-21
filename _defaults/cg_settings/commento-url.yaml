@@ -1,0 +1,7 @@
+id: 64
+key: commento_url
+label: 'Commento URL'
+xtype: textfield
+description: 'Full URL to where Commento is hosted (incl. https://). You can run Commento on your own server, or use their hassle free cloud service by creating an account on commento.io.'
+sortorder: 65
+group: 10

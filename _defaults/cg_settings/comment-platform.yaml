@@ -1,0 +1,9 @@
+id: 63
+key: comment_platform
+label: 'Commenting platform of choice'
+xtype: modx-combo
+description: 'My personal preference is to use Commento, a free and open source discussion plugin. Commento is lightweight and privacy-focused, so no ads, third-party tracking scripts, or injected affiliate links... If you want all that, don''t worry: you can still choose Disqus.'
+sortorder: 60
+group: 10
+options: '||Commento||Disqus'
+process_options: 1

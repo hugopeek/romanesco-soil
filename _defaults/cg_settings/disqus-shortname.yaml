@@ -2,6 +2,6 @@ id: 27
 key: disqus_shortname
 label: 'Disqus shortname'
 xtype: textfield
-description: 'The name of the Disqus account that will collect all blog comments.'
-sortorder: 20
-group: 6
+description: 'The name of the Disqus account that will collect your comments.'
+sortorder: 66
+group: 10
