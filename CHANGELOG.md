@@ -10,7 +10,7 @@ Released on ...
 > Backyard: 0.9.2-pl
 
 - [MODX] Include custom lexicon entries in defaults
-- [SemanticUI] Switch to Fomantic UI community fork
+- [SemanticUI] Switch to Fomantic UI (community fork of Semantic UI)
 
 ## Romanesco Soil v2.0.0-rc1
 Released on April 15, 2019
