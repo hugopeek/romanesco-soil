@@ -9,6 +9,7 @@ Released on ...
 > Patterns: 0.14.3-pl
 > Backyard: 0.9.2-pl
 
+- [MODX] Create separate folder for static elements
 - [MODX] Include custom lexicon entries in defaults
 - [SemanticUI] Switch to Fomantic UI (community fork of Semantic UI)
 
