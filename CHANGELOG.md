@@ -4,9 +4,9 @@ These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
 ## Romanesco Soil v2.0.0-rc2
-Released on ...
+Released on October 10, 2019
 
-> Patterns: 0.14.3-pl
+> Patterns: 0.14.4-pl
 > Backyard: 0.9.2-pl
 
 - [MODX] Create separate folder for static elements
