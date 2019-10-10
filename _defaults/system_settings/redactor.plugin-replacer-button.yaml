@@ -1,0 +1,4 @@
+key: redactor.plugin_replacer_button
+xtype: modx-combo-boolean
+namespace: redactor
+area: Plugin
