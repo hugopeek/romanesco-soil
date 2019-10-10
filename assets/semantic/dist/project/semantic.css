@@ -809,6 +809,10 @@ a.inverted:not(.button):not(.boxed):hover {
   border-bottom-color: #FFFFFF;
 }
 
+.image.content + * {
+  margin-top: 1.3em;
+}
+
 .lead {
   font-size: 1.25em !important;
   line-height: 1.45 !important;
@@ -7691,6 +7695,11 @@ a.ui.inverted.black.header.header.header:hover {
 
 .ui.header > .sub.header a.inverted {
   color: rgba(255, 255, 255, 0.8);
+}
+
+#sidebar > .ui.header.tiny {
+  display: block;
+  margin: 0.5em 0.9em 1em 0.9em;
 }
 
 .ui.icon.header > .image {

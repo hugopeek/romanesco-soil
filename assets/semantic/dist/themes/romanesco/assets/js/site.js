@@ -44,7 +44,7 @@ $(function() {
     $('#submenu.sticky')
         .sticky({
             context: '#main',
-            offset: $("#menu.sticky").height()
+            offset: $("#menu.sticky").height() || 36
         })
     ;
 
@@ -71,6 +71,11 @@ $(function() {
 
 // Dropdown navigation
 $(function() {
+    // Don't do anything if there's no dropdown menu
+    if (!$('#menu-dropdown').length) {
+        return;
+    }
+
     var $nav = $('#menu-dropdown');
     var $navClone = $nav.clone(true);
 
@@ -227,32 +232,34 @@ $(function() {
 // Smooth anchor scrolling
 // https://css-tricks.com/smooth-scrolling-accessibility/
 $(function() {
-    var offset = $("#menu.sticky").height();
+    var offset = $("#menu.sticky").height() || 27;
 
     $('a[href*="#"]:not([href="#"])')
         .click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                 var target = $(this.hash);
 
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
                 if (target.length) {
                     $('html, body').animate({
                         scrollTop: target.offset().top - offset
                     }, 1000);
                     target.focus(); // Setting focus
-                    if (target.is(":focus")){ // Checking if the target was focused
+                    if (target.is(":focus")) { // Checking if the target was focused
                         return false;
                     } else {
-                        target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                        target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
                         target.focus(); // Setting focus
                     }
                     return false;
                 }
             }
         })
+    ;
 
-        // Highlight anchors in ToC menu
+    // Highlight anchors in ToC menu
+    $('#submenu a[href*="#"]')
         .each(function() {
             var target = $(this.hash);
             var link = $(this);
