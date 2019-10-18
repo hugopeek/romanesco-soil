@@ -300,7 +300,7 @@ $('.visibility.toggle').click(function() {
         // Provide feedback through button
         $(this)
         // Change button styling to indicate that target is visible now
-            .removeClass('disabled')
+            .removeClass('muted')
             // Inform user that the button will hide the target in this state
             .attr('data-content',$(this).data('content').replace(/Show|View|Display/,'Hide'))
         ;
@@ -312,7 +312,7 @@ $('.visibility.toggle').click(function() {
 
         // Reset button styling and text
         $(this)
-            .addClass('disabled')
+            .addClass('muted')
             .attr('data-content',$(this).data('content').replace('Hide','Show'))
         ;
     }

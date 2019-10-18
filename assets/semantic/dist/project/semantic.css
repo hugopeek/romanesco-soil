@@ -824,12 +824,14 @@ a.inverted:not(.button):not(.boxed):hover {
 }
 
 .meta,
-.help {
+.help,
+.muted {
   color: rgba(0, 0, 0, 0.4);
 }
 
 .inverted .meta,
-.inverted .help {
+.inverted .help,
+.inverted .muted {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -40407,6 +40409,10 @@ body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white) > .co
   margin-top: 2rem;
 }
 
+.ui.nested.grid.celled {
+  margin-top: 0;
+}
+
 .ui.nested.grid > .column.publication {
   margin-bottom: 4rem;
 }
@@ -40449,7 +40455,15 @@ body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white) > .co
     padding-right: 1rem !important;
   }
 
+  .ui.container .ui.stackable.celled.grid,
+  .ui.container .ui.stackable.celled.grid {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   .ui.container .ui.stackable.celled.grid > .column,
+  .ui.container .ui.stackable.celled.grid > .column,
+  .ui.container .ui.stackable.celled.grid > .row > .column,
   .ui.container .ui.stackable.celled.grid > .row > .column {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
