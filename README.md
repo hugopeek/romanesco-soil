@@ -28,9 +28,9 @@ Romanesco differs from the original PatternLab in 2 distinct ways:
 - It is already integrated with a CMS
 - It already provides the basic styling
 
-This means that when you are done installing Romanesco, the only thing you really need to publish your site is fresh content. Well no, that's not entirely true:
+This means that when you are done installing Romanesco, the only thing you really need in order to publish your site is fresh content. Well no, that's not entirely true:
 
-**Please note that if you want to publish your project to a live domain, you'll need a license for [ContentBlocks][3] and [Redactor][4].**
+**If you want to publish your project to a live domain, you'll need a license for [ContentBlocks][3] and [Redactor][4].**
 Both are commercial extras for MODX, which sell at respectively &euro;79 and &euro;25 for a single license (I'm not affiliated). ContentBlocks adds a powerful and flexible layer between the content editor (Redactor) and the actual code of the website, making it an essential part of Romanesco. Fortunately, the people at ModMore are very considerate: they'll let you try their extras for free during development.
 
 So: *publishing* your project will require you to purchase a license, but getting started with Romanesco is still free. If you're OK with that, then let's move on!
