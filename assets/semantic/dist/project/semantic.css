@@ -955,6 +955,18 @@ blockquote:not(.quote) {
   font-size: 2.14285714rem;
 }
 
+@media only screen and (max-width: 767.98px) {
+  .ui.stackable.center.when.stacked {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .ui.stackable.center.when.stacked.on.tablet {
+    text-align: center;
+  }
+}
+
 #footer p {
   font-size: 1rem;
 }
@@ -1103,71 +1115,6 @@ svg.hidden {
 
   .slick-lightbox .slick-lightbox-close:before {
     font-size: 20px;
-  }
-}
-
-/* Mobile */
-
-@media only screen and (max-width: 767px) {
-  [class*="mobile hidden"],
-  [class*="tablet only"]:not(.mobile),
-  [class*="computer only"]:not(.mobile),
-  [class*="large screen only"]:not(.mobile),
-  [class*="widescreen only"]:not(.mobile),
-  [class*="or lower hidden"] {
-    display: none !important;
-  }
-}
-
-/* Tablet / iPad Portrait */
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  [class*="mobile only"]:not(.tablet),
-  [class*="tablet hidden"],
-  [class*="computer only"]:not(.tablet),
-  [class*="large screen only"]:not(.tablet),
-  [class*="widescreen only"]:not(.tablet),
-  [class*="or lower hidden"]:not(.mobile) {
-    display: none !important;
-  }
-}
-
-/* Computer / Desktop / iPad Landscape */
-
-@media only screen and (min-width: 992px) and (max-width: 1299px) {
-  [class*="mobile only"]:not(.computer),
-  [class*="tablet only"]:not(.computer),
-  [class*="computer hidden"],
-  [class*="large screen only"]:not(.computer),
-  [class*="widescreen only"]:not(.computer),
-  [class*="or lower hidden"]:not(.tablet):not(.mobile) {
-    display: none !important;
-  }
-}
-
-/* Large Monitor */
-
-@media only screen and (min-width: 1300px) and (max-width: 1919px) {
-  [class*="mobile only"]:not([class*="large screen"]),
-  [class*="tablet only"]:not([class*="large screen"]),
-  [class*="computer only"]:not([class*="large screen"]),
-  [class*="large screen hidden"],
-  [class*="widescreen only"]:not([class*="large screen"]),
-  [class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile) {
-    display: none !important;
-  }
-}
-
-/* Widescreen Monitor */
-
-@media only screen and (min-width: 1920px) {
-  [class*="mobile only"]:not([class*="widescreen"]),
-  [class*="tablet only"]:not([class*="widescreen"]),
-  [class*="computer only"]:not([class*="widescreen"]),
-  [class*="large screen only"]:not([class*="widescreen"]),
-  [class*="widescreen hidden"],
-  [class*="widescreen or lower hidden"] {
-    display: none !important;
   }
 }
 
@@ -6256,7 +6203,7 @@ svg.hidden {
          Theme Overrides
 *******************************/
 
-.center.aligned .ui.button {
+.center.aligned .ui.button:not(.attached) {
   margin-left: 0.25em;
 }
 
@@ -6454,7 +6401,6 @@ svg.hidden {
 }
 
 .ui.text.container p {
-  font-size: 1.5rem;
   line-height: 1.6;
 }
 
@@ -43075,7 +43021,6 @@ Floated Menu / Item
   -webkit-transition: height 0.2s;
   transition: height 0.2s;
   background: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
   z-index: 9999;
 }
 
@@ -43102,6 +43047,7 @@ Floated Menu / Item
 
 #menu.tightened {
   height: 5rem;
+  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
 }
 
 @media only screen and (max-width: 767.98px) {
