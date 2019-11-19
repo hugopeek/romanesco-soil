@@ -9,6 +9,6 @@
     "gulp-real-favicon": "^0.3.2",
     "jquery": "^3.4.1",
     "slick-carousel": "^1.8.1",
-    "yargs": "^13.2.4"
+    "yargs": "^13.3.0"
   }
 }
