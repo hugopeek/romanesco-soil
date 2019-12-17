@@ -115,3 +115,38 @@ $('.ui.with.checkboxes.inside .radio.slave')
         }
     })
 ;
+
+
+// Calendar inputs
+// -----------------------------------
+
+$('.ui.calendar.date.time').calendar({
+    selectAdjacentDays: true
+});
+
+$('.ui.calendar.date.only').calendar({
+    type: 'date',
+    selectAdjacentDays: true
+});
+
+$('.ui.calendar.time.only').calendar({
+    type: 'time',
+    ampm: false
+});
+
+$('.ui.calendar.month.year').calendar({
+    type: 'month'
+});
+
+$('.date.range.fields').each(function() {
+    $(this).find('.ui.calendar.date.range.start').calendar({
+        type: 'date',
+        selectAdjacentDays: true,
+        endCalendar: $(this).find('.date.range.end')
+    });
+    $(this).find('.ui.calendar.date.range.end').calendar({
+        type: 'date',
+        selectAdjacentDays: true,
+        startCalendar: $(this).find('.date.range.start')
+    });
+});
