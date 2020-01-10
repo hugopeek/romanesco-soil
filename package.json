@@ -3,13 +3,14 @@
   "version": "2.0.0",
   "dependencies": {
     "arrive": "^2.4.1",
+    "diff": "^4.0.1",
     "fomantic-ui": "^2.8.2",
     "gulp": "^4.0.2",
     "gulp-css-wrap": "^0.1.2",
     "gulp-real-favicon": "^0.3.2",
     "jquery": "^3.4.1",
     "slick-carousel": "^1.8.1",
-    "yargs": "^13.3.0",
-    "diff": "^4.0.1"
+    "vanilla-lazyload": "^12.4.0",
+    "yargs": "^13.3.0"
   }
 }

@@ -1,0 +1,143 @@
+// Slider
+// Custom module with slick slider: http://kenwheeler.github.io/slick/
+// -----------------------------------------------------------------------------
+
+// Import variables
+@import "./../../../default/globals/site.variables";
+@import "./../../globals/site.variables";
+@import "./../../../../site/globals/site.variables";
+
+// Import default CSS
+@import "./../vendor/slick-carousel/slick.css";
+@import "./../vendor/slick-carousel/slick-theme.css";
+@import "./../vendor/slick-lightbox/slick-lightbox.css";
+
+
+// Wrapper class is added to parent element of slider with JS
+.slider-wrapper {
+
+    // Create light background strip with bottom border
+    @media screen and (min-width: @computerBreakpoint) {
+        .masthead & {
+            border-bottom: 80px solid @darkWhite !important;
+        }
+    }
+}
+
+.slick-slider {
+    transition: all 0.2s;
+
+    // Fix small outline glitch
+    .slick-slide:focus {
+        outline: none;
+    }
+
+    // Position dots
+    .slick-dots {
+        bottom: -3rem;
+    }
+
+    // Display prev/next arrows
+    .slick-arrow {
+        width: 4.5rem;
+        height: 100%;
+        transition: background 0.2s;
+        z-index: 999;
+
+        @media (max-width: @tabletBreakpoint) {
+            width: 3rem;
+        }
+
+        &:hover {
+            background: @veryStrongTransparentBlack;
+        }
+
+        &:before {
+            font-size: 4rem;
+            color: @lightBlack;
+
+            @media (max-width: @tabletBreakpoint) {
+                font-size: 2.5rem;
+            }
+        }
+
+        &.slick-prev {
+            left: 0;
+            &:before {
+                font-family: "Icons";
+                content: '\f104';
+            }
+        }
+        &.slick-next {
+            right: 0;
+            &:before {
+                font-family: "Icons";
+                content: '\f105';
+            }
+        }
+    }
+
+    // Sometimes slides are marked up as cards, meaning they need a little offset for their box shadow
+    &.cards {
+        .slick-slide {
+            padding: .15rem .2rem;
+        }
+
+        .slick-arrow.slick-prev {
+            clip-path: inset(0.15rem 0 0.15rem 0.15rem);
+        }
+        .slick-arrow.slick-next {
+            clip-path: inset(0.15rem 0.15rem 0.15rem 0);
+        }
+    }
+}
+
+// The slider uses an additional lightbox plugin to enlarge slider images
+.slick-lightbox {
+    .slick-lightbox-slick-caption {
+        float: left;
+        text-align: left;
+        padding-left: 5%;
+    }
+
+    .slick-lightbox-slick-item-inner,
+    .slick-lightbox-slick-img {
+
+        // Images can be display full-width on mobile devices
+        @media (max-width: @tabletBreakpoint) {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .slick-lightbox-close {
+        top: 0;
+        right: 0;
+        width: 4.5rem;
+        height: 4.5rem;
+        z-index: 1001;
+
+        // The close icon itself is in here
+        &:before {
+            font-size: 32px;
+            line-height: 0.25;
+            color: @invertedTextColor;
+        }
+        &:hover {
+            background: @veryStrongTransparentBlack;
+            &:before {
+                color: @white;
+            }
+        }
+
+        // Make close button a little smaller on smaller screens
+        @media (max-width: @tabletBreakpoint) {
+            width: 3rem;
+            height: 3rem;
+
+            &:before {
+                font-size: 20px;
+            }
+        }
+    }
+}

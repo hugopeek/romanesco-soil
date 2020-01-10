@@ -120,25 +120,28 @@ $('.ui.with.checkboxes.inside .radio.slave')
 // Calendar inputs
 // -----------------------------------
 
-$('.ui.calendar.date.time').calendar({
+// Only initializes fields without a custom class.
+// This allows you to override the settings below if needed.
+
+$('.ui.calendar.date.time:not(.custom)').calendar({
     selectAdjacentDays: true
 });
 
-$('.ui.calendar.date.only').calendar({
+$('.ui.calendar.date.only:not(.custom)').calendar({
     type: 'date',
     selectAdjacentDays: true
 });
 
-$('.ui.calendar.time.only').calendar({
+$('.ui.calendar.time.only:not(.custom)').calendar({
     type: 'time',
     ampm: false
 });
 
-$('.ui.calendar.month.year').calendar({
+$('.ui.calendar.month.year:not(.custom)').calendar({
     type: 'month'
 });
 
-$('.date.range.fields').each(function() {
+$('.date.range.fields:not(.custom)').each(function() {
     $(this).find('.ui.calendar.date.range.start').calendar({
         type: 'date',
         selectAdjacentDays: true,

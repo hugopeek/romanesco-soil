@@ -334,6 +334,13 @@ $("#form-login .submit").click(function() {
 });
 
 
+// Lazy load images
+var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+    // ... more custom settings?
+});
+
+
 // Apply specific js through media queries
 // The media queries are matched with Semantic UI breakpoints by onMediaQuery.js
 // Available breakpoints: mobile, tablet, computer, large, widescreen
