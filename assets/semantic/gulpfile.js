@@ -75,7 +75,11 @@ gulp.task('build-custom', function (done) {
       .pipe(minify())
       .pipe(rename({suffix: '.min'}))
       .pipe(gulp.dest('./src/themes/romanesco/assets/css/'));
-  gulp.src(['./src/themes/romanesco/assets/js/*.js','!./src/themes/romanesco/assets/js/*.min.js'])
+  gulp.src(['css/*.css','!css/*.min.css'],{cwd: './../'})
+      .pipe(minify(tasks.settings.minify))
+      .pipe(rename({suffix: '.min'}))
+      .pipe(gulp.dest('./../css/'));
+  gulp.src(['js/*.js','!js/*.min.js'],{cwd: './src/themes/romanesco/assets/'})
       .pipe(uglify(tasks.settings.uglify))
       .pipe(rename({suffix: '.min'}))
       .pipe(gulp.dest('./src/themes/romanesco/assets/js/'));
