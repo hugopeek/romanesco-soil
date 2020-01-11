@@ -19,14 +19,14 @@ A pattern library to manage all reusable elements from a central repository.
 - **[Romanesco Backyard][12]**  
 A MODX package that performs a few internal connections on installation.
 - **[Romanesco Theme][13]**  
-A custom styling theme for Semantic UI, the front-end framework used.
+A custom styling theme for Semantic UI<sup>1</sup>, the front-end framework used.
 
 The elements in the pattern library are structured according to the atomic design principles, as first outlined by Brad Frost. He does a better job at explaining how those principles work than I ever could, so if you're not familiar with it yet, I suggest you [read up on that first][7].
 
 Romanesco differs from the original PatternLab in 2 distinct ways:
 
-- It is already integrated with a CMS
-- It already provides the basic styling
+- It is already integrated with a CMS ([MODX Revolution][1])
+- It already provides the basic styling ([Fomantic UI][14]<sup>1</sup>)
 
 This means that when you are done installing Romanesco, the only thing you really need in order to publish your site is fresh content. Well no, that's not entirely true:
 
@@ -39,15 +39,17 @@ So: *publishing* your project will require you to purchase a license, but gettin
 
 Romanesco is not exactly a plug and play environment. Many moving parts means it doesn't come with a magic button or single command for installing it on your server. 
 
-For the persistent and the brave, start your journey here:
-
-https://notes.romanesco.info/deployment/installation-backend
+For the persistent and the brave: [start your journey here][5].
 
 >I'm planning to integrate an automated installer to make this step a little easier. It's currently closed source, because it's still coupled to our own infrastructure. **Please send me a message if you want to help out with this!**
 
 ## Yeah, but.. What is *a* Romanesco?
 
 In nature, the romanesco is a curious crossover between a broccoli and a cauliflower. Its flowers are shaped by repeating mathematical patterns, forming a mesmerizing collection of green fractals, spiraling up and multiplying in perfect resonance with Fibonacci's golden ratio. The result is a vegetable that looks almost too stunning to be eaten!
+
+![Fractal Broccoli](https://upload.wikimedia.org/wikipedia/commons/4/4f/Fractal_Broccoli.jpg)
+
+_<sup>1</sup> Romanesco switched to Fomantic UI, a community fork of the Semantic UI project._
 
 [1]: https://modx.com/get-modx/
 [2]: https://semantic-ui.com/
@@ -59,3 +61,4 @@ In nature, the romanesco is a curious crossover between a broccoli and a caulifl
 [11]: https://github.com/hugopeek/romanesco-patterns
 [12]: https://github.com/hugopeek/romanesco-backyard
 [13]: https://github.com/hugopeek/romanesco-theme
+[14]: https://fomantic-ui.com/
