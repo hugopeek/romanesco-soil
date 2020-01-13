@@ -72,6 +72,7 @@ gulp.task('build-custom', function (done) {
       .pipe(less())
       .pipe(autoprefixer(tasks.settings.prefix))
       .pipe(concat('slider.css'))
+      .pipe(gulp.dest('./src/themes/romanesco/assets/css/'))
       .pipe(minify())
       .pipe(rename({suffix: '.min'}))
       .pipe(gulp.dest('./src/themes/romanesco/assets/css/'));
