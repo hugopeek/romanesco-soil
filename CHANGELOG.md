@@ -9,7 +9,8 @@ Released on January 14, 2020
 > Patterns: 0.15.0-pl
 > Backyard: 0.10.2-pl
 
-- [MODX] Various small tweaks and fixes
+- [SemanticUI] Improve Gulp build process and minify custom CSS/JS
+- [MODX] Various small tweaks and fixes, and some new settings
 
 ## Romanesco Soil v2.0.0
 Released on November 19, 2019
