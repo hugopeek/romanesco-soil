@@ -2,6 +2,120 @@
          Site Settings
 *******************************/
 
+/***********************************************************
+  Central element variation compilation enablers
+***********************************************************/
+
+/* General */
+
+/*******************************
+           Elements
+*******************************/
+
+/* Button */
+
+/* Container */
+
+/* Divider */
+
+/* Header */
+
+/* Icon */
+
+/* Image */
+
+/* Input */
+
+/* Label */
+
+/* List */
+
+/* Loader */
+
+/* Placeholder */
+
+/* Rail */
+
+/* Reveal */
+
+/* Segment */
+
+/* Step */
+
+/* Text */
+
+/*******************************
+           Collections
+*******************************/
+
+/* Breadcrumb */
+
+/* Form */
+
+/* Grid */
+
+/* Menu */
+
+/* Message */
+
+/* Table */
+
+/*******************************
+             Views
+*******************************/
+
+/* Ad */
+
+/* Card */
+
+/* Comment */
+
+/* Feed */
+
+/* Item */
+
+/* Statistic */
+
+/*******************************
+            Modules
+*******************************/
+
+/* Accordion */
+
+/* Calendar */
+
+/* Checkbox */
+
+/* Dimmer */
+
+/* Dropdown */
+
+/* Embed */
+
+/* Modal */
+
+/* Popup */
+
+/* Progress */
+
+/* Rating */
+
+/* Search */
+
+/* Shape */
+
+/* Sidebar */
+
+/* Slider */
+
+/* Tab */
+
+/* Toast */
+
+/* Loading */
+
+/* Emojis */
+
 /*-------------------
        Fonts
 --------------------*/
@@ -292,6 +406,26 @@
 
 /*---  Light Tones  ---*/
 
+/*---  Tertiary  ---*/
+
+/*---  Bright  ---*/
+
+/*******************************
+ States shared in Form-related components
+ *******************************/
+
+/* Form state*/
+
+/* Input state */
+
+/* AutoFill */
+
+/* Dropdown state */
+
+/* Focused state */
+
+/* Placeholder state */
+
 /*******************************
          Site Settings
 *******************************/
@@ -453,6 +587,10 @@
 /* Minimum Mobile Width */
 
 /* Positive / Negative Dupes */
+
+/*******************************
+            Image
+*******************************/
 
 /*******************************
      User Global Variables
@@ -879,6 +1017,27 @@
   }
 }
 
+.slider-wrapper.column .slick-list,
+.slider-wrapper.nested .slick-list {
+  border-radius: 0.46228571rem;
+}
+
+.slider-wrapper.column .slick-prev,
+.slider-wrapper.nested .slick-prev {
+  border-top-left-radius: 0.46228571rem;
+  border-bottom-left-radius: 0.46228571rem;
+}
+
+.slider-wrapper.column .slick-next,
+.slider-wrapper.nested .slick-next {
+  border-top-right-radius: 0.46228571rem;
+  border-bottom-right-radius: 0.46228571rem;
+}
+
+.slider-wrapper > [class*="slider-"] > .vertical.segment.white {
+  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+}
+
 .slick-slider {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -889,7 +1048,7 @@
 }
 
 .slick-slider .slick-dots {
-  bottom: -3rem;
+  bottom: -2.6rem;
 }
 
 .slick-slider .slick-arrow {
@@ -939,18 +1098,61 @@
   content: '\f105';
 }
 
-.slick-slider.cards .slick-slide {
-  padding: 0.15rem 0.2rem;
+.slick-slider.cards:not(.overview) .column {
+  margin: 0.1em 1em;
 }
 
-.slick-slider.cards .slick-arrow.slick-prev {
-  -webkit-clip-path: inset(0.15rem 0 0.15rem 0.15rem);
-  clip-path: inset(0.15rem 0 0.15rem 0.15rem);
+.slick-slider.cards:not(.overview) .slick-list {
+  margin: 0 -1em;
 }
 
-.slick-slider.cards .slick-arrow.slick-next {
-  -webkit-clip-path: inset(0.15rem 0.15rem 0.15rem 0);
-  clip-path: inset(0.15rem 0.15rem 0.15rem 0);
+.slick-slider.cards:not(.overview) .slick-arrow.slick-prev,
+.slick-slider.cards:not(.overview) .slick-arrow.slick-next {
+  -webkit-clip-path: inset(0.15rem 0);
+  clip-path: inset(0.15rem 0);
+}
+
+.slick-slider.overview {
+  position: initial;
+}
+
+.slick-slider.overview .cards,
+.slick-slider.overview.cards {
+  margin: 0 !important;
+}
+
+.slick-slider.overview .cards > .card {
+  height: auto;
+}
+
+.slick-slider.overview .slick-list {
+  margin: 0 -0.4em;
+}
+
+.slick-slider.overview .slick-dots {
+  position: initial;
+}
+
+.slick-slider.fullscreen {
+  margin-bottom: 0;
+}
+
+.slick-slider.fullscreen .slick-slide {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.slick-slider.fullscreen .slick-dots {
+  bottom: 2rem;
 }
 
 .slick-lightbox .slick-lightbox-slick-caption {
@@ -998,4 +1200,22 @@
   .slick-lightbox .slick-lightbox-close:before {
     font-size: 20px;
   }
+}
+
+body.presentation {
+  overflow: hidden;
+}
+
+[class*="slider-"].fullscreen,
+[class*="slider-"].fullscreen > .ui.vertical.stripe.segment {
+  height: 100vh;
+}
+
+[class*="slider-"].fullscreen > .ui.vertical.stripe.segment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }

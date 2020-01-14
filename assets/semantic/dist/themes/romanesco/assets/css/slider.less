@@ -5,6 +5,7 @@
 // Import variables
 @import "./../../../default/globals/site.variables";
 @import "./../../globals/site.variables";
+@import "./../../elements/image.variables";
 @import "./../../../../site/globals/site.variables";
 
 // Import default CSS
@@ -22,6 +23,26 @@
             border-bottom: 80px solid @darkWhite !important;
         }
     }
+
+    // Apply platform border radius to sliders inside grid columns
+    &.column,
+    &.nested {
+        .slick-list {
+            border-radius: @roundedBorderRadius;
+        }
+        .slick-prev {
+            border-top-left-radius: @roundedBorderRadius;
+            border-bottom-left-radius: @roundedBorderRadius;
+        }
+        .slick-next {
+            border-top-right-radius: @roundedBorderRadius;
+            border-bottom-right-radius: @roundedBorderRadius;
+        }
+    }
+
+    > [class*="slider-"] > .vertical.segment.white {
+        border-bottom: @borderWidth solid @borderColor;
+    }
 }
 
 .slick-slider {
@@ -34,7 +55,7 @@
 
     // Position dots
     .slick-dots {
-        bottom: -3rem;
+        bottom: -2.6rem;
     }
 
     // Display prev/next arrows
@@ -77,22 +98,65 @@
         }
     }
 
-    // Sometimes slides are marked up as cards, meaning they need a little offset for their box shadow
-    &.cards {
-        .slick-slide {
-            padding: .15rem .2rem;
+    // Specific display types
+    &.cards:not(.overview) {
+        // Cards need a little offset for their box shadow
+        .column {
+            margin: .1em 1em;
         }
 
-        .slick-arrow.slick-prev {
-            clip-path: inset(0.15rem 0 0.15rem 0.15rem);
+        // Compensate card margins to keep edges of container aligned
+        .slick-list {
+            margin: 0 -1em;
         }
+
+        .slick-arrow.slick-prev,
         .slick-arrow.slick-next {
-            clip-path: inset(0.15rem 0.15rem 0.15rem 0);
+            clip-path: inset(0.15rem 0);
+        }
+    }
+
+    &.overview {
+        position: initial;
+
+        // Default margins derail the slider calculations
+        .cards,
+        &.cards {
+            margin: 0 !important;
+        }
+        .cards > .card {
+            height: auto;
+        }
+
+        // Compensate card margins to keep edges of container aligned
+        .slick-list {
+            margin: 0 -.4em;
+        }
+
+        // Relative position is expanded to containing layout segment
+        .slick-dots {
+            position: initial;
+        }
+    }
+
+    &.fullscreen {
+        margin-bottom: 0;
+
+        .slick-slide {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .slick-dots {
+            bottom: 2rem;
         }
     }
 }
 
-// The slider uses an additional lightbox plugin to enlarge slider images
+// The slider uses an additional lightbox plugin to enlarge slider images:
+// https://github.com/mreq/slick-lightbox
 .slick-lightbox {
     .slick-lightbox-slick-caption {
         float: left;
@@ -140,4 +204,19 @@
             }
         }
     }
+}
+
+// Presentation template
+body.presentation {
+    overflow: hidden;
+}
+
+// Stretch full screen slider to viewport already, before JS is loaded
+[class*="slider-"].fullscreen,
+[class*="slider-"].fullscreen > .ui.vertical.stripe.segment {
+    height: 100vh;
+}
+[class*="slider-"].fullscreen > .ui.vertical.stripe.segment {
+    display: flex;
+    align-items: center;
 }

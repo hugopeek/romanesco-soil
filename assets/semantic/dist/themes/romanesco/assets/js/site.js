@@ -357,11 +357,19 @@ var queries = [
                             .removeClass('ui grid')
                             .addClass('cards')
                             .slick({
-                                infinite: true,
                                 slidesToShow: 1,
-                                slidesToScroll: 1,
-                                dots: true
+                                slidesToScroll: 1
                             })
+                        ;
+                        $('.slider-overview-combo')
+                            .find('.overview')
+                            .removeClass('ui grid')
+                            .slick({
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            })
+                            .find('.slick-track')
+                            .addClass('ui cards')
                         ;
                     }
                 })
@@ -412,6 +420,12 @@ var queries = [
                         // safe to use the function
                         $('.slider-combo')
                             .removeClass('cards')
+                            .addClass('ui grid')
+                            .slick('unslick')
+                        ;
+                        $('.slider-overview-combo')
+                            .removeClass('cards')
+                            .find('.slick-slider')
                             .addClass('ui grid')
                             .slick('unslick')
                         ;
