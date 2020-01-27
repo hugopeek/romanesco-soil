@@ -45,12 +45,10 @@ gulp.task('copy', function (done) {
       .pipe(gulp.dest('./dist/project'));
   gulp.src('../../node_modules/jquery/dist/jquery.min.js')
       .pipe(gulp.dest('./src/themes/romanesco/assets/vendor/jquery'));
-  gulp.src('../../node_modules/slick-carousel/slick/fonts/*')
-      .pipe(gulp.dest('./src/themes/romanesco/assets/vendor/slick-carousel/fonts'));
-  gulp.src('../../node_modules/slick-carousel/slick/*.css')
-      .pipe(gulp.dest('./src/themes/romanesco/assets/vendor/slick-carousel'));
-  gulp.src('../../node_modules/slick-carousel/slick/*.min.js')
-      .pipe(gulp.dest('./src/themes/romanesco/assets/vendor/slick-carousel'));
+  gulp.src('../../node_modules/swiper/css/*.css')
+      .pipe(gulp.dest('./src/themes/romanesco/assets/vendor/swiper'));
+  gulp.src('../../node_modules/swiper/js/*.min.js')
+      .pipe(gulp.dest('./src/themes/romanesco/assets/vendor/swiper'));
   gulp.src('../../node_modules/arrive/minified/*.min.js')
       .pipe(gulp.dest('./src/themes/romanesco/assets/vendor/arrive'));
   gulp.src('../../node_modules/vanilla-lazyload/dist/*.min.js')
@@ -68,10 +66,10 @@ gulp.task('build-custom', function (done) {
   const rename = require('gulp-rename');
   const tasks = require('./tasks/config/tasks');
 
-  gulp.src('./src/themes/romanesco/assets/css/slider.less')
+  gulp.src('./src/themes/romanesco/assets/css/swiper.less')
       .pipe(less())
       .pipe(autoprefixer(tasks.settings.prefix))
-      .pipe(concat('slider.css'))
+      .pipe(concat('swiper.css'))
       .pipe(gulp.dest('./src/themes/romanesco/assets/css/'))
       .pipe(minify())
       .pipe(rename({suffix: '.min'}))
