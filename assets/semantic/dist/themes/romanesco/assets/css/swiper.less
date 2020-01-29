@@ -1,0 +1,97 @@
+// Swiper
+// Custom module with Swiper: https://swiperjs.com/
+// -----------------------------------------------------------------------------
+
+// Import variables
+@import "./../../../default/globals/site.variables";
+@import "./../../globals/site.variables";
+@import "./../../elements/image.variables";
+@import "./../../../../site/globals/site.variables";
+
+// Import default CSS
+@import "./../vendor/swiper/swiper.css";
+
+:root {
+    --swiper-theme-color: @lightTextColor;
+}
+
+// Navigation elements and slide wrapper are inside the container
+.swiper-container {
+
+    // Apply platform border radius to sliders inside grid columns
+    //&.column,
+    //&.nested {
+    //    .swiper-wrapper {
+    //        border-radius: @roundedBorderRadius;
+    //    }
+    //    .swiper-button-prev {
+    //        border-top-left-radius: @roundedBorderRadius;
+    //        border-bottom-left-radius: @roundedBorderRadius;
+    //    }
+    //    .swiper-button-next {
+    //        border-top-right-radius: @roundedBorderRadius;
+    //        border-bottom-right-radius: @roundedBorderRadius;
+    //    }
+    //}
+
+    // Prev/next buttons
+    button[class*="swiper-button"] {
+        border: none;
+        background: none;
+    }
+}
+
+// The wrapper contains the slides
+.swiper-wrapper {
+    &.ui.cards,
+    &.ui.grid {
+        flex-wrap: initial;
+        margin: 0;
+
+        &.nested {
+            margin-bottom: 0 !important;
+        }
+    }
+    &.ui.cards {
+        .swiper-slide {
+            display: flex;
+            height: auto;
+        }
+        .card {
+            margin: .1em; // give box-shadow some space
+        }
+    }
+    &.ui.grid {
+        > .column {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    }
+}
+
+// Presentation template
+body.presentation {
+    overflow: hidden;
+}
+
+// Stretch full screen slider to viewport already, before JS is loaded
+.swiper-container.fullscreen > .swiper-wrapper,
+.swiper-container.fullscreen > .swiper-wrapper > .ui.vertical.stripe.segment {
+    height: 100vh;
+    padding: 0;
+}
+.swiper-container.fullscreen > .swiper-wrapper > .ui.vertical.stripe.segment {
+    display: flex;
+    align-items: center;
+}
+
+// Mobile only slider
+.swiper-container-mobile {
+    &:not(.swiper-container-initialized) {
+        .swiper-button-prev,
+        .swiper-button-next,
+        .swiper-pagination {
+            visibility: hidden;
+        }
+    }
+}

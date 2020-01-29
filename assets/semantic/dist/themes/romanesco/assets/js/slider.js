@@ -1,3 +1,5 @@
+// DEPRECATED. Slick is no longer used to power te slider.
+
 $(document).ready(function(){
     // COLLISION ALERT!!
     // There's a checkbox type that also uses the slider class, see issue #77 on Github.
@@ -82,7 +84,11 @@ $(document).ready(function(){
                         settings: {
                             slidesToShow: 1,
                             slidesToScroll: 1,
-                            arrows: false
+                            swipeToSlide: true,
+                            touchThreshold: 13,
+                            speed: 200,
+                            arrows: false,
+                            dots: true
                         }
                     }
                 ]

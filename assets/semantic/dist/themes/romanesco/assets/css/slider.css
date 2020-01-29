@@ -2,120 +2,6 @@
          Site Settings
 *******************************/
 
-/***********************************************************
-  Central element variation compilation enablers
-***********************************************************/
-
-/* General */
-
-/*******************************
-           Elements
-*******************************/
-
-/* Button */
-
-/* Container */
-
-/* Divider */
-
-/* Header */
-
-/* Icon */
-
-/* Image */
-
-/* Input */
-
-/* Label */
-
-/* List */
-
-/* Loader */
-
-/* Placeholder */
-
-/* Rail */
-
-/* Reveal */
-
-/* Segment */
-
-/* Step */
-
-/* Text */
-
-/*******************************
-           Collections
-*******************************/
-
-/* Breadcrumb */
-
-/* Form */
-
-/* Grid */
-
-/* Menu */
-
-/* Message */
-
-/* Table */
-
-/*******************************
-             Views
-*******************************/
-
-/* Ad */
-
-/* Card */
-
-/* Comment */
-
-/* Feed */
-
-/* Item */
-
-/* Statistic */
-
-/*******************************
-            Modules
-*******************************/
-
-/* Accordion */
-
-/* Calendar */
-
-/* Checkbox */
-
-/* Dimmer */
-
-/* Dropdown */
-
-/* Embed */
-
-/* Modal */
-
-/* Popup */
-
-/* Progress */
-
-/* Rating */
-
-/* Search */
-
-/* Shape */
-
-/* Sidebar */
-
-/* Slider */
-
-/* Tab */
-
-/* Toast */
-
-/* Loading */
-
-/* Emojis */
-
 /*-------------------
        Fonts
 --------------------*/
@@ -405,26 +291,6 @@
 /*---  Dark Tones  ---*/
 
 /*---  Light Tones  ---*/
-
-/*---  Tertiary  ---*/
-
-/*---  Bright  ---*/
-
-/*******************************
- States shared in Form-related components
- *******************************/
-
-/* Form state*/
-
-/* Input state */
-
-/* AutoFill */
-
-/* Dropdown state */
-
-/* Focused state */
-
-/* Placeholder state */
 
 /*******************************
          Site Settings
@@ -1019,19 +885,19 @@
 
 .slider-wrapper.column .slick-list,
 .slider-wrapper.nested .slick-list {
-  border-radius: 0.46228571rem;
+  border-radius: 0.34671429rem;
 }
 
 .slider-wrapper.column .slick-prev,
 .slider-wrapper.nested .slick-prev {
-  border-top-left-radius: 0.46228571rem;
-  border-bottom-left-radius: 0.46228571rem;
+  border-top-left-radius: 0.34671429rem;
+  border-bottom-left-radius: 0.34671429rem;
 }
 
 .slider-wrapper.column .slick-next,
 .slider-wrapper.nested .slick-next {
-  border-top-right-radius: 0.46228571rem;
-  border-bottom-right-radius: 0.46228571rem;
+  border-top-right-radius: 0.34671429rem;
+  border-bottom-right-radius: 0.34671429rem;
 }
 
 .slider-wrapper > [class*="slider-"] > .vertical.segment.white {
