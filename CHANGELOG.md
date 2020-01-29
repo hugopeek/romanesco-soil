@@ -3,6 +3,14 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.1.1
+Released on January 29, 2020
+
+> Patterns: 0.15.1-pl
+> Backyard: 0.10.2-pl
+
+- [Gulp] Switch to SwiperJS in assets build process
+
 ## Romanesco Soil v2.1.0
 Released on January 14, 2020
 
