@@ -3,7 +3,7 @@ key: footer_background_default
 label: 'Default footer background'
 xtype: modx-combo
 description: 'You can always change the footer background on each page later if you want.'
-sortorder: 32
+sortorder: 33
 value: inverted
 group: 4
 options: '[[$cbLayoutBackgrounds:nl2br:replace=`<br />==||`:fbStripNonAlpha:replace=`[equals]==[equals][equals]`:fbResetNonAlpha]]'
