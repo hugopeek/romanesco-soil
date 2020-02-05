@@ -774,8 +774,11 @@ body:after {
   color: #FFFFFF !important;
 }
 
-#main #sidebar {
-  margin-top: 4rem !important;
+@media only screen and (min-width: 992px) {
+  body.detail #content,
+  body.detail #sidebar {
+    margin-top: 4rem;
+  }
 }
 
 #content > .introduction + .ui.stripe.segment.white {
@@ -22406,17 +22409,20 @@ body.detail #main .ui.stripe.segment.white + .white {
   padding-top: 0;
 }
 
-body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white) {
+body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white),
+body.detail.non-white #main .ui.container:not(.fluid) .ui.stripe.segment.white {
   margin-bottom: 4em;
   padding: 0;
   border-radius: 0.28571429rem;
 }
 
-body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white) + .white {
+body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white) + .white,
+body.detail.non-white #main .ui.container:not(.fluid) .ui.stripe.segment.white + .white {
   padding-top: 0;
 }
 
-body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white) > .container {
+body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white):not(.transparent) > .container,
+body.detail.non-white #main .ui.container:not(.fluid) .ui.stripe.segment.white:not(.transparent) > .container {
   padding: 2em;
 }
 

@@ -1268,6 +1268,10 @@ button.swiper-pagination-bullet {
   margin: 0.1em;
 }
 
+.swiper-wrapper.ui.cards .bottom.attached.button {
+  width: auto;
+}
+
 .swiper-wrapper.ui.grid > .column {
   margin: 0 !important;
   padding: 0 !important;
