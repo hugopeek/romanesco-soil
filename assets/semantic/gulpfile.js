@@ -92,7 +92,7 @@ gulp.task('css-wrap', function (done) {
 
   gulp.src('dist/semantic.css')
       .pipe(cssWrap({selector:'.chunkOutput'}))
-      .pipe(gulp.dest('/home/hugo/Localhost/packages/romanesco-backyard/assets/components/romanescobackyard/css'));
+      .pipe(gulp.dest('../../../packages/romanesco-backyard/assets/components/romanescobackyard/css'));
   done();
 });
 
@@ -100,20 +100,12 @@ gulp.task('css-wrap', function (done) {
 gulp.task('critical', function (done) {
   const critical = require('critical');
 
+  // This is just an example..
   critical.generate({
     inline: true,
     base: '../../static/',
     src: 'index.html',
     dest: 'dist/index-critical.html',
-    width: 1400,
-    height: 800,
-    minify: true
-  });
-  critical.generate({
-    inline: true,
-    base: '../../static/',
-    src: 'websitelikethis.html',
-    dest: 'dist/index-wlt.html',
     width: 1400,
     height: 800,
     minify: true
