@@ -1,3 +1,4 @@
+// Semantic UI behaviour
 $(function() {
     // Fix menu when passed
     $('.masthead')
@@ -356,9 +357,84 @@ $("#form-login .submit").click(function() {
 
 
 // Lazy load images
+// https://github.com/verlok/lazyload
 var lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy"
-    // ... more custom settings?
+});
+
+// Responsive tables
+function tableToCard(id) {
+    id = id || '';
+
+    $(id + '.ui.overview.table').addClass('dormant');
+
+    // Show table headings inline
+    $(id + '.ui.overview.table thead').hide();
+    $(id + '.ui.overview.table td:not(.inline)').each(function() {
+        $(this).prepend('<span class="title">' + $(this).attr('data-title') + '</span>');
+        $(this).removeClass('center');
+        $(this).find('br').hide();
+        $(this).addClass('inline')
+    });
+
+    // Display table rows as cards
+    $(id + '.ui.overview.table tbody > tr').addClass('ui card');
+}
+
+// Turn Tabs into an accordion on mobile
+function tabToAccordion() {
+    $('.reducible.tab.segment')
+        .each(function() {
+            var target = $('.menu .item[data-tab="' + $(this).data('tab') + '"]');
+
+            // Move content below the heading
+            $(target).after(this);
+        })
+        .removeClass('tab segment')
+        .addClass('reduced content')
+    ;
+
+    // If pointing segments are used, temporarily disable them
+    $('.reducible.tabbed.menu > .pointing.segment')
+        .removeClass('segment')
+        .addClass('dormant-segment')
+    ;
+
+    // Remove tabular classes
+    $('.reducible.tabular.menu > .item, .reducible.tabbed.menu > .item')
+        .removeClass('item')
+        .addClass('reduced title')
+        .tab({
+            deactivate: 'all'
+        })
+    ;
+    $('.reducible.tabular.menu, .reducible.tabbed.menu')
+        .removeClass('tabular menu')
+        .addClass('fluid styled accordion')
+        .accordion()
+    ;
+
+    // Change position of segment pointer on mobile
+    $('.testimonial .column > .left.pointing.segment')
+        .removeClass('left')
+        .addClass('down')
+    ;
+}
+
+// Re-initialize some JS behaviour when refreshing pdoPage with AJAX
+$(document).on('pdopage_load', function(e, config, response) {
+    //console.log(config.wrapper);
+
+    // Ratings
+    $('.ui.rating').rating('disable');
+
+    // Lazy loading images
+    lazyLoadInstance.update();
+
+    // Responsive queries
+    if (MQ.getContext() === 'mobile') {
+        tableToCard(config.wrapper);
+    }
 });
 
 
@@ -369,42 +445,8 @@ var queries = [
     {
         context: 'mobile',
         match: function() {
-            // Turn Tabs into an accordion on mobile
-            $('.reducible.tab.segment')
-                .each(function() {
-                    var target = $('.menu .item[data-tab="' + $(this).data('tab') + '"]');
-
-                    // Move content below the heading
-                    $(target).after(this);
-                })
-                .removeClass('tab segment')
-                .addClass('reduced content')
-            ;
-            // If pointing segments are used, temporarily disable them
-            $('.reducible.tabbed.menu > .pointing.segment')
-                .removeClass('segment')
-                .addClass('dormant-segment')
-            ;
-
-            // Remove tabular classes
-            $('.reducible.tabular.menu > .item, .reducible.tabbed.menu > .item')
-                .removeClass('item')
-                .addClass('reduced title')
-                .tab({
-                    deactivate: 'all'
-                })
-            ;
-            $('.reducible.tabular.menu, .reducible.tabbed.menu')
-                .removeClass('tabular menu')
-                .addClass('fluid styled accordion')
-                .accordion()
-            ;
-
-            // Change position of segment pointer on mobile
-            $('.testimonial .column > .left.pointing.segment')
-                .removeClass('left')
-                .addClass('down')
-            ;
+            tabToAccordion();
+            tableToCard();
         },
         unmatch: function() {
             // Revert tabs back to normal
@@ -452,8 +494,24 @@ var queries = [
                 .removeClass('down')
                 .addClass('left')
             ;
+
+            // Restore responsive tables
+            $('table.ui.overview.table thead').show();
+            $('table.ui.overview.table td br').show();
+            $('table.ui.overview.table td')
+                .removeClass('inline')
+                .find('span.title')
+                .remove()
+            ;
+            $('table.ui.overview.table td.aligned').addClass('center');
+            $('table.ui.overview.table tbody > tr').removeClass('ui card');
+            $('table.ui.overview.dormant.table').removeClass('dormant');
+
+            // Restore overview segments
+            $('.ui.overview.dormant-segments').addClass('segments').removeClass('dormant-segments');
         }
-    },{
+    },
+    {
         context: ['mobile', 'tablet'],
         match: function () {
             // On detail pages, make the first container fluid on smaller screens
@@ -472,32 +530,8 @@ var queries = [
                 .addClass('grid')
             ;
         }
-    },{
-        context: ['computer','large','widescreen'],
-        match: function() {
-            $(document)
-                .ready(function() {
-                    $('#home')
-                        .removeClass('pushable')
-                    ;
-                })
-            ;
-
-            // Add content wrapper for attaching classes for full-screen backgrounds
-            $('#home .pusher')
-                .addClass('content-wrapper')
-            ;
-        },
-        unmatch: function() {
-            // We're leaving computer
-            $('#home .pusher')
-                .removeClass('content-wrapper')
-            ;
-            $('#home')
-                .addClass('pushable')
-            ;
-        }
     }
 ];
+
 // Fire in the hole!
 MQ.init(queries);

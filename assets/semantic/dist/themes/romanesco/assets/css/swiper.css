@@ -1245,6 +1245,10 @@ button.swiper-pagination-bullet {
   background: none;
 }
 
+.modal .swiper-container {
+  --swiper-theme-color: rgba(255, 255, 255, 0.9);
+}
+
 .swiper-wrapper.ui.cards,
 .swiper-wrapper.ui.grid {
   -ms-flex-wrap: initial;
@@ -1275,6 +1279,11 @@ button.swiper-pagination-bullet {
 .swiper-wrapper.ui.grid > .column {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+.swiper-slide {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body.presentation {
