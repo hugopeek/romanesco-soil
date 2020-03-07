@@ -3,13 +3,21 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.2.0
+Released on March 7, 2020
+
+> Patterns: 0.15.2-pl
+> Backyard: 0.10.2-pl
+
+- Move media sources to defaults
+
 ## Romanesco Soil v2.1.1
 Released on January 29, 2020
 
 > Patterns: 0.15.1-pl
 > Backyard: 0.10.2-pl
 
-- [Gulp] Switch to SwiperJS in assets build process
+- Switch to SwiperJS in assets build process
 
 ## Romanesco Soil v2.1.0
 Released on January 14, 2020
@@ -17,8 +25,8 @@ Released on January 14, 2020
 > Patterns: 0.15.0-pl
 > Backyard: 0.10.2-pl
 
-- [SemanticUI] Improve Gulp build process and minify custom CSS/JS
-- [MODX] Various small tweaks and fixes, and some new settings
+- Improve Semantic UI build process and minify custom CSS/JS
+- Various small tweaks and fixes, some new settings
 
 ## Romanesco Soil v2.0.0
 Released on November 19, 2019
@@ -26,7 +34,7 @@ Released on November 19, 2019
 > Patterns: 0.14.6-pl
 > Backyard: 0.10.0-pl
 
-- [MODX] Upgrade to 2.7.2
+- Upgrade MODX to 2.7.2
 
 ## Romanesco Soil v2.0.0-rc2
 Released on October 10, 2019
@@ -34,9 +42,9 @@ Released on October 10, 2019
 > Patterns: 0.14.4-pl
 > Backyard: 0.9.2-pl
 
-- [MODX] Create separate folder for static elements
-- [MODX] Include custom lexicon entries in defaults
-- [SemanticUI] Switch to Fomantic UI (community fork of Semantic UI)
+- Create separate folder for static elements
+- Include custom lexicon entries in defaults
+- Switch to Fomantic UI (community fork of Semantic UI)
 
 ## Romanesco Soil v2.0.0-rc1
 Released on April 15, 2019
@@ -44,10 +52,10 @@ Released on April 15, 2019
 > Patterns: 0.14.2-pl
 > Backyard: 0.9.1-pl
 
-- [MODX] Upgrade to 2.7.1
-- [SemanticUI] Update to 2.4.2
-- [Configuration] Add support for Google Gtag and Matomo analytics
-- [Settings] Leave locale empty by default
+- Upgrade MODX to 2.7.1
+- Update Semantic UI to 2.4.2
+- Add support for Google Gtag and Matomo analytics
+- Leave locale empty by default
 
 **NB: MODX 2.7 is now the minimum required version for every new install.**
 
@@ -57,10 +65,10 @@ Released on February 11, 2019
 > Patterns: 0.14.1-pl
 > Backyard: 0.9.1-pl
 
-- [Configuration] Add navbar_level setting
-- [FormBlocks] Add recaptcha and math question as anti-spam options
-- [FormBlocks] Point new registrations to an activation resource
-- [SemanticUI] Update assets
+- Add navbar_level setting under Configuration
+- Add recaptcha and math question as anti-spam options to forms
+- Point new registrations to an activation resource
+- Update SUI assets
 
 ## Romanesco Soil v1.4.0
 Released on November 15, 2018
@@ -68,13 +76,13 @@ Released on November 15, 2018
 > Patterns: 0.13.0-pl
 > Backyard: 0.7.0-pl
 
-- [MODX] Add Content Purpose tab
-- [MODX] Improve Status tab
-- [Extras] Add SuperBoxSelect as dependency
-- [Extras] Update ContentBlocks to 1.8.2
-- [Extras] Update SimpleSearch to 2.0.2
-- [Extras] Remove Blockdown and SetInputOptions packages
-- [Gitify] Include custom db tables in extract
+- Add Content Purpose tab to resources
+- Improve Status tab
+- Add SuperBoxSelect as dependency
+- Update ContentBlocks to 1.8.2
+- Update SimpleSearch to 2.0.2
+- Remove Blockdown and SetInputOptions packages
+- Include custom db tables in extract
 
 ## Romanesco Soil v1.3.2
 Released on October 4, 2018
@@ -82,11 +90,11 @@ Released on October 4, 2018
 > Patterns: 0.12.3-pl
 > Backyard: 0.6.0-pl
 
-- [Configuration] Create Content category
-- [Configuration] Add settings for footer content and visibility
-- [Configuration] Load Collection renderers from Backyard assets folder
-- [SystemSettings] Set input ID for File CB setting
-- [SystemSettings] Fix incorrectly excluded page_id settings
+- Create Content category under Configuration
+- Add settings for footer content and visibility
+- Load Collection renderers from Backyard assets folder
+- Set input ID for File CB setting
+- Fix incorrectly excluded page_id settings
 
 ## Romanesco Soil v1.3.1
 Released on September 18, 2018
@@ -94,7 +102,7 @@ Released on September 18, 2018
 > Patterns: 0.12.2-pl
 > Backyard: 0.6.0-pl
 
-- [SemanticUI] Update to version 2.4.0
+- Update Semantic UI to 2.4.0
 
 ## Romanesco Soil v1.3.0
 Released on July 27, 2018
@@ -102,12 +110,12 @@ Released on July 27, 2018
 > Patterns: 0.12.1-pl
 > Backyard: 0.6.0-pl
 
-- [Configuration] Add field for client address
-- [Configuration] Add setting to define client type (Person or Organization)
-- [Configuration] Add setting to define which social sharing options to display
+- Add field for client address under Configuration
+- Add setting to define client type (Person or Organization)
+- Add setting to define which social sharing options to display
 - [CB/Redactor] Change paths to custom icons and CSS
-- [ContentBlocks] Change default field for new pages to Rich Text
-- [MODX] Change default email sender
+- Change default field for new pages to Rich Text
+- Change default email sender
 
 ## Romanesco Soil v1.2.0
 Released on June 6, 2018
@@ -115,7 +123,7 @@ Released on June 6, 2018
 > Patterns: 0.12.0-pl
 > Backyard: 0.5.1-pl
 
-- [SemanticUI] Use theme override for comments
+- Use SUI theme override for comments
 
 ## Romanesco Soil v1.1.0
 Released on January 16, 2018
@@ -123,11 +131,11 @@ Released on January 16, 2018
 > Patterns: 0.11.3-pl
 > Backyard: 0.5.1-pl
 
-- [Configuration] Add settings to change styling theme
-- [Configuration] Reorganize and evaluate existing settings
-- [MODX] Add separate media source for theme images
-- [MODX] Add content type for CSS variables
-- [SemanticUI] Enable auto install option
+- Add settings to change styling theme
+- Reorganize and evaluate existing settings
+- Add separate media source for theme images
+- Add content type for CSS variables
+- Enable auto install option
 
 NB: this version requires ClientConfig 2.0.0-rc1 or higher to function as intended.
 
@@ -137,8 +145,8 @@ Released on August 15, 2017
 > Patterns: 0.11.1-pl
 > Backyard: 0.4.0-pl
 
-- [Git] Move core elements to different repository
-- [Git] Move Semantic UI theme to different repository
+- Move core elements to different repository
+- Move Semantic UI theme to different repository
 
 Romanesco Soil should now be considered a boilerplate installation only.
 
@@ -153,17 +161,17 @@ Released on July 25, 2017
 > Patterns: 0.11.1-pl
 > Backyard: 0.4.0-pl
 
-- [Global] Add ability to use SVGs as global backgrounds
-- [Global] Change secondary color to purple
-- [ContentBlocks] Add CB field for displaying map with marker
-- [ContentBlocks] Fix pThumb errors when SVGs were used in Image CBs [#82]
-- [FormBlocks] Add ability to use your own elements as checkbox or radio buttons
-- [FormBlocks] Add ability to use alternate value for a field option in HTML
-- [FormBlocks] Add ability to choose help text position (above or below input)
-- [FormBlocks] Add ability to force fieldset to always display as segment
-- [StatusGrid] Check if longtitle and description are set (and show value in tooltip)
-- [StatusGrid] Edit resources directly by clicking on ID
-- [Gitify] Add svgSanitizer package as dependency
+- Add ability to use SVGs as global backgrounds
+- Change secondary color to purple
+- Add CB field for displaying map with marker
+- Fix pThumb errors when SVGs were used in Image CBs [#82]
+- Add ability to use your own elements as checkbox or radio buttons
+- Add ability to use alternate value for a field option in form HTML
+- Add ability to choose help text position (above or below input) in forms
+- Add ability to force form fieldset to always display as segment
+- Check if longtitle and description are set in status grid (and show value in tooltip)
+- Edit resources directly from status grid by clicking on ID
+- Add svgSanitizer package as dependency
 
 ## Romanesco Soil v0.3.0
 Released on April 20, 2017
@@ -171,24 +179,24 @@ Released on April 20, 2017
 > Patterns: 0.11.0-pl
 > Backyard: 0.3.2-pl
 
-- [ContentBlocks] Add layout + field for wrapping content in SUI segments
-- [ContentBlocks] Add styling options and custom bullet icon to List CB
-- [ContentBlocks] Add icon size and de-emphasize options to Icon SVG
-- [FormBlocks] Combine Select Dropdown and Select Options CBs
-- [FormBlocks] Add multiple file upload field
-- [FormBlocks] Fix broken options inside (deprecated) Select Dropdown [#109]
-- [SemanticUI] Add styling for HeaderVertical submenus
-- [SemanticUI] Improve fix for incorrect column margins on mobile
-- [SemanticUI] Set containers to fluid on mobile, so segments snap to edges
-- [SemanticUI] Fix styling / positioning glitches when submenu is sticky
-- [SemanticUI] Reset fieldset / legend styling and add small improvements
-- [SemanticUI] Reduce size of CSS and JS assets
-- [SemanticUI] Update framework to 2.2.10
-- [MODX] Add missing menu item for clearing custom cache [#108]
-- [MODX] Add buttons for clearing individual custom cache partitions
-- [MODX] Fix custom cache button not firing the second time around
-- [Configuration] Add Performance tab with various image rendering controls
-- [Configuration] Add Instagram and Pinterest fields to Social tab
+- Add layout + field for wrapping content in SUI segments
+- Add styling options and custom bullet icon to List CB
+- Add icon size and de-emphasize options to Icon SVG
+- Combine Select Dropdown and Select Options CBs
+- Add multiple file upload field to FormBlocks
+- Fix broken options inside (deprecated) Select Dropdown [#109]
+- Add styling for HeaderVertical submenus
+- Improve fix for incorrect column margins on mobile
+- Set containers to fluid on mobile, so segments snap to edges
+- Fix styling / positioning glitches when submenu is sticky
+- Reset fieldset / legend styling and add small improvements
+- Reduce size of CSS and JS assets
+- Update Semantic UI to 2.2.10
+- Add missing menu item for clearing custom cache [#108]
+- Add buttons for clearing individual custom cache partitions
+- Fix custom cache button not firing the second time around
+- Add Performance tab with various image rendering controls
+- Add Instagram and Pinterest fields to Social tab
 
 ## Romanesco Soil v0.2.0
 Released on February 22, 2017
