@@ -3,5 +3,5 @@ key: social_linkedin
 label: 'LinkedIn profile'
 xtype: textfield
 description: 'Please fill in the complete URL (including http(s)://).'
-sortorder: 3
+sortorder: 2
 group: 6

@@ -3,5 +3,5 @@ key: social_pinterest
 label: 'Pinterest board'
 xtype: textfield
 description: 'Please fill in the complete URL (including http(s)://).'
-sortorder: 7
+sortorder: 5
 group: 6

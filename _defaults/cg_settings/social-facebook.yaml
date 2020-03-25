@@ -3,5 +3,5 @@ key: social_facebook
 label: 'Facebook account'
 xtype: textfield
 description: 'Please fill in the complete URL (including http(s)://).'
-sortorder: 2
+sortorder: 3
 group: 6

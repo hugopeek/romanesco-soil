@@ -1,0 +1,7 @@
+id: 67
+key: social_whatsapp_text
+label: 'Whatsapp message'
+xtype: textarea
+description: 'Predefined text for the message that the visitor can send. You can use placeholders here to include some information about the referring page.'
+sortorder: 11
+group: 6

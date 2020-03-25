@@ -3,6 +3,15 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.2.1
+Released on March 25, 2020
+
+> Patterns: 0.16.0-pl
+> Backyard: 0.11.0-pl
+
+- Add WhatsApp setting to Configuration
+- Remove Google+ setting from Configuration
+
 ## Romanesco Soil v2.2.0
 Released on March 7, 2020
 

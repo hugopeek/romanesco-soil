@@ -3,5 +3,5 @@ key: social_youtube
 label: 'Youtube channel'
 xtype: textfield
 description: 'Please fill in the complete URL (including http(s)://).'
-sortorder: 4
+sortorder: 6
 group: 6

@@ -1,0 +1,7 @@
+id: 66
+key: social_whatsapp
+label: 'WhatsApp number'
+xtype: numberfield
+description: 'A mobile phone number connected to an active WhatsApp account. If entered, visitors can start a chat directly from the website. Needs to be formatted as number, without any leading zeros.'
+sortorder: 10
+group: 6
