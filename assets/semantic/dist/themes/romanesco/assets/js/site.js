@@ -51,9 +51,6 @@ $(function() {
 
     // Make first item in ToC active
     $('#submenu.toc :first-child').addClass('active');
-
-    // Hide elements with class .hidden
-    $('.hidden.element').hide();
 });
 
 // Sticky navbar behaviour
