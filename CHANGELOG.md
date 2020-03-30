@@ -3,14 +3,25 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
-## Romanesco Soil v2.2.1
-Released on March 25, 2020
+## Romanesco Soil v2.3.0-rc1
+Released on March 30, 2020
 
 > Patterns: 0.16.0-pl
 > Backyard: 0.11.0-pl
 
+- Add new Fomantic UI components to theme.config
+- Separate 'form', 'calendar', 'modal' and 'step' components from main CSS/JS
+- Remove tablesort.js from romanesco/assets folder (already in romanesco/vendor)
+- Remove all colors except primary and secondary from SUI theme
 - Add WhatsApp setting to Configuration
 - Remove Google+ setting from Configuration
+
+Note: you can now remove the 'form', 'calendar', 'modal' and 'step' components
+from semantic.json in existing projects. They are still generated as individual
+components, but no longer added to semantic.css and semantic.js.
+
+This relies on customizations in the Fomantic UI build process, which are
+submitted as PR here: https://github.com/fomantic/Fomantic-UI/pull/1385
 
 ## Romanesco Soil v2.2.0
 Released on March 7, 2020
