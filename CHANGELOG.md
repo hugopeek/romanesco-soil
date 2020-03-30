@@ -9,6 +9,7 @@ Released on March 30, 2020
 > Patterns: 0.16.0-pl
 > Backyard: 0.11.0-pl
 
+- Generate step component CSS for manager preview
 - Add new Fomantic UI components to theme.config
 - Separate 'form', 'calendar', 'modal' and 'step' components from main CSS/JS
 - Remove tablesort.js from romanesco/assets folder (already in romanesco/vendor)
