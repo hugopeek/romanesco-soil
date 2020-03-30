@@ -55,8 +55,13 @@
         "sticky",
         "tab",
         "transition",
-        "form",
         "visibility"
+    ],
+    "individuals": [
+        "form",
+        "calendar",
+        "modal",
+        "step"
     ],
     "version": "2.8.4"
 }
