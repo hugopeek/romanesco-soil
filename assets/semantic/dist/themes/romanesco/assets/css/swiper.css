@@ -449,7 +449,7 @@
 /* This is the single variable that controls them all */
 
 /* Custom addition
-   This variable is used for scaling other values proportionally
+   Scale ratio is used for scaling other values proportionally 
 */
 
 /* The size of page text  */
@@ -458,9 +458,7 @@
     Border Radius
 --------------------*/
 
-/* See Power-user section below
-   for explanation of @px variables
-*/
+/* See Power-user section below for explanation of @px variables */
 
 /*-------------------
     Brand Colors
@@ -473,6 +471,12 @@
 /*--------------
   Page Heading
 ---------------*/
+
+/* Custom addition
+   Calculate heading sizes based on font size and scale ratio.
+   It checks if the ratio used to enlarge each header is positive, to prevent
+     header size from dropping below the font size.
+*/
 
 /*--------------
    Form Input
@@ -513,6 +517,15 @@
 /*-------------------
      Transitions
 --------------------*/
+
+/*-------------------
+   Vertical rhythm
+--------------------*/
+
+/* 
+   Custom addition
+   Control vertical margins based on Fibonacci ratios
+*/
 
 /*-------------------
      Breakpoints
@@ -589,6 +602,8 @@
 /*-------------------
     Derived Values
 --------------------*/
+
+/* Used to match floats with text */
 
 /* Header Spacing */
 

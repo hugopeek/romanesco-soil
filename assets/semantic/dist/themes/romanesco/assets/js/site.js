@@ -38,7 +38,7 @@ $(function() {
             on: 'hover'
         })
     ;
-    $('.ui.embed').embed();
+    $('.ui.video.embed').embed();
     $('.ui.rating').rating('disable');
 
     // Make submenu scroll down with content area
@@ -444,6 +444,9 @@ var queries = [
         match: function() {
             tabToAccordion();
             tableToCard();
+
+            // Make some buttons more compact
+            $('.publication .back.button .icon').addClass('fitted')
         },
         unmatch: function() {
             // Revert tabs back to normal
@@ -506,6 +509,9 @@ var queries = [
 
             // Restore overview segments
             $('.ui.overview.dormant-segments').addClass('segments').removeClass('dormant-segments');
+
+            // Restore buttons
+            $('.publication .back.button .fitted.icon').removeClass('fitted')
         }
     },
     {
