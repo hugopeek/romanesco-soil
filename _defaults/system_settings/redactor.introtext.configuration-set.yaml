@@ -1,0 +1,5 @@
+key: redactor.introtext.configuration_set
+value: '2'
+xtype: numberfield
+namespace: redactor
+area: configuration

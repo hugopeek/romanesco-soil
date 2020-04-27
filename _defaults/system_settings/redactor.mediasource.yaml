@@ -1,5 +1,0 @@
-key: redactor.mediasource
-value: '6'
-xtype: modx-combo-source
-namespace: redactor
-area: Media

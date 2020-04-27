@@ -3,6 +3,15 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.3.0
+Released on April 27, 2020
+
+> Patterns: 0.16.2-pl
+> Backyard: 0.11.1-pl
+
+- Update MODX to v2.7.3
+- Update Redactor to v3
+
 ## Romanesco Soil v2.3.0-rc1
 Released on March 30, 2020
 
