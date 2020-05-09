@@ -1,0 +1,7 @@
+id: 68
+key: divider_1
+label: Divider
+xtype: clientconfig-line
+description: ''
+sortorder: 9
+group: 4
