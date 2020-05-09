@@ -3,6 +3,14 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.3.1
+Released on ...
+
+> Patterns: 0.16.2-pl
+> Backyard: 0.11.1-pl
+
+- Use hyphen instead of underscore as separator in sanitized CB images
+
 ## Romanesco Soil v2.3.0
 Released on April 27, 2020
 

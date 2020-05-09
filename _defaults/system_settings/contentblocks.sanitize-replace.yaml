@@ -1,4 +1,4 @@
 key: contentblocks.sanitize_replace
-value: _
+value: '-'
 namespace: contentblocks
 area: Sanitize
