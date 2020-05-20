@@ -9,6 +9,7 @@ Released on ...
 > Patterns: 0.16.2-pl
 > Backyard: 0.11.1-pl
 
+- Use Semantic UI project theme for storing custom variables and overrides
 - Use hyphen instead of underscore as separator in sanitized CB images
 
 ## Romanesco Soil v2.3.0
