@@ -7,8 +7,10 @@ every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.
 Released on ...
 
 > Patterns: 0.16.2-pl
-> Backyard: 0.11.1-pl
+> Backyard: 0.11.2-pl
 
+- Update NPM dependencies
+- Add custom gulpfile.js to root folder
 - Use Semantic UI project theme for storing custom variables and overrides
 - Use hyphen instead of underscore as separator in sanitized CB images
 
