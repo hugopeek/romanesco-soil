@@ -104,66 +104,6 @@ gulp.task('build-custom', function (done) {
   done();
 });
 
-// Build theme for specific context
-gulp.task('build-context', function (done) {
-  let context = argv.key;
-  let dist = argv.d;
-  let task = argv.t;
-  let tasks = [];
-
-  // Set default path if needed
-  if (!dist) dist = './assets/semantic/dist/' + context;
-
-  // Ensure destination path has trailing /
-  dist += dist.endsWith("/") ? "" : "/";
-
-  // Set custom output paths
-  config.paths.output.packaged = dist;
-  config.paths.output.uncompressed = dist + 'components/';
-  config.paths.output.compressed = dist + 'components/';
-  config.paths.output.themes = dist + 'themes/';
-  config.paths.output.clean = dist;
-
-  // Create the correct build commands
-  if (Array.isArray(task)) {
-    task.forEach(function(item) {
-      tasks.push('build-' + item);
-    })
-  } else if (task === 'all') {
-    tasks.push('build');
-  }
-  else {
-    tasks.push('build-' + task);
-  }
-
-  // Tasks for switching config files
-  gulp.task('switch-config', function (switchDone) {
-    gulp.src('./assets/semantic/src/theme.config').pipe(gulp.dest('./assets/semantic/src/tmp'));
-    gulp.src('./assets/semantic/src/contexts/' + context + '/theme.config').pipe(gulp.dest('./src/'));
-    switchDone();
-  })
-  gulp.task('revert-switch', function (revertDone) {
-    const clean = require('gulp-clean');
-    gulp.src('./assets/semantic/src/tmp/theme.config').pipe(gulp.dest('./assets/semantic/src/'));
-    gulp.src('./assets/semantic/src/tmp', {read: false}).pipe(clean());
-    revertDone();
-  })
-
-  // Exit on error
-  if (!context) {
-    console.error('Context not defined!');
-    return false;
-  }
-  if (!tasks) {
-    console.error('Task(s) not defined!');
-    return false;
-  }
-
-  // Run in sequence
-  console.info('Building Semantic');
-  gulp.series('switch-config',tasks.join(','),'revert-switch')(done);
-});
-
 // Isolate SUI classes for use inside CB chunk previews
 gulp.task('css-wrap', function (done) {
   const cssWrap = require('./node_modules/gulp-css-wrap');
