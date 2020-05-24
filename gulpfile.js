@@ -3,24 +3,24 @@
  *******************************/
 
 const
-    gulp   = require('gulp'),
+  gulp   = require('gulp'),
 
-    // load yargs for reading command line arguments
-    argv = require('yargs')
-        .alias('c', 'key')
-        .alias('t', 'task')
-        .alias('d', 'dist')
-        .describe('c', 'Provide the context_key of the context you want to build.')
-        .describe('t', 'Choose which task to run. You can add separate flags for multiple tasks.')
-        .describe('d', 'Path context dist folder.')
-        .choices('t', ['css', 'javascript', 'assets', 'custom', 'all'])
-        .default('t','css','css')
-        .default('d','','assets/semantic/dist/CONTEXT_KEY')
-        .help('help')
-        .argv,
+  // load yargs for reading command line arguments
+  argv = require('yargs')
+    .alias('c', 'key')
+    .alias('t', 'task')
+    .alias('d', 'dist')
+    .describe('c', 'Provide the context_key of the context you want to build.')
+    .describe('t', 'Choose which task to run. You can add separate flags for multiple tasks.')
+    .describe('d', 'Path context dist folder.')
+    .choices('t', ['css', 'javascript', 'assets', 'custom', 'all'])
+    .default('t','css','css')
+    .default('d','','assets/semantic/dist/CONTEXT_KEY')
+    .help('help')
+    .argv,
 
-    // read user config to know what task to load
-    config = require('./assets/semantic/tasks/config/user')
+  // read user config to know what task to load
+  config = require('./assets/semantic/tasks/config/user')
 ;
 
 
@@ -56,18 +56,18 @@ if (config.rtl) {
 // The root files are excluded from Romanesco to avoid merge conflicts.
 gulp.task('copy', function (done) {
   gulp.src('./assets/semantic/dist/semantic.*')
-      .pipe(gulp.dest('./assets/semantic/dist/project'));
+    .pipe(gulp.dest('./assets/semantic/dist/project'));
   gulp.src('./node_modules/jquery/dist/jquery.min.js')
-      .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/jquery'))
-      .pipe(gulp.dest('./../packages/romanesco-backyard/assets/components/romanescobackyard/js'));
+    .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/jquery'))
+    .pipe(gulp.dest('./../packages/romanesco-backyard/assets/components/romanescobackyard/js'));
   gulp.src('./node_modules/swiper/css/*.css')
-      .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/swiper'));
+    .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/swiper'));
   gulp.src('./node_modules/swiper/js/*.min.js')
-      .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/swiper'));
+    .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/swiper'));
   gulp.src('./node_modules/arrive/minified/*.min.js')
-      .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/arrive'));
+    .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/arrive'));
   gulp.src('./node_modules/vanilla-lazyload/dist/*.min.js')
-      .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/vanilla-lazyload'));
+    .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/vanilla-lazyload'));
   done();
 });
 
@@ -82,21 +82,24 @@ gulp.task('build-custom', function (done) {
   const tasks = require('./assets/semantic/tasks/config/tasks');
 
   gulp.src('./assets/semantic/src/themes/romanesco/assets/css/swiper.less')
-      .pipe(less())
-      .pipe(autoprefixer(tasks.settings.prefix))
-      .pipe(concat('swiper.css'))
-      .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/css/'))
-      .pipe(minify())
-      .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/css/'));
+    .pipe(less())
+    .pipe(autoprefixer(tasks.settings.prefix))
+    .pipe(concat('swiper.css'))
+    .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/css/'))
+    .pipe(minify())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/css/'))
+  ;
   gulp.src(['css/*.css','!css/*.min.css'],{cwd: './assets/'})
-      .pipe(minify({inline: ['local', 'remote', '!fonts.googleapis.com']}))
-      .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest('./assets/css/'));
+    .pipe(minify({inline: ['local', 'remote', '!fonts.googleapis.com']}))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./assets/css/'))
+  ;
   gulp.src(['js/*.js','!js/*.min.js'],{cwd: './assets/semantic/src/themes/romanesco/assets/'})
-      .pipe(uglify(tasks.settings.uglify))
-      .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/js/'));
+    .pipe(uglify(tasks.settings.uglify))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/js/'))
+  ;
 
   done();
 });
@@ -166,11 +169,13 @@ gulp.task('css-wrap', function (done) {
   const cssWrap = require('./node_modules/gulp-css-wrap');
 
   gulp.src('./assets/semantic/dist/semantic.css')
-      .pipe(cssWrap({selector:'.chunkOutput'}))
-      .pipe(gulp.dest('./../packages/romanesco-backyard/assets/components/romanescobackyard/css'));
+    .pipe(cssWrap({selector:'.chunkOutput'}))
+    .pipe(gulp.dest('./../packages/romanesco-backyard/assets/components/romanescobackyard/css'))
+  ;
   gulp.src('./assets/semantic/dist/components/step.css')
-      .pipe(cssWrap({selector:'.chunkOutput'}))
-      .pipe(gulp.dest('./../packages/romanesco-backyard/assets/components/romanescobackyard/css'));
+    .pipe(cssWrap({selector:'.chunkOutput'}))
+    .pipe(gulp.dest('./../packages/romanesco-backyard/assets/components/romanescobackyard/css'))
+  ;
   done();
 });
 
