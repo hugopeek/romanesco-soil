@@ -9,6 +9,7 @@ Released on ...
 > Patterns: 0.16.2-pl
 > Backyard: 0.11.2-pl
 
+- Update default styling
 - Update NPM dependencies
 - Add custom gulpfile.js to root folder
 - Use Semantic UI project theme for storing custom variables and overrides
