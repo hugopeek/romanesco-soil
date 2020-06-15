@@ -4,14 +4,15 @@ These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
 ## Romanesco Soil v2.3.1
-Released on ...
+Released on June 15, 2020
 
-> Patterns: 0.16.2-pl
-> Backyard: 0.11.2-pl
+> Patterns: 0.16.3-pl
+> Backyard: 0.11.3-pl
 
 - Update default styling
 - Update NPM dependencies
 - Add custom gulpfile.js to root folder
+- Add scrolldir.js for displaying menu on mobile when scrolling up
 - Use Semantic UI project theme for storing custom variables and overrides
 - Use hyphen instead of underscore as separator in sanitized CB images
 

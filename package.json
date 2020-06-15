@@ -10,6 +10,7 @@
     "gulp-css-wrap": "^0.1.2",
     "gulp-real-favicon": "^0.3.2",
     "jquery": "^3.5.1",
+    "scrolldir": "^1.5.1",
     "swiper": "^5.4.1",
     "vanilla-lazyload": "^16.1.0",
     "yargs": "^15.3.1"

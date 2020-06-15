@@ -68,6 +68,8 @@ gulp.task('copy', function (done) {
     .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/arrive'));
   gulp.src('./node_modules/vanilla-lazyload/dist/*.min.js')
     .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/vanilla-lazyload'));
+  gulp.src('./node_modules/scrolldir/dist/*.min.js')
+    .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/scrolldir'));
   done();
 });
 
