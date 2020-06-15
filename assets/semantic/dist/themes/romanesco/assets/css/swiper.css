@@ -436,6 +436,8 @@
 
 /* Button */
 
+/* Segment */
+
 /* Dimmer */
 
 /*-------------------
@@ -448,11 +450,15 @@
 
 /* This is the single variable that controls them all */
 
-/* Custom addition
-   Scale ratio is used for scaling other values proportionally 
+/* CUSTOM
+   Scale ratio is used for scaling other values proportionally.
 */
 
 /* The size of page text  */
+
+/* CUSTOM
+   Shadow font size serves as an alternative base value for calculating sizes.
+*/
 
 /*-------------------
     Border Radius
@@ -472,10 +478,10 @@
   Page Heading
 ---------------*/
 
-/* Custom addition
+/* CUSTOM
    Calculate heading sizes based on font size and scale ratio.
-   It checks if the ratio used to enlarge each header is positive, to prevent
-     header size from dropping below the font size.
+   Shadow font size is used for calculating odd headings, to prevent the
+    difference between font sizes from becoming too large.
 */
 
 /*--------------
@@ -523,7 +529,7 @@
 --------------------*/
 
 /* 
-   Custom addition
+   CUSTOM
    Control vertical margins based on Fibonacci ratios
 */
 
@@ -620,7 +626,7 @@
 *******************************/
 
 /**
- * Swiper 5.3.0
+ * Swiper 5.4.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * http://swiperjs.com
  *
@@ -628,7 +634,7 @@
  *
  * Released under the MIT License
  *
- * Released on: January 11, 2020
+ * Released on: May 20, 2020
  */
 
 @font-face {
@@ -818,6 +824,7 @@
   letter-spacing: 0;
   text-transform: none;
   font-variant: initial;
+  line-height: 1;
 }
 
 .swiper-button-prev,
