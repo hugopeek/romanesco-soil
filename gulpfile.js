@@ -88,14 +88,11 @@ gulp.task('build-custom', function (done) {
     .pipe(autoprefixer(tasks.settings.prefix))
     .pipe(concat('swiper.css'))
     .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/css/'))
-    .pipe(minify())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/css/'))
   ;
-  gulp.src(['css/*.css','!css/*.min.css'],{cwd: './assets/'})
+  gulp.src(['css/*.css','!css/*.min.css'],{cwd: './assets/semantic/src/themes/romanesco/assets/'})
     .pipe(minify({inline: ['local', 'remote', '!fonts.googleapis.com']}))
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('./assets/css/'))
+    .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/css/'))
   ;
   gulp.src(['js/*.js','!js/*.min.js'],{cwd: './assets/semantic/src/themes/romanesco/assets/'})
     .pipe(uglify(tasks.settings.uglify))
