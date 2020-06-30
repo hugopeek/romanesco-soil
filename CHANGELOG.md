@@ -9,6 +9,7 @@ Released on ...
 > Patterns: 0.16.3-pl
 > Backyard: 0.11.3-pl
 
+- Add system setting to activate FormSource in FormBlocks reports
 - Mark NPM packages included in Romanesco theme as dev dependencies
 - Improve minification of Romanesco assets
 
