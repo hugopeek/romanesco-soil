@@ -1,0 +1,10 @@
+id: 73
+key: navbar_size
+label: 'Main menu size'
+xtype: modx-combo
+description: 'This determines the size of the buttons and applies to both top and vertical navigation.'
+sortorder: 6
+value: large
+group: 2
+options: '[[$cbFieldSize:nl2br:replace=`<br />==||`:fbStripNonAlpha:replace=`[equals]==[equals][equals]`:fbResetNonAlpha]]'
+process_options: 1

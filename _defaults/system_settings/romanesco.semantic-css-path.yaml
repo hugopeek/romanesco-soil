@@ -1,0 +1,4 @@
+key: romanesco.semantic_css_path
+value: assets/semantic/dist/themes/romanesco/assets/css
+namespace: romanesco
+area: Paths

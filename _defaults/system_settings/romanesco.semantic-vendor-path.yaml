@@ -1,4 +1,4 @@
-key: romanesco.custom_vendor_path
+key: romanesco.semantic_vendor_path
 value: assets/semantic/dist/themes/romanesco/assets/vendor
 namespace: romanesco
 area: Paths

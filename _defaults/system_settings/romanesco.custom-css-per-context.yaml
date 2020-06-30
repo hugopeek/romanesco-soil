@@ -1,5 +1,0 @@
-key: romanesco.custom_css_per_context
-value: '0'
-xtype: combo-boolean
-namespace: romanesco
-area: Settings

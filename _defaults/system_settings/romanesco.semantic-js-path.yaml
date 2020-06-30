@@ -1,4 +1,4 @@
-key: romanesco.custom_js_path
+key: romanesco.semantic_js_path
 value: assets/semantic/dist/themes/romanesco/assets/js
 namespace: romanesco
 area: Paths
