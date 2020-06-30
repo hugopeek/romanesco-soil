@@ -29,6 +29,7 @@ const
  *******************************/
 
 require('./assets/semantic/tasks/collections/build')(gulp);
+require('./assets/semantic/tasks/collections/various')(gulp);
 require('./assets/semantic/tasks/collections/install')(gulp);
 
 gulp.task('default', gulp.series('watch'));
@@ -99,7 +100,6 @@ gulp.task('build-custom', function (done) {
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/js/'))
   ;
-
   done();
 });
 
