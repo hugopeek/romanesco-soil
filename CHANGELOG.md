@@ -3,6 +3,15 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.3.2
+Released on ...
+
+> Patterns: 0.16.3-pl
+> Backyard: 0.11.3-pl
+
+- Mark NPM packages included in Romanesco theme as dev dependencies
+- Improve minification of Romanesco assets
+
 ## Romanesco Soil v2.3.1
 Released on June 15, 2020
 
