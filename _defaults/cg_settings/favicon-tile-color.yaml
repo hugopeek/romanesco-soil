@@ -2,6 +2,6 @@ id: 15
 key: favicon_tile_color
 label: 'Favicon tile color'
 xtype: colorpickerfield
-description: '[DEPRECATED] The hexadecimal value for <meta name="msapplication-TileColor">.'
+description: 'The hexadecimal value for <meta name="msapplication-TileColor">.'
 sortorder: 60
 group: 3

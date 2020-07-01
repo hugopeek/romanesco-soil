@@ -2,6 +2,6 @@ id: 14
 key: favicon_theme_color
 label: 'Favicon theme color'
 xtype: colorpickerfield
-description: '[DEPRECATED] The hexadecimal value for <meta name="theme-color">.'
+description: 'The hexadecimal value for <meta name="theme-color">.'
 sortorder: 61
 group: 3
