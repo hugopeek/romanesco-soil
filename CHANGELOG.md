@@ -6,10 +6,10 @@ every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.
 ## Romanesco Soil v2.3.2
 Released on ...
 
-> Patterns: 0.16.3-pl
-> Backyard: 0.11.3-pl
+> Patterns: 0.16.4-pl
+> Backyard: 0.11.4-pl
 
-- Add system setting to activate FormSource in FormBlocks reports
+- Un-deprecate (yes!) favicon configuration settings
 - Mark NPM packages included in Romanesco theme as dev dependencies
 - Improve minification of Romanesco assets
 
