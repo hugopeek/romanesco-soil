@@ -225,7 +225,7 @@ $(function() {
             var $sidebar = $('#off-canvas');
 
             // Place accordion inside off-canvas sidebar
-            $sidebar.append($navAccordion);
+            $('#off-canvas .home').after($navAccordion);
 
             // Initialize
             createAccordion($sidebar);
@@ -237,7 +237,7 @@ $(function() {
         unmatch: function() {
 
             // Refill empty container
-            $navDropdown.appendTo('#menu > .container');
+            $('#menu .branding').after($navDropdown);
 
             // Initialize again to make sure 3-level dropdown is working
             createDropdown($navDropdown);
@@ -247,6 +247,46 @@ $(function() {
         }
     });
 });
+
+// Vertical navigation
+$(function() {
+    var $navAccordion = $('#menu-vertical #menu-accordion');
+
+    // Don't do anything if there's no dropdown menu
+    if (!$navAccordion.length) {
+        return;
+    }
+
+    // Activate accordion in vertical menu
+    $('#menu-vertical')
+        .accordion({
+            exclusive: true,
+            closeNested : true,
+            selector: {
+                trigger: '.title > .icon'
+            },
+            onOpening: function() {
+                $(this).parent().addClass('active');
+                $(this).parent().siblings().removeClass('active');
+            },
+            onClose: function() {
+                $(this).parent().removeClass('active');
+            }
+        })
+    ;
+
+    // Send accordion to off-canvas on mobile
+    MQ.addQuery({
+        context: ['mobile'],
+        match: function() {
+            $navAccordion.insertAfter('#off-canvas .home');
+        },
+        unmatch: function() {
+            $navAccordion.insertAfter('#menu-vertical .branding');
+        }
+    });
+});
+
 
 // Smooth anchor scrolling
 // https://css-tricks.com/smooth-scrolling-accessibility/
