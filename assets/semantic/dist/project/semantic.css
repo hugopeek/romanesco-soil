@@ -28362,6 +28362,10 @@ Floated Menu / Item
   padding-top: calc(var(--baseline) * 2rem);
 }
 
+.pagination-wrapper + * {
+  margin-top: calc(var(--baseline) * 3rem);
+}
+
 /*******************************
          Site Overrides
 *******************************/

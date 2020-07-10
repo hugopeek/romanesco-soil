@@ -39,11 +39,6 @@
         border: none;
         background: none;
     }
-
-    // Swipers inside modals
-    .modal & {
-        --swiper-theme-color: @invertedTextColor;
-    }
 }
 
 // The wrapper contains the slides
@@ -82,9 +77,10 @@
     box-sizing: border-box;
 }
 
-// Presentation template
-body.presentation {
-    overflow: hidden;
+// Prevent unwanted scrollbars
+body.presentation,
+body.dimmed.scrolling > .dimmer {
+    overflow: hidden !important;
 }
 
 // Stretch full screen slider to viewport already, before JS is loaded
@@ -106,5 +102,56 @@ body.presentation {
         .swiper-pagination {
             visibility: hidden;
         }
+    }
+}
+
+
+// Swipers inside lightbox modals
+.modal.overlay {
+    .inside.close.icon {
+        z-index: 9999 !important;
+
+        &:before,
+        &:after {
+            font-family: swiper-icons;
+            font-size: calc(var(--swiper-navigation-size) / 1.5);
+            font-weight: 900;
+            color: @invertedTextColor;
+        }
+
+        &:before {
+            content: 'next';
+        }
+        &:after {
+            content: 'prev';
+            margin-left: -2.1px;
+        }
+    }
+
+    .swiper-container {
+        --swiper-theme-color: @invertedTextColor;
+        border-radius: 0 !important;
+    }
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > figcaption {
+            position: absolute;
+            bottom: 3em;
+            width: 100%;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+    .swiper-button-prev {
+        left: 22px;
+    }
+    .swiper-button-next {
+        right: 22px;
+    }
+    .swiper-pagination-bullet {
+        background: var(--swiper-pagination-color);
     }
 }
