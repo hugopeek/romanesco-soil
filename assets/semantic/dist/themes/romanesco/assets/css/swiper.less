@@ -13,31 +13,30 @@
 
 :root {
     --swiper-theme-color: @lightTextColor;
+    --swiper-pagination-color: var(--swiper-theme-color);
 }
 
 // Navigation elements and slide wrapper are inside the container
 .swiper-container {
 
-    // Apply platform border radius to sliders inside grid columns
-    //&.column,
-    //&.nested {
-    //    .swiper-wrapper {
-    //        border-radius: @roundedBorderRadius;
-    //    }
-    //    .swiper-button-prev {
-    //        border-top-left-radius: @roundedBorderRadius;
-    //        border-bottom-left-radius: @roundedBorderRadius;
-    //    }
-    //    .swiper-button-next {
-    //        border-top-right-radius: @roundedBorderRadius;
-    //        border-bottom-right-radius: @roundedBorderRadius;
-    //    }
-    //}
+    // Apply platform border radius to nested sliders
+    .nested.slider & {
+        border-radius: @roundedBorderRadius;
 
-    // Prev/next buttons
-    button[class*="swiper-button"] {
-        border: none;
-        background: none;
+        .swiper-button-prev {
+            border-top-left-radius: @roundedBorderRadius;
+            border-bottom-left-radius: @roundedBorderRadius;
+        }
+        .swiper-button-next {
+            border-top-right-radius: @roundedBorderRadius;
+            border-bottom-right-radius: @roundedBorderRadius;
+        }
+    }
+
+    &.inverted,
+    &.inverted ~ [class*="swiper-"] {
+        --swiper-theme-color: @invertedTextColor;
+        --swiper-pagination-color: #fff;
     }
 }
 
@@ -77,6 +76,60 @@
     box-sizing: border-box;
 }
 
+// Pagination
+.swiper-pagination {
+    .swiper-pagination-bullet {
+        background: var(--swiper-pagination-color);
+    }
+
+    &.outside {
+        left: 0;
+        right: 0;
+        bottom: 1em;
+        width: 100%;
+
+        .swiper-pagination-bullet {
+            margin: 0 2px;
+        }
+    }
+}
+
+// Prev/next buttons
+button[class*="swiper-button"] {
+    border: none;
+    background: none;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+
+    width: 5vw;
+    min-width: 3rem;
+
+    &.outside {
+        @media screen and (min-width: @largeMonitorBreakpoint) {
+            width: 8vw;
+        }
+    }
+    .fullscreen.swiper-container & {
+        width: 8vw;
+    }
+
+    &:hover {
+        background: @subtleTransparentBlack;
+    }
+    .inverted.swiper-container &:hover,
+    .inverted.swiper-container + &:hover {
+        background: @transparentWhite;
+    }
+    &.swiper-button-prev {
+        left: 0;
+    }
+    &.swiper-button-next {
+        right: 0;
+    }
+}
+
 // Prevent unwanted scrollbars
 body.presentation,
 body.dimmed.scrolling > .dimmer {
@@ -109,7 +162,27 @@ body.dimmed.scrolling > .dimmer {
 // Swipers inside lightbox modals
 .modal.overlay {
     .inside.close.icon {
-        z-index: 9999 !important;
+        z-index: 999 !important;
+        top: 0 !important;
+        right: 0 !important;
+        width: 8vw;
+        height: 8vw;
+        min-width: 3rem;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: @largestMobileScreen) {
+            min-width: 5rem;
+            min-height: 5rem;
+        }
+
+        &:hover {
+            background: @transparentWhite;
+        }
 
         &:before,
         &:after {
@@ -129,7 +202,6 @@ body.dimmed.scrolling > .dimmer {
     }
 
     .swiper-container {
-        --swiper-theme-color: @invertedTextColor;
         border-radius: 0 !important;
     }
     .swiper-slide {
@@ -139,19 +211,10 @@ body.dimmed.scrolling > .dimmer {
 
         > figcaption {
             position: absolute;
-            bottom: 3em;
+            bottom: 2em;
             width: 100%;
             text-align: center;
             font-size: 1.5rem;
         }
-    }
-    .swiper-button-prev {
-        left: 22px;
-    }
-    .swiper-button-next {
-        right: 22px;
-    }
-    .swiper-pagination-bullet {
-        background: var(--swiper-pagination-color);
     }
 }
