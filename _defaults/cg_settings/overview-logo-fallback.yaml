@@ -1,8 +1,8 @@
 id: 19
 key: overview_logo_fallback
-label: 'Fallback logo for overviews'
+label: 'Fallback logo'
 xtype: modx-panel-tv-image
-description: ''
+description: 'For empty client logo''s in testimonials / portfolio.'
 sortorder: 30
 group: 8
-source: 15
+source: 2

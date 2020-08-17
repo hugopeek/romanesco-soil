@@ -3,6 +3,10 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+- Set baseUrlRelative to 0 for Icons media source (fixes icon preview in MODX)
+- Add default fallback images in uploads folder
+- Add overview fallback image fields for each aspect ratio
+
 ## Romanesco Soil v2.3.2
 Released on July 1, 2020
 

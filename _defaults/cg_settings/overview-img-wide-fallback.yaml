@@ -1,0 +1,9 @@
+id: 76
+key: overview_img_wide_fallback
+label: 'Fallback image (Wide)'
+xtype: modx-panel-tv-image
+description: '16:9 aspect ratio'
+sortorder: 34
+value: fallback/fallback_wide.png
+group: 8
+source: 2

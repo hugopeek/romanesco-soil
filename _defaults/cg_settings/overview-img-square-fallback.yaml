@@ -1,0 +1,9 @@
+id: 75
+key: overview_img_square_fallback
+label: 'Fallback image (Square)'
+xtype: modx-panel-tv-image
+description: '1:1 aspect ratio'
+sortorder: 33
+value: fallback/fallback_square.png
+group: 8
+source: 2

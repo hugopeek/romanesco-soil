@@ -1,0 +1,9 @@
+id: 74
+key: overview_img_portrait_fallback
+label: 'Fallback image (Portrait)'
+xtype: modx-panel-tv-image
+description: '3:4 aspect ratio'
+sortorder: 32
+value: fallback/fallback_portrait.png
+group: 8
+source: 2

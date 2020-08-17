@@ -1,0 +1,9 @@
+id: 77
+key: overview_img_pano_fallback
+label: 'Fallback image (Panorama)'
+xtype: modx-panel-tv-image
+description: '21:9 aspect ratio'
+sortorder: 35
+value: fallback/fallback_pano.png
+group: 8
+source: 2

@@ -1,0 +1,9 @@
+id: 18
+key: overview_img_landscape_fallback
+label: 'Fallback image (Landscape)'
+xtype: modx-panel-tv-image
+description: '4:3 aspect ratio'
+sortorder: 31
+value: fallback/fallback_landscape.png
+group: 8
+source: 2
