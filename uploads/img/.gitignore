@@ -5,6 +5,7 @@
 !.gitignore
 !/background/
 !/content/
+!/fallback/
 !/organization/
 !/overview/
 !/person/

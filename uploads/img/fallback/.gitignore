@@ -1,0 +1,10 @@
+# Ignore everything in this directory
+*
+
+# Except this file
+!.gitignore
+!/fallback_landscape.png
+!/fallback_portrait.png
+!/fallback_square.png
+!/fallback_wide.png
+!/fallback_pano.png
