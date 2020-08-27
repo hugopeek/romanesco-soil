@@ -27,8 +27,8 @@ $(function() {
             on: 'click'
         })
     ;
-    $('.ui.tabular.menu .item').tab();
-    $('.ui.tabbed.menu .item').tab();
+    $('.ui.tabular.menu:not(#submenu) .item').tab();
+    $('.ui.tabbed.menu:not(#submenu) .item').tab();
 
     $('.ui.checkbox:not(.other):not(.collapsible):not(.slave)').checkbox();
     $('.ui.radio.checkbox:not(.other):not(.collapsible):not(.slave)').checkbox();
@@ -237,7 +237,11 @@ $(function() {
         unmatch: function() {
 
             // Refill empty container
-            $('#menu .branding').after($navDropdown);
+            if ($('#menu .main.menu').length) {
+                $('#menu .main.menu').prepend($navDropdown);
+            } else {
+                $('#menu .branding').after($navDropdown);
+            }
 
             // Initialize again to make sure 3-level dropdown is working
             createDropdown($navDropdown);
