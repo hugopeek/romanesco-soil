@@ -3,6 +3,13 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.4.0
+Released on August 27, 2020
+
+> Patterns: 1.0.0-beta1
+> Backyard: 1.0.0-beta1
+
+- Add configuration setting to switch critical CSS on or off
 - Set baseUrlRelative to 0 for Icons media source (fixes icon preview in MODX)
 - Add default fallback images in uploads folder
 - Add overview fallback image fields for each aspect ratio

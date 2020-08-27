@@ -1,0 +1,7 @@
+id: 78
+key: divider_performance_1
+label: Divider
+xtype: clientconfig-line
+description: ''
+sortorder: 40
+group: 7
