@@ -55,7 +55,7 @@ $(function() {
 
 // Sticky navbar behaviour
 $(function() {
-    var $header = $("#menu");
+    var $header = $("#menu.sticky");
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
@@ -88,11 +88,13 @@ $(function() {
         var groups = $items.length;
         var maxColumns = 5;
 
-        if (groups < maxColumns) {
+        if (groups <= maxColumns) {
             var numbers = ['zero','one','two','three','four','five','six'];
             var columns = numbers[groups];
+            var divider = 'divided';
         } else {
             var columns = 'five';
+            var divider = 'internally celled';
         }
 
         // Dropdown class is only intended for no-js situations
@@ -104,7 +106,7 @@ $(function() {
         });
 
         // Turn list into large popup menu
-        $target.wrapAll('<div class="ui flowing basic popup"><div class="ui ' + columns + ' column internally celled grid"></div></div>');
+        $target.wrapAll('<div class="ui flowing basic popup"><div class="ui ' + columns + ' column ' + divider + ' grid"></div></div>');
         $target.find('.column.item').removeClass('item');
         $target.find('.title').addClass('ui tiny header');
         $target.find('.dropdown.icon').remove();
