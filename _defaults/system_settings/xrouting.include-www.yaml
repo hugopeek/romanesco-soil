@@ -1,5 +1,0 @@
-key: xrouting.include_www
-value: '1'
-xtype: combo-boolean
-namespace: xrouting
-area: common

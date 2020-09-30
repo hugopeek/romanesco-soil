@@ -1,0 +1,7 @@
+id: 81
+key: critical_shared_templates
+label: 'Shared critical templates'
+xtype: textfield
+description: 'Use a single critical CSS file for pages with these templates. Reference templates by ID and separate them with a comma.'
+sortorder: 52
+group: 7

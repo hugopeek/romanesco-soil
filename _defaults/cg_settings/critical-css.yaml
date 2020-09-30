@@ -1,0 +1,9 @@
+id: 79
+key: critical_css
+label: 'Enable critical CSS'
+xtype: modx-combo
+description: 'When enabled, a CSS file will be generated for each resource, containing only the styles needed to properly display content above the fold. This feature requires the ''critical'' NPM package to be installed locally.'
+sortorder: 50
+value: '0'
+group: 7
+options: No==0||Yes==1
