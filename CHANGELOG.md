@@ -3,6 +3,17 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.4.1
+Released on November 3, 2020
+
+> Patterns: 1.0.0-beta2
+> Backyard: 1.0.0-beta2
+
+- Use Matomo by inserting full tracking code directly
+- Add setting to share critical CSS amongst templates
+- Add setting to exclude templates from critical CSS
+- Update Fomantic UI to 2.8.6
+
 ## Romanesco Soil v2.4.0
 Released on August 27, 2020
 
