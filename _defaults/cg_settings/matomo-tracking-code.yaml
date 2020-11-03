@@ -1,0 +1,7 @@
+id: 62
+key: matomo_tracking_code
+label: 'Matomo tracking code'
+xtype: code
+description: 'Use Matomo instead of Google Analytics. Matomo is free and open source, giving you full ownership of your data. You can host Matomo on your own server, or create a cloud account on matomo.org. Because the tracking code is slightly customized for each site, it''s easier to just paste the full javascript snippet here.'
+sortorder: 10
+group: 5
