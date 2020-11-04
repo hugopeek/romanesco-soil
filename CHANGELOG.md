@@ -3,6 +3,11 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.4.2
+Released on ...
+
+- Move collections_settings table to defaults
+
 ## Romanesco Soil v2.4.1
 Released on November 3, 2020
 
