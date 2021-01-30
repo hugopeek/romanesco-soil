@@ -1,0 +1,5 @@
+id: 11
+name: collections.template.parent
+value: 'Parent ID (optional, @SNIPPET can be used)'
+namespace: collections
+createdon: '2020-12-15 06:57:43'

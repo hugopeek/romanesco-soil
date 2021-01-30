@@ -1,0 +1,5 @@
+id: 6
+name: collections.children.delete_confirm
+value: 'Are you sure you want to delete this child?'
+namespace: collections
+createdon: '2020-12-15 06:55:25'

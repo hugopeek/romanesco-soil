@@ -1,6 +1,6 @@
 id: 4
 name: CSS
-description: 'CSS content'
+description: 'CSS markup'
 mime_type: text/css
 file_extensions: .css
 headers: null

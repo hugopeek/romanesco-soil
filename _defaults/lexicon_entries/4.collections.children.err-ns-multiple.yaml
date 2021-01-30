@@ -1,0 +1,5 @@
+id: 4
+name: collections.children.err_ns_multiple
+value: 'You have to select at least one child resource.'
+namespace: collections
+createdon: '2020-12-15 06:55:12'

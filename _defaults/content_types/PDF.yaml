@@ -1,6 +1,6 @@
 id: 8
 name: PDF
-description: 'PDF Files'
+description: 'PDF file'
 mime_type: application/pdf
 file_extensions: .pdf
 headers: null

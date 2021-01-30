@@ -1,0 +1,5 @@
+id: 5
+name: collections.children.delete_multiple_confirm
+value: 'Are you sure you want to delete all selected children?'
+namespace: collections
+createdon: '2020-12-15 06:55:19'

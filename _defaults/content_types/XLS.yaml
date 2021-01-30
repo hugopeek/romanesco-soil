@@ -1,0 +1,7 @@
+id: 15
+name: XLS
+description: 'MS Excel document (Office 2007 compatible)'
+mime_type: application/vnd.ms-excel
+file_extensions: .xls
+headers: 'a:0:{}'
+binary: 1

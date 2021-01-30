@@ -1,0 +1,7 @@
+id: 14
+name: DOCX
+description: 'MS Word document'
+mime_type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+file_extensions: .docx
+headers: 'a:0:{}'
+binary: 1

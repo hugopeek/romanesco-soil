@@ -1,0 +1,5 @@
+id: 10
+name: collections.children.remove_confirm
+value: 'Are you sure you want to remove this child?<br /><strong>This operation is permanent and can''t be reverted.</strong>'
+namespace: collections
+createdon: '2020-12-15 06:56:25'
