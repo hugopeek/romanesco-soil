@@ -4,7 +4,7 @@ $(".file-uploader-buttons").arrive(".qq-uploader", function() {
 
     // Add Semantic UI classes to elements inside upload field
     $('.qq-upload-button, .qq-clear-button').wrapAll('<div class="ui buttons"></div>');
-    $('.qq-upload-drop-area').addClass('ui basic secondary segment').css('display', '');
+    $('.qq-upload-drop-area').addClass('ui basic secondary very padded segment').css('display', '');
     $('.qq-upload-button').addClass('ui primary right labeled icon button').append('<i class="upload icon"></i>');
     $('.qq-clear-button').addClass('ui right labeled icon button').append('<i class="remove icon"></i>');
     $('.qq-upload-list').addClass('ui list');
