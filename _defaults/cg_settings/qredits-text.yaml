@@ -1,0 +1,8 @@
+id: 83
+key: qredits_text
+label: 'Text in credits popup'
+xtype: richtext
+description: 'This overrides the default text retrieved from lexicon.'
+sortorder: 91
+group: 9
+options: On==1||Off==0

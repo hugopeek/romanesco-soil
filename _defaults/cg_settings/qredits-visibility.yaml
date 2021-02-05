@@ -1,0 +1,9 @@
+id: 82
+key: qredits_visibility
+label: 'Show credits in copyright footer'
+xtype: modx-combo
+description: 'This adds a little Romanesco badge at the bottom right corner of each footer, which opens a popup on click with additional information.'
+sortorder: 90
+value: '1'
+group: 9
+options: On==1||Off==0
