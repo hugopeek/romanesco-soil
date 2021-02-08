@@ -1,5 +1,5 @@
  /*
- * # Fomantic UI - 2.8.6
+ * # Fomantic UI - 2.8.7
  * https://github.com/fomantic/Fomantic-UI
  * http://fomantic-ui.com/
  *
@@ -1679,10 +1679,10 @@ $.fn.checkbox = function(parameters) {
         trigger: {
           change: function() {
             var
-              events       = document.createEvent('HTMLEvents'),
               inputElement = $input[0]
             ;
             if(inputElement) {
+              var events = document.createEvent('HTMLEvents');
               module.verbose('Triggering native change event');
               events.initEvent('change', true, false);
               inputElement.dispatchEvent(events);
@@ -2408,11 +2408,11 @@ $.fn.dimmer = function(parameters) {
             var
               color      = $dimmer.css('background-color'),
               colorArray = color.split(','),
-              isRGB      = (colorArray && colorArray.length == 3),
-              isRGBA     = (colorArray && colorArray.length == 4)
+              isRGB      = (colorArray && colorArray.length >= 3)
             ;
             opacity    = settings.opacity === 0 ? 0 : settings.opacity || opacity;
-            if(isRGB || isRGBA) {
+            if(isRGB) {
+              colorArray[2] = colorArray[2].replace(')','');
               colorArray[3] = opacity + ')';
               color         = colorArray.join(',');
             }
@@ -2851,6 +2851,7 @@ $.fn.dropdown = function(parameters) {
         id,
         selectObserver,
         menuObserver,
+        classObserver,
         module
       ;
 
@@ -2916,15 +2917,18 @@ $.fn.dropdown = function(parameters) {
           ;
           module.disconnect.menuObserver();
           module.disconnect.selectObserver();
+          module.disconnect.classObserver();
         },
 
         observeChanges: function() {
           if('MutationObserver' in window) {
             selectObserver = new MutationObserver(module.event.select.mutation);
             menuObserver   = new MutationObserver(module.event.menu.mutation);
-            module.debug('Setting up mutation observer', selectObserver, menuObserver);
+            classObserver  = new MutationObserver(module.event.class.mutation);
+            module.debug('Setting up mutation observer', selectObserver, menuObserver, classObserver);
             module.observe.select();
             module.observe.menu();
+            module.observe.class();
           }
         },
 
@@ -2937,6 +2941,11 @@ $.fn.dropdown = function(parameters) {
           selectObserver: function() {
             if(selectObserver) {
               selectObserver.disconnect();
+            }
+          },
+          classObserver: function() {
+            if(classObserver) {
+              classObserver.disconnect();
             }
           }
         },
@@ -2954,6 +2963,13 @@ $.fn.dropdown = function(parameters) {
               menuObserver.observe($menu[0], {
                 childList : true,
                 subtree   : true
+              });
+            }
+          },
+          class: function() {
+            if(module.has.search() && classObserver) {
+              classObserver.observe($module[0], {
+                attributes : true
               });
             }
           }
@@ -3548,9 +3564,9 @@ $.fn.dropdown = function(parameters) {
                     values = [];
                 }
                 module.remove.message();
-                module.setup.menu({
-                  values: values
-                });
+                var menuConfig = {};
+                menuConfig[fields.values] = values;
+                module.setup.menu(menuConfig);
 
                 if(values.length===0 && !settings.allowAdditions) {
                   module.add.message(message.noResults);
@@ -3746,7 +3762,9 @@ $.fn.dropdown = function(parameters) {
               module.clear();
             }
             module.debug('Creating dropdown with specified values', values);
-            module.setup.menu({values: values});
+            var menuConfig = {};
+            menuConfig[fields.values] = values;
+            module.setup.menu(menuConfig);
             $.each(values, function(index, item) {
               if(item.selected == true) {
                 module.debug('Setting initial selection to', item[fields.value]);
@@ -3968,6 +3986,15 @@ $.fn.dropdown = function(parameters) {
                   event.preventDefault();
                 }
               }
+            }
+          },
+          class: {
+            mutation: function(mutations) {
+              mutations.forEach(function(mutation) {
+                if(mutation.attributeName === "class") {
+                  module.check.disabled();
+                }
+              });
             }
           },
           select: {
@@ -4391,10 +4418,10 @@ $.fn.dropdown = function(parameters) {
         trigger: {
           change: function() {
             var
-              events       = document.createEvent('HTMLEvents'),
               inputElement = $input[0]
             ;
             if(inputElement) {
+              var events = document.createEvent('HTMLEvents');
               module.verbose('Triggering native change event');
               events.initEvent('change', true, false);
               inputElement.dispatchEvent(events);
@@ -4526,7 +4553,7 @@ $.fn.dropdown = function(parameters) {
             return $module.data(metadata.placeholderText) || '';
           },
           text: function() {
-            return $text.text();
+            return settings.preserveHTML ? $text.html() : $text.text();
           },
           query: function() {
             return String($search.val()).trim();
@@ -4710,9 +4737,9 @@ $.fn.dropdown = function(parameters) {
           selectValues: function() {
             var
               select = {},
-              oldGroup = []
+              oldGroup = [],
+              values = []
             ;
-            select.values = [];
             $module
               .find('option')
                 .each(function() {
@@ -4733,14 +4760,14 @@ $.fn.dropdown = function(parameters) {
                   }
                   else {
                     if(group.length !== oldGroup.length || group[0] !== oldGroup[0]) {
-                      select.values.push({
+                      values.push({
                         type: 'header',
                         divider: settings.headerDivider,
                         name: group.attr('label') || ''
                       });
                       oldGroup = group;
                     }
-                    select.values.push({
+                    values.push({
                       name     : name,
                       value    : value,
                       text     : text,
@@ -4755,19 +4782,21 @@ $.fn.dropdown = function(parameters) {
             }
             if(settings.sortSelect) {
               if(settings.sortSelect === true) {
-                select.values.sort(function(a, b) {
+                values.sort(function(a, b) {
                   return a.name.localeCompare(b.name);
                 });
               } else if(settings.sortSelect === 'natural') {
-                select.values.sort(function(a, b) {
+                values.sort(function(a, b) {
                   return (a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
                 });
               } else if($.isFunction(settings.sortSelect)) {
-                select.values.sort(settings.sortSelect);
+                values.sort(settings.sortSelect);
               }
+              select[fields.values] = values;
               module.debug('Retrieved and sorted values from select', select);
             }
             else {
+              select[fields.values] = values;
               module.debug('Retrieved values from select', select);
             }
             return select;
@@ -4890,6 +4919,9 @@ $.fn.dropdown = function(parameters) {
               }
             }
             return true;
+          },
+          disabled: function(){
+            $search.attr('tabindex',module.is.disabled() ? -1 : 0);
           }
         },
 
@@ -5155,8 +5187,8 @@ $.fn.dropdown = function(parameters) {
               module.debug('Added tabindex to searchable dropdown');
               $search
                 .val('')
-                .attr('tabindex', 0)
               ;
+              module.check.disabled();
               $menu
                 .attr('tabindex', -1)
               ;
@@ -6287,9 +6319,12 @@ $.fn.dropdown = function(parameters) {
               module.set.scrollPosition(module.get.selectedItem(), true);
             }
             if( module.is.hidden($currentMenu) || module.is.animating($currentMenu) ) {
+              var displayType = $module.hasClass('column') ? 'flex' : false;
               if(transition == 'none') {
                 start();
-                $currentMenu.transition('show');
+                $currentMenu.transition({
+                  displayType: displayType
+                }).transition('show');
                 callback.call(element);
               }
               else if($.fn.transition !== undefined && $module.transition('is supported')) {
@@ -6301,6 +6336,7 @@ $.fn.dropdown = function(parameters) {
                     duration   : settings.duration,
                     queue      : true,
                     onStart    : start,
+                    displayType: displayType,
                     onComplete : function() {
                       callback.call(element);
                     }
@@ -10003,6 +10039,7 @@ $.fn.search = function(parameters) {
               }
               module.hideResults();
               if(href) {
+                event.preventDefault();
                 module.verbose('Opening search link found in result', $link);
                 if(target == '_blank' || event.ctrlKey) {
                   window.open(href);

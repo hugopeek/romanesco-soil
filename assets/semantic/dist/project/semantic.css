@@ -1,5 +1,5 @@
  /*
- * # Fomantic UI - 2.8.6
+ * # Fomantic UI - 2.8.7
  * https://github.com/fomantic/Fomantic-UI
  * http://fomantic-ui.com/
  *
@@ -1957,7 +1957,7 @@ blockquote:not(.quote) {
 ---------------*/
 
 .ui.icon.buttons .button,
-.ui.icon.button:not(.animated) {
+.ui.icon.button:not(.animated):not(.compact) {
   padding: 0.78571429em 0.78571429em 0.88571429em;
 }
 
@@ -6714,7 +6714,7 @@ body.readability #content .ui.container p + h4,
       Icon
 ---------------*/
 
-.ui.header > .icon {
+.ui.header > i.icon {
   display: table-cell;
   opacity: 1;
   font-size: 1.5em;
@@ -6724,7 +6724,7 @@ body.readability #content .ui.container p + h4,
 
 /* With Text Node */
 
-.ui.header .icon:only-child {
+.ui.header > i.icon:only-child {
   display: inline-block;
   padding: 0;
   margin-right: 0.75rem;
@@ -6767,7 +6767,7 @@ body.readability #content .ui.container p + h4,
 
 /* After Icon */
 
-.ui.header > .icon + .content {
+.ui.header > i.icon + .content {
   padding-left: 0.75rem;
   display: table-cell;
   vertical-align: middle;
@@ -6970,7 +6970,7 @@ h6.ui.header .sub.header {
   margin-top: 0;
 }
 
-.ui.icon.header .icon {
+.ui.icon.header > i.icon {
   float: none;
   display: block;
   width: auto;
@@ -6991,15 +6991,15 @@ h6.ui.header .sub.header {
   padding: 0;
 }
 
-.ui.icon.header .circular.icon {
+.ui.icon.header > i.circular.icon {
   font-size: 2em;
 }
 
-.ui.icon.header .square.icon {
+.ui.icon.header > i.square.icon {
   font-size: 2em;
 }
 
-.ui.block.icon.header .icon {
+.ui.block.icon.header > i.icon {
   margin-bottom: 0;
 }
 
@@ -7478,7 +7478,7 @@ a.ui.inverted.black.header.header.header:hover {
   padding-bottom: 0.21428571rem;
 }
 
-.ui.dividing.header .icon {
+.ui.dividing.header i.icon {
   margin-bottom: 0;
 }
 
@@ -9014,6 +9014,10 @@ i.icon.chart.bar:before {
 }
 
 i.icon.chart.line:before {
+  content: "\f201";
+}
+
+i.icon.chartline:before {
   content: "\f201";
 }
 
@@ -11661,7 +11665,7 @@ i.icon.stopwatch:before {
   content: "\f2f2";
 }
 
-i.icon.stopwatch.20:before {
+i.icon.stopwatch.twenty:before {
   content: "\f96f";
 }
 
@@ -12892,6 +12896,10 @@ i.icon.like:before {
 }
 
 i.icon.line.graph:before {
+  content: "\f201";
+}
+
+i.icon.linegraph:before {
   content: "\f201";
 }
 
@@ -16715,7 +16723,6 @@ img.ui.image {
     Vertical Aligned
   -------------------*/
 
-.ui.top.aligned.images .image,
 .ui.top.aligned.image,
 .ui.top.aligned.image svg,
 .ui.top.aligned.image img {
@@ -16723,7 +16730,6 @@ img.ui.image {
   vertical-align: top;
 }
 
-.ui.middle.aligned.images .image,
 .ui.middle.aligned.image,
 .ui.middle.aligned.image svg,
 .ui.middle.aligned.image img {
@@ -16731,12 +16737,29 @@ img.ui.image {
   vertical-align: middle;
 }
 
-.ui.bottom.aligned.images .image,
 .ui.bottom.aligned.image,
 .ui.bottom.aligned.image svg,
 .ui.bottom.aligned.image img {
   display: inline-block;
   vertical-align: bottom;
+}
+
+.ui.top.aligned.images .image,
+.ui.images .ui.top.aligned.image {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.ui.middle.aligned.images .image,
+.ui.images .ui.middle.aligned.image {
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.ui.bottom.aligned.images .image,
+.ui.images .ui.bottom.aligned.image {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
 }
 
 /*--------------
@@ -16855,10 +16878,28 @@ img.ui.bordered.image {
   margin-bottom: 0;
 }
 
-.ui.centered.images,
 .ui.centered.image {
+  display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.ui.centered.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /*--------------
@@ -17519,7 +17560,7 @@ a.circular.image > img:hover {
   padding-right: 3.25em !important;
 }
 
-.ui[class*="corner labeled"].icon.input:not([class*="left corner labeled"]) > .icon {
+.ui[class*="corner labeled"].icon.input:not([class*="left corner labeled"]) > i.icon {
   margin-right: 1.25em;
 }
 
@@ -17535,15 +17576,15 @@ a.circular.image > img:hover {
   padding-left: 3.25em !important;
 }
 
-.ui[class*="left corner labeled"].icon.input > .icon {
+.ui[class*="left corner labeled"].icon.input > i.icon {
   margin-left: 1.25em;
 }
 
-.ui.icon.input > textarea ~ .icon {
+.ui.icon.input > textarea ~ i.icon {
   height: 3em;
 }
 
-:not(.field) > .ui.transparent.icon.input > textarea ~ .icon {
+:not(.field) > .ui.transparent.icon.input > textarea ~ i.icon {
   height: 1.3em;
 }
 
@@ -17561,110 +17602,110 @@ a.circular.image > img:hover {
 
 /* Labeled and action input states */
 
-.ui.form > .field.error > .ui.action.input > .ui.button,
-.ui.form > .field.error > .ui.labeled.input:not([class*="corner labeled"]) > .ui.label,
+.ui.form .field.error > .ui.action.input > .ui.button,
+.ui.form .field.error > .ui.labeled.input:not([class*="corner labeled"]) > .ui.label,
 .ui.action.input.error > .ui.button,
 .ui.labeled.input.error:not([class*="corner labeled"]) > .ui.label {
   border-top: 1px solid #E0B4B4;
   border-bottom: 1px solid #E0B4B4;
 }
 
-.ui.form > .field.error > .ui[class*="left action"].input > .ui.button,
-.ui.form > .field.error > .ui.labeled.input:not(.right):not([class*="corner labeled"]) > .ui.label,
+.ui.form .field.error > .ui[class*="left action"].input > .ui.button,
+.ui.form .field.error > .ui.labeled.input:not(.right):not([class*="corner labeled"]) > .ui.label,
 .ui[class*="left action"].input.error > .ui.button,
 .ui.labeled.input.error:not(.right):not([class*="corner labeled"]) > .ui.label {
   border-left: 1px solid #E0B4B4;
 }
 
-.ui.form > .field.error > .ui.action.input:not([class*="left action"]) > input + .ui.button,
-.ui.form > .field.error > .ui.right.labeled.input:not([class*="corner labeled"]) > input + .ui.label,
+.ui.form .field.error > .ui.action.input:not([class*="left action"]) > input + .ui.button,
+.ui.form .field.error > .ui.right.labeled.input:not([class*="corner labeled"]) > input + .ui.label,
 .ui.action.input.error:not([class*="left action"]) > input + .ui.button,
 .ui.right.labeled.input.error:not([class*="corner labeled"]) > input + .ui.label {
   border-right: 1px solid #E0B4B4;
 }
 
-.ui.form > .field.error > .ui.right.labeled.input:not([class*="corner labeled"]) > .ui.label:first-child,
+.ui.form .field.error > .ui.right.labeled.input:not([class*="corner labeled"]) > .ui.label:first-child,
 .ui.right.labeled.input.error:not([class*="corner labeled"]) > .ui.label:first-child {
   border-left: 1px solid #E0B4B4;
 }
 
-.ui.form > .field.info > .ui.action.input > .ui.button,
-.ui.form > .field.info > .ui.labeled.input:not([class*="corner labeled"]) > .ui.label,
+.ui.form .field.info > .ui.action.input > .ui.button,
+.ui.form .field.info > .ui.labeled.input:not([class*="corner labeled"]) > .ui.label,
 .ui.action.input.info > .ui.button,
 .ui.labeled.input.info:not([class*="corner labeled"]) > .ui.label {
   border-top: 1px solid #A9D5DE;
   border-bottom: 1px solid #A9D5DE;
 }
 
-.ui.form > .field.info > .ui[class*="left action"].input > .ui.button,
-.ui.form > .field.info > .ui.labeled.input:not(.right):not([class*="corner labeled"]) > .ui.label,
+.ui.form .field.info > .ui[class*="left action"].input > .ui.button,
+.ui.form .field.info > .ui.labeled.input:not(.right):not([class*="corner labeled"]) > .ui.label,
 .ui[class*="left action"].input.info > .ui.button,
 .ui.labeled.input.info:not(.right):not([class*="corner labeled"]) > .ui.label {
   border-left: 1px solid #A9D5DE;
 }
 
-.ui.form > .field.info > .ui.action.input:not([class*="left action"]) > input + .ui.button,
-.ui.form > .field.info > .ui.right.labeled.input:not([class*="corner labeled"]) > input + .ui.label,
+.ui.form .field.info > .ui.action.input:not([class*="left action"]) > input + .ui.button,
+.ui.form .field.info > .ui.right.labeled.input:not([class*="corner labeled"]) > input + .ui.label,
 .ui.action.input.info:not([class*="left action"]) > input + .ui.button,
 .ui.right.labeled.input.info:not([class*="corner labeled"]) > input + .ui.label {
   border-right: 1px solid #A9D5DE;
 }
 
-.ui.form > .field.info > .ui.right.labeled.input:not([class*="corner labeled"]) > .ui.label:first-child,
+.ui.form .field.info > .ui.right.labeled.input:not([class*="corner labeled"]) > .ui.label:first-child,
 .ui.right.labeled.input.info:not([class*="corner labeled"]) > .ui.label:first-child {
   border-left: 1px solid #A9D5DE;
 }
 
-.ui.form > .field.success > .ui.action.input > .ui.button,
-.ui.form > .field.success > .ui.labeled.input:not([class*="corner labeled"]) > .ui.label,
+.ui.form .field.success > .ui.action.input > .ui.button,
+.ui.form .field.success > .ui.labeled.input:not([class*="corner labeled"]) > .ui.label,
 .ui.action.input.success > .ui.button,
 .ui.labeled.input.success:not([class*="corner labeled"]) > .ui.label {
   border-top: 1px solid #A3C293;
   border-bottom: 1px solid #A3C293;
 }
 
-.ui.form > .field.success > .ui[class*="left action"].input > .ui.button,
-.ui.form > .field.success > .ui.labeled.input:not(.right):not([class*="corner labeled"]) > .ui.label,
+.ui.form .field.success > .ui[class*="left action"].input > .ui.button,
+.ui.form .field.success > .ui.labeled.input:not(.right):not([class*="corner labeled"]) > .ui.label,
 .ui[class*="left action"].input.success > .ui.button,
 .ui.labeled.input.success:not(.right):not([class*="corner labeled"]) > .ui.label {
   border-left: 1px solid #A3C293;
 }
 
-.ui.form > .field.success > .ui.action.input:not([class*="left action"]) > input + .ui.button,
-.ui.form > .field.success > .ui.right.labeled.input:not([class*="corner labeled"]) > input + .ui.label,
+.ui.form .field.success > .ui.action.input:not([class*="left action"]) > input + .ui.button,
+.ui.form .field.success > .ui.right.labeled.input:not([class*="corner labeled"]) > input + .ui.label,
 .ui.action.input.success:not([class*="left action"]) > input + .ui.button,
 .ui.right.labeled.input.success:not([class*="corner labeled"]) > input + .ui.label {
   border-right: 1px solid #A3C293;
 }
 
-.ui.form > .field.success > .ui.right.labeled.input:not([class*="corner labeled"]) > .ui.label:first-child,
+.ui.form .field.success > .ui.right.labeled.input:not([class*="corner labeled"]) > .ui.label:first-child,
 .ui.right.labeled.input.success:not([class*="corner labeled"]) > .ui.label:first-child {
   border-left: 1px solid #A3C293;
 }
 
-.ui.form > .field.warning > .ui.action.input > .ui.button,
-.ui.form > .field.warning > .ui.labeled.input:not([class*="corner labeled"]) > .ui.label,
+.ui.form .field.warning > .ui.action.input > .ui.button,
+.ui.form .field.warning > .ui.labeled.input:not([class*="corner labeled"]) > .ui.label,
 .ui.action.input.warning > .ui.button,
 .ui.labeled.input.warning:not([class*="corner labeled"]) > .ui.label {
   border-top: 1px solid #C9BA9B;
   border-bottom: 1px solid #C9BA9B;
 }
 
-.ui.form > .field.warning > .ui[class*="left action"].input > .ui.button,
-.ui.form > .field.warning > .ui.labeled.input:not(.right):not([class*="corner labeled"]) > .ui.label,
+.ui.form .field.warning > .ui[class*="left action"].input > .ui.button,
+.ui.form .field.warning > .ui.labeled.input:not(.right):not([class*="corner labeled"]) > .ui.label,
 .ui[class*="left action"].input.warning > .ui.button,
 .ui.labeled.input.warning:not(.right):not([class*="corner labeled"]) > .ui.label {
   border-left: 1px solid #C9BA9B;
 }
 
-.ui.form > .field.warning > .ui.action.input:not([class*="left action"]) > input + .ui.button,
-.ui.form > .field.warning > .ui.right.labeled.input:not([class*="corner labeled"]) > input + .ui.label,
+.ui.form .field.warning > .ui.action.input:not([class*="left action"]) > input + .ui.button,
+.ui.form .field.warning > .ui.right.labeled.input:not([class*="corner labeled"]) > input + .ui.label,
 .ui.action.input.warning:not([class*="left action"]) > input + .ui.button,
 .ui.right.labeled.input.warning:not([class*="corner labeled"]) > input + .ui.label {
   border-right: 1px solid #C9BA9B;
 }
 
-.ui.form > .field.warning > .ui.right.labeled.input:not([class*="corner labeled"]) > .ui.label:first-child,
+.ui.form .field.warning > .ui.right.labeled.input:not([class*="corner labeled"]) > .ui.label:first-child,
 .ui.right.labeled.input.warning:not([class*="corner labeled"]) > .ui.label:first-child {
   border-left: 1px solid #C9BA9B;
 }
@@ -20365,17 +20406,17 @@ ol.ui.list ol li,
 }
 
 .ui.list .list > .item > .image + .content,
-.ui.list .list > .item > .icon + .content,
+.ui.list .list > .item > i.icon + .content,
 .ui.list > .item > .image + .content,
-.ui.list > .item > .icon + .content {
+.ui.list > .item > i.icon + .content {
   display: table-cell;
   width: 100%;
   padding: 0 0 0 0.5em;
   vertical-align: top;
 }
 
-.ui.list .list > .item > .loading.icon + .content,
-.ui.list > .item > .loading.icon + .content {
+.ui.list .list > .item > i.loading.icon + .content,
+.ui.list > .item > i.loading.icon + .content {
   padding-left: calc(0.2857142857142857em + 0.5em);
 }
 
@@ -20536,8 +20577,8 @@ ol.ui.list ol li,
 
 .ui.horizontal.list > .item > .image,
 .ui.horizontal.list .list > .item > .image,
-.ui.horizontal.list > .item > .icon,
-.ui.horizontal.list .list > .item > .icon,
+.ui.horizontal.list > .item > i.icon,
+.ui.horizontal.list .list > .item > i.icon,
 .ui.horizontal.list > .item > .content,
 .ui.horizontal.list .list > .item > .content {
   vertical-align: middle;
@@ -20560,8 +20601,8 @@ ol.ui.list ol li,
 }
 
 .ui.horizontal.list > .item > .image + .content,
-.ui.horizontal.list > .item > .icon,
-.ui.horizontal.list > .item > .icon + .content {
+.ui.horizontal.list > .item > i.icon,
+.ui.horizontal.list > .item > i.icon + .content {
   float: none;
   display: inline-block;
   width: auto;
@@ -20596,8 +20637,8 @@ ol.ui.list ol li,
 
 .ui.list .list > a.item:hover > .icons,
 .ui.list > a.item:hover > .icons,
-.ui.list .list > a.item:hover > .icon,
-.ui.list > a.item:hover > .icon {
+.ui.list .list > a.item:hover > i.icon,
+.ui.list > a.item:hover > i.icon {
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -20609,8 +20650,8 @@ ol.ui.list ol li,
          Inverted
   --------------------*/
 
-.ui.inverted.list .list > a.item > .icon,
-.ui.inverted.list > a.item > .icon {
+.ui.inverted.list .list > a.item > i.icon,
+.ui.inverted.list > a.item > i.icon {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -22070,6 +22111,14 @@ ol.ui.suffixed.list li:before,
   border-left: none;
 }
 
+.ui.horizontal.segments > .segment:first-child {
+  border-radius: 0.21428571rem 0 0 0.21428571rem;
+}
+
+.ui.horizontal.segments > .segment:last-child {
+  border-radius: 0 0.21428571rem 0.21428571rem 0;
+}
+
 /*******************************
             States
 *******************************/
@@ -22914,6 +22963,22 @@ span.ui.black.text {
 
 span.ui.inverted.black.text {
   color: #545454;
+}
+
+span.ui.error.text {
+  color: #DB2828;
+}
+
+span.ui.info.text {
+  color: #31CCEC;
+}
+
+span.ui.success.text {
+  color: #21BA45;
+}
+
+span.ui.warning.text {
+  color: #F2C037;
 }
 
 span.ui.disabled.text {
@@ -25899,7 +25964,8 @@ span.ui.massive.text {
   display: block;
 }
 
-.ui.menu .ui.dropdown .menu > .item .icon:not(.dropdown) {
+.ui.menu .ui.dropdown .menu > .item > .icons,
+.ui.menu .ui.dropdown .menu > .item > i.icon:not(.dropdown) {
   display: inline-block;
   font-size: 1em !important;
   float: none;
@@ -25929,7 +25995,7 @@ span.ui.massive.text {
 
 /* Vertical */
 
-.ui.vertical.menu .dropdown.item > .icon {
+.ui.vertical.menu .dropdown.item > i.icon {
   float: right;
   content: "\f0da";
   margin-left: 1em;
@@ -26988,27 +27054,27 @@ Floated Menu / Item
 
 /* Icon */
 
-.ui.icon.menu .item > .icon:not(.dropdown) {
+.ui.icon.menu .item > i.icon:not(.dropdown) {
   margin: 0;
   opacity: 1;
 }
 
 /* Icon Gylph */
 
-.ui.icon.menu .icon:before {
+.ui.icon.menu i.icon:before {
   opacity: 1;
 }
 
 /* (x) Item Icon */
 
-.ui.menu .icon.item > .icon {
+.ui.menu .icon.item > i.icon {
   width: auto;
   margin: 0 auto;
 }
 
 /* Vertical Icon */
 
-.ui.vertical.icon.menu .item > .icon:not(.dropdown) {
+.ui.vertical.icon.menu .item > i.icon:not(.dropdown) {
   display: block;
   opacity: 1;
   margin: 0 auto;
@@ -27043,7 +27109,7 @@ Floated Menu / Item
 
 /* Icon */
 
-.ui.labeled.icon.menu > .item > .icon:not(.dropdown) {
+.ui.labeled.icon.menu > .item > i.icon:not(.dropdown) {
   height: 1em;
   display: block;
   font-size: 1.71428571em !important;
@@ -28755,7 +28821,7 @@ Floated Menu / Item
 
 /* Icon */
 
-.ui.message > .icon {
+.ui.message > i.icon {
   margin-right: 0.6em;
 }
 
@@ -28886,7 +28952,7 @@ Floated Menu / Item
   align-items: center;
 }
 
-.ui.icon.message > .icon:not(.close) {
+.ui.icon.message > i.icon:not(.close) {
   display: block;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
@@ -28906,11 +28972,11 @@ Floated Menu / Item
   vertical-align: middle;
 }
 
-.ui.icon.message .icon:not(.close) + .content {
+.ui.icon.message > i.icon:not(.close) + .content {
   padding-left: 0;
 }
 
-.ui.icon.message .circular.icon {
+.ui.icon.message > i.circular.icon {
   width: 1em;
 }
 
@@ -29504,7 +29570,7 @@ Floated Menu / Item
   text-align: inherit;
   color: rgba(0, 0, 0, 0.87);
   padding: 0.78571429em 0.78571429em;
-  vertical-align: middle;
+  vertical-align: inherit;
   font-style: normal;
   font-weight: normal;
   text-transform: none;
@@ -29558,11 +29624,11 @@ Floated Menu / Item
 
 /* Icons */
 
-.ui.table > .icon {
+.ui.table > i.icon {
   vertical-align: baseline;
 }
 
-.ui.table > .icon:only-child {
+.ui.table > i.icon:only-child {
   margin: 0;
 }
 
@@ -32405,7 +32471,7 @@ Floated Menu / Item
 
 .ui.cards > .card .dimmer,
 .ui.card .dimmer {
-  background-color: '';
+  background: '';
   z-index: 10;
 }
 
@@ -34192,11 +34258,11 @@ ol.comments,
   transition: 0.2s color ease;
 }
 
-.ui.feed > .event > .content .meta .like:hover .icon {
+.ui.feed > .event > .content .meta .like:hover i.icon {
   color: #FF2733;
 }
 
-.ui.feed > .event > .content .meta .active.like .icon {
+.ui.feed > .event > .content .meta .active.like i.icon {
   color: #EF404A;
 }
 
@@ -34213,7 +34279,7 @@ ol.comments,
 /* Action */
 
 .ui.feed > .event > .content .meta a,
-.ui.feed > .event > .content .meta > .icon {
+.ui.feed > .event > .content .meta > i.icon {
   cursor: pointer;
   opacity: 1;
   color: rgba(0, 0, 0, 0.5);
@@ -34222,8 +34288,8 @@ ol.comments,
 }
 
 .ui.feed > .event > .content .meta a:hover,
-.ui.feed > .event > .content .meta a:hover .icon,
-.ui.feed > .event > .content .meta > .icon:hover {
+.ui.feed > .event > .content .meta a:hover i.icon,
+.ui.feed > .event > .content .meta > i.icon:hover {
   color: rgba(0, 0, 0, 0.95);
 }
 
@@ -35106,8 +35172,8 @@ ol.comments,
    Icon Value
 ---------------*/
 
-.ui.statistics .statistic > .value .icon,
-.ui.statistic > .value .icon {
+.ui.statistics .statistic > .value > i.icon,
+.ui.statistic > .value > i.icon {
   opacity: 1;
   width: auto;
   margin: 0;
@@ -35278,8 +35344,8 @@ ol.comments,
   min-height: 0 !important;
 }
 
-.ui.horizontal.statistics .statistic > .value .icon,
-.ui.horizontal.statistic > .value .icon {
+.ui.horizontal.statistics .statistic > .value > i.icon,
+.ui.horizontal.statistic > .value > i.icon {
   width: 1.18em;
 }
 
@@ -36836,7 +36902,7 @@ ol.comments,
   text-align: center;
   vertical-align: middle;
   padding: 1em;
-  background-color: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.85);
   opacity: 0;
   line-height: 1;
   -webkit-animation-fill-mode: both;
@@ -37002,15 +37068,15 @@ body.dimmable > .dimmer {
   ---------------*/
 
 .medium.medium.medium.medium.medium.dimmer {
-  background-color: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.65);
 }
 
 .light.light.light.light.light.dimmer {
-  background-color: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .very.light.light.light.light.dimmer {
-  background-color: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 /*--------------
@@ -37018,7 +37084,7 @@ body.dimmable > .dimmer {
   ---------------*/
 
 .ui.inverted.dimmer {
-  background-color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .ui.inverted.dimmer > .content,
@@ -37031,15 +37097,15 @@ body.dimmable > .dimmer {
     ---------------*/
 
 .medium.medium.medium.medium.medium.inverted.dimmer {
-  background-color: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.65);
 }
 
 .light.light.light.light.light.inverted.dimmer {
-  background-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.45);
 }
 
 .very.light.light.light.light.inverted.dimmer {
-  background-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.25);
 }
 
 /*--------------
@@ -37055,7 +37121,7 @@ body.dimmable > .dimmer {
   width: 0;
   height: 0;
   z-index: -100;
-  background-color: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
 }
 
 .dimmed.dimmable > .ui.simple.dimmer {
@@ -37063,16 +37129,16 @@ body.dimmable > .dimmer {
   opacity: 1;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.85);
   z-index: 1;
 }
 
 .ui.simple.inverted.dimmer {
-  background-color: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0);
 }
 
 .dimmed.dimmable > .ui.simple.inverted.dimmer {
-  background-color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.85);
 }
 
 /*--------------
@@ -37424,6 +37490,16 @@ body.dimmable > .dimmer {
   border-top-width: 0;
 }
 
+.ui.dropdown .menu > .item.vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
 /*--------------
   Floated Content
 ---------------*/
@@ -37442,7 +37518,7 @@ body.dimmable > .dimmer {
   margin-right: 1em !important;
 }
 
-.ui.dropdown .menu .item > .icon.floated,
+.ui.dropdown .menu .item > i.icon.floated,
 .ui.dropdown .menu .item > .flag.floated,
 .ui.dropdown .menu .item > .image.floated,
 .ui.dropdown .menu .item > img.floated {
@@ -37493,7 +37569,7 @@ body.dimmable > .dimmer {
 }
 
 .ui.dropdown .menu > .input:not(.transparent) .button,
-.ui.dropdown .menu > .input:not(.transparent) .icon,
+.ui.dropdown .menu > .input:not(.transparent) i.icon,
 .ui.dropdown .menu > .input:not(.transparent) .label {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -37508,6 +37584,18 @@ body.dimmable > .dimmer {
   float: right;
   margin: 0 0 0 1em;
   color: rgba(0, 0, 0, 0.4);
+}
+
+.ui.dropdown .menu > .item.vertical > .description {
+  margin: 0;
+}
+
+/*-----------------
+      Item Text
+-------------------*/
+
+.ui.dropdown .menu > .item.vertical > .text {
+  margin-bottom: 0.25em;
 }
 
 /*-----------------
@@ -37548,7 +37636,7 @@ body.dimmable > .dimmer {
 
 /* Icons / Flags / Labels / Image */
 
-.ui.dropdown > .text > .icon,
+.ui.dropdown > .text > i.icon,
 .ui.dropdown > .text > .label,
 .ui.dropdown > .text > .flag,
 .ui.dropdown > .text > img,
@@ -37556,7 +37644,7 @@ body.dimmable > .dimmer {
   margin-top: 0em;
 }
 
-.ui.dropdown .menu > .item > .icon,
+.ui.dropdown .menu > .item > i.icon,
 .ui.dropdown .menu > .item > .label,
 .ui.dropdown .menu > .item > .flag,
 .ui.dropdown .menu > .item > .image,
@@ -37564,12 +37652,12 @@ body.dimmable > .dimmer {
   margin-top: 0em;
 }
 
-.ui.dropdown > .text > .icon,
+.ui.dropdown > .text > i.icon,
 .ui.dropdown > .text > .label,
 .ui.dropdown > .text > .flag,
 .ui.dropdown > .text > img,
 .ui.dropdown > .text > .image,
-.ui.dropdown .menu > .item > .icon,
+.ui.dropdown .menu > .item > i.icon,
 .ui.dropdown .menu > .item > .label,
 .ui.dropdown .menu > .item > .flag,
 .ui.dropdown .menu > .item > .image,
@@ -37754,12 +37842,12 @@ select.ui.dropdown {
 }
 
 @media only screen and (max-width: 767.98px) {
-  .ui.selection.dropdown[class*="very short"] .menu {
-    max-height: 4.00714286rem;
-  }
-
   .ui.selection.dropdown.short .menu {
     max-height: 6.01071429rem;
+  }
+
+  .ui.selection.dropdown[class*="very short"] .menu {
+    max-height: 4.00714286rem;
   }
 
   .ui.selection.dropdown .menu {
@@ -37776,12 +37864,12 @@ select.ui.dropdown {
 }
 
 @media only screen and (min-width: 768px) {
-  .ui.selection.dropdown[class*="very short"] .menu {
-    max-height: 5.34285714rem;
-  }
-
   .ui.selection.dropdown.short .menu {
     max-height: 8.01428571rem;
+  }
+
+  .ui.selection.dropdown[class*="very short"] .menu {
+    max-height: 5.34285714rem;
   }
 
   .ui.selection.dropdown .menu {
@@ -37798,12 +37886,12 @@ select.ui.dropdown {
 }
 
 @media only screen and (min-width: 992px) {
-  .ui.selection.dropdown[class*="very short"] .menu {
-    max-height: 8.01428571rem;
-  }
-
   .ui.selection.dropdown.short .menu {
     max-height: 12.02142857rem;
+  }
+
+  .ui.selection.dropdown[class*="very short"] .menu {
+    max-height: 8.01428571rem;
   }
 
   .ui.selection.dropdown .menu {
@@ -37820,12 +37908,12 @@ select.ui.dropdown {
 }
 
 @media only screen and (min-width: 1920px) {
-  .ui.selection.dropdown[class*="very short"] .menu {
-    max-height: 10.68571429rem;
-  }
-
   .ui.selection.dropdown.short .menu {
     max-height: 16.02857143rem;
+  }
+
+  .ui.selection.dropdown[class*="very short"] .menu {
+    max-height: 10.68571429rem;
   }
 
   .ui.selection.dropdown .menu {
@@ -37942,6 +38030,64 @@ select.ui.dropdown {
   box-shadow: none !important;
 }
 
+/* CSS specific to iOS devices or firefox mobile only  */
+
+@supports (-webkit-touch-callout: none) or (-webkit-overflow-scrolling: touch) or (-moz-appearance:none) {
+@media (-moz-touch-enabled), (pointer: coarse) {
+    .ui.dropdown .scrollhint.menu:not(.hidden):before {
+      -webkit-animation: scrollhint 2s ease 2;
+      animation: scrollhint 2s ease 2;
+      content: '';
+      z-index: 15;
+      display: block;
+      position: absolute;
+      opacity: 0;
+      right: 0.25em;
+      top: 0;
+      height: 100%;
+      border-right: 0.25em solid;
+      border-left: 0;
+      -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0))) 1 100%;
+      -webkit-border-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)) 1 100%;
+      -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)) 1 100%;
+      border-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0))) 1 100%;
+      border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)) 1 100%;
+    }
+
+    .ui.inverted.dropdown .scrollhint.menu:not(.hidden):before {
+      -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0))) 1 100%;
+      -webkit-border-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)) 1 100%;
+      -o-border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)) 1 100%;
+      border-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0))) 1 100%;
+      border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)) 1 100%;
+    }
+
+@-webkit-keyframes scrollhint {
+      0% {
+        opacity: 1;
+        top: 100%;
+      }
+
+      100% {
+        opacity: 0;
+        top: 0;
+      }
+}
+
+@keyframes scrollhint {
+      0% {
+        opacity: 1;
+        top: 100%;
+      }
+
+      100% {
+        opacity: 0;
+        top: 0;
+      }
+}
+}
+}
+
 /*--------------
      Searchable
   ---------------*/
@@ -38012,13 +38158,17 @@ select.ui.dropdown {
 
 /* Filtered Text */
 
-.ui.active.search.dropdown input.search:focus + .text .icon,
+.ui.active.search.dropdown input.search:focus + .text i.icon,
 .ui.active.search.dropdown input.search:focus + .text .flag {
   opacity: 0.45;
 }
 
 .ui.active.search.dropdown input.search:focus + .text {
   color: rgba(115, 115, 115, 0.87) !important;
+}
+
+.ui.search.dropdown.button > span.sizer {
+  display: none;
 }
 
 /* Search Menu */
@@ -38087,7 +38237,7 @@ select.ui.dropdown {
 
 /* Multiple Selection */
 
-.ui.multiple.dropdown {
+.ui.ui.multiple.dropdown {
   padding: 0.22620476em 3.2em 0.22620476em 0.35714286em;
 }
 
@@ -38122,6 +38272,12 @@ select.ui.dropdown {
   max-width: 100%;
   margin: 0.45240952em 0 0.45240952em 0.64285714em;
   line-height: 1.21428571em;
+}
+
+.ui.multiple.dropdown > .text.default {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .ui.multiple.dropdown > .label ~ input.search {
@@ -38181,6 +38337,10 @@ select.ui.dropdown {
   margin: 0.45240952em 0 0.45240952em 0.64285714em;
   width: 2.2em;
   line-height: 1.21428571em;
+}
+
+.ui.multiple.search.dropdown.button {
+  min-width: 14em;
 }
 
 /*--------------
@@ -38761,23 +38921,24 @@ select.ui.dropdown {
      Columnar
 ---------------*/
 
+.ui.column.dropdown > .menu {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .ui.dropdown[class*="two column"] > .menu > .item {
-  display: inline-block;
   width: 50%;
 }
 
 .ui.dropdown[class*="three column"] > .menu > .item {
-  display: inline-block;
   width: 33%;
 }
 
 .ui.dropdown[class*="four column"] > .menu > .item {
-  display: inline-block;
   width: 25%;
 }
 
 .ui.dropdown[class*="five column"] > .menu > .item {
-  display: inline-block;
   width: 20%;
 }
 
@@ -39267,7 +39428,7 @@ select.ui.dropdown {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.ui.inverted.active.search.dropdown input.search:focus + .text .icon,
+.ui.inverted.active.search.dropdown input.search:focus + .text i.icon,
 .ui.inverted.active.search.dropdown input.search:focus + .text .flag {
   opacity: 0.45;
 }
@@ -39507,7 +39668,7 @@ select.ui.dropdown {
       Icon
 ---------------*/
 
-.ui.embed > .icon {
+.ui.embed > i.icon {
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -39517,7 +39678,7 @@ select.ui.dropdown {
   z-index: 2;
 }
 
-.ui.embed > .icon:after {
+.ui.embed > i.icon:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -39532,7 +39693,7 @@ select.ui.dropdown {
   transition: opacity 0.5s ease;
 }
 
-.ui.embed > .icon:before {
+.ui.embed > i.icon:before {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -39554,13 +39715,13 @@ select.ui.dropdown {
      Hover
 ---------------*/
 
-.ui.embed .icon:hover:after {
+.ui.embed i.icon:hover:after {
   background: -webkit-radial-gradient(transparent 45%, rgba(0, 0, 0, 0.3));
   background: radial-gradient(transparent 45%, rgba(0, 0, 0, 0.3));
   opacity: 1;
 }
 
-.ui.embed .icon:hover:before {
+.ui.embed i.icon:hover:before {
   color: #FFFFFF;
 }
 
@@ -39568,7 +39729,7 @@ select.ui.dropdown {
      Active
 ---------------*/
 
-.ui.active.embed > .icon,
+.ui.active.embed > i.icon,
 .ui.active.embed > .placeholder {
   display: none;
 }
@@ -39705,6 +39866,7 @@ select.ui.dropdown {
   position: absolute;
   text-transform: none;
   text-align: left;
+  text-shadow: none;
   white-space: nowrap;
   font-size: 1rem;
   border: 1px solid #D4D4D5;
@@ -39803,6 +39965,7 @@ select.ui.dropdown {
 [data-tooltip][data-position="right center"]:hover:after {
   -webkit-transform: translateY(-50%) scale(1) !important;
   transform: translateY(-50%) scale(1) !important;
+  -moz-transform: translateY(-50%) scale(1.0001) !important;
 }
 
 [data-tooltip][data-position="top left"]:after,
@@ -41757,6 +41920,7 @@ body.pushable.dimmed {
 .pushable:not(body) {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  overflow-y: hidden;
 }
 
 .pushable:not(body) > .ui.sidebar,
@@ -41813,7 +41977,7 @@ body.pushable > .pusher {
   top: 0;
   right: 0;
   content: '';
-  background-color: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4);
   overflow: hidden;
   opacity: 0;
   -webkit-transition: opacity 500ms;
@@ -42393,7 +42557,6 @@ body.pushable > .pusher {
 *******************************/
 
 .ui.native.sticky {
-  position: -webkit-sticky;
   position: -moz-sticky;
   position: -ms-sticky;
   position: -o-sticky;
