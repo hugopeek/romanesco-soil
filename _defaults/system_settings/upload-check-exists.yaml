@@ -1,0 +1,4 @@
+key: upload_check_exists
+value: '1'
+xtype: combo-boolean
+area: file
