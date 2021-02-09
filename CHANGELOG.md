@@ -6,6 +6,7 @@ every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.
 ## Romanesco Soil v2.4.2
 Released on ...
 
+- Rename content_types folder to content_type in defaults data
 - Add settings for displaying a (customized) credits popup in footer
 - Add content types for MS Word and Excel files
 - Move collections_settings table to defaults
