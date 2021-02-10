@@ -1,0 +1,5 @@
+key: contentblocks.image.max_upload_height
+value: '4096'
+xtype: numberfield
+namespace: contentblocks
+area: 'Input: Image'

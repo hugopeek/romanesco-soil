@@ -1,0 +1,4 @@
+key: contentblocks.image.strip_meta
+xtype: modx-combo-boolean
+namespace: contentblocks
+area: 'Input: Image'
