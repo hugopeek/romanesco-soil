@@ -4,7 +4,10 @@ These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
 ## Romanesco Soil v2.4.2
-Released on ...
+Released on February 20, 2021
+
+> Patterns: 1.0.0-beta3
+> Backyard: 1.0.0-beta3
 
 - Rename content_types folder to content_type in defaults data
 - Add settings for displaying a (customized) credits popup in footer
