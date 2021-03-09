@@ -3,6 +3,11 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.4.3
+Released on ...
+
+- Rename navbar_resources Configuration setting to nav_exclude_resources
+
 ## Romanesco Soil v2.4.2
 Released on February 20, 2021
 

@@ -1,0 +1,7 @@
+id: 10
+key: nav_exclude_resources
+label: 'Exclude resources'
+xtype: textfield
+description: 'Exclude the following resources from all menus (including overviews), regardless of their "Hide in menu" setting.'
+sortorder: 11
+group: 2
