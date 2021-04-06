@@ -1,7 +1,7 @@
-id: 78
-key: divider_performance_1
+id: 86
+key: divider_performance_2
 label: Divider
 xtype: clientconfig-line
 description: ''
-sortorder: 10
+sortorder: 30
 group: 7

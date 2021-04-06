@@ -1,0 +1,4 @@
+key: romanesco.semantic_font_path
+value: assets/semantic/dist/themes/romanesco/assets/fonts
+namespace: romanesco
+area: Paths

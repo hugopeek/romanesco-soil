@@ -6,6 +6,9 @@ every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.
 ## Romanesco Soil v2.4.3
 Released on ...
 
+- Better description for custom cache setting
+- Remove unused css_breakpoints Configuration setting
+- Add cache_buster Configuration setting
 - Rename navbar_resources Configuration setting to nav_exclude_resources
 
 ## Romanesco Soil v2.4.2
