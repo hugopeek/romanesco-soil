@@ -60,7 +60,7 @@ gulp.task('copy', function (done) {
     .pipe(gulp.dest('./assets/semantic/dist/project'));
   gulp.src('./node_modules/jquery/dist/jquery.min.js')
     .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/jquery'))
-    .pipe(gulp.dest('./../packages/romanesco-backyard/assets/components/romanescobackyard/js'));
+    .pipe(gulp.dest('./../backyard/assets/components/romanescobackyard/js'));
   gulp.src('./node_modules/swiper/css/*.css')
     .pipe(gulp.dest('./assets/semantic/src/themes/romanesco/assets/vendor/swiper'));
   gulp.src('./node_modules/swiper/js/*.min.js')
@@ -109,11 +109,11 @@ gulp.task('css-wrap', function (done) {
 
   gulp.src('./assets/semantic/dist/semantic.css')
     .pipe(cssWrap({selector:'.chunkOutput'}))
-    .pipe(gulp.dest('./../packages/romanesco-backyard/assets/components/romanescobackyard/css'))
+    .pipe(gulp.dest('./../backyard/assets/components/romanescobackyard/css'))
   ;
   gulp.src('./assets/semantic/dist/components/step.css')
     .pipe(cssWrap({selector:'.chunkOutput'}))
-    .pipe(gulp.dest('./../packages/romanesco-backyard/assets/components/romanescobackyard/css'))
+    .pipe(gulp.dest('./../backyard/assets/components/romanescobackyard/css'))
   ;
   done();
 });
