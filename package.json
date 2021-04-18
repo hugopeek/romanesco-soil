@@ -1,20 +1,10 @@
 {
   "name": "romanesco",
-  "version": "2.3.2",
+  "version": "2.4.3",
   "dependencies": {
     "fomantic-ui": "^2.8.7",
     "gulp": "^4.0.2",
-    "gulp-clean": "^0.4.0",
     "gulp-real-favicon": "^0.3.2",
-    "yargs": "^15.4.1"
-  },
-  "devDependencies": {
-    "arrive": "^2.4.1",
-    "diff": "^4.0.2",
-    "gulp-css-wrap": "^0.1.2",
-    "jquery": "^3.5.1",
-    "scrolldir": "^1.5.2",
-    "swiper": "^5.4.5",
-    "vanilla-lazyload": "^16.1.0"
+    "yargs": "^16.2.0"
   }
 }
