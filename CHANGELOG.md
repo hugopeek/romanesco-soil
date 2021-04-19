@@ -4,7 +4,10 @@ These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
 ## Romanesco Soil v2.4.3
-Released on ...
+Released on April 19, 2021
+
+> Patterns: 1.0.0-beta4
+> Backyard: 1.0.0-beta4
 
 - Better description for custom cache setting
 - Remove unused css_breakpoints Configuration setting
