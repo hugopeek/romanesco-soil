@@ -45,7 +45,8 @@ $(function() {
     $('#submenu.sticky')
         .sticky({
             context: '#main',
-            offset: $("#menu.sticky").height() || 36
+            offset: $("#menu.sticky").height() || 36,
+            silent: true
         })
     ;
 
