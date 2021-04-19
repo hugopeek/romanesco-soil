@@ -55,14 +55,15 @@ $(function() {
 
 // Sticky navbar behaviour
 $(function() {
-    var $header = $("#menu.sticky");
+    var $menu = $("#menu.sticky");
+    var mastheadHeight = $("#masthead").height() || 0;
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 50) {
-            $header.addClass("tightened");
+        if (scroll >= mastheadHeight + 50) {
+            $menu.addClass("tightened");
         } else {
-            $header.removeClass("tightened");
+            $menu.removeClass("tightened");
         }
     });
 });
