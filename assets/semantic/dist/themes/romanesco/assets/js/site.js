@@ -1,7 +1,7 @@
 // Semantic UI behaviour
 $(function() {
     // Fix menu when passed
-    $('.masthead')
+    $('#header')
         .visibility({
             once: false,
             onBottomPassed: function() {
