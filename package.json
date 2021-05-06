@@ -7,13 +7,5 @@
     "gulp-clean": "^0.4.0",
     "gulp-real-favicon": "^0.3.2",
     "yargs": "^16.2.0"
-  },
-  "devDependencies": {
-    "arrive": "^2.4.1",
-    "gulp-css-wrap": "^0.1.2",
-    "jquery": "^3.5.1",
-    "scrolldir": "^1.5.2",
-    "swiper": "^5.4.5",
-    "vanilla-lazyload": "^17.3.1"
   }
 }

@@ -3,6 +3,11 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.4.5
+Released on ...
+
+- Remove NPM dev dependencies (assets are now built from Nursery)
+
 ## Romanesco Soil v2.4.3
 Released on April 19, 2021
 
