@@ -2,4 +2,4 @@ key: romanesco.dev_mode
 value: '0'
 xtype: combo-boolean
 namespace: romanesco
-area: Settings
+area: Development
