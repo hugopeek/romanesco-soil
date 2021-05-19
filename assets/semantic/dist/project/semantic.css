@@ -1275,6 +1275,17 @@ blockquote:not(.quote) {
   font-size: 85%;
 }
 
+#content .video {
+  overflow: hidden;
+}
+
+#content .video > video {
+  width: 100%;
+  max-width: calc(100% + 2px);
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
 #home .lead.rotating.sentence {
   position: relative;
 }
@@ -6228,7 +6239,7 @@ blockquote:not(.quote) {
          Theme Overrides
 *******************************/
 
-.ui[class*="center aligned"] .ui.button:not(.attached):not(.center.aligned) {
+.ui[class*="center aligned"] .ui.button:not(.attached):not(.center.aligned):not(:last-child) {
   margin-left: 0.25em;
 }
 
@@ -23086,16 +23097,6 @@ body.detail.non-white #main .ui.container:not(.fluid) .ui.vertical.stripe.segmen
 /*******************************
          Site Overrides
 *******************************/
-
-.ui.segment.background.spirograph:before {
-  background-position: 40vw 46% !important;
-  background-size: 90rem !important;
-}
-
-.ui.segment.background.fractal-badge:before {
-  background-position: 40vw 26% !important;
-  background-size: 60rem !important;
-}
 /*!
  * # Fomantic-UI - Breadcrumb
  * http://github.com/fomantic/Fomantic-UI/
@@ -33761,6 +33762,12 @@ a.inverted.ui.card:hover,
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .ui.stackable[class*="on tablet"].cards > .card {
+    width: 100% !important;
+  }
+}
+
 /*******************************
     User Variable Overrides
 *******************************/
@@ -42656,7 +42663,6 @@ body.pushable > .pusher {
 *******************************/
 
 .ui.native.sticky {
-  position: -webkit-sticky;
   position: -moz-sticky;
   position: -ms-sticky;
   position: -o-sticky;
