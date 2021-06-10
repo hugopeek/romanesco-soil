@@ -1,0 +1,3 @@
+key: resource_static_path
+value: '{base_path}'
+area: static_resources

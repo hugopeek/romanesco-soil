@@ -3,9 +3,14 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
-## Romanesco Soil v2.4.5
-Released on ...
+## Romanesco Soil v2.4.4
+Released on June 10, 2021
 
+> Patterns: 1.0.0-beta5
+> Backyard: 1.0.0-beta5
+
+- Update MODX to 2.8.3-pl
+- Update Fomantic UI to 2.8.7
 - Remove NPM dev dependencies (assets are now built from Nursery)
 
 ## Romanesco Soil v2.4.3

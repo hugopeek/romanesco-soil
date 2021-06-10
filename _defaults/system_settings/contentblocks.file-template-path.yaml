@@ -1,0 +1,4 @@
+key: contentblocks.file_template_path
+value: contentblocks/
+namespace: contentblocks
+area: 'File Templates'

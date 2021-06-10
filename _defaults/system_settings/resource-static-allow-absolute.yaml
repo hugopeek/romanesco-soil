@@ -1,0 +1,4 @@
+key: resource_static_allow_absolute
+value: '0'
+xtype: combo-boolean
+area: static_resources
