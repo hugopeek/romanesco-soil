@@ -2,6 +2,6 @@ id: 41
 key: theme_color_secondary_light
 label: 'Secondary theme color (Light)'
 xtype: colorpickerfield
-description: 'A light variant, for slightly tinted backgrounds.'
+description: 'A light variant of the secondary color, for faintly tinted backgrounds. Make sure it has enough contrast with dark (primary) elements and text.'
 sortorder: 16
 group: 4

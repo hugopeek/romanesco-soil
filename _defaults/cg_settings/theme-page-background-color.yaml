@@ -2,7 +2,7 @@ id: 47
 key: theme_page_background_color
 label: 'Page background color'
 xtype: colorpickerfield
-description: ''
+description: 'This color is visible on detail pages and underneath transparent segments.'
 sortorder: 20
 value: ffffff
 group: 4

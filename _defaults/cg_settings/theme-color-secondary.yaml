@@ -2,6 +2,6 @@ id: 39
 key: theme_color_secondary
 label: 'Secondary theme color'
 xtype: colorpickerfield
-description: ''
+description: 'Pick a relatively dark color, in order to maintain enough contrast with inverted (white/light) elements and text.'
 sortorder: 11
 group: 4
