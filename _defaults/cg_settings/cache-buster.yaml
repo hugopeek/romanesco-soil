@@ -1,9 +1,0 @@
-id: 87
-key: cache_buster
-label: 'Cache buster'
-xtype: modx-combo
-description: 'When you cache static assets on server level (recommended for performance), they will be stored in the visitors'' browser for a long time period (often 1 year). This means that changes to these files won''t be visible in their browser on return visits, unless the filename is different. The cache buster takes care of this. When static assets like CSS or Javascript are updated, they receive a new suffix so the client browser will treat it as a new file and download it again.'
-sortorder: 2
-value: '0'
-group: 7
-options: On==1||Off==0
