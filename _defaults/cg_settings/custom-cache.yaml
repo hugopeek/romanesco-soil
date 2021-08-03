@@ -1,0 +1,8 @@
+id: 11
+key: custom_cache
+label: 'Custom caching'
+xtype: modx-combo
+description: "By default, MODX clears the site cache very thoroughly and very often. This means that every time you save something in the manager (even something small like a fixed typo), a lot of content needs to be regenerated from the database, resulting in slower page loads.\n\nThats why some parts of the cache have been moved to their own partition (bucket), so they won't be cleared on every save action. The only thing I did not quite figure out yet is how to tell MODX that parts of this custom cache have been updated, so you will have to inform MODX yourself. There is a button in the top menu under Magage that says \"Clear Custom Cache\". Pressing that ensures that all the latest changes to any custom partition are visible on the website. There is also a submenu for clearing it per partition."
+sortorder: 1
+group: 7
+options: On==1||Off==0

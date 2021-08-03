@@ -1,0 +1,4 @@
+key: formblocks.formsource
+xtype: combo-boolean
+namespace: romanesco
+area: 'FormBlocks - Settings'

@@ -1,0 +1,8 @@
+id: 12
+key: minify_css_js
+label: 'Minify CSS/JS'
+xtype: modx-combo
+description: 'Convenient to switch off during development, but don''t forget to turn it back on once the site is live!'
+sortorder: 5
+group: 7
+options: On==1||Off==0
