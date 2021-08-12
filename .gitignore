@@ -22,7 +22,7 @@ index.php
 /assets/semantic/src/themes/*
 !assets/semantic/src/themes/project/
 /assets/semantic/tasks/
-/assets/src/vendors/
+/assets/vendor/
 /node_modules/
 
 /packages/
