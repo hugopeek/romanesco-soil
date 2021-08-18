@@ -1,4 +1,4 @@
 key: contentblocks.image.crop_path
-value: assets/crops/
+value: crops/
 namespace: contentblocks
 area: 'Input: Image'

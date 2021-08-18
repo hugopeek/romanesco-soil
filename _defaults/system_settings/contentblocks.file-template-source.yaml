@@ -1,5 +1,5 @@
 key: contentblocks.file_template_source
-value: '0'
+value: '16'
 xtype: modx-combo-source
 namespace: contentblocks
 area: 'File Templates'

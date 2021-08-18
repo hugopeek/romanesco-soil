@@ -1,4 +1,4 @@
 key: contentblocks.file.upload_path
-value: assets/uploads/
+value: '/[[+year]]/'
 namespace: contentblocks
 area: 'Input: File'
