@@ -2,6 +2,7 @@ id: 43
 key: theme_font_header
 label: 'Heading font'
 xtype: textfield
-description: "Specify a Google webfont for all headings on the site. You can enter just the name (i.e.: Ubuntu), or a string containing font weights and character subset too. Use the following syntax for this: Ubuntu|300,700,300italic,700italic|latin,cyrillic.\nNB: font name is case sensitive! Make sure you use the exact name as listed on Google Webfonts."
+description: 'Specify a Google webfont for all headings on the site. You can enter just the name (i.e.: Open Sans) or a string containing font weights too. Use the latest (v2) syntax for this: Open+Sans:ital,wght@0,400;0,700;1,400;1,700.'
 sortorder: 40
+value: 'Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700'
 group: 4

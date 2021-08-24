@@ -6,6 +6,7 @@ every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.
 ## Romanesco Soil v2.4.5
 Released on ...
 
+- Load default Google font with new v2 syntax
 - Change names of some media sources
 - Add media source for static Romanesco elements
 - Change CB settings for file upload path, file template path and img crop path
