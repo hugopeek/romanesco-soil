@@ -16,7 +16,10 @@
 @fontFallback: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 
 
+@headerFont: 'Source Sans Pro', @fontFallback;
 
+
+@pageFont: 'Source Sans Pro', @fontFallback;
 
 
 
