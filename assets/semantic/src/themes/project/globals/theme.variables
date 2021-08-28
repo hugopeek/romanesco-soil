@@ -26,8 +26,8 @@
 // Base Sizes
 // ---------------------------------------------------------------------
 
-@scaleRatio: 1.25;
-@fontSize: 1.25rem;
+@scaleRatio: 1.333;
+@fontSize: 1.28rem;
 
 
 // Brand Colors
