@@ -4,5 +4,5 @@ label: 'Font size'
 xtype: numberfield
 description: 'This controls the font size of regular page content. Combined with the font scale ratio setting, this will decide how big text will appear on various screens.'
 sortorder: 50
-value: '1.25'
+value: '1.28'
 group: 4
