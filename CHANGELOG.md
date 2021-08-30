@@ -4,10 +4,10 @@ These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
 ## Romanesco Soil v2.4.5
-Released on ...
+Released on August 30, 2021
 
 - Load default Google font with new v2 syntax
-- Change names of some media sources
+- Rename some media sources for clarity
 - Add media source for static Romanesco elements
 - Change CB settings for file upload path, file template path and img crop path
 
