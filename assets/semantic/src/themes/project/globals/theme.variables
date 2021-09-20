@@ -46,7 +46,9 @@
 // ---------------------------------------------------------------------
 
 @logoPath: '';
+@logoInvertedPath: '';
 @logoBadgePath: '';
+@logoBadgeInvertedPath: '';
 
 
 
