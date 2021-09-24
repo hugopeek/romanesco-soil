@@ -30,27 +30,22 @@
         "input",
         "label",
         "list",
-        "reveal",
         "segment",
         "text",
         "breadcrumb",
         "grid",
         "menu",
         "message",
-        "table",
         "card",
-        "comment",
         "feed",
         "item",
         "statistic",
         "accordion",
         "checkbox",
-        "dimmer",
         "dropdown",
         "embed",
         "popup",
         "rating",
-        "search",
         "sidebar",
         "sticky",
         "tab",
@@ -60,8 +55,12 @@
     "individuals": [
         "form",
         "calendar",
+        "table",
+        "dimmer",
         "modal",
-        "step"
+        "search",
+        "step",
+        "flag"
     ],
-    "version": "2.8.7"
+    "version": "2.8.8"
 }
