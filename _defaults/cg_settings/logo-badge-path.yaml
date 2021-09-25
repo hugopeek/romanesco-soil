@@ -1,8 +1,8 @@
 id: 37
 key: logo_badge_path
-label: 'Logo badge'
+label: Badge
 xtype: modx-panel-tv-image
-description: 'Upload a square version of the logo. This will be used for the favicon and in other locations where a badge app fits in.'
-sortorder: 1
+description: 'Upload a square version of the logo. This will be used for the favicon and other locations where a badge icon fits in better.'
+sortorder: 2
 group: 4
 source: 15

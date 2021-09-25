@@ -1,0 +1,4 @@
+key: romanesco.img_quality
+value: '[[++img_quality]]'
+namespace: romanesco
+area: Performance

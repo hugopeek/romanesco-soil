@@ -1,9 +1,0 @@
-id: 29
-key: img_breakpoints
-label: 'Responsive image breakpoints'
-xtype: textfield
-description: 'This controls how many different widths will be available in the ''srcset'' attribute. Breakpoints should be entered as a comma separated list, starting with the smallest pixel value. For more info on choosing the right values, visit: https://cloudfour.com/thinks/responsive-images-101-part-9-image-breakpoints/. Please note that the browser will pick the appropriate width for you on page load, and that the breakpoints don''t need to match the values of your CSS grid.'
-is_required: 1
-sortorder: 11
-value: '360,680,800,960,1024,1152,1280,1440,1600,1920'
-group: 7

@@ -1,0 +1,8 @@
+id: 88
+key: logo_inverted_path
+label: 'Logo (inverted)'
+xtype: modx-panel-tv-image
+description: 'An inverted version of your logo, for display on dark backgrounds.'
+sortorder: 1
+group: 4
+source: 15

@@ -2,8 +2,8 @@ id: 30
 key: img_quality
 label: 'Image quality'
 xtype: modx-combo
-description: 'This affects the file size of all images, and thereby also the loading time of each page. Set it to Low if you feel speed is more important and only use High or Max if you are certain that most of your visitors have a good internet connection. This setting can be overridden in various places, so don''t worry about any images coming out ugly.'
+description: 'This affects the file size of generated images, and thereby also the loading time of each page. Please note that all images in Romanesco are resized first, before being displayed in the browser. This means you don''t have to worry about file sizes when uploading images in MODX. In fact, it''s better to upload high quality images (1-3 MB) because the images processor works better with good source files.'
 sortorder: 21
 value: '65'
 group: 7
-options: "Low==50||\nBalanced==65||\nHigh==85||\nMaximum==95"
+options: "Minimum==30||\nLow==50||\nBalanced==65||\nHigh==85||\nMaximum==95"

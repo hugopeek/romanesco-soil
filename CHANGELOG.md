@@ -3,6 +3,18 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.5.0
+Released on ...
+
+- Remove navbar_sticky_offset config setting
+- Rename matomo_tracking_code setting to alternative_tracking_code
+- Move Leaflet asset paths and integrity hashes to system settings
+- Move img_breakpoints to system settings
+- Add pThumb post-hook to system settings (customization in pThumb core)
+- Add img_quality as system setting too (baseline for optional post-processing)
+- Add minimum option of 30 to img_quality config setting
+- Add Configuration settings for inverted logo and badge variants
+
 ## Romanesco Soil v2.4.5
 Released on August 30, 2021
 

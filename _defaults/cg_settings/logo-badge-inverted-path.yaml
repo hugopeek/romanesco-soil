@@ -1,0 +1,8 @@
+id: 89
+key: logo_badge_inverted_path
+label: 'Badge (inverted)'
+xtype: modx-panel-tv-image
+description: 'An inverted version of your badge icon, for display on dark backgrounds.'
+sortorder: 3
+group: 4
+source: 15

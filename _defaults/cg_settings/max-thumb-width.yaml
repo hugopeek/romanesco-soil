@@ -5,5 +5,5 @@ xtype: numberfield
 description: 'Content images will never exceed this width. Make sure it is at least as wide as the widest possible container, but also consider performance by not setting it too high.'
 is_required: 1
 sortorder: 12
-value: '1400'
+value: '1600'
 group: 7
