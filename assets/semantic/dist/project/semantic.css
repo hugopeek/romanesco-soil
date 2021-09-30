@@ -18404,6 +18404,39 @@ a.circular.image > img:hover {
 *******************************/
 
 /*******************************
+         Theme Overrides
+*******************************/
+
+#form-search .ui.input > input:not(:focus) {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#form-search .ui.input > input:not(:focus)::-webkit-input-placeholder {
+  color: rgba(128, 128, 128, 0.87);
+}
+
+#form-search .ui.input > input:not(:focus)::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.87);
+}
+
+#form-search .ui.input > input:not(:focus):-ms-input-placeholder {
+  color: rgba(128, 128, 128, 0.87);
+}
+
+#form-search .ui.input > input:focus::-webkit-input-placeholder {
+  color: rgba(77, 77, 77, 0.87);
+}
+
+#form-search .ui.input > input:focus::-moz-placeholder {
+  color: rgba(77, 77, 77, 0.87);
+}
+
+#form-search .ui.input > input:focus:-ms-input-placeholder {
+  color: rgba(77, 77, 77, 0.87);
+}
+
+/*******************************
          Site Overrides
 *******************************/
 /*!
