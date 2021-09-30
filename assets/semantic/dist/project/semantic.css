@@ -21933,12 +21933,12 @@ body.vertical .ui.vertical.stripe.segment {
   }
 }
 
-body.vertical .ui.vertical.stripe.segment#submenu-dropdown {
+body.vertical .ui.vertical.stripe.segment#dropdown-toc {
   padding: calc(var(--baseline) * 2rem) 0;
 }
 
 @media only screen and (min-width: 768px) {
-  body.vertical .ui.vertical.stripe.segment#submenu-dropdown {
+  body.vertical .ui.vertical.stripe.segment#dropdown-toc {
     padding: 0 5%;
   }
 }
@@ -24955,6 +24955,13 @@ span.ui.massive.text {
   .ui.stackable[class*="on tablet"].grid > .column,
   .ui.stackable[class*="on tablet"].grid > .row > .column {
     width: 100% !important;
+  }
+
+  .ui.stackable[class*="on tablet"].mobile.reversed.grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
 
@@ -28064,11 +28071,11 @@ Floated Menu / Item
   padding: 0.25714286em 1.14285714em;
 }
 
-#submenu-dropdown .toc .item.h1:first-child {
+#dropdown-toc .menu .item.h1:first-child {
   display: none !important;
 }
 
-#submenu-dropdown .toc .item .level:before {
+#dropdown-toc .menu .item .level:before {
   margin-right: 0.3em;
   letter-spacing: 0.3em;
 }
@@ -28141,6 +28148,10 @@ Floated Menu / Item
   color: rgba(34, 36, 38, 0.15);
 }
 
+.inverted.menu.toc .item .level:before {
+  color: rgba(225, 225, 225, 0.3);
+}
+
 .menu.toc .item.h3 .level:before {
   content: '•';
 }
@@ -28151,6 +28162,10 @@ Floated Menu / Item
 
 .menu.toc .item.h5 .level:before {
   content: '•••';
+}
+
+.vertical.text.menu.toc .item {
+  margin: 0.15em 0;
 }
 
 .ui.secondary.vertical.right.pointing.menu {
