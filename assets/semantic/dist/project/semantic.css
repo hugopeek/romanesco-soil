@@ -17659,16 +17659,16 @@ a.circular.image > img:hover {
 /* browsers require these rules separate */
 
 .ui.input > input::-webkit-input-placeholder {
-  color: rgba(191, 191, 191, 0.87);
+  color: rgba(153, 153, 153, 0.87);
 }
 
 .ui.input > input::-moz-placeholder {
-  color: rgba(191, 191, 191, 0.87);
+  color: rgba(153, 153, 153, 0.87);
   opacity: 1;
 }
 
 .ui.input > input:-ms-input-placeholder {
-  color: rgba(191, 191, 191, 0.87);
+  color: rgba(153, 153, 153, 0.87);
 }
 
 /*******************************
@@ -17749,17 +17749,17 @@ a.circular.image > img:hover {
 
 .ui.input.focus > input::-webkit-input-placeholder,
 .ui.input > input:focus::-webkit-input-placeholder {
-  color: rgba(115, 115, 115, 0.87);
+  color: rgba(102, 102, 102, 0.87);
 }
 
 .ui.input.focus > input::-moz-placeholder,
 .ui.input > input:focus::-moz-placeholder {
-  color: rgba(115, 115, 115, 0.87);
+  color: rgba(102, 102, 102, 0.87);
 }
 
 .ui.input.focus > input:-ms-input-placeholder,
 .ui.input > input:focus:-ms-input-placeholder {
-  color: rgba(115, 115, 115, 0.87);
+  color: rgba(102, 102, 102, 0.87);
 }
 
 /*--------------------
