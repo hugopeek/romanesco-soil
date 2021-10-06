@@ -1,11 +1,11 @@
 {
   "name": "romanesco",
-  "version": "2.4.4",
+  "version": "2.5.0",
   "dependencies": {
-    "fomantic-ui": "^2.8.7",
+    "fomantic-ui": "^2.8.8",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-real-favicon": "^0.3.2",
-    "yargs": "^16.2.0"
+    "yargs": "^17.2.1"
   }
 }
