@@ -1,5 +1,5 @@
 id: 80
-key: critical_exclude_templates
+key: critical_excluded_templates
 label: 'Non-critical templates'
 xtype: textfield
 description: 'Don''t generate critical CSS for pages with these templates. Reference templates by ID and separate them with a comma. Global templates are excluded automatically.'

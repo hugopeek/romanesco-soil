@@ -1,0 +1,9 @@
+id: 90
+key: img_optimize
+label: 'Optimize images'
+xtype: modx-combo
+description: 'By default, the images are already thumbnailed to their appropriate size(s) by MODX, using the quality setting above. This works fine as far as image quality is concerned, but from a performance perspective, things could be better. The generated JPG and PNG thumbnails are still quite large, so they require more time to load. The solution is to use a post processor (in this case a library called Squoosh, which needs to be installed on your server), which optimizes the thumbnail to reduce file size and creates an alternative version in a modern image format (in this case WebP). This drastically reduces file size, without sacrificing image quality.'
+sortorder: 22
+value: '0'
+group: 7
+options: No==0||Yes==1
