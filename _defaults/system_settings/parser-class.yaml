@@ -1,4 +1,3 @@
 key: parser_class
 value: pdoParser
-namespace: pdotools
-area: pdotools_main
+area: site

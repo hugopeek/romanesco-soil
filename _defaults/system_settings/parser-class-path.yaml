@@ -1,4 +1,3 @@
 key: parser_class_path
 value: '{core_path}components/pdotools/model/pdotools/'
-namespace: pdotools
-area: pdotools_main
+area: site
