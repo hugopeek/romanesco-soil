@@ -4,8 +4,12 @@ These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
 ## Romanesco Soil v2.5.0
-Released on ...
+Released on October 21, 2021
 
+> Patterns: 1.0.0-beta7
+> Backyard: 1.0.0-beta7
+
+- Update Fomantic UI to 2.8.8
 - Remove navbar_sticky_offset config setting
 - Rename matomo_tracking_code setting to alternative_tracking_code
 - Move Leaflet asset paths and integrity hashes to system settings
@@ -17,6 +21,9 @@ Released on ...
 
 ## Romanesco Soil v2.4.5
 Released on August 30, 2021
+
+> Patterns: 1.0.0-beta6
+> Backyard: 1.0.0-beta6
 
 - Load default Google font with new v2 syntax
 - Rename some media sources for clarity

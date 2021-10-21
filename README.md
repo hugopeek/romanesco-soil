@@ -12,16 +12,16 @@ Romanesco is spread out across a few repositories:
 
 - **Romanesco Soil** (this repository)  
 A pre-configured MODX installation, as starting point for your project.
-- **[Romanesco Patterns][11]**  
+- **[Romanesco Patterns][11]** (only for development)  
 A pattern library to manage all reusable elements from a central repository.
 - **[Romanesco Backyard][12]**  
-A MODX package that links a few things together internally.
+A MODX package that fuses a few things together internally.
 - **[Romanesco Data][10]**  
 A Gitify extract for updating Soil and Pattern data per project.
 - **[Romanesco Theme][13]**  
 A custom styling theme for Fomantic UI<sup>1</sup>, the front-end framework used.
 - **[Romanesco Seed][14]**  
-A command line installer for all these moving parts, to preserve your sanity.
+A command line installer, to preserve our sanity.
 
 The elements in the pattern library are (loosely) structured according to the atomic design principles, as first outlined by Brad Frost. If you're not familiar with this concept, I suggest you [read up on that first][7]. It's incredibly useful.
 
