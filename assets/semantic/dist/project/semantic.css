@@ -32734,6 +32734,15 @@ a.inverted.ui.card:hover,
   color: rgba(0, 0, 0, 0.87);
 }
 
+.ui.accordion.reducible .reduced.content .grid {
+  margin-left: -1rem !important;
+  margin-right: -1rem !important;
+}
+
+.ui.accordion.reducible .reduced.content .grid .content.image {
+  padding: 0;
+}
+
 /*******************************
         User Overrides
 *******************************/
