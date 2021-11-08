@@ -1,0 +1,5 @@
+key: romanesco.manager_feedback
+value: '1'
+xtype: combo-boolean
+namespace: romanesco
+area: Feedback
