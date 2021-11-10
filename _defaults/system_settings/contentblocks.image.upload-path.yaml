@@ -1,4 +1,4 @@
 key: contentblocks.image.upload_path
-value: '/[[+year]]/'
+value: 'content/[[+year]]/'
 namespace: contentblocks
 area: 'Input: Image'
