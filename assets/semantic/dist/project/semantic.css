@@ -818,8 +818,14 @@ body:after {
   padding-top: 9rem;
 }
 
+@media only screen and (max-width: 767.98px) {
+  #header.without.hero:not(.non-stick) + #toolbar {
+    padding-top: 8rem;
+  }
+}
+
 body:not(.detail) #header.without.hero:not(.non-stick) + #main #content > .ui.stripe.segment:first-child {
-  padding-top: 12rem;
+  padding-top: 12.944rem;
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -830,7 +836,7 @@ body:not(.detail) #header.without.hero:not(.non-stick) + #main #content > .ui.st
 
 body.detail #header.without.hero:not(.non-stick) + #main #content,
 body.detail #header.without.hero:not(.non-stick) + #main #sidebar {
-  margin-top: 12rem;
+  margin-top: 12.944rem;
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -17554,11 +17560,7 @@ img.ui.bordered.image {
   cursor: pointer;
 }
 
-.ui.image.centered {
-  display: block;
-  overflow: auto;
-}
-
+.ui.image .caption,
 .ui.image figcaption,
 .ui.image + figcaption {
   margin-top: calc(var(--baseline) * 1rem);
@@ -24920,6 +24922,8 @@ span.ui.massive.text {
 
 .ui.nested.grid.celled {
   margin-top: 0;
+  border-radius: 0.46228571rem;
+  overflow: hidden;
 }
 
 .ui.nested.grid > .column.publication {
@@ -24979,7 +24983,9 @@ span.ui.massive.text {
   }
 
   .ui.container > .pagination-wrapper .ui.stackable.grid > .column,
-  .ui.container > .pagination-wrapper .ui.stackable.grid > .row > .column {
+  .ui.container > .ui.stackable.grid .ui.stackable.grid > .column,
+  .ui.container > .pagination-wrapper .ui.stackable.grid > .row > .column,
+  .ui.container > .ui.stackable.grid .ui.stackable.grid > .row > .column {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -24989,6 +24995,8 @@ span.ui.massive.text {
   .ui.stackable[class*="on tablet"].grid > .column,
   .ui.stackable[class*="on tablet"].grid > .row > .column {
     width: 100% !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .ui.stackable[class*="on tablet"].mobile.reversed.grid {
@@ -27648,6 +27656,12 @@ Floated Menu / Item
   height: 8rem;
 }
 
+@media only screen and (max-width: 767.98px) {
+  #menu {
+    height: 6.4rem;
+  }
+}
+
 #menu.sticky {
   position: fixed;
   top: 0;
@@ -27669,7 +27683,7 @@ Floated Menu / Item
 
 @media only screen and (min-width: 768px) {
   #menu.sticky + .ui.vertical.segment {
-    padding-top: 13rem;
+    padding-top: 12.944rem;
   }
 }
 
