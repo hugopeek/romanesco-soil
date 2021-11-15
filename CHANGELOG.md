@@ -3,6 +3,16 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.5.1
+Released on November 15, 2021
+
+> Patterns: 1.0.0-beta8
+> Backyard: 1.0.0-beta8
+
+- Set default media source for ContentBlocks one level higher
+- Optimize distribution of breakpoint values for responsive images
+- Add option to collect manager feedback directly from editors browser
+
 ## Romanesco Soil v2.5.0
 Released on October 21, 2021
 
