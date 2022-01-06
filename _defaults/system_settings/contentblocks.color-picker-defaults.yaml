@@ -1,0 +1,4 @@
+key: contentblocks.color_picker_defaults
+value: '#ffffff,#5f2cdd,#752c53,#3b8456,#a0563d,#5f5850,#c3c3c6,#edf1ff,#da3855,#eda541,#f5ea5a,#75b85b,#66a5d7,#817799,#e17ea5,#f4cdaf'
+namespace: contentblocks
+area: 'Input: Color Picker'
