@@ -3,7 +3,7 @@
  * https://github.com/fomantic/Fomantic-UI
  * http://fomantic-ui.com/
  *
- * Copyright 2021 Contributors
+ * Copyright 2022 Contributors
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
  *
@@ -1002,8 +1002,8 @@ blockquote:not(.quote) {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.inverted.quote.basic,
-.invertedblockquote:not(.quote) {
+.inverted .quote.basic,
+.inverted blockquote:not(.quote) {
   color: rgba(255, 255, 255, 0.8);
   border-color: rgba(255, 255, 255, 0.1);
 }
@@ -1123,6 +1123,17 @@ blockquote:not(.quote) {
 
 .quote.massive footer {
   font-size: 2.28514286rem;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .quote.quote p,
+  .quote.quote {
+    font-size: 1.70624rem !important;
+  }
+
+  .quote.quote footer {
+    font-size: 1.28rem;
+  }
 }
 
 #content code[class*="language-"],
@@ -6573,24 +6584,24 @@ svg tspan {
 }
 
 body.readability #content .ui.container p:not(.meta):not(:first-child),
-.ui.text.container p:not(.meta):not(:first-child) {
+.ui.text.container:not(.conventional) p:not(.meta):not(:first-child) {
   margin-top: calc(var(--baseline) * 3rem);
 }
 
 @media only screen and (min-width: 768px) {
   body.readability #content .ui.container p,
-  .ui.text.container p {
+  .ui.text.container:not(.conventional) p {
     font-size: 1.70624rem;
     line-height: 1.618;
   }
 }
 
 body.readability #content .ui.container p + h2,
-.ui.text.container p + h2,
+.ui.text.container:not(.conventional) p + h2,
 body.readability #content .ui.container p + h3,
-.ui.text.container p + h3,
+.ui.text.container:not(.conventional) p + h3,
 body.readability #content .ui.container p + h4,
-.ui.text.container p + h4 {
+.ui.text.container:not(.conventional) p + h4 {
   margin-top: calc(var(--baseline) * 5rem);
   margin-bottom: calc(var(--baseline) * 3rem);
 }
@@ -8042,49 +8053,84 @@ h6.ui.header + .subtitle {
   margin-right: 0 !important;
 }
 
-.ui.vertical.stripe.segment > .container > h1.header:first-child,
-.ui.vertical.stripe.segment > .container > .column > h1.header:first-child {
+.ui.container.main:not(.conventional) > h1.header:first-child,
+.ui.container .main.column:not(.conventional) > h1.header:first-child,
+.ui.container .cta:not(.conventional) > h1.header:first-child {
   margin-bottom: calc(var(--baseline) * 2rem);
 }
 
-.ui.vertical.stripe.segment > .container > h1.header:first-child + .subtitle,
-.ui.vertical.stripe.segment > .container > .column > h1.header:first-child + .subtitle {
+.ui.container.main:not(.conventional) > h1.header:first-child + .subtitle,
+.ui.container .main.column:not(.conventional) > h1.header:first-child + .subtitle,
+.ui.container .cta:not(.conventional) > h1.header:first-child + .subtitle {
   margin-top: calc(var(--baseline) * -1rem);
   margin-bottom: calc(var(--baseline) * 3rem);
 }
 
 @media only screen and (min-width: 768px) {
-  .ui.vertical.stripe.segment > .container > h1.header:first-child,
-  .ui.vertical.stripe.segment > .container > .column > h1.header:first-child {
+  .ui.container.main:not(.conventional) > h1.header:first-child,
+  .ui.container .main.column:not(.conventional) > h1.header:first-child,
+  .ui.container .cta:not(.conventional) > h1.header:first-child {
     font-size: 3.52729936rem;
   }
 
-  .ui.vertical.stripe.segment > .container > h1.header:first-child + .subtitle,
-  .ui.vertical.stripe.segment > .container > .column > h1.header:first-child + .subtitle {
+  .ui.container.main:not(.conventional) > h1.header:first-child + .subtitle,
+  .ui.container .main.column:not(.conventional) > h1.header:first-child + .subtitle,
+  .ui.container .cta:not(.conventional) > h1.header:first-child + .subtitle {
     font-size: 1.73493074rem;
   }
 }
 
-.ui.vertical.stripe.segment > .container > h2.header:first-child,
-.ui.vertical.stripe.segment > .container > .column > h2.header:first-child {
+.ui.container.main:not(.conventional) > h2.header:first-child,
+.ui.container .main.column:not(.conventional) > h2.header:first-child,
+.ui.container .cta:not(.conventional) > h2.header:first-child {
   margin-bottom: calc(var(--baseline) * 2rem);
 }
 
-.ui.vertical.stripe.segment > .container > h2.header:first-child + .subtitle,
-.ui.vertical.stripe.segment > .container > .column > h2.header:first-child + .subtitle {
+.ui.container.main:not(.conventional) > h2.header:first-child + .subtitle,
+.ui.container .main.column:not(.conventional) > h2.header:first-child + .subtitle,
+.ui.container .cta:not(.conventional) > h2.header:first-child + .subtitle {
   margin-top: calc(var(--baseline) * -1.5rem);
   margin-bottom: calc(var(--baseline) * 3rem);
 }
 
 @media only screen and (min-width: 768px) {
-  .ui.vertical.stripe.segment > .container > h2.header:first-child,
-  .ui.vertical.stripe.segment > .container > .column > h2.header:first-child {
+  .ui.container.main:not(.conventional) > h2.header:first-child,
+  .ui.container .main.column:not(.conventional) > h2.header:first-child,
+  .ui.container .cta:not(.conventional) > h2.header:first-child {
     font-size: 3.03179909rem;
   }
 
-  .ui.vertical.stripe.segment > .container > h2.header:first-child + .subtitle,
-  .ui.vertical.stripe.segment > .container > .column > h2.header:first-child + .subtitle {
+  .ui.container.main:not(.conventional) > h2.header:first-child + .subtitle,
+  .ui.container .main.column:not(.conventional) > h2.header:first-child + .subtitle,
+  .ui.container .cta:not(.conventional) > h2.header:first-child + .subtitle {
     font-size: 1.62659923rem;
+  }
+}
+
+.ui.container.main:not(.conventional) > h3.header:first-child,
+.ui.container .main.column:not(.conventional) > h3.header:first-child,
+.ui.container .cta:not(.conventional) > h3.header:first-child {
+  margin-bottom: calc(var(--baseline) * 2rem);
+}
+
+.ui.container.main:not(.conventional) > h3.header:first-child + .subtitle,
+.ui.container .main.column:not(.conventional) > h3.header:first-child + .subtitle,
+.ui.container .cta:not(.conventional) > h3.header:first-child + .subtitle {
+  margin-top: calc(var(--baseline) * -1.5rem);
+  margin-bottom: calc(var(--baseline) * 2rem);
+}
+
+@media only screen and (min-width: 768px) {
+  .ui.container.main:not(.conventional) > h3.header:first-child,
+  .ui.container .main.column:not(.conventional) > h3.header:first-child,
+  .ui.container .cta:not(.conventional) > h3.header:first-child {
+    font-size: 2.64613605rem;
+  }
+
+  .ui.container.main:not(.conventional) > h3.header:first-child + .subtitle,
+  .ui.container .main.column:not(.conventional) > h3.header:first-child + .subtitle,
+  .ui.container .cta:not(.conventional) > h3.header:first-child + .subtitle {
+    font-size: 1.52503209rem;
   }
 }
 
@@ -28131,10 +28177,6 @@ Floated Menu / Item
 
 #submenu.toc .item.h5 {
   padding: 0.25714286em 1.14285714em;
-}
-
-#dropdown-toc .menu .item.h1:first-child {
-  display: none !important;
 }
 
 #dropdown-toc .menu .item .level:before {
