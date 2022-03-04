@@ -1,0 +1,5 @@
+key: romanesco.cb_hide_advanced_features
+value: '0'
+xtype: combo-boolean
+namespace: romanesco
+area: 'ContentBlocks - Settings'
