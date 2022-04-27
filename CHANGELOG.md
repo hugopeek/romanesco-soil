@@ -3,6 +3,14 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.5.2
+Released on ...
+
+> Patterns: 1.0.0-beta9
+> Backyard: 1.0.0-beta9
+
+- Update Leaflet to 1.8.0
+
 ## Romanesco Soil v2.5.1
 Released on November 19, 2021
 

@@ -1,4 +1,4 @@
 key: romanesco.leaflet_css_url
-value: 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css'
+value: 'https://unpkg.com/leaflet@1.8.0/dist/leaflet.css'
 namespace: romanesco
 area: Map
