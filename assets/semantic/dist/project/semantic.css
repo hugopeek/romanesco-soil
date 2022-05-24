@@ -854,6 +854,11 @@ body.detail #header.without.hero:not(.non-stick) + #main #sidebar {
   body.detail.toc #content > .stripe.segment:first-child {
     padding-top: 0;
   }
+
+  body.detail #sidebar {
+    background: #F3F4F5;
+    padding: calc(var(--baseline) * 5rem) 0;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -1491,7 +1496,7 @@ svg tspan {
   border-radius: 0.28571429em;
 }
 
-#commercial-support .cards > .card > .image {
+#commercial .cards > .card > .image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1499,23 +1504,24 @@ svg tspan {
   padding: 1em 1.5em;
 }
 
-#commercial-support .cards > .card > .image img {
+#commercial .cards > .card > .image img,
+#commercial .cards > .card > .image svg {
   max-height: 5rem;
   max-width: 21rem;
   margin: 0 auto;
 }
 
-#commercial-support .cards > .card:nth-child(1) .image {
+#commercial .cards > .card:nth-child(1) .image {
   background: #698f73;
 }
 
-#commercial-support .cards > .card:nth-child(2) .image {
-  background: -webkit-linear-gradient(315deg, #c6437d 0%, #50348f 100%);
-  background: linear-gradient(135deg, #c6437d 0%, #50348f 100%);
+#commercial .cards > .card:nth-child(2) .image {
+  background: #1f4a7f;
 }
 
-#commercial-support .cards > .card:nth-child(3) .image {
-  background: #1f4a7f;
+#commercial .cards > .card:nth-child(3) .image {
+  background: -webkit-linear-gradient(315deg, #c6437d 0%, #50348f 100%);
+  background: linear-gradient(135deg, #c6437d 0%, #50348f 100%);
 }
 
 @media (max-width: 767.98px) {
@@ -6385,6 +6391,18 @@ svg tspan {
   margin-right: 0;
 }
 
+.ui.button.very.basic {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.ui.button.very.basic:hover,
+.ui.button.very.basic:active,
+.ui.button.very.basic:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 .file-uploader-buttons .ui.button {
   margin: 0 0.75em 0 0 !important;
 }
@@ -6620,6 +6638,13 @@ body.readability #content .ui.container p + h4,
 
 .ui.tightened.container {
   max-width: 933px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1299.98px) {
+  body.vertical .ui.text.container,
+  body.vertical .ui.tightened.container {
+    width: 100% !important;
+  }
 }
 
 /*******************************
@@ -7925,6 +7950,10 @@ a.ui.inverted.black.header.header.header:hover {
          Theme Overrides
 *******************************/
 
+span.ui.header {
+  display: inline-block;
+}
+
 .ui.header.horizontal:not(.divider) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8006,11 +8035,6 @@ h6.ui.header + .subtitle {
 
 .ui.header + .subtitle {
   margin-top: -1rem;
-}
-
-#sidebar > .ui.header.tiny {
-  display: block;
-  margin: calc(var(--baseline) * 1rem) 0.9em 1em 0.9em;
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -17379,7 +17403,7 @@ img.ui.image {
 .ui.rounded.image,
 .ui.rounded.images .image > *,
 .ui.rounded.image > * {
-  border-radius: 0.3125em;
+  border-radius: 0.46228571rem;
 }
 
 /*--------------
@@ -21614,7 +21638,7 @@ ol.ui.suffixed.list li:before,
   -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
-  border-radius: 0;
+  border-radius: 0.28571429rem;
 }
 
 /*-------------------
@@ -22041,6 +22065,10 @@ body.vertical .ui.vertical.stripe.segment#dropdown-toc {
 
 .ui.inverted.segment .segment {
   border: none;
+}
+
+.ui.background.segment {
+  z-index: 0;
 }
 
 #hero.ui.segment {
@@ -28124,21 +28152,51 @@ Floated Menu / Item
   margin: 0.1em 0 0 0.8em;
 }
 
-#submenu.vertical.tabular .item .header a.active {
+#submenu.secondary {
+  margin: 0 0 calc(var(--baseline) * 2rem);
+}
+
+#submenu.secondary .item:not(.active) {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#submenu.secondary .item:not(.active):hover {
+  color: rgba(0, 0, 0, 0.95);
+}
+
+#submenu.secondary .item.active {
+  font-weight: bold;
+}
+
+#submenu.secondary .item.active .item {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#submenu.secondary .item.active .item:hover {
+  color: #ffffff;
+}
+
+#submenu.secondary .header > .item.active {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+#submenu.secondary:not(.toc).fixed .item {
+  border-radius: 0.28571429rem !important;
+}
+
+#submenu.tabular.vertical .item .header a.active {
   margin-bottom: 0.75em;
   padding: 0;
   border: none;
 }
 
-#submenu.vertical.tabular .item .menu a.active {
+#submenu.tabular.vertical .item .menu a.active {
   border: none;
 }
 
-#submenu.sticky.tabular {
-  margin-bottom: 1em;
-}
-
-#submenu.sticky.tabular.bottom {
+#submenu.tabular.sticky.bottom {
   border-top: 0;
 }
 
@@ -28177,6 +28235,10 @@ Floated Menu / Item
 
 #submenu.toc .item.h5 {
   padding: 0.25714286em 1.14285714em;
+}
+
+#submenu-header {
+  margin-bottom: calc(var(--baseline) * 1rem);
 }
 
 #dropdown-toc .menu .item .level:before {
