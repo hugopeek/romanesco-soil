@@ -1,0 +1,9 @@
+id: 92
+key: submenu_type
+label: 'Submenu type'
+xtype: modx-combo
+description: 'Styling of the submenu items.'
+sortorder: 43
+value: secondary
+group: 2
+options: "Active item(s) as button==secondary||\nActive item(s) as tab==[[++sidebar_position]] tabular||\nActive item(s) as highlighted divider==secondary [[++sidebar_position]] pointing||\nRegular (boxed) menu==regular||\nSimplified (text) menu==text"

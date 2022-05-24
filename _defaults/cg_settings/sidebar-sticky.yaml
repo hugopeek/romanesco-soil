@@ -1,0 +1,9 @@
+id: 95
+key: sidebar_sticky
+label: 'Sticky sidebar'
+xtype: modx-combo
+description: 'Please note: to avoid a sticky mess, this behaviour will only be applied to the last element inside the sidebar. In most cases, that''s the submenu. But if you select a sidebar CTA, then that will stick instead. This option can be overriden on page level with a TV.'
+sortorder: 33
+value: '1'
+group: 2
+options: Yes==1||No==0

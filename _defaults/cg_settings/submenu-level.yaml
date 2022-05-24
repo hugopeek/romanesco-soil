@@ -1,0 +1,8 @@
+id: 93
+key: submenu_level
+label: 'Submenu level'
+xtype: numberfield
+description: 'This number indicates how deep the submenu will go when fetching child items. This setting will be ignored if locality is set to only show children of current page.'
+sortorder: 42
+value: '2'
+group: 2

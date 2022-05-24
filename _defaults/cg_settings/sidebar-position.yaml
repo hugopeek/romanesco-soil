@@ -2,7 +2,7 @@ id: 9
 key: sidebar_position
 label: 'Sidebar position'
 xtype: modx-combo
-description: ''
+description: 'Choose on which side of the content the sidebar should be placed.'
 sortorder: 31
 value: right
 group: 2

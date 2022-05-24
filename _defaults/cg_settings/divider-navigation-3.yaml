@@ -1,0 +1,7 @@
+id: 91
+key: divider_navigation_3
+label: Divider
+xtype: clientconfig-line
+description: ''
+sortorder: 30
+group: 2

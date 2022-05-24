@@ -1,0 +1,9 @@
+id: 96
+key: sidebar_visibility
+label: 'Sidebar visibility'
+xtype: modx-combo
+description: 'When active on mobile, the sidebar will be displayed below the content area.'
+sortorder: 32
+value: desktop
+group: 2
+options: "Desktop only==desktop||\nMobile and desktop==mobile"
