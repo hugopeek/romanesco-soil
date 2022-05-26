@@ -4,11 +4,13 @@ These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
 ## Romanesco Soil v2.5.2
-Released on ...
+Released on May 26, 2022
 
 > Patterns: 1.0.0-beta9
 > Backyard: 1.0.0-beta9
 
+- Remove system settings for Twitter keys
+- Add / tweak Configuration settings for sidebar and submenu
 - Update Leaflet to 1.8.0
 
 ## Romanesco Soil v2.5.1
