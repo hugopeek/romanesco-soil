@@ -1,4 +1,4 @@
 key: romanesco.favicon_path
 value: assets/favicons
 namespace: romanesco
-area: Presentation
+area: Paths

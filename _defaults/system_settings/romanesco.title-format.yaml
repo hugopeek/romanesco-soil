@@ -1,4 +1,4 @@
 key: romanesco.title_format
 value: '[[*longtitle:empty=`[[*pagetitle]]`]] - [[++site_name]]'
 namespace: romanesco
-area: Head
+area: Meta

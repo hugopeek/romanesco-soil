@@ -1,4 +1,4 @@
 key: romanesco.dev_mode
 xtype: combo-boolean
 namespace: romanesco
-area: Development
+area: Environment
