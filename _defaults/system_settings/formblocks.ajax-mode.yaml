@@ -1,4 +1,4 @@
-key: formblocks.submit_ajax
+key: formblocks.ajax_mode
 value: '0'
 xtype: combo-boolean
 namespace: romanesco
