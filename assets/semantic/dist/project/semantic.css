@@ -1014,6 +1014,14 @@ p {
   margin-right: 1em;
 }
 
+.caption,
+figcaption {
+  font-size: 0.8em;
+  line-height: 1.3em;
+  font-style: italic;
+  opacity: 0.8;
+}
+
 .quote {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -17889,10 +17897,6 @@ img.ui.bordered.image {
 .ui.image figcaption,
 .ui.image + figcaption {
   margin-top: calc(var(--baseline) * 1rem);
-  font-size: 0.8em;
-  line-height: 1.3em;
-  font-style: italic;
-  opacity: 0.8;
 }
 
 .ui.image .credits {
