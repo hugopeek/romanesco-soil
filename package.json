@@ -1,8 +1,8 @@
 {
   "name": "romanesco",
-  "version": "2.5.0",
+  "version": "2.5.3",
   "dependencies": {
-    "fomantic-ui": "^2.9.0-beta.288",
+    "fomantic-ui": "^2.9.0",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-real-favicon": "^0.3.2",

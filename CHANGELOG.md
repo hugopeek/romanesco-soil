@@ -3,6 +3,14 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.5.3
+Released on ...
+
+> Patterns: 1.0.0-beta12
+> Backyard: 1.0.0-beta10
+
+- Update Fomantic to 2.9.0
+
 ## Romanesco Soil v2.5.2
 Released on May 26, 2022
 
