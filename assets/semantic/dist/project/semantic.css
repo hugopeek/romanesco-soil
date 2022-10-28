@@ -1,5 +1,5 @@
 /*
- * # Fomantic UI - 2.9.0-beta.315
+ * # Fomantic UI - 2.9.0
  * https://github.com/fomantic/Fomantic-UI
  * http://fomantic-ui.com/
  *
@@ -9,7 +9,7 @@
  *
  */
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Reset
+ * # Fomantic-UI 2.9.0 - Reset
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -470,7 +470,7 @@ body:not(:-moz-handler-blocked) fieldset {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Site
+ * # Fomantic-UI 2.9.0 - Site
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -482,6 +482,86 @@ body:not(:-moz-handler-blocked) fieldset {
 /*******************************
              Page
 *******************************/
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("./themes/default/assets/fonts/LatoLatin-Regular.woff2") format('woff2') , url("./themes/default/assets/fonts/LatoLatin-Regular.woff") format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-017F, U+0192, U+0218-021B, U+0237, U+02C6-02C7, U+02C9, U+02D8-02DD, U+0394, U+03A9, U+03BC, U+03C0, U+1E80-1E85, U+2010, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20A3-20A4, U+20A7, U+20AC, U+2113, U+2122, U+2126, U+212E, U+2202, U+2206, U+220F, U+2211-2212, U+2215, U+2219-221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+F8FF, U+FB00-FB04;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("./themes/default/assets/fonts/LatoLatin-Bold.woff2") format('woff2') , url("./themes/default/assets/fonts/LatoLatin-Bold.woff") format('woff');
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-017F, U+0192, U+0218-021B, U+0237, U+02C6-02C7, U+02C9, U+02D8-02DD, U+0394, U+03A9, U+03BC, U+03C0, U+1E80-1E85, U+2010, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20A3-20A4, U+20A7, U+20AC, U+2113, U+2122, U+2126, U+212E, U+2202, U+2206, U+220F, U+2211-2212, U+2215, U+2219-221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+F8FF, U+FB00-FB04;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("./themes/default/assets/fonts/LatoLatin-Italic.woff2") format('woff2') , url("./themes/default/assets/fonts/LatoLatin-Italic.woff") format('woff');
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-017F, U+0192, U+0218-021B, U+0237, U+02C6-02C7, U+02C9, U+02D8-02DD, U+0394, U+03A9, U+03BC, U+03C0, U+1E80-1E85, U+2010, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20A3-20A4, U+20A7, U+20AC, U+2113, U+2122, U+2126, U+212E, U+2202, U+2206, U+220F, U+2211-2212, U+2215, U+2219-221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+F8FF, U+FB00-FB04;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("./themes/default/assets/fonts/LatoLatin-BoldItalic.woff2") format('woff2') , url("./themes/default/assets/fonts/LatoLatin-BoldItalic.woff") format('woff');
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-017F, U+0192, U+0218-021B, U+0237, U+02C6-02C7, U+02C9, U+02D8-02DD, U+0394, U+03A9, U+03BC, U+03C0, U+1E80-1E85, U+2010, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20A3-20A4, U+20A7, U+20AC, U+2113, U+2122, U+2126, U+212E, U+2202, U+2206, U+220F, U+2211-2212, U+2215, U+2219-221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+F8FF, U+FB00-FB04;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("./themes/default/assets/fonts/Lato-Regular.woff2") format('woff2') , url("./themes/default/assets/fonts/Lato-Regular.woff") format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  unicode-range: U+0180-0191, U+0193-0217, U+021C-0236, U+0238-02C5, U+02C8, U+02CA-02D7, U+02DE-036F, U+0374-0375, U+037A-037E, U+0384-038A, U+038C, U+038E-0393, U+0395-03A1, U+03A3-03A8, U+03AA-03BB, U+03BD-03BF, U+03C1-03CE, U+03D0-0486, U+0488-0513, U+1D00-1DCA, U+1DFE-1E7F, U+1E86-1E9B, U+1E9E, U+1EA0-1EF9, U+1F00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+2000-200F, U+2012, U+2015-2017, U+201B, U+201F, U+202F, U+2034, U+203C-203E, U+205E-205F, U+2070-2071, U+2074-2094, U+20A0-20A2, U+20A5-20A6, U+20A8-20AB, U+20AD-20B5, U+20B8-20BA, U+20DD, U+2105, U+2116-2117, U+2120, U+2132, U+214D-214E, U+2153-215F, U+2183-2184, U+2190-2199, U+21A8, U+221F, U+2229, U+2261, U+2302, U+2310, U+2320-2321, U+2460-2473, U+24EA-24F4, U+24FF-2500, U+2502, U+250C, U+2510, U+2514, U+2518, U+2C60-2C6C, U+2C74-2C77;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("./themes/default/assets/fonts/Lato-Bold.woff2") format('woff2') , url("./themes/default/assets/fonts/Lato-Bold.woff") format('woff');
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  unicode-range: U+0180-0191, U+0193-0217, U+021C-0236, U+0238-02C5, U+02C8, U+02CA-02D7, U+02DE-036F, U+0374-0375, U+037A-037E, U+0384-038A, U+038C, U+038E-0393, U+0395-03A1, U+03A3-03A8, U+03AA-03BB, U+03BD-03BF, U+03C1-03CE, U+03D0-0486, U+0488-0513, U+1D00-1DCA, U+1DFE-1E7F, U+1E86-1E9B, U+1E9E, U+1EA0-1EF9, U+1F00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+2000-200F, U+2012, U+2015-2017, U+201B, U+201F, U+202F, U+2034, U+203C-203E, U+205E-205F, U+2070-2071, U+2074-2094, U+20A0-20A2, U+20A5-20A6, U+20A8-20AB, U+20AD-20B5, U+20B8-20BA, U+20DD, U+2105, U+2116-2117, U+2120, U+2132, U+214D-214E, U+2153-215F, U+2183-2184, U+2190-2199, U+21A8, U+221F, U+2229, U+2261, U+2302, U+2310, U+2320-2321, U+2460-2473, U+24EA-24F4, U+24FF-2500, U+2502, U+250C, U+2510, U+2514, U+2518, U+2C60-2C6C, U+2C74-2C77;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("./themes/default/assets/fonts/Lato-Italic.woff2") format('woff2') , url("./themes/default/assets/fonts/Lato-Italic.woff") format('woff');
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  unicode-range: U+0180-0191, U+0193-0217, U+021C-0236, U+0238-02C5, U+02C8, U+02CA-02D7, U+02DE-036F, U+0374-0375, U+037A-037E, U+0384-038A, U+038C, U+038E-0393, U+0395-03A1, U+03A3-03A8, U+03AA-03BB, U+03BD-03BF, U+03C1-03CE, U+03D0-0486, U+0488-0513, U+1D00-1DCA, U+1DFE-1E7F, U+1E86-1E9B, U+1E9E, U+1EA0-1EF9, U+1F00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+2000-200F, U+2012, U+2015-2017, U+201B, U+201F, U+202F, U+2034, U+203C-203E, U+205E-205F, U+2070-2071, U+2074-2094, U+20A0-20A2, U+20A5-20A6, U+20A8-20AB, U+20AD-20B5, U+20B8-20BA, U+20DD, U+2105, U+2116-2117, U+2120, U+2132, U+214D-214E, U+2153-215F, U+2183-2184, U+2190-2199, U+21A8, U+221F, U+2229, U+2261, U+2302, U+2310, U+2320-2321, U+2460-2473, U+24EA-24F4, U+24FF-2500, U+2502, U+250C, U+2510, U+2514, U+2518, U+2C60-2C6C, U+2C74-2C77;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("./themes/default/assets/fonts/Lato-BoldItalic.woff2") format('woff2') , url("./themes/default/assets/fonts/Lato-BoldItalic.woff") format('woff');
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  unicode-range: U+0180-0191, U+0193-0217, U+021C-0236, U+0238-02C5, U+02C8, U+02CA-02D7, U+02DE-036F, U+0374-0375, U+037A-037E, U+0384-038A, U+038C, U+038E-0393, U+0395-03A1, U+03A3-03A8, U+03AA-03BB, U+03BD-03BF, U+03C1-03CE, U+03D0-0486, U+0488-0513, U+1D00-1DCA, U+1DFE-1E7F, U+1E86-1E9B, U+1E9E, U+1EA0-1EF9, U+1F00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D, U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4, U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4, U+1FF6-1FFE, U+2000-200F, U+2012, U+2015-2017, U+201B, U+201F, U+202F, U+2034, U+203C-203E, U+205E-205F, U+2070-2071, U+2074-2094, U+20A0-20A2, U+20A5-20A6, U+20A8-20AB, U+20AD-20B5, U+20B8-20BA, U+20DD, U+2105, U+2116-2117, U+2120, U+2132, U+214D-214E, U+2153-215F, U+2183-2184, U+2190-2199, U+21A8, U+221F, U+2229, U+2261, U+2302, U+2310, U+2320-2321, U+2460-2473, U+24EA-24F4, U+24FF-2500, U+2502, U+250C, U+2510, U+2514, U+2518, U+2C60-2C6C, U+2C74-2C77;
+}
 
 html,
 body {
@@ -1014,7 +1094,7 @@ p {
   margin-right: 1em;
 }
 
-.caption,
+.caption:not(.with),
 figcaption {
   font-size: 0.8em;
   line-height: 1.3em;
@@ -1566,7 +1646,7 @@ svg tspan {
   }
 }
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Button
+ * # Fomantic-UI 2.9.0 - Button
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -6453,7 +6533,7 @@ svg tspan {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Container
+ * # Fomantic-UI 2.9.0 - Container
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -6791,7 +6871,7 @@ body.readability #content .ui.container p + h4,
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Divider
+ * # Fomantic-UI 2.9.0 - Divider
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -7135,7 +7215,7 @@ body.readability #content .ui.container p + h4,
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Header
+ * # Fomantic-UI 2.9.0 - Header
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -8312,7 +8392,7 @@ h6.ui.header + .subtitle {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Icon
+ * # Fomantic-UI 2.9.0 - Icon
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -8326,9 +8406,28 @@ h6.ui.header + .subtitle {
 *******************************/
 
 @font-face {
-  font-family: 'Icons';
-  src: url("./themes/default/assets/fonts/icons.eot");
-  src: url("./themes/default/assets/fonts/icons.eot?#iefix") format('embedded-opentype'), url("./themes/default/assets/fonts/icons.woff2") format('woff2'), url("./themes/default/assets/fonts/icons.woff") format('woff'), url("./themes/default/assets/fonts/icons.ttf") format('truetype'), url("./themes/default/assets/fonts/icons.svg#icons") format('svg');
+  font-family: 'icons';
+  src: url("./themes/default/assets/fonts/icons.woff2") format('woff2') , url("./themes/default/assets/fonts/icons.woff") format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+@font-face {
+  font-family: 'outline-icons';
+  src: url("./themes/default/assets/fonts/outline-icons.woff2") format('woff2') , url("./themes/default/assets/fonts/outline-icons.woff") format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+@font-face {
+  font-family: 'brand-icons';
+  src: url("./themes/default/assets/fonts/brand-icons.woff2") format('woff2') , url("./themes/default/assets/fonts/brand-icons.woff") format('woff');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -8342,7 +8441,7 @@ i.icon {
   margin: 0 0.25rem 0 0;
   width: 1.18em;
   height: 1em;
-  font-family: 'Icons';
+  font-family: 'icons';
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
@@ -9096,39 +9195,6 @@ i.circular.icons .icon.corner[class*="bottom left"] {
   bottom: 1.15em;
 }
 
-/*
-* Font Awesome 5.15.4 by @fontawesome [https://fontawesome.com]
-* License - https://fontawesome.com/license (Icons: CC BY 4.0 License, Fonts: SIL OFL 1.1 License, CSS: MIT License)
-*/
-
-/*******************************
-
-Fomantic-UI integration of FontAwesome :
-
-// class names are separated
-i.icon.angle-left  =>  i.icon.angle.left
-
-// variations are extracted
-i.icon.circle      =>  i.icon.circle
-i.icon.circle-o    =>  i.icon.circle.outline
-
-// abbreviation are replaced by full words
-i.icon.*-h         =>  i.icon.*.horizontal
-i.icon.*-v         =>  i.icon.*.vertical
-i.icon.alpha       =>  i.icon.alphabet
-i.icon.asc         =>  i.icon.ascending
-i.icon.desc        =>  i.icon.descending
-i.icon.alt         =>  i.icon.alternate
-
-
-Icons are order A-Z in their group, Solid, Outline, Thin (Pro only) and Brand
-
-*******************************/
-
-/*******************************
-             Icons
-*******************************/
-
 /* Deprecated *In/Out Naming Conflict) */
 
 i.icon.linkedin.in::before {
@@ -9161,7 +9227,7 @@ i.icon.sign.out::before {
 
 /*******************************
           Solid Icons
-*******************************/
+  *******************************/
 
 /* Icons */
 
@@ -9233,10 +9299,6 @@ i.icon.angle.double.up::before {
   content: "\f102";
 }
 
-i.icon.angle.down::before {
-  content: "\f107";
-}
-
 i.icon.angle.left::before {
   content: "\f104";
 }
@@ -9247,6 +9309,10 @@ i.icon.angle.right::before {
 
 i.icon.angle.up::before {
   content: "\f106";
+}
+
+i.icon.angle.down::before {
+  content: "\f107";
 }
 
 i.icon.angry::before {
@@ -9297,6 +9363,10 @@ i.icon.arrow.circle.up::before {
   content: "\f0aa";
 }
 
+i.icon.arrow.down::before {
+  content: "\f063";
+}
+
 i.icon.arrow.left::before {
   content: "\f060";
 }
@@ -9307,10 +9377,6 @@ i.icon.arrow.right::before {
 
 i.icon.arrow.up::before {
   content: "\f062";
-}
-
-i.icon.arrow.down::before {
-  content: "\f063";
 }
 
 i.icon.arrows.alternate::before {
@@ -9809,16 +9875,12 @@ i.icon.chart.bar::before {
   content: "\f080";
 }
 
-i.icon.chart.line::before {
-  content: "\f201";
+i.icon.chart.pie::before {
+  content: "\f200";
 }
 
 i.icon.chartline::before {
   content: "\f201";
-}
-
-i.icon.chart.pie::before {
-  content: "\f200";
 }
 
 i.icon.check::before {
@@ -13707,10 +13769,6 @@ i.icon.like::before {
   content: "\f004";
 }
 
-i.icon.line.graph::before {
-  content: "\f201";
-}
-
 i.icon.linegraph::before {
   content: "\f201";
 }
@@ -14336,23 +14394,8 @@ i.icon.zoom.out::before {
 }
 
 /*******************************
-         Outline Icons
-*******************************/
-
-/* Outline Icon */
-
-/* Load & Define Icon Font */
-
-@font-face {
-  font-family: 'outline-icons';
-  src: url("./themes/default/assets/fonts/outline-icons.eot");
-  src: url("./themes/default/assets/fonts/outline-icons.eot?#iefix") format('embedded-opentype'), url("./themes/default/assets/fonts/outline-icons.woff2") format('woff2'), url("./themes/default/assets/fonts/outline-icons.woff") format('woff'), url("./themes/default/assets/fonts/outline-icons.ttf") format('truetype'), url("./themes/default/assets/fonts/outline-icons.svg#icons") format('svg');
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-decoration: inherit;
-  text-transform: none;
-}
+           Outline Icons
+  *******************************/
 
 i.icon.outline {
   font-family: 'outline-icons';
@@ -14964,22 +15007,23 @@ i.icon.window.restore.outline::before {
   content: "\f2d2";
 }
 
+/* Aliases */
+
 /*******************************
-          Brand Icons
-*******************************/
+         Thin Icons
+  *******************************/
 
-/* Load & Define Brand Font */
+/* Icons */
 
-@font-face {
-  font-family: 'brand-icons';
-  src: url("./themes/default/assets/fonts/brand-icons.eot");
-  src: url("./themes/default/assets/fonts/brand-icons.eot?#iefix") format('embedded-opentype'), url("./themes/default/assets/fonts/brand-icons.woff2") format('woff2'), url("./themes/default/assets/fonts/brand-icons.woff") format('woff'), url("./themes/default/assets/fonts/brand-icons.ttf") format('truetype'), url("./themes/default/assets/fonts/brand-icons.svg#icons") format('svg');
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-decoration: inherit;
-  text-transform: none;
+i.icon.thin {
+  font-family: 'thin-icons';
 }
+
+/* Aliases */
+
+/*******************************
+            Brand Icons
+  *******************************/
 
 /* Icons */
 
@@ -17526,10 +17570,14 @@ i.icon.youtube.play::before {
 }
 
 /*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Image
+ * # Fomantic-UI 2.9.0 - Image
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -17932,7 +17980,7 @@ a.circular.image > img:hover {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Input
+ * # Fomantic-UI 2.9.0 - Input
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -19664,7 +19712,7 @@ input[type="file"].ui.black.file.input::file-selector-button:hover,
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Label
+ * # Fomantic-UI 2.9.0 - Label
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -21196,7 +21244,7 @@ a.ui.ui.ui.inverted.basic.black.label:hover {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - List
+ * # Fomantic-UI 2.9.0 - List
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -22319,7 +22367,7 @@ ol.ui.suffixed.list li::before,
     User Variable Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Segment
+ * # Fomantic-UI 2.9.0 - Segment
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -23542,7 +23590,7 @@ body.vertical .ui.vertical.stripe.segment#dropdown-toc {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Text
+ * # Fomantic-UI 2.9.0 - Text
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -23737,7 +23785,7 @@ span.ui.massive.text {
          Theme Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Breadcrumb
+ * # Fomantic-UI 2.9.0 - Breadcrumb
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -23882,7 +23930,7 @@ span.ui.massive.text {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Grid
+ * # Fomantic-UI 2.9.0 - Grid
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -29708,7 +29756,7 @@ a#submenu-header.for.submenu-secondary:not(.pointing) {
   }
 }
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Message
+ * # Fomantic-UI 2.9.0 - Message
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -30514,7 +30562,7 @@ a#submenu-header.for.submenu-secondary:not(.pointing) {
         Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Card
+ * # Fomantic-UI 2.9.0 - Card
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -32867,7 +32915,7 @@ a.inverted.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Feed
+ * # Fomantic-UI 2.9.0 - Feed
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -33253,7 +33301,7 @@ a.inverted.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Item
+ * # Fomantic-UI 2.9.0 - Item
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -33889,7 +33937,7 @@ a.inverted.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Statistic
+ * # Fomantic-UI 2.9.0 - Statistic
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -34595,7 +34643,7 @@ a.inverted.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Accordion
+ * # Fomantic-UI 2.9.0 - Accordion
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -34984,7 +35032,7 @@ a.inverted.ui.card:hover,
 
 @font-face {
   font-family: 'Accordion';
-  src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMggjB5AAAAC8AAAAYGNtYXAPfOIKAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5Zryj6HgAAAFwAAAAyGhlYWT/0IhHAAACOAAAADZoaGVhApkB5wAAAnAAAAAkaG10eAJuABIAAAKUAAAAGGxvY2EAjABWAAACrAAAAA5tYXhwAAgAFgAAArwAAAAgbmFtZfC1n04AAALcAAABPHBvc3QAAwAAAAAEGAAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDZ//3//wAB/+MPKwADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQASAEkAtwFuABMAADc0PwE2FzYXFh0BFAcGJwYvASY1EgaABQgHBQYGBQcIBYAG2wcGfwcBAQcECf8IBAcBAQd/BgYAAAAAAQAAAEkApQFuABMAADcRNDc2MzIfARYVFA8BBiMiJyY1AAUGBwgFgAYGgAUIBwYFWwEACAUGBoAFCAcFgAYGBQcAAAABAAAAAQAAqWYls18PPPUACwIAAAAAAM/9o+4AAAAAz/2j7gAAAAAAtwFuAAAACAACAAAAAAAAAAEAAAHg/+AAAAIAAAAAAAC3AAEAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAQAAAAC3ABIAtwAAAAAAAAAKABQAHgBCAGQAAAABAAAABgAUAAEAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEADAAAAAEAAAAAAAIADgBAAAEAAAAAAAMADAAiAAEAAAAAAAQADABOAAEAAAAAAAUAFgAMAAEAAAAAAAYABgAuAAEAAAAAAAoANABaAAMAAQQJAAEADAAAAAMAAQQJAAIADgBAAAMAAQQJAAMADAAiAAMAAQQJAAQADABOAAMAAQQJAAUAFgAMAAMAAQQJAAYADAA0AAMAAQQJAAoANABaAHIAYQB0AGkAbgBnAFYAZQByAHMAaQBvAG4AIAAxAC4AMAByAGEAdABpAG4AZ3JhdGluZwByAGEAdABpAG4AZwBSAGUAZwB1AGwAYQByAHIAYQB0AGkAbgBnAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format('truetype'), url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAASwAAoAAAAABGgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAS0AAAEtFpovuE9TLzIAAAIkAAAAYAAAAGAIIweQY21hcAAAAoQAAABMAAAATA984gpnYXNwAAAC0AAAAAgAAAAIAAAAEGhlYWQAAALYAAAANgAAADb/0IhHaGhlYQAAAxAAAAAkAAAAJAKZAedobXR4AAADNAAAABgAAAAYAm4AEm1heHAAAANMAAAABgAAAAYABlAAbmFtZQAAA1QAAAE8AAABPPC1n05wb3N0AAAEkAAAACAAAAAgAAMAAAEABAQAAQEBB3JhdGluZwABAgABADr4HAL4GwP4GAQeCgAZU/+Lix4KABlT/4uLDAeLa/iU+HQFHQAAAHkPHQAAAH4RHQAAAAkdAAABJBIABwEBBw0PERQZHnJhdGluZ3JhdGluZ3UwdTF1MjB1RjBEOXVGMERBAAACAYkABAAGAQEEBwoNVp38lA78lA78lA77lA773Z33bxWLkI2Qj44I9xT3FAWOj5CNkIuQi4+JjoePiI2Gi4YIi/uUBYuGiYeHiIiHh4mGi4aLho2Ijwj7FPcUBYeOiY+LkAgO+92L5hWL95QFi5CNkI6Oj4+PjZCLkIuQiY6HCPcU+xQFj4iNhouGi4aJh4eICPsU+xQFiIeGiYaLhouHjYePiI6Jj4uQCA74lBT4lBWLDAoAAAAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDZ//3//wAB/+MPKwADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAEAADfYOJZfDzz1AAsCAAAAAADP/aPuAAAAAM/9o+4AAAAAALcBbgAAAAgAAgAAAAAAAAABAAAB4P/gAAACAAAAAAAAtwABAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAAAEAAAAAtwASALcAAAAAUAAABgAAAAAADgCuAAEAAAAAAAEADAAAAAEAAAAAAAIADgBAAAEAAAAAAAMADAAiAAEAAAAAAAQADABOAAEAAAAAAAUAFgAMAAEAAAAAAAYABgAuAAEAAAAAAAoANABaAAMAAQQJAAEADAAAAAMAAQQJAAIADgBAAAMAAQQJAAMADAAiAAMAAQQJAAQADABOAAMAAQQJAAUAFgAMAAMAAQQJAAYADAA0AAMAAQQJAAoANABaAHIAYQB0AGkAbgBnAFYAZQByAHMAaQBvAG4AIAAxAC4AMAByAGEAdABpAG4AZ3JhdGluZwByAGEAdABpAG4AZwBSAGUAZwB1AGwAYQByAHIAYQB0AGkAbgBnAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format('woff');
+  src: url(data:application/font-woff;base64,d09GRk9UVE8AAAREAAsAAAAABkAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAC7AAAAQoAAAE/j/fxwUZGVE0AAAQUAAAAHAAAAByNqvxQR0RFRgAAA/gAAAAcAAAAIAAnABhPUy8yAAABYAAAAEIAAABgTadW5mNtYXAAAAKMAAAAUQAAAWAFZuKDaGVhZAAAAQgAAAAyAAAANg8zT8toaGVhAAABPAAAABoAAAAkApkA5mhtdHgAAAQwAAAAEwAAABYBtwASbWF4cAAAAVgAAAAGAAAABgAGUABuYW1lAAABpAAAAOYAAAGq/HAhWXBvc3QAAALgAAAADAAAACAAAwAAeJxjYGRgYADi8KWRsvH8Nl8ZuJkYQOD838XvQPT9hGxNIOXJsJ0xD0hzMIClARzsCcoAAHicY2BkYGB88P8BkGQAg+0wBhywAgBgjgOAAAAAAFAAAAYAAHicY2BmOM84gYGVgYHRhzGNgYHBHUp/ZZBkaGFABYwCSJyANNcUBgcGhg+3GB/8fwCUfMCgAFIDV6AAhIwARVcMJwAAeJx1jrFOwzAURU/SNKgFIVgQ6uSRKWolZjaQOnQBqQNb2lpRpMqW3HTowhew8U9I/BU37WOjtmyfd/3utYEbvsn4G7lxRsmtcc4FD8YD6U/GhfjNeMglybjU/DQeM+FHrqwY2QsnzrgSnTjnmnvjgfSpcSF+Nh5yx7txKf3DeMwjX31soqajJdCoqLs26HzFq9yz1WVS6Zv9tk5nmv8Vl0pI7CRHXThmVPofS592bQxuVk3PGF+Ohk6WRhHhGNO3eTbSVhy0z1mra6HV91YyxdC5xgevFL9xq4Obr+MixlDxC/HTOrsAAHicY2BgYGaAYBkGRgYQiALyGMF8FgY7IM3FwMHABISMDAofbv3/+/8/WJXCh5tgNuP/x2A+RC8bUC0DUB8rWIgNiJkY8AJm/NJDHgAALqoOxgAAAHicY2BmwAsAAH0ABHicPY7BSsNAEIZnkk2zlhg1JKAYxOrJi6RepMdC8SKefAJP4kVBzCtkNw7ZjeK1j9C38Rn6CO5CDrppigwMM8P/f/8gMAaIGL4+vD09PwJ6gLCwp2AnaM88e+7bQ0aRTxE7GcPRffJL9D9EIX2bW+sFOXzu5QD7OSwPcuA5Xiew05N8CIDDLiSQuTqGSVmU0/KqKG+Kxaxv8+llMURvHwBAgRJrfEeCEaLns9HdRxzHP/FqaV4yaptWK25SkwZKu4Va0rUSWjYVVbz7CqmqhZBSiNodqGqk5l2vFqrW1PJ4tWbGqZxVKa31htA6gmN2aTBwBobzuYsU1YYkGheyZVBqLjKKxn8cSmvuAAB4nGNgZGBg4AFiAQYJBiYgzQLEIJoRggEFbQBAAAAAAQAAAADeTO04AAAAAM/9o+4AAAAA32BrKXicY2BAAEYQsZ1BiIEBAAPpAMsA) format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -35058,7 +35106,7 @@ a.inverted.ui.card:hover,
         User Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Checkbox
+ * # Fomantic-UI 2.9.0 - Checkbox
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -35923,7 +35971,7 @@ a.inverted.ui.card:hover,
 
 @font-face {
   font-family: 'Checkbox';
-  src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg8SBD8AAAC8AAAAYGNtYXAYVtCJAAABHAAAAFRnYXNwAAAAEAAAAXAAAAAIZ2x5Zn4huwUAAAF4AAABYGhlYWQGPe1ZAAAC2AAAADZoaGVhB30DyAAAAxAAAAAkaG10eBBKAEUAAAM0AAAAHGxvY2EAmgESAAADUAAAABBtYXhwAAkALwAAA2AAAAAgbmFtZSC8IugAAAOAAAABknBvc3QAAwAAAAAFFAAAACAAAwMTAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADoAgPA/8AAQAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAADAAAAAwAAABwAAQADAAAAHAADAAEAAAAcAAQAOAAAAAoACAACAAIAAQAg6AL//f//AAAAAAAg6AD//f//AAH/4xgEAAMAAQAAAAAAAAAAAAAAAQAB//8ADwABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAEUAUQO7AvgAGgAAARQHAQYjIicBJjU0PwE2MzIfAQE2MzIfARYVA7sQ/hQQFhcQ/uMQEE4QFxcQqAF2EBcXEE4QAnMWEP4UEBABHRAXFhBOEBCoAXcQEE4QFwAAAAABAAABbgMlAkkAFAAAARUUBwYjISInJj0BNDc2MyEyFxYVAyUQEBf9SRcQEBAQFwK3FxAQAhJtFxAQEBAXbRcQEBAQFwAAAAABAAAASQMlA24ALAAAARUUBwYrARUUBwYrASInJj0BIyInJj0BNDc2OwE1NDc2OwEyFxYdATMyFxYVAyUQEBfuEBAXbhYQEO4XEBAQEBfuEBAWbhcQEO4XEBACEm0XEBDuFxAQEBAX7hAQF20XEBDuFxAQEBAX7hAQFwAAAQAAAAIAAHRSzT9fDzz1AAsEAAAAAADRsdR3AAAAANGx1HcAAAAAA7sDbgAAAAgAAgAAAAAAAAABAAADwP/AAAAEAAAAAAADuwABAAAAAAAAAAAAAAAAAAAABwQAAAAAAAAAAAAAAAIAAAAEAABFAyUAAAMlAAAAAAAAAAoAFAAeAE4AcgCwAAEAAAAHAC0AAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAIAAAAAQAAAAAAAgAHAGkAAQAAAAAAAwAIADkAAQAAAAAABAAIAH4AAQAAAAAABQALABgAAQAAAAAABgAIAFEAAQAAAAAACgAaAJYAAwABBAkAAQAQAAgAAwABBAkAAgAOAHAAAwABBAkAAwAQAEEAAwABBAkABAAQAIYAAwABBAkABQAWACMAAwABBAkABgAQAFkAAwABBAkACgA0ALBDaGVja2JveABDAGgAZQBjAGsAYgBvAHhWZXJzaW9uIDIuMABWAGUAcgBzAGkAbwBuACAAMgAuADBDaGVja2JveABDAGgAZQBjAGsAYgBvAHhDaGVja2JveABDAGgAZQBjAGsAYgBvAHhSZWd1bGFyAFIAZQBnAHUAbABhAHJDaGVja2JveABDAGgAZQBjAGsAYgBvAHhGb250IGdlbmVyYXRlZCBieSBJY29Nb29uLgBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format('truetype');
+  src: url(data:application/font-woff;base64,d09GRgABAAAAAAR8AA0AAAAABtwAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAEYAAAABoAAAAcgbCWJ0dERUYAAARIAAAAFwAAABgAJQAAT1MvMgAAAZgAAABAAAAAYA8SBD9jbWFwAAAB9AAAAFMAAAFc71zo6Wdhc3AAAARAAAAACAAAAAgAAAAQZ2x5ZgAAAlwAAADJAAABVHshwGBoZWFkAAABMAAAAC4AAAA2Bj3tWWhoZWEAAAFgAAAAHQAAACQHfQPIaG10eAAAAdgAAAAZAAAAHg56AEVsb2NhAAACSAAAABIAAAASAQoAjG1heHAAAAGAAAAAGAAAACAACgAvbmFtZQAAAygAAADnAAABp5xOC4Fwb3N0AAAEEAAAADAAAABaHRtWW3icY2BkYGBgYmDgqbAVjee3+crAzcIAAhc3XilHppl3M+cBKQ6QWgYGAAHnCVsAAHicY2BkYGA+8P8AAwMLAwgw72ZgZEAF7ABaJgNOAAAAeJxjYGRgYOBg0GUA0QwMTAxoAAAFtQA6eJxjYGYWYpzAwMrAwDST6QwDA0M/hGZ8zWDMyMmAChgF0AQYHBgYXjAxH/h/gMGB+QCIx8CIJKvAwAgAIOcKW3icY2GAAMZQCM0ExCwMDK7MqiAeAAqXAM4AAAB4nN2NwQ2AMAwDL00pHYJH52AQ9n/w6BbFCS9WwJFlO3IUwHl5YAQuJctcOaVdU6TGmGWt7IxJuHXnvmcrnLPR2GWb6NnF4rrwhT5U/o0Hf5EJGAAAAAAAAAgACAAQABgASABsAKoAAHichY09CsJAEIVndiG2gyQ7IASJIbHQyvyIiFhZpBE8iNsIeiVvYOFx7FPbKE6yUcHGgZ23jzd8DxDeowAWCv77Dez0Vd1hAIB+D714NMa0yNdYZrMhum0CfaWnT4bpeSPaEjOd8djIltTBNBlhSGzES3Jqb5oW6UOrE1WBL7/A73lxNBqnK8znZRbNWMgJET8qJhlWF1HV3zvXSceBSifawrTjTLrd0uI3c4lFu4UcYvbh1/KsIaodUayx7Kxr+wb8Y+EFi+YsngAAAHicfc5BSsNAGMXxf9q0agURFy50M3shlOoNikIXddGFa5N0SEvLDKQp2KUH8AxuXXkkz+JL+NYJJPzmffNmAlzxS0L7JJxzYx5wxoN5qPzZnMrv5hGXfJrHyr/NE+74UytJL5Rcdye0Huiue/NQ+aM5lV/NI27ZmsfKv8wTnvhhzgZPyY6CyAfMN77cFVFaaVBxZE9OraWvjvtc6Kn0jN40qDnoVyIBx4yMqWJfH7YxuFk27a2/dLVGxUpbQndYrrVnrazgpO9C1chSb7s3UymGxlU++Dpv/NoVJ7co4zLGkPEPj0VARQB4nGNgYsAPOBgYGJkYmBiZGZgZWRhZGdnYS/MyDYAAShuCaFcLCB9Iw/hGAOPdCuMAAQAB//8AD3icY2BkYGDgAWIBIGYCYhYIDQACOwAmAHicY2BgYGQAgns+by1A9MWNV8phNABQ5wfrAAA=) format('woff');
 }
 
 /* Checkmark */
@@ -35958,7 +36006,7 @@ a.inverted.ui.card:hover,
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Dropdown
+ * # Fomantic-UI 2.9.0 - Dropdown
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -38262,7 +38310,7 @@ select.ui.dropdown {
 
 @font-face {
   font-family: 'Dropdown';
-  src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMggjB5AAAAC8AAAAYGNtYXAPfuIIAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5Zjo82LgAAAFwAAABVGhlYWQAQ88bAAACxAAAADZoaGVhAwcB6QAAAvwAAAAkaG10eAS4ABIAAAMgAAAAIGxvY2EBNgDeAAADQAAAABJtYXhwAAoAFgAAA1QAAAAgbmFtZVcZpu4AAAN0AAABRXBvc3QAAwAAAAAEvAAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDX//3//wAB/+MPLQADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAIABJQElABMAABM0NzY3BTYXFhUUDwEGJwYvASY1AAUGBwEACAUGBoAFCAcGgAUBEgcGBQEBAQcECQYHfwYBAQZ/BwYAAQAAAG4BJQESABMAADc0PwE2MzIfARYVFAcGIyEiJyY1AAWABgcIBYAGBgUI/wAHBgWABwaABQWABgcHBgUFBgcAAAABABIASQC3AW4AEwAANzQ/ATYXNhcWHQEUBwYnBi8BJjUSBoAFCAcFBgYFBwgFgAbbBwZ/BwEBBwQJ/wgEBwEBB38GBgAAAAABAAAASQClAW4AEwAANxE0NzYzMh8BFhUUDwEGIyInJjUABQYHCAWABgaABQgHBgVbAQAIBQYGgAUIBwWABgYFBwAAAAEAAAABAADZuaKOXw889QALAgAAAAAA0ABHWAAAAADQAEdYAAAAAAElAW4AAAAIAAIAAAAAAAAAAQAAAeD/4AAAAgAAAAAAASUAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAASUAAAElAAAAtwASALcAAAAAAAAACgAUAB4AQgBkAIgAqgAAAAEAAAAIABQAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAOAAAAAQAAAAAAAgAOAEcAAQAAAAAAAwAOACQAAQAAAAAABAAOAFUAAQAAAAAABQAWAA4AAQAAAAAABgAHADIAAQAAAAAACgA0AGMAAwABBAkAAQAOAAAAAwABBAkAAgAOAEcAAwABBAkAAwAOACQAAwABBAkABAAOAFUAAwABBAkABQAWAA4AAwABBAkABgAOADkAAwABBAkACgA0AGMAaQBjAG8AbQBvAG8AbgBWAGUAcgBzAGkAbwBuACAAMQAuADAAaQBjAG8AbQBvAG8Abmljb21vb24AaQBjAG8AbQBvAG8AbgBSAGUAZwB1AGwAYQByAGkAYwBvAG0AbwBvAG4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=) format('truetype'), url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAVwAAoAAAAABSgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAdkAAAHZLDXE/09TLzIAAALQAAAAYAAAAGAIIweQY21hcAAAAzAAAABMAAAATA9+4ghnYXNwAAADfAAAAAgAAAAIAAAAEGhlYWQAAAOEAAAANgAAADYAQ88baGhlYQAAA7wAAAAkAAAAJAMHAelobXR4AAAD4AAAACAAAAAgBLgAEm1heHAAAAQAAAAABgAAAAYACFAAbmFtZQAABAgAAAFFAAABRVcZpu5wb3N0AAAFUAAAACAAAAAgAAMAAAEABAQAAQEBCGljb21vb24AAQIAAQA6+BwC+BsD+BgEHgoAGVP/i4seCgAZU/+LiwwHi2v4lPh0BR0AAACIDx0AAACNER0AAAAJHQAAAdASAAkBAQgPERMWGyAlKmljb21vb25pY29tb29udTB1MXUyMHVGMEQ3dUYwRDh1RjBEOXVGMERBAAACAYkABgAIAgABAAQABwAKAA0AVgCfAOgBL/yUDvyUDvyUDvuUDvtvi/emFYuQjZCOjo+Pj42Qiwj3lIsFkIuQiY6Hj4iNhouGi4aJh4eHCPsU+xQFiIiGiYaLhouHjYeOCPsU9xQFiI+Jj4uQCA77b4v3FBWLkI2Pjo8I9xT3FAWPjo+NkIuQi5CJjogI9xT7FAWPh42Hi4aLhomHh4eIiIaJhosI+5SLBYaLh42HjoiPiY+LkAgO+92d928Vi5CNkI+OCPcU9xQFjo+QjZCLkIuPiY6Hj4iNhouGCIv7lAWLhomHh4iIh4eJhouGi4aNiI8I+xT3FAWHjomPi5AIDvvdi+YVi/eUBYuQjZCOjo+Pj42Qi5CLkImOhwj3FPsUBY+IjYaLhouGiYeHiAj7FPsUBYiHhomGi4aLh42Hj4iOiY+LkAgO+JQU+JQViwwKAAAAAAMCAAGQAAUAAAFMAWYAAABHAUwBZgAAAPUAGQCEAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA8NoB4P/g/+AB4AAgAAAAAQAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABAA4AAAACgAIAAIAAgABACDw2v/9//8AAAAAACDw1//9//8AAf/jDy0AAwABAAAAAAAAAAAAAAABAAH//wAPAAEAAAABAAA5emozXw889QALAgAAAAAA0ABHWAAAAADQAEdYAAAAAAElAW4AAAAIAAIAAAAAAAAAAQAAAeD/4AAAAgAAAAAAASUAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAASUAAAElAAAAtwASALcAAAAAUAAACAAAAAAADgCuAAEAAAAAAAEADgAAAAEAAAAAAAIADgBHAAEAAAAAAAMADgAkAAEAAAAAAAQADgBVAAEAAAAAAAUAFgAOAAEAAAAAAAYABwAyAAEAAAAAAAoANABjAAMAAQQJAAEADgAAAAMAAQQJAAIADgBHAAMAAQQJAAMADgAkAAMAAQQJAAQADgBVAAMAAQQJAAUAFgAOAAMAAQQJAAYADgA5AAMAAQQJAAoANABjAGkAYwBvAG0AbwBvAG4AVgBlAHIAcwBpAG8AbgAgADEALgAwAGkAYwBvAG0AbwBvAG5pY29tb29uAGkAYwBvAG0AbwBvAG4AUgBlAGcAdQBsAGEAcgBpAGMAbwBtAG8AbwBuAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format('woff');
+  src: url(data:application/font-woff;base64,d09GRk9UVE8AAASEAAsAAAAABwQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAC5AAAAU8AAAHrSr22AUZGVE0AAARQAAAAHAAAAByNrZ/TR0RFRgAABDQAAAAcAAAAIAAnABhPUy8yAAABYAAAAEIAAABgTadXCGNtYXAAAAKEAAAAVAAAAWQFcOKQaGVhZAAAAQgAAAAyAAAANg+j805oaGVhAAABPAAAABsAAAAkAwcBDWhtdHgAAARsAAAAFgAAAB4EAQASbWF4cAAAAVgAAAAGAAAABgAIUABuYW1lAAABpAAAAN8AAAG2rSbAM3Bvc3QAAALYAAAADAAAACAAAwAAeJxjYGRgYADiKjtG3nh+m68M3EwMIHCBwT0CRN9PyHYCUp6Mqox5QJqDASwNAMNOBrgAAHicY2BkYGB88P8BkFRlYACTjAyogB0AWWsDFgAAAFAAAAgAAHicY2Bm+Mg4gYGVgYHRhzGNgYHBHUp/ZZBkaGFABYwCSJyANNcUBgcGhg+3GB/8fwCUfMCgAFIDV6AAhIwAUbEMSQAAeJx1zTEKwkAUBNBJjIoKIggW2mwvBEVvIAgiNhY2VjEuQUh2YY2FeACPYOltvIH3cZJ8ywQS3p/d+QEwwAce/o8v9tDGUOzTU3GDXokD+ihuooeHuMX8Je5ijC9bXtCRP1T20Kcq+/RE3KAX4oDeipsYIRa3mD/FXSzxLtZeeGyR8bUwHGObWUvsoZHghhQRHEed3NLI1d+vyw/c43DleZErzBFixli768UaNQ9n9d11OedsJdxiyk0RZ40zsxPu/G7K7k66IUvW5CrRRrso12d1uqtNbHfcF+IHrnU+mwB4nGNgYGBmgGAZBkYGEIgD8hjBfBYGJyDNxcDBwASEjAwKH279//v/P1iVwofrYDbj/8dgPkQvGwMPkGRhYAWy2MHCbEDMxIAXMOOXHvIAAINhDt14nGNgZsALAAB9AAR4nE2Pv0rEQBCHZ3J7d4vGqEcOFaKC/zolZ6OWwmElNj6ClYWmyivcblyzE+RaK8EHsPMxBBtrwUdwA1fobpI7ZWBYfux8fD8ExgAR+fVVcpMkt4AeIAzLLSi3sdzxyt1WucqU31I+25iDtcvej1Kzh99V7+a19NoRPC1GAEsRvCxHwCP87MG8I7WgDRwWoAcrEMGmnT3YT+N0kB7G6Vk8PHLr2K0Tt04HB3FjMhUCQIESM7xDhfeYA3dcz5IZdOAcHuAD14MgeAu+zTNTRV5oTUR5obgZdwpVZFqQzEfKTiaE4JNwEralHGUuErnQNjE2oYxUwS0ldBTSxI3L7cOyKo60ib0lezSl1Rw+GXdq1pQiH03SdzKka4ymosLQTMcedSuIlEJUMqNcUi0jdIP5Ysb++leqLtSI/NWSTS0xq0WyYajQXPSVP/cLitO4NgB4nGNgZGBg4AFiAQYJBiYgzQLEIJoRggEFbQBAAAAAAQAAAADeTO04AAAAANAAR1gAAAAA32BrQnicY2BAAEYQVoVghu0MQgwMAAc/ARcAAA==) format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -38331,7 +38379,7 @@ select.ui.dropdown {
         User Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Video
+ * # Fomantic-UI 2.9.0 - Video
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -38496,7 +38544,7 @@ select.ui.dropdown {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Popup
+ * # Fomantic-UI 2.9.0 - Popup
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -39406,7 +39454,7 @@ select.ui.dropdown {
         User Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Rating
+ * # Fomantic-UI 2.9.0 - Rating
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -39909,7 +39957,7 @@ select.ui.dropdown {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Sidebar
+ * # Fomantic-UI 2.9.0 - Sidebar
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -40083,8 +40131,8 @@ body.pushable > .pusher {
   background: rgba(0, 0, 0, 0.4);
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: opacity 500ms;
-  transition: opacity 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
   will-change: opacity;
   z-index: 1000;
 }
@@ -40109,6 +40157,16 @@ body.pushable > .pusher {
   width: 100% !important;
   height: 100% !important;
   opacity: 1 !important;
+}
+
+.pushable > .pusher.dimmed.blurring:not(.closing)::after {
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px) grayscale(0.7);
+  backdrop-filter: blur(5px) grayscale(0.7);
+}
+
+.pushable > .pusher.closing.dimmed::after {
+  opacity: 0 !important;
 }
 
 /*--------------
@@ -40601,7 +40659,7 @@ body.pushable > .pusher {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Sticky
+ * # Fomantic-UI 2.9.0 - Sticky
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -40674,7 +40732,7 @@ body.pushable > .pusher {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Tab
+ * # Fomantic-UI 2.9.0 - Tab
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -40767,7 +40825,7 @@ body.pushable > .pusher {
         User Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Transition
+ * # Fomantic-UI 2.9.0 - Transition
  * http://github.com/fomantic/Fomantic-UI/
  *
  *

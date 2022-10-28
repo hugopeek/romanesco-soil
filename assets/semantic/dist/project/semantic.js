@@ -1,5 +1,5 @@
 /*
- * # Fomantic UI - 2.9.0-beta.315
+ * # Fomantic UI - 2.9.0
  * https://github.com/fomantic/Fomantic-UI
  * http://fomantic-ui.com/
  *
@@ -9,7 +9,7 @@
  *
  */
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Site
+ * # Fomantic-UI 2.9.0 - Site
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -503,7 +503,7 @@ $.extend($.expr[ ":" ], {
 })( jQuery, window, document );
 
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Accordion
+ * # Fomantic-UI 2.9.0 - Accordion
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -1128,7 +1128,7 @@ $.extend( $.easing, {
 
 
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Checkbox
+ * # Fomantic-UI 2.9.0 - Checkbox
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -2012,7 +2012,7 @@ $.fn.checkbox.settings = {
 })( jQuery, window, document );
 
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Dropdown
+ * # Fomantic-UI 2.9.0 - Dropdown
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -2387,7 +2387,7 @@ $.fn.dropdown = function(parameters) {
               ;
               if (labelNode.length) {
                 if (!labelNode.attr('id')) {
-                  labelNode.attr('id', module.get.id() + '_formLabel');
+                  labelNode.attr('id', '_' + module.get.id() + '_formLabel');
                 }
                 $search.attr('aria-labelledby', labelNode.attr('id'));
               }
@@ -2556,6 +2556,7 @@ $.fn.dropdown = function(parameters) {
               return true;
             }
             if(settings.onShow.call(element) !== false) {
+              module.remove.empty();
               module.animate.show(function() {
                 module.bind.intent();
                 if(module.has.search() && !preventFocus) {
@@ -2614,7 +2615,7 @@ $.fn.dropdown = function(parameters) {
           module.verbose('Hiding menu  instantaneously');
           module.remove.active();
           module.remove.visible();
-          $menu.transition('hide');
+          $menu.transition('destroy').transition('hide');
         },
 
         hideSubMenus: function() {
@@ -2775,6 +2776,7 @@ $.fn.dropdown = function(parameters) {
                 }
                 else {
                   module.verbose('All items filtered, hiding dropdown', searchTerm);
+                  module.set.empty();
                   module.hideMenu();
                 }
               }
@@ -2785,7 +2787,7 @@ $.fn.dropdown = function(parameters) {
               if(settings.allowAdditions) {
                 module.add.userSuggestion(module.escape.htmlEntities(query));
               }
-              if(module.is.searchSelection() && module.can.show() && module.is.focusedOnSearch() ) {
+              if(module.is.searchSelection() && module.can.show() && module.is.focusedOnSearch() && !module.is.empty()) {
                 module.show();
               }
             }
@@ -3124,7 +3126,7 @@ $.fn.dropdown = function(parameters) {
             }
           },
           mousedown: function() {
-            if(module.is.searchSelection()) {
+            if(module.is.searchSelection(true)) {
               // prevent menu hiding on immediate re-focus
               willRefocus = true;
             }
@@ -3134,7 +3136,7 @@ $.fn.dropdown = function(parameters) {
             }
           },
           mouseup: function() {
-            if(module.is.searchSelection()) {
+            if(module.is.searchSelection(true)) {
               // prevent menu hiding on immediate re-focus
               willRefocus = false;
             }
@@ -3169,7 +3171,7 @@ $.fn.dropdown = function(parameters) {
             },
             blur: function(event) {
               pageLostFocus = (document.activeElement === this);
-              if(module.is.searchSelection() && !willRefocus) {
+              if(module.is.searchSelection(true) && !willRefocus) {
                 if(!itemActivated && !pageLostFocus) {
                   if(settings.forceSelection) {
                     module.forceSelection();
@@ -3402,6 +3404,10 @@ $.fn.dropdown = function(parameters) {
                   if(settings.allowAdditions) {
                     module.remove.userAddition();
                   }
+                  module.remove.filteredItem();
+                  if(!module.is.visible()) {
+                    module.show();
+                  }
                   module.remove.searchTerm();
                   if(!module.is.focusedOnSearch() && skipRefocus !== true) {
                     module.focusSearch(true);
@@ -3516,12 +3522,18 @@ $.fn.dropdown = function(parameters) {
                     }
                     $activeLabel.last().next(selector.siblingLabel).addClass(className.active);
                     module.remove.activeLabels($activeLabel);
+                    if(!module.is.visible()){
+                      module.show();
+                    }
                     event.preventDefault();
                   }
                   else if(caretAtStart && !isSelectedSearch && !hasActiveLabel && pressedKey == keys.backspace) {
                     module.verbose('Removing last label on input backspace');
                     $activeLabel = $label.last().addClass(className.active);
                     module.remove.activeLabels($activeLabel);
+                    if(!module.is.visible()){
+                      module.show();
+                    }
                   }
                 }
                 else {
@@ -3553,14 +3565,16 @@ $.fn.dropdown = function(parameters) {
                 hasSelectedItem       = ($selectedItem.length > 0),
                 selectedIsSelectable  = ($selectedItem.not(selector.unselectable).length > 0),
                 delimiterPressed      = (event.key === settings.delimiter && module.is.multiple()),
-                isAdditionWithoutMenu = (settings.allowAdditions && settings.hideAdditions && (pressedKey == keys.enter || delimiterPressed) && selectedIsSelectable),
+                isAdditionWithoutMenu = settings.allowAdditions && (pressedKey == keys.enter || delimiterPressed),
                 $nextItem,
                 isSubMenuItem
               ;
               // allow selection with menu closed
               if(isAdditionWithoutMenu) {
-                module.verbose('Selecting item from keyboard shortcut', $selectedItem);
-                module.event.item.click.call($selectedItem, event);
+                if (selectedIsSelectable && settings.hideAdditions) {
+                  module.verbose('Selecting item from keyboard shortcut', $selectedItem);
+                  module.event.item.click.call($selectedItem, event);
+                }
                 if(module.is.searchSelection()) {
                   module.remove.searchTerm();
                 }
@@ -3703,7 +3717,7 @@ $.fn.dropdown = function(parameters) {
               }
               else {
                 // delimiter key
-                if(delimiterPressed) {
+                if(pressedKey == keys.enter || delimiterPressed) {
                   event.preventDefault();
                 }
                 // down arrow (open menu)
@@ -3899,7 +3913,7 @@ $.fn.dropdown = function(parameters) {
           },
           userValues: function() {
             var
-              values = module.get.values()
+              values = module.get.values(true)
             ;
             if(!values) {
               return false;
@@ -4576,7 +4590,7 @@ $.fn.dropdown = function(parameters) {
               $menu.removeClass(className.loading);
             }
           },
-          text: function(text) {
+          text: function(text, isNotPlaceholder) {
             if(settings.action === 'combo') {
               module.debug('Changing combo button text', text, $combo);
               if(settings.preserveHTML) {
@@ -4587,7 +4601,7 @@ $.fn.dropdown = function(parameters) {
               }
             }
             else if(settings.action === 'activate') {
-              if(text !== module.get.placeholderText()) {
+              if(text !== module.get.placeholderText() || isNotPlaceholder) {
                 $text.removeClass(className.placeholder);
               }
               module.debug('Changing text', text, $text);
@@ -4606,7 +4620,7 @@ $.fn.dropdown = function(parameters) {
             var
               value      = module.get.choiceValue($item),
               searchText = module.get.choiceText($item, false),
-              text       = module.get.choiceText($item, true)
+              text       = module.get.choiceText($item)
             ;
             module.debug('Setting user selection to item', $item);
             module.remove.activeItem();
@@ -4835,7 +4849,7 @@ $.fn.dropdown = function(parameters) {
                     module.save.remoteData(selectedText, selectedValue);
                   }
                   if (!keepSearchTerm && !$selected.hasClass(className.actionable)) {
-                    module.set.text(selectedText);
+                    module.set.text(selectedText, true);
                   }
                   module.set.value(selectedValue, selectedText, $selected, preventChangeTrigger);
                   $selected
@@ -4847,6 +4861,10 @@ $.fn.dropdown = function(parameters) {
             ;
             if (!keepSearchTerm) {
               module.remove.searchTerm();
+            }
+            if(module.is.allFiltered()) {
+              module.set.empty();
+              module.hideMenu();
             }
           }
         },
@@ -5180,10 +5198,9 @@ $.fn.dropdown = function(parameters) {
           },
           value: function(removedValue, removedText, $removedItem, preventChangeTrigger) {
             var
-              values = module.get.values(),
+              values = module.get.values(true),
               newValue
             ;
-            removedValue = module.escape.htmlEntities(removedValue);
             if( module.has.selectInput() ) {
               module.verbose('Input is <select> removing selected option', removedValue);
               newValue = module.remove.arrayValue(removedValue, values);
@@ -5416,6 +5433,9 @@ $.fn.dropdown = function(parameters) {
           edge: function() {
             return !!window.chrome && !!window.StyleMedia;
           },
+          empty: function() {
+            return $module.hasClass(className.empty);
+          },
           chrome: function() {
             return !!window.chrome && !window.StyleMedia;
           },
@@ -5492,8 +5512,8 @@ $.fn.dropdown = function(parameters) {
           search: function() {
             return $module.hasClass(className.search);
           },
-          searchSelection: function() {
-            return ( module.has.search() && $search.parent(selector.dropdown).length === 1 );
+          searchSelection: function(deep) {
+            return ( module.has.search() && (deep ? $search.parents(selector.dropdown) : $search.parent(selector.dropdown)).length === 1 );
           },
           selection: function() {
             return $module.hasClass(className.selection);
@@ -6368,7 +6388,7 @@ $.fn.dropdown.settings.templates = {
 })( jQuery, window, document );
 
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Embed
+ * # Fomantic-UI 2.9.0 - Embed
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -7082,7 +7102,7 @@ $.fn.embed.settings = {
 })( jQuery, window, document );
 
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Popup
+ * # Fomantic-UI 2.9.0 - Popup
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -8618,7 +8638,7 @@ $.fn.popup.settings = {
 })( jQuery, window, document );
 
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Rating
+ * # Fomantic-UI 2.9.0 - Rating
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -9177,7 +9197,7 @@ $.fn.rating.settings = {
 })( jQuery, window, document );
 
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Sidebar
+ * # Fomantic-UI 2.9.0 - Sidebar
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -9245,7 +9265,7 @@ $.fn.sidebar = function(parameters) {
         moduleNamespace = 'module-' + namespace,
 
         $module         = $(this),
-        $context        = [window,document].indexOf(settings.context) < 0 ? $(document).find(settings.context) : $body,
+        $context        = [window,document].indexOf(settings.context) < 0 ? $document.find(settings.context) : $body,
         isBody          = $context[0] === $body[0],
 
         $sidebars       = $module.children(selector.sidebar),
@@ -9483,8 +9503,8 @@ $.fn.sidebar = function(parameters) {
 
         refresh: function() {
           module.verbose('Refreshing selector cache');
-          $context  = [window,document].indexOf(settings.context) < 0 ? $(document).find(settings.context) : $(settings.context);
-          $sidebars = $context.children(selector.sidebar);
+          $context  = [window,document].indexOf(settings.context) < 0 ? $document.find(settings.context) : $body;
+          module.refreshSidebars();
           $pusher   = $context.children(selector.pusher);
           $fixed    = $context.children(selector.fixed);
           module.clear.cache();
@@ -9579,7 +9599,6 @@ $.fn.sidebar = function(parameters) {
               module.verbose('Show callback returned false cancelling show');
               return;
             }
-            module.refreshSidebars();
             if(settings.overlay)  {
               module.error(error.overlay);
               settings.transition = 'overlay';
@@ -9601,6 +9620,7 @@ $.fn.sidebar = function(parameters) {
                 settings.transition = 'overlay';
               }
             }
+            module.set.dimmerStyles();
             module.pushPage(function() {
               callback.call(element);
               settings.onVisible.call(element);
@@ -9733,19 +9753,23 @@ $.fn.sidebar = function(parameters) {
           animate = function() {
             module.set.transition(transition);
             module.set.animating();
-            module.remove.visible();
             if(settings.dimPage && !module.othersVisible()) {
-              $pusher.removeClass(className.dimmed);
+              module.set.closing();
             }
+            module.remove.visible();
           };
           transitionEnd = function(event) {
             if( event.target == $transition[0] ) {
               $transition.off(transitionEvent + elementNamespace, transitionEnd);
               module.remove.animating();
+              module.remove.closing();
               module.remove.transition();
               module.remove.inlineCSS();
               if(transition === 'scale down' || settings.returnScroll) {
                 module.scrollBack();
+              }
+              if(settings.dimPage && !module.othersVisible()) {
+                $pusher.removeClass(className.dimmed);
               }
               callback.call(element);
             }
@@ -9784,6 +9808,14 @@ $.fn.sidebar = function(parameters) {
               el.css(attribute, 'calc(' + el.css(attribute) + ' + ' + tempBodyMargin + 'px)');
             });
           },
+          dimmerStyles: function() {
+            if(settings.blurring) {
+              $pusher.addClass(className.blurring);
+            }
+            else {
+              $pusher.removeClass(className.blurring);
+            }
+          },
           // ios only (scroll on html not document). This prevent auto-resize canvas/scroll in ios
           // (This is no longer necessary in latest iOS)
           ios: function() {
@@ -9809,6 +9841,9 @@ $.fn.sidebar = function(parameters) {
           },
           animating: function() {
             $module.addClass(className.animating);
+          },
+          closing: function() {
+            $pusher.addClass(className.closing);
           },
           transition: function(transition) {
             transition = transition || module.get.transition();
@@ -9853,6 +9888,9 @@ $.fn.sidebar = function(parameters) {
           },
           animating: function() {
             $module.removeClass(className.animating);
+          },
+          closing: function() {
+            $pusher.removeClass(className.closing);
           },
           transition: function(transition) {
             transition = transition || module.get.transition();
@@ -10251,6 +10289,8 @@ $.fn.sidebar.settings = {
   className         : {
     active    : 'active',
     animating : 'animating',
+    blurring  : 'blurring',
+    closing   : 'closing',
     dimmed    : 'dimmed',
     ios       : 'ios',
     locked    : 'locked',
@@ -10291,7 +10331,7 @@ $.fn.sidebar.settings = {
 })( jQuery, window, document );
 
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Sticky
+ * # Fomantic-UI 2.9.0 - Sticky
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -10686,6 +10726,18 @@ $.fn.sticky = function(parameters) {
               module.determineContainer();
             }
             else {
+              var tallestHeight = Math.max(module.cache.context.height, module.cache.element.height);
+              if(tallestHeight - $container.outerHeight() > settings.jitter) {
+                module.debug('Context is taller than container. Specifying exact height for container', module.cache.context.height);
+                $container.css({
+                  height: tallestHeight,
+                });
+              }
+              else {
+                $container.css({
+                  height: '',
+                });
+              }
               if( Math.abs($container.outerHeight() - module.cache.context.height) > settings.jitter) {
                 module.debug('Context has padding, specifying exact height for container', module.cache.context.height);
                 $container.css({
@@ -10784,7 +10836,7 @@ $.fn.sticky = function(parameters) {
                 module.bindBottom();
               }
               else if(scroll.top > element.top) {
-                if( (element.height + scroll.top - elementScroll) >= context.bottom ) {
+                if( (element.height + scroll.top - elementScroll) >= context.bottom && element.height < context.height) {
                   module.debug('Initial element position is bottom of container');
                   module.bindBottom();
                 }
@@ -10863,6 +10915,9 @@ $.fn.sticky = function(parameters) {
         bindTop: function() {
           module.debug('Binding element to top of parent container');
           module.remove.offset();
+          if(settings.setSize) {
+            module.set.size();
+          }
           $module
             .css({
               left         : '',
@@ -10880,6 +10935,9 @@ $.fn.sticky = function(parameters) {
         bindBottom: function() {
           module.debug('Binding element to bottom of parent container');
           module.remove.offset();
+          if(settings.setSize) {
+            module.set.size();
+          }
           $module
             .css({
               left         : '',
@@ -11242,7 +11300,7 @@ $.fn.sticky.settings = {
 })( jQuery, window, document );
 
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Tab
+ * # Fomantic-UI 2.9.0 - Tab
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -12262,7 +12320,7 @@ $.fn.tab.settings = {
 })( jQuery, window, document );
 
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Transition
+ * # Fomantic-UI 2.9.0 - Transition
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -13377,7 +13435,7 @@ $.fn.transition.settings = {
 })( jQuery, window, document );
 
 /*!
- * # Fomantic-UI 2.9.0-beta.315 - Visibility
+ * # Fomantic-UI 2.9.0 - Visibility
  * http://github.com/fomantic/Fomantic-UI/
  *
  *
