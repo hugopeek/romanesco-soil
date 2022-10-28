@@ -4,11 +4,12 @@ These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
 ## Romanesco Soil v2.5.3
-Released on ...
+Released on October 28, 2022
 
 > Patterns: 1.0.0-beta12
 > Backyard: 1.0.0-beta10
 
+- Remove CDN urls for Leaflet assets
 - Update Fomantic to 2.9.0
 
 ## Romanesco Soil v2.5.2

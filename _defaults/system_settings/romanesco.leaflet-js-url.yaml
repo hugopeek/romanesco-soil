@@ -1,4 +1,0 @@
-key: romanesco.leaflet_js_url
-value: 'https://unpkg.com/leaflet@1.8.0/dist/leaflet.js'
-namespace: romanesco
-area: Map
