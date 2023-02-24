@@ -1,0 +1,9 @@
+id: 98
+key: svg_inline
+label: 'Inline SVGs'
+xtype: modx-combo
+description: 'Embed SVG code into the HTML itself by default. This will save a lot of requests to and little downloads from the server, but at the expense of not being able to cache the SVG file after the initial download. For this reason, it works best on sites with a large amount of very small SVGs (< 5kb, like icons). An added bonus is that inline SVGs can be manipulated with CSS.'
+sortorder: 25
+value: '0'
+group: 7
+options: No==0||Yes==1
