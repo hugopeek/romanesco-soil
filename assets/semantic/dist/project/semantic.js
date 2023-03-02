@@ -1,5 +1,5 @@
 /*
- * # Fomantic UI - 2.9.2-beta.9+f3fb845
+ * # Fomantic UI - 2.9.2
  * https://github.com/fomantic/Fomantic-UI
  * https://fomantic-ui.com/
  *
@@ -9,7 +9,7 @@
  *
  */
 /*!
- * # Fomantic-UI 2.9.2-beta.9+f3fb845 - Site
+ * # Fomantic-UI 2.9.2 - Site
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -463,7 +463,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2-beta.9+f3fb845 - Accordion
+ * # Fomantic-UI 2.9.2 - Accordion
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -1061,7 +1061,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2-beta.9+f3fb845 - Checkbox
+ * # Fomantic-UI 2.9.2 - Checkbox
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -1946,7 +1946,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2-beta.9+f3fb845 - Dropdown
+ * # Fomantic-UI 2.9.2 - Dropdown
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -6281,7 +6281,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2-beta.9+f3fb845 - Embed
+ * # Fomantic-UI 2.9.2 - Embed
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -6965,7 +6965,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2-beta.9+f3fb845 - Popup
+ * # Fomantic-UI 2.9.2 - Popup
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -8513,7 +8513,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2-beta.9+f3fb845 - Rating
+ * # Fomantic-UI 2.9.2 - Rating
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -9056,7 +9056,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2-beta.9+f3fb845 - Sidebar
+ * # Fomantic-UI 2.9.2 - Sidebar
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -10132,7 +10132,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2-beta.9+f3fb845 - Sticky
+ * # Fomantic-UI 2.9.2 - Sticky
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -11047,7 +11047,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2-beta.9+f3fb845 - Tab
+ * # Fomantic-UI 2.9.2 - Tab
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -12003,7 +12003,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2-beta.9+f3fb845 - Transition
+ * # Fomantic-UI 2.9.2 - Transition
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -13038,7 +13038,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2-beta.9+f3fb845 - Visibility
+ * # Fomantic-UI 2.9.2 - Visibility
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
