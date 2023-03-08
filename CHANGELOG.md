@@ -3,6 +3,11 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.5.4
+Released on ...
+
+- Require minimum YAML version of 5.4
+
 ## Romanesco Soil v2.5.3
 Released on October 28, 2022
 
