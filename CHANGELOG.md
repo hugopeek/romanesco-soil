@@ -6,6 +6,7 @@ every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.
 ## Romanesco Soil v2.5.4
 Released on ...
 
+- Upgrade MODX to 2.8.5-pl
 - Require minimum YAML version of 5.4
 
 ## Romanesco Soil v2.5.3
