@@ -1,30 +1,24 @@
 // Semantic UI behaviour
 $(function() {
-    // Fix menu when passed
-    $('#header')
-        .visibility({
-            once: false,
-            onBottomPassed: function() {
-                $('.fixed.menu');
-            },
-            onBottomPassedReverse: function() {
-                $('.fixed.menu');
-            }
-        })
-    ;
-
     // Create sidebar and attach to menu open
     $('#off-canvas')
         .sidebar('attach events', '.toc.item')
     ;
 
     // Initiate Semantic UI components
-    $('.ui.accordion').accordion();
-    $('.ui.dropdown:not(.simple)').dropdown();
+    $('.ui.accordion').accordion({
+        animateChildren: false
+    });
+    $('.ui.dropdown:not(.simple):not(.multiple):not(.with.other)').dropdown({
+        fullTextSearch: true
+    });
     $('.with.tooltip').popup();
     $('.with.tooltip.onclick')
         .popup({
-            on: 'click'
+            on: 'click',
+            onShow: function () {
+                lazyLoadInstance.update();
+            }
         })
     ;
     $('.ui.tabular.menu:not(#submenu) .item').tab();
@@ -33,38 +27,24 @@ $(function() {
     $('.ui.checkbox:not(.other):not(.collapsible):not(.slave)').checkbox();
     $('.ui.radio.checkbox:not(.other):not(.collapsible):not(.slave)').checkbox();
 
-    $('.ui.dimmable')
-        .dimmer({
-            on: 'hover'
-        })
-    ;
     $('.ui.video.embed').embed();
     $('.ui.rating').rating('disable');
-
-    // Make submenu scroll down with content area
-    $('#submenu.sticky')
-        .sticky({
-            context: '#main',
-            offset: $("#menu.sticky").height() || 36,
-            silent: true
-        })
-    ;
-
-    // Make first item in ToC active
-    $('#submenu.toc :first-child').addClass('active');
 });
 
 // Sticky navbar behaviour
 $(function() {
     var $menu = $("#menu.sticky");
+    var $header = $("#header.sticky");
     var mastheadHeight = $("#masthead").height() || 0;
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
         if (scroll >= mastheadHeight + 50) {
             $menu.addClass("tightened");
+            $header.addClass("beam-me-up");
         } else {
             $menu.removeClass("tightened");
+            $header.removeClass("beam-me-up");
         }
     });
 });
@@ -90,13 +70,12 @@ $(function() {
         var groups = $items.length;
         var maxColumns = 5;
 
+        var numbers = ['zero','one','two','three','four','five','six'];
+        var columns = 'five';
+        var divider = 'internally celled';
         if (groups <= maxColumns) {
-            var numbers = ['zero','one','two','three','four','five','six'];
-            var columns = numbers[groups];
-            var divider = 'divided';
-        } else {
-            var columns = 'five';
-            var divider = 'internally celled';
+            columns = numbers[groups];
+            divider = 'divided';
         }
 
         // Dropdown class is only intended for no-js situations
@@ -190,6 +169,7 @@ $(function() {
             .accordion({
                 exclusive: true,
                 closeNested : true,
+                animateChildren: false,
                 selector: {
                     trigger: '.title > .icon'
                 }
@@ -199,6 +179,7 @@ $(function() {
         // Remove menu classes interfering with styling
         navContainer.find("#menu-accordion").removeClass('right menu');
         navContainer.find('ul .content').removeClass('menu');
+        navContainer.find('.dropdown.item').removeClass('dropdown');
 
         // Separate link and icon, so dropdown icon becomes clickable
         $('#off-canvas a.title')
@@ -270,6 +251,7 @@ $(function() {
         .accordion({
             exclusive: true,
             closeNested : true,
+            animateChildren: false,
             selector: {
                 trigger: '.title > .icon'
             },
@@ -322,27 +304,6 @@ $(function() {
                     return false;
                 }
             }
-        })
-    ;
-
-    // Highlight anchors in ToC menu
-    $('#submenu a[href*="#"]')
-        .each(function() {
-            var target = $(this.hash);
-            var link = $(this);
-
-            target.visibility({
-                once: false,
-                offset: offset + 10,
-                onPassing: function() {
-                    link.siblings().removeClass('active');
-                    link.addClass('active');
-                },
-                onTopPassedReverse: function() {
-                    link.prev().addClass('active');
-                    link.removeClass('active');
-                }
-            });
         })
     ;
 });
@@ -399,8 +360,8 @@ $('#off-canvas .close.button').click(function() {
 });
 
 // Submit search form
-$("#search-field i.link").click(function() {
-    $("#search-field").submit();
+$("#form-search i.link").click(function() {
+    $("#form-search").submit();
 });
 
 // Submit login form
@@ -463,7 +424,9 @@ function tabToAccordion() {
     $('.reducible.tabular.menu, .reducible.tabbed.menu')
         .removeClass('tabular menu')
         .addClass('fluid styled accordion')
-        .accordion()
+        .accordion({
+            animateChildren: false
+        })
     ;
 
     // Change position of segment pointer on mobile
@@ -489,13 +452,18 @@ $(document).on('pdopage_load', function(e, config, response) {
     }
 });
 
-
-// Apply specific js through media queries
-// The media queries are matched with Semantic UI breakpoints by onMediaQuery.js
-// Available breakpoints: mobile, tablet, computer, large, widescreen
+/**
+ * Apply specific js through media queries. The media queries are matched with
+ * Semantic UI breakpoints by onMediaQuery.js.
+ *
+ * Available breakpoints: mobile, tablet, computer, large, widescreen.
+ *
+ * Keep in mind that match queries are executed on page load, unmatch queries
+ * are not.
+ */
 var queries = [
     {
-        context: 'mobile',
+        context: ['mobile'],
         match: function() {
             tabToAccordion();
             tableToCard();
@@ -508,6 +476,16 @@ var queries = [
 
             // Make some buttons more compact
             $('.publication .back.button .icon').addClass('fitted');
+
+            // Sticky header in vertical templates
+            $('#header.sticky')
+                .sticky({
+                    context: '.pusher'
+                })
+            ;
+
+            // Move ToC items to dropdown
+            $('[id*="menu"].toc .item').appendTo('#dropdown-toc.mobile .menu');
         },
         unmatch: function() {
             // Revert tabs back to normal
@@ -592,9 +570,11 @@ var queries = [
                 .addClass('dormant-grid')
                 .removeClass('grid')
             ;
+
+            // Move ToC items to dropdown (
+            $('[id*="menu"].toc .item').appendTo('#dropdown-toc.tablet .menu');
         },
         unmatch: function () {
-            // We're leaving mobile
             $('body.detail #main > .ui.container')
                 .removeClass('fluid')
             ;
@@ -602,6 +582,46 @@ var queries = [
                 .addClass('grid')
                 .removeClass('dormant-grid')
             ;
+
+            // Return ToC items to original container
+            $('#dropdown-toc .menu .item').appendTo('[id*="menu"].toc');
+        }
+    },
+    {
+        context: ['computer','large','widescreen'],
+        match: function () {
+            $('#submenu.sticky, #sidebar-cta.sticky')
+                .sticky({
+                    context: '#main',
+                    offset: $("#menu.sticky").height() || 36,
+                    silent: true
+                })
+            ;
+
+            // Highlight anchors in ToC menu
+            $('#submenu a[href*="#"]')
+                .each(function() {
+                    var offset = $("#menu.sticky").height() || 27;
+                    var target = $(this.hash);
+                    var link = $(this);
+
+                    target.visibility({
+                        once: false,
+                        offset: offset + 10,
+                        onPassing: function() {
+                            link.siblings().removeClass('active');
+                            link.addClass('active');
+                        },
+                        onTopPassedReverse: function() {
+                            link.prev().addClass('active');
+                            link.removeClass('active');
+                        }
+                    });
+                })
+            ;
+
+            // Make first item in ToC active
+            $('#submenu.toc :first-child').addClass('active');
         }
     }
 ];

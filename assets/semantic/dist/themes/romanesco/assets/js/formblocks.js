@@ -69,6 +69,33 @@ $('.ui.checkbox.collapsible')
     })
 ;
 
+// Apply 'other' option to dropdowns. If it's a dropdown where you can select
+// multiple options, the other options can be appended in the select field
+// itself. Otherwise, the 'something else' option is available in the dropdown,
+// and a text input will appear under the selector.
+$('.ui.dropdown:not(.multiple).with.other')
+    .dropdown({
+        fullTextSearch: true,
+
+        onChange: function(value, text, $option) {
+            let id = $(this).attr('id');
+            let target = '#' + id + '-other';
+
+            if ($option.is(':last-child')) {
+                $(target).removeClass('hidden');
+            } else {
+                $(target).addClass('hidden')
+            }
+        }
+    })
+;
+$('.ui.multiple.dropdown.with.other')
+    .dropdown({
+        fullTextSearch: true,
+        allowAdditions: true
+    })
+;
+
 
 // Set checkboxes or radios with links
 // -----------------------------------
@@ -153,3 +180,25 @@ $('.date.range.fields:not(.custom)').each(function() {
         startCalendar: $(this).find('.date.range.start')
     });
 });
+
+
+// Recaptcha
+// -----------------------------------
+
+// Polyfill for closest() and matches() for IE9+
+if (!Element.prototype.matches) {
+    Element.prototype.matches =
+        Element.prototype.msMatchesSelector ||
+        Element.prototype.webkitMatchesSelector
+    ;
+}
+if (!Element.prototype.closest) {
+    Element.prototype.closest = function(s) {
+        var el = this;
+        do {
+            if (Element.prototype.matches.call(el, s)) return el;
+            el = el.parentElement || el.parentNode;
+        } while (el !== null && el.nodeType === 1);
+        return null;
+    };
+}
