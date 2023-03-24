@@ -1,6 +1,14 @@
 /*******************************
          Site Overrides
 *******************************/
-@import url('../../romanesco/globals/site.overrides');
-@import url('../../romanesco/globals/theme.overrides');
-@import url('./theme.overrides');
+
+// Rely on Romanesco theme by default
+@import "../../romanesco/globals/site.overrides";
+
+// Include specific theming styles
+// Excluded for this project, because context themes are referencing it directly
+@import "./theme.overrides";
+
+// Here you can add custom styling rules for your project.
+// Be aware that these rules are added to the imported styling above. If you're
+//  duplicating a lot of rules, consider disabling the imports altogether.

@@ -1,3 +1,10 @@
 /*******************************
         Theme Overrides
 *******************************/
+
+// These styling rules are similar to those in site.overrides, but they are
+//  likely to be specific for a single site. In other words: styling that you
+//  don't want to share between projects, like logos or CSS backgrounds.
+
+// Disable this import if you're adding the same styles here
+@import (optional) "../../romanesco/globals/theme.overrides";
