@@ -6,6 +6,6 @@
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-real-favicon": "^0.3.2",
-    "yargs": "^17.6.2"
+    "yargs": "^17.7.1"
   }
 }
