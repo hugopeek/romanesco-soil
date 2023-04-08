@@ -1,0 +1,7 @@
+id: 20
+name: ZIP
+description: 'ZIP archive'
+mime_type: application/zip
+file_extensions: .zip
+headers: 'a:0:{}'
+binary: 1

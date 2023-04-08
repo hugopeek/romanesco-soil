@@ -1,6 +1,6 @@
 id: 2
 name: XML
 description: 'XML content'
-mime_type: text/xml
+mime_type: application/xml
 file_extensions: .xml
 headers: null

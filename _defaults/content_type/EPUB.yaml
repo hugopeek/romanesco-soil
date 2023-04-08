@@ -1,0 +1,7 @@
+id: 22
+name: EPUB
+description: 'Electronic publication'
+mime_type: application/epub+zip
+file_extensions: .epub
+headers: 'a:0:{}'
+binary: 1

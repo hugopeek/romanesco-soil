@@ -1,0 +1,7 @@
+id: 17
+name: ODT
+description: 'OpenDocument text document'
+mime_type: application/vnd.oasis.opendocument.text
+file_extensions: .odt
+headers: 'a:0:{}'
+binary: 1

@@ -1,0 +1,7 @@
+id: 19
+name: ODP
+description: 'OpenDocument presentation document'
+mime_type: application/vnd.oasis.opendocument.presentation
+file_extensions: .odp
+headers: 'a:0:{}'
+binary: 1

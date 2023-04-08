@@ -1,5 +1,5 @@
 id: 3
-name: text
+name: Text
 description: 'Plain text content'
 mime_type: text/plain
 file_extensions: .txt
