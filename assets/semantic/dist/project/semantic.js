@@ -1,5 +1,5 @@
 /*
- * # Fomantic UI - 2.9.2
+ * # Fomantic UI - 2.9.3-beta.11+980ea5e
  * https://github.com/fomantic/Fomantic-UI
  * https://fomantic-ui.com/
  *
@@ -9,7 +9,7 @@
  *
  */
 /*!
- * # Fomantic-UI 2.9.2 - Site
+ * # Fomantic-UI 2.9.3-beta.11+980ea5e - Site
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -463,7 +463,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2 - Accordion
+ * # Fomantic-UI 2.9.3-beta.11+980ea5e - Accordion
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -509,7 +509,6 @@
 
                 eventNamespace  = '.' + namespace,
                 moduleNamespace = 'module-' + namespace,
-                moduleSelector  = $allModules.selector || '',
 
                 $module  = $(this),
                 $title   = $module.find(selector.title),
@@ -916,9 +915,6 @@
                             totalTime += data['Execution Time'];
                         });
                         title += ' ' + totalTime + 'ms';
-                        if (moduleSelector) {
-                            title += ' \'' + moduleSelector + '\'';
-                        }
                         if (performance.length > 0) {
                             console.groupCollapsed(title);
                             if (console.table) {
@@ -1061,7 +1057,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2 - Checkbox
+ * # Fomantic-UI 2.9.3-beta.11+980ea5e - Checkbox
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -1084,7 +1080,6 @@
     $.fn.checkbox = function (parameters) {
         var
             $allModules    = $(this),
-            moduleSelector = $allModules.selector || '',
 
             time           = Date.now(),
             performance    = [],
@@ -1799,9 +1794,6 @@
                             totalTime += data['Execution Time'];
                         });
                         title += ' ' + totalTime + 'ms';
-                        if (moduleSelector) {
-                            title += ' \'' + moduleSelector + '\'';
-                        }
                         if (performance.length > 0) {
                             console.groupCollapsed(title);
                             if (console.table) {
@@ -1946,7 +1938,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2 - Dropdown
+ * # Fomantic-UI 2.9.3-beta.11+980ea5e - Dropdown
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -1971,14 +1963,25 @@
             $allModules    = $(this),
             $document      = $(document),
 
-            moduleSelector = $allModules.selector || '',
-
             time           = Date.now(),
             performance    = [],
 
             query          = arguments[0],
             methodInvoked  = typeof query === 'string',
             queryArguments = [].slice.call(arguments, 1),
+            contextCheck   = function (context, win) {
+                var $context;
+                if ([window, document].indexOf(context) >= 0) {
+                    $context = $(context);
+                } else {
+                    $context = $(win.document).find(context);
+                    if ($context.length === 0) {
+                        $context = win.frameElement ? contextCheck(context, win.parent) : window;
+                    }
+                }
+
+                return $context;
+            },
             returnedValue
         ;
 
@@ -2003,7 +2006,7 @@
                 moduleNamespace = 'module-' + namespace,
 
                 $module         = $(this),
-                $context        = [window, document].indexOf(settings.context) < 0 ? $document.find(settings.context) : $(settings.context),
+                $context        = contextCheck(settings.context, window),
                 $text           = $module.find(selector.text),
                 $search         = $module.find(selector.search),
                 $sizer          = $module.find(selector.sizer),
@@ -2038,7 +2041,8 @@
                 selectObserver,
                 menuObserver,
                 classObserver,
-                module
+                module,
+                tempDisableApiCache = false
             ;
 
             module = {
@@ -2805,11 +2809,12 @@
                     if (!$module.api('get request')) {
                         module.setup.api();
                     }
-                    apiSettings = $.extend(true, {}, apiSettings, settings.apiSettings, apiCallbacks);
+                    apiSettings = $.extend(true, {}, apiSettings, settings.apiSettings, apiCallbacks, tempDisableApiCache ? { cache: false } : {});
                     $module
                         .api('setting', apiSettings)
                         .api('query')
                     ;
+                    tempDisableApiCache = false;
                 },
 
                 filterItems: function (query) {
@@ -4012,7 +4017,7 @@
                                     values.push({
                                         name: name,
                                         value: value,
-                                        text: text,
+                                        text: module.escape.htmlEntities(text, true),
                                         disabled: disabled,
                                     });
                                 }
@@ -4333,6 +4338,11 @@
 
                 clearValue: function (preventChangeTrigger) {
                     module.set.value('', null, null, preventChangeTrigger);
+                },
+
+                clearCache: function () {
+                    module.debug('Clearing API cache once');
+                    tempDisableApiCache = true;
                 },
 
                 scrollPage: function (direction, $selectedItem) {
@@ -5385,7 +5395,7 @@
                         return settings.apiSettings && module.can.useAPI();
                     },
                     noApiCache: function () {
-                        return settings.apiSettings && !settings.apiSettings.cache;
+                        return tempDisableApiCache || (settings.apiSettings && !settings.apiSettings.cache);
                     },
                     single: function () {
                         return !module.is.multiple();
@@ -5395,7 +5405,7 @@
                             selectChanged = false
                         ;
                         $.each(mutations, function (index, mutation) {
-                            if ($(mutation.target).is('select, option, optgroup') || $(mutation.addedNodes).is('select')) {
+                            if ($(mutation.target).is('option, optgroup') || $(mutation.addedNodes).is('select') || ($(mutation.target).is('select') && mutation.type !== 'attributes')) {
                                 selectChanged = true;
 
                                 return false;
@@ -5704,7 +5714,7 @@
 
                         return text.replace(regExp.escape, '\\$&');
                     },
-                    htmlEntities: function (string) {
+                    htmlEntities: function (string, forceAmpersand) {
                         var
                             badChars     = /["'<>`]/g,
                             shouldEscape = /["&'<>`]/,
@@ -5720,7 +5730,7 @@
                             }
                         ;
                         if (shouldEscape.test(string)) {
-                            string = string.replace(/&(?![\d#a-z]{1,12};)/gi, '&amp;');
+                            string = string.replace(forceAmpersand ? /&/g : /&(?![\d#a-z]{1,12};)/gi, '&amp;');
 
                             return string.replace(badChars, escapedChar);
                         }
@@ -5811,9 +5821,6 @@
                             totalTime += data['Execution Time'];
                         });
                         title += ' ' + totalTime + 'ms';
-                        if (moduleSelector) {
-                            title += ' \'' + moduleSelector + '\'';
-                        }
                         if (performance.length > 0) {
                             console.groupCollapsed(title);
                             if (console.table) {
@@ -6281,7 +6288,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2 - Embed
+ * # Fomantic-UI 2.9.3-beta.11+980ea5e - Embed
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -6304,8 +6311,6 @@
     $.fn.embed = function (parameters) {
         var
             $allModules     = $(this),
-
-            moduleSelector  = $allModules.selector || '',
 
             time            = Date.now(),
             performance     = [],
@@ -6737,9 +6742,6 @@
                             totalTime += data['Execution Time'];
                         });
                         title += ' ' + totalTime + 'ms';
-                        if (moduleSelector) {
-                            title += ' \'' + moduleSelector + '\'';
-                        }
                         if ($allModules.length > 1) {
                             title += ' (' + $allModules.length + ')';
                         }
@@ -6965,7 +6967,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2 - Popup
+ * # Fomantic-UI 2.9.3-beta.11+980ea5e - Popup
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -6992,8 +6994,6 @@
             $window        = $(window),
             $body          = $('body'),
 
-            moduleSelector = $allModules.selector || '',
-
             clickEvent      = 'ontouchstart' in document.documentElement
                 ? 'touchstart'
                 : 'click',
@@ -7004,6 +7004,19 @@
             query          = arguments[0],
             methodInvoked  = typeof query === 'string',
             queryArguments = [].slice.call(arguments, 1),
+            contextCheck   = function (context, win) {
+                var $context;
+                if ([window, document].indexOf(context) >= 0) {
+                    $context = $(context);
+                } else {
+                    $context = $(win.document).find(context);
+                    if ($context.length === 0) {
+                        $context = win.frameElement ? contextCheck(context, win.parent) : $body;
+                    }
+                }
+
+                return $context;
+            },
 
             returnedValue
         ;
@@ -7023,12 +7036,10 @@
                 moduleNamespace    = 'module-' + namespace,
 
                 $module            = $(this),
-                $context           = [window, document].indexOf(settings.context) < 0 ? $document.find(settings.context) : $(settings.context),
-                $scrollContext     = [window, document].indexOf(settings.scrollContext) < 0 ? $document.find(settings.scrollContext) : $(settings.scrollContext),
-                $boundary          = [window, document].indexOf(settings.boundary) < 0 ? $document.find(settings.boundary) : $(settings.boundary),
-                $target            = settings.target
-                    ? ([window, document].indexOf(settings.target) < 0 ? $document.find(settings.target) : $(settings.target))
-                    : $module,
+                $context           = contextCheck(settings.context, window),
+                $scrollContext     = contextCheck(settings.scrollContext, window),
+                $boundary          = contextCheck(settings.boundary, window),
+                $target            = settings.target ? contextCheck(settings.target, window) : $module,
 
                 $popup,
                 $offsetParent,
@@ -7205,9 +7216,11 @@
                 // generates popup html from metadata
                 create: function () {
                     var
+                        targetSibling = $target.next(selector.popup),
+                        contentFallback = !settings.popup && targetSibling.length === 0 ? $module.attr('title') : false,
                         html      = module.get.html(),
                         title     = module.get.title(),
-                        content   = module.get.content()
+                        content   = module.get.content(contentFallback)
                     ;
 
                     if (html || content || title) {
@@ -7248,10 +7261,10 @@
                         if (settings.hoverable) {
                             module.bind.popup();
                         }
-                    } else if ($target.next(selector.popup).length > 0) {
+                    } else if (targetSibling.length > 0) {
                         module.verbose('Pre-existing popup found');
                         settings.inline = true;
-                        settings.popup = $target.next(selector.popup).data(metadata.activator, $module);
+                        settings.popup = targetSibling.data(metadata.activator, $module);
                         module.refresh();
                         if (settings.hoverable) {
                             module.bind.popup();
@@ -7441,10 +7454,10 @@
 
                         return $module.data(metadata.title) || settings.title;
                     },
-                    content: function () {
+                    content: function (fallback) {
                         $module.removeData(metadata.content);
 
-                        return $module.data(metadata.content) || settings.content || $module.attr('title');
+                        return $module.data(metadata.content) || settings.content || fallback;
                     },
                     variation: function () {
                         $module.removeData(metadata.variation);
@@ -8212,9 +8225,6 @@
                             totalTime += data['Execution Time'];
                         });
                         title += ' ' + totalTime + 'ms';
-                        if (moduleSelector) {
-                            title += ' \'' + moduleSelector + '\'';
-                        }
                         if (performance.length > 0) {
                             console.groupCollapsed(title);
                             if (console.table) {
@@ -8513,7 +8523,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2 - Rating
+ * # Fomantic-UI 2.9.3-beta.11+980ea5e - Rating
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -8536,7 +8546,6 @@
     $.fn.rating = function (parameters) {
         var
             $allModules     = $(this),
-            moduleSelector  = $allModules.selector || '',
 
             time            = Date.now(),
             performance     = [],
@@ -8896,9 +8905,6 @@
                             totalTime += data['Execution Time'];
                         });
                         title += ' ' + totalTime + 'ms';
-                        if (moduleSelector) {
-                            title += ' \'' + moduleSelector + '\'';
-                        }
                         if ($allModules.length > 1) {
                             title += ' (' + $allModules.length + ')';
                         }
@@ -9056,7 +9062,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2 - Sidebar
+ * # Fomantic-UI 2.9.3-beta.11+980ea5e - Sidebar
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -9085,15 +9091,25 @@
             $html           = $('html'),
             $head           = $('head'),
 
-            moduleSelector  = $allModules.selector || '',
-
             time            = Date.now(),
             performance     = [],
 
             query           = arguments[0],
             methodInvoked   = typeof query === 'string',
             queryArguments  = [].slice.call(arguments, 1),
+            contextCheck    = function (context, win) {
+                var $context;
+                if ([window, document].indexOf(context) >= 0) {
+                    $context = $body;
+                } else {
+                    $context = $(win.document).find(context);
+                    if ($context.length === 0) {
+                        $context = win.frameElement ? contextCheck(context, win.parent) : $body;
+                    }
+                }
 
+                return $context;
+            },
             returnedValue;
 
         $allModules.each(function () {
@@ -9112,7 +9128,7 @@
                 moduleNamespace = 'module-' + namespace,
 
                 $module         = $(this),
-                $context        = [window, document].indexOf(settings.context) < 0 ? $document.find(settings.context) : $body,
+                $context        = contextCheck(settings.context, window),
                 isBody          = $context[0] === $body[0],
 
                 $sidebars       = $module.children(selector.sidebar),
@@ -9334,7 +9350,7 @@
 
                 refresh: function () {
                     module.verbose('Refreshing selector cache');
-                    $context = [window, document].indexOf(settings.context) < 0 ? $document.find(settings.context) : $body;
+                    $context = contextCheck(settings.context, window);
                     module.refreshSidebars();
                     $pusher = $context.children(selector.pusher);
                     $fixed = $context.children(selector.fixed);
@@ -9958,9 +9974,6 @@
                             totalTime += data['Execution Time'];
                         });
                         title += ' ' + totalTime + 'ms';
-                        if (moduleSelector) {
-                            title += ' \'' + moduleSelector + '\'';
-                        }
                         if (performance.length > 0) {
                             console.groupCollapsed(title);
                             if (console.table) {
@@ -10132,7 +10145,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2 - Sticky
+ * # Fomantic-UI 2.9.3-beta.11+980ea5e - Sticky
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -10156,7 +10169,6 @@
         var
             $allModules    = $(this),
             $document      = $(document),
-            moduleSelector = $allModules.selector || '',
 
             time           = Date.now(),
             performance    = [],
@@ -10164,6 +10176,19 @@
             query          = arguments[0],
             methodInvoked  = typeof query === 'string',
             queryArguments = [].slice.call(arguments, 1),
+            contextCheck   = function (context, win) {
+                var $context;
+                if ([window, document].indexOf(context) >= 0) {
+                    $context = $(context);
+                } else {
+                    $context = $(win.document).find(context);
+                    if ($context.length === 0) {
+                        $context = win.frameElement ? contextCheck(context, win.parent) : window;
+                    }
+                }
+
+                return $context;
+            },
             returnedValue
         ;
 
@@ -10182,7 +10207,7 @@
 
                 $module               = $(this),
                 $window               = $(window),
-                $scroll               = [window, document].indexOf(settings.scrollContext) < 0 ? $document.find(settings.scrollContext) : $(settings.scrollContext),
+                $scroll               = contextCheck(settings.scrollContext, window),
                 $container,
                 $context,
 
@@ -10260,19 +10285,11 @@
                 },
 
                 determineContainer: function () {
-                    if (settings.container) {
-                        $container = [window, document].indexOf(settings.container) < 0 ? $document.find(settings.container) : $(settings.container);
-                    } else {
-                        $container = $module.offsetParent();
-                    }
+                    $container = settings.container ? contextCheck(settings.container, window) : $module.offsetParent();
                 },
 
                 determineContext: function () {
-                    if (settings.context) {
-                        $context = [window, document].indexOf(settings.context) < 0 ? $document.find(settings.context) : $(settings.context);
-                    } else {
-                        $context = $container;
-                    }
+                    $context = settings.context ? contextCheck(settings.context, window) : $container;
                     if ($context.length === 0) {
                         module.error(error.invalidContext, settings.context, $module);
                     }
@@ -10888,9 +10905,6 @@
                             totalTime += data['Execution Time'];
                         });
                         title += ' ' + totalTime + 'ms';
-                        if (moduleSelector) {
-                            title += ' \'' + moduleSelector + '\'';
-                        }
                         if (performance.length > 0) {
                             console.groupCollapsed(title);
                             if (console.table) {
@@ -11047,7 +11061,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2 - Tab
+ * # Fomantic-UI 2.9.3-beta.11+980ea5e - Tab
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -11078,14 +11092,25 @@
                 ? $(window)
                 : $(this),
             $document      = $(document),
-            moduleSelector  = $allModules.selector || '',
             time            = Date.now(),
             performance     = [],
 
             query           = arguments[0],
             methodInvoked   = typeof query === 'string',
             queryArguments  = [].slice.call(arguments, 1),
+            contextCheck   = function (context, win) {
+                var $context;
+                if ([window, document].indexOf(context) >= 0) {
+                    $context = $(context);
+                } else {
+                    $context = $(win.document).find(context);
+                    if ($context.length === 0) {
+                        $context = win.frameElement ? contextCheck(context, win.parent) : window;
+                    }
+                }
 
+                return $context;
+            },
             initializedHistory = false,
             returnedValue
         ;
@@ -11200,7 +11225,7 @@
                         $context = $reference.parent();
                         module.verbose('Determined parent element for creating context', $context);
                     } else if (settings.context) {
-                        $context = [window, document].indexOf(settings.context) < 0 ? $document.find(settings.context) : $(settings.context);
+                        $context = contextCheck(settings.context, window);
                         module.verbose('Using selector for tab context', settings.context, $context);
                     } else {
                         $context = $('body');
@@ -11836,9 +11861,6 @@
                             totalTime += data['Execution Time'];
                         });
                         title += ' ' + totalTime + 'ms';
-                        if (moduleSelector) {
-                            title += ' \'' + moduleSelector + '\'';
-                        }
                         if (performance.length > 0) {
                             console.groupCollapsed(title);
                             if (console.table) {
@@ -12003,7 +12025,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2 - Transition
+ * # Fomantic-UI 2.9.3-beta.11+980ea5e - Transition
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -12026,7 +12048,6 @@
     $.fn.transition = function () {
         var
             $allModules     = $(this),
-            moduleSelector  = $allModules.selector || '',
 
             time            = Date.now(),
             performance     = [],
@@ -12867,9 +12888,6 @@
                             totalTime += data['Execution Time'];
                         });
                         title += ' ' + totalTime + 'ms';
-                        if (moduleSelector) {
-                            title += ' \'' + moduleSelector + '\'';
-                        }
                         if ($allModules.length > 1) {
                             title += ' (' + $allModules.length + ')';
                         }
@@ -13038,7 +13056,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.2 - Visibility
+ * # Fomantic-UI 2.9.3-beta.11+980ea5e - Visibility
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -13061,7 +13079,6 @@
     $.fn.visibility = function (parameters) {
         var
             $allModules    = $(this),
-            moduleSelector = $allModules.selector || '',
 
             time           = Date.now(),
             performance    = [],
@@ -13069,6 +13086,19 @@
             query          = arguments[0],
             methodInvoked  = typeof query === 'string',
             queryArguments = [].slice.call(arguments, 1),
+            contextCheck   = function (context, win) {
+                var $context;
+                if ([window, document].indexOf(context) >= 0) {
+                    $context = $(context);
+                } else {
+                    $context = $(win.document).find(context);
+                    if ($context.length === 0) {
+                        $context = win.frameElement ? contextCheck(context, win.parent) : window;
+                    }
+                }
+
+                return $context;
+            },
             returnedValue,
 
             moduleCount    = $allModules.length,
@@ -13092,7 +13122,7 @@
                 $window         = $(window),
 
                 $module         = $(this),
-                $context        = [window, document].indexOf(settings.context) < 0 ? $(document).find(settings.context) : $(settings.context),
+                $context        = contextCheck(settings.context, window),
 
                 $placeholder,
 
@@ -14128,9 +14158,6 @@
                             totalTime += data['Execution Time'];
                         });
                         title += ' ' + totalTime + 'ms';
-                        if (moduleSelector) {
-                            title += ' \'' + moduleSelector + '\'';
-                        }
                         if (performance.length > 0) {
                             console.groupCollapsed(title);
                             if (console.table) {
