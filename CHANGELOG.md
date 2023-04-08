@@ -4,15 +4,21 @@ These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
 ## Romanesco Soil v2.5.4
-Released on ...
+Released on April 8, 2023
 
+> Patterns: 1.0.0-beta12
+> Backyard: 1.0.0-beta15
+
+- Update Fomantic UI to 2.9.3 nightly
+- Add custom theme.less to avoid breaking variable inheritance in FUI 2.9.3
+- Add standalone script to remove unused themes
 - Upgrade MODX to 2.8.5-pl
 - Require minimum YAML version of 5.4
 
 ## Romanesco Soil v2.5.3
 Released on October 28, 2022
 
-> Patterns: 1.0.0-beta12
+> Patterns: 1.0.0-beta10
 > Backyard: 1.0.0-beta10
 
 - Remove CDN urls for Leaflet assets
