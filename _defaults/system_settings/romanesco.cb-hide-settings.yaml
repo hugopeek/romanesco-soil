@@ -1,0 +1,4 @@
+key: romanesco.cb_hide_settings
+value: link_rel
+namespace: romanesco
+area: 'ContentBlocks - Settings'
