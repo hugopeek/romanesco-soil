@@ -1,7 +1,0 @@
-id: 62
-key: alternative_tracking_code
-label: 'Alternative tracking code'
-xtype: code
-description: 'Use another analytics platform instead of Google Analytics. Matomo for example, is free and open source, giving you full ownership of your data. You can host Matomo on your own server, or create a cloud account on matomo.org. Because the tracking code is often slightly customized for each site, it''s easier to just paste the full javascript snippet here. Always make sure it''s inside <script> tags!'
-sortorder: 10
-group: 5
