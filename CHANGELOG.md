@@ -3,6 +3,18 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.6.0
+Released on October 8, 2023
+
+> Patterns: 1.0.0-beta13
+> Backyard: 1.0.0-beta16
+
+- Add media sources for Videos and Notes
+- Rename alternative_tracking_code setting to analytics_tracking_code
+- Tweak functionality for hiding advanced features
+- Update Fomantic UI to 2.9.3
+- Upgrade MODX to 2.8.6-pl
+
 ## Romanesco Soil v2.5.4
 Released on April 8, 2023
 

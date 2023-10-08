@@ -1,0 +1,4 @@
+id: 18
+name: Notes
+description: 'Location of static Markdown files containing note content.'
+properties: 'a:3:{s:8:"basePath";a:6:{s:4:"name";s:8:"basePath";s:4:"desc";s:23:"prop_file.basePath_desc";s:4:"type";s:9:"textfield";s:7:"options";a:0:{}s:5:"value";s:14:"uploads/notes/";s:7:"lexicon";s:11:"core:source";}s:16:"basePathRelative";a:6:{s:4:"name";s:16:"basePathRelative";s:4:"desc";s:31:"prop_file.basePathRelative_desc";s:4:"type";s:13:"combo-boolean";s:7:"options";a:0:{}s:5:"value";b:0;s:7:"lexicon";s:11:"core:source";}s:7:"baseUrl";a:6:{s:4:"name";s:7:"baseUrl";s:4:"desc";s:22:"prop_file.baseUrl_desc";s:4:"type";s:9:"textfield";s:7:"options";a:0:{}s:5:"value";s:14:"uploads/notes/";s:7:"lexicon";s:11:"core:source";}}'
