@@ -1,5 +1,5 @@
 /*
- * # Fomantic UI - 2.9.3-beta.11+980ea5e
+ * # Fomantic UI - 2.9.3
  * https://github.com/fomantic/Fomantic-UI
  * https://fomantic-ui.com/
  *
@@ -9,7 +9,7 @@
  *
  */
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Reset
+ * # Fomantic-UI 2.9.3 - Reset
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -465,7 +465,7 @@ body:not(:-moz-handler-blocked) fieldset {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Site
+ * # Fomantic-UI 2.9.3 - Site
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -1069,7 +1069,6 @@ figcaption {
 }
 
 .quote {
-  width: -webkit-max-content;
   width: max-content;
   max-width: 100%;
 }
@@ -1256,7 +1255,6 @@ blockquote:not(.quote) {
 }
 
 #footer .ui.list:not(.horizontal) .item {
-  width: -webkit-max-content;
   width: max-content;
   max-width: 100%;
 }
@@ -1549,7 +1547,7 @@ svg tspan {
   }
 }
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Button
+ * # Fomantic-UI 2.9.3 - Button
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -3527,9 +3525,9 @@ svg tspan {
 }
 
 .ui.button.center.aligned {
-  margin: 0 auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
   display: block;
-  width: -webkit-max-content;
   width: max-content;
   max-width: 100%;
 }
@@ -3615,7 +3613,7 @@ svg tspan {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Container
+ * # Fomantic-UI 2.9.3 - Container
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -3800,8 +3798,16 @@ svg tspan {
     max-height: 11.25em;
   }
 
+  .ui.scrolling.container.short.resizable {
+    height: 11.25em;
+  }
+
   .ui.scrolling.container[class*="very short"] {
     max-height: 7.5em;
+  }
+
+  .ui.scrolling.container[class*="very short"].resizable {
+    height: 7.5em;
   }
 
   .ui.scrolling.container {
@@ -3812,8 +3818,16 @@ svg tspan {
     max-height: 30em;
   }
 
+  .ui.scrolling.container.long.resizable {
+    height: 30em;
+  }
+
   .ui.scrolling.container[class*="very long"] {
     max-height: 45em;
+  }
+
+  .ui.scrolling.container[class*="very long"].resizable {
+    height: 45em;
   }
 }
 
@@ -3822,20 +3836,40 @@ svg tspan {
     max-height: 13.5em;
   }
 
+  .ui.scrolling.container.short.resizable {
+    height: 13.5em;
+  }
+
   .ui.scrolling.container[class*="very short"] {
     max-height: 9em;
+  }
+
+  .ui.scrolling.container[class*="very short"].resizable {
+    height: 9em;
   }
 
   .ui.scrolling.container {
     max-height: 18em;
   }
 
+  .ui.scrolling.container.resizable {
+    height: 18em;
+  }
+
   .ui.scrolling.container.long {
     max-height: 36em;
   }
 
+  .ui.scrolling.container.long.resizable {
+    height: 36em;
+  }
+
   .ui.scrolling.container[class*="very long"] {
     max-height: 54em;
+  }
+
+  .ui.scrolling.container[class*="very long"].resizable {
+    height: 54em;
   }
 }
 
@@ -3844,20 +3878,40 @@ svg tspan {
     max-height: 18em;
   }
 
+  .ui.scrolling.container.short.resizable {
+    height: 18em;
+  }
+
   .ui.scrolling.container[class*="very short"] {
     max-height: 12em;
+  }
+
+  .ui.scrolling.container[class*="very short"].resizable {
+    height: 12em;
   }
 
   .ui.scrolling.container {
     max-height: 24em;
   }
 
+  .ui.scrolling.container.resizable {
+    height: 24em;
+  }
+
   .ui.scrolling.container.long {
     max-height: 48em;
   }
 
+  .ui.scrolling.container.long.resizable {
+    height: 48em;
+  }
+
   .ui.scrolling.container[class*="very long"] {
     max-height: 72em;
+  }
+
+  .ui.scrolling.container[class*="very long"].resizable {
+    height: 72em;
   }
 }
 
@@ -3866,21 +3920,46 @@ svg tspan {
     max-height: 22.5em;
   }
 
+  .ui.scrolling.container.short.resizable {
+    height: 22.5em;
+  }
+
   .ui.scrolling.container[class*="very short"] {
     max-height: 15em;
+  }
+
+  .ui.scrolling.container[class*="very short"].resizable {
+    height: 15em;
   }
 
   .ui.scrolling.container {
     max-height: 30em;
   }
 
+  .ui.scrolling.container.resizable {
+    height: 30em;
+  }
+
   .ui.scrolling.container.long {
     max-height: 60em;
+  }
+
+  .ui.scrolling.container.long.resizable {
+    height: 60em;
   }
 
   .ui.scrolling.container[class*="very long"] {
     max-height: 90em;
   }
+
+  .ui.scrolling.container[class*="very long"].resizable {
+    height: 90em;
+  }
+}
+
+.ui.resizable.scrolling.container {
+  resize: vertical;
+  max-height: none;
 }
 
 /*******************************
@@ -3928,6 +4007,10 @@ body.readability #content .ui.container p + h4,
   margin-bottom: calc(var(--baseline) * 3rem);
 }
 
+.ui.conventional.text.container {
+  font-size: inherit;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .ui.text.container {
     max-width: 723px;
@@ -3955,7 +4038,7 @@ body.readability #content .ui.container p + h4,
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Divider
+ * # Fomantic-UI 2.9.3 - Divider
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -4293,7 +4376,7 @@ body.readability #content .ui.container p + h4,
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Header
+ * # Fomantic-UI 2.9.3 - Header
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -5067,6 +5150,7 @@ h6.ui.header + .subtitle {
 .ui.container .main.column:not(.conventional) > h1.header:first-child,
 .ui.container .cta:not(.conventional) > h1.header:first-child {
   margin-bottom: calc(var(--baseline) * 2rem);
+  font-size: 2.64613605rem;
 }
 
 .ui.container.main:not(.conventional) > h1.header:first-child + .subtitle,
@@ -5094,6 +5178,7 @@ h6.ui.header + .subtitle {
 .ui.container .main.column:not(.conventional) > h2.header:first-child,
 .ui.container .cta:not(.conventional) > h2.header:first-child {
   margin-bottom: calc(var(--baseline) * 2rem);
+  font-size: 2.27441792rem;
 }
 
 .ui.container.main:not(.conventional) > h2.header:first-child + .subtitle,
@@ -5148,7 +5233,7 @@ h6.ui.header + .subtitle {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Icon
+ * # Fomantic-UI 2.9.3 - Icon
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -5213,7 +5298,7 @@ i.icon {
 }
 
 i.icon::before {
-  background: none !important;
+  background: none;
 }
 
 /*******************************
@@ -5468,32 +5553,32 @@ i.inverted.icon {
        Colors
 -------------------- */
 
-i.primary.icon.icon.icon.icon.icon {
+i.primary.icon.icon.icon.icon.icon.icon {
   color: #698f73;
 }
 
-i.inverted.primary.icon.icon.icon.icon.icon {
+i.inverted.primary.icon.icon.icon.icon.icon.icon {
   color: #eaf3ec;
 }
 
-i.inverted.bordered.primary.icon.icon.icon.icon.icon,
-i.inverted.circular.primary.icon.icon.icon.icon.icon,
+i.inverted.bordered.primary.icon.icon.icon.icon.icon.icon,
+i.inverted.circular.primary.icon.icon.icon.icon.icon.icon,
 i.inverted.bordered.primary.icons,
 i.inverted.circular.primary.icons {
   background-color: #698f73;
   color: #FFFFFF;
 }
 
-i.secondary.icon.icon.icon.icon.icon {
+i.secondary.icon.icon.icon.icon.icon.icon {
   color: #5f7ebe;
 }
 
-i.inverted.secondary.icon.icon.icon.icon.icon {
+i.inverted.secondary.icon.icon.icon.icon.icon.icon {
   color: #edf1f8;
 }
 
-i.inverted.bordered.secondary.icon.icon.icon.icon.icon,
-i.inverted.circular.secondary.icon.icon.icon.icon.icon,
+i.inverted.bordered.secondary.icon.icon.icon.icon.icon.icon,
+i.inverted.circular.secondary.icon.icon.icon.icon.icon.icon,
 i.inverted.bordered.secondary.icons,
 i.inverted.circular.secondary.icons {
   background-color: #5f7ebe;
@@ -14050,7 +14135,7 @@ i.icon.youtube.play::before {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Image
+ * # Fomantic-UI 2.9.3 - Image
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -14399,6 +14484,10 @@ img.ui.bordered.image {
   cursor: pointer;
 }
 
+.ui.image.video {
+  height: auto;
+}
+
 .ui.image .caption,
 .ui.image figcaption,
 .ui.image + figcaption {
@@ -14437,7 +14526,7 @@ a.circular.image > img:hover {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Input
+ * # Fomantic-UI 2.9.3 - Input
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -14551,7 +14640,7 @@ a.circular.image > img:hover {
            Loading
     --------------------- */
 
-.ui.loading.loading.input > i.icon::before {
+.ui.ui.loading.input > i.icon::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -14563,7 +14652,7 @@ a.circular.image > img:hover {
   border: 0.2em solid rgba(0, 0, 0, 0.1);
 }
 
-.ui.loading.loading.input > i.icon::after {
+.ui.ui.loading.input > i.icon::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -14614,27 +14703,6 @@ a.circular.image > img:hover {
     --------------------- */
 
 .ui.input.error > input {
-  background-color: #FFF6F6;
-  border-color: #E0B4B4;
-  color: #9F3A38;
-  box-shadow: none;
-}
-
-.ui.input > input:not(:-ms-input-placeholder):invalid {
-  background-color: #FFF6F6;
-  border-color: #E0B4B4;
-  color: #9F3A38;
-  box-shadow: none;
-}
-
-.ui.input > input:not(:placeholder-shown):invalid {
-  background-color: #FFF6F6;
-  border-color: #E0B4B4;
-  color: #9F3A38;
-  box-shadow: none;
-}
-
-.ui.input > input:not(:-ms-input-placeholder):invalid {
   background-color: #FFF6F6;
   border-color: #E0B4B4;
   color: #9F3A38;
@@ -15450,13 +15518,6 @@ a.circular.image > img:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.ui.form .field input[type="file"]:required:invalid,
-.ui.file.input input[type="file"]:required:invalid {
-  color: #9F3A38;
-  background: #FFF6F6;
-  border-color: #E0B4B4;
-}
-
 input[type="file"].ui.invisible.file.input,
 .ui.invisible.file.input input[type="file"] {
   left: -99999px;
@@ -15663,7 +15724,7 @@ input[type="file"].ui.secondary.file.input::file-selector-button:hover,
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Label
+ * # Fomantic-UI 2.9.3 - Label
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -16335,7 +16396,7 @@ a.ui.ui.ui.inverted.basic.secondary.label:hover {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - List
+ * # Fomantic-UI 2.9.3 - List
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -16812,18 +16873,18 @@ ol.ui.list ol li,
   transition: 0.1s color ease;
 }
 
-.ui.link.list.list a.item:hover,
-.ui.link.list.list .item a:not(.ui):hover {
+.ui.ui.link.list a.item:hover,
+.ui.ui.link.list .item a:not(.ui):hover {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.ui.link.list.list a.item:active,
-.ui.link.list.list .item a:not(.ui):active {
+.ui.ui.link.list a.item:active,
+.ui.ui.link.list .item a:not(.ui):active {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.ui.link.list.list .active.item,
-.ui.link.list.list .active.item a:not(.ui) {
+.ui.ui.link.list .active.item,
+.ui.ui.link.list .active.item a:not(.ui) {
   color: rgba(0, 0, 0, 0.95);
 }
 
@@ -16835,18 +16896,18 @@ ol.ui.list ol li,
   color: rgba(255, 255, 255, 0.5);
 }
 
-.ui.inverted.link.list.list a.item:hover,
-.ui.inverted.link.list.list .item a:not(.ui):hover {
+.ui.ui.inverted.link.list a.item:hover,
+.ui.ui.inverted.link.list .item a:not(.ui):hover {
   color: #ffffff;
 }
 
-.ui.inverted.link.list.list a.item:active,
-.ui.inverted.link.list.list .item a:not(.ui):active {
+.ui.ui.inverted.link.list a.item:active,
+.ui.ui.inverted.link.list .item a:not(.ui):active {
   color: #ffffff;
 }
 
-.ui.inverted.link.list.list a.active.item,
-.ui.inverted.link.list.list .active.item a:not(.ui) {
+.ui.ui.inverted.link.list a.active.item,
+.ui.ui.inverted.link.list .active.item a:not(.ui) {
   color: #ffffff;
 }
 
@@ -17441,9 +17502,18 @@ ol.ui.suffixed.list li::before,
 }
 
 ul.ui.list > li:before {
-  margin-top: -1px;
+  margin-top: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
   color: inherit !important;
-  font-size: 1.5em;
+}
+
+#hub .ui.list .item .edit.label {
+  display: none;
+}
+
+#hub .ui.list .item:hover .edit.label {
+  display: block;
 }
 
 .ui.list > .item > .avatar {
@@ -17468,7 +17538,7 @@ ul.ui.list > li:before {
     User Variable Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Segment
+ * # Fomantic-UI 2.9.3 - Segment
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -17707,13 +17777,13 @@ ul.ui.list > li:before {
            Raised
     -------------------- */
 
-.ui.raised.raised.segments,
-.ui.raised.raised.segment {
+.ui.ui.raised.segments,
+.ui.ui.raised.segment {
   box-shadow: 0 2px 4px 0 rgba(34, 36, 38, 0.12), 0 2px 10px 0 rgba(34, 36, 38, 0.15);
 }
 
-.ui.inverted.raised.raised.segments,
-.ui.inverted.raised.raised.segment {
+.ui.ui.inverted.raised.segments,
+.ui.ui.inverted.raised.segment {
   box-shadow: 0 2px 4px 0 rgba(225, 225, 225, 0.1), 0 2px 10px 0 rgba(225, 225, 225, 0.5);
 }
 
@@ -18124,20 +18194,40 @@ ul.ui.list > li:before {
     max-height: 11.25em;
   }
 
+  .ui.scrolling.segment.short.resizable {
+    height: 11.25em;
+  }
+
   .ui.scrolling.segment[class*="very short"] {
     max-height: 7.5em;
+  }
+
+  .ui.scrolling.segment[class*="very short"].resizable {
+    height: 7.5em;
   }
 
   .ui.scrolling.segment {
     max-height: 15em;
   }
 
+  .ui.scrolling.segment.resizable {
+    height: 15em;
+  }
+
   .ui.scrolling.segment.long {
     max-height: 30em;
   }
 
+  .ui.scrolling.segment.long.resizable {
+    height: 30em;
+  }
+
   .ui.scrolling.segment[class*="very long"] {
     max-height: 45em;
+  }
+
+  .ui.scrolling.segment[class*="very long"].resizable {
+    height: 45em;
   }
 }
 
@@ -18146,20 +18236,40 @@ ul.ui.list > li:before {
     max-height: 13.5em;
   }
 
+  .ui.scrolling.segment.short.resizable {
+    height: 13.5em;
+  }
+
   .ui.scrolling.segment[class*="very short"] {
     max-height: 9em;
+  }
+
+  .ui.scrolling.segment[class*="very short"].resizable {
+    height: 9em;
   }
 
   .ui.scrolling.segment {
     max-height: 18em;
   }
 
+  .ui.scrolling.segment.resizable {
+    height: 18em;
+  }
+
   .ui.scrolling.segment.long {
     max-height: 36em;
   }
 
+  .ui.scrolling.segment.long.resizable {
+    height: 36em;
+  }
+
   .ui.scrolling.segment[class*="very long"] {
     max-height: 54em;
+  }
+
+  .ui.scrolling.segment[class*="very long"].resizable {
+    height: 54em;
   }
 }
 
@@ -18168,20 +18278,40 @@ ul.ui.list > li:before {
     max-height: 18em;
   }
 
+  .ui.scrolling.segment.short.resizable {
+    height: 18em;
+  }
+
   .ui.scrolling.segment[class*="very short"] {
     max-height: 12em;
+  }
+
+  .ui.scrolling.segment[class*="very short"].resizable {
+    height: 12em;
   }
 
   .ui.scrolling.segment {
     max-height: 24em;
   }
 
+  .ui.scrolling.segment.resizable {
+    height: 24em;
+  }
+
   .ui.scrolling.segment.long {
     max-height: 48em;
   }
 
+  .ui.scrolling.segment.long.resizable {
+    height: 48em;
+  }
+
   .ui.scrolling.segment[class*="very long"] {
     max-height: 72em;
+  }
+
+  .ui.scrolling.segment[class*="very long"].resizable {
+    height: 72em;
   }
 }
 
@@ -18190,21 +18320,46 @@ ul.ui.list > li:before {
     max-height: 22.5em;
   }
 
+  .ui.scrolling.segment.short.resizable {
+    height: 22.5em;
+  }
+
   .ui.scrolling.segment[class*="very short"] {
     max-height: 15em;
+  }
+
+  .ui.scrolling.segment[class*="very short"].resizable {
+    height: 15em;
   }
 
   .ui.scrolling.segment {
     max-height: 30em;
   }
 
+  .ui.scrolling.segment.resizable {
+    height: 30em;
+  }
+
   .ui.scrolling.segment.long {
     max-height: 60em;
+  }
+
+  .ui.scrolling.segment.long.resizable {
+    height: 60em;
   }
 
   .ui.scrolling.segment[class*="very long"] {
     max-height: 90em;
   }
+
+  .ui.scrolling.segment[class*="very long"].resizable {
+    height: 90em;
+  }
+}
+
+.ui.resizable.scrolling.segment {
+  resize: vertical;
+  max-height: none;
 }
 
 /* -------------------
@@ -18489,16 +18644,14 @@ body.vertical .ui.vertical.stripe.segment#dropdown-toc {
 
 @media only screen and (min-width: 992px) {
   .ui.snapped.segment {
+    padding-top: 0 !important;
     padding-bottom: 0 !important;
     overflow: hidden;
   }
 
   .ui.snapped.segment > .container > .grid {
-    margin-bottom: -2rem;
-  }
-
-  .ui.snapped.segment > .container > .grid .middle.aligned.column {
     margin-top: -2rem;
+    margin-bottom: -2rem;
   }
 }
 
@@ -18560,11 +18713,15 @@ body.vertical .ui.vertical.stripe.segment#dropdown-toc {
   }
 }
 
+.ui.text.segment + * {
+  margin-top: calc(var(--baseline) * 2rem);
+}
+
 /*******************************
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Text
+ * # Fomantic-UI 2.9.3 - Text
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -18659,7 +18816,7 @@ span.ui.massive.text {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Breadcrumb
+ * # Fomantic-UI 2.9.3 - Breadcrumb
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -18804,7 +18961,7 @@ span.ui.massive.text {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Grid
+ * # Fomantic-UI 2.9.3 - Grid
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -20193,8 +20350,8 @@ span.ui.massive.text {
 .ui[class*="left aligned"].grid > .column,
 .ui[class*="left aligned"].grid > .row > .column,
 .ui.grid > [class*="left aligned"].row > .column,
-.ui.grid > [class*="left aligned"].column.column,
-.ui.grid > .row > [class*="left aligned"].column.column {
+.ui.ui.grid > [class*="left aligned"].column,
+.ui.ui.grid > .row > [class*="left aligned"].column {
   text-align: left;
   align-self: inherit;
 }
@@ -20204,8 +20361,8 @@ span.ui.massive.text {
 .ui[class*="center aligned"].grid > .column,
 .ui[class*="center aligned"].grid > .row > .column,
 .ui.grid > [class*="center aligned"].row > .column,
-.ui.grid > [class*="center aligned"].column.column,
-.ui.grid > .row > [class*="center aligned"].column.column {
+.ui.ui.grid > [class*="center aligned"].column,
+.ui.ui.grid > .row > [class*="center aligned"].column {
   text-align: center;
   align-self: inherit;
 }
@@ -20219,8 +20376,8 @@ span.ui.massive.text {
 .ui[class*="right aligned"].grid > .column,
 .ui[class*="right aligned"].grid > .row > .column,
 .ui.grid > [class*="right aligned"].row > .column,
-.ui.grid > [class*="right aligned"].column.column,
-.ui.grid > .row > [class*="right aligned"].column.column {
+.ui.ui.grid > [class*="right aligned"].column,
+.ui.ui.grid > .row > [class*="right aligned"].column {
   text-align: right;
   align-self: inherit;
 }
@@ -20230,8 +20387,8 @@ span.ui.massive.text {
 .ui.justified.grid > .column,
 .ui.justified.grid > .row > .column,
 .ui.grid > .justified.row > .column,
-.ui.grid > .justified.column.column,
-.ui.grid > .row > .justified.column.column {
+.ui.ui.grid > .justified.column,
+.ui.ui.grid > .row > .justified.column {
   text-align: justify;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
@@ -20448,91 +20605,91 @@ span.ui.massive.text {
 
   .ui[class*="two column"].doubling.grid > .row > .column,
   .ui[class*="two column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="two column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="two column"].doubling.row > .column {
     width: 100% !important;
   }
 
   .ui[class*="three column"].doubling.grid > .row > .column,
   .ui[class*="three column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="three column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="three column"].doubling.row > .column {
     width: 50% !important;
   }
 
   .ui[class*="four column"].doubling.grid > .row > .column,
   .ui[class*="four column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="four column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="four column"].doubling.row > .column {
     width: 50% !important;
   }
 
   .ui[class*="five column"].doubling.grid > .row > .column,
   .ui[class*="five column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="five column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="five column"].doubling.row > .column {
     width: 33.33333333% !important;
   }
 
   .ui[class*="six column"].doubling.grid > .row > .column,
   .ui[class*="six column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="six column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="six column"].doubling.row > .column {
     width: 33.33333333% !important;
   }
 
   .ui[class*="seven column"].doubling.grid > .row > .column,
   .ui[class*="seven column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="seven column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="seven column"].doubling.row > .column {
     width: 33.33333333% !important;
   }
 
   .ui[class*="eight column"].doubling.grid > .row > .column,
   .ui[class*="eight column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="eight column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="eight column"].doubling.row > .column {
     width: 25% !important;
   }
 
   .ui[class*="nine column"].doubling.grid > .row > .column,
   .ui[class*="nine column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="nine column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="nine column"].doubling.row > .column {
     width: 25% !important;
   }
 
   .ui[class*="ten column"].doubling.grid > .row > .column,
   .ui[class*="ten column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="ten column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="ten column"].doubling.row > .column {
     width: 20% !important;
   }
 
   .ui[class*="eleven column"].doubling.grid > .row > .column,
   .ui[class*="eleven column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="eleven column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="eleven column"].doubling.row > .column {
     width: 20% !important;
   }
 
   .ui[class*="twelve column"].doubling.grid > .row > .column,
   .ui[class*="twelve column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="twelve column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="twelve column"].doubling.row > .column {
     width: 16.66666667% !important;
   }
 
   .ui[class*="thirteen column"].doubling.grid > .row > .column,
   .ui[class*="thirteen column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="thirteen column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="thirteen column"].doubling.row > .column {
     width: 16.66666667% !important;
   }
 
   .ui[class*="fourteen column"].doubling.grid > .row > .column,
   .ui[class*="fourteen column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="fourteen column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="fourteen column"].doubling.row > .column {
     width: 14.28571429% !important;
   }
 
   .ui[class*="fifteen column"].doubling.grid > .row > .column,
   .ui[class*="fifteen column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="fifteen column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="fifteen column"].doubling.row > .column {
     width: 14.28571429% !important;
   }
 
   .ui[class*="sixteen column"].doubling.grid > .row > .column,
   .ui[class*="sixteen column"].doubling.grid > .column:not(.row),
-  .ui.grid > [class*="sixteen column"].doubling.row.row > .column {
+  .ui.ui.grid > [class*="sixteen column"].doubling.row > .column {
     width: 12.5% !important;
   }
 }
@@ -20556,91 +20713,91 @@ span.ui.massive.text {
 
   .ui[class*="two column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="two column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="two column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="two column"].doubling:not(.stackable).row > .column {
     width: 100% !important;
   }
 
   .ui[class*="three column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="three column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="three column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="three column"].doubling:not(.stackable).row > .column {
     width: 50% !important;
   }
 
   .ui[class*="four column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="four column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="four column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="four column"].doubling:not(.stackable).row > .column {
     width: 50% !important;
   }
 
   .ui[class*="five column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="five column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="five column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="five column"].doubling:not(.stackable).row > .column {
     width: 50% !important;
   }
 
   .ui[class*="six column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="six column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="six column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="six column"].doubling:not(.stackable).row > .column {
     width: 50% !important;
   }
 
   .ui[class*="seven column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="seven column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="seven column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="seven column"].doubling:not(.stackable).row > .column {
     width: 50% !important;
   }
 
   .ui[class*="eight column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="eight column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="eight column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="eight column"].doubling:not(.stackable).row > .column {
     width: 50% !important;
   }
 
   .ui[class*="nine column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="nine column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="nine column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="nine column"].doubling:not(.stackable).row > .column {
     width: 33.33333333% !important;
   }
 
   .ui[class*="ten column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="ten column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="ten column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="ten column"].doubling:not(.stackable).row > .column {
     width: 33.33333333% !important;
   }
 
   .ui[class*="eleven column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="eleven column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="eleven column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="eleven column"].doubling:not(.stackable).row > .column {
     width: 33.33333333% !important;
   }
 
   .ui[class*="twelve column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="twelve column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="twelve column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="twelve column"].doubling:not(.stackable).row > .column {
     width: 33.33333333% !important;
   }
 
   .ui[class*="thirteen column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="thirteen column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="thirteen column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="thirteen column"].doubling:not(.stackable).row > .column {
     width: 33.33333333% !important;
   }
 
   .ui[class*="fourteen column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="fourteen column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="fourteen column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="fourteen column"].doubling:not(.stackable).row > .column {
     width: 25% !important;
   }
 
   .ui[class*="fifteen column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="fifteen column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="fifteen column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="fifteen column"].doubling:not(.stackable).row > .column {
     width: 25% !important;
   }
 
   .ui[class*="sixteen column"].doubling:not(.stackable).grid > .row > .column,
   .ui[class*="sixteen column"].doubling:not(.stackable).grid > .column:not(.row),
-  .ui.grid > [class*="sixteen column"].doubling:not(.stackable).row.row > .column {
+  .ui.ui.grid > [class*="sixteen column"].doubling:not(.stackable).row > .column {
     width: 25% !important;
   }
 }
@@ -20737,31 +20894,31 @@ span.ui.massive.text {
 /* Mobile Only Hide */
 
 @media only screen and (max-width: 767.98px) {
-  .ui[class*="tablet only"].grid.grid.grid:not(.mobile),
-  .ui.grid.grid.grid > [class*="tablet only"].row:not(.mobile),
-  .ui.grid.grid.grid > [class*="tablet only"].column:not(.mobile),
-  .ui.grid.grid.grid > .row > [class*="tablet only"].column:not(.mobile) {
+  .ui.ui.ui[class*="tablet only"].grid:not(.mobile),
+  .ui.ui.ui.grid > [class*="tablet only"].row:not(.mobile),
+  .ui.ui.ui.grid > [class*="tablet only"].column:not(.mobile),
+  .ui.ui.ui.grid > .row > [class*="tablet only"].column:not(.mobile) {
     display: none !important;
   }
 
-  .ui[class*="computer only"].grid.grid.grid:not(.mobile),
-  .ui.grid.grid.grid > [class*="computer only"].row:not(.mobile),
-  .ui.grid.grid.grid > [class*="computer only"].column:not(.mobile),
-  .ui.grid.grid.grid > .row > [class*="computer only"].column:not(.mobile) {
+  .ui.ui.ui[class*="computer only"].grid:not(.mobile),
+  .ui.ui.ui.grid > [class*="computer only"].row:not(.mobile),
+  .ui.ui.ui.grid > [class*="computer only"].column:not(.mobile),
+  .ui.ui.ui.grid > .row > [class*="computer only"].column:not(.mobile) {
     display: none !important;
   }
 
-  .ui[class*="large screen only"].grid.grid.grid:not(.mobile),
-  .ui.grid.grid.grid > [class*="large screen only"].row:not(.mobile),
-  .ui.grid.grid.grid > [class*="large screen only"].column:not(.mobile),
-  .ui.grid.grid.grid > .row > [class*="large screen only"].column:not(.mobile) {
+  .ui.ui.ui[class*="large screen only"].grid:not(.mobile),
+  .ui.ui.ui.grid > [class*="large screen only"].row:not(.mobile),
+  .ui.ui.ui.grid > [class*="large screen only"].column:not(.mobile),
+  .ui.ui.ui.grid > .row > [class*="large screen only"].column:not(.mobile) {
     display: none !important;
   }
 
-  .ui[class*="widescreen only"].grid.grid.grid:not(.mobile),
-  .ui.grid.grid.grid > [class*="widescreen only"].row:not(.mobile),
-  .ui.grid.grid.grid > [class*="widescreen only"].column:not(.mobile),
-  .ui.grid.grid.grid > .row > [class*="widescreen only"].column:not(.mobile) {
+  .ui.ui.ui[class*="widescreen only"].grid:not(.mobile),
+  .ui.ui.ui.grid > [class*="widescreen only"].row:not(.mobile),
+  .ui.ui.ui.grid > [class*="widescreen only"].column:not(.mobile),
+  .ui.ui.ui.grid > .row > [class*="widescreen only"].column:not(.mobile) {
     display: none !important;
   }
 }
@@ -20769,31 +20926,31 @@ span.ui.massive.text {
 /* Tablet Only Hide */
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  .ui[class*="mobile only"].grid.grid.grid:not(.tablet),
-  .ui.grid.grid.grid > [class*="mobile only"].row:not(.tablet),
-  .ui.grid.grid.grid > [class*="mobile only"].column:not(.tablet),
-  .ui.grid.grid.grid > .row > [class*="mobile only"].column:not(.tablet) {
+  .ui.ui.ui[class*="mobile only"].grid:not(.tablet),
+  .ui.ui.ui.grid > [class*="mobile only"].row:not(.tablet),
+  .ui.ui.ui.grid > [class*="mobile only"].column:not(.tablet),
+  .ui.ui.ui.grid > .row > [class*="mobile only"].column:not(.tablet) {
     display: none !important;
   }
 
-  .ui[class*="computer only"].grid.grid.grid:not(.tablet),
-  .ui.grid.grid.grid > [class*="computer only"].row:not(.tablet),
-  .ui.grid.grid.grid > [class*="computer only"].column:not(.tablet),
-  .ui.grid.grid.grid > .row > [class*="computer only"].column:not(.tablet) {
+  .ui.ui.ui[class*="computer only"].grid:not(.tablet),
+  .ui.ui.ui.grid > [class*="computer only"].row:not(.tablet),
+  .ui.ui.ui.grid > [class*="computer only"].column:not(.tablet),
+  .ui.ui.ui.grid > .row > [class*="computer only"].column:not(.tablet) {
     display: none !important;
   }
 
-  .ui[class*="large screen only"].grid.grid.grid:not(.mobile),
-  .ui.grid.grid.grid > [class*="large screen only"].row:not(.mobile),
-  .ui.grid.grid.grid > [class*="large screen only"].column:not(.mobile),
-  .ui.grid.grid.grid > .row > [class*="large screen only"].column:not(.mobile) {
+  .ui.ui.ui[class*="large screen only"].grid:not(.mobile),
+  .ui.ui.ui.grid > [class*="large screen only"].row:not(.mobile),
+  .ui.ui.ui.grid > [class*="large screen only"].column:not(.mobile),
+  .ui.ui.ui.grid > .row > [class*="large screen only"].column:not(.mobile) {
     display: none !important;
   }
 
-  .ui[class*="widescreen only"].grid.grid.grid:not(.mobile),
-  .ui.grid.grid.grid > [class*="widescreen only"].row:not(.mobile),
-  .ui.grid.grid.grid > [class*="widescreen only"].column:not(.mobile),
-  .ui.grid.grid.grid > .row > [class*="widescreen only"].column:not(.mobile) {
+  .ui.ui.ui[class*="widescreen only"].grid:not(.mobile),
+  .ui.ui.ui.grid > [class*="widescreen only"].row:not(.mobile),
+  .ui.ui.ui.grid > [class*="widescreen only"].column:not(.mobile),
+  .ui.ui.ui.grid > .row > [class*="widescreen only"].column:not(.mobile) {
     display: none !important;
   }
 }
@@ -20801,31 +20958,31 @@ span.ui.massive.text {
 /* Computer Only Hide */
 
 @media only screen and (min-width: 992px) and (max-width: 1299.98px) {
-  .ui[class*="mobile only"].grid.grid.grid:not(.computer),
-  .ui.grid.grid.grid > [class*="mobile only"].row:not(.computer),
-  .ui.grid.grid.grid > [class*="mobile only"].column:not(.computer),
-  .ui.grid.grid.grid > .row > [class*="mobile only"].column:not(.computer) {
+  .ui.ui.ui[class*="mobile only"].grid:not(.computer),
+  .ui.ui.ui.grid > [class*="mobile only"].row:not(.computer),
+  .ui.ui.ui.grid > [class*="mobile only"].column:not(.computer),
+  .ui.ui.ui.grid > .row > [class*="mobile only"].column:not(.computer) {
     display: none !important;
   }
 
-  .ui[class*="tablet only"].grid.grid.grid:not(.computer),
-  .ui.grid.grid.grid > [class*="tablet only"].row:not(.computer),
-  .ui.grid.grid.grid > [class*="tablet only"].column:not(.computer),
-  .ui.grid.grid.grid > .row > [class*="tablet only"].column:not(.computer) {
+  .ui.ui.ui[class*="tablet only"].grid:not(.computer),
+  .ui.ui.ui.grid > [class*="tablet only"].row:not(.computer),
+  .ui.ui.ui.grid > [class*="tablet only"].column:not(.computer),
+  .ui.ui.ui.grid > .row > [class*="tablet only"].column:not(.computer) {
     display: none !important;
   }
 
-  .ui[class*="large screen only"].grid.grid.grid:not(.mobile),
-  .ui.grid.grid.grid > [class*="large screen only"].row:not(.mobile),
-  .ui.grid.grid.grid > [class*="large screen only"].column:not(.mobile),
-  .ui.grid.grid.grid > .row > [class*="large screen only"].column:not(.mobile) {
+  .ui.ui.ui[class*="large screen only"].grid:not(.mobile),
+  .ui.ui.ui.grid > [class*="large screen only"].row:not(.mobile),
+  .ui.ui.ui.grid > [class*="large screen only"].column:not(.mobile),
+  .ui.ui.ui.grid > .row > [class*="large screen only"].column:not(.mobile) {
     display: none !important;
   }
 
-  .ui[class*="widescreen only"].grid.grid.grid:not(.mobile),
-  .ui.grid.grid.grid > [class*="widescreen only"].row:not(.mobile),
-  .ui.grid.grid.grid > [class*="widescreen only"].column:not(.mobile),
-  .ui.grid.grid.grid > .row > [class*="widescreen only"].column:not(.mobile) {
+  .ui.ui.ui[class*="widescreen only"].grid:not(.mobile),
+  .ui.ui.ui.grid > [class*="widescreen only"].row:not(.mobile),
+  .ui.ui.ui.grid > [class*="widescreen only"].column:not(.mobile),
+  .ui.ui.ui.grid > .row > [class*="widescreen only"].column:not(.mobile) {
     display: none !important;
   }
 }
@@ -20833,24 +20990,24 @@ span.ui.massive.text {
 /* Large Screen Only Hide */
 
 @media only screen and (min-width: 1300px) and (max-width: 1919.98px) {
-  .ui[class*="mobile only"].grid.grid.grid:not(.computer),
-  .ui.grid.grid.grid > [class*="mobile only"].row:not(.computer),
-  .ui.grid.grid.grid > [class*="mobile only"].column:not(.computer),
-  .ui.grid.grid.grid > .row > [class*="mobile only"].column:not(.computer) {
+  .ui.ui.ui[class*="mobile only"].grid:not(.computer),
+  .ui.ui.ui.grid > [class*="mobile only"].row:not(.computer),
+  .ui.ui.ui.grid > [class*="mobile only"].column:not(.computer),
+  .ui.ui.ui.grid > .row > [class*="mobile only"].column:not(.computer) {
     display: none !important;
   }
 
-  .ui[class*="tablet only"].grid.grid.grid:not(.computer),
-  .ui.grid.grid.grid > [class*="tablet only"].row:not(.computer),
-  .ui.grid.grid.grid > [class*="tablet only"].column:not(.computer),
-  .ui.grid.grid.grid > .row > [class*="tablet only"].column:not(.computer) {
+  .ui.ui.ui[class*="tablet only"].grid:not(.computer),
+  .ui.ui.ui.grid > [class*="tablet only"].row:not(.computer),
+  .ui.ui.ui.grid > [class*="tablet only"].column:not(.computer),
+  .ui.ui.ui.grid > .row > [class*="tablet only"].column:not(.computer) {
     display: none !important;
   }
 
-  .ui[class*="widescreen only"].grid.grid.grid:not(.mobile),
-  .ui.grid.grid.grid > [class*="widescreen only"].row:not(.mobile),
-  .ui.grid.grid.grid > [class*="widescreen only"].column:not(.mobile),
-  .ui.grid.grid.grid > .row > [class*="widescreen only"].column:not(.mobile) {
+  .ui.ui.ui[class*="widescreen only"].grid:not(.mobile),
+  .ui.ui.ui.grid > [class*="widescreen only"].row:not(.mobile),
+  .ui.ui.ui.grid > [class*="widescreen only"].column:not(.mobile),
+  .ui.ui.ui.grid > .row > [class*="widescreen only"].column:not(.mobile) {
     display: none !important;
   }
 }
@@ -20858,17 +21015,17 @@ span.ui.massive.text {
 /* Widescreen Only Hide */
 
 @media only screen and (min-width: 1920px) {
-  .ui[class*="mobile only"].grid.grid.grid:not(.computer),
-  .ui.grid.grid.grid > [class*="mobile only"].row:not(.computer),
-  .ui.grid.grid.grid > [class*="mobile only"].column:not(.computer),
-  .ui.grid.grid.grid > .row > [class*="mobile only"].column:not(.computer) {
+  .ui.ui.ui[class*="mobile only"].grid:not(.computer),
+  .ui.ui.ui.grid > [class*="mobile only"].row:not(.computer),
+  .ui.ui.ui.grid > [class*="mobile only"].column:not(.computer),
+  .ui.ui.ui.grid > .row > [class*="mobile only"].column:not(.computer) {
     display: none !important;
   }
 
-  .ui[class*="tablet only"].grid.grid.grid:not(.computer),
-  .ui.grid.grid.grid > [class*="tablet only"].row:not(.computer),
-  .ui.grid.grid.grid > [class*="tablet only"].column:not(.computer),
-  .ui.grid.grid.grid > .row > [class*="tablet only"].column:not(.computer) {
+  .ui.ui.ui[class*="tablet only"].grid:not(.computer),
+  .ui.ui.ui.grid > [class*="tablet only"].row:not(.computer),
+  .ui.ui.ui.grid > [class*="tablet only"].column:not(.computer),
+  .ui.ui.ui.grid > .row > [class*="tablet only"].column:not(.computer) {
     display: none !important;
   }
 }
@@ -21173,7 +21330,7 @@ body.vertical #main #footer {
   margin-top: 2em;
 }
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Menu
+ * # Fomantic-UI 2.9.3 - Menu
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -21468,7 +21625,6 @@ body.vertical #main #footer {
   left: 100%;
   /* IE needs 0, all others support max-content to show dropdown icon inline, so keep both settings! */
   min-width: 0;
-  min-width: -webkit-max-content;
   min-width: max-content;
   margin: 0 0 0 0;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
@@ -23188,16 +23344,16 @@ Floated Menu / Item
   display: none;
 }
 
-.ui.wrapping.menu:not(.tabular) .item:last-of-type,
-.ui.wrapping.menu:not(.tabular) .item:last-child {
+.ui.wrapping.menu:not(.secondary):not(.text):not(.tabular):not(.borderless) .item:last-of-type,
+.ui.wrapping.menu:not(.secondary):not(.text):not(.tabular):not(.borderless) .item:last-child {
   border-right: 1px solid rgba(34, 36, 38, 0.1);
 }
 
-.ui.wrapped.menu:not(.tabular) .item:first-child {
+.ui.wrapped.menu:not(.secondary):not(.text):not(.tabular):not(.borderless) .item:first-child {
   border-bottom-left-radius: 0;
 }
 
-.ui.wrapped.menu:not(.tabular) .item:last-child {
+.ui.wrapped.menu:not(.secondary):not(.text):not(.tabular):not(.borderless) .item:last-child {
   border-top-right-radius: 0;
 }
 
@@ -23632,6 +23788,7 @@ Floated Menu / Item
 }
 
 #menu-accordion .content {
+  margin: 0;
   padding: 0;
 }
 
@@ -23935,7 +24092,7 @@ a#submenu-header.for.submenu-secondary:not(.pointing) {
   }
 }
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Message
+ * # Fomantic-UI 2.9.3 - Message
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -24454,7 +24611,7 @@ a#submenu-header.for.submenu-secondary:not(.pointing) {
         Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Card
+ * # Fomantic-UI 2.9.3 - Card
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -25815,7 +25972,7 @@ a.inverted.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Feed
+ * # Fomantic-UI 2.9.3 - Feed
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -25853,11 +26010,13 @@ a.inverted.ui.card:hover,
   padding: 0;
   margin: 0;
   background: none;
+}
+
+.ui.feed > .event:not(:first-child) {
   border-top: none;
 }
 
-.ui.feed > .event:first-child {
-  border-top: 0;
+.ui.feed:not(.connected) > .event:first-child {
   padding-top: 0;
 }
 
@@ -25891,6 +26050,30 @@ a.inverted.ui.card:hover,
   width: 100%;
   height: auto;
   border-radius: 500rem;
+}
+
+.ui.feed > .event > .label > .text {
+  display: block;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.ui.feed > .event > .label > .text.ui {
+  margin-top: 0.65em;
+}
+
+.ui.feed > .event > .label > .text.multiline {
+  margin-top: 0;
+}
+
+.ui.feed > .event > .label > .text.multiline.ui {
+  margin-top: 0.3em;
+}
+
+.ui.feed > .event > .label > .ui.label {
+  margin-top: 0.4em;
+  position: relative;
+  z-index: 1;
 }
 
 .ui.feed > .event > .label + .content {
@@ -25964,13 +26147,16 @@ a.inverted.ui.card:hover,
 
 .ui.feed > .event > .content .summary > .date {
   display: inline-block;
-  float: none;
   font-weight: normal;
   font-size: 0.85714286em;
   font-style: normal;
   margin: 0 0 0 0.5em;
   padding: 0;
   color: rgba(0, 0, 0, 0.4);
+}
+
+.ui.feed > .event > .content .summary > .date:not(.floated) {
+  float: none;
 }
 
 /* --------------
@@ -26094,6 +26280,97 @@ a.inverted.ui.card:hover,
             Variations
 *******************************/
 
+/* rtl:rename */
+
+.ui.feed .right.floated {
+  float: right;
+}
+
+.ui.connected.feed > .event {
+  position: relative;
+}
+
+.ui.connected.feed > .event:not(:last-child)::before {
+  border-left: 2px solid rgba(34, 36, 38, 0.15);
+  content: "";
+  left: 1.2em;
+  position: absolute;
+  top: 2.1em;
+  height: calc(100% - 1.5em);
+}
+
+.ui.connected.feed > .event > .label {
+  position: relative;
+}
+
+.ui.inverted.connected.feed > .event::before {
+  border-left-color: rgba(255, 255, 255, 0.1);
+}
+
+.ui.divided.feed > .event:not(:first-child) {
+  border-top: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+.ui.inverted.divided.feed > .event {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.ui.ui.feed > .event > .label[data-text]::before {
+  content: attr(data-text);
+}
+
+.ui.feed > .event > .label[data-text]::before,
+.ui.ordered.feed > .event > .label::before {
+  text-align: center;
+  line-height: 1;
+  height: 3em;
+  background: #bbbbbb;
+  color: #FFFFFF;
+  border-radius: 50%;
+  padding-top: 0.6em;
+  position: relative;
+  display: block;
+  margin-bottom: 0.3em;
+  border: 2px solid transparent;
+}
+
+.ui.ordered.feed {
+  counter-reset: ordered;
+}
+
+.ui.ordered.feed > .event > .label::before {
+  counter-increment: ordered;
+  content: counter(ordered);
+}
+
+.ui.ordered.basic.feed > .event > .label::before,
+.ui.ordered.feed > .event > .basic.label::before {
+  border-color: #bbbbbb;
+  color: inherit;
+  background: transparent;
+}
+
+.ui.ordered.connected.feed > .event::before {
+  top: 2.7em;
+  height: calc(100% - 2.5em);
+}
+
+/* workaround until all browsers support :has() */
+
+.ui.connected.labeled.feed > .event::before,
+.ui.connected.feed > .labeled.event::before {
+  top: 4.85em;
+  height: calc(100% - 4.6499999999999995em);
+}
+
+@supports selector(:has(.f)) {
+  .ui.connected.feed > .event:has(> .label[data-text] > *)::before,
+  .ui.ordered.connected.feed > .event:has(> .label > *)::before {
+    top: 4.85em;
+    height: calc(100% - 4.6499999999999995em);
+  }
+}
+
 .ui.feed {
   font-size: 1rem;
 }
@@ -26134,6 +26411,14 @@ a.inverted.ui.card:hover,
   background: #1B1C1D;
 }
 
+.ui.inverted.feed > .event > .label i.icon {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ui.inverted.feed > .event > .label .text:not(.ui) {
+  color: #FFFFFF;
+}
+
 .ui.inverted.feed > .event > .content .date,
 .ui.inverted.feed > .event > .content .meta .like {
   color: rgba(255, 255, 255, 0.7);
@@ -26146,6 +26431,86 @@ a.inverted.ui.card:hover,
 
 .ui.inverted.feed > .event > .content .meta .like:hover {
   color: #ffffff;
+}
+
+.ui.inverted.feed > .event > .content .meta .active.like i.icon {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* --------------
+     Colors
+--------------- */
+
+.ui.ui.feed > .event > .primary.label::before,
+.ui.primary.feed > .event > .label::before {
+  background: #698f73;
+}
+
+.ui.primary.connected.feed > .event::before,
+.ui.connected.feed > .primary.event::before {
+  border-color: #698f73;
+}
+
+.ui.inverted.primary.connected.feed > .event::before,
+.ui.connected.feed > .inverted.primary.event::before {
+  border-color: #eaf3ec;
+}
+
+.ui.ui.feed > .event > .primary.basic.label::before,
+.ui.primary.basic.feed > .event > .label::before {
+  color: #698f73;
+}
+
+.ui.feed > .event > .inverted.primary.label::before,
+.ui.inverted.primary.feed > .event > .label::before {
+  background: #eaf3ec;
+}
+
+.ui.feed > .event > .inverted.primary.basic.label::before,
+.ui.inverted.primary.basic.feed > .event > .label::before {
+  color: #eaf3ec;
+}
+
+.ui.ui.feed > .event > .secondary.label::before,
+.ui.secondary.feed > .event > .label::before {
+  background: #5f7ebe;
+}
+
+.ui.secondary.connected.feed > .event::before,
+.ui.connected.feed > .secondary.event::before {
+  border-color: #5f7ebe;
+}
+
+.ui.inverted.secondary.connected.feed > .event::before,
+.ui.connected.feed > .inverted.secondary.event::before {
+  border-color: #edf1f8;
+}
+
+.ui.ui.feed > .event > .secondary.basic.label::before,
+.ui.secondary.basic.feed > .event > .label::before {
+  color: #5f7ebe;
+}
+
+.ui.feed > .event > .inverted.secondary.label::before,
+.ui.inverted.secondary.feed > .event > .label::before {
+  background: #edf1f8;
+}
+
+.ui.feed > .event > .inverted.secondary.basic.label::before,
+.ui.inverted.secondary.basic.feed > .event > .label::before {
+  color: #edf1f8;
+}
+
+.ui.ui.feed > .event > .basic.label::before,
+.ui.ui.ui.basic.feed > .event > .label::before {
+  background: transparent;
+  border-color: currentColor;
+}
+
+.ui.disabled.feed,
+.ui.feed .disabled.event {
+  opacity: 0.45;
+  pointer-events: none;
 }
 
 /*******************************
@@ -26185,7 +26550,7 @@ a.inverted.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Item
+ * # Fomantic-UI 2.9.3 - Item
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -26788,6 +27153,12 @@ a.inverted.ui.card:hover,
   border-top: none;
 }
 
+.ui.disabled.items,
+.ui.items > .disabled.item {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
 /*******************************
          Theme Overrides
 *******************************/
@@ -26796,7 +27167,7 @@ a.inverted.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Statistic
+ * # Fomantic-UI 2.9.3 - Statistic
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -27318,7 +27689,7 @@ a.inverted.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Accordion
+ * # Fomantic-UI 2.9.3 - Accordion
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -27741,11 +28112,15 @@ a.inverted.ui.card:hover,
   padding: 0;
 }
 
+#content .ui.accordion + * {
+  margin-top: calc(var(--baseline) * 2rem);
+}
+
 /*******************************
         User Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Checkbox
+ * # Fomantic-UI 2.9.3 - Checkbox
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -27795,9 +28170,12 @@ a.inverted.ui.card:hover,
   cursor: auto;
   position: relative;
   display: block;
-  padding-left: 1.85714em;
   outline: none;
   font-size: 1em;
+}
+
+.ui.checkbox:not(.invisible) label {
+  padding-left: 1.85714em;
 }
 
 .ui.checkbox label::before {
@@ -27872,8 +28250,8 @@ a.inverted.ui.card:hover,
   border-color: rgba(34, 36, 38, 0.35);
 }
 
-.ui.checkbox label:hover,
-.ui.checkbox + label:hover {
+.ui.checkbox:not(.invisible) label:hover,
+.ui.checkbox:not(.invisible) + label:hover {
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -27890,7 +28268,7 @@ a.inverted.ui.card:hover,
   color: rgba(0, 0, 0, 0.95);
 }
 
-.ui.checkbox input:active ~ label {
+.ui.checkbox:not(.invisible) input:active ~ label {
   color: rgba(0, 0, 0, 0.95);
 }
 
@@ -27907,7 +28285,7 @@ a.inverted.ui.card:hover,
   color: rgba(0, 0, 0, 0.95);
 }
 
-.ui.checkbox input:focus ~ label {
+.ui.checkbox:not(.invisible) input:focus ~ label {
   color: rgba(0, 0, 0, 0.95);
 }
 
@@ -28437,6 +28815,58 @@ a.inverted.ui.card:hover,
   background-color: #557b5f;
 }
 
+/* --------------
+         Invisible
+    --------------- */
+
+.ui.invisible.checkbox:not(.compact) {
+  display: block;
+}
+
+.ui.invisible.checkbox input {
+  left: -99999px;
+  position: absolute;
+}
+
+.ui.invisible.checkbox label::before,
+.ui.invisible.checkbox label::after {
+  display: none;
+}
+
+.ui.invisible.checkbox label {
+  transition: all 0.1s ease;
+}
+
+.ui.ui.ui.ui.ui.invisible.checkbox input:not(:checked) + label {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: 0 0 0 1px rgba(34, 36, 38, 0.15) inset;
+  color: inherit;
+}
+
+.ui.ui.ui.ui.ui.invisible.checkbox input:not(:checked):not(:hover):focus + label:not(.image) {
+  box-shadow: 0 0 0 1px rgba(34, 36, 38, 0.35) inset;
+}
+
+.ui.ui.ui.ui.ui.invisible.checkbox input:not(:checked) + label.image,
+.basic.ui.ui.ui.ui.ui.invisible.checkbox input:not(:checked) + label {
+  box-shadow: none;
+}
+
+.ui.invisible.checkbox input:not(:checked) + label.image {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+.ui.invisible.checkbox input:not(:checked):not(:hover):focus + label.image {
+  opacity: 0.75;
+}
+
+.ui.invisible.checkbox input:not(:checked)[disabled] + label.image,
+.disabled.ui.invisible.checkbox input:not(:checked) + label.image {
+  opacity: 0.25;
+}
+
 /* --------------------
         Size
 --------------------- */
@@ -28591,7 +29021,7 @@ a.inverted.ui.card:hover,
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Dropdown
+ * # Fomantic-UI 2.9.3 - Dropdown
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -28631,7 +29061,6 @@ a.inverted.ui.card:hover,
   display: none;
   outline: none;
   top: 100%;
-  min-width: -webkit-max-content;
   min-width: max-content;
   margin: 0;
   padding: 0;
@@ -29039,27 +29468,32 @@ select.ui.dropdown {
 }
 
 .ui.compact.selection.dropdown > .menu:not(.multiline) {
-  width: -webkit-max-content;
   width: max-content;
 }
 
 /* Selection Menu */
 
-.ui.selection.dropdown .menu {
+.ui.selection.dropdown:not(.unlimited) .menu {
   overflow-x: hidden;
   overflow-y: auto;
   -ms-scroll-chaining: none;
   overscroll-behavior: none;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-top-width: 0 !important;
+}
+
+.ui.selection.dropdown .menu {
   outline: none;
   margin: 0 -1px;
   min-width: calc(100% + 2px);
   width: calc(100% + 2px);
-  border-radius: 0 0 0.28571429rem 0.28571429rem;
   box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
   transition: opacity 0.1s ease;
+}
+
+.ui.selection.dropdown:not(.pointing):not(.floating) .menu {
+  border-top-width: 0;
+  border-radius: 0 0 0.28571429rem 0.28571429rem;
 }
 
 .ui.selection.dropdown .menu::after,
@@ -29084,7 +29518,7 @@ select.ui.dropdown {
     max-height: 4.00714286rem;
   }
 
-  .ui.selection.dropdown .menu {
+  .ui.selection.dropdown:not(.unlimited) .menu {
     max-height: 8.01428571rem;
   }
 
@@ -29106,7 +29540,7 @@ select.ui.dropdown {
     max-height: 5.34285714rem;
   }
 
-  .ui.selection.dropdown .menu {
+  .ui.selection.dropdown:not(.unlimited) .menu {
     max-height: 10.68571429rem;
   }
 
@@ -29128,7 +29562,7 @@ select.ui.dropdown {
     max-height: 8.01428571rem;
   }
 
-  .ui.selection.dropdown .menu {
+  .ui.selection.dropdown:not(.unlimited) .menu {
     max-height: 16.02857143rem;
   }
 
@@ -29150,7 +29584,7 @@ select.ui.dropdown {
     max-height: 10.68571429rem;
   }
 
-  .ui.selection.dropdown .menu {
+  .ui.selection.dropdown:not(.unlimited) .menu {
     max-height: 21.37142857rem;
   }
 
@@ -29170,6 +29604,11 @@ select.ui.dropdown {
   padding: 0.78571429rem 1.14285714rem;
   white-space: normal;
   word-wrap: normal;
+}
+
+.ui.selection.pointing.dropdown .menu > .item:first-child,
+.ui.selection.floating.dropdown .menu > .item:first-child {
+  border-top: none;
 }
 
 /* User Item */
@@ -29250,7 +29689,7 @@ select.ui.dropdown {
 
 /* Connecting Border */
 
-.ui.active.selection.dropdown {
+.ui.active.selection.dropdown:not(.pointing):not(.floating) {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
@@ -29388,7 +29827,7 @@ select.ui.dropdown {
 
 /* Search Menu */
 
-.ui.search.dropdown .menu {
+.ui.search.dropdown:not(.unlimited) .menu {
   overflow-x: hidden;
   overflow-y: auto;
   -ms-scroll-chaining: none;
@@ -29398,25 +29837,25 @@ select.ui.dropdown {
 }
 
 @media only screen and (max-width: 767.98px) {
-  .ui.search.dropdown .menu {
+  .ui.search.dropdown:not(.unlimited) .menu {
     max-height: 8.01428571rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .ui.search.dropdown .menu {
+  .ui.search.dropdown:not(.unlimited) .menu {
     max-height: 10.68571429rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .ui.search.dropdown .menu {
+  .ui.search.dropdown:not(.unlimited) .menu {
     max-height: 16.02857143rem;
   }
 }
 
 @media only screen and (min-width: 1920px) {
-  .ui.search.dropdown .menu {
+  .ui.search.dropdown:not(.unlimited) .menu {
     max-height: 21.37142857rem;
   }
 }
@@ -29646,7 +30085,7 @@ select.ui.dropdown {
 /* Menu Item Hover */
 
 .ui.dropdown .menu > .item:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: #f2f2f2;
   color: rgba(0, 0, 0, 0.95);
   z-index: 13;
 }
@@ -29740,7 +30179,7 @@ select.ui.dropdown {
 
 .ui.dropdown.selected,
 .ui.dropdown .menu .selected.item {
-  background: rgba(0, 0, 0, 0.03);
+  background: #f7f7f7;
   color: rgba(0, 0, 0, 0.95);
 }
 
@@ -29959,6 +30398,13 @@ select.ui.dropdown {
   pointer-events: none;
 }
 
+.ui.disabled.dropdown > .remove.icon,
+.ui.read-only.dropdown > .remove.icon,
+.ui.disabled.dropdown > .label > .delete.icon,
+.ui.read-only.dropdown > .label > .delete.icon {
+  display: none;
+}
+
 /*******************************
            Variations
 *******************************/
@@ -30055,9 +30501,9 @@ select.ui.dropdown {
 
 /* Selection */
 
-.ui.ui.upward.selection.dropdown .menu {
-  border-top-width: 1px !important;
-  border-bottom-width: 0 !important;
+.ui.ui.upward.selection.dropdown:not(.pointing):not(.floating) .menu {
+  border-top-width: 1px;
+  border-bottom-width: 0;
   box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.08);
   border-radius: 0.28571429rem 0.28571429rem 0 0;
 }
@@ -30068,7 +30514,7 @@ select.ui.dropdown {
 
 /* Active Upward */
 
-.ui.active.upward.selection.dropdown {
+.ui.active.upward.selection.dropdown:not(.pointing):not(.floating) {
   border-radius: 0 0 0.28571429rem 0.28571429rem !important;
 }
 
@@ -30076,6 +30522,9 @@ select.ui.dropdown {
 
 .ui.upward.selection.dropdown.visible {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.ui.upward.selection.dropdown.visible:not(.pointing):not(.floating) {
   border-radius: 0 0 0.28571429rem 0.28571429rem !important;
 }
 
@@ -30085,7 +30534,7 @@ select.ui.dropdown {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05);
 }
 
-.ui.upward.active.selection.dropdown:hover .menu {
+.ui.upward.active.selection.dropdown:hover:not(.pointing):not(.floating) .menu {
   box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -30116,8 +30565,8 @@ select.ui.dropdown {
   border-top: 1px solid rgba(34, 36, 38, 0.15);
 }
 
-.ui.scrolling.dropdown .menu .item.item.item,
-.ui.dropdown .scrolling.menu > .item.item.item {
+.ui.ui.ui.scrolling.dropdown .menu .item,
+.ui.ui.ui.dropdown .scrolling.menu > .item {
   border-top: none;
 }
 
@@ -30145,12 +30594,22 @@ select.ui.dropdown {
   .ui.dropdown .scrolling.menu {
     max-height: 10.28571429rem;
   }
+
+  .ui.scrolling.resizable.dropdown .menu,
+  .ui.dropdown .scrolling.resizable.menu {
+    height: 10.28571429rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .ui.scrolling.dropdown .menu,
   .ui.dropdown .scrolling.menu {
     max-height: 15.42857143rem;
+  }
+
+  .ui.scrolling.resizable.dropdown .menu,
+  .ui.dropdown .scrolling.resizable.menu {
+    height: 15.42857143rem;
   }
 }
 
@@ -30159,6 +30618,11 @@ select.ui.dropdown {
   .ui.dropdown .scrolling.menu {
     max-height: 20.57142857rem;
   }
+
+  .ui.scrolling.resizable.dropdown .menu,
+  .ui.dropdown .scrolling.resizable.menu {
+    height: 20.57142857rem;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -30166,6 +30630,17 @@ select.ui.dropdown {
   .ui.dropdown .scrolling.menu {
     max-height: 20.57142857rem;
   }
+
+  .ui.scrolling.resizable.dropdown .menu,
+  .ui.dropdown .scrolling.resizable.menu {
+    height: 20.57142857rem;
+  }
+}
+
+.ui.scrolling.resizable.dropdown .menu,
+.ui.dropdown .scrolling.resizable.menu {
+  resize: vertical;
+  max-height: none;
 }
 
 /* --------------------
@@ -30376,6 +30851,22 @@ select.ui.dropdown {
   z-index: 2;
 }
 
+@supports selector(:has(.f)) {
+  .ui.pointing.dropdown:not(.upward) .menu:has(:first-child:hover)::after,
+  .ui.upward.pointing.dropdown .menu:has(:last-child:hover)::after {
+    background: #f2f2f2;
+  }
+
+  .ui.pointing.dropdown:not(.upward) .menu:has(.selected.item:first-child)::after,
+  .ui.upward.pointing.dropdown .menu:has(.selected.item:last-child)::after {
+    background: #f7f7f7;
+  }
+}
+
+.ui.selection.pointing.dropdown > .menu::after {
+  box-shadow: -1px -1px 0 0 #96C8DA;
+}
+
 .ui.pointing.dropdown > .menu:not(.hidden)::after {
   top: -0.25em;
   left: 50%;
@@ -30541,6 +31032,10 @@ select.ui.dropdown {
   margin: -0.25em 0 0;
 }
 
+.ui.selection.pointing.upward.dropdown .menu::after {
+  box-shadow: 1px 1px 0 0 #96C8DA;
+}
+
 /* Right Pointing Upward */
 
 .ui.right.pointing.upward.dropdown:not(.top):not(.bottom) .menu {
@@ -30569,6 +31064,18 @@ select.ui.dropdown {
   bottom: 0 !important;
   margin: 0 0 1em 0;
   box-shadow: -1px -1px 0 0 rgba(34, 36, 38, 0.15);
+}
+
+.ui.floating.dropdown .menu .item:first-child,
+.ui.pointing.dropdown .menu .item:first-child {
+  border-top-left-radius: 0.28571429rem;
+  border-top-right-radius: 0.28571429rem;
+}
+
+.ui.floating.dropdown .menu .item:last-child,
+.ui.pointing.dropdown .menu .item:last-child {
+  border-bottom-left-radius: 0.28571429rem;
+  border-bottom-right-radius: 0.28571429rem;
 }
 
 /* --------------------
@@ -30642,14 +31149,14 @@ select.ui.dropdown {
 
 .ui.dropdown .inverted.menu > .item:hover,
 .ui.inverted.dropdown .menu > .item:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: #2d2e2f;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .ui.inverted.dropdown.selected,
 .ui.dropdown .inverted.menu .selected.item,
 .ui.inverted.dropdown .menu .selected.item {
-  background: rgba(255, 255, 255, 0.15);
+  background: #3d3e3f;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -30813,6 +31320,22 @@ select.ui.dropdown {
   box-shadow: -1px -1px 0 0 rgba(255, 255, 255, 0.15);
 }
 
+.ui.inverted.upward.pointing.dropdown > .menu::after {
+  box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.15);
+}
+
+@supports selector(:has(.f)) {
+  .ui.inverted.pointing.dropdown:not(.upward) .menu:has(:first-child:hover)::after,
+  .ui.inverted.upward.pointing.dropdown .menu:has(:last-child:hover)::after {
+    background: #2d2e2f;
+  }
+
+  .ui.inverted.pointing.dropdown:not(.upward) .menu:has(.selected.item:first-child)::after,
+  .ui.inverted.upward.pointing.dropdown .menu:has(.selected.item:last-child)::after {
+    background: #3d3e3f;
+  }
+}
+
 /*******************************
          Theme Overrides
 *******************************/
@@ -30892,7 +31415,7 @@ select.ui.dropdown {
         User Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Embed
+ * # Fomantic-UI 2.9.3 - Embed
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -31060,7 +31583,7 @@ select.ui.dropdown {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Popup
+ * # Fomantic-UI 2.9.3 - Popup
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -31079,7 +31602,6 @@ select.ui.dropdown {
   top: 0;
   right: 0;
   /* Fixes content being squished when inline (moz only) */
-  min-width: -webkit-min-content;
   min-width: min-content;
   z-index: 1900;
   border: 1px solid #d4d4d5;
@@ -32015,7 +32537,7 @@ select.ui.dropdown {
         User Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Rating
+ * # Fomantic-UI 2.9.3 - Rating
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -32221,7 +32743,7 @@ select.ui.dropdown {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Sidebar
+ * # Fomantic-UI 2.9.3 - Sidebar
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -32837,7 +33359,7 @@ body.pushable > .pusher {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Sticky
+ * # Fomantic-UI 2.9.3 - Sticky
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -32906,7 +33428,7 @@ body.pushable > .pusher {
          Site Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Tab
+ * # Fomantic-UI 2.9.3 - Tab
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -32961,6 +33483,16 @@ body.pushable > .pusher {
   color: rgba(0, 0, 0, 0.87);
 }
 
+.ui.tabular.menu.pointing.secondary > .item:not(.active),
+.ui.tabbed.menu.pointing.secondary > .item:not(.active) {
+  opacity: 0.6;
+}
+
+.ui.tabular.menu.pointing.secondary > .item:not(.active):hover,
+.ui.tabbed.menu.pointing.secondary > .item:not(.active):hover {
+  opacity: 0.8;
+}
+
 .ui.tabular.menu > .pointing.segment:not(.active):before,
 .ui.tabbed.menu > .pointing.segment:not(.active):before,
 .ui.tabular.menu > .pointing.segment:not(.active):after,
@@ -32999,7 +33531,7 @@ body.pushable > .pusher {
         User Overrides
 *******************************/
 /*!
- * # Fomantic-UI 2.9.3-beta.11+980ea5e - Transition
+ * # Fomantic-UI 2.9.3 - Transition
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
