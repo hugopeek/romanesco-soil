@@ -1,0 +1,4 @@
+key: romanesco.critical_css_path
+value: assets/css/critical
+namespace: romanesco
+area: Paths
