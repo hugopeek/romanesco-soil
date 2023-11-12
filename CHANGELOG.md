@@ -3,10 +3,25 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.6.1
+Released on ...
+
+> Patterns: 1.0.0-beta13  
+> Backyard: 1.0.0-beta17
+
+- Exclude additional components from main dist files
+  - Checkbox
+  - Dropdown
+  - Embed
+  - Popup
+  - Rating
+  - Tab
+  - Feed
+
 ## Romanesco Soil v2.6.0
 Released on October 8, 2023
 
-> Patterns: 1.0.0-beta13
+> Patterns: 1.0.0-beta13  
 > Backyard: 1.0.0-beta16
 
 - Add media sources for Videos and Notes
@@ -18,7 +33,7 @@ Released on October 8, 2023
 ## Romanesco Soil v2.5.4
 Released on April 8, 2023
 
-> Patterns: 1.0.0-beta12
+> Patterns: 1.0.0-beta12  
 > Backyard: 1.0.0-beta15
 
 - Update Fomantic UI to 2.9.3 nightly
@@ -30,7 +45,7 @@ Released on April 8, 2023
 ## Romanesco Soil v2.5.3
 Released on October 28, 2022
 
-> Patterns: 1.0.0-beta10
+> Patterns: 1.0.0-beta10  
 > Backyard: 1.0.0-beta10
 
 - Remove CDN urls for Leaflet assets
@@ -39,7 +54,7 @@ Released on October 28, 2022
 ## Romanesco Soil v2.5.2
 Released on May 26, 2022
 
-> Patterns: 1.0.0-beta9
+> Patterns: 1.0.0-beta9  
 > Backyard: 1.0.0-beta9
 
 - Remove system settings for Twitter keys
@@ -49,7 +64,7 @@ Released on May 26, 2022
 ## Romanesco Soil v2.5.1
 Released on November 19, 2021
 
-> Patterns: 1.0.0-beta8
+> Patterns: 1.0.0-beta8  
 > Backyard: 1.0.0-beta8
 
 - Set default media source for ContentBlocks one level higher
@@ -59,7 +74,7 @@ Released on November 19, 2021
 ## Romanesco Soil v2.5.0
 Released on October 21, 2021
 
-> Patterns: 1.0.0-beta7
+> Patterns: 1.0.0-beta7  
 > Backyard: 1.0.0-beta7
 
 - Update Fomantic UI to 2.8.8
@@ -75,7 +90,7 @@ Released on October 21, 2021
 ## Romanesco Soil v2.4.5
 Released on August 30, 2021
 
-> Patterns: 1.0.0-beta6
+> Patterns: 1.0.0-beta6  
 > Backyard: 1.0.0-beta6
 
 - Load default Google font with new v2 syntax
@@ -86,7 +101,7 @@ Released on August 30, 2021
 ## Romanesco Soil v2.4.4
 Released on June 10, 2021
 
-> Patterns: 1.0.0-beta5
+> Patterns: 1.0.0-beta5  
 > Backyard: 1.0.0-beta5
 
 - Update MODX to 2.8.3-pl
@@ -96,7 +111,7 @@ Released on June 10, 2021
 ## Romanesco Soil v2.4.3
 Released on April 19, 2021
 
-> Patterns: 1.0.0-beta4
+> Patterns: 1.0.0-beta4  
 > Backyard: 1.0.0-beta4
 
 - Better description for custom cache setting
@@ -107,7 +122,7 @@ Released on April 19, 2021
 ## Romanesco Soil v2.4.2
 Released on February 20, 2021
 
-> Patterns: 1.0.0-beta3
+> Patterns: 1.0.0-beta3  
 > Backyard: 1.0.0-beta3
 
 - Rename content_types folder to content_type in defaults data
@@ -118,7 +133,7 @@ Released on February 20, 2021
 ## Romanesco Soil v2.4.1
 Released on November 3, 2020
 
-> Patterns: 1.0.0-beta2
+> Patterns: 1.0.0-beta2  
 > Backyard: 1.0.0-beta2
 
 - Use Matomo by inserting full tracking code directly
@@ -129,7 +144,7 @@ Released on November 3, 2020
 ## Romanesco Soil v2.4.0
 Released on August 27, 2020
 
-> Patterns: 1.0.0-beta1
+> Patterns: 1.0.0-beta1  
 > Backyard: 1.0.0-beta1
 
 - Add configuration setting to switch critical CSS on or off
@@ -140,7 +155,7 @@ Released on August 27, 2020
 ## Romanesco Soil v2.3.2
 Released on July 1, 2020
 
-> Patterns: 0.16.4-pl
+> Patterns: 0.16.4-pl  
 > Backyard: 0.11.4-pl
 
 - Un-deprecate (yes!) favicon configuration settings
@@ -150,7 +165,7 @@ Released on July 1, 2020
 ## Romanesco Soil v2.3.1
 Released on June 15, 2020
 
-> Patterns: 0.16.3-pl
+> Patterns: 0.16.3-pl  
 > Backyard: 0.11.3-pl
 
 - Update default styling
@@ -163,7 +178,7 @@ Released on June 15, 2020
 ## Romanesco Soil v2.3.0
 Released on April 27, 2020
 
-> Patterns: 0.16.2-pl
+> Patterns: 0.16.2-pl  
 > Backyard: 0.11.1-pl
 
 - Update MODX to v2.7.3
@@ -172,7 +187,7 @@ Released on April 27, 2020
 ## Romanesco Soil v2.3.0-rc1
 Released on March 30, 2020
 
-> Patterns: 0.16.0-pl
+> Patterns: 0.16.0-pl  
 > Backyard: 0.11.0-pl
 
 - Generate step component CSS for manager preview
@@ -193,7 +208,7 @@ submitted as PR here: https://github.com/fomantic/Fomantic-UI/pull/1385
 ## Romanesco Soil v2.2.0
 Released on March 7, 2020
 
-> Patterns: 0.15.2-pl
+> Patterns: 0.15.2-pl  
 > Backyard: 0.10.2-pl
 
 - Move media sources to defaults
@@ -201,7 +216,7 @@ Released on March 7, 2020
 ## Romanesco Soil v2.1.1
 Released on January 29, 2020
 
-> Patterns: 0.15.1-pl
+> Patterns: 0.15.1-pl  
 > Backyard: 0.10.2-pl
 
 - Switch to SwiperJS in assets build process
@@ -209,7 +224,7 @@ Released on January 29, 2020
 ## Romanesco Soil v2.1.0
 Released on January 14, 2020
 
-> Patterns: 0.15.0-pl
+> Patterns: 0.15.0-pl  
 > Backyard: 0.10.2-pl
 
 - Improve Semantic UI build process and minify custom CSS/JS
@@ -218,7 +233,7 @@ Released on January 14, 2020
 ## Romanesco Soil v2.0.0
 Released on November 19, 2019
 
-> Patterns: 0.14.6-pl
+> Patterns: 0.14.6-pl  
 > Backyard: 0.10.0-pl
 
 - Upgrade MODX to 2.7.2
@@ -226,7 +241,7 @@ Released on November 19, 2019
 ## Romanesco Soil v2.0.0-rc2
 Released on October 10, 2019
 
-> Patterns: 0.14.4-pl
+> Patterns: 0.14.4-pl  
 > Backyard: 0.9.2-pl
 
 - Create separate folder for static elements
@@ -236,7 +251,7 @@ Released on October 10, 2019
 ## Romanesco Soil v2.0.0-rc1
 Released on April 15, 2019
 
-> Patterns: 0.14.2-pl
+> Patterns: 0.14.2-pl  
 > Backyard: 0.9.1-pl
 
 - Upgrade MODX to 2.7.1
@@ -249,7 +264,7 @@ Released on April 15, 2019
 ## Romanesco Soil v1.4.1
 Released on February 11, 2019
 
-> Patterns: 0.14.1-pl
+> Patterns: 0.14.1-pl  
 > Backyard: 0.9.1-pl
 
 - Add navbar_level setting under Configuration
@@ -260,7 +275,7 @@ Released on February 11, 2019
 ## Romanesco Soil v1.4.0
 Released on November 15, 2018
 
-> Patterns: 0.13.0-pl
+> Patterns: 0.13.0-pl  
 > Backyard: 0.7.0-pl
 
 - Add Content Purpose tab to resources
@@ -274,7 +289,7 @@ Released on November 15, 2018
 ## Romanesco Soil v1.3.2
 Released on October 4, 2018
 
-> Patterns: 0.12.3-pl
+> Patterns: 0.12.3-pl  
 > Backyard: 0.6.0-pl
 
 - Create Content category under Configuration
@@ -286,7 +301,7 @@ Released on October 4, 2018
 ## Romanesco Soil v1.3.1
 Released on September 18, 2018
 
-> Patterns: 0.12.2-pl
+> Patterns: 0.12.2-pl  
 > Backyard: 0.6.0-pl
 
 - Update Semantic UI to 2.4.0
@@ -294,7 +309,7 @@ Released on September 18, 2018
 ## Romanesco Soil v1.3.0
 Released on July 27, 2018
 
-> Patterns: 0.12.1-pl
+> Patterns: 0.12.1-pl  
 > Backyard: 0.6.0-pl
 
 - Add field for client address under Configuration
@@ -307,7 +322,7 @@ Released on July 27, 2018
 ## Romanesco Soil v1.2.0
 Released on June 6, 2018
 
-> Patterns: 0.12.0-pl
+> Patterns: 0.12.0-pl  
 > Backyard: 0.5.1-pl
 
 - Use SUI theme override for comments
@@ -315,7 +330,7 @@ Released on June 6, 2018
 ## Romanesco Soil v1.1.0
 Released on January 16, 2018
 
-> Patterns: 0.11.3-pl
+> Patterns: 0.11.3-pl  
 > Backyard: 0.5.1-pl
 
 - Add settings to change styling theme
@@ -329,7 +344,7 @@ NB: this version requires ClientConfig 2.0.0-rc1 or higher to function as intend
 ## Romanesco Soil v1.0.0
 Released on August 15, 2017
 
-> Patterns: 0.11.1-pl
+> Patterns: 0.11.1-pl  
 > Backyard: 0.4.0-pl
 
 - Move core elements to different repository
@@ -345,7 +360,7 @@ because they only need to be set once on installation. Same for SUI theme.
 ## Romanesco Soil v0.3.1
 Released on July 25, 2017
 
-> Patterns: 0.11.1-pl
+> Patterns: 0.11.1-pl  
 > Backyard: 0.4.0-pl
 
 - Add ability to use SVGs as global backgrounds
@@ -363,7 +378,7 @@ Released on July 25, 2017
 ## Romanesco Soil v0.3.0
 Released on April 20, 2017
 
-> Patterns: 0.11.0-pl
+> Patterns: 0.11.0-pl  
 > Backyard: 0.3.2-pl
 
 - Add layout + field for wrapping content in SUI segments
