@@ -1,0 +1,8 @@
+id: 100
+key: qredits_link
+label: 'Credits link'
+xtype: textfield
+description: 'This overrides the default link, pointing to https://romanesco.info.'
+sortorder: 92
+group: 9
+options: On==1||Off==0

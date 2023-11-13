@@ -1,0 +1,9 @@
+id: 99
+key: qredits_img
+label: 'Credits image / icon'
+xtype: modx-panel-tv-image
+description: 'This overrides the default Romanesco logo.'
+sortorder: 99
+group: 9
+options: On==1||Off==0
+source: 4

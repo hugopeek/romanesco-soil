@@ -1,7 +1,7 @@
 id: 83
-key: qredits_text
-label: 'Text in credits popup'
-xtype: richtext
+key: qredits_title
+label: 'Credits title'
+xtype: textfield
 description: 'This overrides the default text retrieved from lexicon.'
 sortorder: 91
 group: 9
