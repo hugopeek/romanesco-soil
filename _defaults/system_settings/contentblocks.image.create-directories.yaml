@@ -1,0 +1,4 @@
+key: contentblocks.image.create_directories
+xtype: modx-combo-boolean
+namespace: contentblocks
+area: 'Input: Image'
