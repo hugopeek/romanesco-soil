@@ -9,26 +9,63 @@ $(function() {
     $('.ui.accordion').accordion({
         animateChildren: false
     });
-    $('.ui.dropdown:not(.simple):not(.multiple):not(.with.other)').dropdown({
-        fullTextSearch: true
-    });
-    $('.with.tooltip').popup();
-    $('.with.tooltip.onclick')
-        .popup({
+
+    let $dropdown = $('.ui.dropdown:not(.simple):not(.multiple):not(.with.other)');
+    if ($dropdown.length) {
+        $dropdown.dropdown({
+            fullTextSearch: true
+        });
+    }
+
+    let $tooltip = $('.with.tooltip');
+    if ($tooltip.length) {
+        $tooltip.popup();
+    }
+
+    let $tooltipOnClick = $('.with.tooltip.onclick');
+    if ($tooltipOnClick.length) {
+        $tooltipOnClick.popup({
             on: 'click',
             onShow: function () {
                 lazyLoadInstance.update();
             }
-        })
-    ;
-    $('.ui.tabular.menu:not(#submenu) .item').tab();
-    $('.ui.tabbed.menu:not(#submenu) .item').tab();
+        });
+    }
 
-    $('.ui.checkbox:not(.other):not(.collapsible):not(.slave)').checkbox();
-    $('.ui.radio.checkbox:not(.other):not(.collapsible):not(.slave)').checkbox();
+    let $tabbedMenu = $('.ui.tabbed.menu:not(#submenu) .item');
+    let $tabularMenu = $('.ui.tabular.menu:not(#submenu) .item');
+    if ($tabbedMenu.length) {
+        $tabbedMenu.tab();
+    }
+    if ($tabularMenu.length) {
+        $tabularMenu.tab();
+    }
 
-    $('.ui.video.embed').embed();
-    $('.ui.rating').rating('disable');
+    let $checkbox = $('.ui.checkbox:not(.other):not(.collapsible):not(.slave)');
+    let $radio = $('.ui.radio.checkbox:not(.other):not(.collapsible):not(.slave)');
+    if ($checkbox.length) {
+        $checkbox.checkbox();
+    }
+    if ($radio.length) {
+        $radio.checkbox();
+    }
+
+    let $dimmer = $('.ui.dimmable');
+    if ($dimmer.length) {
+        $dimmer.dimmer({
+            on: 'hover'
+        });
+    }
+
+    let $embed = $('.ui.video.embed:not(.consent)');
+    if ($embed.length) {
+        $embed.embed();
+    }
+
+    let $rating = $('.ui.rating');
+    if ($rating.length) {
+        $rating.rating('disable');
+    }
 });
 
 // Sticky navbar behaviour
@@ -125,18 +162,18 @@ $(function() {
         // 2-level submenu
         navContainer
             .find('.two.level.item')
-            .removeClass('simple')
+            //.removeClass('simple')
             .hover(function() {
-                $(this).popup('hide all');
+                //$(this).popup('hide all');
             })
-            .dropdown({
-                on: 'hover',
-                duration: 0,
-                delay: {
-                    show: 0,
-                    hide: 300
-                }
-            })
+        // .dropdown({
+        //     on: 'hover',
+        //     duration: 0,
+        //     delay: {
+        //         show: 0,
+        //         hide: 300
+        //     }
+        // })
         ;
 
         // Set active class with JS, to avoid flash of dropdown menu on load
@@ -369,6 +406,20 @@ $("#form-login .submit").click(function() {
     $("#form-login").submit();
 });
 
+// Make simple dropdowns work on touch
+//https://stackoverflow.com/questions/152975/how-do-i-detect-a-click-outside-an-element/3028037#3028037
+if(window.matchMedia("(pointer: coarse)").matches) {
+    $('.ui.simple.dropdown').on('click', function() {
+        $(this).addClass('active');
+    });
+    $(document).click(function(event) {
+        var $target = $(event.target);
+        if(!$target.closest('.ui.simple.dropdown.active').length &&
+            $('.ui.simple.dropdown > .menu').is(":visible")) {
+            $('.ui.simple.dropdown').removeClass('active');
+        }
+    });
+}
 
 // Lazy load images
 // https://github.com/verlok/lazyload
@@ -417,9 +468,9 @@ function tabToAccordion() {
     $('.reducible.tabular.menu > .item, .reducible.tabbed.menu > .item')
         .removeClass('item')
         .addClass('reduced title')
-        .tab({
-            deactivate: 'all'
-        })
+    // .tab({
+    //     deactivate: 'all'
+    // })
     ;
     $('.reducible.tabular.menu, .reducible.tabbed.menu')
         .removeClass('tabular menu')
@@ -441,7 +492,10 @@ $(document).on('pdopage_load', function(e, config, response) {
     //console.log(config.wrapper);
 
     // Ratings
-    $('.ui.rating').rating('disable');
+    let $rating = $('.ui.rating');
+    if ($rating.length) {
+        $rating.rating('disable');
+    }
 
     // Lazy loading images
     lazyLoadInstance.update();
@@ -525,8 +579,8 @@ var queries = [
             ;
 
             // Attach JS again
-            $('.ui.reducible.tabular.menu .item').tab();
-            $('.ui.reducible.tabbed.menu .item').tab();
+            //$('.ui.reducible.tabular.menu .item').tab();
+            //$('.ui.reducible.tabbed.menu .item').tab();
 
             // Restore position of segment pointer
             $('.testimonial .column > .down.pointing.segment')

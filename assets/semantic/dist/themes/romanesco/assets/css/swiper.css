@@ -450,11 +450,17 @@
 
 /* Button */
 
+/* Icon */
+
+/* Input */
+
 /* Label */
 
 /* Segment */
 
 /* Dimmer */
+
+/* Sidebar */
 
 /* Tab */
 
@@ -463,6 +469,22 @@
 /*-------------------
        Fonts
 --------------------*/
+
+/* The default font, Lato, can be imported directly from the assets folder. If
+    you set a different name, you're responsible for loading it some other way.
+   You can also choose not to load anything, and hope the font is installed
+    locally on the visitors computer. If not, then the fallback fonts kick in.
+   And please note: these settings are ignored if you define a font in the
+    Configuration > Presentation settings in MODX.
+ */
+
+/* Use system fonts by default */
+
+/* The default, false, means you're loading the font via direct link in HEAD, or
+    that you're relying on a system font.
+   Comment out this setting if you want to load the default Lato font.
+   Set to true if you want to load the fonts below.
+*/
 
 /* Google fonts are loaded via direct link in HEAD */
 
@@ -660,8 +682,6 @@
 /*******************************
             Image
 *******************************/
-
-/* Use same value as in site.variables */
 
 /* Custom raised variant */
 
