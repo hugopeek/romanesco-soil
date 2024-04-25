@@ -4,11 +4,13 @@ These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
 ## Romanesco Soil v2.6.1
-Released on ...
+Released on April 25, 2024
 
-> Patterns: 1.0.0-beta13  
-> Backyard: 1.0.0-beta17
+> Patterns: 1.0.0-beta14  
+> Backyard: 1.0.0-beta19
 
+- Upgrade MODX to 2.8.7-pl
+- Replace qredits popup in footer with direct link
 - Exclude additional components from main dist files
   - Checkbox
   - Dropdown

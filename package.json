@@ -1,6 +1,6 @@
 {
   "name": "romanesco",
-  "version": "2.6.0",
+  "version": "2.6.1",
   "dependencies": {
     "fomantic-ui": "^2.9.3",
     "gulp": "^4.0.2",

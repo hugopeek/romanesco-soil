@@ -1,0 +1,4 @@
+key: package_installer_at_top
+value: '1'
+xtype: combo-boolean
+area: manager
