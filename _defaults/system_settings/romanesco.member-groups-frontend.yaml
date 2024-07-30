@@ -1,4 +1,4 @@
 key: romanesco.member_groups_frontend
-value: Administrator
+value: 'Content Editor'
 namespace: romanesco
 area: Users

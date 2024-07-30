@@ -1,5 +1,0 @@
-key: romanesco.member_groups
-value: '0'
-xtype: combo-boolean
-namespace: romanesco
-area: Users
