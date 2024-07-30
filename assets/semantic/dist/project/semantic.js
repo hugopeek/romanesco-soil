@@ -1,5 +1,5 @@
 /*
- * # Fomantic UI - 2.9.3
+ * # Fomantic UI - 2.9.4-beta.60+c48cd9d
  * https://github.com/fomantic/Fomantic-UI
  * https://fomantic-ui.com/
  *
@@ -9,7 +9,7 @@
  *
  */
 /*!
- * # Fomantic-UI 2.9.3 - Site
+ * # Fomantic-UI 2.9.4-beta.60+c48cd9d - Site
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -302,7 +302,9 @@
                         });
                     }
                     clearTimeout(module.performance.timer);
-                    module.performance.timer = setTimeout(function () { module.performance.display(); }, 500);
+                    module.performance.timer = setTimeout(function () {
+                        module.performance.display();
+                    }, 500);
                 },
                 display: function () {
                     var
@@ -463,7 +465,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.3 - Accordion
+ * # Fomantic-UI 2.9.4-beta.60+c48cd9d - Accordion
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -902,7 +904,9 @@
                             });
                         }
                         clearTimeout(module.performance.timer);
-                        module.performance.timer = setTimeout(function () { module.performance.display(); }, 500);
+                        module.performance.timer = setTimeout(function () {
+                            module.performance.display();
+                        }, 500);
                     },
                     display: function () {
                         var
@@ -1057,7 +1061,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.3 - Sidebar
+ * # Fomantic-UI 2.9.4-beta.60+c48cd9d - Sidebar
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -1929,7 +1933,9 @@
                             });
                         }
                         clearTimeout(module.performance.timer);
-                        module.performance.timer = setTimeout(function () { module.performance.display(); }, 500);
+                        module.performance.timer = setTimeout(function () {
+                            module.performance.display();
+                        }, 500);
                     },
                     display: function () {
                         var
@@ -2110,7 +2116,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.3 - Sticky
+ * # Fomantic-UI 2.9.4-beta.60+c48cd9d - Sticky
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -2857,7 +2863,9 @@
                             });
                         }
                         clearTimeout(module.performance.timer);
-                        module.performance.timer = setTimeout(function () { module.performance.display(); }, 0);
+                        module.performance.timer = setTimeout(function () {
+                            module.performance.display();
+                        }, 0);
                     },
                     display: function () {
                         var
@@ -3026,7 +3034,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.3 - Transition
+ * # Fomantic-UI 2.9.4-beta.60+c48cd9d - Transition
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -3169,7 +3177,9 @@
                         ? ($allModules.length - index) * interval
                         : index * interval;
                     module.debug('Delaying animation by', delay);
-                    setTimeout(function () { module.animate(); }, delay);
+                    setTimeout(function () {
+                        module.animate();
+                    }, delay);
                 },
 
                 animate: function (overrideSettings) {
@@ -3876,7 +3886,9 @@
                             });
                         }
                         clearTimeout(module.performance.timer);
-                        module.performance.timer = setTimeout(function () { module.performance.display(); }, 500);
+                        module.performance.timer = setTimeout(function () {
+                            module.performance.display();
+                        }, 500);
                     },
                     display: function () {
                         var
@@ -4057,7 +4069,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.3 - Visibility
+ * # Fomantic-UI 2.9.4-beta.60+c48cd9d - Visibility
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -5146,7 +5158,9 @@
                             });
                         }
                         clearTimeout(module.performance.timer);
-                        module.performance.timer = setTimeout(function () { module.performance.display(); }, 500);
+                        module.performance.timer = setTimeout(function () {
+                            module.performance.display();
+                        }, 500);
                     },
                     display: function () {
                         var
