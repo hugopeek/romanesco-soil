@@ -18510,7 +18510,10 @@ span.ui.massive.text {
 .ui.nested.grid.celled {
   margin-top: 0;
   border-radius: 0.46228571rem;
-  overflow: hidden;
+}
+
+.ui.nested.grid.celled > .row:first-child {
+  box-shadow: none;
 }
 
 * + .ui.nested.grid,
