@@ -1,0 +1,5 @@
+key: romanesco.set_user_access_level
+value: '0'
+xtype: combo-boolean
+namespace: romanesco
+area: Users
