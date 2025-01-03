@@ -1,15 +1,15 @@
 /*
- * # Fomantic UI - 2.9.4-beta.60+c48cd9d
+ * # Fomantic UI - 2.9.4-beta.94+1ecfaf3
  * https://github.com/fomantic/Fomantic-UI
  * https://fomantic-ui.com/
  *
- * Copyright 2024 Contributors
+ * Copyright 2025 Contributors
  * Released under the MIT license
  * https://opensource.org/licenses/MIT
  *
  */
 /*!
- * # Fomantic-UI 2.9.4-beta.60+c48cd9d - Site
+ * # Fomantic-UI 2.9.4-beta.94+1ecfaf3 - Site
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -465,7 +465,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.4-beta.60+c48cd9d - Accordion
+ * # Fomantic-UI 2.9.4-beta.94+1ecfaf3 - Accordion
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -1061,7 +1061,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.4-beta.60+c48cd9d - Sidebar
+ * # Fomantic-UI 2.9.4-beta.94+1ecfaf3 - Sidebar
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -2116,7 +2116,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.4-beta.60+c48cd9d - Sticky
+ * # Fomantic-UI 2.9.4-beta.94+1ecfaf3 - Sticky
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -3034,7 +3034,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.4-beta.60+c48cd9d - Transition
+ * # Fomantic-UI 2.9.4-beta.94+1ecfaf3 - Transition
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -4069,7 +4069,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.4-beta.60+c48cd9d - Visibility
+ * # Fomantic-UI 2.9.4-beta.94+1ecfaf3 - Visibility
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
