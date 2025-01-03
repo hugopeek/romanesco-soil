@@ -3,6 +3,14 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.6.2
+Released on January 3, 2025
+
+> Patterns: 1.0.0-beta16  
+> Backyard: 1.0.0-beta21
+
+- Upgrade MODX to 2.8.8-pl
+
 ## Romanesco Soil v2.6.1
 Released on April 25, 2024
 

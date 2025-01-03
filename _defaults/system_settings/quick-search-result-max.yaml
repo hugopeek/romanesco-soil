@@ -1,0 +1,4 @@
+key: quick_search_result_max
+value: '10'
+xtype: numberfield
+area: manager

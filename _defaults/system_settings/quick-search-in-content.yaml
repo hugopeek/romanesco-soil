@@ -1,0 +1,4 @@
+key: quick_search_in_content
+value: '1'
+xtype: combo-boolean
+area: manager
