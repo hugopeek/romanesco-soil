@@ -9,6 +9,7 @@ Released on January 3, 2025
 > Patterns: 1.0.0-beta16  
 > Backyard: 1.0.0-beta21
 
+- Update FUI to latest nightly
 - Upgrade MODX to 2.8.8-pl
 
 ## Romanesco Soil v2.6.1
