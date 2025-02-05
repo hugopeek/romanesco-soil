@@ -9,6 +9,7 @@ Released on ...
 > Patterns: 1.0.0-beta16  
 > Backyard: 1.0.0-beta21
 
+- Remove SeoPro package
 - Disable Gravatar by default
 
 ## Romanesco Soil v2.6.2
