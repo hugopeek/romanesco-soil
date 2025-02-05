@@ -3,6 +3,14 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.6.3
+Released on ...
+
+> Patterns: 1.0.0-beta16  
+> Backyard: 1.0.0-beta21
+
+- Disable Gravatar by default
+
 ## Romanesco Soil v2.6.2
 Released on January 3, 2025
 

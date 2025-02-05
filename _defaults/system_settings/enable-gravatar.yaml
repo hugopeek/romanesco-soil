@@ -1,4 +1,4 @@
 key: enable_gravatar
-value: '1'
+value: '0'
 xtype: combo-boolean
 area: manager
