@@ -31,7 +31,14 @@ index.php
 /_operations/vendor/
 /_operations/config.sh
 
+!core/components/migx/model/migx/migx.class.php
+!core/components/migx/processors/mgr/default/update.php
+!core/components/migx/elements/tv/input/migxdivider.class.php
+!core/components/migx/elements/tv/divider.tpl
+!core/components/migx/templates/mgr/fields.tpl
+
 .extras.io.key
 .modmore.com.key
+.modstore.pro.key
 
 robots.txt

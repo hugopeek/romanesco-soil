@@ -9,6 +9,7 @@ Released on ...
 > Patterns: 1.0.0-beta16  
 > Backyard: 1.0.0-beta21
 
+- Apply MIGX customizations
 - Remove SeoPro package
 - Disable Gravatar by default
 
