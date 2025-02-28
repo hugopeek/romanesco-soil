@@ -1,0 +1,6 @@
+text: romanesco.menu.global_cta_title
+parent: romanesco.menu.global_content_title
+action: resource/update
+description: romanesco.menu.global_cta_description
+menuindex: 1
+params: '&id=32'

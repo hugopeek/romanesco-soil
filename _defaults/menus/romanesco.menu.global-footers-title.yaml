@@ -1,0 +1,6 @@
+text: romanesco.menu.global_footers_title
+parent: romanesco.menu.global_content_title
+action: resource/update
+description: romanesco.menu.global_footers_description
+menuindex: 2
+params: '&id=31'

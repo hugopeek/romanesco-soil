@@ -1,0 +1,5 @@
+text: romanesco.menu.global_backgrounds_title
+parent: romanesco.menu.global_content_title
+action: resource/update
+description: romanesco.menu.global_backgrounds_description
+params: '&id=33'

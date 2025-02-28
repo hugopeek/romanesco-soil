@@ -1,0 +1,6 @@
+text: romanesco.menu.global_forms_title
+parent: romanesco.menu.global_content_title
+action: resource/update
+description: romanesco.menu.global_forms_description
+menuindex: 3
+params: '&id=30'

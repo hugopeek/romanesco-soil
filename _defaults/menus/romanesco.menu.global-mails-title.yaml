@@ -1,0 +1,6 @@
+text: romanesco.menu.global_mails_title
+parent: romanesco.menu.global_content_title
+action: resource/update
+description: romanesco.menu.global_mails_description
+menuindex: 4
+params: '&id=40'
