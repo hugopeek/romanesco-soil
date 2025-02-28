@@ -2,6 +2,6 @@ id: 22
 key: social_facebook
 label: 'Facebook account'
 xtype: textfield
-description: 'Please fill in the complete URL (including http(s)://).'
+description: 'DEPRECATED! Please use the Social Connections grid under Manage > Project Data.'
 sortorder: 3
 group: 6

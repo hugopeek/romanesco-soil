@@ -2,6 +2,6 @@ id: 48
 key: social_github
 label: 'Github username'
 xtype: textfield
-description: 'Only fill in the account name (the part after https://github.com/).'
+description: 'DEPRECATED! Please use the Social Connections grid under Manage > Project Data.'
 sortorder: 20
 group: 6

@@ -1,0 +1,4 @@
+key: svgsanitizer.cache_expires
+value: '86400*365'
+namespace: svgsanitizer
+area: caching

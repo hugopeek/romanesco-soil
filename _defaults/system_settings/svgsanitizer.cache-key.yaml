@@ -1,0 +1,4 @@
+key: svgsanitizer.cache_key
+value: svgsanitizer
+namespace: svgsanitizer
+area: caching

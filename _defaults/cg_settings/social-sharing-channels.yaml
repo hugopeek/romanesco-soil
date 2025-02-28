@@ -2,7 +2,7 @@ id: 55
 key: social_sharing_channels
 label: 'Social sharing channels'
 xtype: textfield
-description: 'Which social media options do you want to include in situations where content can be shared? Enter a comma-separated list and make sure all options have a chunk for rendering the button.'
+description: 'DEPRECATED! Please use the Social Connections grid under Manage > Project Data.'
 sortorder: 40
 value: 'Facebook,Twitter,LinkedIn'
 group: 6
