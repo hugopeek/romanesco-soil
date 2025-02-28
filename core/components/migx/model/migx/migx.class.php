@@ -79,13 +79,6 @@ class Migx {
 
         $this->config = array_merge($defaultconfig, $config);
 
-        ///// !!! HACKERMAN ALERT !!! /////
-//        $corePath = $modx->getOption('earthbrain.core_path', null, $modx->getOption('core_path') . 'components/earthbrain/');
-//        $earthbrain = $modx->getService('earthbrain','EarthBrain',$corePath . 'model/earthbrain/', array('core_path' => $corePath));
-//
-//        $corePath = $modx->getOption('forestbrain.core_path', null, $modx->getOption('core_path') . 'components/forestbrain/');
-//        $forestbrain = $modx->getService('forestbrain','ForestBrain',$corePath . 'model/forestbrain/', array('core_path' => $corePath));
-
         /* load debugging settings */
         if ($this->modx->getOption('debug', $this->config, false)) {
             error_reporting(E_ALL);
