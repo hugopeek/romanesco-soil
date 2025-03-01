@@ -4,11 +4,12 @@ These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
 ## Romanesco Soil v2.6.3
-Released on ...
+Released on March 1, 2025
 
 > Patterns: 1.0.0-beta16  
-> Backyard: 1.0.0-beta21
+> Backyard: 1.0.0-beta22
 
+- Upgrade Fomantic UI to 2.9.4
 - Apply MIGX customizations
 - Remove SeoPro package
 - Disable Gravatar by default
