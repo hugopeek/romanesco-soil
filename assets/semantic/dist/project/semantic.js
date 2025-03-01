@@ -1,5 +1,5 @@
 /*
- * # Fomantic UI - 2.9.4-beta.94+1ecfaf3
+ * # Fomantic UI - 2.9.4
  * https://github.com/fomantic/Fomantic-UI
  * https://fomantic-ui.com/
  *
@@ -9,7 +9,7 @@
  *
  */
 /*!
- * # Fomantic-UI 2.9.4-beta.94+1ecfaf3 - Site
+ * # Fomantic-UI 2.9.4 - Site
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -465,7 +465,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.4-beta.94+1ecfaf3 - Accordion
+ * # Fomantic-UI 2.9.4 - Accordion
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -1061,7 +1061,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.4-beta.94+1ecfaf3 - Sidebar
+ * # Fomantic-UI 2.9.4 - Sidebar
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -2116,7 +2116,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.4-beta.94+1ecfaf3 - Sticky
+ * # Fomantic-UI 2.9.4 - Sticky
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -3034,7 +3034,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.4-beta.94+1ecfaf3 - Transition
+ * # Fomantic-UI 2.9.4 - Transition
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
@@ -4069,7 +4069,7 @@
 })(jQuery, window, document);
 
 /*!
- * # Fomantic-UI 2.9.4-beta.94+1ecfaf3 - Visibility
+ * # Fomantic-UI 2.9.4 - Visibility
  * https://github.com/fomantic/Fomantic-UI/
  *
  *
