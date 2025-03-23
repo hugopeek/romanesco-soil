@@ -1260,10 +1260,10 @@ blockquote footer,
   background: url("/assets/img/logo.svg") no-repeat left center !important;
   background-size: contain !important;
   text-indent: -9999rem;
-  width: 34.35915493vw;
+  width: 33.12676056vw;
   min-width: 11.9rem;
   max-width: 16.66rem;
-  height: 3.39414634rem;
+  height: 3.52041667rem;
 }
 
 .brand.logo.inverted {
@@ -1272,11 +1272,11 @@ blockquote footer,
 
 #menu.tightened .brand.logo {
   max-width: 11.9rem;
-  height: 2.42439024rem;
+  height: 2.51458333rem;
 }
 
 .brand.badge {
-  background: url("/assets/img/badge.svg") no-repeat left center !important;
+  background: url("/assets/img/badge.png") no-repeat left center !important;
   background-size: contain !important;
   height: 36px;
   width: 36px;
