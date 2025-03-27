@@ -1,0 +1,5 @@
+key: romanesco.structured_data
+value: '1'
+xtype: combo-boolean
+namespace: romanesco
+area: Meta
