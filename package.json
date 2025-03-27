@@ -2,9 +2,9 @@
   "name": "romanesco",
   "version": "2.6.3",
   "dependencies": {
+    "@realfavicongenerator/gulp-real-favicon": "^0.4.16",
     "fomantic-ui": "^2.9.4",
     "gulp": "^5.0.0",
-    "gulp-real-favicon": "^0.3.2",
     "yargs": "^17.7.2"
   }
 }

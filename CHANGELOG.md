@@ -3,6 +3,14 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
+## Romanesco Soil v2.6.4
+Released on ...
+
+> Patterns: 1.0.0-beta16  
+> Backyard: 1.0.0-beta23
+
+- Update gulp-real-favicon NPM package
+
 ## Romanesco Soil v2.6.3
 Released on March 1, 2025
 
