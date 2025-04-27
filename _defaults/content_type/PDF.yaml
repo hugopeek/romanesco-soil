@@ -3,5 +3,6 @@ name: PDF
 description: 'PDF file'
 mime_type: application/pdf
 file_extensions: .pdf
+icon: icon-pdf
 headers: null
 binary: 1

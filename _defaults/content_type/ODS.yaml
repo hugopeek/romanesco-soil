@@ -3,5 +3,6 @@ name: ODS
 description: 'OpenDocument spreadsheet document'
 mime_type: application/vnd.oasis.opendocument.spreadsheet
 file_extensions: .ods
+icon: ''
 headers: 'a:0:{}'
 binary: 1

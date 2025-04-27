@@ -3,4 +3,5 @@ name: MJML
 description: 'MJML newsletter'
 mime_type: text/plain
 file_extensions: .mjml
+icon: icon-envelope
 headers: 'a:0:{}'

@@ -1,4 +1,4 @@
-key: manager_js_cache_file_locking
+key: enable_template_picker_in_tree
 value: '1'
 xtype: combo-boolean
 area: manager

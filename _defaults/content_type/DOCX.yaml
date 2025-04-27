@@ -3,5 +3,6 @@ name: DOCX
 description: 'MS Word document'
 mime_type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
 file_extensions: .docx
+icon: icon-docx
 headers: 'a:0:{}'
 binary: 1

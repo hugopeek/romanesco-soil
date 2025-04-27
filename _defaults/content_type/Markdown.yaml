@@ -3,4 +3,5 @@ name: Markdown
 description: 'Markdown formatting'
 mime_type: text/x-markdown
 file_extensions: ''
+icon: icon-markdown
 headers: 'a:0:{}'
