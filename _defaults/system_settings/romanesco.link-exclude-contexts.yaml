@@ -1,0 +1,4 @@
+key: romanesco.link_exclude_contexts
+value: 'hub,global'
+namespace: romanesco
+area: Connection
