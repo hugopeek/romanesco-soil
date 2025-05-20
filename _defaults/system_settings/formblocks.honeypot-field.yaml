@@ -1,4 +1,4 @@
 key: formblocks.honeypot_field
 value: email-alt
-namespace: romanesco
+namespace: formblocks
 area: 'FormBlocks - Settings'

@@ -1,5 +1,5 @@
 key: formblocks.save_form
 value: '1'
 xtype: combo-boolean
-namespace: romanesco
+namespace: formblocks
 area: 'FormBlocks - Settings'

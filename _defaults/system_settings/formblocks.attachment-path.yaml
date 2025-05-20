@@ -1,4 +1,4 @@
 key: formblocks.attachment_path
 value: ../uploads/_forms/
-namespace: romanesco
+namespace: formblocks
 area: 'FormBlocks - Uploads'
