@@ -1,4 +1,4 @@
 key: contentblocks.accepted_resource_types
-value: 'modDocument,mgResource,Article,CollectionContainer,GridContainer,GoodNewsResourceContainer,GoodNewsResourceMailing,scCategoryResource,scProductResource,MODX\Revolution\modDocument,Articles\Model\Article,Collections\Model\CollectionContainer'
+value: 'modDocument,mgResource,Article,CollectionContainer,GridContainer,GoodNewsResourceContainer,GoodNewsResourceMailing,scCategoryResource,scProductResource,MODX\Revolution\modDocument,Articles\Model\Article,Collections\Model\CollectionContainer,Bitego\GoodNews\Model\GoodNewsResourceMailing,Bitego\GoodNews\Model\GoodNewsResourceContainer'
 namespace: contentblocks
 area: Core
