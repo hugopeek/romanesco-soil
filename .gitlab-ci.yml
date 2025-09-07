@@ -1,0 +1,6 @@
+# Scan repository for hidden secrets
+include:
+  - template: Jobs/Secret-Detection.gitlab-ci.yml
+secret_detection:
+  variables:
+    SECRET_DETECTION_HISTORIC_SCAN: "true"
