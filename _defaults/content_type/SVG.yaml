@@ -3,4 +3,5 @@ name: SVG
 description: 'SVG graphic'
 mime_type: image/svg+xml
 file_extensions: .svg
+icon: icon-svg
 headers: 'a:0:{}'

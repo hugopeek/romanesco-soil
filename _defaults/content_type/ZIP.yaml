@@ -3,5 +3,6 @@ name: ZIP
 description: 'ZIP archive'
 mime_type: application/zip
 file_extensions: .zip
+icon: icon-zip
 headers: 'a:0:{}'
 binary: 1

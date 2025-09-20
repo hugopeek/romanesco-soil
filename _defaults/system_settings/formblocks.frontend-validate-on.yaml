@@ -1,0 +1,5 @@
+key: formblocks.frontend_validate_on
+value: submit
+xtype: text
+namespace: formblocks
+area: 'FormBlocks - Settings'

@@ -1,3 +1,4 @@
 key: lock_ttl
 value: '360'
+xtype: numberfield
 area: system

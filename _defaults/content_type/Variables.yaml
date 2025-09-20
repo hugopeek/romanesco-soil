@@ -3,4 +3,5 @@ name: Variables
 description: 'LESS variables (for Semantic UI)'
 mime_type: text/plain
 file_extensions: .variables
+icon: icon-css
 headers: 'a:0:{}'

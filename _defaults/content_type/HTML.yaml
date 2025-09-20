@@ -3,4 +3,5 @@ name: HTML
 description: 'HTML content'
 mime_type: text/html
 file_extensions: ''
+icon: ''
 headers: null

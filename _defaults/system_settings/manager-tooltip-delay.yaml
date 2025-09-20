@@ -1,0 +1,4 @@
+key: manager_tooltip_delay
+value: '2300'
+xtype: numberfield
+area: manager

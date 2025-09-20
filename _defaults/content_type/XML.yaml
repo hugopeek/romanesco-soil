@@ -3,4 +3,5 @@ name: XML
 description: 'XML content'
 mime_type: application/xml
 file_extensions: .xml
+icon: icon-xml
 headers: null

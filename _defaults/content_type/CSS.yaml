@@ -3,4 +3,5 @@ name: CSS
 description: 'CSS markup'
 mime_type: text/css
 file_extensions: .css
+icon: icon-css
 headers: null

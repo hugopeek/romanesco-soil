@@ -3,4 +3,5 @@ name: Text
 description: 'Plain text content'
 mime_type: text/plain
 file_extensions: .txt
+icon: icon-txt
 headers: null

@@ -1,4 +1,4 @@
-key: use_browser
+key: upload_file_exists
 value: '1'
 xtype: combo-boolean
 area: file

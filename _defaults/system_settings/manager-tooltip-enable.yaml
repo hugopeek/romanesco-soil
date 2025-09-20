@@ -1,0 +1,4 @@
+key: manager_tooltip_enable
+value: '1'
+xtype: combo-boolean
+area: manager

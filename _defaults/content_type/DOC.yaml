@@ -3,5 +3,6 @@ name: DOC
 description: 'MS Word document (Office 2007 compatible)'
 mime_type: application/msword
 file_extensions: .doc
+icon: icon-doc
 headers: 'a:0:{}'
 binary: 1

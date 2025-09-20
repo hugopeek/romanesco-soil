@@ -3,5 +3,6 @@ name: XLSX
 description: 'MS Excel document'
 mime_type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 file_extensions: .xslx
+icon: icon-xlsx
 headers: 'a:0:{}'
 binary: 1

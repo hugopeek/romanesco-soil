@@ -3,4 +3,5 @@ name: CSV
 description: 'Comma-separated values'
 mime_type: text/csv
 file_extensions: .csv
+icon: icon-csv
 headers: 'a:0:{}'

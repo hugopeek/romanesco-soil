@@ -1,4 +1,4 @@
-key: allow_tv_eval
+key: upload_translit
 value: '1'
 xtype: combo-boolean
-area: system
+area: file

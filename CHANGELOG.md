@@ -3,12 +3,13 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
 
-## Romanesco Soil v2.6.4
+## Romanesco Soil v3.0.0
 Released on ...
 
 > Patterns: 1.0.0-beta16  
 > Backyard: 1.0.0-beta23
 
+- Upgrade to MODX 3.1.2-pl
 - Update gulp-real-favicon NPM package
 
 ## Romanesco Soil v2.6.3

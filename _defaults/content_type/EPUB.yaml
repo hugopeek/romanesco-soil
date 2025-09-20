@@ -3,5 +3,6 @@ name: EPUB
 description: 'Electronic publication'
 mime_type: application/epub+zip
 file_extensions: .epub
+icon: icon-book
 headers: 'a:0:{}'
 binary: 1

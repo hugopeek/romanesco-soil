@@ -1,5 +1,5 @@
 key: formblocks.sanitize_filenames
 value: '0'
 xtype: combo-boolean
-namespace: romanesco
+namespace: formblocks
 area: 'FormBlocks - Uploads'

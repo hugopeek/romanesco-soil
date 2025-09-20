@@ -3,4 +3,5 @@ name: JSON
 description: 'JSON data'
 mime_type: application/json
 file_extensions: .json
+icon: icon-json
 headers: null
