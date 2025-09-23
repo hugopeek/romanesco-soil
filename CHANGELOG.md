@@ -1,16 +1,17 @@
 # Changelog for the Romanesco Soil root installation
 
 These changes only affect new installations. For changes that are applied on
-every Romanesco update, check the data extract [changelog](_romanesco/CHANGELOG.md).
+every Romanesco update, check the [data extract changelog](https://github.com/hugopeek/romanesco-data/blob/master/CHANGELOG.md).
 
 ## Romanesco Soil v3.0.0
-Released on ...
+Released on September 23, 2025
 
-> Patterns: 1.0.0-beta16  
-> Backyard: 1.0.0-beta23
+> Extracts into [Romanesco Data v1.20.0](https://github.com/hugopeek/romanesco-data/releases/tag/v1.20.0)
 
-- Upgrade to MODX 3.1.2-pl
+- Scan repository for hidden secrets (Gitlab CI)
+- Add video and forms folders to uploads directory
 - Update gulp-real-favicon NPM package
+- **Upgrade to MODX 3.1.2-pl**
 
 ## Romanesco Soil v2.6.3
 Released on March 1, 2025
