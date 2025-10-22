@@ -2,5 +2,5 @@ text: clientconfig
 parent: topnav
 action: home
 icon: '<i class="icon icon-wrench"></i>'
-menuindex: 3
+menuindex: 4
 namespace: clientconfig
