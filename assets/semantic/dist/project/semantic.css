@@ -11742,7 +11742,7 @@ img.ui.bordered.image {
 
 .ui.image.lightbox:hover img,
 .ui.image.lightbox:focus img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .ui.image.video {
