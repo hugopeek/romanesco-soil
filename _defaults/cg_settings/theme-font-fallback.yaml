@@ -2,7 +2,7 @@ id: 42
 key: theme_font_fallback
 label: 'Fallback font'
 xtype: textfield
-description: 'Comma separated list of font(s) to use if the Google font can''t be loaded (or is not defined).'
+description: "Comma separated list of font(s) to use if the Google font can't be loaded (or is not defined)."
 sortorder: 42
-value: '''Helvetica Neue'', Arial, Helvetica, sans-serif'
+value: "'Helvetica Neue', Arial, Helvetica, sans-serif"
 group: 4

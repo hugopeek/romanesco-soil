@@ -2,6 +2,6 @@ id: 62
 key: analytics_tracking_code
 label: 'Analytics tracking code'
 xtype: code
-description: 'Directly insert the tracking snippet of your analytics platform of choice. If you''re using the ConsentFriend extra, this code will only be inserted after your visitor grants permission. Make sure it is inside <script> tags!'
+description: "Directly insert the tracking snippet of your analytics platform of choice. If you're using the ConsentFriend extra, this code will only be inserted after your visitor grants permission. Make sure it is inside <script> tags!"
 sortorder: 10
 group: 5

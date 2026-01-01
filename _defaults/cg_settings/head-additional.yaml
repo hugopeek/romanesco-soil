@@ -2,6 +2,6 @@ id: 4
 key: head_additional
 label: 'Additional HEAD code'
 xtype: code
-description: 'Add extra HTML lines to all pages, such as additional stylesheets or extra metadata. You don''t have to load any Analytics code yourself.'
+description: "Add extra HTML lines to all pages, such as additional stylesheets or extra metadata. You don't have to load any Analytics code yourself."
 sortorder: 10
 group: 3

@@ -2,7 +2,7 @@ id: 28
 key: img_hidpi
 label: 'Optimize images for HiDPI / Retina displays'
 xtype: modx-combo
-description: 'If set to ''yes'', the responsive image function will make sure that there''s always an image available at double its original resolution. This way, images and graphics will always look crisp on devices with a higher pixel ratio, but it also means longer loading times on these devices.'
+description: "If set to 'yes', the responsive image function will make sure that there's always an image available at double its original resolution. This way, images and graphics will always look crisp on devices with a higher pixel ratio, but it also means longer loading times on these devices."
 sortorder: 23
 value: '1'
 group: 7

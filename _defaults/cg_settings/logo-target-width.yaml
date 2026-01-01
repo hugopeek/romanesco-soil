@@ -2,6 +2,6 @@ id: 49
 key: logo_target_width
 label: 'Logo target width'
 xtype: numberfield
-description: 'The desired width (in pixels) of the logo on a large desktop monitor. This probably won''t turn out to be the exact width, because the size of the logo is defined in relative units, which are different per screen size. It will be close enough though.'
+description: "The desired width (in pixels) of the logo on a large desktop monitor. This probably won't turn out to be the exact width, because the size of the logo is defined in relative units, which are different per screen size. It will be close enough though."
 sortorder: 5
 group: 4

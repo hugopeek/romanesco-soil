@@ -2,7 +2,7 @@ id: 65
 key: layout_background_default
 label: 'Default layout background'
 xtype: modx-combo
-description: 'Applies to ContentBlocks layouts. Useful for example if you want to have a non-white page background, in which case you''d probably use mostly transparent layouts.'
+description: "Applies to ContentBlocks layouts. Useful for example if you want to have a non-white page background, in which case you'd probably use mostly transparent layouts."
 sortorder: 32
 value: white
 group: 4

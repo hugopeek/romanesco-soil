@@ -2,7 +2,7 @@ id: 19
 key: overview_logo_fallback
 label: 'Fallback logo'
 xtype: modx-panel-tv-image
-description: 'For empty client logo''s in testimonials / portfolio.'
+description: "For empty client logo's in testimonials / portfolio."
 sortorder: 30
 group: 8
 source: 2

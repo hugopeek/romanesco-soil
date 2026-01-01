@@ -2,7 +2,7 @@ id: 94
 key: submenu_locality
 label: 'Submenu locality'
 xtype: modx-combo
-description: 'Local navigation means that it''s contextual to the user’s current location. The submenu is already restricted to pages under the same top level, but you can limit it further by only displaying child pages of the current page. There''s one exception: if the current page doesn''t have any children, the sibling pages within the current category will be shown.'
+description: "Local navigation means that it's contextual to the user’s current location. The submenu is already restricted to pages under the same top level, but you can limit it further by only displaying child pages of the current page. There's one exception: if the current page doesn't have any children, the sibling pages within the current category will be shown."
 sortorder: 41
 value: top
 group: 2
