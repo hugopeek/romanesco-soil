@@ -1,4 +1,4 @@
-key: formblocks.frontend_validate_on
-value: submit
+key: formblocks.manager_sortby
+value: menuindex
 namespace: formblocks
 area: 'FormBlocks - Settings'

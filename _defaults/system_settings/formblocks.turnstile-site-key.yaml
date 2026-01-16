@@ -1,4 +1,3 @@
-key: formblocks.frontend_validate_on
-value: submit
+key: formblocks.turnstile_site_key
 namespace: formblocks
 area: 'FormBlocks - Settings'
