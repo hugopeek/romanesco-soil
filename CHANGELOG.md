@@ -11,7 +11,7 @@ Released on September 23, 2025
 - Scan repository for hidden secrets (Gitlab CI)
 - Add video and forms folders to uploads directory
 - Update gulp-real-favicon NPM package
-- **Upgrade to MODX 3.1.2-pl**
+- **Upgrade MODX to 3.1.2-pl**
 
 ## Romanesco Soil v2.6.3
 Released on March 1, 2025
