@@ -14944,11 +14944,6 @@ ol.ui.suffixed.list li::before,
          Theme Overrides
 *******************************/
 
-#content .ui.list:not(.overview):not(ul ul),
-#content .ui.list:not(.overview):not(ol ol) {
-  margin-top: calc(var(--baseline) * 2rem);
-}
-
 ul.ui.list li:before {
   margin-top: 1px;
   font-family: Arial, sans-serif;
@@ -14980,10 +14975,23 @@ ul.ui.list li:before {
   margin-left: 0;
 }
 
-.ui.vertical.list > li:before {
+.ui.vertical.list > li:before,
+.ui.vertical.list > .item:before {
   display: block;
   position: relative;
   text-align: center;
+  margin-left: 0;
+}
+
+.ui.vertical.list > .item > .icon {
+  display: block;
+  width: auto;
+  padding: 0 !important;
+}
+
+.ui.vertical.list > .item > .icon + .content {
+  display: block;
+  padding: 0.5em 0 0;
 }
 
 /*******************************
