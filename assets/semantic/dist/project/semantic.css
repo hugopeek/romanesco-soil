@@ -5076,6 +5076,10 @@ span.ui.header {
   margin-right: 0;
 }
 
+.ui.header.icon > .image + .content {
+  margin-top: calc(var(--baseline) * 1rem);
+}
+
 .ui.header.icon > .svg {
   min-width: 1.5em;
   max-width: 2em;
@@ -5101,6 +5105,10 @@ span.ui.header {
 
 .ui.header.icon + p > .button {
   margin-right: 0 !important;
+}
+
+.ui.header.icon:last-child {
+  margin-bottom: 0;
 }
 
 .ui.header.icon.horizontal {
@@ -23492,6 +23500,16 @@ a.inverted.ui.card:hover,
 
 #main * + .ui.nested.cards {
   margin-top: calc(var(--baseline) * 2rem);
+}
+
+* + .ui.spaced.cards,
+.ui.spaced.cards + * {
+  margin-top: calc(var(--baseline) * 3rem);
+}
+
+* + .ui[class*="very spaced"].cards,
+.ui[class*="very spaced"].cards + * {
+  margin-top: calc(var(--baseline) * 5rem);
 }
 
 .ui.one.cards > .card {
