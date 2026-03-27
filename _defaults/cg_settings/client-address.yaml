@@ -4,4 +4,5 @@ label: 'Primary address'
 xtype: textarea
 description: ''
 sortorder: 10
+value: "[[++client_address_street]]\n[[++client_address_locality]]\n[[++client_address_region]] [[++client_address_postcode]]\n[[++client_address_country]]"
 group: 1

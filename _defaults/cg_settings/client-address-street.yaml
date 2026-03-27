@@ -1,0 +1,7 @@
+id: 103
+key: client_address_street
+label: Street
+xtype: textfield
+description: ''
+sortorder: 11
+group: 1

@@ -1,0 +1,9 @@
+id: 110
+key: structured_data
+label: 'Structured data'
+xtype: modx-combo
+description: 'Add schema.org JSON-LD data in head of every page. This data is automatically compiled from available configuration settings, page settings and content elements.'
+sortorder: 99
+value: '1'
+group: 5
+options: On==1||Off==0

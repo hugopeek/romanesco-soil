@@ -1,7 +1,0 @@
-id: 21
-key: google_analytics_ua
-label: 'Google Analytics tracking ID'
-xtype: textfield
-description: 'DEPRECATED. Use the code field below to insert the full analytics tracking snippet.'
-sortorder: 1
-group: 5

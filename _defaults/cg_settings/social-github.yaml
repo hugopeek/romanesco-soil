@@ -1,7 +1,0 @@
-id: 48
-key: social_github
-label: 'Github username'
-xtype: textfield
-description: 'DEPRECATED! Please use the Social Connections grid under Manage > Project Data.'
-sortorder: 20
-group: 6

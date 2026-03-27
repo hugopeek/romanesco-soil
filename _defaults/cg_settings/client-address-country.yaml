@@ -1,0 +1,9 @@
+id: 106
+key: client_address_country
+label: Country
+xtype: modx-combo
+description: ''
+sortorder: 15
+group: 1
+options: '[[$tvSelectCountry]]'
+process_options: 1

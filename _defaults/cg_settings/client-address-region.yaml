@@ -1,0 +1,7 @@
+id: 105
+key: client_address_region
+label: Region
+xtype: textfield
+description: ''
+sortorder: 13
+group: 1

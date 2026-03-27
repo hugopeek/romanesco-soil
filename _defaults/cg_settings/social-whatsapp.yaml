@@ -1,7 +1,0 @@
-id: 66
-key: social_whatsapp
-label: 'WhatsApp number'
-xtype: numberfield
-description: 'DEPRECATED! Please use the Social Connections grid under Manage > Project Data.'
-sortorder: 10
-group: 6

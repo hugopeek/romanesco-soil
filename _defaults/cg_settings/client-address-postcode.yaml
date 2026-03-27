@@ -1,0 +1,8 @@
+id: 107
+key: client_address_postcode
+label: 'Postal code'
+xtype: textfield
+description: ''
+sortorder: 16
+group: 1
+process_options: 1

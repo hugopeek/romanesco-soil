@@ -1,7 +1,0 @@
-id: 31
-key: social_instagram
-label: 'Instagram profile'
-xtype: textfield
-description: 'DEPRECATED! Please use the Social Connections grid under Manage > Project Data.'
-sortorder: 4
-group: 6

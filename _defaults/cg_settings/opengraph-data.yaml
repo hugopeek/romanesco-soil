@@ -1,0 +1,9 @@
+id: 109
+key: opengraph_data
+label: 'OpenGraph metadata'
+xtype: modx-combo
+description: 'Add basic OpenGraph metadata in head of each page. This is mainly used by Facebook.'
+sortorder: 20
+value: '1'
+group: 5
+options: On==1||Off==0

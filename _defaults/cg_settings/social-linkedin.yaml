@@ -1,7 +1,0 @@
-id: 23
-key: social_linkedin
-label: 'LinkedIn profile'
-xtype: textfield
-description: 'DEPRECATED! Please use the Social Connections grid under Manage > Project Data.'
-sortorder: 2
-group: 6

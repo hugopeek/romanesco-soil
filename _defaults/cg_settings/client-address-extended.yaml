@@ -1,0 +1,7 @@
+id: 108
+key: client_address_extended
+label: Extension
+xtype: textfield
+description: 'Additional details, such as an apartment number, C/O or alternative name.'
+sortorder: 17
+group: 1

@@ -1,7 +1,0 @@
-id: 67
-key: social_whatsapp_text
-label: 'WhatsApp message'
-xtype: textarea
-description: DEPRECATED!
-sortorder: 11
-group: 6

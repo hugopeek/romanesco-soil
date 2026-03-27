@@ -1,8 +1,0 @@
-id: 55
-key: social_sharing_channels
-label: 'Social sharing channels'
-xtype: textfield
-description: 'DEPRECATED! Please use the Social Connections grid under Manage > Project Data.'
-sortorder: 40
-value: 'Facebook,Twitter,LinkedIn'
-group: 6

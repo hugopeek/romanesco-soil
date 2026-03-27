@@ -1,0 +1,7 @@
+id: 104
+key: client_address_locality
+label: Locality
+xtype: textfield
+description: ''
+sortorder: 12
+group: 1
