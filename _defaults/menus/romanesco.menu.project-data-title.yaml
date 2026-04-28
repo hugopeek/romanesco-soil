@@ -1,0 +1,6 @@
+text: romanesco.menu.project_data_title
+parent: site
+action: index
+description: romanesco.menu.project_data_description
+params: '&configs=input_option_groups:romanescobackyard||social_connections:romanescobackyard||social_sharing:romanescobackyard||links_related:romanescobackyard||links_external:romanescobackyard||tasks:romanescobackyard'
+namespace: romanescobackyard

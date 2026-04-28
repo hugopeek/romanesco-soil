@@ -1,0 +1,6 @@
+text: quickstartbuttons
+parent: components
+action: home
+description: quickstartbuttons.menu_desc
+permissions: dashboards
+namespace: quickstartbuttons
