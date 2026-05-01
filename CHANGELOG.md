@@ -3,6 +3,13 @@
 These changes only affect new installations. For changes that are applied on
 every Romanesco update, check the [data extract changelog](https://github.com/hugopeek/romanesco-data/blob/master/CHANGELOG.md).
 
+## Romanesco Soil v3.0.1
+Released on ...
+
+> Extracts into [Romanesco Data v1.21.1](https://github.com/hugopeek/romanesco-data/releases/tag/v1.21.1)
+
+- Retire RealFaviconGenerator
+
 ## Romanesco Soil v3.0.0
 Released on September 23, 2025
 
