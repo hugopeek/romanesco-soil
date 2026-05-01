@@ -439,6 +439,10 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+form {
+  margin: 0;
+}
+
 fieldset {
   border: 0;
   margin: 0;
@@ -1297,7 +1301,7 @@ blockquote footer,
 }
 
 .brand.badge {
-  background: url("/assets/img/badge.png") no-repeat left center !important;
+  background: url("/assets/img/badge.svg") no-repeat left center !important;
   background-size: contain !important;
   height: 36px;
   width: 36px;
@@ -5077,7 +5081,7 @@ span.ui.header {
 }
 
 .ui.header.icon > .image + .content {
-  margin-top: calc(var(--baseline) * 1rem);
+  margin-top: 0;
 }
 
 .ui.header.icon > .svg {
