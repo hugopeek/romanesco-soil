@@ -2398,12 +2398,12 @@ svg tspan {
 .ui.ui.circular.buttons .button,
 .ui.ui.ui.ui.circular.button {
   border-radius: 10em;
-  min-width: 2.5em;
+  min-width: 2.9em;
 }
 
 .ui.circular.buttons .button > .icon,
 .ui.circular.button > .icon {
-  width: 1em;
+  width: 1.1em;
   vertical-align: baseline;
 }
 
@@ -3548,6 +3548,17 @@ svg tspan {
   margin-top: calc(var(--baseline) * 3rem);
 }
 
+.ui.circular.icon.button {
+  min-height: 2.9em;
+}
+
+.ui.circular.buttons .button > .icon,
+.ui.circular.button > .icon {
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: middle;
+}
+
 .social.buttons {
   display: inline-flex;
   flex-wrap: nowrap;
@@ -4072,6 +4083,21 @@ body.modern #content .ui.container > .ui.divider,
   body.vertical .ui.tightened.container {
     width: 100% !important;
   }
+}
+
+.ui.breakout.container {
+  margin-top: calc(var(--baseline) * 1.5rem);
+}
+
+.ui.breakout.container + .ui.container {
+  margin-top: calc(var(--baseline) * 1.5rem);
+}
+
+.ui.breakout.container.text,
+.ui.breakout.container.text + .ui.container,
+.ui.text.container:not(.conventional) + .ui.breakout.container,
+.ui.breakout.container + .ui.text.container:not(.conventional) {
+  margin-top: calc(var(--baseline) * 3rem);
 }
 
 /*******************************
@@ -11377,7 +11403,7 @@ i.icon.window.restore.outline::before {
 i.icon > svg {
   height: 1.1em;
   width: 1.1em;
-  margin: -0.2em 0;
+  max-width: 100%;
 }
 
 .ui.list .small.modx.icon {
@@ -23514,6 +23540,11 @@ a.inverted.ui.card:hover,
 * + .ui[class*="very spaced"].cards,
 .ui[class*="very spaced"].cards + * {
   margin-top: calc(var(--baseline) * 5rem);
+}
+
+.ui.raised.card {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .ui.one.cards > .card {
