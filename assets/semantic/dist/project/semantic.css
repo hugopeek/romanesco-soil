@@ -3464,8 +3464,9 @@ svg tspan {
          Theme Overrides
 *******************************/
 
-[class*="center aligned"] .ui.button:not(.attached):not(.center.aligned):not(:last-child) {
-  margin-left: 0.25em;
+[class*="center aligned"] .ui.button:not(.attached):not(.center.aligned) {
+  margin-left: 0.125em;
+  margin-right: 0.125em;
 }
 
 [class*="center aligned"] .left.aligned .ui.button {
@@ -3549,14 +3550,17 @@ svg tspan {
 }
 
 .ui.circular.icon.button {
-  min-height: 2.9em;
+  width: 2.9em;
+  height: 2.9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ui.circular.buttons .button > .icon,
 .ui.circular.button > .icon {
   width: 1.1em;
   height: 1.1em;
-  vertical-align: middle;
 }
 
 .social.buttons {
@@ -4095,9 +4099,14 @@ body.modern #content .ui.container > .ui.divider,
 
 .ui.breakout.container.text,
 .ui.breakout.container.text + .ui.container,
+.ui.breakout.container:has(.ui.image:last-child) + .ui.container,
 .ui.text.container:not(.conventional) + .ui.breakout.container,
 .ui.breakout.container + .ui.text.container:not(.conventional) {
   margin-top: calc(var(--baseline) * 3rem);
+}
+
+.ui.breakout.container > .nested.grid:first-child {
+  margin-top: calc(var(--baseline) * 2rem);
 }
 
 /*******************************
@@ -11797,7 +11806,8 @@ img.ui.bordered.image {
   font-style: normal;
 }
 
-.content .ui.image + * {
+.content .ui.image + *,
+#content .ui.image + p {
   margin-top: calc(var(--baseline) * 3rem);
 }
 
@@ -16189,6 +16199,11 @@ body.vertical .ui.vertical.stripe.segment#dropdown-toc {
   margin-left: 0.5em;
 }
 
+.ui.pattern.segment .toolbar.grid .ui.icon.button > .icon {
+  height: 1.1em;
+  vertical-align: bottom;
+}
+
 .ui.backyard.segment.black {
   background-color: #000;
 }
@@ -18648,7 +18663,6 @@ span.ui.massive.text {
 }
 
 .ui.nested.grid.celled {
-  margin-top: 0;
   border-radius: 0.46228571rem;
 }
 
