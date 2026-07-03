@@ -1,0 +1,4 @@
+key: romanesco.cache_warmup_concurrency
+value: '3'
+namespace: romanesco
+area: Performance

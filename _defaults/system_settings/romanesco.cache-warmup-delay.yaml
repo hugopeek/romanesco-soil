@@ -1,0 +1,4 @@
+key: romanesco.cache_warmup_delay
+value: '1'
+namespace: romanesco
+area: Performance
